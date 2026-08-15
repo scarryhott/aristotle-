@@ -170,21 +170,26 @@ def TransFrame.transGeomEquiv
     {L : Type u} {B : L → Type v} {Y : L → Type w}
     (A : TransFrame L B Y) (ℓ m : L) :
     GeomEquiv (closureFrame (A.W ℓ)) (closureFrame (A.W m)) :=
-  (NRRF627IndependentReturn.TransFrame.relativeEqualityForm A ℓ m).geomEquiv
+  NRRF631Runtime.RelativeEqualityForm.geomEquiv
+    (NRRF627IndependentReturn.TransFrame.relativeEqualityForm A ℓ m)
 
 theorem TransFrame.resolution_language_independent
     {L : Type u} {B : L → Type v} {Y : L → Type w}
     (A : TransFrame L B Y) {Ω : Type z} (ℓ m : L) (Q : Y ℓ → Ω) :
     ResolvedIn (closureFrame (A.W ℓ)) Q ↔
-      ResolvedIn (closureFrame (A.W m)) ((A.transGeomEquiv ℓ m).transportQuestion Q) :=
-  GeomEquiv.resolvedIn_transport (A.transGeomEquiv ℓ m) Q
+      ResolvedIn (closureFrame (A.W m))
+        ((NRRF631Runtime.TransFrame.transGeomEquiv A ℓ m).transportQuestion Q) :=
+  GeomEquiv.resolvedIn_transport
+    (NRRF631Runtime.TransFrame.transGeomEquiv A ℓ m) Q
 
 theorem TransFrame.openness_language_independent
     {L : Type u} {B : L → Type v} {Y : L → Type w}
     (A : TransFrame L B Y) {Ω : Type z} (ℓ m : L) (Q : Y ℓ → Ω) :
     OpenIn (closureFrame (A.W ℓ)) Q ↔
-      OpenIn (closureFrame (A.W m)) ((A.transGeomEquiv ℓ m).transportQuestion Q) :=
-  GeomEquiv.openIn_transport (A.transGeomEquiv ℓ m) Q
+      OpenIn (closureFrame (A.W m))
+        ((NRRF631Runtime.TransFrame.transGeomEquiv A ℓ m).transportQuestion Q) :=
+  GeomEquiv.openIn_transport
+    (NRRF631Runtime.TransFrame.transGeomEquiv A ℓ m) Q
 
 theorem TransFrame.return_question_resolved
     {L : Type u} {B : L → Type v} {Y : L → Type w}
@@ -216,11 +221,13 @@ theorem runtime_begins_in_axiom_geometry
     {L : Type u} {B : L → Type v} {Y : L → Type w}
     (A : TransFrame L B Y) {Ω : Type z} (ℓ m : L) (Q : Y ℓ → Ω) :
     (ResolvedIn (closureFrame (A.W ℓ)) Q ↔
-      ResolvedIn (closureFrame (A.W m)) ((A.transGeomEquiv ℓ m).transportQuestion Q)) ∧
+      ResolvedIn (closureFrame (A.W m))
+        ((NRRF631Runtime.TransFrame.transGeomEquiv A ℓ m).transportQuestion Q)) ∧
     (OpenIn (closureFrame (A.W ℓ)) Q ↔
-      OpenIn (closureFrame (A.W m)) ((A.transGeomEquiv ℓ m).transportQuestion Q)) := by
-  exact ⟨A.resolution_language_independent ℓ m Q,
-    A.openness_language_independent ℓ m Q⟩
+      OpenIn (closureFrame (A.W m))
+        ((NRRF631Runtime.TransFrame.transGeomEquiv A ℓ m).transportQuestion Q)) := by
+  exact ⟨NRRF631Runtime.TransFrame.resolution_language_independent A ℓ m Q,
+    NRRF631Runtime.TransFrame.openness_language_independent A ℓ m Q⟩
 
 end NRRF631Runtime
 
