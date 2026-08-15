@@ -1,0 +1,747 @@
+{
+  "admitted_equality": {
+    "class_of": {
+      "direct:b0": "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f",
+      "direct:b1": "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25",
+      "direct:b2": "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8",
+      "direct:b3": "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50",
+      "direct:b4": "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9",
+      "direct:b5": "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1",
+      "direct:b6": "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864",
+      "direct:b7": "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66",
+      "right_identity_extended:b0": "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f",
+      "right_identity_extended:b1": "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25",
+      "right_identity_extended:b2": "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8",
+      "right_identity_extended:b3": "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50",
+      "right_identity_extended:b4": "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9",
+      "right_identity_extended:b5": "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1",
+      "right_identity_extended:b6": "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864",
+      "right_identity_extended:b7": "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66"
+    },
+    "definition": "instantiate equality exactly when the two locally evaluated programs have identical complete right-action signatures",
+    "equivalence_classes": [
+      {
+        "class_id": "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8",
+        "members": [
+          "direct:b2",
+          "right_identity_extended:b2"
+        ]
+      },
+      {
+        "class_id": "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50",
+        "members": [
+          "direct:b3",
+          "right_identity_extended:b3"
+        ]
+      },
+      {
+        "class_id": "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25",
+        "members": [
+          "direct:b1",
+          "right_identity_extended:b1"
+        ]
+      },
+      {
+        "class_id": "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66",
+        "members": [
+          "direct:b7",
+          "right_identity_extended:b7"
+        ]
+      },
+      {
+        "class_id": "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864",
+        "members": [
+          "direct:b6",
+          "right_identity_extended:b6"
+        ]
+      },
+      {
+        "class_id": "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9",
+        "members": [
+          "direct:b4",
+          "right_identity_extended:b4"
+        ]
+      },
+      {
+        "class_id": "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f",
+        "members": [
+          "direct:b0",
+          "right_identity_extended:b0"
+        ]
+      },
+      {
+        "class_id": "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1",
+        "members": [
+          "direct:b5",
+          "right_identity_extended:b5"
+        ]
+      }
+    ],
+    "matrix": {
+      "direct:b0": {
+        "direct:b0": true,
+        "direct:b1": false,
+        "direct:b2": false,
+        "direct:b3": false,
+        "direct:b4": false,
+        "direct:b5": false,
+        "direct:b6": false,
+        "direct:b7": false,
+        "right_identity_extended:b0": true,
+        "right_identity_extended:b1": false,
+        "right_identity_extended:b2": false,
+        "right_identity_extended:b3": false,
+        "right_identity_extended:b4": false,
+        "right_identity_extended:b5": false,
+        "right_identity_extended:b6": false,
+        "right_identity_extended:b7": false
+      },
+      "direct:b1": {
+        "direct:b0": false,
+        "direct:b1": true,
+        "direct:b2": false,
+        "direct:b3": false,
+        "direct:b4": false,
+        "direct:b5": false,
+        "direct:b6": false,
+        "direct:b7": false,
+        "right_identity_extended:b0": false,
+        "right_identity_extended:b1": true,
+        "right_identity_extended:b2": false,
+        "right_identity_extended:b3": false,
+        "right_identity_extended:b4": false,
+        "right_identity_extended:b5": false,
+        "right_identity_extended:b6": false,
+        "right_identity_extended:b7": false
+      },
+      "direct:b2": {
+        "direct:b0": false,
+        "direct:b1": false,
+        "direct:b2": true,
+        "direct:b3": false,
+        "direct:b4": false,
+        "direct:b5": false,
+        "direct:b6": false,
+        "direct:b7": false,
+        "right_identity_extended:b0": false,
+        "right_identity_extended:b1": false,
+        "right_identity_extended:b2": true,
+        "right_identity_extended:b3": false,
+        "right_identity_extended:b4": false,
+        "right_identity_extended:b5": false,
+        "right_identity_extended:b6": false,
+        "right_identity_extended:b7": false
+      },
+      "direct:b3": {
+        "direct:b0": false,
+        "direct:b1": false,
+        "direct:b2": false,
+        "direct:b3": true,
+        "direct:b4": false,
+        "direct:b5": false,
+        "direct:b6": false,
+        "direct:b7": false,
+        "right_identity_extended:b0": false,
+        "right_identity_extended:b1": false,
+        "right_identity_extended:b2": false,
+        "right_identity_extended:b3": true,
+        "right_identity_extended:b4": false,
+        "right_identity_extended:b5": false,
+        "right_identity_extended:b6": false,
+        "right_identity_extended:b7": false
+      },
+      "direct:b4": {
+        "direct:b0": false,
+        "direct:b1": false,
+        "direct:b2": false,
+        "direct:b3": false,
+        "direct:b4": true,
+        "direct:b5": false,
+        "direct:b6": false,
+        "direct:b7": false,
+        "right_identity_extended:b0": false,
+        "right_identity_extended:b1": false,
+        "right_identity_extended:b2": false,
+        "right_identity_extended:b3": false,
+        "right_identity_extended:b4": true,
+        "right_identity_extended:b5": false,
+        "right_identity_extended:b6": false,
+        "right_identity_extended:b7": false
+      },
+      "direct:b5": {
+        "direct:b0": false,
+        "direct:b1": false,
+        "direct:b2": false,
+        "direct:b3": false,
+        "direct:b4": false,
+        "direct:b5": true,
+        "direct:b6": false,
+        "direct:b7": false,
+        "right_identity_extended:b0": false,
+        "right_identity_extended:b1": false,
+        "right_identity_extended:b2": false,
+        "right_identity_extended:b3": false,
+        "right_identity_extended:b4": false,
+        "right_identity_extended:b5": true,
+        "right_identity_extended:b6": false,
+        "right_identity_extended:b7": false
+      },
+      "direct:b6": {
+        "direct:b0": false,
+        "direct:b1": false,
+        "direct:b2": false,
+        "direct:b3": false,
+        "direct:b4": false,
+        "direct:b5": false,
+        "direct:b6": true,
+        "direct:b7": false,
+        "right_identity_extended:b0": false,
+        "right_identity_extended:b1": false,
+        "right_identity_extended:b2": false,
+        "right_identity_extended:b3": false,
+        "right_identity_extended:b4": false,
+        "right_identity_extended:b5": false,
+        "right_identity_extended:b6": true,
+        "right_identity_extended:b7": false
+      },
+      "direct:b7": {
+        "direct:b0": false,
+        "direct:b1": false,
+        "direct:b2": false,
+        "direct:b3": false,
+        "direct:b4": false,
+        "direct:b5": false,
+        "direct:b6": false,
+        "direct:b7": true,
+        "right_identity_extended:b0": false,
+        "right_identity_extended:b1": false,
+        "right_identity_extended:b2": false,
+        "right_identity_extended:b3": false,
+        "right_identity_extended:b4": false,
+        "right_identity_extended:b5": false,
+        "right_identity_extended:b6": false,
+        "right_identity_extended:b7": true
+      },
+      "right_identity_extended:b0": {
+        "direct:b0": true,
+        "direct:b1": false,
+        "direct:b2": false,
+        "direct:b3": false,
+        "direct:b4": false,
+        "direct:b5": false,
+        "direct:b6": false,
+        "direct:b7": false,
+        "right_identity_extended:b0": true,
+        "right_identity_extended:b1": false,
+        "right_identity_extended:b2": false,
+        "right_identity_extended:b3": false,
+        "right_identity_extended:b4": false,
+        "right_identity_extended:b5": false,
+        "right_identity_extended:b6": false,
+        "right_identity_extended:b7": false
+      },
+      "right_identity_extended:b1": {
+        "direct:b0": false,
+        "direct:b1": true,
+        "direct:b2": false,
+        "direct:b3": false,
+        "direct:b4": false,
+        "direct:b5": false,
+        "direct:b6": false,
+        "direct:b7": false,
+        "right_identity_extended:b0": false,
+        "right_identity_extended:b1": true,
+        "right_identity_extended:b2": false,
+        "right_identity_extended:b3": false,
+        "right_identity_extended:b4": false,
+        "right_identity_extended:b5": false,
+        "right_identity_extended:b6": false,
+        "right_identity_extended:b7": false
+      },
+      "right_identity_extended:b2": {
+        "direct:b0": false,
+        "direct:b1": false,
+        "direct:b2": true,
+        "direct:b3": false,
+        "direct:b4": false,
+        "direct:b5": false,
+        "direct:b6": false,
+        "direct:b7": false,
+        "right_identity_extended:b0": false,
+        "right_identity_extended:b1": false,
+        "right_identity_extended:b2": true,
+        "right_identity_extended:b3": false,
+        "right_identity_extended:b4": false,
+        "right_identity_extended:b5": false,
+        "right_identity_extended:b6": false,
+        "right_identity_extended:b7": false
+      },
+      "right_identity_extended:b3": {
+        "direct:b0": false,
+        "direct:b1": false,
+        "direct:b2": false,
+        "direct:b3": true,
+        "direct:b4": false,
+        "direct:b5": false,
+        "direct:b6": false,
+        "direct:b7": false,
+        "right_identity_extended:b0": false,
+        "right_identity_extended:b1": false,
+        "right_identity_extended:b2": false,
+        "right_identity_extended:b3": true,
+        "right_identity_extended:b4": false,
+        "right_identity_extended:b5": false,
+        "right_identity_extended:b6": false,
+        "right_identity_extended:b7": false
+      },
+      "right_identity_extended:b4": {
+        "direct:b0": false,
+        "direct:b1": false,
+        "direct:b2": false,
+        "direct:b3": false,
+        "direct:b4": true,
+        "direct:b5": false,
+        "direct:b6": false,
+        "direct:b7": false,
+        "right_identity_extended:b0": false,
+        "right_identity_extended:b1": false,
+        "right_identity_extended:b2": false,
+        "right_identity_extended:b3": false,
+        "right_identity_extended:b4": true,
+        "right_identity_extended:b5": false,
+        "right_identity_extended:b6": false,
+        "right_identity_extended:b7": false
+      },
+      "right_identity_extended:b5": {
+        "direct:b0": false,
+        "direct:b1": false,
+        "direct:b2": false,
+        "direct:b3": false,
+        "direct:b4": false,
+        "direct:b5": true,
+        "direct:b6": false,
+        "direct:b7": false,
+        "right_identity_extended:b0": false,
+        "right_identity_extended:b1": false,
+        "right_identity_extended:b2": false,
+        "right_identity_extended:b3": false,
+        "right_identity_extended:b4": false,
+        "right_identity_extended:b5": true,
+        "right_identity_extended:b6": false,
+        "right_identity_extended:b7": false
+      },
+      "right_identity_extended:b6": {
+        "direct:b0": false,
+        "direct:b1": false,
+        "direct:b2": false,
+        "direct:b3": false,
+        "direct:b4": false,
+        "direct:b5": false,
+        "direct:b6": true,
+        "direct:b7": false,
+        "right_identity_extended:b0": false,
+        "right_identity_extended:b1": false,
+        "right_identity_extended:b2": false,
+        "right_identity_extended:b3": false,
+        "right_identity_extended:b4": false,
+        "right_identity_extended:b5": false,
+        "right_identity_extended:b6": true,
+        "right_identity_extended:b7": false
+      },
+      "right_identity_extended:b7": {
+        "direct:b0": false,
+        "direct:b1": false,
+        "direct:b2": false,
+        "direct:b3": false,
+        "direct:b4": false,
+        "direct:b5": false,
+        "direct:b6": false,
+        "direct:b7": true,
+        "right_identity_extended:b0": false,
+        "right_identity_extended:b1": false,
+        "right_identity_extended:b2": false,
+        "right_identity_extended:b3": false,
+        "right_identity_extended:b4": false,
+        "right_identity_extended:b5": false,
+        "right_identity_extended:b6": false,
+        "right_identity_extended:b7": true
+      }
+    },
+    "matrix_sha256": "04ba4a09241b7966b5eb4d521ad6c3ce9c4f95ac9558a7ff8196a9634b814465",
+    "relation_kind": "local_right_action_signature_equivalence",
+    "setoid_certificate": {
+      "failure_count": 0,
+      "first_failure": null,
+      "reflexivity_cases": 16,
+      "symmetry_cases": 256,
+      "transitivity_cases": 4096
+    },
+    "source": "precommitted local axiom-geometry assumption"
+  },
+  "assumption_status": "ASSUMED_FOR_INTERNAL_EVALUATION",
+  "axiom_geometry_assumption": {
+    "admission_status": "ASSUMED_FOR_INTERNAL_EVALUATION",
+    "carrier": "two frozen local program presentations for every local element",
+    "closure_obligations": [
+      "setoid",
+      "returning",
+      "grounded",
+      "operation_congruence",
+      "presentation_reversal"
+    ],
+    "evaluation_rule": "instantiate equality exactly when the two locally evaluated programs have identical complete right-action signatures",
+    "name": "B-local-operational-closure-geometry",
+    "relation_kind": "local_right_action_signature_equivalence",
+    "semantic_boundary": "The relation is admitted as language B's local axiom geometry before cross-frame search. Internal auditing may refute its coherence but may not replace it with an external normal form."
+  },
+  "axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+  "candidate_translation_visible": false,
+  "forbidden_inputs": [
+    "perspective A artifact",
+    "candidate comparisons",
+    "cross-frame contact",
+    "question outcomes"
+  ],
+  "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+  "frame_protocol_content_sha256": "1f355872722818664a98534de0dd29f24adb217698000075eb1805da7107bcf0",
+  "internal_unified_evaluation": {
+    "evaluated_only_in_declared_local_geometry": true,
+    "external_normal_form_substituted": false,
+    "failure_count": 0,
+    "grounded": {
+      "cases": 64,
+      "failure_count": 0,
+      "first_failure": null
+    },
+    "operation_congruence": {
+      "cases": 1024,
+      "failure_count": 0,
+      "first_failure": null
+    },
+    "passed": true,
+    "presentation_reversal": {
+      "cases": 16,
+      "failure_count": 0,
+      "first_failure": null
+    },
+    "returning": {
+      "cases": 16,
+      "failure_count": 0,
+      "first_failure": null
+    },
+    "setoid": {
+      "failure_count": 0,
+      "first_failure": null,
+      "reflexivity_cases": 16,
+      "symmetry_cases": 256,
+      "transitivity_cases": 4096
+    }
+  },
+  "language": "B",
+  "occurrences": [
+    {
+      "constructor": "direct",
+      "evaluated_local_result": "b0",
+      "local_program": [
+        "b0"
+      ],
+      "occurrence_id": "direct:b0",
+      "right_action_signature": [
+        "b0",
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ]
+    },
+    {
+      "constructor": "direct",
+      "evaluated_local_result": "b1",
+      "local_program": [
+        "b1"
+      ],
+      "occurrence_id": "direct:b1",
+      "right_action_signature": [
+        "b1",
+        "b0",
+        "b7",
+        "b6",
+        "b5",
+        "b4",
+        "b3",
+        "b2"
+      ]
+    },
+    {
+      "constructor": "direct",
+      "evaluated_local_result": "b2",
+      "local_program": [
+        "b2"
+      ],
+      "occurrence_id": "direct:b2",
+      "right_action_signature": [
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b0",
+        "b1"
+      ]
+    },
+    {
+      "constructor": "direct",
+      "evaluated_local_result": "b3",
+      "local_program": [
+        "b3"
+      ],
+      "occurrence_id": "direct:b3",
+      "right_action_signature": [
+        "b3",
+        "b2",
+        "b1",
+        "b0",
+        "b7",
+        "b6",
+        "b5",
+        "b4"
+      ]
+    },
+    {
+      "constructor": "direct",
+      "evaluated_local_result": "b4",
+      "local_program": [
+        "b4"
+      ],
+      "occurrence_id": "direct:b4",
+      "right_action_signature": [
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b0",
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    {
+      "constructor": "direct",
+      "evaluated_local_result": "b5",
+      "local_program": [
+        "b5"
+      ],
+      "occurrence_id": "direct:b5",
+      "right_action_signature": [
+        "b5",
+        "b4",
+        "b3",
+        "b2",
+        "b1",
+        "b0",
+        "b7",
+        "b6"
+      ]
+    },
+    {
+      "constructor": "direct",
+      "evaluated_local_result": "b6",
+      "local_program": [
+        "b6"
+      ],
+      "occurrence_id": "direct:b6",
+      "right_action_signature": [
+        "b6",
+        "b7",
+        "b0",
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ]
+    },
+    {
+      "constructor": "direct",
+      "evaluated_local_result": "b7",
+      "local_program": [
+        "b7"
+      ],
+      "occurrence_id": "direct:b7",
+      "right_action_signature": [
+        "b7",
+        "b6",
+        "b5",
+        "b4",
+        "b3",
+        "b2",
+        "b1",
+        "b0"
+      ]
+    },
+    {
+      "constructor": "right_identity_extended",
+      "evaluated_local_result": "b0",
+      "local_program": [
+        "b0",
+        "b0"
+      ],
+      "occurrence_id": "right_identity_extended:b0",
+      "right_action_signature": [
+        "b0",
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ]
+    },
+    {
+      "constructor": "right_identity_extended",
+      "evaluated_local_result": "b1",
+      "local_program": [
+        "b1",
+        "b0"
+      ],
+      "occurrence_id": "right_identity_extended:b1",
+      "right_action_signature": [
+        "b1",
+        "b0",
+        "b7",
+        "b6",
+        "b5",
+        "b4",
+        "b3",
+        "b2"
+      ]
+    },
+    {
+      "constructor": "right_identity_extended",
+      "evaluated_local_result": "b2",
+      "local_program": [
+        "b2",
+        "b0"
+      ],
+      "occurrence_id": "right_identity_extended:b2",
+      "right_action_signature": [
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b0",
+        "b1"
+      ]
+    },
+    {
+      "constructor": "right_identity_extended",
+      "evaluated_local_result": "b3",
+      "local_program": [
+        "b3",
+        "b0"
+      ],
+      "occurrence_id": "right_identity_extended:b3",
+      "right_action_signature": [
+        "b3",
+        "b2",
+        "b1",
+        "b0",
+        "b7",
+        "b6",
+        "b5",
+        "b4"
+      ]
+    },
+    {
+      "constructor": "right_identity_extended",
+      "evaluated_local_result": "b4",
+      "local_program": [
+        "b4",
+        "b0"
+      ],
+      "occurrence_id": "right_identity_extended:b4",
+      "right_action_signature": [
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b0",
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    {
+      "constructor": "right_identity_extended",
+      "evaluated_local_result": "b5",
+      "local_program": [
+        "b5",
+        "b0"
+      ],
+      "occurrence_id": "right_identity_extended:b5",
+      "right_action_signature": [
+        "b5",
+        "b4",
+        "b3",
+        "b2",
+        "b1",
+        "b0",
+        "b7",
+        "b6"
+      ]
+    },
+    {
+      "constructor": "right_identity_extended",
+      "evaluated_local_result": "b6",
+      "local_program": [
+        "b6",
+        "b0"
+      ],
+      "occurrence_id": "right_identity_extended:b6",
+      "right_action_signature": [
+        "b6",
+        "b7",
+        "b0",
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ]
+    },
+    {
+      "constructor": "right_identity_extended",
+      "evaluated_local_result": "b7",
+      "local_program": [
+        "b7",
+        "b0"
+      ],
+      "occurrence_id": "right_identity_extended:b7",
+      "right_action_signature": [
+        "b7",
+        "b6",
+        "b5",
+        "b4",
+        "b3",
+        "b2",
+        "b1",
+        "b0"
+      ]
+    }
+  ],
+  "quotient_not_selected_as_origin": true,
+  "return_used_to_define_equality": false,
+  "runtime_id": "assumed-local-axiom-geometry",
+  "schema_version": 2,
+  "source_artifact_content_sha256": "228046949a947d10b65d9fb7efd4ea50c41b85e88006c27c6538294363fbd580",
+  "visibility": [
+    "frozen perspective B operation table and group certificate"
+  ]
+}

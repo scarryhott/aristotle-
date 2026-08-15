@@ -52,6 +52,15 @@ relation kind is rejected with an explicit unsupported-geometry error; it is nev
 normalized to the implemented D4 relation. Supporting a new geometry therefore requires a new,
 precommitted local evaluator, not a post-hoc equality choice.
 
+The three-part interaction runtime adds an actual evaluator registry rather than JSON names alone.
+It independently instantiates complete-signature equality, literal constructor-sensitive equality,
+rotation/reflection parity equality, and a 32-occurrence `D4 × C2` signature geometry. Each artifact
+retains every audit, including failures of checks the frame did not declare as its own obligation.
+Only after these artifacts freeze are external candidate relations constructed.
+Accordingly, the literal-split and parity cases are negative control geometries rather than
+returning-and-grounded closure admissions; their undeclared closure failures remain visible in the
+evidence.
+
 ## Closure lineage
 
 Every candidate certificate contains an `explicit_translational_form` with:
@@ -79,6 +88,10 @@ and the held-out next basis cites the exact selected form.
 from a supplied `Setoid` to a `ReferenceFrame`. This adds no Lean axiom. The theorem
 `resolvedIn_assumed_geometry_iff` confirms that a question is evaluated using exactly that supplied
 relation; `GeomEquiv` continues to require preservation and reflection before transport.
+`GeomEquiv.transportQuestion_trans` and
+`three_frame_continuous_relational_identification` prove the exact three-frame composition result
+conditionally on both comparison certificates. They do not prove that an external comparison
+exists, and they do not misclassify a split extension or quotient as a `GeomEquiv`.
 
 The separately reported NRRF633 development gives the stronger conditional theorem: once a
 `TransFrame` exists and a relational definition is returning and grounded, closure equality is

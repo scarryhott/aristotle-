@@ -1,0 +1,73 @@
+{
+  "benchmark": "three-part-classical-closure-external-assumption-v1",
+  "claim_boundary": "Executed bounded symbolic proxy. The three parts name verification architectures, not actual ASI systems or an Aristotle run.",
+  "parts": [
+    {
+      "id": "classical_full_stack",
+      "contract": "Construct and exhaustively verify both finite mathematical presentations, then apply a strong ordinary isomorphism baseline which accepts noncanonical and orientation-reversing maps."
+    },
+    {
+      "id": "closure_native_translation",
+      "contract": "Assume and audit each local equality geometry before comparison, admit a raw candidate only through preservation and reflection, and retain the explicit (T, phi, pi) lineage through W/E/J/C, operation, quotient-question, and next-basis derivations."
+    },
+    {
+      "id": "external_assumption_interaction",
+      "contract": "Reveal and locally audit a separately committed external axiom-geometry packet, then test exact GeomEquiv interactions and typed non-bijective extension/quotient interactions without revising an earlier frame, question, or receipt."
+    }
+  ],
+  "freeze_order": [
+    "protocol, total questions, and separate registered geometry/candidate packet hashes committed",
+    "classical local presentations and strong baseline frozen",
+    "closure-native frames, candidates, and derivations frozen",
+    "external geometry packet checked and consumed",
+    "each external geometry instantiated and audited in its own declared equality",
+    "external candidate packet checked and consumed",
+    "raw external interaction candidates constructed",
+    "adjacent and composite relational certificates frozen"
+  ],
+  "continuous_relational_identification": {
+    "meaning": "A gap-free, content-addressed, compositionally coherent finite relation history across distinct frozen isolations; not analytic or topological continuity.",
+    "required_evidence": [
+      "immutable isolation and assumption identifiers",
+      "a typed adjacent relation or explicit obstruction at every step",
+      "preservation and reflection for every exact GeomEquiv",
+      "declared image or quotient equality law for non-bijective steps",
+      "W/E/J/C and operation checks on every admitted domain",
+      "total source and target relational coverage",
+      "composite agreement with direct recomputation",
+      "occurrence-level lineages and a receipt-linked returned basis"
+    ]
+  },
+  "outcomes": [
+    "TRACE_PRESERVED",
+    "EQUALITY_OBSTRUCTION",
+    "NATURALITY_OBSTRUCTION",
+    "COMPOSITION_OBSTRUCTION",
+    "INTERNAL_INCOHERENCE",
+    "PENDING_COMPARISON",
+    "UNSELECTED_COMPARISON"
+  ],
+  "openness_rule": "OpenIn is emitted only for a precommitted total question with an explicit pair x~y and Q(x)!=Q(y). Missing, partial, rejected, or obstructed interaction data are never OpenIn.",
+  "precommitted_control_statuses": {
+    "external_basis_twist": "NATURALITY_OBSTRUCTION",
+    "external_coordinate_reexpression": "TRACE_PRESERVED",
+    "literal_isolation_split": "EQUALITY_OBSTRUCTION",
+    "normal_subgroup_parity_collapse": "EQUALITY_OBSTRUCTION",
+    "partial_external_interaction": "PENDING_COMPARISON"
+  },
+  "registered_packet_sha256": {
+    "external_candidates": "c680870624567c83a8591c57de3128e87cb98b30a43e8775e313ef5a78ad1f3b",
+    "external_geometries": "2e7aaf20c868cf33c1d28bb7b5a063f36c8abd598f932f0a80d1bef6b3da8438"
+  },
+  "token_rule": "At most one admission token belongs to the selected native returned relation. The three parts and external continuation do not mint additional tokens.",
+  "falsification": [
+    "An equality, question, or earlier receipt is changed after an external interaction is revealed.",
+    "An external geometry is silently normalized to a preferred classical frame.",
+    "An exact interaction checks preservation but not reflection.",
+    "Adjacent relations pass while their declared composite disagrees with direct recomputation.",
+    "A target isolation residue is silently dropped.",
+    "A failed or partial interaction is reported as OpenIn.",
+    "The classical baseline recovers the same complete longitudinal evidence at equal or lower cost on richer paired studies."
+  ],
+  "schema_version": 1
+}

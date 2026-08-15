@@ -165,6 +165,18 @@ def transportQuestion {X : Type u} {Y : Type v} {Ω : Type z}
     (e : GeomEquiv F G) (Q : X → Ω) : Y → Ω :=
   fun y => Q (e.occurrenceEquiv.symm y)
 
+/-- Question transport through two isolated frames is definitionally coherent with transport along
+their composite geometry equivalence.  Here "continuous" means compositional relational
+identification; no topology is present. -/
+@[simp] theorem transportQuestion_trans
+    {X : Type u} {Y : Type v} {Z : Type w} {Ω : Type z}
+    {F : ReferenceFrame X} {G : ReferenceFrame Y} {H : ReferenceFrame Z}
+    (native : GeomEquiv F G) (external : GeomEquiv G H) (Q : X → Ω) :
+    transportQuestion (native.trans external) Q =
+      transportQuestion external (transportQuestion native Q) := by
+  funext z
+  rfl
+
 theorem resolvedIn_transport {X : Type u} {Y : Type v} {Ω : Type z}
     {F : ReferenceFrame X} {G : ReferenceFrame Y}
     (e : GeomEquiv F G) (Q : X → Ω) :
@@ -188,6 +200,49 @@ theorem openIn_transport {X : Type u} {Y : Type v} {Ω : Type z}
   exact not_congr (resolvedIn_transport e Q)
 
 end GeomEquiv
+
+/-! ## Conditional three-frame external interaction -/
+
+/-- An exact native-then-external interaction continuously identifies three frozen isolations.
+
+Both `GeomEquiv` values are hypotheses.  The theorem therefore transports the consequences of two
+verified comparisons; it does not assert that an external assumption admits a comparison, that an
+agent discovers one, or that a non-bijective extension/quotient is a `GeomEquiv`. -/
+theorem three_frame_continuous_relational_identification
+    {X : Type u} {Y : Type v} {Z : Type w} {Ω : Type z}
+    {sourceFrame : ReferenceFrame X} {nativeFrame : ReferenceFrame Y}
+    (externalEquality : Setoid Z)
+    (native : GeomEquiv sourceFrame nativeFrame)
+    (external : GeomEquiv nativeFrame (assumeAxiomGeometry externalEquality))
+    (Q : X → Ω) :
+    (∀ x y,
+      externalEquality.r
+          ((GeomEquiv.trans native external).occurrenceEquiv x)
+          ((GeomEquiv.trans native external).occurrenceEquiv y) ↔
+        sourceFrame.equality.r x y) ∧
+    (GeomEquiv.transportQuestion (GeomEquiv.trans native external) Q =
+      GeomEquiv.transportQuestion external
+        (GeomEquiv.transportQuestion native Q)) ∧
+    (ResolvedIn sourceFrame Q ↔
+      ResolvedIn (assumeAxiomGeometry externalEquality)
+        (GeomEquiv.transportQuestion external
+          (GeomEquiv.transportQuestion native Q))) ∧
+    (OpenIn sourceFrame Q ↔
+      OpenIn (assumeAxiomGeometry externalEquality)
+        (GeomEquiv.transportQuestion external
+          (GeomEquiv.transportQuestion native Q))) := by
+  refine ⟨?_, ?_, ?_, ?_⟩
+  · intro x y
+    exact (GeomEquiv.trans native external).equality_iff x y
+  · exact GeomEquiv.transportQuestion_trans native external Q
+  · exact
+      (GeomEquiv.resolvedIn_transport native Q).trans
+        (GeomEquiv.resolvedIn_transport external
+          (GeomEquiv.transportQuestion native Q))
+  · exact
+      (GeomEquiv.openIn_transport native Q).trans
+        (GeomEquiv.openIn_transport external
+          (GeomEquiv.transportQuestion native Q))
 
 /-! ## The existing translational frame supplies every runtime `GeomEquiv` -/
 
@@ -271,5 +326,6 @@ end NRRF631Runtime
 #print axioms NRRF631Runtime.factor_through_quotient_unique
 #print axioms NRRF631Runtime.TransFrame.transGeomEquiv
 #print axioms NRRF631Runtime.TransFrame.openness_language_independent
+#print axioms NRRF631Runtime.three_frame_continuous_relational_identification
 #print axioms NRRF631Runtime.literalPole_open_in_closure
 #print axioms NRRF631Runtime.runtime_begins_in_axiom_geometry

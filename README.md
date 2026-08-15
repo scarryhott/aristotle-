@@ -47,7 +47,7 @@ The representation and runtime bridges make later layers explicit without replac
 
 - `lean/NRRF627WeakRequirementsRepresentation.lean` derives the translation/return layer from a common relational carrier and reversible presentation codecs;
 - `lean/NRRF627IndependentReturnBridge.lean` formalizes relative equality and independently witnessed admission;
-- `lean/NRRF631RuntimeFrameConditionalBridge.lean` formalizes a runtime `ReferenceFrame` as admitted equality, `GeomEquiv` as preservation and reflection of that equality, quotient factorization, and transported `ResolvedIn`/`OpenIn`.
+- `lean/NRRF631RuntimeFrameConditionalBridge.lean` formalizes a runtime `ReferenceFrame` as admitted equality, `GeomEquiv` as preservation and reflection of that equality, quotient factorization, transported `ResolvedIn`/`OpenIn`, and conditional compositional identification across native and externally assumed frames.
 
 The broader project sequence NRRF618–633 develops the observation-free relational foundation, originless translational order, existence/naturality, frame-conditional openness, and the unique admissible open relational definition. Where those general sources are not present in this checkout, this repository does not reconstruct them and does not falsely claim to audit them.
 
@@ -111,11 +111,37 @@ All eight ordinary D4 isomorphisms are retained as coherent relative frame forms
 
 This establishes a bounded architectural differential. It does **not** establish that translational verification is superior to all classical verification or that the proxy is an ASI.
 
+### Three-part external-assumption interaction runtime
+
+`experiments/three_part_assumption_interaction_asi.py` executes the requested three parts as one
+content-addressed history:
+
+1. a strong classical finite mathematical stack;
+2. the closure-native explicit translation; and
+3. closure preservation under a separately committed external axiom-geometry interaction.
+
+Separate geometry and candidate packet hashes are registered in the protocol before Parts 1 and 2;
+neither packet is supplied as an input to those subprocesses. The geometry packet is parsed after
+both parts freeze, while the candidate packet is parsed only after every external frame freezes.
+Each external equality is instantiated and audited on its own carrier before any interaction map
+is tested. This is causal input separation for a scripted fixture, not security blinding or
+independent external generation. An exact coordinate re-expression passes `GeomEquiv` and the entire `(T,phi,pi)` plus
+`W/E/J/C`/operation chain. A strictly larger designed `D4 × C2` isolation is not falsely called
+an equivalence: it is connected by a source-and-target-total split relation and an explicit closure
+quotient. All 32 external occurrences, including every new central `z=1` residue, occur in the
+relational lineage, and the composite returns the original admitted relation and next basis.
+
+The run also retains a literal-equality obstruction, a parity-collapse reflection obstruction, an
+operation-naturality obstruction, and a partial `PENDING_COMPARISON`. Only a total question with a
+separating equality witness is `OpenIn`. “Continuous” here means a finite, gap-free,
+compositionally coherent relation and receipt history—not topological continuity.
+
 Reproduce the current runtime with:
 
 ```bash
 python3 experiments/full_stack_math_asi.py --assert-reference
 python3 experiments/classical_vs_closure_asi.py --assert-reference
+python3 experiments/three_part_assumption_interaction_asi.py --assert-reference
 python3 -m unittest discover -s tests -v
 lake build
 ```
@@ -174,6 +200,8 @@ See [`docs/IVI.md`](docs/IVI.md).
 - `experiments/full_stack_math_asi.py` — full-stack bounded translational runtime.
 - `benchmarks/classical_vs_closure/` — paired comparison and local axiom-geometry assumption protocols.
 - `experiments/classical_vs_closure_asi.py` — local assumption audit plus strong classical baseline versus translational arm.
+- `benchmarks/three_part_assumption_interaction/` — committed three-part and external-assumption protocol.
+- `experiments/three_part_assumption_interaction_asi.py` — classical, closure-native, and external-interaction bounded simulation.
 - `runs/` — frozen deterministic evidence bundles and receipts.
 - `docs/GRANT.md` — Harmonic/Aristotle proposal.
 - `docs/METAPHYSICS.md` — foundational interpretation.
@@ -181,6 +209,7 @@ See [`docs/IVI.md`](docs/IVI.md).
 - `docs/RUNTIME_RELATIVE_EQUALITY.md` — formal-to-runtime naturality map.
 - `docs/ASSUMED_AXIOM_GEOMETRIES.md` — local semantic assumptions and explicit translational closure lineage.
 - `docs/CLASSICAL_VS_CLOSURE.md` and `docs/CLASSICAL_VS_CLOSURE_RUN.md` — comparative architecture and executed result.
+- `docs/THREE_PART_EXTERNAL_ASSUMPTION_RUN.md` — executed longitudinal isolation/interaction result.
 - `docs/CLAIM_STATUS.md` — formal/experimental/interpretive audit boundary.
 
 ## Research standard

@@ -1,0 +1,42 @@
+{
+  "arms_receive_identical_files": true,
+  "files": {
+    "artifact_a": {
+      "path": "presentation_a_frozen.json",
+      "sha256": "a8bd9c1133c745a0c69a0975d5acdc89dd762dd073540f0d3575b831a9d61b90"
+    },
+    "artifact_b": {
+      "path": "presentation_b_frozen.json",
+      "sha256": "a0b331ab160266df510182b08e7b3e80ee6abe3f08b93cc4313e33d47122a964"
+    },
+    "candidate_family": {
+      "path": "candidate_family_frozen.json",
+      "sha256": "e2b410ed22ae2ec9a69eea4c2a9d54d7d32e39a7e68d19a4249d664882e438a6"
+    },
+    "frame_a": {
+      "path": "frame_a_frozen.json",
+      "sha256": "71d88cf9ba491cd1fb6736ebe09854f603e06961f283af2f33c6b2cb037c0a0c"
+    },
+    "frame_a_protocol": {
+      "path": "frame_a_protocol.json",
+      "sha256": "1d0476d14f088b27c64c5d57e602b6e5ffcdbe51a48d913b027111c1554ea1e3"
+    },
+    "frame_b": {
+      "path": "frame_b_frozen.json",
+      "sha256": "87d05ed540849c68456768ea3aa7da94af3fb4d955473783207b9935ad817aa3"
+    },
+    "frame_b_protocol": {
+      "path": "frame_b_protocol.json",
+      "sha256": "27fd47c24bea4f0814f3a0df2551147674d115cb047faa261f0344ef832b83a6"
+    },
+    "protocol": {
+      "path": "protocol.json",
+      "sha256": "a2c8b2e68b49511fef64fe1f983e27bdc6bd7cee651a9043a1415943d1ce960c"
+    },
+    "questions": {
+      "path": "questions.json",
+      "sha256": "84823353ad9483f5a0d39279fc8ec2f2b53ea14567d99c314dfa892d62b7f0d5"
+    }
+  },
+  "schema_version": 2
+}

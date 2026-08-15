@@ -1,0 +1,192 @@
+{
+  "artifact_a_content_sha256": "f00379bd3762fb74041b1685498902ab2898f7df2487b54f38118113d2c18f42",
+  "artifact_b_content_sha256": "228046949a947d10b65d9fb7efd4ea50c41b85e88006c27c6538294363fbd580",
+  "candidate_status": "raw proposals; no mapping is a GeomEquiv by assertion",
+  "cases": [
+    {
+      "candidate_mappings": [
+        {
+          "b0": "a0",
+          "b1": "a1",
+          "b2": "a3",
+          "b3": "a2",
+          "b4": "a5",
+          "b5": "a4",
+          "b6": "a6",
+          "b7": "a7"
+        }
+      ],
+      "case": "natural_contact",
+      "episode_role": "actual",
+      "independent_contact": true,
+      "self_certification": false
+    },
+    {
+      "candidate_mappings": [
+        {
+          "b0": "a0",
+          "b1": "a1",
+          "b2": "a6",
+          "b3": "a7",
+          "b4": "a5",
+          "b5": "a4",
+          "b6": "a3",
+          "b7": "a2"
+        }
+      ],
+      "case": "natural_reversal",
+      "episode_role": "counterfactual",
+      "independent_contact": true,
+      "self_certification": false
+    },
+    {
+      "candidate_mappings": [
+        {
+          "b0": "a0",
+          "b1": "a1",
+          "b2": "a3",
+          "b3": "a2",
+          "b4": "a5",
+          "b5": "a4",
+          "b6": "a6",
+          "b7": "a7"
+        },
+        {
+          "b0": "a0",
+          "b1": "a1",
+          "b2": "a6",
+          "b3": "a7",
+          "b4": "a5",
+          "b5": "a4",
+          "b6": "a3",
+          "b7": "a2"
+        },
+        {
+          "b0": "a0",
+          "b1": "a2",
+          "b2": "a3",
+          "b3": "a4",
+          "b4": "a5",
+          "b5": "a7",
+          "b6": "a6",
+          "b7": "a1"
+        },
+        {
+          "b0": "a0",
+          "b1": "a2",
+          "b2": "a6",
+          "b3": "a1",
+          "b4": "a5",
+          "b5": "a7",
+          "b6": "a3",
+          "b7": "a4"
+        },
+        {
+          "b0": "a0",
+          "b1": "a4",
+          "b2": "a3",
+          "b3": "a7",
+          "b4": "a5",
+          "b5": "a1",
+          "b6": "a6",
+          "b7": "a2"
+        },
+        {
+          "b0": "a0",
+          "b1": "a4",
+          "b2": "a6",
+          "b3": "a2",
+          "b4": "a5",
+          "b5": "a1",
+          "b6": "a3",
+          "b7": "a7"
+        },
+        {
+          "b0": "a0",
+          "b1": "a7",
+          "b2": "a3",
+          "b3": "a1",
+          "b4": "a5",
+          "b5": "a2",
+          "b6": "a6",
+          "b7": "a4"
+        },
+        {
+          "b0": "a0",
+          "b1": "a7",
+          "b2": "a6",
+          "b3": "a4",
+          "b4": "a5",
+          "b5": "a2",
+          "b6": "a3",
+          "b7": "a1"
+        }
+      ],
+      "case": "structural_family",
+      "episode_role": "counterfactual",
+      "independent_contact": false,
+      "self_certification": false
+    },
+    {
+      "candidate_mappings": [
+        {
+          "b0": "a0",
+          "b1": "a0",
+          "b2": "a3",
+          "b3": "a3",
+          "b4": "a5",
+          "b5": "a5",
+          "b6": "a6",
+          "b7": "a6"
+        }
+      ],
+      "case": "equality_collapse",
+      "episode_role": "counterfactual",
+      "independent_contact": false,
+      "self_certification": false
+    },
+    {
+      "candidate_mappings": [
+        {
+          "b0": "a0",
+          "b1": "a2",
+          "b2": "a3",
+          "b3": "a1",
+          "b4": "a5",
+          "b5": "a4",
+          "b6": "a6",
+          "b7": "a7"
+        }
+      ],
+      "case": "operation_twist",
+      "episode_role": "counterfactual",
+      "independent_contact": false,
+      "self_certification": false
+    },
+    {
+      "candidate_mappings": [
+        {
+          "b0": "a0",
+          "b1": "a1",
+          "b2": "a3",
+          "b3": "a2"
+        }
+      ],
+      "case": "partial_comparison",
+      "episode_role": "counterfactual",
+      "independent_contact": false,
+      "self_certification": false
+    },
+    {
+      "candidate_mappings": [],
+      "case": "self_certification_only",
+      "episode_role": "counterfactual",
+      "independent_contact": false,
+      "self_certification": true
+    }
+  ],
+  "frame_inputs_visible": false,
+  "question_inputs_visible": false,
+  "runtime_id": "raw-post-frame-candidate-constructor",
+  "schema_version": 2
+}

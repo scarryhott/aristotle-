@@ -81,6 +81,44 @@ informational differential, not evidence that closure is a more capable ASI.
 See [`CLASSICAL_VS_CLOSURE_RUN.md`](CLASSICAL_VS_CLOSURE_RUN.md) and
 [`../benchmarks/classical_vs_closure/RUNBOOK.md`](../benchmarks/classical_vs_closure/RUNBOOK.md).
 
+## E0.9 — Three-part relational-preservation simulation
+
+Status: **EXECUTED BOUNDED PROXY; FRONTIER EXTERNAL-ASSUMPTION STUDY OPEN**.
+
+The simulation composes three verification parts over one frozen history: a strong classical
+finite stack, the closure-native `(T,phi,pi)` translation, and an external-assumption interaction.
+The protocol registers separate external-geometry and candidate-packet hashes. Neither packet is
+supplied as an input to Parts 1 or 2. Geometry definitions are parsed after both freeze; candidate
+proposals are parsed only after the resulting external frame artifacts freeze. This is a scripted
+causal-isolation control, not a blinded or independently generated external system. Each equality
+is instantiated and audited in its own declared geometry before interaction candidates are
+constructed.
+
+The exact external coordinate isolation passes equality preservation and reflection plus
+`W/E/J/C` and operation naturality. The selected history then enters a new 16-identity,
+32-occurrence `D4 × C2` geometry. Because the split extension and closure quotient are not
+bijective, they are explicitly typed relations rather than `GeomEquiv`. The split relation covers
+every source and target occurrence, including every new `z=1` residue; the quotient records its
+expected reflection loss; and the complete composite recovers all 16 original occurrence
+lineages, 256 equality comparisons, and the returned next basis.
+
+Controls retain three distinct failure boundaries: literal constructor equality fails
+preservation; a normal-subgroup parity quotient preserves forward but fails reflection; and a
+bijection can pass `GeomEquiv` while failing operation naturality. A partial interaction remains
+`PENDING_COMPARISON`, never `OpenIn`.
+
+Here continuous relational identification means
+
+```text
+F_B --GeomEquiv--> F_A --GeomEquiv--> F_external
+    --split relation--> F_D4xC2 --closure quotient--> F_A
+```
+
+with immutable isolation IDs, adjacent certificates, total relational coverage, explicit
+occurrence paths, and composite agreement. It is finite/compositional continuity, not a topology.
+See [`THREE_PART_EXTERNAL_ASSUMPTION_RUN.md`](THREE_PART_EXTERNAL_ASSUMPTION_RUN.md) and
+[`../benchmarks/three_part_assumption_interaction/RUNBOOK.md`](../benchmarks/three_part_assumption_interaction/RUNBOOK.md).
+
 ## E1 — Representation re-expression
 
 Status: **EXPERIMENTAL DESIGN**.

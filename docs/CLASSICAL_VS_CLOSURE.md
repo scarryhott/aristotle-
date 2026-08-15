@@ -107,3 +107,12 @@ The bounded run found an informational extension but not capability superiority.
 hypothesis is falsified at scale if a strong fixed-frame/equivalence baseline produces the same
 auditable relations with equal or lower cost, or if closure comparison must secretly select a
 canonical frame. See [`CLASSICAL_VS_CLOSURE_RUN.md`](CLASSICAL_VS_CLOSURE_RUN.md).
+
+## Three-part continuation
+
+The paired comparison is now reused unchanged as Parts 1 and 2 of a separately receipted external
+interaction simulation. Part 3 does not weaken the classical arm and does not retroactively alter
+either local equality. It first evaluates each revealed external assumption in its own frame, then
+tests exact interactions as `GeomEquiv` and non-bijective extensions/quotients under distinct typed
+contracts. This adds longitudinal evidence, not a claim that the closure architecture is an ASI.
+See [`THREE_PART_EXTERNAL_ASSUMPTION_RUN.md`](THREE_PART_EXTERNAL_ASSUMPTION_RUN.md).

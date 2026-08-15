@@ -139,12 +139,41 @@ Assuming a novel geometry is a semantic evaluation boundary, not an empirical su
 Internal incoherence and failure to find a preserving-and-reflecting translation remain admissible
 negative outcomes. Equality or questions may never be revised after cross-frame evidence is seen.
 
+### Three-part longitudinal external-assumption study
+
+The repository also executes a bounded three-part rehearsal of the grant experiment:
+
+```text
+strong classical stack
+  → closure-native translation
+  → closure interaction with a separately committed external axiom-geometry.
+```
+
+The third part tests preservation as continuous formal relational identification of distinct
+isolations. Every isolation keeps an immutable frame and assumption ID; every adjacent transition
+has a typed relation or obstruction; and every downstream result cites the complete transition
+path. Exact re-expressions must satisfy `GeomEquiv` in both directions. Conservative extensions
+and quotients are typed separately and must prove their image/quotient laws, `W/E/J/C` and
+operation behavior, target coverage, and composition with the preceding trace.
+
+The current finite positive fixture introduces an externally assumed central `C2`, producing
+`D4 × C2`, then returns through a closure quotient. Every new central residue is relationally
+identified and the round trip recovers the already admitted native relation. Negative controls
+separately expose preservation, reflection, naturality, and missing-data failures. This is a
+protocol execution, not evidence that arbitrary external assumptions preserve closure.
+
+For the funded study, the external assumptions must be produced independently and committed before
+the interacting verifier sees them. The central question is whether richer autonomous mathematics
+provides nontrivial traces of this kind—or useful explicit obstructions—without redefining earlier
+equalities after contact.
+
 The project has four deliverables.
 
 1. **Frontier-agent frame generation.** Replace bounded learners with increasingly capable isolated mathematical agents, ultimately Aristotle, and freeze each generated frame before cross-frame candidate search.
 2. **Natural translational comparison.** Search post hoc for comparisons that preserve and reflect each frame's own admitted equality and then test return, orientation, reversal, curvature, and learned-operation naturality.
 3. **Conditional resolution boundary.** Determine which total questions factor through each frame's equality, which have explicit `OpenIn` witnesses, and how those relations transport across admitted frame equivalences.
-4. **Adversarial and comparative evaluation.** Compare against a strong ordinary proof/isomorphism baseline and include noncanonical natural transformations, equality collapse, operation twists, and transformations outside the verifier's anticipated vocabulary.
+4. **External-assumption interaction.** Introduce separately committed external geometries, preserve their isolation IDs, and test exact, conservative-extension, quotient, and obstructed relational histories compositionally.
+5. **Adversarial and comparative evaluation.** Compare against a strong ordinary proof/isomorphism baseline and include noncanonical natural transformations, equality collapse, operation twists, and transformations outside the verifier's anticipated vocabulary.
 
 ## Scale-up protocol
 

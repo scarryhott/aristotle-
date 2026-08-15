@@ -10,6 +10,7 @@ Before submitting a change, run:
 python3 -m unittest discover -s tests -v
 python3 experiments/full_stack_math_asi.py --assert-reference
 python3 experiments/classical_vs_closure_asi.py --assert-reference
+python3 experiments/three_part_assumption_interaction_asi.py --assert-reference
 lake build
 ```
 
@@ -25,3 +26,10 @@ record must preserve explicit assumption and `(T,phi,pi)` lineage. The fixed-fra
 a strong ordinary isomorphism baseline; the discrete frame is only a frame-relativity control.
 Never optimize the number of `OpenIn` results or convert pending data, structural non-selection, or
 self-certification into openness.
+
+External-interaction changes must register separate geometry and candidate packets before Parts 1
+and 2 freeze, give the local evaluator only its geometry declaration, and retain every isolation ID. Call a
+transition `GeomEquiv` only when it is a bijection preserving and reflecting equality. Type split
+extensions and quotients separately, require total relational coverage and composite agreement,
+and never silently discard an external residue. “Continuous” means finite compositional lineage
+unless a topology and continuity law are explicitly added.
