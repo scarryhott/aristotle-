@@ -2,7 +2,20 @@
 
 ## Research objective
 
-Develop and test **translational axiometry as a verification architecture for mathematical superintelligence**: verification by recoverable relational equality when a mathematical agent can change its language, axioms, geometry, orientation, proof strategy, and internal representation.
+Develop and test **translational axiometry as a verification architecture for mathematical superintelligence**.
+
+The foundational proposal is prior to the verification application: **axioms are relative to their geometries/reference frames, and translation is foundational to the natural existence available between such frames**. A novel mathematical frame is first admitted conditionally in its own unified axiom-geometry. It is not judged by silently treating an older frame as neutral. Cross-frame identity, when available, is disclosed through coherent translation and relational return.
+
+The proposed order is therefore:
+
+```text
+natural translational existence
+    → relative axiom ↔ geometry frames
+    → admitted equality
+    → relational definition
+    → closure forms / resolution / openness
+    → mathematical-ASI verification.
+```
 
 Classical formal verification answers:
 
@@ -10,19 +23,15 @@ Classical formal verification answers:
 
 The second-order mathematical-ASI question is:
 
-> When independently generated axiom-geometries use different presentations, what form of equality can be recovered between them without declaring either presentation the absolute reference frame?
+> When independently generated axiom-geometries stand in their own mathematical forms, what equality can be recovered naturally between them without declaring either frame the absolute definition of the other?
 
-The project treats a reference frame as the form of equality admitted by its axiom geometry. Resolution is therefore conditional on the frame: a question is resolved when it factors through that equality, and open relative to the frame otherwise. Equivalent frames transport both equality and openness. The grant does not seek an absolute frame that eliminates this conditionality; it tests whether coherent translation and relational return continue to provide verification as representational freedom increases.
+The grant does not seek a final absolute frame that eliminates this conditionality. It tests whether natural translation and relational return remain useful as independently generated mathematical frames become substantially more autonomous.
 
 ## Formal foundation already established
 
-The observation-free translational development is the foundation. It does not define closure from an observation map or from one canonical coordinate system.
+The observation-free translational development is foundational to the project. It does not define closure from an observation map, a truth-status enum, or one canonical coordinate system.
 
-Across the NRRF618–631 sequence, the formal programme establishes the following conditional structure.
-
-### Translational frame
-
-For languages `ℓ,m`, occurrences and returned relational identities are connected by
+For languages `ℓ,m`, the formal translational frame contains
 
 ```text
 W_ℓ : Y_ℓ → B_ℓ
@@ -32,149 +41,120 @@ T_ℓm : Y_ℓ → Y_m
 W_m(T_ℓm u) = φ_ℓm(W_ℓ u).
 ```
 
-No language is the absolute origin. Pairwise translations obey identity and composition laws; reversal `J`, curvature representative `C`, and polar orientation travel naturally with translation.
+No language is the absolute origin. Pairwise translations obey identity and composition laws; orientation, reversal `J`, and curvature representative `C` travel with translation.
 
-### Equality and identity
+The metaphysical reading is stronger than ordinary covariance: the common identity of relative frames is not assumed before this relation and then transported. **Naturally commuting translation is the formal expression of the relational existence available between the frames.** The categorical language that later appears is a mathematical consequence/expression of this foundation, not the claimed novelty by itself.
 
-Closure equality is relative equality through return:
+### Relative equality and identity
+
+Within a translational frame, closure equality is relational equality through return:
 
 ```text
 u ≡_C v  iff  W_ℓ(u) = W_ℓ(v).
 ```
 
-Translation preserves and reflects this equality. The returned identity basis is naturally equivalent to the quotient of occurrences by closure equality:
+Translation preserves and reflects this equality. In the broader formal sequence, the returned identity basis is naturally equivalent to the quotient of occurrences by this equality, and invariant content factors through returned relational identity.
+
+The later uniqueness theorem NRRF633 sharpens the downstream definitional result: conditional on the translational frame, any relational definition that is returning and grounded is uniquely closure equality. Its translation naturality is then forced. Thus the unique admissible open relational definition follows from the foundational translational structure; it is not where foundational translation originates.
+
+### Axiom geometry and frame-conditional openness
+
+A reference frame is represented by its admitted equality. A new axiom-geometry is first evaluated under its own equality, not against an old frame's literal identity.
+
+A comparison becomes `GeomEquiv` when it preserves and reflects the equalities of both frames:
 
 ```text
-Y_ℓ / ≡_C  ≃  B_ℓ.
+x ~_F y  ↔  T(x) ~_G T(y).
 ```
 
-Thus the identity basis is recoverable from relational equality rather than requiring a privileged presentation.
+Only after this equality equivalence is established are downstream naturality conditions checked.
 
-### Existence and naturality
+Resolution and openness are likewise frame-relative:
 
-NRRF630 makes the translational consequences categorical. Occurrences and identities form functors over the language groupoid; return is a natural transformation; reversal and curvature are natural endomorphisms. Natural polar sections exist, and under separation their polar choice is exactly a relative `Z/2` orientation. A universal relational identity exists, and every language-independent, closure-respecting verdict factors uniquely through it. Every language can represent that universal identity; none becomes its privileged origin.
+```text
+ResolvedIn(F,Q)  ↔  Q factors through F's equality quotient
+OpenIn(F,Q)      ↔  Q separates an explicit pair that F equates.
+```
 
-### Frame-conditional openness
-
-NRRF631 formalizes the axiom-geometry/reference-frame claim directly. A reference frame is its admitted form of equality. A question is resolved in a frame exactly when it factors through the quotient by that equality. The same nonconstant question can therefore be resolved in one frame and open in another. Equivalent axiom-geometries transport resolution and openness, so openness is a relation between a question and a frame, not an absolute truth-status emitted by closure.
-
-The runtime consequently records independently selected `GeomEquiv` comparisons, concrete counterexamples, and total question relations that explicitly name their frames. Non-selection and incomplete comparisons are not classified as `OpenIn`. `W` returns relational content; it never returns a static TRUE/FALSE/OPEN label.
+Non-selection, missing comparison data, and pending verification are not `OpenIn`. `W` returns relational content; it never emits a static TRUE/FALSE/OPEN value.
 
 ## Existing bounded operational realization
 
-The repository contains an executed finite classical mathematical-agent realization of selected translational consequences. It is not an Aristotle run and not a claim about arbitrary ASI.
+The repository contains an executed finite classical mathematical-agent realization. It is not an Aristotle run and not a claim about arbitrary ASI.
 
-Its process boundary remains:
-
-```text
-(A,B)_learn+execute ≺ freeze ≺ (T,φ,π)_posthoc.
-```
-
-After freeze, the mathematics begins in this order:
+Two isolated symbolic learners independently produce and execute different D4 presentations. Their local frame equalities are frozen before candidate comparison. After freeze, the mathematical order is:
 
 ```text
-closure equality ≺ ReferenceFrame ≺ GeomEquiv(T,φ,π)
-                 ≺ return/naturality ≺ ResolvedIn/OpenIn ≺ next basis.
+primitive frame equality
+    ≺ raw candidate T
+    ≺ GeomEquiv
+    ≺ admitted translation
+    ≺ return / operation naturality
+    ≺ ResolvedIn / OpenIn
+    ≺ next basis.
 ```
 
-Two isolated symbolic learners independently learn and execute different D4 presentations before their artifacts are frozen. Only afterward is a cross-language comparison family constructed.
+All eight ordinary D4 isomorphisms remain admissible relative frame forms, including orientation reversal. A valid reversal is not rejected merely because it differs from one coordinate convention. The paired runtime includes two staged adversaries: `equality_collapse` can preserve equality while failing reflection; `operation_twist` can satisfy `GeomEquiv` while failing downstream operation naturality.
 
-The post-hoc construction retains all eight coherent D4 `GeomEquiv` forms rather than selecting one canonical coordinate system. Four preserve orientation and four reverse it. Relative reversal remains admissible when its induced `φ` and `π` travel naturally with it. A sign-erasing deformation is the negative control: it fails equality reflection, bijectivity, and learned-operation naturality and therefore cannot extend to the required translational comparison.
+The translational arm therefore does not win by using a weaker classical baseline. A strong ordinary-isomorphism arm receives the same frozen content-addressed inputs and accepts all eight genuine D4 isomorphisms. The translational arm agrees on those ordinary equivalences while additionally producing equality-transport, quotient, naturality, witnessed-openness, and next-basis certificates.
 
-The finite runtime exhaustively realizes selected NRRF630/631 consequences:
-
-- preservation and reflection of frame equality over all occurrence pairs;
-- return naturality `W_m(Tu)=φ(W_ℓu)`;
-- occurrence/identity operation naturality;
-- reversal and curvature naturality;
-- quotient-basis recovery;
-- natural polar sections and reversal of orientation;
-- the complete finite `Ω = Bool` instance of universal factorization;
-- transported resolution and openness for explicitly named frame-question pairs;
-- multiple coherent axiom-geometry equivalences without an absolute origin.
-
-The runtime distinguishes mathematical admissibility from episode admission. A coherent `GeomEquiv` can exist without receiving an episode receipt; a receipt requires independently witnessed relational contact in the actual episode. Self-certification is not such a witness.
+This establishes only a **bounded architectural differential**. It does not establish ASI superiority.
 
 ## What the grant is for
 
-The foundational question is no longer whether one fixed `TransFrame` can be made internally invariant. The formal programme already establishes the conditional translational consequences and the bounded runtime realizes them on a finite mathematical system.
-
 The funded question is:
 
-> **As independently operating mathematical agents gain enough freedom to invent new representations and axiom-geometries, can verification continue to be recovered as coherent translation and relational equality without fixing one representation as the absolute reference frame?**
-
-### Paired classical-versus-translational study
-
-The funded experiment compares verification architectures over the **same** independently produced
-and frozen mathematical artifacts, tools, proof kernel, and compute budget. It does not compare a
-weakened classical model with a stronger closure model.
-
-The fixed-frame arm records local proof terms and kernel verdicts and applies a strong ordinary
-equivalence/isomorphism baseline to every proposed cross-presentation map. It may accept
-noncanonical isomorphisms and orientation reversal. The translational arm first freezes each
-artifact's independently derived equality geometry and every total question. A raw candidate `T`
-is then promoted to an admitted translation only after equality preservation and reflection establish
-`GeomEquiv`; return, extension, reversal, curvature, quotient factorization, witnessed openness,
-and held-out next-basis transfer are downstream checks.
-
-The comparative hypothesis is not that ordinary mathematics cannot express isomorphism. It is
-that an explicit origin-free frame/`GeomEquiv` pipeline yields auditable cross-presentation
-evidence—transport, obstruction, and frame-qualified resolution/openness—not contained in
-per-artifact kernel acceptance alone.
-
-The repository now executes this paired protocol on a bounded D4 proxy. The grant replaces that
-fixture with independently generated, substantially richer mathematical systems. The
-added-utility hypothesis is not supported if the strong fixed-frame baseline recovers the same
-relations with equal or lower cost, if equality or questions must be revised after `T` is seen, or
-if closure requires a secretly canonical frame.
+> **As independently operating mathematical agents invent new axiom-geometries, can each frame first stand in its own unified mathematics and then participate in naturally recoverable translational equality with other frames, without a privileged reference language being smuggled in as the definition of all of them?**
 
 The project has four deliverables.
 
-1. **Frontier-agent translational experiments.** Replace the bounded learners with increasingly capable isolated mathematical agents, ultimately Aristotle, while preserving precommit, independent work, artifact freeze, and post-hoc construction of `(T,φ,π)`.
-2. **Axiom-geometry comparison boundary.** Determine which independently generated mathematical frames admit coherent translational equality, which total questions remain open relative to their named equality frames, and which proposed comparisons have explicit operation-level obstructions.
-3. **Adversarial representation change.** Test orientation reversal, noncanonical but natural re-expression, proof-preserving representation changes, deliberately non-natural deformations, and transformations outside the verifier's anticipated vocabulary.
-4. **Formal return reports.** For every experiment, separate machine-checked relational equalities from counterexamples and from total questions still open relative to the compared frames. Formal proof-search statuses may be reported, but they are never outputs of closure itself.
+1. **Frontier-agent frame generation.** Replace bounded learners with increasingly capable isolated mathematical agents, ultimately Aristotle, and freeze each generated frame before cross-frame candidate search.
+2. **Natural translational comparison.** Search post hoc for comparisons that preserve and reflect each frame's own admitted equality and then test return, orientation, reversal, curvature, and learned-operation naturality.
+3. **Conditional resolution boundary.** Determine which total questions factor through each frame's equality, which have explicit `OpenIn` witnesses, and how those relations transport across admitted frame equivalences.
+4. **Adversarial and comparative evaluation.** Compare against a strong ordinary proof/isomorphism baseline and include noncanonical natural transformations, equality collapse, operation twists, and transformations outside the verifier's anticipated vocabulary.
 
 ## Scale-up protocol
 
-Preserve the causal boundary:
+The frontier experiment preserves the foundational order:
 
 ```text
-independent mathematical work
-    → immutable artifact freeze
-    → reference-frame equality
-    → (T,φ,π) discovered and checked as GeomEquiv
-    → W_m(Tu) = φ(W_ℓu) and transported frame-question relations
-    → independently returned relation may enter the next learning basis
+independent frame A                independent frame B
+       ↓                                  ↓
+its own axiom-geometry              its own axiom-geometry
+       ↓                                  ↓
+its admitted equality               its admitted equality
+        \                                /
+         \------ raw T search ----------/
+                    ↓
+                 GeomEquiv?
+                    ↓
+          natural translation / return?
+                    ↓
+       transported resolution / openness
+                    ↓
+                 next basis
 ```
 
-The key measurements are not agreement with a canonical coordinate system. They are whether independently generated frames support coherent relative comparisons; whether valid orientation changes remain admissible; whether non-natural transformations expose explicit obstructions; whether nontrivial total questions remain conditionally open under the relevant axiom geometry; and whether returned equality can support subsequent mathematical work.
+The frames and their total questions must be fixed before the candidate comparison is inspected. Otherwise the experiment would test compatibility by construction rather than the foundational proposal.
 
-For the paired study, measurements also include ordinary-isomorphism coverage, false admission on
-adversarial maps, the number and size of equality/naturality certificates, transported quotient
-factors and separating witnesses, downstream task transfer, runtime, and evidence size. The raw
-number of `OpenIn` records is never an optimization target.
+Measurements include ordinary-isomorphism coverage, preservation/reflection of frame equality, downstream naturality, quotient factors, explicit openness witnesses, operation-level counterexamples, next-basis transfer, runtime, and evidence size. The number of open questions is not itself an optimization target.
 
 ## Success and falsification
 
-A successful project need not show that every mathematical frame closes with every other frame. That would contradict the conditional role of axiom geometry.
+Success does not mean every axiom-geometry translates to every other axiom-geometry. Such a requirement would contradict the conditional role of the frame.
 
-Positive evidence is the discovery of post-hoc translations whose operations commute and whose relational equality transports naturally across independently generated frames.
+Positive evidence is an independently generated pair of frames whose own equality geometries support a post-hoc natural translational relation.
 
-Negative evidence is an explicit obstruction showing why a proposed comparison cannot extend to such a translation.
+Negative evidence is an explicit obstruction showing where equality equivalence or downstream naturality fails.
 
-An open result is also substantive when the current frame equality does not resolve a named total question. Openness is preserved as frame-relative structure rather than converted into an arbitrary static verdict. Absence of contact or missing comparison data remains separately classified as non-selection or pending verification.
+Frame-relative openness is substantive when a named total question separates occurrences admitted equal by its own frame. It is not a fallback label for missing evidence.
 
-The architecture is challenged if, as representational freedom increases, the proposed translational conditions cease to distinguish coherent relative equality from non-natural deformation, or if the framework requires secretly privileging one fixed language to make its comparisons work.
-
-The paired protocol is also invalid if frame equality or total questions are constructed after a
-candidate comparison is inspected. In that case it tests compatibility by design rather than the
-foundational claim.
+The architecture is challenged if increasingly autonomous frames can only be compared by forcing them back into one privileged coordinate system; if equality or questions must be rewritten after a candidate translation is seen; if the strong classical baseline recovers the same cross-frame evidence with equal or lower cost; or if the translational stages cease to distinguish equality collapse from downstream non-naturality.
 
 ## Why this matters for mathematical superintelligence
 
-A verifier that requires a future intelligence to retain today's mathematical representation risks confusing verification with a capability ceiling. A sufficiently capable mathematical system may alter not merely a theorem but its language, axioms, geometry, orientation, and internal basis of representation.
+A sufficiently capable mathematical system may alter not merely a theorem but the axiom-geometric reference frame in which its mathematics is constituted. A verifier that demands permanent allegiance to today's frame risks confusing verification with a representational capability ceiling.
 
-Translational axiometry proposes a different invariant: not static identity of presentation, but **recoverable relational equality between axiom-geometric reference frames**.
+Translational axiometry proposes that a novel frame be admitted first in its own unified mathematics and that verification between frames consist in **naturally recoverable relational equality**, not static identity of presentation.
 
-The grant tests whether that conditional, origin-free form of verification scales from the machine-checked theory and finite exhaustive realization to mathematical agents whose representations are increasingly autonomous and less human-selected.
+The grant tests whether this foundational proposal scales from the machine-checked conditional theory and finite exhaustive realization to mathematical agents whose axiom-geometries are increasingly autonomous and less human-selected.
