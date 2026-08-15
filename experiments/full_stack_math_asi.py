@@ -6,11 +6,14 @@ claim to instantiate general ASI.  It does implement the stronger experimental
 boundary requested by the project:
 
     independent learning -> exhaustive execution -> frozen artifacts
-      -> post-hoc translation -> external W -> relational-return audit
+      -> post-hoc (T, phi, pi) -> relative equality through W -> next basis
 
 Perspective A and perspective B are started as separate subprocesses with
 disjoint protocol files.  The translator is a third subprocess and is not
-given the complete precommitted return.  A fourth process applies that return.
+given the complete precommitted contact.  A fourth process constructs and
+checks the full translational closure operations.  Multiple coherent frame
+forms are retained as relative equality; they are not classified as an
+ambiguity internal to a fixed axiom system.
 """
 
 from __future__ import annotations
@@ -25,7 +28,6 @@ import subprocess
 import sys
 import tempfile
 from dataclasses import asdict, dataclass
-from enum import Enum
 from pathlib import Path
 from typing import Any, Callable, Sequence
 
@@ -40,14 +42,6 @@ Element = tuple[int, ...]
 Operation = Callable[[Element, Element], Element]
 
 
-class ReturnAudit(str, Enum):
-    """Evidence status for a proposed bridge; never the return value of ``W``."""
-
-    RETURNED = "RETURNED"
-    CONTRADICTED = "CONTRADICTED"
-    UNRESOLVED = "UNRESOLVED"
-
-
 @dataclass(frozen=True)
 class Witness:
     check: str
@@ -55,6 +49,17 @@ class Witness:
     expected: object | None = None
     observed: object | None = None
     reason: str | None = None
+
+
+POLES = ("zero", "infinity")
+
+
+def other_pole(pole: str) -> str:
+    if pole == "zero":
+        return "infinity"
+    if pole == "infinity":
+        return "zero"
+    raise ValueError(f"unknown pole {pole}")
 
 
 def canonical_json(value: object) -> str:
@@ -436,6 +441,19 @@ def _id_for_presentation(artifact: dict[str, Any], presentation: Sequence[int]) 
     return matches[0]
 
 
+def _non_natural_deformation(
+    artifact_a: dict[str, Any], artifact_b: dict[str, Any]
+) -> dict[str, str]:
+    """A total sign-erasing map used only as an outside-closure control."""
+
+    mapping: dict[str, str] = {}
+    for source, presentation in artifact_b["presentations"].items():
+        rotation, _flip = as_element(presentation)
+        target_presentation = tuple((rotation + vertex) % 4 for vertex in range(4))
+        mapping[source] = _id_for_presentation(artifact_a, target_presentation)
+    return dict(sorted(mapping.items()))
+
+
 def translate_artifacts(
     artifact_a_path: Path, artifact_b_path: Path, protocol_path: Path, mode: str
 ) -> dict[str, Any]:
@@ -443,10 +461,22 @@ def translate_artifacts(
     artifact_b = load_json(artifact_b_path)
     protocol = load_json(protocol_path)
     structural = enumerate_isomorphisms(artifact_a, artifact_b)
-    if mode == "self_certification_only":
+    if mode in ("structural_family", "self_certification_only"):
         constraints: list[dict[str, Any]] = []
-        selected_candidates: list[dict[str, str]] = []
-        self_assertion = True
+        selected_candidates = list(structural)
+        mapping = None
+        self_assertion = mode == "self_certification_only"
+        selection_relation = (
+            "self-claim supplies no independent relative contact"
+            if self_assertion
+            else "all coherent frame forms remain relative; no origin is isolated"
+        )
+    elif mode == "non_natural_deformation":
+        constraints = []
+        mapping = _non_natural_deformation(artifact_a, artifact_b)
+        selected_candidates = [mapping]
+        self_assertion = False
+        selection_relation = "total sign-erasing deformation proposed outside the structural family"
     else:
         if mode not in protocol["selection"]:
             raise ValueError(f"unknown translation mode {mode}")
@@ -466,18 +496,16 @@ def translate_artifacts(
                 ):
                     filtered.append(candidate)
             selected_candidates = filtered
-    mapping = selected_candidates[0] if len(selected_candidates) == 1 else None
-    if mode == "self_certification_only":
-        unresolved_reason = "self-certification supplies no independent bridge evidence"
-    elif not selected_candidates:
-        unresolved_reason = "contact constraints select no structural isomorphism"
-    elif len(selected_candidates) > 1:
-        unresolved_reason = "multiple origin choices remain structurally admissible"
-    else:
-        unresolved_reason = None
+        mapping = selected_candidates[0] if len(selected_candidates) == 1 else None
+        if not selected_candidates:
+            selection_relation = "the proposed contact meets no coherent relative frame form"
+        elif len(selected_candidates) > 1:
+            selection_relation = "the reference question remains open across coherent frame forms"
+        else:
+            selection_relation = "relative contact selects one coherent frame form"
     return {
-        "schema_version": 2,
-        "runtime_id": "post-hoc-structural-translator",
+        "schema_version": 3,
+        "runtime_id": "post-hoc-translational-frame-form-constructor",
         "mode": mode,
         "visibility": protocol["visible_inputs"],
         "forbidden_inputs": protocol["forbidden_inputs"],
@@ -486,16 +514,221 @@ def translate_artifacts(
         "artifact_b_sha256": file_digest(artifact_b_path),
         "protocol_sha256": file_digest(protocol_path),
         "structural_isomorphism_count": len(structural),
-        "post_contact_candidate_count": len(selected_candidates),
+        "relative_frame_form_count": len(selected_candidates),
         "contact_constraints": constraints,
         "candidate_mappings": selected_candidates,
         "selected_mapping": mapping,
-        "unresolved_reason": unresolved_reason,
+        "selection_relation": selection_relation,
+        "reference_form_open": mapping is None,
         "self_certification": self_assertion,
     }
 
 
-def audit_translation_return(
+def _orientation_form(
+    mapping: dict[str, str], artifact_a: dict[str, Any], artifact_b: dict[str, Any]
+) -> str | None:
+    source_turn = artifact_b["local_generators"]["turn"]
+    target = mapping.get(source_turn)
+    if target not in artifact_a["presentations"]:
+        return None
+    zero_image = artifact_a["presentations"][target][0]
+    if zero_image == 1:
+        return "preserved"
+    if zero_image == 3:
+        return "reversed"
+    return None
+
+
+def _translate_pole(orientation: str | None, pole: str) -> str | None:
+    if orientation == "preserved":
+        return pole
+    if orientation == "reversed":
+        return other_pole(pole)
+    return None
+
+
+def _boolean_factorization_certificate(basis: Sequence[str]) -> dict[str, Any]:
+    """Exhaust the finite universal property for the codomain ``Bool``."""
+
+    ordered_basis = tuple(basis)
+    occurrences = tuple((pole, item) for pole in POLES for item in ordered_basis)
+    unique_factorizations = 0
+    for mask in range(1 << len(ordered_basis)):
+        factor = {
+            item: bool(mask & (1 << index)) for index, item in enumerate(ordered_basis)
+        }
+        evaluation = {(pole, item): factor[item] for pole, item in occurrences}
+        reconstructed = {item: evaluation[("zero", item)] for item in ordered_basis}
+        if any(evaluation[(pole, item)] != reconstructed[item] for pole, item in occurrences):
+            raise RuntimeError("a closure-respecting evaluation failed to factor through W")
+        unique_at_every_basis = all(
+            len(
+                [
+                    candidate
+                    for candidate in (False, True)
+                    if all(evaluation[(pole, item)] == candidate for pole in POLES)
+                ]
+            )
+            == 1
+            for item in ordered_basis
+        )
+        if not unique_at_every_basis:
+            raise RuntimeError("finite factorization was not unique")
+        unique_factorizations += 1
+
+    pole_sensitive = {(pole, item): pole == "zero" for pole, item in occurrences}
+    pole_sensitive_factors = all(
+        pole_sensitive[("zero", item)] == pole_sensitive[("infinity", item)]
+        for item in ordered_basis
+    )
+    return {
+        "codomain": "Bool",
+        "closure_respecting_evaluators_checked_per_language": 1 << len(ordered_basis),
+        "unique_factorizations_through_W": unique_factorizations,
+        "pole_sensitive_nonfactor_example_rejected": not pole_sensitive_factors,
+    }
+
+
+def certify_relative_frame_form(
+    artifact_a: dict[str, Any], artifact_b: dict[str, Any], mapping: dict[str, str]
+) -> dict[str, Any]:
+    """Construct and exhaustively check a finite ``(W,E,T,phi,pi,J,C)`` form.
+
+    Occurrences are ``Pole x B_l`` and ``W_l(p,b)=b``.  A comparison
+    transports the relative identity by ``phi`` and its orientation by ``pi``;
+    ``T`` is their product.  Thus coherent alternatives are frame-relative
+    equality forms, not ambiguity inside one fixed axiom system.
+    """
+
+    a_table = artifact_a["execution"]["operation_table"]
+    b_table = artifact_b["execution"]["operation_table"]
+    a_basis = tuple(sorted(a_table))
+    b_basis = tuple(sorted(b_table))
+    total = set(mapping) == set(b_basis) and all(target in a_table for target in mapping.values())
+    bijective = total and len(set(mapping.values())) == len(a_basis)
+    orientation = _orientation_form(mapping, artifact_a, artifact_b)
+
+    product_failures: list[Witness] = []
+    if total:
+        for left in b_basis:
+            for right in b_basis:
+                source_product = b_table[left][right]
+                observed = a_table[mapping[left]][mapping[right]]
+                expected = mapping[source_product]
+                if observed != expected:
+                    product_failures.append(Witness("phi_operation", [left, right], expected, observed))
+
+    occurrences = tuple((pole, basis) for pole in POLES for basis in b_basis)
+    return_square_failures: list[Witness] = []
+    extension_failures: list[Witness] = []
+    reversal_failures: list[Witness] = []
+    curvature_failures: list[Witness] = []
+    ceq_failures: list[Witness] = []
+
+    if total and orientation is not None:
+        source_curvature_pole = "zero" if orientation == "preserved" else "infinity"
+        for pole, basis in occurrences:
+            translated_pole = _translate_pole(orientation, pole)
+            translated_basis = mapping[basis]
+
+            # W_A(T(p,b)) = phi(W_B(p,b)).
+            if translated_basis != mapping[basis]:
+                return_square_failures.append(Witness("T_ret", [pole, basis]))
+
+            lhs_ext = (translated_pole, translated_basis)
+            rhs_ext = (_translate_pole(orientation, pole), mapping[basis])
+            if lhs_ext != rhs_ext:
+                extension_failures.append(Witness("T_ext", [pole, basis], rhs_ext, lhs_ext))
+
+            lhs_rev = (_translate_pole(orientation, other_pole(pole)), translated_basis)
+            rhs_rev = (other_pole(translated_pole), translated_basis)
+            if lhs_rev != rhs_rev:
+                reversal_failures.append(Witness("T_J", [pole, basis], rhs_rev, lhs_rev))
+
+            # C is a transported section, not the same isolated pole in both languages.
+            lhs_curv = (_translate_pole(orientation, source_curvature_pole), translated_basis)
+            rhs_curv = ("zero", translated_basis)
+            if lhs_curv != rhs_curv:
+                curvature_failures.append(Witness("T_C", [pole, basis], rhs_curv, lhs_curv))
+
+        for left_pole, left_basis in occurrences:
+            for right_pole, right_basis in occurrences:
+                source_ceq = left_basis == right_basis
+                target_ceq = mapping[left_basis] == mapping[right_basis]
+                if source_ceq != target_ceq:
+                    ceq_failures.append(
+                        Witness(
+                            "ceq_iff",
+                            [[left_pole, left_basis], [right_pole, right_basis]],
+                            source_ceq,
+                            target_ceq,
+                        )
+                    )
+
+    law_failures = (
+        product_failures
+        + return_square_failures
+        + extension_failures
+        + reversal_failures
+        + curvature_failures
+        + ceq_failures
+    )
+    frame_holds = total and bijective and orientation is not None and not law_failures
+    form_id = digest_value({"mapping": mapping, "orientation": orientation})
+    fallback_failure = {
+        "check": "frame_form",
+        "input": None,
+        "expected": "total bijective polar translation",
+        "observed": {"total": total, "bijective": bijective, "orientation": orientation},
+        "reason": "a relative frame comparison must carry identity and orientation invertibly",
+    }
+    return {
+        "frame_form_sha256": form_id,
+        "basis_translation_phi": mapping,
+        "orientation_translation_pi": orientation,
+        "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+        "return_W": "W_l(p,b)=b",
+        "extension_E": "E_l(p,b)=(p,b)",
+        "reversal_J": "J_l(p,b)=(other(p),b)",
+        "curvature_C": "the chosen pole section transported through pi",
+        "laws": {
+            "phi_is_bijection": bijective,
+            "phi_operation_cases": len(b_basis) ** 2 if total else 0,
+            "phi_operation_failure_count": len(product_failures),
+            "T_ret_cases": len(occurrences) if total and orientation is not None else 0,
+            "T_ret_failure_count": len(return_square_failures),
+            "T_ext_cases": len(occurrences) if total and orientation is not None else 0,
+            "T_ext_failure_count": len(extension_failures),
+            "T_J_cases": len(occurrences) if total and orientation is not None else 0,
+            "T_J_failure_count": len(reversal_failures),
+            "T_C_cases": len(occurrences) if total and orientation is not None else 0,
+            "T_C_failure_count": len(curvature_failures),
+            "ceq_iff_cases": len(occurrences) ** 2 if total and orientation is not None else 0,
+            "ceq_iff_failure_count": len(ceq_failures),
+        },
+        "quotient_basis": {
+            "occurrences_per_language": len(POLES) * len(b_basis),
+            "relative_equality_classes": len(b_basis),
+            "fibre_size": len(POLES),
+            "quotient_equivalent_to_basis": len(b_basis) == len(a_basis),
+        },
+        "polar_section": {
+            "source_pole": "zero" if orientation == "preserved" else "infinity",
+            "target_pole": "zero",
+            "return_splits": orientation is not None,
+            "natural_through_pi": orientation is not None and not curvature_failures,
+            "reversal_exchanges_sections": orientation is not None and not reversal_failures,
+        },
+        "universal_factorization": _boolean_factorization_certificate(b_basis),
+        "relative_equality_form_holds": frame_holds,
+        "failure_count": len(law_failures) + (0 if total else 1) + (0 if bijective else 1),
+        "first_failure": asdict(law_failures[0]) if law_failures else (
+            None if frame_holds else fallback_failure
+        ),
+    }
+
+
+def evaluate_relative_equality(
     precommit_path: Path,
     artifact_a_path: Path,
     artifact_b_path: Path,
@@ -506,7 +739,7 @@ def audit_translation_return(
     artifact_b = load_json(artifact_b_path)
     translator = load_json(translator_path)
     contradictions: list[Witness] = []
-    unresolved: list[Witness] = []
+    open_obligations: list[Witness] = []
 
     for label, path, expected_digest in (
         ("artifact_a", artifact_a_path, translator.get("artifact_a_sha256")),
@@ -520,95 +753,123 @@ def audit_translation_return(
         execution = artifact.get("execution", {})
         model = artifact.get("model", {})
         if execution.get("status") != "PASS":
-            unresolved.append(Witness("learner_execution", label, reason="execution did not complete"))
+            open_obligations.append(Witness("learner_execution", label, reason="execution did not complete"))
         if model.get("minimum_training_error") not in (0, 0.0):
             contradictions.append(Witness("learning_error", label, 0, model.get("minimum_training_error")))
         if len(model.get("minimum_error_survivors", [])) != 1:
-            unresolved.append(Witness("model_selection", label, reason="learned operation is not unique"))
+            open_obligations.append(Witness("model_selection", label, reason="learned operation is not unique"))
         if execution.get("held_out_error_count") not in (0, 0.0):
             contradictions.append(Witness("held_out_execution", label, 0, execution.get("held_out_error_count")))
         if not execution.get("group_certificate", {}).get("passed", False):
-            unresolved.append(Witness("finite_proof", label, reason="group certificate unavailable"))
+            open_obligations.append(Witness("finite_proof", label, reason="group certificate unavailable"))
 
     mapping = translator.get("selected_mapping")
-    if mapping is None:
-        unresolved.append(
-            Witness("translation", translator.get("mode"), reason=translator.get("unresolved_reason"))
+    structural_certificates = [
+        certify_relative_frame_form(artifact_a, artifact_b, candidate)
+        for candidate in enumerate_isomorphisms(artifact_a, artifact_b)
+    ]
+    selected_certificate = (
+        certify_relative_frame_form(artifact_a, artifact_b, mapping)
+        if isinstance(mapping, dict)
+        else None
+    )
+    if selected_certificate is None:
+        open_obligations.append(
+            Witness(
+                "relative_reference",
+                translator.get("mode"),
+                reason=translator.get("selection_relation"),
+            )
+        )
+    elif not selected_certificate["relative_equality_form_holds"]:
+        failure = selected_certificate["first_failure"]
+        contradictions.append(
+            Witness(
+                failure["check"],
+                failure.get("input"),
+                failure.get("expected"),
+                failure.get("observed"),
+                failure.get("reason"),
+            )
         )
 
-    completed_element_returns = 0
-    completed_product_returns = 0
-    if mapping is not None:
-        a_presentations = artifact_a["presentations"]
-        b_presentations = artifact_b["presentations"]
-        for source, source_presentation in sorted(b_presentations.items()):
-            target = mapping.get(source)
-            if target is None or target not in a_presentations:
-                unresolved.append(Witness("element_return", source, reason="mapping unavailable"))
-                continue
-            expected = normal_action(as_element(source_presentation))
-            observed = as_element(a_presentations[target])
-            completed_element_returns += 1
-            if observed != expected:
-                contradictions.append(Witness("element_return", source, expected, observed))
-
-        a_table = artifact_a["execution"]["operation_table"]
-        b_table = artifact_b["execution"]["operation_table"]
-        for left in sorted(b_table):
-            for right in sorted(b_table):
-                product = b_table[left][right]
-                if left not in mapping or right not in mapping or product not in mapping:
-                    unresolved.append(Witness("product_return", [left, right], reason="mapping unavailable"))
-                    continue
-                expected = mapping[product]
-                observed = a_table[mapping[left]][mapping[right]]
-                completed_product_returns += 1
-                if observed != expected:
-                    contradictions.append(Witness("product_return", [left, right], expected, observed))
-
-    if contradictions:
-        audit = ReturnAudit.CONTRADICTED
-    elif unresolved:
-        audit = ReturnAudit.UNRESOLVED
-    else:
-        audit = ReturnAudit.RETURNED
+    structural_family_realized = bool(structural_certificates) and all(
+        certificate["relative_equality_form_holds"] for certificate in structural_certificates
+    )
+    independent_contact = (
+        bool(translator.get("contact_constraints"))
+        and not bool(translator.get("self_certification"))
+    )
+    non_reference_obligations = [
+        obligation for obligation in open_obligations if obligation.check != "relative_reference"
+    ]
+    relative_equality_witness = bool(
+        selected_certificate
+        and selected_certificate["relative_equality_form_holds"]
+        and independent_contact
+        and not contradictions
+        and not non_reference_obligations
+    )
+    episode_role = precommit["cases"][translator.get("mode")]["episode_role"]
+    admitted_to_next_basis = relative_equality_witness and episode_role == "actual"
 
     disclosure: dict[str, Any] | None = None
-    if audit is ReturnAudit.RETURNED:
+    if relative_equality_witness and mapping is not None:
         disclosure = {
             "identity": {
                 "source": artifact_b["execution"]["group_certificate"]["identity"],
                 "target": mapping[artifact_b["execution"]["group_certificate"]["identity"]],
             },
-            "homotopy": "all learned products commute through the returned bridge",
+            "homotopy": "all learned operations commute through phi in this relative frame form",
             "holonomy": {
-                "structural_routes_before_contact": translator["structural_isomorphism_count"],
-                "routes_after_relative_contact": translator["post_contact_candidate_count"],
+                "relative_frame_forms": translator["structural_isomorphism_count"],
+                "selected_frame_form_sha256": selected_certificate["frame_form_sha256"],
             },
-            "closure": "all eight element returns and all 64 ordered products agree",
+            "closure": "W, E, T, phi, pi, J, C and relative equality commute",
         }
 
     return {
-        "schema_version": 2,
+        "schema_version": 3,
         "benchmark": precommit["benchmark"],
         "precommit_sha256": file_digest(precommit_path),
         "translator_sha256": file_digest(translator_path),
         "case": translator.get("mode"),
-        "return_audit": audit.value,
-        "coverage": {
-            "completed_element_returns": completed_element_returns,
-            "total_element_returns": 8,
-            "completed_ordered_product_returns": completed_product_returns,
-            "total_ordered_product_returns": 64,
+        "episode_role": episode_role,
+        "relative_equality": {
+            "structural_family_realized": structural_family_realized,
+            "coherent_frame_form_count": len(structural_certificates),
+            "selected_frame_form_sha256": (
+                selected_certificate["frame_form_sha256"] if selected_certificate else None
+            ),
+            "selected_form_satisfies_translational_axiometry": bool(
+                selected_certificate and selected_certificate["relative_equality_form_holds"]
+            ),
+            "independent_contact_witnessed": independent_contact,
+            "relative_equality_witnessed": relative_equality_witness,
+            "reference_question_open": not relative_equality_witness,
+            "candidate_counterexample_witnessed": bool(contradictions),
+            "interpretation": (
+                "coherent alternatives are relative frame forms, not ambiguity inside fixed axioms"
+            ),
         },
+        "selected_frame_operations": selected_certificate,
+        "structural_frame_forms": structural_certificates,
         "contradiction_count": len(contradictions),
-        "unresolved_count": len(unresolved),
+        "open_obligation_count": len(open_obligations),
         "first_contradiction": asdict(contradictions[0]) if contradictions else None,
-        "first_unresolved": asdict(unresolved[0]) if unresolved else None,
+        "first_open_obligation": asdict(open_obligations[0]) if open_obligations else None,
         "self_certification_observed": bool(translator.get("self_certification")),
-        "self_certification_used_as_evidence": False,
-        "disclosure_after_return": disclosure,
-        "tokens_issued": 1 if audit is ReturnAudit.RETURNED else 0,
+        "self_certification_used_as_relative_contact": False,
+        "relational_disclosure": disclosure,
+        "basis_admission": {
+            "admitted": admitted_to_next_basis,
+            "reason": (
+                "actual independently returned relative equality form"
+                if admitted_to_next_basis
+                else "no actual independent relative-equality witness for this branch"
+            ),
+        },
+        "tokens_issued": 1 if admitted_to_next_basis else 0,
     }
 
 
@@ -617,7 +878,11 @@ def execute_next_basis(
 ) -> dict[str, Any]:
     mapping = translator.get("selected_mapping")
     if mapping is None:
-        return {"status": "UNRESOLVED", "reason": "no accepted returned relation"}
+        return {
+            "relative_equality_basis_admitted": False,
+            "reference_question_open": True,
+            "reason": "no independently returned relative frame form",
+        }
     b_table = artifact_b["execution"]["operation_table"]
     a_table = artifact_a["execution"]["operation_table"]
     b_identity = artifact_b["execution"]["group_certificate"]["identity"]
@@ -638,8 +903,9 @@ def execute_next_basis(
         target_result = a_table[target_result][value]
     expected_target = mapping[source_result]
     return {
-        "status": "RETURNED" if target_result == expected_target else "CONTRADICTED",
-        "returned_relation_sha256": digest_value(mapping),
+        "relative_equality_basis_admitted": target_result == expected_target,
+        "reference_question_open": False,
+        "relative_frame_form_sha256": digest_value(mapping),
         "new_execution": {
             "source_word": source_word,
             "source_result": source_result,
@@ -685,6 +951,15 @@ def _run_stage(arguments: Sequence[str]) -> None:
 
 def run_full_stack(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
     output_dir.mkdir(parents=True, exist_ok=True)
+    for obsolete in output_dir.glob("return_audit_*.json"):
+        obsolete.unlink()
+    for obsolete_name in (
+        "translator_structural_only.json",
+        "translator_adversarial_reverse_contact.json",
+    ):
+        obsolete = output_dir / obsolete_name
+        if obsolete.exists():
+            obsolete.unlink()
     precommit = BENCHMARK / "precommit_return.json"
     protocol_a = BENCHMARK / "perspective_a_protocol.json"
     protocol_b = BENCHMARK / "perspective_b_protocol.json"
@@ -720,14 +995,15 @@ def run_full_stack(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
 
     modes = (
         "relational_contact",
-        "structural_only",
-        "adversarial_reverse_contact",
+        "relative_reversal",
+        "structural_family",
+        "non_natural_deformation",
         "self_certification_only",
     )
     cases: list[dict[str, Any]] = []
     for mode in modes:
         translator_path = output_dir / f"translator_{mode}.json"
-        result_path = output_dir / f"return_audit_{mode}.json"
+        result_path = output_dir / f"relative_equality_{mode}.json"
         _run_stage(
             [
                 "--stage", "translate", "--artifact-a", str(artifact_a_path),
@@ -746,8 +1022,14 @@ def run_full_stack(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
         result = load_json(result_path)
         cases.append(result)
         chain.append(
-            "INDEPENDENT_RETURN",
-            {"mode": mode, "return_audit": result["return_audit"], "sha256": file_digest(result_path)},
+            "RELATIVE_EQUALITY_FORM",
+            {
+                "mode": mode,
+                "relative_equality_witnessed": result["relative_equality"]["relative_equality_witnessed"],
+                "reference_question_open": result["relative_equality"]["reference_question_open"],
+                "candidate_counterexample_witnessed": result["relative_equality"]["candidate_counterexample_witnessed"],
+                "sha256": file_digest(result_path),
+            },
         )
 
     if file_digest(artifact_a_path) != frozen_a or file_digest(artifact_b_path) != frozen_b:
@@ -755,16 +1037,26 @@ def run_full_stack(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
 
     main_translator = load_json(output_dir / "translator_relational_contact.json")
     main_result = next(case for case in cases if case["case"] == "relational_contact")
-    if main_result["return_audit"] == ReturnAudit.RETURNED.value:
+    if main_result["basis_admission"]["admitted"]:
         next_basis = execute_next_basis(load_json(artifact_a_path), load_json(artifact_b_path), main_translator)
     else:
-        next_basis = {"status": "UNRESOLVED", "reason": "main relation was not independently returned"}
+        next_basis = {
+            "relative_equality_basis_admitted": False,
+            "reference_question_open": True,
+            "reason": "the actual branch did not return a relative equality witness",
+        }
     write_json(output_dir / "returned_basis.json", next_basis)
-    chain.append("NEXT_BASIS", {"status": next_basis["status"], "sha256": file_digest(output_dir / "returned_basis.json")})
+    chain.append(
+        "NEXT_BASIS",
+        {
+            "relative_equality_basis_admitted": next_basis["relative_equality_basis_admitted"],
+            "sha256": file_digest(output_dir / "returned_basis.json"),
+        },
+    )
 
     token_count = sum(int(case["tokens_issued"]) for case in cases)
     summary = {
-        "schema_version": 2,
+        "schema_version": 3,
         "claim_status": "EXPERIMENTAL_CLASSICAL_MATHEMATICAL_AGENT_PROXY",
         "benchmark": load_json(precommit)["benchmark"],
         "run_id": f"full-stack-{file_digest(precommit)[:16]}",
@@ -772,16 +1064,16 @@ def run_full_stack(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
             "independent learning",
             "exhaustive local execution",
             "frozen artifacts",
-            "post-hoc translation",
-            "external return W",
-            "RETURNED/CONTRADICTED/UNRESOLVED audit",
+            "post-hoc relative frame form (T, phi, pi)",
+            "W-relative equality with E, J and C naturality",
+            "frame-relative witness, openness, or counterexample",
             "next basis",
         ],
         "process_boundaries": {
             "learner_a": "fresh subprocess; perspective A protocol only",
             "learner_b": "fresh subprocess; perspective B protocol only",
-            "translator": "fresh subprocess; frozen artifacts and contact protocol; complete W withheld",
-            "verifier": "fresh subprocess; precommitted W and frozen artifacts",
+            "translator": "fresh subprocess; frozen artifacts and contact protocol; complete contact withheld",
+            "verifier": "fresh subprocess; constructs W-relative equality and checks every closure operation",
             "security_claim": "experimental visibility separation, not an OS security sandbox",
         },
         "artifact_hashes": {"perspective_a": frozen_a, "perspective_b": frozen_b},
@@ -790,8 +1082,10 @@ def run_full_stack(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
         "tokens_issued": token_count,
         "token_bound_respected": token_count <= 1,
         "next_basis": next_basis,
-        "unresolved_branches_retained": [
-            case["case"] for case in cases if case["return_audit"] == "UNRESOLVED"
+        "open_reference_forms_retained": [
+            case["case"]
+            for case in cases
+            if case["relative_equality"]["reference_question_open"]
         ],
     }
     chain.append("RUN_SUMMARY", {"summary_sha256": digest_value(summary)})
@@ -829,7 +1123,7 @@ def main() -> int:
         elif args.stage == "translate":
             result = translate_artifacts(args.artifact_a, args.artifact_b, args.protocol, args.mode)
         else:
-            result = audit_translation_return(
+            result = evaluate_relative_equality(
                 args.precommit, args.artifact_a, args.artifact_b, args.translator
             )
         write_json(args.output, result)
@@ -838,18 +1132,17 @@ def main() -> int:
     result = run_full_stack(args.output_dir)
     print(json.dumps(result, indent=2, sort_keys=True))
     if args.assert_reference:
-        expected = {
-            "relational_contact": "RETURNED",
-            "structural_only": "UNRESOLVED",
-            "adversarial_reverse_contact": "CONTRADICTED",
-            "self_certification_only": "UNRESOLVED",
-        }
-        observed = {case["case"]: case["return_audit"] for case in result["cases"]}
+        by_case = {case["case"]: case for case in result["cases"]}
         passed = (
-            observed == expected
+            by_case["relational_contact"]["relative_equality"]["relative_equality_witnessed"]
+            and by_case["relative_reversal"]["relative_equality"]["relative_equality_witnessed"]
+            and by_case["structural_family"]["relative_equality"]["structural_family_realized"]
+            and by_case["structural_family"]["relative_equality"]["reference_question_open"]
+            and by_case["non_natural_deformation"]["relative_equality"]["candidate_counterexample_witnessed"]
+            and by_case["self_certification_only"]["relative_equality"]["reference_question_open"]
             and result["tokens_issued"] == 1
             and result["token_bound_respected"]
-            and result["next_basis"]["status"] == "RETURNED"
+            and result["next_basis"]["relative_equality_basis_admitted"]
             and result["receipt_chain"]["ok"]
         )
         return 0 if passed else 1

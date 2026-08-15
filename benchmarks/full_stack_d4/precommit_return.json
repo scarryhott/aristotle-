@@ -1,14 +1,21 @@
 {
-  "schema_version": 2,
-  "benchmark": "D4-independent-full-stack-v2",
+  "schema_version": 3,
+  "benchmark": "D4-independent-full-stack-relative-equality-v3",
   "claim_status": "EXPERIMENTAL_PROTOCOL",
   "freeze_rule": "This protocol and its return W are fixed before either learner is started.",
-  "operational_agent": "A classical mathematical-agent proxy with isolated training, learned operation selection, exhaustive execution, frozen state, and an external audit of the precommitted relational return.",
-  "return_W": {
-    "carrier": "The induced action on ordered square vertices [0,1,2,3].",
-    "perspective_a": "The learned permutation occurrence itself.",
-    "perspective_b": "For local form (k,f), [k + (-1)^f*x mod 4 for x=0..3].",
-    "selection_boundary": "The translator may use only the separately listed contact constraints; it may not read this complete return definition."
+  "operational_agent": "A classical mathematical-agent proxy with isolated training, learned operation selection, exhaustive execution, frozen state, and an independent construction/check of the precommitted translational operations.",
+  "translational_closure": {
+    "occurrence_form": "Y_l = Pole x B_l after each local basis has been learned and frozen.",
+    "return_W": "W_l(p,b)=b; relative equality is equality of the returned basis forms.",
+    "extension_E": "E_l(p,b)=(p,b), so W_l(E_l(p,b))=b.",
+    "basis_translation_phi": "Every candidate frame form carries learned identities by a bijective operation-preserving map phi.",
+    "occurrence_translation_T": "T(p,b)=(pi(p),phi(b)).",
+    "orientation_pi": "pi is the relative preservation or reversal disclosed by the candidate comparison.",
+    "reversal_J": "J(p,b)=(other(p),b) and must be natural through T.",
+    "curvature_C": "C selects a pole section transported through pi and must be natural through T.",
+    "quotient_basis": "Y_l modulo W-relative equality must be equivalent to B_l.",
+    "universal_factorization": "Every closure-respecting Bool evaluation must factor uniquely through W_l.",
+    "selection_boundary": "The translator sees frozen local operations and only the listed contacts. The verifier constructs and checks the full relative equality form afterward."
   },
   "learning": {
     "perspective_a": {
@@ -27,20 +34,37 @@
   "required_execution": {
     "held_out_products": "Every unobserved ordered product",
     "associativity_cases": 512,
-    "element_returns": 8,
-    "ordered_product_returns": 64
+    "polar_occurrence_returns_per_frame": 16,
+    "ordered_product_naturality_per_frame": 64,
+    "relative_equality_comparisons_per_frame": 256,
+    "boolean_universal_factorizations_per_language": 256
   },
-  "return_audit": {
-    "CONTRADICTED": "At least one explicit learned-execution, return, product, hash, or translation contradiction is witnessed.",
-    "UNRESOLVED": "No contradiction is witnessed, but a learner, artifact, unique bridge, proof obligation, or required return is unresolved.",
-    "RETURNED": "Both isolated learners execute completely, the frozen post-hoc bridge is unique under its admitted evidence, and all returns commute.",
-    "precedence": ["CONTRADICTED", "UNRESOLVED", "RETURNED"]
+  "cases": {
+    "relational_contact": {
+      "episode_role": "actual",
+      "relation": "A precommitted contact selects one orientation-preserving relative frame form."
+    },
+    "relative_reversal": {
+      "episode_role": "counterfactual_control",
+      "relation": "A reversed contact selects another valid frame form with nontrivial pi; it must remain closure-equal rather than be rejected against fixed coordinates."
+    },
+    "structural_family": {
+      "episode_role": "counterfactual_control",
+      "relation": "All coherent frame forms are retained. The reference choice stays open, but relative equality is already realized by each form."
+    },
+    "non_natural_deformation": {
+      "episode_role": "counterfactual_control",
+      "relation": "A sign-erasing total map fails invertibility and operation naturality and supplies an explicit outside-closure witness."
+    },
+    "self_certification_only": {
+      "episode_role": "counterfactual_control",
+      "relation": "A self-claim selects no relative frame form and provides no independent contact."
+    }
   },
   "token_policy": {
-    "RETURNED": 1,
-    "CONTRADICTED": 0,
-    "UNRESOLVED": 0,
-    "self_certification": 0,
+    "admission_predicate": "Issue only for the actual branch when an independent contact selects a frame form and W,E,T,phi,pi,J,C and relative equality all commute.",
+    "counterfactual_controls": 0,
+    "self_claim_without_contact": 0,
     "maximum_per_run": 1
   }
 }

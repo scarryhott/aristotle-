@@ -11,9 +11,9 @@ It starts with:
 * reversible codecs from `X` into each temporary presentation language.
 
 The pairwise translations, their inverses, their composition law, and the commuting return square
-are then constructions.  The reversal and curvature laws remain explicit obligations of the
-independent return protocol; the executable experiment tests their concrete presentation-level
-instances after seller return.
+are then constructions. The executable experiment instantiates the whole relative form
+`(W, E, T, phi, pi, J, C)`. Coherent comparison forms remain relative equalities; no fixed
+coordinate system is used to turn reversal into contradiction or multiplicity into ambiguity.
 -/
 
 namespace NRRF627IndependentReturn
@@ -22,59 +22,95 @@ open NRRF627
 
 universe u v w z
 
-/-! ## Relational-return audit and the one-token admission rule -/
+/-! ## Frame-relative equality and witness-based admission -/
 
-/- An evidence status for a proposed translation.  This is deliberately not the codomain of `W`:
-`W` returns relational content, while `ReturnAudit` records whether a candidate bridge has returned
-that relation, contradicted it, or remains unresolved. -/
-inductive ReturnAudit where
-  | returned
-  | contradicted
-  | unresolved
+/-- The commuting return square is a form of relative equality, not a truth-valued verdict. -/
+def ReturnSquare {Y₀ : Type v} {Y₁ : Type w} {B₀ : Type z} {B₁ : Type u}
+    (W₀ : Y₀ → B₀) (W₁ : Y₁ → B₁) (T : Y₀ → Y₁) (φ : B₀ → B₁) : Prop :=
+  ∀ y, W₁ (T y) = φ (W₀ y)
+
+/-- One admissible comparison carries occurrences and their returned identity bases together. -/
+structure RelativeEqualityForm
+    (Y₀ : Type v) (Y₁ : Type w) (B₀ : Type z) (B₁ : Type u)
+    (W₀ : Y₀ → B₀) (W₁ : Y₁ → B₁) where
+  T : Y₀ ≃ Y₁
+  φ : B₀ ≃ B₁
+  returnSquare : ReturnSquare W₀ W₁ T φ
+
+/-- Relative equality is preserved and reflected by the whole comparison form `(T, φ)`. -/
+theorem relativeEquality_iff
+    {Y₀ : Type v} {Y₁ : Type w} {B₀ : Type z} {B₁ : Type u}
+    {W₀ : Y₀ → B₀} {W₁ : Y₁ → B₁}
+    (F : RelativeEqualityForm Y₀ Y₁ B₀ B₁ W₀ W₁) (x y : Y₀) :
+    CEq W₁ (F.T x) (F.T y) ↔ CEq W₀ x y := by
+  change W₁ (F.T x) = W₁ (F.T y) ↔ W₀ x = W₀ y
+  rw [F.returnSquare x, F.returnSquare y]
+  exact F.φ.injective.eq_iff
+
+/-- Independent contact is witness data inhabiting a selected relative equality form. -/
+structure IndependentlyReturned
+    (Y₀ : Type v) (Y₁ : Type w) (B₀ : Type z) (B₁ : Type u)
+    (W₀ : Y₀ → B₀) (W₁ : Y₁ → B₁) (Contact : Type*)
+    extends RelativeEqualityForm Y₀ Y₁ B₀ B₁ W₀ W₁ where
+  contact : Contact
+
+/-- A token is a receipt of an inhabited independent-return witness, not an audit label. -/
+def tokenCount
+    {Y₀ : Type v} {Y₁ : Type w} {B₀ : Type z} {B₁ : Type u}
+    {W₀ : Y₀ → B₀} {W₁ : Y₁ → B₁} {Contact : Type*}
+    (_ : IndependentlyReturned Y₀ Y₁ B₀ B₁ W₀ W₁ Contact) : Nat := 1
+
+theorem episode_tokens_le_one
+    {Y₀ : Type v} {Y₁ : Type w} {B₀ : Type z} {B₁ : Type u}
+    {W₀ : Y₀ → B₀} {W₁ : Y₁ → B₁} {Contact : Type*}
+    (r : IndependentlyReturned Y₀ Y₁ B₀ B₁ W₀ W₁ Contact) :
+    tokenCount r ≤ 1 := by
+  rfl
+
+/-- A self-claim is retained, but it is not a relative equality witness. -/
+structure SelfClaim where
+  claim : Bool
 deriving DecidableEq, Repr
 
-/-- Independent evidence. `selfClaim` is retained for audit but cannot establish return. -/
-structure Evidence where
-  sellerReturn : Option Bool
-  selfClaim : Bool
-deriving DecidableEq, Repr
-
-def audit (e : Evidence) : ReturnAudit :=
-  match e.sellerReturn with
-  | some true => .returned
-  | some false => .contradicted
-  | none => .unresolved
-
-def tokenCount : ReturnAudit → Nat
-  | .returned => 1
-  | .contradicted => 0
-  | .unresolved => 0
-
-def admittedToNextBasis : ReturnAudit → Bool
-  | .returned => true
-  | .contradicted => false
-  | .unresolved => false
-
-theorem episode_tokens_le_one (v : ReturnAudit) : tokenCount v ≤ 1 := by
-  cases v <;> simp [tokenCount]
+def selfClaimTokenCount (_ : SelfClaim) : Nat := 0
 
 theorem self_certification_no_token (claim : Bool) :
-    tokenCount (audit ⟨none, claim⟩) = 0 := by
+    selfClaimTokenCount ⟨claim⟩ = 0 := by
   rfl
 
-theorem seller_contradiction_no_token (claim : Bool) :
-    tokenCount (audit ⟨some false, claim⟩) = 0 := by
-  rfl
+/-- An arbitrary candidate may instead expose a concrete failure of the return square. -/
+structure CandidateComparison
+    (Y₀ : Type v) (Y₁ : Type w) (B₀ : Type z) (B₁ : Type u)
+    (W₀ : Y₀ → B₀) (W₁ : Y₁ → B₁) where
+  T : Y₀ → Y₁
+  φ : B₀ → B₁
 
-theorem independently_returned_one_token (claim : Bool) :
-    tokenCount (audit ⟨some true, claim⟩) = 1 := by
-  rfl
+def HasReturnCounterexample
+    {Y₀ : Type v} {Y₁ : Type w} {B₀ : Type z} {B₁ : Type u}
+    {W₀ : Y₀ → B₀} {W₁ : Y₁ → B₁}
+    (F : CandidateComparison Y₀ Y₁ B₀ B₁ W₀ W₁) : Prop :=
+  ∃ y, W₁ (F.T y) ≠ F.φ (W₀ y)
 
-theorem unresolved_branch_not_in_next_basis : admittedToNextBasis .unresolved = false := by
-  rfl
+/-- Every pairwise comparison in `TransFrame` is itself a relative equality form. -/
+def TransFrame.relativeEqualityForm
+    {L : Type u} {B : L → Type v} {Y : L → Type w}
+    (A : TransFrame L B Y) (ℓ m : L) :
+    RelativeEqualityForm (Y ℓ) (Y m) (B ℓ) (B m) (A.W ℓ) (A.W m) where
+  T := A.transEquiv ℓ m
+  φ := A.phiEquiv ℓ m
+  returnSquare := A.T_ret ℓ m
 
-theorem contradiction_not_in_next_basis : admittedToNextBasis .contradicted = false := by
-  rfl
+/-- The runtime operations are one conjunction of natural relational forms, not separate labels. -/
+theorem TransFrame.relative_operations
+    {L : Type u} {B : L → Type v} {Y : L → Type w}
+    (A : TransFrame L B Y) (ℓ m : L) :
+    ReturnSquare (A.W ℓ) (A.W m) (A.T ℓ m) (A.phi ℓ m) ∧
+    (∀ p b, A.T ℓ m (A.E ℓ p b) = A.E m (A.pi ℓ m p) (A.phi ℓ m b)) ∧
+    (∀ y, A.T ℓ m (A.J ℓ y) = A.J m (A.T ℓ m y)) ∧
+    (∀ y, A.T ℓ m (A.C ℓ y) = A.C m (A.T ℓ m y)) ∧
+    (∀ x y, CEq (A.W m) (A.T ℓ m x) (A.T ℓ m y) ↔ CEq (A.W ℓ) x y) := by
+  exact ⟨A.T_ret ℓ m, A.T_ext ℓ m, A.T_J ℓ m, A.T_C ℓ m,
+    fun x y => (A.ceq_iff ℓ m x y).symm⟩
 
 /-! ## A canonical independent return and reversible temporary presentations -/
 
@@ -205,6 +241,7 @@ end Consequences
 end NRRF627IndependentReturn
 
 #print axioms NRRF627IndependentReturn.episode_tokens_le_one
+#print axioms NRRF627IndependentReturn.relativeEquality_iff
 #print axioms NRRF627IndependentReturn.derivedFrame
 #print axioms NRRF627IndependentReturn.return_square_is_derived
 #print axioms NRRF627IndependentReturn.axiometry_flows_from_independent_return

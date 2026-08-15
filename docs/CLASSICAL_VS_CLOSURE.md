@@ -9,7 +9,7 @@
 | Verification | theorem checks | theorem checks **plus** cross-language return/coherence claim |
 | History | proof object/derivation matters operationally | coherent evolutionary route is predicted to leave no verdict trace beyond endpoints |
 | Internal change | usually implementation detail | return-invisible change is modeled as gauge freedom |
-| Failure | rejected proof / counterexample | rejected proof, broken translation/return, counterexample, or UNRESOLVED obstruction |
+| Failure | rejected proof / counterexample | broken operation naturality or a concrete counterexample; absence of contact leaves a frame-relative question open |
 
 ## Not a replacement for Lean
 
@@ -27,7 +27,7 @@ Its central invariant is kernel acceptance in a selected formal environment.
 
 A closure runtime adds explicit relational state:
 
-`occurrence in L_i → translation/restructuring/evolution → occurrence in L_j → verification return → comparison/return → verdict`.
+`occurrence in L_i → (T,phi,pi) → occurrence in L_j → W-relative equality → relational evaluation`.
 
 The runtime records the translation, return, basis, and obstruction rather than only a final boolean. Its purpose is to test whether mathematical content survives representation change for reasons not hard-coded into the transformation generator.
 
@@ -41,14 +41,14 @@ Without the second class, the runtime only demonstrates its own definitions.
 
 `experiments/full_stack_math_asi.py` composes both layers without conflating them. Each local
 classical agent learns and executes in its own fixed presentation. Only after both states are frozen
-does a separate translator propose a cross-frame relation; an external auditor then checks the
-precommitted return.
+does a separate constructor propose cross-frame forms; an independent verifier then checks the
+precommitted translational operations.
 
 The closure relation is therefore:
 
-`local learning/checking in A and B → frozen occurrence relation → post-hoc T → compare W_m(Tu) with φ(W_ℓu) → audit record`.
+`local learning in A and B → frozen operations → post-hoc (T,phi,pi) → W,E,J,C naturality → relative equality`.
 
-The observed `UNRESOLVED` structure-only branch is important: local proof of two isomorphic D4 groups does
-not by itself choose which of eight relative orientations is the intended return. The `CONTRADICTED`
-reversed-contact branch likewise shows that abstract isomorphism is weaker than translational
-verification against a selected external relation.
+All eight D4 isomorphisms extend to coherent relative equality forms. Structure alone does not
+select one reference relation, but that openness is not an internal defect of fixed axioms. A
+relative reversal is also coherent when `phi` and `pi` travel with it. The negative control is
+instead a sign-erasing map that fails bijectivity and learned-operation naturality.

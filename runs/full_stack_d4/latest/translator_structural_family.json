@@ -90,15 +90,16 @@
     "external return audit",
     "mutable learner state"
   ],
-  "mode": "structural_only",
-  "post_contact_candidate_count": 8,
-  "protocol_sha256": "10d8a935333ff627c767c1eb97e59d0fe0105525c9b6585e44d2e4b5297d2c96",
-  "runtime_id": "post-hoc-structural-translator",
-  "schema_version": 2,
+  "mode": "structural_family",
+  "protocol_sha256": "b780999be503d5a9cf5aa0e00e5461f996bae5daf008bd10561fcf132e21fdba",
+  "reference_form_open": true,
+  "relative_frame_form_count": 8,
+  "runtime_id": "post-hoc-translational-frame-form-constructor",
+  "schema_version": 3,
   "selected_mapping": null,
+  "selection_relation": "all coherent frame forms remain relative; no origin is isolated",
   "self_certification": false,
   "structural_isomorphism_count": 8,
-  "unresolved_reason": "multiple origin choices remain structurally admissible",
   "visibility": [
     "two frozen learner artifacts",
     "this protocol"

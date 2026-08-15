@@ -1,10 +1,9 @@
 {
-  "schema_version": 1,
-  "runtime": "post-hoc-structural-translator",
+  "schema_version": 3,
+  "runtime": "post-hoc-translational-frame-form-constructor",
   "visible_inputs": ["two frozen learner artifacts", "this protocol"],
   "forbidden_inputs": ["complete return W", "external return audit", "mutable learner state"],
   "selection": {
-    "structural_only": [],
     "relational_contact": [
       {
         "source_local_form": [1, 0],
@@ -17,7 +16,7 @@
         "target_image_of_vertex_zero": 0
       }
     ],
-    "adversarial_reverse_contact": [
+    "relative_reversal": [
       {
         "source_local_form": [1, 0],
         "target_order": 4,
@@ -30,5 +29,5 @@
       }
     ]
   },
-  "contact_scope": "Only two generator contacts are used to select among structural isomorphisms; the external return auditor withholds the remaining element returns and all product-return checks."
+  "contact_scope": "Only two generator contacts may select a relative frame form. The verifier later constructs phi, pi and T and checks W, E, J, C, all products, relative equality preservation and quotient-basis factorization. Structural-family and self-claim branches isolate no origin; the non-natural deformation is generated independently as an outside-closure control."
 }

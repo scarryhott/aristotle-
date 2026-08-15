@@ -18,6 +18,7 @@
       "a1"
     ]
   },
-  "returned_relation_sha256": "fbf5aaad279de1b340947405e75e728301915f89771e24253cc41884a629f929",
-  "status": "RETURNED"
+  "reference_question_open": false,
+  "relative_equality_basis_admitted": true,
+  "relative_frame_form_sha256": "fbf5aaad279de1b340947405e75e728301915f89771e24253cc41884a629f929"
 }

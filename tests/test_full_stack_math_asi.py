@@ -5,8 +5,7 @@ import unittest
 
 from experiments.full_stack_math_asi import (
     BENCHMARK,
-    ReturnAudit,
-    audit_translation_return,
+    evaluate_relative_equality,
     load_json,
     run_full_stack,
     write_json,
@@ -40,61 +39,86 @@ class FullStackMathematicalAgentTest(unittest.TestCase):
         translator = load_json(self.output / "translator_relational_contact.json")
         self.assertFalse(translator["complete_return_W_visible"])
         self.assertEqual(translator["structural_isomorphism_count"], 8)
-        self.assertEqual(translator["post_contact_candidate_count"], 1)
+        self.assertEqual(translator["relative_frame_form_count"], 1)
         self.assertIsNotNone(translator["selected_mapping"])
 
-    def test_return_audit_separates_returned_contradicted_and_unresolved(self) -> None:
-        observed = {case["case"]: case["return_audit"] for case in self.result["cases"]}
-        self.assertEqual(
-            observed,
-            {
-                "relational_contact": ReturnAudit.RETURNED.value,
-                "structural_only": ReturnAudit.UNRESOLVED.value,
-                "adversarial_reverse_contact": ReturnAudit.CONTRADICTED.value,
-                "self_certification_only": ReturnAudit.UNRESOLVED.value,
-            },
-        )
+    def test_relative_equality_replaces_fixed_axiom_ambiguity(self) -> None:
+        by_case = {case["case"]: case for case in self.result["cases"]}
+        main = by_case["relational_contact"]["relative_equality"]
+        reversal = by_case["relative_reversal"]["relative_equality"]
+        family = by_case["structural_family"]["relative_equality"]
+        deformation = by_case["non_natural_deformation"]["relative_equality"]
+        self_claim = by_case["self_certification_only"]["relative_equality"]
 
-    def test_complete_return_is_withheld_until_external_audit(self) -> None:
+        self.assertTrue(main["relative_equality_witnessed"])
+        self.assertTrue(reversal["relative_equality_witnessed"])
+        self.assertTrue(family["structural_family_realized"])
+        self.assertEqual(family["coherent_frame_form_count"], 8)
+        self.assertTrue(family["reference_question_open"])
+        self.assertTrue(deformation["candidate_counterexample_witnessed"])
+        self.assertTrue(self_claim["reference_question_open"])
+
+    def test_all_translational_closure_operations_are_executed(self) -> None:
         main = self.result["main_case"]
-        self.assertEqual(main["coverage"]["completed_element_returns"], 8)
-        self.assertEqual(main["coverage"]["completed_ordered_product_returns"], 64)
-        self.assertIsNotNone(main["disclosure_after_return"])
-        unresolved_case = next(
-            case for case in self.result["cases"] if case["case"] == "structural_only"
+        operations = main["selected_frame_operations"]
+        laws = operations["laws"]
+        self.assertTrue(operations["relative_equality_form_holds"])
+        self.assertEqual(laws["T_ret_cases"], 16)
+        self.assertEqual(laws["T_ext_cases"], 16)
+        self.assertEqual(laws["T_J_cases"], 16)
+        self.assertEqual(laws["T_C_cases"], 16)
+        self.assertEqual(laws["ceq_iff_cases"], 256)
+        self.assertEqual(laws["phi_operation_cases"], 64)
+        self.assertTrue(all(value == 0 for key, value in laws.items() if key.endswith("failure_count")))
+        self.assertTrue(operations["quotient_basis"]["quotient_equivalent_to_basis"])
+        self.assertEqual(
+            operations["universal_factorization"]["unique_factorizations_through_W"], 256
         )
-        self.assertIsNone(unresolved_case["disclosure_after_return"])
+        self.assertIsNotNone(main["relational_disclosure"])
+
+    def test_relative_reversal_is_natural_not_contradictory(self) -> None:
+        reversal = next(case for case in self.result["cases"] if case["case"] == "relative_reversal")
+        operations = reversal["selected_frame_operations"]
+        self.assertEqual(operations["orientation_translation_pi"], "reversed")
+        self.assertTrue(operations["relative_equality_form_holds"])
+        self.assertEqual(reversal["contradiction_count"], 0)
+
+    def test_structural_family_is_relative_equality_not_internal_ambiguity(self) -> None:
+        family = next(case for case in self.result["cases"] if case["case"] == "structural_family")
+        self.assertEqual(len(family["structural_frame_forms"]), 8)
+        self.assertTrue(all(form["relative_equality_form_holds"] for form in family["structural_frame_forms"]))
+        self.assertFalse(family["basis_admission"]["admitted"])
 
     def test_token_and_next_basis_follow_independent_return(self) -> None:
         self.assertEqual(self.result["tokens_issued"], 1)
         self.assertTrue(self.result["token_bound_respected"])
-        self.assertEqual(self.result["next_basis"]["status"], "RETURNED")
+        self.assertTrue(self.result["next_basis"]["relative_equality_basis_admitted"])
         self.assertEqual(
             self.result["next_basis"]["new_execution"]["observed_target_result"],
             self.result["next_basis"]["new_execution"]["expected_target_result"],
         )
         self.assertEqual(
-            set(self.result["unresolved_branches_retained"]),
-            {"structural_only", "self_certification_only"},
+            set(self.result["open_reference_forms_retained"]),
+            {"structural_family", "non_natural_deformation", "self_certification_only"},
         )
 
-    def test_frozen_artifact_tampering_is_contradicted(self) -> None:
+    def test_frozen_artifact_tampering_has_counterexample_witness(self) -> None:
         tampered_path = self.output / "tampered_a.json"
         tampered = json.loads(json.dumps(self.artifact_a))
         tampered["tamper_probe"] = True
         write_json(tampered_path, tampered)
-        result = audit_translation_return(
+        result = evaluate_relative_equality(
             BENCHMARK / "precommit_return.json",
             tampered_path,
             self.output / "perspective_b_frozen.json",
             self.output / "translator_relational_contact.json",
         )
-        self.assertEqual(result["return_audit"], ReturnAudit.CONTRADICTED.value)
+        self.assertTrue(result["relative_equality"]["candidate_counterexample_witnessed"])
         self.assertEqual(result["first_contradiction"]["check"], "frozen_hash")
 
     def test_receipt_chain_is_closed(self) -> None:
         self.assertTrue(self.result["receipt_chain"]["ok"])
-        self.assertEqual(self.result["receipt_chain"]["count"], 13)
+        self.assertEqual(self.result["receipt_chain"]["count"], 15)
 
 
 if __name__ == "__main__":

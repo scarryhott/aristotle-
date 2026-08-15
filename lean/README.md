@@ -13,11 +13,11 @@ representation bridge. It constructs the translation/return layer from a common 
 and reversible presentation codecs, then shows how explicit carrier-level `J` and `C` operations
 construct the full `TransFrame`.
 
-`NRRF627IndependentReturnBridge.lean` formalizes an external evidence audit, one-token bound,
-self-certification rejection, and the construction of a `TransFrame` from a canonical independent
-return plus reversible temporary-presentation codecs. Its `ReturnAudit` is metadata about a
-proposed bridge; it is not the codomain of `W`. The translational axiometry itself continues to
-return only relational content.
+`NRRF627IndependentReturnBridge.lean` formalizes frame-relative equality forms, witness-based
+one-token admission, self-certification separation, and the construction of a `TransFrame` from a
+canonical independent return plus reversible temporary-presentation codecs. It has no static audit
+enum: a selected comparison is the relational form `(T,phi)` with its commuting return square, and
+the full runtime checks `(W,E,T,phi,pi,J,C)` together.
 
 Build all three modules with the pinned toolchain:
 

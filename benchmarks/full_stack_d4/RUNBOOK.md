@@ -1,56 +1,56 @@
-# Independent Full-Stack Mathematical-Agent Run
+# Full-Stack D4 Relative-Equality Runbook
 
-Status: **EXECUTABLE EXPERIMENT**. This is a classical symbolic mathematical-agent proxy, not a
-claim that a generally superintelligent system has been instantiated.
-
-## Causal closure relation
+## Causal protocol
 
 ```text
-precommitted W
-      ↓
-isolated learner A        isolated learner B
-      ↓                         ↓
-learn → execute           learn → execute
-      ↓                         ↓
-frozen artifact A         frozen artifact B
-             \             /
-          post-hoc structural translator
-                       ↓
-        compare the withheld W-square
-                       ↓
-       external ReturnAudit record → next basis
+(W,E,J,C) precommitted
+       → two isolated learn-and-execute processes
+       → frozen artifacts and hashes
+       → post-hoc frame forms (T,phi,pi)
+       → exhaustive relative-equality operations
+       → one independently returned next basis.
 ```
 
-The two learners run in fresh subprocesses and receive different protocol files. Each selects a
-program from a local hypothesis family using its own observations, executes every learned product,
-and exhaustively checks the finite group laws. Their artifacts are hashed before the translator
-starts. Process separation is an experimental visibility boundary, not a security sandbox.
+The translator receives the two frozen learned algebras and the contact protocol. It does not
+receive the verifier's completed frame certificates. The verifier then constructs the occurrence
+fibres `Pole × B_l` and checks every operation.
 
-The translator receives the two frozen artifacts and `translator_protocol.json`; it does not
-receive `precommit_return.json`. It first enumerates every structural isomorphism. D4 has multiple
-automorphisms, so structure alone remains `UNRESOLVED`. A separately precommitted two-generator contact
-can select one bridge. Only afterward does the external auditor disclose the complete return `W`
-and test all eight elements and all 64 ordered products. `W` returns the relational basis;
-`ReturnAudit` only records the evidence state of the proposed bridge.
+## Frame forms
 
-## Run
+D4 has eight operation-preserving comparisons between the learned presentations. They are not
+treated as eight mistaken candidates for a fixed identity. Each becomes an admissible relative
+frame form when equipped with its induced identity translation `phi` and orientation translation
+`pi`:
+
+```text
+W_l(p,b)=b
+T(p,b)=(pi(p),phi(b)).
+```
+
+Every coherent form must satisfy the return, extension, reversal, curvature, operation, and
+closure-equality naturality relations. The quotient of the 16 polar occurrences by relative
+equality must recover the eight-element learned basis.
+
+## Branches
+
+| Branch | Required relation |
+|---|---|
+| `relational_contact` | selects one preserving form; actual basis-admission branch |
+| `relative_reversal` | selects one reversing form; must still satisfy closure |
+| `structural_family` | retains all eight forms and leaves only the reference selection open |
+| `non_natural_deformation` | sign-erasing map must expose an operation-level counterexample |
+| `self_certification_only` | supplies no independent contact and cannot admit a basis |
+
+Only the actual branch can issue the episode receipt. Controls are counterfactual and therefore do
+not multiply tokens even when, as with relative reversal, they exhibit a valid equality form.
+
+## Commands
 
 ```bash
 python3 experiments/full_stack_math_asi.py --assert-reference
 python3 -m unittest discover -s tests -v
 ```
 
-The deterministic evidence bundle is written to `runs/full_stack_d4/latest/`.
-
-## Required outcomes
-
-| Case | Expected return | Reason |
-|---|---|---|
-| `relational_contact` | `RETURNED` | A unique post-hoc bridge closes every withheld return |
-| `structural_only` | `UNRESOLVED` | Multiple isomorphisms survive; no arbitrary origin is selected |
-| `adversarial_reverse_contact` | `CONTRADICTED` | A concrete return disagreement is exposed |
-| `self_certification_only` | `UNRESOLVED` | An agent claim is not independent return evidence |
-
-Exactly one experimental token is issued only when the relation is independently returned. The
-accepted bridge becomes the next basis for a new cross-presentation execution; unresolved branches
-remain recorded as `UNRESOLVED`.
+The command regenerates `runs/full_stack_d4/latest/`. The expected schema contains no global
+three-valued audit. It records relational witnesses, frame-relative openness, and concrete
+counterexamples as separate predicates with their operation-level evidence.

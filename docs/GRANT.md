@@ -36,12 +36,13 @@ remains the central theoretical target.
 
 The bounded classical proxy has now been run end to end:
 
-`W precommit → independent learning and execution → frozen artifacts → post-hoc translation → external audit of the W-square`.
+`(W,E,J,C) precommit → independent learning and execution → frozen artifacts → post-hoc (T,phi,pi) → relative equality`.
 
 The causal order is the principal result:
 
 ```text
-W_precommit ≺ (A,B)_learn+execute ≺ freeze ≺ T_posthoc ≺ ReturnAudit_W(T_posthoc)
+(W,E,J,C)_precommit ≺ (A,B)_learn+execute ≺ freeze
+                    ≺ (T,phi,pi)_posthoc ≺ relative equality
 ```
 
 The return criterion exists before either learner runs; the translator is constructed only after
@@ -50,22 +51,26 @@ cross-presentation correspondence, and the translator cannot rewrite the learned
 the return close.
 
 Two isolated symbolic learners used different data and hypothesis languages. Each selected its own
-D4 operation and executed all held-out products and 512 associativity cases. A post-hoc translator
-found eight abstract isomorphisms; a precommitted relative contact selected one without exposing the
-complete return. The external audit recorded `RETURNED` after agreement on 8/8 elements and 64/64
-products. A reversed contact was `CONTRADICTED`; structure-only and self-certification remained
-`UNRESOLVED`. These are evidence records about proposed bridges, not values returned by `W`.
+D4 operation and executed all held-out products and 512 associativity cases. A post-hoc constructor
+found eight isomorphisms and extended every one to a full relative frame form. Each satisfies 16
+return, extension, reversal, and curvature naturality cases, 64 operation cases, and 256
+preservation-and-reflection comparisons for closure equality. Four preserve orientation and four
+reverse it.
 
-This establishes that the proposed experimental architecture is executable and can reject a
-structurally valid but return-incompatible translation. It does not establish open-ended ASI
-invariance. The grant-relevant next step is to replace the enumerated symbolic learners with
-isolated Aristotle-generated Lean systems while preserving the same freeze and return boundary.
+This corrects the earlier fixed-coordinate interpretation: reversed orientation is an admissible
+relative equality when its `phi` and `pi` travel with it, and eight coherent comparisons are not an
+internal ambiguity of fixed axioms. A sign-erasing deformation is rejected because it genuinely
+fails bijectivity and learned-operation naturality. The grant-relevant next step is to replace the
+enumerated learners with isolated Aristotle-generated Lean systems while preserving the same
+freeze and relational-operation boundary.
 
 The distinction tested is not merely `A ≅ B`, but whether a post-hoc bridge independently returns:
 
 ```text
-abstract structural equivalence  ≠  returned translational identity
-self-certified identity          ≠  independently returned identity
+coherent frame family             ≠  one contact-selected reference form
+orientation reversal              =  admissible relative equality when natural
+self-certified identity           ≠  independently returned relative equality
+non-natural deformation           ≠  admissible translation
 ```
 
 ## What the grant is actually for
@@ -75,7 +80,7 @@ The funded work should attack the strongest objection to the present theory: som
 The project therefore has four deliverables:
 
 1. **Weaker-premise derivation.** Determine which `TransFrame` laws follow from minimal requirements for recoverable verification across freely changing mathematical representations.
-2. **Independent closure runtime.** Implement mathematical agents whose transformations are generated independently of the desired invariant, then test whether closure laws emerge, fail, or remain UNRESOLVED.
+2. **Independent closure runtime.** Implement mathematical agents whose transformations are generated independently of the desired relation, then test which complete frame forms emerge, which questions remain open relative to the frame, and which candidates return counterexamples.
 3. **Adversarial transformation suite.** Include transformations that preserve proof truth but alter representation, transformations that preserve return while changing occurrence, and transformations that deliberately violate proposed return invariants.
 4. **Aristotle-assisted formal verification.** Use formal proof generation/checking to return `PROVED`, `FALSE_WITH_COUNTEREXAMPLE`, or `OPEN_WITH_MINIMAL_OBSTRUCTION`, with explicit axiom and representation-change reports.
 
@@ -87,11 +92,11 @@ The strongest success is not another theorem saying an assumed invariant is inva
 
 A negative result is also valuable if it isolates the minimal obstruction showing where translational verification fails.
 
-The programme has an explicit falsification condition: if post-hoc translation cannot continue to
-distinguish returned equivalence from merely structural, contradictory, or self-certified
-re-expression as agent representational freedom increases, the proposed verification architecture
-fails. Continued `RETURNED` / `CONTRADICTED` / `UNRESOLVED` separation is evidence for the architecture, not an
-assumption of it.
+The programme has an explicit falsification condition: if post-hoc construction cannot determine
+whether `(T,phi,pi)` extends the learned systems to natural `W,E,J,C` operations as representational
+freedom increases, the architecture fails. A valid reversal must remain admissible; a genuinely
+non-natural transformation must expose an obstruction; and an open reference question must not be
+mistaken for either failure or absence of relative equality.
 
 ## Scale-up experiment
 
@@ -99,17 +104,18 @@ Preserve the causal protocol while replacing one or both bounded learners with p
 capable mathematical agents, ultimately Aristotle:
 
 ```text
-W_precommit
+(W,E,J,C)_precommit
     → independent mathematical work
     → immutable artifact freeze
-    → translation discovered afterward
-    → external audit of W_m(Tu) = φ(W_ℓu)
+    → (T,phi,pi) discovered afterward
+    → operation-level return W_m(Tu) = φ(W_ℓu)
     → admitted returned relation becomes the next learning basis
 ```
 
-Measure whether increased capability produces more closure-preserving representations, more
-genuinely unresolved translations, explicit closure violations, transformations outside the
-verifier's anticipated vocabulary, and new returned relations that can support the next episode.
+Measure whether increased capability produces more coherent relative frame forms, larger open
+families of axiom–geometry comparisons, explicit operation-level violations, transformations
+outside the verifier's anticipated vocabulary, and new returned equality forms that can support
+the next episode.
 
 ## Why this matters for mathematical superintelligence
 

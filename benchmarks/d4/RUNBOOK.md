@@ -1,88 +1,36 @@
-# Aristotle D4 Blind-Translation Runbook
+# Blind D4 Contact-Form Fixture
 
-Status: **EXPERIMENTAL PROTOCOL**. No Aristotle output has yet satisfied this protocol.
+This smaller fixture precommits one contact form between two D4 presentations. It is a scorer for a
+future blind Aristotle run, not an Aristotle result and not the universal definition of closure.
 
-## Question under test
+## Causal order
 
-Can two mathematical systems generated independently, and connected only after both are frozen,
-support a translation whose precommitted relational return closes?
+1. Freeze `precommit_return.json`.
+2. Generate representation A without B.
+3. Generate representation B without A.
+4. Freeze both artifacts.
+5. Generate a translator without changing the contact form.
+6. Evaluate all eight elements and all 64 ordered products.
 
-The benchmark uses the same finite mathematical object in two materially different presentations:
+The result records three independent predicates:
 
-- **A:** the action of the square symmetries as permutations of four vertices;
-- **B:** normal forms in the semidirect product `Z/4 ⋊ Z/2`.
+- `relative_equality_witnessed`: every required comparison commutes;
+- `candidate_counterexample_witnessed`: at least one explicit incompatibility is returned;
+- `reference_question_open`: at least one required comparison form is absent.
 
-The return `W` is fixed in [`precommit_return.json`](precommit_return.json): the complete induced
-action on the ordered vertex set `[0,1,2,3]`. It is not selected after inspecting a translation.
+These predicates may coexist where appropriate. They are not values issued by closure and are not
+collapsed into a static verdict enum.
 
-## Separation of runs
-
-Use three fresh Aristotle sessions with no shared hidden conversation state.
-
-1. Give session A only [`prompts/representation_a.md`](prompts/representation_a.md). It must not see
-   session B's prompt or output.
-2. Give session B only [`prompts/representation_b.md`](prompts/representation_b.md). It must not see
-   session A's prompt or output.
-3. Record the exact bytes, SHA-256 digests, model identifiers, toolchain, and complete logs for both
-   outputs. Outputs become immutable inputs.
-4. Give a third session the two frozen outputs, the frozen return protocol, and
-   [`prompts/translator.md`](prompts/translator.md). The translator may not edit either source.
-5. Record and freeze the translator output before scoring it.
-
-The coordinator must commit the return protocol before step 1. A changed return protocol creates a
-new benchmark version; it cannot be used to rescue the old run.
-
-## Required artifacts
-
-The evidence bundle must contain:
-
-- `representation_a.lean` and its complete Aristotle transcript;
-- `representation_b.lean` and its complete Aristotle transcript;
-- `translator.lean` and its complete Aristotle transcript;
-- a manifest containing byte hashes, model identifiers, prompts, timestamps, and Lean/Mathlib
-  versions;
-- Lean build output with no `sorry`, `admit`, extra axioms, or modified source artifacts;
-- the extracted eight-element translation table;
-- the JSON output of the reference scorer.
-
-## Relational-return audit
-
-The audit records evidence about the candidate translation; it is not a return value of `W`.
-Contradiction takes precedence over unresolved evidence:
-
-| Audit record | Requirement | Token |
-|---|---|---:|
-| `RETURNED` | Both frozen formalisms compile; the total translator compiles; all 8 returns and all 64 ordered products agree | 1 |
-| `CONTRADICTED` | At least one explicit return or multiplication contradiction is produced | 0 |
-| `UNRESOLVED` | No contradiction is known, but a formalism, translation, proof, or required case is unavailable | 0 |
-
-A model's assertion that its own result is correct is not return evidence and produces no token.
-A Lean compilation failure without a mathematical counterexample is `UNRESOLVED`, not `CONTRADICTED`.
-
-## Reference adversaries
-
-Run from the repository root:
+## Reference controls
 
 ```bash
 python3 experiments/aristotle_d4_closure.py --assert-reference
 ```
 
-The fixed scorer must return:
+- `candidate_correct` witnesses the precommitted contact form;
+- `adversarial_wrong_sign` produces a counterexample;
+- `adversarial_partial` leaves the reference question open without a counterexample.
 
-- `candidate_correct → RETURNED`;
-- `adversarial_wrong_sign → CONTRADICTED` (reflection is erased);
-- `adversarial_partial → UNRESOLVED` (reflections are undefined).
-
-These are test fixtures for the audit, not evidence that Aristotle has passed the experiment.
-
-## Falsification value
-
-Any of the following is a successful research outcome:
-
-- a post-hoc translator closes without changing the precommitted `W`;
-- an explicit counterexample shows that the predicted invariant fails;
-- a minimal missing hypothesis explains why the bridge remains UNRESOLVED;
-- a translator closes extensionally but exposes a stronger, representation-sensitive claim as false.
-
-The benchmark therefore tests the framework at its boundary rather than admitting only
-transformations already defined to preserve return.
+The full-stack experiment in `../full_stack_d4/` is the stronger runtime: it lifts all eight
+operation-preserving comparisons into complete `(T,phi,pi)` relative frame forms rather than
+treating noncanonical orientations as failures.

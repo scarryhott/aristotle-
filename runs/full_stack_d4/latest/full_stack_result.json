@@ -3,134 +3,2634 @@
     "perspective_a": "a8bd9c1133c745a0c69a0975d5acdc89dd762dd073540f0d3575b831a9d61b90",
     "perspective_b": "a0b331ab160266df510182b08e7b3e80ee6abe3f08b93cc4313e33d47122a964"
   },
-  "benchmark": "D4-independent-full-stack-v2",
+  "benchmark": "D4-independent-full-stack-relative-equality-v3",
   "cases": [
     {
-      "benchmark": "D4-independent-full-stack-v2",
+      "basis_admission": {
+        "admitted": true,
+        "reason": "actual independently returned relative equality form"
+      },
+      "benchmark": "D4-independent-full-stack-relative-equality-v3",
       "case": "relational_contact",
       "contradiction_count": 0,
-      "coverage": {
-        "completed_element_returns": 8,
-        "completed_ordered_product_returns": 64,
-        "total_element_returns": 8,
-        "total_ordered_product_returns": 64
-      },
-      "disclosure_after_return": {
-        "closure": "all eight element returns and all 64 ordered products agree",
+      "episode_role": "actual",
+      "first_contradiction": null,
+      "first_open_obligation": null,
+      "open_obligation_count": 0,
+      "precommit_sha256": "c555e1be3b5291a42d6d3aeb75ac62129bf6fd50aeedadc79eb426723cdbe173",
+      "relational_disclosure": {
+        "closure": "W, E, T, phi, pi, J, C and relative equality commute",
         "holonomy": {
-          "routes_after_relative_contact": 1,
-          "structural_routes_before_contact": 8
+          "relative_frame_forms": 8,
+          "selected_frame_form_sha256": "365803792e470c61421f48bd57178e15a78e3e1862f40efc2d9b45f0fb8d5905"
         },
-        "homotopy": "all learned products commute through the returned bridge",
+        "homotopy": "all learned operations commute through phi in this relative frame form",
         "identity": {
           "source": "b0",
           "target": "a0"
         }
       },
-      "first_contradiction": null,
-      "first_unresolved": null,
-      "precommit_sha256": "e07f1176fa133d93a49e6c1c6decd041a120165909bee7e8609121cae53c99ce",
-      "return_audit": "RETURNED",
-      "schema_version": 2,
+      "relative_equality": {
+        "candidate_counterexample_witnessed": false,
+        "coherent_frame_form_count": 8,
+        "independent_contact_witnessed": true,
+        "interpretation": "coherent alternatives are relative frame forms, not ambiguity inside fixed axioms",
+        "reference_question_open": false,
+        "relative_equality_witnessed": true,
+        "selected_form_satisfies_translational_axiometry": true,
+        "selected_frame_form_sha256": "365803792e470c61421f48bd57178e15a78e3e1862f40efc2d9b45f0fb8d5905",
+        "structural_family_realized": true
+      },
+      "schema_version": 3,
+      "selected_frame_operations": {
+        "basis_translation_phi": {
+          "b0": "a0",
+          "b1": "a1",
+          "b2": "a3",
+          "b3": "a2",
+          "b4": "a5",
+          "b5": "a4",
+          "b6": "a6",
+          "b7": "a7"
+        },
+        "curvature_C": "the chosen pole section transported through pi",
+        "extension_E": "E_l(p,b)=(p,b)",
+        "failure_count": 0,
+        "first_failure": null,
+        "frame_form_sha256": "365803792e470c61421f48bd57178e15a78e3e1862f40efc2d9b45f0fb8d5905",
+        "laws": {
+          "T_C_cases": 16,
+          "T_C_failure_count": 0,
+          "T_J_cases": 16,
+          "T_J_failure_count": 0,
+          "T_ext_cases": 16,
+          "T_ext_failure_count": 0,
+          "T_ret_cases": 16,
+          "T_ret_failure_count": 0,
+          "ceq_iff_cases": 256,
+          "ceq_iff_failure_count": 0,
+          "phi_is_bijection": true,
+          "phi_operation_cases": 64,
+          "phi_operation_failure_count": 0
+        },
+        "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+        "orientation_translation_pi": "preserved",
+        "polar_section": {
+          "natural_through_pi": true,
+          "return_splits": true,
+          "reversal_exchanges_sections": true,
+          "source_pole": "zero",
+          "target_pole": "zero"
+        },
+        "quotient_basis": {
+          "fibre_size": 2,
+          "occurrences_per_language": 16,
+          "quotient_equivalent_to_basis": true,
+          "relative_equality_classes": 8
+        },
+        "relative_equality_form_holds": true,
+        "return_W": "W_l(p,b)=b",
+        "reversal_J": "J_l(p,b)=(other(p),b)",
+        "universal_factorization": {
+          "closure_respecting_evaluators_checked_per_language": 256,
+          "codomain": "Bool",
+          "pole_sensitive_nonfactor_example_rejected": true,
+          "unique_factorizations_through_W": 256
+        }
+      },
       "self_certification_observed": false,
-      "self_certification_used_as_evidence": false,
+      "self_certification_used_as_relative_contact": false,
+      "structural_frame_forms": [
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a1",
+            "b2": "a3",
+            "b3": "a2",
+            "b4": "a5",
+            "b5": "a4",
+            "b6": "a6",
+            "b7": "a7"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "365803792e470c61421f48bd57178e15a78e3e1862f40efc2d9b45f0fb8d5905",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a1",
+            "b2": "a6",
+            "b3": "a7",
+            "b4": "a5",
+            "b5": "a4",
+            "b6": "a3",
+            "b7": "a2"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "c0534c72021b05f589404d350ef46f53debc605a782e14634e404536d40b0bad",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a2",
+            "b2": "a3",
+            "b3": "a4",
+            "b4": "a5",
+            "b5": "a7",
+            "b6": "a6",
+            "b7": "a1"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "ca658517eb806e6545b4475e1f53e6ebc8739a6412e50f0b5dc3342bd5e8c754",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a2",
+            "b2": "a6",
+            "b3": "a1",
+            "b4": "a5",
+            "b5": "a7",
+            "b6": "a3",
+            "b7": "a4"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "b4edfe3e4163840a3df465447766b36a7d6b18dab0f82319f7e7a2b1d790bb5d",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a4",
+            "b2": "a3",
+            "b3": "a7",
+            "b4": "a5",
+            "b5": "a1",
+            "b6": "a6",
+            "b7": "a2"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "e9a7dd207eaaef1fa372939e8bb2019bf3aa29f01b141e4320c363c3dcaf701f",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a4",
+            "b2": "a6",
+            "b3": "a2",
+            "b4": "a5",
+            "b5": "a1",
+            "b6": "a3",
+            "b7": "a7"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "22b20085778c01219e146f7c5bcc2b5e2bd0286ae33a60d5e0226ed786943411",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a7",
+            "b2": "a3",
+            "b3": "a1",
+            "b4": "a5",
+            "b5": "a2",
+            "b6": "a6",
+            "b7": "a4"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "9c5889c60219538563951e3d919c0af15fb4c63b5a550c030e9bf3d816095ab7",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a7",
+            "b2": "a6",
+            "b3": "a4",
+            "b4": "a5",
+            "b5": "a2",
+            "b6": "a3",
+            "b7": "a1"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "fbb442fab8778d2a0a306ea574766ad2483d0071e201894257cd745b98750ce1",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        }
+      ],
       "tokens_issued": 1,
-      "translator_sha256": "58d72cc3179a253fe395846e999c5ac88d124b682d3748f29c72bdfd68b15cf0",
-      "unresolved_count": 0
+      "translator_sha256": "bb0e3dda6c1df7d2440caed5d807e63f86cce3f42ec897b2e34b06aa11dae477"
     },
     {
-      "benchmark": "D4-independent-full-stack-v2",
-      "case": "structural_only",
+      "basis_admission": {
+        "admitted": false,
+        "reason": "no actual independent relative-equality witness for this branch"
+      },
+      "benchmark": "D4-independent-full-stack-relative-equality-v3",
+      "case": "relative_reversal",
       "contradiction_count": 0,
-      "coverage": {
-        "completed_element_returns": 0,
-        "completed_ordered_product_returns": 0,
-        "total_element_returns": 8,
-        "total_ordered_product_returns": 64
-      },
-      "disclosure_after_return": null,
+      "episode_role": "counterfactual_control",
       "first_contradiction": null,
-      "first_unresolved": {
-        "check": "translation",
-        "expected": null,
-        "input": "structural_only",
-        "observed": null,
-        "reason": "multiple origin choices remain structurally admissible"
+      "first_open_obligation": null,
+      "open_obligation_count": 0,
+      "precommit_sha256": "c555e1be3b5291a42d6d3aeb75ac62129bf6fd50aeedadc79eb426723cdbe173",
+      "relational_disclosure": {
+        "closure": "W, E, T, phi, pi, J, C and relative equality commute",
+        "holonomy": {
+          "relative_frame_forms": 8,
+          "selected_frame_form_sha256": "c0534c72021b05f589404d350ef46f53debc605a782e14634e404536d40b0bad"
+        },
+        "homotopy": "all learned operations commute through phi in this relative frame form",
+        "identity": {
+          "source": "b0",
+          "target": "a0"
+        }
       },
-      "precommit_sha256": "e07f1176fa133d93a49e6c1c6decd041a120165909bee7e8609121cae53c99ce",
-      "return_audit": "UNRESOLVED",
-      "schema_version": 2,
+      "relative_equality": {
+        "candidate_counterexample_witnessed": false,
+        "coherent_frame_form_count": 8,
+        "independent_contact_witnessed": true,
+        "interpretation": "coherent alternatives are relative frame forms, not ambiguity inside fixed axioms",
+        "reference_question_open": false,
+        "relative_equality_witnessed": true,
+        "selected_form_satisfies_translational_axiometry": true,
+        "selected_frame_form_sha256": "c0534c72021b05f589404d350ef46f53debc605a782e14634e404536d40b0bad",
+        "structural_family_realized": true
+      },
+      "schema_version": 3,
+      "selected_frame_operations": {
+        "basis_translation_phi": {
+          "b0": "a0",
+          "b1": "a1",
+          "b2": "a6",
+          "b3": "a7",
+          "b4": "a5",
+          "b5": "a4",
+          "b6": "a3",
+          "b7": "a2"
+        },
+        "curvature_C": "the chosen pole section transported through pi",
+        "extension_E": "E_l(p,b)=(p,b)",
+        "failure_count": 0,
+        "first_failure": null,
+        "frame_form_sha256": "c0534c72021b05f589404d350ef46f53debc605a782e14634e404536d40b0bad",
+        "laws": {
+          "T_C_cases": 16,
+          "T_C_failure_count": 0,
+          "T_J_cases": 16,
+          "T_J_failure_count": 0,
+          "T_ext_cases": 16,
+          "T_ext_failure_count": 0,
+          "T_ret_cases": 16,
+          "T_ret_failure_count": 0,
+          "ceq_iff_cases": 256,
+          "ceq_iff_failure_count": 0,
+          "phi_is_bijection": true,
+          "phi_operation_cases": 64,
+          "phi_operation_failure_count": 0
+        },
+        "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+        "orientation_translation_pi": "reversed",
+        "polar_section": {
+          "natural_through_pi": true,
+          "return_splits": true,
+          "reversal_exchanges_sections": true,
+          "source_pole": "infinity",
+          "target_pole": "zero"
+        },
+        "quotient_basis": {
+          "fibre_size": 2,
+          "occurrences_per_language": 16,
+          "quotient_equivalent_to_basis": true,
+          "relative_equality_classes": 8
+        },
+        "relative_equality_form_holds": true,
+        "return_W": "W_l(p,b)=b",
+        "reversal_J": "J_l(p,b)=(other(p),b)",
+        "universal_factorization": {
+          "closure_respecting_evaluators_checked_per_language": 256,
+          "codomain": "Bool",
+          "pole_sensitive_nonfactor_example_rejected": true,
+          "unique_factorizations_through_W": 256
+        }
+      },
       "self_certification_observed": false,
-      "self_certification_used_as_evidence": false,
+      "self_certification_used_as_relative_contact": false,
+      "structural_frame_forms": [
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a1",
+            "b2": "a3",
+            "b3": "a2",
+            "b4": "a5",
+            "b5": "a4",
+            "b6": "a6",
+            "b7": "a7"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "365803792e470c61421f48bd57178e15a78e3e1862f40efc2d9b45f0fb8d5905",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a1",
+            "b2": "a6",
+            "b3": "a7",
+            "b4": "a5",
+            "b5": "a4",
+            "b6": "a3",
+            "b7": "a2"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "c0534c72021b05f589404d350ef46f53debc605a782e14634e404536d40b0bad",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a2",
+            "b2": "a3",
+            "b3": "a4",
+            "b4": "a5",
+            "b5": "a7",
+            "b6": "a6",
+            "b7": "a1"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "ca658517eb806e6545b4475e1f53e6ebc8739a6412e50f0b5dc3342bd5e8c754",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a2",
+            "b2": "a6",
+            "b3": "a1",
+            "b4": "a5",
+            "b5": "a7",
+            "b6": "a3",
+            "b7": "a4"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "b4edfe3e4163840a3df465447766b36a7d6b18dab0f82319f7e7a2b1d790bb5d",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a4",
+            "b2": "a3",
+            "b3": "a7",
+            "b4": "a5",
+            "b5": "a1",
+            "b6": "a6",
+            "b7": "a2"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "e9a7dd207eaaef1fa372939e8bb2019bf3aa29f01b141e4320c363c3dcaf701f",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a4",
+            "b2": "a6",
+            "b3": "a2",
+            "b4": "a5",
+            "b5": "a1",
+            "b6": "a3",
+            "b7": "a7"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "22b20085778c01219e146f7c5bcc2b5e2bd0286ae33a60d5e0226ed786943411",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a7",
+            "b2": "a3",
+            "b3": "a1",
+            "b4": "a5",
+            "b5": "a2",
+            "b6": "a6",
+            "b7": "a4"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "9c5889c60219538563951e3d919c0af15fb4c63b5a550c030e9bf3d816095ab7",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a7",
+            "b2": "a6",
+            "b3": "a4",
+            "b4": "a5",
+            "b5": "a2",
+            "b6": "a3",
+            "b7": "a1"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "fbb442fab8778d2a0a306ea574766ad2483d0071e201894257cd745b98750ce1",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        }
+      ],
       "tokens_issued": 0,
-      "translator_sha256": "53697cbe522f85a0e5d347d35d92e850259285eb88853cc1e03f9f380a453ead",
-      "unresolved_count": 1
+      "translator_sha256": "a034fe3fd20be3501f1c297098d2696df283b1250e500435765286b1750c68bf"
     },
     {
-      "benchmark": "D4-independent-full-stack-v2",
-      "case": "adversarial_reverse_contact",
-      "contradiction_count": 4,
-      "coverage": {
-        "completed_element_returns": 8,
-        "completed_ordered_product_returns": 64,
-        "total_element_returns": 8,
-        "total_ordered_product_returns": 64
+      "basis_admission": {
+        "admitted": false,
+        "reason": "no actual independent relative-equality witness for this branch"
       },
-      "disclosure_after_return": null,
+      "benchmark": "D4-independent-full-stack-relative-equality-v3",
+      "case": "structural_family",
+      "contradiction_count": 0,
+      "episode_role": "counterfactual_control",
+      "first_contradiction": null,
+      "first_open_obligation": {
+        "check": "relative_reference",
+        "expected": null,
+        "input": "structural_family",
+        "observed": null,
+        "reason": "all coherent frame forms remain relative; no origin is isolated"
+      },
+      "open_obligation_count": 1,
+      "precommit_sha256": "c555e1be3b5291a42d6d3aeb75ac62129bf6fd50aeedadc79eb426723cdbe173",
+      "relational_disclosure": null,
+      "relative_equality": {
+        "candidate_counterexample_witnessed": false,
+        "coherent_frame_form_count": 8,
+        "independent_contact_witnessed": false,
+        "interpretation": "coherent alternatives are relative frame forms, not ambiguity inside fixed axioms",
+        "reference_question_open": true,
+        "relative_equality_witnessed": false,
+        "selected_form_satisfies_translational_axiometry": false,
+        "selected_frame_form_sha256": null,
+        "structural_family_realized": true
+      },
+      "schema_version": 3,
+      "selected_frame_operations": null,
+      "self_certification_observed": false,
+      "self_certification_used_as_relative_contact": false,
+      "structural_frame_forms": [
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a1",
+            "b2": "a3",
+            "b3": "a2",
+            "b4": "a5",
+            "b5": "a4",
+            "b6": "a6",
+            "b7": "a7"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "365803792e470c61421f48bd57178e15a78e3e1862f40efc2d9b45f0fb8d5905",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a1",
+            "b2": "a6",
+            "b3": "a7",
+            "b4": "a5",
+            "b5": "a4",
+            "b6": "a3",
+            "b7": "a2"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "c0534c72021b05f589404d350ef46f53debc605a782e14634e404536d40b0bad",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a2",
+            "b2": "a3",
+            "b3": "a4",
+            "b4": "a5",
+            "b5": "a7",
+            "b6": "a6",
+            "b7": "a1"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "ca658517eb806e6545b4475e1f53e6ebc8739a6412e50f0b5dc3342bd5e8c754",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a2",
+            "b2": "a6",
+            "b3": "a1",
+            "b4": "a5",
+            "b5": "a7",
+            "b6": "a3",
+            "b7": "a4"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "b4edfe3e4163840a3df465447766b36a7d6b18dab0f82319f7e7a2b1d790bb5d",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a4",
+            "b2": "a3",
+            "b3": "a7",
+            "b4": "a5",
+            "b5": "a1",
+            "b6": "a6",
+            "b7": "a2"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "e9a7dd207eaaef1fa372939e8bb2019bf3aa29f01b141e4320c363c3dcaf701f",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a4",
+            "b2": "a6",
+            "b3": "a2",
+            "b4": "a5",
+            "b5": "a1",
+            "b6": "a3",
+            "b7": "a7"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "22b20085778c01219e146f7c5bcc2b5e2bd0286ae33a60d5e0226ed786943411",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a7",
+            "b2": "a3",
+            "b3": "a1",
+            "b4": "a5",
+            "b5": "a2",
+            "b6": "a6",
+            "b7": "a4"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "9c5889c60219538563951e3d919c0af15fb4c63b5a550c030e9bf3d816095ab7",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a7",
+            "b2": "a6",
+            "b3": "a4",
+            "b4": "a5",
+            "b5": "a2",
+            "b6": "a3",
+            "b7": "a1"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "fbb442fab8778d2a0a306ea574766ad2483d0071e201894257cd745b98750ce1",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        }
+      ],
+      "tokens_issued": 0,
+      "translator_sha256": "2c1d9a2b8cd9da0595343966bf1eab6926a3687d748207c2d3c2ec826eb8fee1"
+    },
+    {
+      "basis_admission": {
+        "admitted": false,
+        "reason": "no actual independent relative-equality witness for this branch"
+      },
+      "benchmark": "D4-independent-full-stack-relative-equality-v3",
+      "case": "non_natural_deformation",
+      "contradiction_count": 1,
+      "episode_role": "counterfactual_control",
       "first_contradiction": {
-        "check": "element_return",
-        "expected": [
-          1,
-          2,
-          3,
-          0
+        "check": "phi_operation",
+        "expected": "a6",
+        "input": [
+          "b1",
+          "b2"
         ],
-        "input": "b2",
-        "observed": [
-          3,
-          0,
-          1,
-          2
-        ],
+        "observed": "a3",
         "reason": null
       },
-      "first_unresolved": null,
-      "precommit_sha256": "e07f1176fa133d93a49e6c1c6decd041a120165909bee7e8609121cae53c99ce",
-      "return_audit": "CONTRADICTED",
-      "schema_version": 2,
+      "first_open_obligation": null,
+      "open_obligation_count": 0,
+      "precommit_sha256": "c555e1be3b5291a42d6d3aeb75ac62129bf6fd50aeedadc79eb426723cdbe173",
+      "relational_disclosure": null,
+      "relative_equality": {
+        "candidate_counterexample_witnessed": true,
+        "coherent_frame_form_count": 8,
+        "independent_contact_witnessed": false,
+        "interpretation": "coherent alternatives are relative frame forms, not ambiguity inside fixed axioms",
+        "reference_question_open": true,
+        "relative_equality_witnessed": false,
+        "selected_form_satisfies_translational_axiometry": false,
+        "selected_frame_form_sha256": "9421b9074f15b9cbe6a657a57978c48e1d89f1413fe97e6880634e5191669ec8",
+        "structural_family_realized": true
+      },
+      "schema_version": 3,
+      "selected_frame_operations": {
+        "basis_translation_phi": {
+          "b0": "a0",
+          "b1": "a0",
+          "b2": "a3",
+          "b3": "a3",
+          "b4": "a5",
+          "b5": "a5",
+          "b6": "a6",
+          "b7": "a6"
+        },
+        "curvature_C": "the chosen pole section transported through pi",
+        "extension_E": "E_l(p,b)=(p,b)",
+        "failure_count": 49,
+        "first_failure": {
+          "check": "phi_operation",
+          "expected": "a6",
+          "input": [
+            "b1",
+            "b2"
+          ],
+          "observed": "a3",
+          "reason": null
+        },
+        "frame_form_sha256": "9421b9074f15b9cbe6a657a57978c48e1d89f1413fe97e6880634e5191669ec8",
+        "laws": {
+          "T_C_cases": 16,
+          "T_C_failure_count": 0,
+          "T_J_cases": 16,
+          "T_J_failure_count": 0,
+          "T_ext_cases": 16,
+          "T_ext_failure_count": 0,
+          "T_ret_cases": 16,
+          "T_ret_failure_count": 0,
+          "ceq_iff_cases": 256,
+          "ceq_iff_failure_count": 32,
+          "phi_is_bijection": false,
+          "phi_operation_cases": 64,
+          "phi_operation_failure_count": 16
+        },
+        "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+        "orientation_translation_pi": "preserved",
+        "polar_section": {
+          "natural_through_pi": true,
+          "return_splits": true,
+          "reversal_exchanges_sections": true,
+          "source_pole": "zero",
+          "target_pole": "zero"
+        },
+        "quotient_basis": {
+          "fibre_size": 2,
+          "occurrences_per_language": 16,
+          "quotient_equivalent_to_basis": true,
+          "relative_equality_classes": 8
+        },
+        "relative_equality_form_holds": false,
+        "return_W": "W_l(p,b)=b",
+        "reversal_J": "J_l(p,b)=(other(p),b)",
+        "universal_factorization": {
+          "closure_respecting_evaluators_checked_per_language": 256,
+          "codomain": "Bool",
+          "pole_sensitive_nonfactor_example_rejected": true,
+          "unique_factorizations_through_W": 256
+        }
+      },
       "self_certification_observed": false,
-      "self_certification_used_as_evidence": false,
+      "self_certification_used_as_relative_contact": false,
+      "structural_frame_forms": [
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a1",
+            "b2": "a3",
+            "b3": "a2",
+            "b4": "a5",
+            "b5": "a4",
+            "b6": "a6",
+            "b7": "a7"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "365803792e470c61421f48bd57178e15a78e3e1862f40efc2d9b45f0fb8d5905",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a1",
+            "b2": "a6",
+            "b3": "a7",
+            "b4": "a5",
+            "b5": "a4",
+            "b6": "a3",
+            "b7": "a2"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "c0534c72021b05f589404d350ef46f53debc605a782e14634e404536d40b0bad",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a2",
+            "b2": "a3",
+            "b3": "a4",
+            "b4": "a5",
+            "b5": "a7",
+            "b6": "a6",
+            "b7": "a1"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "ca658517eb806e6545b4475e1f53e6ebc8739a6412e50f0b5dc3342bd5e8c754",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a2",
+            "b2": "a6",
+            "b3": "a1",
+            "b4": "a5",
+            "b5": "a7",
+            "b6": "a3",
+            "b7": "a4"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "b4edfe3e4163840a3df465447766b36a7d6b18dab0f82319f7e7a2b1d790bb5d",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a4",
+            "b2": "a3",
+            "b3": "a7",
+            "b4": "a5",
+            "b5": "a1",
+            "b6": "a6",
+            "b7": "a2"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "e9a7dd207eaaef1fa372939e8bb2019bf3aa29f01b141e4320c363c3dcaf701f",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a4",
+            "b2": "a6",
+            "b3": "a2",
+            "b4": "a5",
+            "b5": "a1",
+            "b6": "a3",
+            "b7": "a7"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "22b20085778c01219e146f7c5bcc2b5e2bd0286ae33a60d5e0226ed786943411",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a7",
+            "b2": "a3",
+            "b3": "a1",
+            "b4": "a5",
+            "b5": "a2",
+            "b6": "a6",
+            "b7": "a4"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "9c5889c60219538563951e3d919c0af15fb4c63b5a550c030e9bf3d816095ab7",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a7",
+            "b2": "a6",
+            "b3": "a4",
+            "b4": "a5",
+            "b5": "a2",
+            "b6": "a3",
+            "b7": "a1"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "fbb442fab8778d2a0a306ea574766ad2483d0071e201894257cd745b98750ce1",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        }
+      ],
       "tokens_issued": 0,
-      "translator_sha256": "df2fedf3b1ad6238e8c82053b63973de37249ca3f44ee6cfebc6eb3c97bb611a",
-      "unresolved_count": 0
+      "translator_sha256": "40b3f5ad58fd56e29af9469d52a3c46555fa6ece424936e2f4b45ef76d1a7fa1"
     },
     {
-      "benchmark": "D4-independent-full-stack-v2",
+      "basis_admission": {
+        "admitted": false,
+        "reason": "no actual independent relative-equality witness for this branch"
+      },
+      "benchmark": "D4-independent-full-stack-relative-equality-v3",
       "case": "self_certification_only",
       "contradiction_count": 0,
-      "coverage": {
-        "completed_element_returns": 0,
-        "completed_ordered_product_returns": 0,
-        "total_element_returns": 8,
-        "total_ordered_product_returns": 64
-      },
-      "disclosure_after_return": null,
+      "episode_role": "counterfactual_control",
       "first_contradiction": null,
-      "first_unresolved": {
-        "check": "translation",
+      "first_open_obligation": {
+        "check": "relative_reference",
         "expected": null,
         "input": "self_certification_only",
         "observed": null,
-        "reason": "self-certification supplies no independent bridge evidence"
+        "reason": "self-claim supplies no independent relative contact"
       },
-      "precommit_sha256": "e07f1176fa133d93a49e6c1c6decd041a120165909bee7e8609121cae53c99ce",
-      "return_audit": "UNRESOLVED",
-      "schema_version": 2,
+      "open_obligation_count": 1,
+      "precommit_sha256": "c555e1be3b5291a42d6d3aeb75ac62129bf6fd50aeedadc79eb426723cdbe173",
+      "relational_disclosure": null,
+      "relative_equality": {
+        "candidate_counterexample_witnessed": false,
+        "coherent_frame_form_count": 8,
+        "independent_contact_witnessed": false,
+        "interpretation": "coherent alternatives are relative frame forms, not ambiguity inside fixed axioms",
+        "reference_question_open": true,
+        "relative_equality_witnessed": false,
+        "selected_form_satisfies_translational_axiometry": false,
+        "selected_frame_form_sha256": null,
+        "structural_family_realized": true
+      },
+      "schema_version": 3,
+      "selected_frame_operations": null,
       "self_certification_observed": true,
-      "self_certification_used_as_evidence": false,
+      "self_certification_used_as_relative_contact": false,
+      "structural_frame_forms": [
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a1",
+            "b2": "a3",
+            "b3": "a2",
+            "b4": "a5",
+            "b5": "a4",
+            "b6": "a6",
+            "b7": "a7"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "365803792e470c61421f48bd57178e15a78e3e1862f40efc2d9b45f0fb8d5905",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a1",
+            "b2": "a6",
+            "b3": "a7",
+            "b4": "a5",
+            "b5": "a4",
+            "b6": "a3",
+            "b7": "a2"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "c0534c72021b05f589404d350ef46f53debc605a782e14634e404536d40b0bad",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a2",
+            "b2": "a3",
+            "b3": "a4",
+            "b4": "a5",
+            "b5": "a7",
+            "b6": "a6",
+            "b7": "a1"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "ca658517eb806e6545b4475e1f53e6ebc8739a6412e50f0b5dc3342bd5e8c754",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a2",
+            "b2": "a6",
+            "b3": "a1",
+            "b4": "a5",
+            "b5": "a7",
+            "b6": "a3",
+            "b7": "a4"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "b4edfe3e4163840a3df465447766b36a7d6b18dab0f82319f7e7a2b1d790bb5d",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a4",
+            "b2": "a3",
+            "b3": "a7",
+            "b4": "a5",
+            "b5": "a1",
+            "b6": "a6",
+            "b7": "a2"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "e9a7dd207eaaef1fa372939e8bb2019bf3aa29f01b141e4320c363c3dcaf701f",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a4",
+            "b2": "a6",
+            "b3": "a2",
+            "b4": "a5",
+            "b5": "a1",
+            "b6": "a3",
+            "b7": "a7"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "22b20085778c01219e146f7c5bcc2b5e2bd0286ae33a60d5e0226ed786943411",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a7",
+            "b2": "a3",
+            "b3": "a1",
+            "b4": "a5",
+            "b5": "a2",
+            "b6": "a6",
+            "b7": "a4"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "9c5889c60219538563951e3d919c0af15fb4c63b5a550c030e9bf3d816095ab7",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "preserved",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "zero",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        },
+        {
+          "basis_translation_phi": {
+            "b0": "a0",
+            "b1": "a7",
+            "b2": "a6",
+            "b3": "a4",
+            "b4": "a5",
+            "b5": "a2",
+            "b6": "a3",
+            "b7": "a1"
+          },
+          "curvature_C": "the chosen pole section transported through pi",
+          "extension_E": "E_l(p,b)=(p,b)",
+          "failure_count": 0,
+          "first_failure": null,
+          "frame_form_sha256": "fbb442fab8778d2a0a306ea574766ad2483d0071e201894257cd745b98750ce1",
+          "laws": {
+            "T_C_cases": 16,
+            "T_C_failure_count": 0,
+            "T_J_cases": 16,
+            "T_J_failure_count": 0,
+            "T_ext_cases": 16,
+            "T_ext_failure_count": 0,
+            "T_ret_cases": 16,
+            "T_ret_failure_count": 0,
+            "ceq_iff_cases": 256,
+            "ceq_iff_failure_count": 0,
+            "phi_is_bijection": true,
+            "phi_operation_cases": 64,
+            "phi_operation_failure_count": 0
+          },
+          "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+          "orientation_translation_pi": "reversed",
+          "polar_section": {
+            "natural_through_pi": true,
+            "return_splits": true,
+            "reversal_exchanges_sections": true,
+            "source_pole": "infinity",
+            "target_pole": "zero"
+          },
+          "quotient_basis": {
+            "fibre_size": 2,
+            "occurrences_per_language": 16,
+            "quotient_equivalent_to_basis": true,
+            "relative_equality_classes": 8
+          },
+          "relative_equality_form_holds": true,
+          "return_W": "W_l(p,b)=b",
+          "reversal_J": "J_l(p,b)=(other(p),b)",
+          "universal_factorization": {
+            "closure_respecting_evaluators_checked_per_language": 256,
+            "codomain": "Bool",
+            "pole_sensitive_nonfactor_example_rejected": true,
+            "unique_factorizations_through_W": 256
+          }
+        }
+      ],
       "tokens_issued": 0,
-      "translator_sha256": "494b216e2195832c5213bec623b0a3d27bdace8ac2a141dad6045710e85b232d",
-      "unresolved_count": 1
+      "translator_sha256": "4c10970e3d3b8d5f6f3392c29b888d19252844beb0627d5cac155944e836e867"
     }
   ],
   "claim_status": "EXPERIMENTAL_CLASSICAL_MATHEMATICAL_AGENT_PROXY",
@@ -138,43 +2638,558 @@
     "independent learning",
     "exhaustive local execution",
     "frozen artifacts",
-    "post-hoc translation",
-    "external return W",
-    "RETURNED/CONTRADICTED/UNRESOLVED audit",
+    "post-hoc relative frame form (T, phi, pi)",
+    "W-relative equality with E, J and C naturality",
+    "frame-relative witness, openness, or counterexample",
     "next basis"
   ],
   "main_case": {
-    "benchmark": "D4-independent-full-stack-v2",
+    "basis_admission": {
+      "admitted": true,
+      "reason": "actual independently returned relative equality form"
+    },
+    "benchmark": "D4-independent-full-stack-relative-equality-v3",
     "case": "relational_contact",
     "contradiction_count": 0,
-    "coverage": {
-      "completed_element_returns": 8,
-      "completed_ordered_product_returns": 64,
-      "total_element_returns": 8,
-      "total_ordered_product_returns": 64
-    },
-    "disclosure_after_return": {
-      "closure": "all eight element returns and all 64 ordered products agree",
+    "episode_role": "actual",
+    "first_contradiction": null,
+    "first_open_obligation": null,
+    "open_obligation_count": 0,
+    "precommit_sha256": "c555e1be3b5291a42d6d3aeb75ac62129bf6fd50aeedadc79eb426723cdbe173",
+    "relational_disclosure": {
+      "closure": "W, E, T, phi, pi, J, C and relative equality commute",
       "holonomy": {
-        "routes_after_relative_contact": 1,
-        "structural_routes_before_contact": 8
+        "relative_frame_forms": 8,
+        "selected_frame_form_sha256": "365803792e470c61421f48bd57178e15a78e3e1862f40efc2d9b45f0fb8d5905"
       },
-      "homotopy": "all learned products commute through the returned bridge",
+      "homotopy": "all learned operations commute through phi in this relative frame form",
       "identity": {
         "source": "b0",
         "target": "a0"
       }
     },
-    "first_contradiction": null,
-    "first_unresolved": null,
-    "precommit_sha256": "e07f1176fa133d93a49e6c1c6decd041a120165909bee7e8609121cae53c99ce",
-    "return_audit": "RETURNED",
-    "schema_version": 2,
+    "relative_equality": {
+      "candidate_counterexample_witnessed": false,
+      "coherent_frame_form_count": 8,
+      "independent_contact_witnessed": true,
+      "interpretation": "coherent alternatives are relative frame forms, not ambiguity inside fixed axioms",
+      "reference_question_open": false,
+      "relative_equality_witnessed": true,
+      "selected_form_satisfies_translational_axiometry": true,
+      "selected_frame_form_sha256": "365803792e470c61421f48bd57178e15a78e3e1862f40efc2d9b45f0fb8d5905",
+      "structural_family_realized": true
+    },
+    "schema_version": 3,
+    "selected_frame_operations": {
+      "basis_translation_phi": {
+        "b0": "a0",
+        "b1": "a1",
+        "b2": "a3",
+        "b3": "a2",
+        "b4": "a5",
+        "b5": "a4",
+        "b6": "a6",
+        "b7": "a7"
+      },
+      "curvature_C": "the chosen pole section transported through pi",
+      "extension_E": "E_l(p,b)=(p,b)",
+      "failure_count": 0,
+      "first_failure": null,
+      "frame_form_sha256": "365803792e470c61421f48bd57178e15a78e3e1862f40efc2d9b45f0fb8d5905",
+      "laws": {
+        "T_C_cases": 16,
+        "T_C_failure_count": 0,
+        "T_J_cases": 16,
+        "T_J_failure_count": 0,
+        "T_ext_cases": 16,
+        "T_ext_failure_count": 0,
+        "T_ret_cases": 16,
+        "T_ret_failure_count": 0,
+        "ceq_iff_cases": 256,
+        "ceq_iff_failure_count": 0,
+        "phi_is_bijection": true,
+        "phi_operation_cases": 64,
+        "phi_operation_failure_count": 0
+      },
+      "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+      "orientation_translation_pi": "preserved",
+      "polar_section": {
+        "natural_through_pi": true,
+        "return_splits": true,
+        "reversal_exchanges_sections": true,
+        "source_pole": "zero",
+        "target_pole": "zero"
+      },
+      "quotient_basis": {
+        "fibre_size": 2,
+        "occurrences_per_language": 16,
+        "quotient_equivalent_to_basis": true,
+        "relative_equality_classes": 8
+      },
+      "relative_equality_form_holds": true,
+      "return_W": "W_l(p,b)=b",
+      "reversal_J": "J_l(p,b)=(other(p),b)",
+      "universal_factorization": {
+        "closure_respecting_evaluators_checked_per_language": 256,
+        "codomain": "Bool",
+        "pole_sensitive_nonfactor_example_rejected": true,
+        "unique_factorizations_through_W": 256
+      }
+    },
     "self_certification_observed": false,
-    "self_certification_used_as_evidence": false,
+    "self_certification_used_as_relative_contact": false,
+    "structural_frame_forms": [
+      {
+        "basis_translation_phi": {
+          "b0": "a0",
+          "b1": "a1",
+          "b2": "a3",
+          "b3": "a2",
+          "b4": "a5",
+          "b5": "a4",
+          "b6": "a6",
+          "b7": "a7"
+        },
+        "curvature_C": "the chosen pole section transported through pi",
+        "extension_E": "E_l(p,b)=(p,b)",
+        "failure_count": 0,
+        "first_failure": null,
+        "frame_form_sha256": "365803792e470c61421f48bd57178e15a78e3e1862f40efc2d9b45f0fb8d5905",
+        "laws": {
+          "T_C_cases": 16,
+          "T_C_failure_count": 0,
+          "T_J_cases": 16,
+          "T_J_failure_count": 0,
+          "T_ext_cases": 16,
+          "T_ext_failure_count": 0,
+          "T_ret_cases": 16,
+          "T_ret_failure_count": 0,
+          "ceq_iff_cases": 256,
+          "ceq_iff_failure_count": 0,
+          "phi_is_bijection": true,
+          "phi_operation_cases": 64,
+          "phi_operation_failure_count": 0
+        },
+        "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+        "orientation_translation_pi": "preserved",
+        "polar_section": {
+          "natural_through_pi": true,
+          "return_splits": true,
+          "reversal_exchanges_sections": true,
+          "source_pole": "zero",
+          "target_pole": "zero"
+        },
+        "quotient_basis": {
+          "fibre_size": 2,
+          "occurrences_per_language": 16,
+          "quotient_equivalent_to_basis": true,
+          "relative_equality_classes": 8
+        },
+        "relative_equality_form_holds": true,
+        "return_W": "W_l(p,b)=b",
+        "reversal_J": "J_l(p,b)=(other(p),b)",
+        "universal_factorization": {
+          "closure_respecting_evaluators_checked_per_language": 256,
+          "codomain": "Bool",
+          "pole_sensitive_nonfactor_example_rejected": true,
+          "unique_factorizations_through_W": 256
+        }
+      },
+      {
+        "basis_translation_phi": {
+          "b0": "a0",
+          "b1": "a1",
+          "b2": "a6",
+          "b3": "a7",
+          "b4": "a5",
+          "b5": "a4",
+          "b6": "a3",
+          "b7": "a2"
+        },
+        "curvature_C": "the chosen pole section transported through pi",
+        "extension_E": "E_l(p,b)=(p,b)",
+        "failure_count": 0,
+        "first_failure": null,
+        "frame_form_sha256": "c0534c72021b05f589404d350ef46f53debc605a782e14634e404536d40b0bad",
+        "laws": {
+          "T_C_cases": 16,
+          "T_C_failure_count": 0,
+          "T_J_cases": 16,
+          "T_J_failure_count": 0,
+          "T_ext_cases": 16,
+          "T_ext_failure_count": 0,
+          "T_ret_cases": 16,
+          "T_ret_failure_count": 0,
+          "ceq_iff_cases": 256,
+          "ceq_iff_failure_count": 0,
+          "phi_is_bijection": true,
+          "phi_operation_cases": 64,
+          "phi_operation_failure_count": 0
+        },
+        "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+        "orientation_translation_pi": "reversed",
+        "polar_section": {
+          "natural_through_pi": true,
+          "return_splits": true,
+          "reversal_exchanges_sections": true,
+          "source_pole": "infinity",
+          "target_pole": "zero"
+        },
+        "quotient_basis": {
+          "fibre_size": 2,
+          "occurrences_per_language": 16,
+          "quotient_equivalent_to_basis": true,
+          "relative_equality_classes": 8
+        },
+        "relative_equality_form_holds": true,
+        "return_W": "W_l(p,b)=b",
+        "reversal_J": "J_l(p,b)=(other(p),b)",
+        "universal_factorization": {
+          "closure_respecting_evaluators_checked_per_language": 256,
+          "codomain": "Bool",
+          "pole_sensitive_nonfactor_example_rejected": true,
+          "unique_factorizations_through_W": 256
+        }
+      },
+      {
+        "basis_translation_phi": {
+          "b0": "a0",
+          "b1": "a2",
+          "b2": "a3",
+          "b3": "a4",
+          "b4": "a5",
+          "b5": "a7",
+          "b6": "a6",
+          "b7": "a1"
+        },
+        "curvature_C": "the chosen pole section transported through pi",
+        "extension_E": "E_l(p,b)=(p,b)",
+        "failure_count": 0,
+        "first_failure": null,
+        "frame_form_sha256": "ca658517eb806e6545b4475e1f53e6ebc8739a6412e50f0b5dc3342bd5e8c754",
+        "laws": {
+          "T_C_cases": 16,
+          "T_C_failure_count": 0,
+          "T_J_cases": 16,
+          "T_J_failure_count": 0,
+          "T_ext_cases": 16,
+          "T_ext_failure_count": 0,
+          "T_ret_cases": 16,
+          "T_ret_failure_count": 0,
+          "ceq_iff_cases": 256,
+          "ceq_iff_failure_count": 0,
+          "phi_is_bijection": true,
+          "phi_operation_cases": 64,
+          "phi_operation_failure_count": 0
+        },
+        "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+        "orientation_translation_pi": "preserved",
+        "polar_section": {
+          "natural_through_pi": true,
+          "return_splits": true,
+          "reversal_exchanges_sections": true,
+          "source_pole": "zero",
+          "target_pole": "zero"
+        },
+        "quotient_basis": {
+          "fibre_size": 2,
+          "occurrences_per_language": 16,
+          "quotient_equivalent_to_basis": true,
+          "relative_equality_classes": 8
+        },
+        "relative_equality_form_holds": true,
+        "return_W": "W_l(p,b)=b",
+        "reversal_J": "J_l(p,b)=(other(p),b)",
+        "universal_factorization": {
+          "closure_respecting_evaluators_checked_per_language": 256,
+          "codomain": "Bool",
+          "pole_sensitive_nonfactor_example_rejected": true,
+          "unique_factorizations_through_W": 256
+        }
+      },
+      {
+        "basis_translation_phi": {
+          "b0": "a0",
+          "b1": "a2",
+          "b2": "a6",
+          "b3": "a1",
+          "b4": "a5",
+          "b5": "a7",
+          "b6": "a3",
+          "b7": "a4"
+        },
+        "curvature_C": "the chosen pole section transported through pi",
+        "extension_E": "E_l(p,b)=(p,b)",
+        "failure_count": 0,
+        "first_failure": null,
+        "frame_form_sha256": "b4edfe3e4163840a3df465447766b36a7d6b18dab0f82319f7e7a2b1d790bb5d",
+        "laws": {
+          "T_C_cases": 16,
+          "T_C_failure_count": 0,
+          "T_J_cases": 16,
+          "T_J_failure_count": 0,
+          "T_ext_cases": 16,
+          "T_ext_failure_count": 0,
+          "T_ret_cases": 16,
+          "T_ret_failure_count": 0,
+          "ceq_iff_cases": 256,
+          "ceq_iff_failure_count": 0,
+          "phi_is_bijection": true,
+          "phi_operation_cases": 64,
+          "phi_operation_failure_count": 0
+        },
+        "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+        "orientation_translation_pi": "reversed",
+        "polar_section": {
+          "natural_through_pi": true,
+          "return_splits": true,
+          "reversal_exchanges_sections": true,
+          "source_pole": "infinity",
+          "target_pole": "zero"
+        },
+        "quotient_basis": {
+          "fibre_size": 2,
+          "occurrences_per_language": 16,
+          "quotient_equivalent_to_basis": true,
+          "relative_equality_classes": 8
+        },
+        "relative_equality_form_holds": true,
+        "return_W": "W_l(p,b)=b",
+        "reversal_J": "J_l(p,b)=(other(p),b)",
+        "universal_factorization": {
+          "closure_respecting_evaluators_checked_per_language": 256,
+          "codomain": "Bool",
+          "pole_sensitive_nonfactor_example_rejected": true,
+          "unique_factorizations_through_W": 256
+        }
+      },
+      {
+        "basis_translation_phi": {
+          "b0": "a0",
+          "b1": "a4",
+          "b2": "a3",
+          "b3": "a7",
+          "b4": "a5",
+          "b5": "a1",
+          "b6": "a6",
+          "b7": "a2"
+        },
+        "curvature_C": "the chosen pole section transported through pi",
+        "extension_E": "E_l(p,b)=(p,b)",
+        "failure_count": 0,
+        "first_failure": null,
+        "frame_form_sha256": "e9a7dd207eaaef1fa372939e8bb2019bf3aa29f01b141e4320c363c3dcaf701f",
+        "laws": {
+          "T_C_cases": 16,
+          "T_C_failure_count": 0,
+          "T_J_cases": 16,
+          "T_J_failure_count": 0,
+          "T_ext_cases": 16,
+          "T_ext_failure_count": 0,
+          "T_ret_cases": 16,
+          "T_ret_failure_count": 0,
+          "ceq_iff_cases": 256,
+          "ceq_iff_failure_count": 0,
+          "phi_is_bijection": true,
+          "phi_operation_cases": 64,
+          "phi_operation_failure_count": 0
+        },
+        "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+        "orientation_translation_pi": "preserved",
+        "polar_section": {
+          "natural_through_pi": true,
+          "return_splits": true,
+          "reversal_exchanges_sections": true,
+          "source_pole": "zero",
+          "target_pole": "zero"
+        },
+        "quotient_basis": {
+          "fibre_size": 2,
+          "occurrences_per_language": 16,
+          "quotient_equivalent_to_basis": true,
+          "relative_equality_classes": 8
+        },
+        "relative_equality_form_holds": true,
+        "return_W": "W_l(p,b)=b",
+        "reversal_J": "J_l(p,b)=(other(p),b)",
+        "universal_factorization": {
+          "closure_respecting_evaluators_checked_per_language": 256,
+          "codomain": "Bool",
+          "pole_sensitive_nonfactor_example_rejected": true,
+          "unique_factorizations_through_W": 256
+        }
+      },
+      {
+        "basis_translation_phi": {
+          "b0": "a0",
+          "b1": "a4",
+          "b2": "a6",
+          "b3": "a2",
+          "b4": "a5",
+          "b5": "a1",
+          "b6": "a3",
+          "b7": "a7"
+        },
+        "curvature_C": "the chosen pole section transported through pi",
+        "extension_E": "E_l(p,b)=(p,b)",
+        "failure_count": 0,
+        "first_failure": null,
+        "frame_form_sha256": "22b20085778c01219e146f7c5bcc2b5e2bd0286ae33a60d5e0226ed786943411",
+        "laws": {
+          "T_C_cases": 16,
+          "T_C_failure_count": 0,
+          "T_J_cases": 16,
+          "T_J_failure_count": 0,
+          "T_ext_cases": 16,
+          "T_ext_failure_count": 0,
+          "T_ret_cases": 16,
+          "T_ret_failure_count": 0,
+          "ceq_iff_cases": 256,
+          "ceq_iff_failure_count": 0,
+          "phi_is_bijection": true,
+          "phi_operation_cases": 64,
+          "phi_operation_failure_count": 0
+        },
+        "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+        "orientation_translation_pi": "reversed",
+        "polar_section": {
+          "natural_through_pi": true,
+          "return_splits": true,
+          "reversal_exchanges_sections": true,
+          "source_pole": "infinity",
+          "target_pole": "zero"
+        },
+        "quotient_basis": {
+          "fibre_size": 2,
+          "occurrences_per_language": 16,
+          "quotient_equivalent_to_basis": true,
+          "relative_equality_classes": 8
+        },
+        "relative_equality_form_holds": true,
+        "return_W": "W_l(p,b)=b",
+        "reversal_J": "J_l(p,b)=(other(p),b)",
+        "universal_factorization": {
+          "closure_respecting_evaluators_checked_per_language": 256,
+          "codomain": "Bool",
+          "pole_sensitive_nonfactor_example_rejected": true,
+          "unique_factorizations_through_W": 256
+        }
+      },
+      {
+        "basis_translation_phi": {
+          "b0": "a0",
+          "b1": "a7",
+          "b2": "a3",
+          "b3": "a1",
+          "b4": "a5",
+          "b5": "a2",
+          "b6": "a6",
+          "b7": "a4"
+        },
+        "curvature_C": "the chosen pole section transported through pi",
+        "extension_E": "E_l(p,b)=(p,b)",
+        "failure_count": 0,
+        "first_failure": null,
+        "frame_form_sha256": "9c5889c60219538563951e3d919c0af15fb4c63b5a550c030e9bf3d816095ab7",
+        "laws": {
+          "T_C_cases": 16,
+          "T_C_failure_count": 0,
+          "T_J_cases": 16,
+          "T_J_failure_count": 0,
+          "T_ext_cases": 16,
+          "T_ext_failure_count": 0,
+          "T_ret_cases": 16,
+          "T_ret_failure_count": 0,
+          "ceq_iff_cases": 256,
+          "ceq_iff_failure_count": 0,
+          "phi_is_bijection": true,
+          "phi_operation_cases": 64,
+          "phi_operation_failure_count": 0
+        },
+        "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+        "orientation_translation_pi": "preserved",
+        "polar_section": {
+          "natural_through_pi": true,
+          "return_splits": true,
+          "reversal_exchanges_sections": true,
+          "source_pole": "zero",
+          "target_pole": "zero"
+        },
+        "quotient_basis": {
+          "fibre_size": 2,
+          "occurrences_per_language": 16,
+          "quotient_equivalent_to_basis": true,
+          "relative_equality_classes": 8
+        },
+        "relative_equality_form_holds": true,
+        "return_W": "W_l(p,b)=b",
+        "reversal_J": "J_l(p,b)=(other(p),b)",
+        "universal_factorization": {
+          "closure_respecting_evaluators_checked_per_language": 256,
+          "codomain": "Bool",
+          "pole_sensitive_nonfactor_example_rejected": true,
+          "unique_factorizations_through_W": 256
+        }
+      },
+      {
+        "basis_translation_phi": {
+          "b0": "a0",
+          "b1": "a7",
+          "b2": "a6",
+          "b3": "a4",
+          "b4": "a5",
+          "b5": "a2",
+          "b6": "a3",
+          "b7": "a1"
+        },
+        "curvature_C": "the chosen pole section transported through pi",
+        "extension_E": "E_l(p,b)=(p,b)",
+        "failure_count": 0,
+        "first_failure": null,
+        "frame_form_sha256": "fbb442fab8778d2a0a306ea574766ad2483d0071e201894257cd745b98750ce1",
+        "laws": {
+          "T_C_cases": 16,
+          "T_C_failure_count": 0,
+          "T_J_cases": 16,
+          "T_J_failure_count": 0,
+          "T_ext_cases": 16,
+          "T_ext_failure_count": 0,
+          "T_ret_cases": 16,
+          "T_ret_failure_count": 0,
+          "ceq_iff_cases": 256,
+          "ceq_iff_failure_count": 0,
+          "phi_is_bijection": true,
+          "phi_operation_cases": 64,
+          "phi_operation_failure_count": 0
+        },
+        "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+        "orientation_translation_pi": "reversed",
+        "polar_section": {
+          "natural_through_pi": true,
+          "return_splits": true,
+          "reversal_exchanges_sections": true,
+          "source_pole": "infinity",
+          "target_pole": "zero"
+        },
+        "quotient_basis": {
+          "fibre_size": 2,
+          "occurrences_per_language": 16,
+          "quotient_equivalent_to_basis": true,
+          "relative_equality_classes": 8
+        },
+        "relative_equality_form_holds": true,
+        "return_W": "W_l(p,b)=b",
+        "reversal_J": "J_l(p,b)=(other(p),b)",
+        "universal_factorization": {
+          "closure_respecting_evaluators_checked_per_language": 256,
+          "codomain": "Bool",
+          "pole_sensitive_nonfactor_example_rejected": true,
+          "unique_factorizations_through_W": 256
+        }
+      }
+    ],
     "tokens_issued": 1,
-    "translator_sha256": "58d72cc3179a253fe395846e999c5ac88d124b682d3748f29c72bdfd68b15cf0",
-    "unresolved_count": 0
+    "translator_sha256": "bb0e3dda6c1df7d2440caed5d807e63f86cce3f42ec897b2e34b06aa11dae477"
   },
   "next_basis": {
     "new_execution": {
@@ -196,27 +3211,29 @@
         "a1"
       ]
     },
-    "returned_relation_sha256": "fbf5aaad279de1b340947405e75e728301915f89771e24253cc41884a629f929",
-    "status": "RETURNED"
+    "reference_question_open": false,
+    "relative_equality_basis_admitted": true,
+    "relative_frame_form_sha256": "fbf5aaad279de1b340947405e75e728301915f89771e24253cc41884a629f929"
   },
+  "open_reference_forms_retained": [
+    "structural_family",
+    "non_natural_deformation",
+    "self_certification_only"
+  ],
   "process_boundaries": {
     "learner_a": "fresh subprocess; perspective A protocol only",
     "learner_b": "fresh subprocess; perspective B protocol only",
     "security_claim": "experimental visibility separation, not an OS security sandbox",
-    "translator": "fresh subprocess; frozen artifacts and contact protocol; complete W withheld",
-    "verifier": "fresh subprocess; precommitted W and frozen artifacts"
+    "translator": "fresh subprocess; frozen artifacts and contact protocol; complete contact withheld",
+    "verifier": "fresh subprocess; constructs W-relative equality and checks every closure operation"
   },
   "receipt_chain": {
-    "count": 13,
-    "head": "44f413d97649330ab705d76d2a2a65bd4649aeac8fa309cc622ee0a48cab6e0f",
+    "count": 15,
+    "head": "6c4d3c9da08779423ce8576387cc083f3aed68e14b3036bb591a517e4703a6e8",
     "ok": true
   },
-  "run_id": "full-stack-e07f1176fa133d93",
-  "schema_version": 2,
+  "run_id": "full-stack-c555e1be3b5291a4",
+  "schema_version": 3,
   "token_bound_respected": true,
-  "tokens_issued": 1,
-  "unresolved_branches_retained": [
-    "structural_only",
-    "self_certification_only"
-  ]
+  "tokens_issued": 1
 }

@@ -16,17 +16,21 @@ A verdict that is language-independent and closure-respecting is characterized a
 
 ## Relational potential
 
-The broader IVI program treats unresolved verification as relational potential rather than as a
-truth value. `W` continues to return only relational content. A separate evidence audit may record:
+The broader IVI program treats openness as relational potential rather than as a truth value. `W`
+returns only relational identity. The runtime therefore keeps three nonexclusive predicates:
 
-- `RETURNED`: the proposed translation commutes with the independently fixed return;
-- `CONTRADICTED`: an explicit transformation breaks the proposed commuting relation;
-- `UNRESOLVED`: the available evidence does not yet establish a unique returned translation.
+- an independently witnessed frame form carries relative equality;
+- the reference question remains open where no relative contact has selected a form;
+- a concrete counterexample may show that a proposed transformation is not an admissible form.
 
-These are records about evidence for a candidate translation, never alternate outputs of closure.
+Multiplicity is not automatically openness or ambiguity. In the corrected D4 runtime, eight
+isomorphisms become eight coherent `(T,phi,pi)` forms. Each realizes relative equality; only their
+selection relative to a particular contact remains open.
 
 ## Why IVI matters to ASI
 
 A mathematical ASI may produce an occurrence humans cannot reconstruct while still preserving a verifiable relational identity. `return_not_faithful` deliberately permits this separation. Verification therefore need not mean complete recovery of the ASI's internal occurrence.
 
-The research challenge is to determine which returns are genuinely independent constraints rather than definitions engineered to survive the transformations being tested.
+The research challenge is to determine which equality forms arise from genuinely independent
+relations rather than operations engineered after the fact to preserve a chosen coordinate
+identity.
