@@ -188,5 +188,5 @@
   "frame_inputs_visible": false,
   "question_inputs_visible": false,
   "runtime_id": "raw-post-frame-candidate-constructor",
-  "schema_version": 1
+  "schema_version": 2
 }

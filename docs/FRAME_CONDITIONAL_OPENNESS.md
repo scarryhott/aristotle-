@@ -51,16 +51,17 @@ unselected; they do not produce an openness claim.
 ## Equality-first comparative instance
 
 `experiments/classical_vs_closure_asi.py` implements a stricter upstream test. It does not introduce
-frame equality through `W`. Each language independently freezes a local operational congruence
-before candidate construction: the distinct programs `x` and `x·e` are equal exactly when their
-complete right-action signatures agree. Only after a raw `T` preserves and reflects these frozen
-tables does the verifier derive the quotient return and check naturality.
+frame equality through `W`. Each language precommits a local axiom-geometry assumption, then an
+isolated stage instantiates and audits that relation in its own terms before candidate construction:
+the distinct programs `x` and `x·e` are equal exactly when their complete right-action signatures
+agree. Only after a raw `T` preserves and reflects these frozen tables does the verifier derive the
+quotient return and check naturality.
 
 The resulting sequence is:
 
 ```text
-primitive equality geometry → raw T → GeomEquiv → admitted translation
-                            → quotient return/naturality → ResolvedIn/OpenIn.
+assumed local equality → internal audit → raw T → GeomEquiv → explicit (T,phi,pi)
+                       → quotient return/naturality → ResolvedIn/OpenIn.
 ```
 
 An equality-collapse control fails reflection. A separate bijective operation twist passes

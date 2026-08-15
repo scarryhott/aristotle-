@@ -82,10 +82,13 @@ Non-selection, missing comparison data, and pending verification are not `OpenIn
 
 The repository contains an executed finite classical mathematical-agent realization. It is not an Aristotle run and not a claim about arbitrary ASI.
 
-Two isolated symbolic learners independently produce and execute different D4 presentations. Their local frame equalities are frozen before candidate comparison. After freeze, the mathematical order is:
+Two isolated symbolic learners independently produce and execute different D4 presentations. Their
+local axiom-geometry assumptions are precommitted, instantiated, audited, and frozen before
+candidate comparison. After freeze, the mathematical order is:
 
 ```text
-primitive frame equality
+assumed local axiom geometry
+    ≺ internal audit and frozen equality
     ≺ raw candidate T
     ≺ GeomEquiv
     ≺ admitted translation
@@ -96,7 +99,7 @@ primitive frame equality
 
 All eight ordinary D4 isomorphisms remain admissible relative frame forms, including orientation reversal. A valid reversal is not rejected merely because it differs from one coordinate convention. The paired runtime includes two staged adversaries: `equality_collapse` can preserve equality while failing reflection; `operation_twist` can satisfy `GeomEquiv` while failing downstream operation naturality.
 
-The translational arm therefore does not win by using a weaker classical baseline. A strong ordinary-isomorphism arm receives the same frozen content-addressed inputs and accepts all eight genuine D4 isomorphisms. The translational arm agrees on those ordinary equivalences while additionally producing equality-transport, quotient, naturality, witnessed-openness, and next-basis certificates.
+The translational arm therefore does not win by using a weaker classical baseline. A strong ordinary-isomorphism arm receives the same frozen content-addressed inputs and accepts all eight genuine D4 isomorphisms. The translational arm agrees on those ordinary equivalences while additionally producing equality-transport, quotient, naturality, witnessed-openness, and next-basis certificates. Each closure result cites the local assumption IDs and explicit `(T,φ,π)` form from which it follows.
 
 This establishes only a **bounded architectural differential**. It does not establish ASI superiority.
 
@@ -105,6 +108,36 @@ This establishes only a **bounded architectural differential**. It does not esta
 The funded question is:
 
 > **As independently operating mathematical agents invent new axiom-geometries, can each frame first stand in its own unified mathematics and then participate in naturally recoverable translational equality with other frames, without a privileged reference language being smuggled in as the definition of all of them?**
+
+### Paired classical-versus-translational study
+
+The funded experiment compares verification architectures over the **same** independently produced
+and frozen mathematical artifacts, tools, proof kernel, and compute budget. It does not compare a
+weakened classical model with a stronger closure model.
+
+The fixed-frame arm records local proof terms and kernel verdicts and applies a strong ordinary
+equivalence/isomorphism baseline to every proposed cross-presentation map. It may accept
+noncanonical isomorphisms and orientation reversal. The translational arm first precommits each
+artifact's local axiom-geometry assumption and every total question, then instantiates and audits
+that admitted equality in the artifact's own terms. A raw candidate `T` is promoted to
+`GeomEquiv` only after equality preservation and reflection. The resulting explicit `(T,φ,π)` form
+is then carried through return, extension, reversal, curvature, quotient factorization, witnessed
+openness, and held-out next-basis transfer.
+
+The comparative hypothesis is not that ordinary mathematics cannot express isomorphism. It is
+that an explicit origin-free frame/`GeomEquiv` pipeline yields auditable cross-presentation
+evidence—transport, obstruction, and frame-qualified resolution/openness—not contained in
+per-artifact kernel acceptance alone.
+
+The repository now executes this paired protocol on a bounded D4 proxy. The grant replaces that
+fixture with independently generated, substantially richer mathematical systems. The
+added-utility hypothesis is not supported if the strong fixed-frame baseline recovers the same
+relations with equal or lower cost, if equality or questions must be revised after `T` is seen, or
+if closure requires a secretly canonical frame.
+
+Assuming a novel geometry is a semantic evaluation boundary, not an empirical success condition.
+Internal incoherence and failure to find a preserving-and-reflecting translation remain admissible
+negative outcomes. Equality or questions may never be revised after cross-frame evidence is seen.
 
 The project has four deliverables.
 

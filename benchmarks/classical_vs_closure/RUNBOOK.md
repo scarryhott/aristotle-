@@ -12,10 +12,11 @@ the same artifacts and raw candidate maps, but no verdict from the fixed-frame a
 the precommitted order:
 
 ```text
-frozen frame equalities
+precommitted local axiom-geometry assumptions
+  → internal evaluation and frozen frame equalities
   → raw candidate T
   → GeomEquiv admission by equality preservation and reflection
-  → admitted translation (T,phi,pi)
+  → explicit translational form (T,phi,pi)
   → W,E,J,C and operation naturality
   → quotient ResolvedIn or witnessed OpenIn
   → next-basis transfer
@@ -27,10 +28,12 @@ frame-relativity control; it is not the definition of classical mathematics.
 
 ## Circularity guard
 
-Each frame equality and each total question must be fixed before cross-frame search. Constructing
-an equality after seeing `T` tests compatibility by design and invalidates the comparison. Both
-arms receive one content-addressed input bundle, and each runs in a fresh subprocess. Neither arm
-receives the other's report.
+Each local equality assumption and each total question must be committed before learning and
+cross-frame search. The frame process instantiates and audits the declared relation in its own
+language; it may reject an unsupported or incoherent geometry but may not replace it. Constructing
+or revising an equality after seeing `T` tests compatibility by design and invalidates the
+comparison. Both arms receive one content-addressed input bundle, including both assumption
+protocols, and each runs in a fresh subprocess. Neither arm receives the other's report.
 
 The baseline is deliberately not a strawman. It must accept all valid D4 isomorphisms, including
 noncanonical and orientation-reversing maps, and it must reject the sign-erasing deformation by an
@@ -47,6 +50,10 @@ data is `PENDING_COMPARISON`; structural non-selection is `UNSELECTED_COMPARISON
 Here “all closure forms follow” means the runtime's declared return, orientation, curvature,
 quotient, and frame-question relations are downstream of admitted translation. It does not claim
 to classify every closure operator or equality geometry in mathematics.
+
+Every candidate result must include `explicit_translational_form`; every question result must
+include `explicit_relational_closure_form`; and the next-basis result must cite the exact selected
+translational-form ID. See [`../../docs/ASSUMED_AXIOM_GEOMETRIES.md`](../../docs/ASSUMED_AXIOM_GEOMETRIES.md).
 
 ## Commands
 

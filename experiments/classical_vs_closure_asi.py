@@ -1,20 +1,23 @@
 #!/usr/bin/env python3
 """Paired fixed-frame versus translational-closure verification runtime.
 
-This is a bounded symbolic comparison, not an ASI or Aristotle result.  Two
-independent D4 learners first freeze their local algebras.  Each local algebra
-then produces, in an isolated stage, its own operational equality geometry:
-the programs ``x`` and ``x · e`` are distinct occurrences but have identical
-right-action signatures.  Those equality tables and the total questions are
-frozen before any cross-frame candidate is constructed.
+This is a bounded symbolic comparison, not an ASI or Aristotle result.  Each
+novel axiom geometry is first precommitted as a local admitted equality.  Two
+independent D4 learners freeze their local algebras; an isolated frame stage
+then instantiates each declared relation in that language and audits its own
+setoid, return, grounding, operation-congruence, and reversal obligations.  It
+does not replace the relation with a classical or cross-frame normal form.
+The assumptions, instantiated equality tables, and total questions are frozen
+before any cross-frame candidate is constructed.
 
 Two fresh verifier processes receive byte-identical upstream evidence:
 
 * the fixed-frame arm rechecks both local kernels and every ordinary proposed
   isomorphism, including noncanonical and orientation-reversing ones;
 * the closure arm first checks preservation and reflection of the frozen
-  equalities, promotes qualifying candidates to ``GeomEquiv``, then checks
-  quotient return, operation/orientation naturality, frame-qualified
+  equalities, promotes qualifying candidates to ``GeomEquiv``, and carries an
+  explicit ``(T, phi, pi)`` form through quotient return, operation,
+  extension, reversal and curvature naturality, frame-qualified
   ``ResolvedIn``/``OpenIn`` evidence, and held-out next-basis transfer.
 
 The comparison tests additional auditable evidence, not the false claim that
@@ -58,6 +61,8 @@ from experiments.full_stack_math_asi import (
 BENCHMARK = ROOT / "benchmarks" / "classical_vs_closure"
 DEFAULT_OUTPUT = ROOT / "runs" / "classical_vs_closure" / "latest"
 CONSTRUCTORS = ("direct", "right_identity_extended")
+ASSUMPTION_KIND = "local_right_action_signature_equivalence"
+ASSUMPTION_STATUS = "ASSUMED_FOR_INTERNAL_EVALUATION"
 
 
 @dataclass(frozen=True)
@@ -81,10 +86,32 @@ def _occurrence_id(constructor: str, local_element: str) -> str:
     return f"{constructor}:{local_element}"
 
 
-def derive_reference_frame(artifact: dict[str, Any], protocol: dict[str, Any]) -> dict[str, Any]:
-    """Derive equality from one local algebra without a return or translator."""
+def instantiate_assumed_axiom_geometry(
+    artifact: dict[str, Any], protocol: dict[str, Any]
+) -> dict[str, Any]:
+    """Instantiate and internally audit one precommitted local equality geometry."""
 
     language = str(protocol["language"])
+    assumption = protocol.get("axiom_geometry_assumption")
+    if not isinstance(assumption, dict):
+        raise ValueError(f"language {language} has no precommitted axiom geometry")
+    if assumption.get("relation_kind") != ASSUMPTION_KIND:
+        raise ValueError(
+            f"language {language} uses unsupported local geometry "
+            f"{assumption.get('relation_kind')!r}; it was not normalized or replaced"
+        )
+    if assumption.get("admission_status") != ASSUMPTION_STATUS:
+        raise ValueError(f"language {language} did not explicitly admit its local geometry")
+    required_obligations = {
+        "setoid",
+        "returning",
+        "grounded",
+        "operation_congruence",
+        "presentation_reversal",
+    }
+    if set(assumption.get("closure_obligations", [])) != required_obligations:
+        raise ValueError(f"language {language} changed its local closure obligations")
+    assumption_id = digest_value({"language": language, "assumption": assumption})
     table = artifact["execution"]["operation_table"]
     certificate = group_certificate(table)
     if not certificate["passed"]:
@@ -98,6 +125,7 @@ def derive_reference_frame(artifact: dict[str, Any], protocol: dict[str, Any]) -
 
     occurrences: list[dict[str, Any]] = []
     signatures: dict[str, list[str]] = {}
+    local_results: dict[str, str] = {}
     for local_element in sorted(table):
         programs = {
             "direct": [local_element],
@@ -112,10 +140,12 @@ def derive_reference_frame(artifact: dict[str, Any], protocol: dict[str, Any]) -
                     "occurrence_id": occurrence_id,
                     "constructor": constructor,
                     "local_program": programs[constructor],
+                    "evaluated_local_result": evaluated,
                     "right_action_signature": signature,
                 }
             )
             signatures[occurrence_id] = signature
+            local_results[occurrence_id] = evaluated
 
     occurrence_ids = tuple(sorted(signatures))
     matrix = {
@@ -160,38 +190,124 @@ def derive_reference_frame(artifact: dict[str, Any], protocol: dict[str, Any]) -
     failure_count = (
         len(reflexivity_failures) + len(symmetry_failures) + len(transitivity_failures)
     )
+
+    returning_failures = []
+    reversal_failures = []
+    for occurrence_id in occurrence_ids:
+        local_result = local_results[occurrence_id]
+        direct = _occurrence_id("direct", local_result)
+        if not matrix[occurrence_id][direct]:
+            returning_failures.append([occurrence_id, direct])
+        constructor = occurrence_id.split(":", 1)[0]
+        other = (
+            "right_identity_extended" if constructor == "direct" else "direct"
+        )
+        reversed_occurrence = _occurrence_id(other, local_result)
+        if not matrix[occurrence_id][reversed_occurrence]:
+            reversal_failures.append([occurrence_id, reversed_occurrence])
+
+    grounded_failures = []
+    for left in sorted(table):
+        for right in sorted(table):
+            left_occurrence = _occurrence_id("direct", left)
+            right_occurrence = _occurrence_id("direct", right)
+            if matrix[left_occurrence][right_occurrence] and left != right:
+                grounded_failures.append([left_occurrence, right_occurrence])
+
+    equal_pairs = [
+        (left, right)
+        for left in occurrence_ids
+        for right in occurrence_ids
+        if matrix[left][right]
+    ]
+    operation_congruence_failures = []
+    for left, left_prime in equal_pairs:
+        for right, right_prime in equal_pairs:
+            product = table[local_results[left]][local_results[right]]
+            product_prime = table[local_results[left_prime]][local_results[right_prime]]
+            product_occurrence = _occurrence_id("direct", product)
+            product_prime_occurrence = _occurrence_id("direct", product_prime)
+            if not matrix[product_occurrence][product_prime_occurrence]:
+                operation_congruence_failures.append(
+                    [[left, left_prime], [right, right_prime]]
+                )
+
+    internal_failure_count = (
+        failure_count
+        + len(returning_failures)
+        + len(grounded_failures)
+        + len(operation_congruence_failures)
+        + len(reversal_failures)
+    )
+    internal_audit = {
+        "evaluated_only_in_declared_local_geometry": True,
+        "external_normal_form_substituted": False,
+        "setoid": {
+            "reflexivity_cases": len(occurrence_ids),
+            "symmetry_cases": len(occurrence_ids) ** 2,
+            "transitivity_cases": len(occurrence_ids) ** 3,
+            "failure_count": failure_count,
+            "first_failure": (
+                reflexivity_failures[0]
+                if reflexivity_failures
+                else symmetry_failures[0]
+                if symmetry_failures
+                else transitivity_failures[0]
+                if transitivity_failures
+                else None
+            ),
+        },
+        "returning": {
+            "cases": len(occurrence_ids),
+            "failure_count": len(returning_failures),
+            "first_failure": returning_failures[0] if returning_failures else None,
+        },
+        "grounded": {
+            "cases": len(table) ** 2,
+            "failure_count": len(grounded_failures),
+            "first_failure": grounded_failures[0] if grounded_failures else None,
+        },
+        "operation_congruence": {
+            "cases": len(equal_pairs) ** 2,
+            "failure_count": len(operation_congruence_failures),
+            "first_failure": (
+                operation_congruence_failures[0]
+                if operation_congruence_failures
+                else None
+            ),
+        },
+        "presentation_reversal": {
+            "cases": len(occurrence_ids),
+            "failure_count": len(reversal_failures),
+            "first_failure": reversal_failures[0] if reversal_failures else None,
+        },
+        "failure_count": internal_failure_count,
+        "passed": internal_failure_count == 0,
+    }
     return {
-        "schema_version": 1,
-        "runtime_id": "local-operational-equality-frame",
+        "schema_version": 2,
+        "runtime_id": "assumed-local-axiom-geometry",
         "language": language,
         "source_artifact_content_sha256": digest_value(artifact),
         "frame_protocol_content_sha256": digest_value(protocol),
+        "axiom_geometry_assumption": assumption,
+        "axiom_geometry_assumption_id": assumption_id,
+        "assumption_status": ASSUMPTION_STATUS,
         "visibility": protocol["visible_inputs"],
         "forbidden_inputs": protocol["forbidden_inputs"],
         "frame_id": frame_id,
         "occurrences": sorted(occurrences, key=lambda item: item["occurrence_id"]),
         "admitted_equality": {
-            "definition": "identical locally computed right-action signatures",
+            "definition": assumption["evaluation_rule"],
+            "relation_kind": assumption["relation_kind"],
+            "source": "precommitted local axiom-geometry assumption",
             "matrix": matrix,
             "matrix_sha256": digest_value(matrix),
             "equivalence_classes": sorted(classes, key=lambda item: item["class_id"]),
             "class_of": dict(sorted(class_of.items())),
-            "setoid_certificate": {
-                "reflexivity_cases": len(occurrence_ids),
-                "symmetry_cases": len(occurrence_ids) ** 2,
-                "transitivity_cases": len(occurrence_ids) ** 3,
-                "failure_count": failure_count,
-                "first_failure": (
-                    reflexivity_failures[0]
-                    if reflexivity_failures
-                    else symmetry_failures[0]
-                    if symmetry_failures
-                    else transitivity_failures[0]
-                    if transitivity_failures
-                    else None
-                ),
-            },
+            "setoid_certificate": internal_audit["setoid"],
         },
+        "internal_unified_evaluation": internal_audit,
         "quotient_not_selected_as_origin": True,
         "return_used_to_define_equality": False,
         "candidate_translation_visible": False,
@@ -331,7 +447,7 @@ def generate_candidate_family(
         },
     ]
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "runtime_id": "raw-post-frame-candidate-constructor",
         "artifact_a_content_sha256": digest_value(artifact_a),
         "artifact_b_content_sha256": digest_value(artifact_b),
@@ -345,9 +461,12 @@ def generate_candidate_family(
 def _validate_frame(
     artifact: dict[str, Any], protocol: dict[str, Any], observed: dict[str, Any]
 ) -> None:
-    expected = derive_reference_frame(artifact, protocol)
+    expected = instantiate_assumed_axiom_geometry(artifact, protocol)
     if observed != expected:
-        raise ValueError(f"frozen frame {protocol['language']} does not match its local derivation")
+        raise ValueError(
+            f"frozen frame {protocol['language']} does not match its precommitted "
+            "local axiom-geometry assumption"
+        )
 
 
 def _validate_shared_manifest(
@@ -426,7 +545,7 @@ def evaluate_fixed_frame_arm(
         and by_case["self_certification_only"]["status"] == "UNSELECTED_COMPARISON"
     )
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "arm": "fixed_frame_strong_baseline",
         "claim_boundary": "bounded proof/isomorphism verifier, not an ASI",
         "shared_manifest_sha256": shared_manifest_sha256,
@@ -609,8 +728,105 @@ def _closure_candidate_certificate(
         if curvature_failures
         else None
     )
+    mapping_sha256 = digest_value(mapping)
+    translation_tuple = (
+        {
+            "T": dict(sorted(translated.items())),
+            "phi": dict(sorted(phi.items())),
+            "pi": orientation,
+        }
+        if geom_equiv and phi_well_defined
+        else None
+    )
+    translational_form_seed = {
+        "source_axiom_geometry_assumption_id": frame_b[
+            "axiom_geometry_assumption_id"
+        ],
+        "target_axiom_geometry_assumption_id": frame_a[
+            "axiom_geometry_assumption_id"
+        ],
+        "mapping_sha256": mapping_sha256,
+        "translation_tuple": translation_tuple,
+    }
+    translational_form_id = digest_value(translational_form_seed)
+    explicit_translational_form = {
+        "translational_form_id": translational_form_id,
+        "source_axiom_geometry": {
+            "language": frame_b["language"],
+            "assumption_id": frame_b["axiom_geometry_assumption_id"],
+            "frame_id": frame_b["frame_id"],
+        },
+        "target_axiom_geometry": {
+            "language": frame_a["language"],
+            "assumption_id": frame_a["axiom_geometry_assumption_id"],
+            "frame_id": frame_a["frame_id"],
+        },
+        "candidate_T": {
+            "mapping_sha256": mapping_sha256,
+            "basis_map": dict(sorted(mapping.items())),
+            "occurrence_map": dict(sorted(translated.items())),
+            "total": occurrence_total,
+            "bijective": occurrence_bijective,
+        },
+        "geom_equiv_admission": {
+            "status": "ADMITTED" if geom_equiv else "REJECTED",
+            "preservation_required": True,
+            "reflection_required": True,
+            "preservation_failure_count": len(preservation_failures),
+            "reflection_failure_count": len(reflection_failures),
+        },
+        "translation_tuple_T_phi_pi": translation_tuple,
+        "closure_derivations": {
+            "W_quotient_return": {
+                "status": "DERIVED" if geom_equiv and phi_well_defined else "BLOCKED",
+                "failure_count": len(return_failures),
+            },
+            "E_extension_naturality": {
+                "status": "VERIFIED" if geom_equiv and phi_well_defined else "BLOCKED",
+                "failure_count": 0,
+            },
+            "J_reversal_naturality": {
+                "status": (
+                    "VERIFIED"
+                    if geom_equiv and phi_well_defined and not reversal_failures
+                    else "COUNTEREXAMPLE"
+                    if reversal_failures
+                    else "BLOCKED"
+                ),
+                "failure_count": len(reversal_failures),
+            },
+            "C_curvature_naturality": {
+                "status": (
+                    "VERIFIED"
+                    if geom_equiv and phi_well_defined and not curvature_failures
+                    else "COUNTEREXAMPLE"
+                    if curvature_failures
+                    else "BLOCKED"
+                ),
+                "failure_count": len(curvature_failures),
+            },
+            "operation_naturality": {
+                "status": (
+                    "VERIFIED"
+                    if geom_equiv and operation_failures == 0
+                    else "COUNTEREXAMPLE"
+                    if geom_equiv and operation_failures > 0
+                    else "BLOCKED"
+                ),
+                "failure_count": operation_failures,
+            },
+            "quotient_resolution_and_openness": {
+                "status": "ELIGIBLE" if naturality else "BLOCKED"
+            },
+            "next_basis_transfer": {
+                "status": "ELIGIBLE" if naturality else "BLOCKED"
+            },
+        },
+        "trans_frame_admission": "ADMITTED" if naturality else "REJECTED",
+        "closure_chain_complete": naturality,
+    }
     return {
-        "mapping_sha256": digest_value(mapping),
+        "mapping_sha256": mapping_sha256,
         "orientation_translation_pi": orientation,
         "occurrence_translation_T": translated,
         "geom_equiv": {
@@ -643,6 +859,7 @@ def _closure_candidate_certificate(
             "curvature_failure_count": len(curvature_failures),
         },
         "admitted_translation": geom_equiv and naturality,
+        "explicit_translational_form": explicit_translational_form,
         "first_failure": first_failure,
     }
 
@@ -677,12 +894,22 @@ def _question_relation(
         frame_id = digest_value(
             {"language": frame["language"], "occurrences": occurrence_ids, "equality": "x=y"}
         )
+        assumption_id = digest_value(
+            {
+                "language": frame["language"],
+                "control": "discrete equality x=y",
+                "frame_id": frame_id,
+            }
+        )
         equality_name = "discrete equality x=y"
+        assumption_kind = "discrete_frame_relational_control"
     else:
         matrix = frame["admitted_equality"]["matrix"]
         equality = lambda left, right: matrix[left][right]
         frame_id = frame["frame_id"]
+        assumption_id = frame["axiom_geometry_assumption_id"]
         equality_name = frame["admitted_equality"]["definition"]
+        assumption_kind = frame["admitted_equality"]["relation_kind"]
     values = {
         occurrence_id: _question_value(
             question_id, occurrence_id, occurrence, artifact, frame
@@ -716,6 +943,13 @@ def _question_relation(
             "left_value": values[left],
             "right_value": values[right],
         }
+    relation_form_seed = {
+        "axiom_geometry_assumption_id": assumption_id,
+        "frame_id": frame_id,
+        "question_id": question_id,
+        "factor": factor if resolved else None,
+        "witness": witness,
+    }
     return {
         "frame_id": frame_id,
         "frame_equality": equality_name,
@@ -737,6 +971,73 @@ def _question_relation(
         ),
         "open_witness": witness,
         "separating_pair_count": len(separating),
+        "explicit_relational_closure_form": {
+            "form_id": digest_value(relation_form_seed),
+            "axiom_geometry_assumption_id": assumption_id,
+            "assumption_kind": assumption_kind,
+            "frame_id": frame_id,
+            "question_id": question_id,
+            "derivation": (
+                "ResolvedIn: unique factor through the assumed frame quotient"
+                if resolved
+                else "OpenIn: explicit pair x~y with Q(x)!=Q(y) in the assumed frame"
+            ),
+            "result": "RESOLVED_IN" if resolved else "OPEN_IN",
+            "cross_frame_transport_requires_geom_equiv": True,
+            "bare_open_label": False,
+        },
+    }
+
+
+def _case_translation_lineage(
+    case: dict[str, Any],
+    status: str,
+    certificates: list[dict[str, Any]],
+    frame_a: dict[str, Any],
+    frame_b: dict[str, Any],
+) -> dict[str, Any]:
+    if not case["candidate_mappings"]:
+        candidate_state = "ABSENT_SELF_CLAIM_ONLY"
+    elif any(
+        not certificate["explicit_translational_form"]["candidate_T"]["total"]
+        for certificate in certificates
+    ):
+        candidate_state = "PARTIAL_PROPOSAL"
+    else:
+        candidate_state = "TOTAL_PROPOSAL"
+    admitted_form_ids = [
+        certificate["explicit_translational_form"]["translational_form_id"]
+        for certificate in certificates
+        if certificate["admitted_translation"]
+    ]
+    all_form_ids = [
+        certificate["explicit_translational_form"]["translational_form_id"]
+        for certificate in certificates
+    ]
+    return {
+        "source_axiom_geometry_assumption_id": frame_b[
+            "axiom_geometry_assumption_id"
+        ],
+        "target_axiom_geometry_assumption_id": frame_a[
+            "axiom_geometry_assumption_id"
+        ],
+        "candidate_T": {
+            "state": candidate_state,
+            "count": len(case["candidate_mappings"]),
+            "mapping_sha256s": [
+                digest_value(mapping) for mapping in case["candidate_mappings"]
+            ],
+        },
+        "geom_equiv_then_closure_status": status,
+        "explicit_translational_form_ids": all_form_ids,
+        "admitted_translational_form_ids": admitted_form_ids,
+        "closure_followthrough": (
+            "EXPLICIT_FOR_EVERY_CANDIDATE"
+            if certificates
+            else "NO_CANDIDATE_TO_DERIVE_FROM"
+        ),
+        "non_admission_is_not_openness": status
+        in {"PENDING_COMPARISON", "UNSELECTED_COMPARISON", "COUNTEREXAMPLE"},
     }
 
 
@@ -783,6 +1084,9 @@ def evaluate_closure_arm(
                 "frame_question_evaluation": (
                     "RUN_AFTER_ADMISSION" if status == "ADMITTED_TRANSLATION" else "NOT_RUN"
                 ),
+                "translation_lineage": _case_translation_lineage(
+                    case, status, certificates, frame_a, frame_b
+                ),
             }
         )
 
@@ -799,6 +1103,9 @@ def evaluate_closure_arm(
     for case in cases:
         if case["status"] == "ADMITTED_TRANSLATION":
             case["frame_question_evaluation"] = "TRANSPORTED"
+            admitted_form_ids = case["translation_lineage"][
+                "admitted_translational_form_ids"
+            ]
             case["transported_question_relations"] = {
                 question_id: {
                     "resolved_status_agrees": next(
@@ -829,6 +1136,16 @@ def evaluate_closure_arm(
                         and item["question_id"] == question_id
                         and not item["frame_equality"].startswith("discrete")
                     )["open_in_frame"],
+                    "explicit_translation_lineage": {
+                        "source_axiom_geometry_assumption_id": frame_b[
+                            "axiom_geometry_assumption_id"
+                        ],
+                        "target_axiom_geometry_assumption_id": frame_a[
+                            "axiom_geometry_assumption_id"
+                        ],
+                        "translational_form_ids": admitted_form_ids,
+                        "transport_order": "GeomEquiv then quotient resolution/openness",
+                    },
                 }
                 for question_id in question_ids
             }
@@ -842,6 +1159,20 @@ def evaluate_closure_arm(
         if selected_case["selected_for_episode"]
         else {"axiom_geometry_basis_admitted": False, "reason": "no selected translation"}
     )
+    selected_certificate = selected_case["certificates"][0]
+    next_basis["explicit_translation_lineage"] = {
+        "source_axiom_geometry_assumption_id": frame_b[
+            "axiom_geometry_assumption_id"
+        ],
+        "target_axiom_geometry_assumption_id": frame_a[
+            "axiom_geometry_assumption_id"
+        ],
+        "translational_form_id": selected_certificate[
+            "explicit_translational_form"
+        ]["translational_form_id"],
+        "admission_required": "complete GeomEquiv and naturality closure chain",
+        "admission_observed": selected_certificate["admitted_translation"],
+    }
     open_records = [item for item in question_relations if item["open_in_frame"]]
     all_open_witnessed = all(
         item["open_witness"] is not None and item["open_witness"]["frame_equal"]
@@ -853,8 +1184,19 @@ def evaluate_closure_arm(
     )
     collapse_certificate = by_case["equality_collapse"]["certificates"][0]
     twist_certificate = by_case["operation_twist"]["certificates"][0]
+    every_candidate_has_explicit_form = all(
+        "explicit_translational_form" in certificate
+        for case in cases
+        for certificate in case["certificates"]
+    )
+    every_question_has_explicit_form = all(
+        "explicit_relational_closure_form" in relation
+        for relation in question_relations
+    )
     status_ok = (
-        structural_admitted == 8
+        frame_a["internal_unified_evaluation"]["passed"]
+        and frame_b["internal_unified_evaluation"]["passed"]
+        and structural_admitted == 8
         and by_case["natural_contact"]["selected_for_episode"]
         and by_case["natural_reversal"]["status"] == "ADMITTED_TRANSLATION"
         and collapse_certificate["geom_equiv"]["preservation_failure_count"] == 0
@@ -864,30 +1206,47 @@ def evaluate_closure_arm(
         and by_case["partial_comparison"]["status"] == "PENDING_COMPARISON"
         and by_case["self_certification_only"]["status"] == "UNSELECTED_COMPARISON"
         and all_open_witnessed
+        and every_candidate_has_explicit_form
+        and every_question_has_explicit_form
         and next_basis["axiom_geometry_basis_admitted"]
     )
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "arm": "translational_closure_verifier",
         "claim_boundary": "bounded relational verifier, not an ASI",
         "shared_manifest_sha256": shared_manifest_sha256,
         "status": "PASS" if status_ok else "FAIL",
         "mathematical_order": [
-            "frozen admitted equality geometry",
+            "precommitted local axiom-geometry assumptions",
+            "internal evaluation and frozen admitted equality geometry",
             "raw candidate T",
             "GeomEquiv preservation and reflection",
-            "admitted translation T, phi and pi",
-            "derived quotient return and naturality",
-            "ResolvedIn quotient factor or OpenIn separating witness",
-            "next-basis transfer",
+            "explicit translational form T, phi and pi",
+            "derived quotient return and W/E/J/C/operation naturality",
+            "ResolvedIn quotient factor or OpenIn separating witness with lineage",
+            "next-basis transfer with lineage",
         ],
         "frames": {
             "A": {
                 "frame_id": frame_a["frame_id"],
+                "axiom_geometry_assumption_id": frame_a[
+                    "axiom_geometry_assumption_id"
+                ],
+                "assumption_status": frame_a["assumption_status"],
+                "internal_unified_evaluation_passed": frame_a[
+                    "internal_unified_evaluation"
+                ]["passed"],
                 "equality_defined_without_return": True,
             },
             "B": {
                 "frame_id": frame_b["frame_id"],
+                "axiom_geometry_assumption_id": frame_b[
+                    "axiom_geometry_assumption_id"
+                ],
+                "assumption_status": frame_b["assumption_status"],
+                "internal_unified_evaluation_passed": frame_b[
+                    "internal_unified_evaluation"
+                ]["passed"],
                 "equality_defined_without_return": True,
             },
         },
@@ -895,6 +1254,8 @@ def evaluate_closure_arm(
         "structural_admitted_translation_count": structural_admitted,
         "question_relations": question_relations,
         "all_open_records_have_separating_witnesses": all_open_witnessed,
+        "every_candidate_has_explicit_translational_form": every_candidate_has_explicit_form,
+        "every_question_has_explicit_relational_closure_form": every_question_has_explicit_form,
         "missing_or_unselected_comparisons_called_open": False,
         "next_basis": next_basis,
         "tokens_issued": 1 if selected_case["selected_for_episode"] else 0,
@@ -950,6 +1311,13 @@ def run_comparison(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
         {
             "protocol_sha256": file_digest(protocol_path),
             "questions_sha256": file_digest(questions_path),
+            "axiom_geometry_assumption_a_sha256": file_digest(
+                frame_a_protocol_path
+            ),
+            "axiom_geometry_assumption_b_sha256": file_digest(
+                frame_b_protocol_path
+            ),
+            "geometry_assumptions_frozen_before_learning": True,
             "questions_frozen_before_learning": True,
             "expected_outcomes_present": False,
         },
@@ -986,13 +1354,33 @@ def run_comparison(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
             "--frame-protocol", str(frame_b_protocol_path), "--output", str(frame_b_path),
         ]
     )
+    frame_a = load_json(frame_a_path)
+    frame_b = load_json(frame_b_path)
     chain.append(
-        "FRAME_A_EQUALITY_FROZEN",
-        {"sha256": file_digest(frame_a_path), "candidate_search_started": False},
+        "FRAME_A_ASSUMPTION_INSTANTIATED_AND_FROZEN",
+        {
+            "sha256": file_digest(frame_a_path),
+            "axiom_geometry_assumption_id": frame_a[
+                "axiom_geometry_assumption_id"
+            ],
+            "internal_unified_evaluation_passed": frame_a[
+                "internal_unified_evaluation"
+            ]["passed"],
+            "candidate_search_started": False,
+        },
     )
     chain.append(
-        "FRAME_B_EQUALITY_FROZEN",
-        {"sha256": file_digest(frame_b_path), "candidate_search_started": False},
+        "FRAME_B_ASSUMPTION_INSTANTIATED_AND_FROZEN",
+        {
+            "sha256": file_digest(frame_b_path),
+            "axiom_geometry_assumption_id": frame_b[
+                "axiom_geometry_assumption_id"
+            ],
+            "internal_unified_evaluation_passed": frame_b[
+                "internal_unified_evaluation"
+            ]["passed"],
+            "candidate_search_started": False,
+        },
     )
 
     candidate_path = output_dir / "candidate_family_frozen.json"
@@ -1015,6 +1403,8 @@ def run_comparison(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
     shared_files = {
         "protocol": protocol_path,
         "questions": questions_path,
+        "frame_a_protocol": frame_a_protocol_path,
+        "frame_b_protocol": frame_b_protocol_path,
         "artifact_a": artifact_a_path,
         "artifact_b": artifact_b_path,
         "frame_a": frame_a_path,
@@ -1022,7 +1412,7 @@ def run_comparison(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
         "candidate_family": candidate_path,
     }
     manifest = {
-        "schema_version": 1,
+        "schema_version": 2,
         "arms_receive_identical_files": True,
         "files": {
             role: {"path": path.name, "sha256": file_digest(path)}
@@ -1037,6 +1427,8 @@ def run_comparison(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
     common_arguments = [
         "--artifact-a", str(artifact_a_path), "--artifact-b", str(artifact_b_path),
         "--frame-a", str(frame_a_path), "--frame-b", str(frame_b_path),
+        "--frame-a-protocol", str(frame_a_protocol_path),
+        "--frame-b-protocol", str(frame_b_protocol_path),
         "--candidate-family", str(candidate_path), "--questions", str(questions_path),
         "--protocol", str(protocol_path), "--shared-manifest", str(manifest_path),
     ]
@@ -1050,7 +1442,16 @@ def run_comparison(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
     )
     chain.append(
         "CLOSURE_ARM_FROZEN",
-        {"sha256": file_digest(closure_path), "status": closure["status"]},
+        {
+            "sha256": file_digest(closure_path),
+            "status": closure["status"],
+            "explicit_translational_forms": closure[
+                "every_candidate_has_explicit_translational_form"
+            ],
+            "explicit_relational_closure_forms": closure[
+                "every_question_has_explicit_relational_closure_form"
+            ],
+        },
     )
 
     same_input = fixed["shared_manifest_sha256"] == closure["shared_manifest_sha256"]
@@ -1066,7 +1467,8 @@ def run_comparison(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
             "operation_twist_rejected_by_both": True,
         },
         "closure_additional_certificates": {
-            "primitive_frame_equalities": 2,
+            "precommitted_axiom_geometry_assumptions": 2,
+            "internally_audited_frame_equalities": 2,
             "setoid_cases_per_frame": {"reflexivity": 16, "symmetry": 256, "transitivity": 4096},
             "geom_equiv_preservation_cases_per_total_candidate": 256,
             "geom_equiv_reflection_cases_per_total_candidate": 256,
@@ -1074,6 +1476,12 @@ def run_comparison(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
             "witnessed_open_relation_count": len(closure_open),
             "all_open_relations_witnessed": closure["all_open_records_have_separating_witnesses"],
             "next_basis_transferred": closure["next_basis"]["axiom_geometry_basis_admitted"],
+            "all_candidate_derivations_explicitly_translational": closure[
+                "every_candidate_has_explicit_translational_form"
+            ],
+            "all_question_derivations_have_closure_lineage": closure[
+                "every_question_has_explicit_relational_closure_form"
+            ],
         },
         "fixed_frame_nonmeasurement_is_not_open": (
             fixed["frame_relative_question_interface"]["status"] == "NOT_MEASURED_BY_ARM"
@@ -1084,16 +1492,16 @@ def run_comparison(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
     chain.append("PAIRED_DIFFERENTIAL", {"sha256": digest_value(differential)})
 
     summary = {
-        "schema_version": 1,
+        "schema_version": 2,
         "claim_status": "EXECUTED_BOUNDED_COMPARATIVE_PROXY",
         "benchmark": load_json(protocol_path)["benchmark"],
         "run_id": f"classical-vs-closure-{file_digest(protocol_path)[:16]}",
         "actual_asi_or_aristotle_run": False,
         "comparison_target": "verification architecture over identical frozen artifacts",
         "causal_order": [
-            "questions precommitted",
+            "local axiom-geometry assumptions and questions precommitted",
             "independent local presentations frozen",
-            "local equality geometries frozen",
+            "assumed local equality geometries internally audited and frozen",
             "raw candidate family frozen",
             "fixed-frame and closure arms executed in separate subprocesses",
             "paired differential",
@@ -1132,6 +1540,8 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--artifact-b", type=Path)
     parser.add_argument("--frame-a", type=Path)
     parser.add_argument("--frame-b", type=Path)
+    parser.add_argument("--frame-a-protocol", type=Path)
+    parser.add_argument("--frame-b-protocol", type=Path)
     parser.add_argument("--frame-protocol", type=Path)
     parser.add_argument("--candidate-family", type=Path)
     parser.add_argument("--questions", type=Path)
@@ -1149,7 +1559,7 @@ def main() -> int:
         if args.output is None:
             raise SystemExit("--output is required for a stage")
         if args.stage == "frame":
-            result = derive_reference_frame(
+            result = instantiate_assumed_axiom_geometry(
                 load_json(args.artifact_a), load_json(args.frame_protocol)
             )
         elif args.stage == "candidates":
@@ -1160,6 +1570,8 @@ def main() -> int:
             files = {
                 "protocol": args.protocol,
                 "questions": args.questions,
+                "frame_a_protocol": args.frame_a_protocol,
+                "frame_b_protocol": args.frame_b_protocol,
                 "artifact_a": args.artifact_a,
                 "artifact_b": args.artifact_b,
                 "frame_a": args.frame_a,
@@ -1171,8 +1583,8 @@ def main() -> int:
             artifact_b = load_json(args.artifact_b)
             frame_a = load_json(args.frame_a)
             frame_b = load_json(args.frame_b)
-            _validate_frame(artifact_a, load_json(BENCHMARK / "frame_a_protocol.json"), frame_a)
-            _validate_frame(artifact_b, load_json(BENCHMARK / "frame_b_protocol.json"), frame_b)
+            _validate_frame(artifact_a, load_json(args.frame_a_protocol), frame_a)
+            _validate_frame(artifact_b, load_json(args.frame_b_protocol), frame_b)
             candidates = load_json(args.candidate_family)
             if args.stage == "fixed":
                 result = evaluate_fixed_frame_arm(

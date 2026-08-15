@@ -105,8 +105,10 @@ comparisons issue no additional token.
 ## Further equality-first comparison
 
 The first full-stack run uses the NRRF627 return fibre as its closure equality. The paired runtime
-in `classical_vs_closure_asi.py` tests the stronger architectural order directly: it freezes each
-language's operational equality matrix without `W` or a candidate comparison, then derives the
-quotient return after `GeomEquiv`. Its fixed-frame arm recognizes all ordinary isomorphisms; the
-closure differential is the additional frame transport, factorization, witness, and next-basis
-evidence. See [`CLASSICAL_VS_CLOSURE_RUN.md`](CLASSICAL_VS_CLOSURE_RUN.md).
+in `classical_vs_closure_asi.py` tests the stronger architectural order directly: it precommits each
+language's axiom-geometry assumption, instantiates and audits the resulting equality matrix without
+`W` or a candidate comparison, and derives the quotient return after `GeomEquiv`. Its fixed-frame
+arm recognizes all ordinary isomorphisms; the closure differential is the additional explicit
+`(T,phi,pi)` lineage, frame transport, factorization, witness, and next-basis evidence. See
+[`CLASSICAL_VS_CLOSURE_RUN.md`](CLASSICAL_VS_CLOSURE_RUN.md) and
+[`ASSUMED_AXIOM_GEOMETRIES.md`](ASSUMED_AXIOM_GEOMETRIES.md).

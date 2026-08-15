@@ -18,7 +18,7 @@
       "right_identity_extended:a6": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
       "right_identity_extended:a7": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601"
     },
-    "definition": "identical locally computed right-action signatures",
+    "definition": "instantiate equality exactly when the two locally evaluated programs have identical complete right-action signatures",
     "equivalence_classes": [
       {
         "class_id": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
@@ -368,14 +368,33 @@
       }
     },
     "matrix_sha256": "f3290d0b7d0599dcb35f1fff1e5f2e9c8b6ee50539e280f0bc7c634d8d03a791",
+    "relation_kind": "local_right_action_signature_equivalence",
     "setoid_certificate": {
       "failure_count": 0,
       "first_failure": null,
       "reflexivity_cases": 16,
       "symmetry_cases": 256,
       "transitivity_cases": 4096
-    }
+    },
+    "source": "precommitted local axiom-geometry assumption"
   },
+  "assumption_status": "ASSUMED_FOR_INTERNAL_EVALUATION",
+  "axiom_geometry_assumption": {
+    "admission_status": "ASSUMED_FOR_INTERNAL_EVALUATION",
+    "carrier": "two frozen local program presentations for every local element",
+    "closure_obligations": [
+      "setoid",
+      "returning",
+      "grounded",
+      "operation_congruence",
+      "presentation_reversal"
+    ],
+    "evaluation_rule": "instantiate equality exactly when the two locally evaluated programs have identical complete right-action signatures",
+    "name": "A-local-operational-closure-geometry",
+    "relation_kind": "local_right_action_signature_equivalence",
+    "semantic_boundary": "The relation is admitted as language A's local axiom geometry before cross-frame search. Internal auditing may refute its coherence but may not replace it with an external normal form."
+  },
+  "axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
   "candidate_translation_visible": false,
   "forbidden_inputs": [
     "perspective B artifact",
@@ -384,11 +403,45 @@
     "question outcomes"
   ],
   "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
-  "frame_protocol_content_sha256": "1613b6e3a5a028fe90e0c5b8612cdf62e6f737bb0246772bdc4b532b05a11a06",
+  "frame_protocol_content_sha256": "bc3fec63ae47420593146797fddbdf950bc723d5c58eb7c0e55086a898e159c2",
+  "internal_unified_evaluation": {
+    "evaluated_only_in_declared_local_geometry": true,
+    "external_normal_form_substituted": false,
+    "failure_count": 0,
+    "grounded": {
+      "cases": 64,
+      "failure_count": 0,
+      "first_failure": null
+    },
+    "operation_congruence": {
+      "cases": 1024,
+      "failure_count": 0,
+      "first_failure": null
+    },
+    "passed": true,
+    "presentation_reversal": {
+      "cases": 16,
+      "failure_count": 0,
+      "first_failure": null
+    },
+    "returning": {
+      "cases": 16,
+      "failure_count": 0,
+      "first_failure": null
+    },
+    "setoid": {
+      "failure_count": 0,
+      "first_failure": null,
+      "reflexivity_cases": 16,
+      "symmetry_cases": 256,
+      "transitivity_cases": 4096
+    }
+  },
   "language": "A",
   "occurrences": [
     {
       "constructor": "direct",
+      "evaluated_local_result": "a0",
       "local_program": [
         "a0"
       ],
@@ -406,6 +459,7 @@
     },
     {
       "constructor": "direct",
+      "evaluated_local_result": "a1",
       "local_program": [
         "a1"
       ],
@@ -423,6 +477,7 @@
     },
     {
       "constructor": "direct",
+      "evaluated_local_result": "a2",
       "local_program": [
         "a2"
       ],
@@ -440,6 +495,7 @@
     },
     {
       "constructor": "direct",
+      "evaluated_local_result": "a3",
       "local_program": [
         "a3"
       ],
@@ -457,6 +513,7 @@
     },
     {
       "constructor": "direct",
+      "evaluated_local_result": "a4",
       "local_program": [
         "a4"
       ],
@@ -474,6 +531,7 @@
     },
     {
       "constructor": "direct",
+      "evaluated_local_result": "a5",
       "local_program": [
         "a5"
       ],
@@ -491,6 +549,7 @@
     },
     {
       "constructor": "direct",
+      "evaluated_local_result": "a6",
       "local_program": [
         "a6"
       ],
@@ -508,6 +567,7 @@
     },
     {
       "constructor": "direct",
+      "evaluated_local_result": "a7",
       "local_program": [
         "a7"
       ],
@@ -525,6 +585,7 @@
     },
     {
       "constructor": "right_identity_extended",
+      "evaluated_local_result": "a0",
       "local_program": [
         "a0",
         "a0"
@@ -543,6 +604,7 @@
     },
     {
       "constructor": "right_identity_extended",
+      "evaluated_local_result": "a1",
       "local_program": [
         "a1",
         "a0"
@@ -561,6 +623,7 @@
     },
     {
       "constructor": "right_identity_extended",
+      "evaluated_local_result": "a2",
       "local_program": [
         "a2",
         "a0"
@@ -579,6 +642,7 @@
     },
     {
       "constructor": "right_identity_extended",
+      "evaluated_local_result": "a3",
       "local_program": [
         "a3",
         "a0"
@@ -597,6 +661,7 @@
     },
     {
       "constructor": "right_identity_extended",
+      "evaluated_local_result": "a4",
       "local_program": [
         "a4",
         "a0"
@@ -615,6 +680,7 @@
     },
     {
       "constructor": "right_identity_extended",
+      "evaluated_local_result": "a5",
       "local_program": [
         "a5",
         "a0"
@@ -633,6 +699,7 @@
     },
     {
       "constructor": "right_identity_extended",
+      "evaluated_local_result": "a6",
       "local_program": [
         "a6",
         "a0"
@@ -651,6 +718,7 @@
     },
     {
       "constructor": "right_identity_extended",
+      "evaluated_local_result": "a7",
       "local_program": [
         "a7",
         "a0"
@@ -670,8 +738,8 @@
   ],
   "quotient_not_selected_as_origin": true,
   "return_used_to_define_equality": false,
-  "runtime_id": "local-operational-equality-frame",
-  "schema_version": 1,
+  "runtime_id": "assumed-local-axiom-geometry",
+  "schema_version": 2,
   "source_artifact_content_sha256": "f00379bd3762fb74041b1685498902ab2898f7df2487b54f38118113d2c18f42",
   "visibility": [
     "frozen perspective A operation table and group certificate"

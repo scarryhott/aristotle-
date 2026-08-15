@@ -23,6 +23,9 @@ the full runtime checks `(W,E,T,phi,pi,J,C)` together.
 `ReferenceFrame` is admitted equality, `ResolvedIn` is quotient factorization, and `GeomEquiv`
 preserves and reflects equality. `openIn_iff_exists_separating_pair` proves that every `OpenIn`
 claim is equivalent to explicit data `x ~ y` with unequal question values.
+`assumeAxiomGeometry` installs a supplied `Setoid` as the exact local evaluation frame without
+adding an axiom; `resolvedIn_assumed_geometry_iff` confirms that no external equality is
+substituted. Cross-frame transport still requires a later `GeomEquiv`.
 
 Build all four modules with the pinned toolchain:
 

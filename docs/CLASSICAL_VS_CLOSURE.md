@@ -62,16 +62,17 @@ instead a sign-erasing map that fails bijectivity and learned-operation naturali
 
 `experiments/classical_vs_closure_asi.py` now runs both verifier contracts over byte-identical
 frozen inputs. It strengthens the upstream boundary beyond the first bridge experiment: each
-language independently derives and freezes a primitive operational equality table before any
-candidate map exists. Equality is identical local right-action behavior of the distinct programs
-`x` and `x·e`; no `W` or cross-frame map defines it. The quotient return is derived downstream.
+language precommits its own axiom-geometry assumption, then independently instantiates and audits
+that equality before any candidate map exists. Equality is identical local right-action behavior
+of the distinct programs `x` and `x·e`; no `W` or cross-frame map defines it, and the evaluator does
+not replace it with an external normal form. The quotient return is derived downstream.
 
 The paired order is:
 
 ```text
-questions precommitted
+local equality assumptions and questions precommitted
   → independent presentations frozen
-  → local equality geometries frozen
+  → local geometries internally audited and frozen
   → raw candidate T frozen
   → fixed-frame arm || closure arm
   → paired differential
@@ -81,7 +82,8 @@ The fixed-frame arm checks local group kernels, all supplied maps, multiplicatio
 inverses, and element-order transport. It accepts all eight ordinary isomorphisms, including
 relative reversal. The closure arm begins from the frozen equality matrices and additionally emits
 preservation/reflection certificates, derived quotient return, `W/E/J/C` naturality,
-frame-qualified question factors or separating witnesses, and next-basis transfer.
+frame-qualified question factors or separating witnesses, and next-basis transfer. Every closure
+derivation cites an explicit `(T,phi,pi)` translational form and both local assumption IDs.
 
 The distinction is not “isomorphism versus no isomorphism.” Both arms recognize isomorphism. The
 comparative hypothesis is that the explicit origin-free frame/`GeomEquiv` pipeline yields auditable

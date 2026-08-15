@@ -9,9 +9,10 @@ two verification architectures over byte-identical frozen symbolic artifacts:
 
 1. a strong fixed-frame arm that rechecks each local algebra and every ordinary proposed
    isomorphism; and
-2. a translational-closure arm that treats independently frozen equality geometry as primitive,
-   admits a candidate comparison only through `GeomEquiv`, and then derives quotient return,
-   naturality, resolution, openness, and next-basis transfer.
+2. a translational-closure arm that instantiates each precommitted local equality geometry in its
+   own terms, admits a candidate comparison only through `GeomEquiv`, and then carries an explicit
+   `(T,phi,pi)` form through quotient return, naturality, resolution, openness, and next-basis
+   transfer.
 
 The comparative hypothesis is not that ordinary mathematics cannot express isomorphism or
 quotients. It is that the explicit closure pipeline emits additional, auditable cross-presentation
@@ -19,36 +20,40 @@ certificates not contained in per-artifact kernel acceptance alone.
 
 ## Equality before return and translation
 
-Each isolated learner first freezes an eight-element D4 algebra. A fresh frame process receives
-only one local frozen algebra. For each local element `x`, it constructs two distinct programs:
+Before learning, each frame protocol commits a local `axiom_geometry_assumption`: the carrier,
+admitted equality rule, and closure obligations. Each isolated learner then freezes an
+eight-element D4 algebra. A fresh frame process receives only its local assumption and frozen
+algebra. For each local element `x`, it instantiates two distinct programs:
 
 ```text
 direct:                  x
 right-identity-extended: x · e
 ```
 
-Their equality is determined by their complete locally computed right-action signatures. The
-result is a primitive 16-occurrence equality table with eight two-member classes. It is certified
-as a setoid over 16 reflexivity, 256 symmetry, and 4096 transitivity cases. The process cannot see
-the other language, candidate maps, contact, or question outcomes. No return map is used to define
-this equality.
+The precommitted relation admits them as equal exactly when their complete locally computed
+right-action signatures agree. The resulting 16-occurrence table has eight two-member classes. It
+is audited over 16 reflexivity, 256 symmetry, 4096 transitivity, 16 returning, 64 grounding, 1024
+operation-congruence, and 16 reversal cases. The process cannot see the other language, candidate
+maps, contact, or question outcomes. It does not substitute an external normal form, and no return
+map defines the equality.
 
 Both equality frames and the total question definitions are content-addressed before the raw
 candidate family is constructed. Only afterward does the closure arm derive the quotient identity
 and its return. The causal order is therefore:
 
 ```text
-local admitted equality geometry
+precommitted local axiom-geometry assumptions
+  → internal evaluation and frozen admitted equalities
   → raw candidate T
   → GeomEquiv admission (preservation and reflection)
-  → admitted translation (T,phi,pi)
+  → explicit translational form (T,phi,pi)
   → quotient return and W/E/J/C naturality
   → ResolvedIn factor or witnessed OpenIn
   → next-basis transfer
 ```
 
-`T` is only proposal data before the `GeomEquiv` check. “Translation” in the admitted sense begins
-after that check.
+`T` is only proposal data before the `GeomEquiv` check. The equality translation exists after that
+check; promotion to the full closure frame additionally requires every downstream naturality law.
 
 ## Fair baseline
 
@@ -74,6 +79,8 @@ model of classical mathematics.
 
 Separating `equality_collapse` from `operation_twist` matters. It demonstrates that equality
 equivalence and downstream naturality are distinct gates rather than one bundled success flag.
+Every case—including partial, absent, and rejected proposals—carries source/target assumption IDs
+and an explicit translation-lineage status rather than a bare verdict.
 
 The closure arm evaluated seven total frame-question relations. `quotient_identity` and
 `element_order` factor uniquely through each operational quotient. `presentation_constructor` is
@@ -83,6 +90,9 @@ question and contains `x ~ y` with unequal question values.
 
 The actual selected relation transferred one held-out next basis. The comparison wrapper issued no
 additional token.
+
+See [`ASSUMED_AXIOM_GEOMETRIES.md`](ASSUMED_AXIOM_GEOMETRIES.md) for the exact assumption/audit
+boundary and evidence schema.
 
 ## Reproducibility and boundary
 
@@ -95,7 +105,7 @@ The deterministic evidence is under `runs/classical_vs_closure/latest/`. The rec
 11 records and closes at:
 
 ```text
-402c1a37251f5fe38c2141ae728695f5d0c49ed64fac66c771eb70b38704754f
+bbf0a818b1c68e481e811cc0b7e3545520ddce3883b5663fea5c66597482207e
 ```
 
 The bounded result supports the claim that the closure architecture records an informational

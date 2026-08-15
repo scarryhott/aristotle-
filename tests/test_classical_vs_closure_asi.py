@@ -4,7 +4,7 @@ import tempfile
 import unittest
 
 from experiments.classical_vs_closure_asi import (
-    derive_reference_frame,
+    instantiate_assumed_axiom_geometry,
     load_json,
     run_comparison,
 )
@@ -33,14 +33,35 @@ class ClassicalVersusClosureASITest(unittest.TestCase):
         ]
         stages = [item["stage"] for item in receipts]
         candidate_index = stages.index("CANDIDATE_FAMILY_FROZEN")
-        self.assertLess(stages.index("FRAME_A_EQUALITY_FROZEN"), candidate_index)
-        self.assertLess(stages.index("FRAME_B_EQUALITY_FROZEN"), candidate_index)
+        self.assertLess(
+            stages.index("FRAME_A_ASSUMPTION_INSTANTIATED_AND_FROZEN"),
+            candidate_index,
+        )
+        self.assertLess(
+            stages.index("FRAME_B_ASSUMPTION_INSTANTIATED_AND_FROZEN"),
+            candidate_index,
+        )
         self.assertEqual(stages[0], "COMPARISON_PRECOMMIT")
+        self.assertTrue(
+            receipts[0]["payload"]["geometry_assumptions_frozen_before_learning"]
+        )
 
-    def test_reference_frames_are_primitive_operational_equalities(self) -> None:
+    def test_reference_frames_instantiate_and_audit_local_assumptions(self) -> None:
         for frame in (self.frame_a, self.frame_b):
             equality = frame["admitted_equality"]
             setoid = equality["setoid_certificate"]
+            audit = frame["internal_unified_evaluation"]
+            self.assertEqual(
+                frame["assumption_status"], "ASSUMED_FOR_INTERNAL_EVALUATION"
+            )
+            self.assertEqual(
+                frame["axiom_geometry_assumption"]["relation_kind"],
+                "local_right_action_signature_equivalence",
+            )
+            self.assertTrue(frame["axiom_geometry_assumption_id"])
+            self.assertEqual(
+                equality["source"], "precommitted local axiom-geometry assumption"
+            )
             self.assertFalse(frame["return_used_to_define_equality"])
             self.assertFalse(frame["candidate_translation_visible"])
             self.assertEqual(len(frame["occurrences"]), 16)
@@ -50,6 +71,13 @@ class ClassicalVersusClosureASITest(unittest.TestCase):
             self.assertEqual(setoid["symmetry_cases"], 256)
             self.assertEqual(setoid["transitivity_cases"], 4096)
             self.assertEqual(setoid["failure_count"], 0)
+            self.assertTrue(audit["evaluated_only_in_declared_local_geometry"])
+            self.assertFalse(audit["external_normal_form_substituted"])
+            self.assertEqual(audit["returning"]["cases"], 16)
+            self.assertEqual(audit["grounded"]["cases"], 64)
+            self.assertEqual(audit["operation_congruence"]["cases"], 1024)
+            self.assertEqual(audit["presentation_reversal"]["cases"], 16)
+            self.assertTrue(audit["passed"])
 
     def test_fixed_frame_baseline_is_strong_not_a_strawman(self) -> None:
         self.assertEqual(self.fixed["status"], "PASS")
@@ -84,6 +112,19 @@ class ClassicalVersusClosureASITest(unittest.TestCase):
         self.assertFalse(twist["naturality"]["holds"])
         self.assertGreater(twist["naturality"]["operation_failure_count"], 0)
         self.assertFalse(twist["admitted_translation"])
+        self.assertEqual(
+            twist["explicit_translational_form"]["geom_equiv_admission"]["status"],
+            "ADMITTED",
+        )
+        self.assertEqual(
+            twist["explicit_translational_form"]["closure_derivations"]
+            ["operation_naturality"]["status"],
+            "COUNTEREXAMPLE",
+        )
+        self.assertEqual(
+            twist["explicit_translational_form"]["trans_frame_admission"],
+            "REJECTED",
+        )
 
     def test_all_coherent_forms_and_reversal_are_retained(self) -> None:
         by_case = {case["case"]: case for case in self.closure["cases"]}
@@ -135,6 +176,18 @@ class ClassicalVersusClosureASITest(unittest.TestCase):
         self.assertEqual(
             by_case["self_certification_only"]["status"], "UNSELECTED_COMPARISON"
         )
+        self.assertEqual(
+            by_case["partial_comparison"]["translation_lineage"]["candidate_T"][
+                "state"
+            ],
+            "PARTIAL_PROPOSAL",
+        )
+        self.assertEqual(
+            by_case["self_certification_only"]["translation_lineage"]["candidate_T"][
+                "state"
+            ],
+            "ABSENT_SELF_CLAIM_ONLY",
+        )
 
         def walk(value):
             if isinstance(value, dict):
@@ -148,6 +201,44 @@ class ClassicalVersusClosureASITest(unittest.TestCase):
         walk(by_case["partial_comparison"])
         walk(by_case["self_certification_only"])
 
+    def test_closure_is_explicitly_translational_through_every_derivation(self) -> None:
+        source_id = self.frame_b["axiom_geometry_assumption_id"]
+        target_id = self.frame_a["axiom_geometry_assumption_id"]
+        for case in self.closure["cases"]:
+            lineage = case["translation_lineage"]
+            self.assertEqual(lineage["source_axiom_geometry_assumption_id"], source_id)
+            self.assertEqual(lineage["target_axiom_geometry_assumption_id"], target_id)
+            for certificate in case["certificates"]:
+                form = certificate["explicit_translational_form"]
+                self.assertEqual(form["source_axiom_geometry"]["assumption_id"], source_id)
+                self.assertEqual(form["target_axiom_geometry"]["assumption_id"], target_id)
+                self.assertIn("candidate_T", form)
+                self.assertIn("geom_equiv_admission", form)
+                self.assertIn("translation_tuple_T_phi_pi", form)
+                self.assertEqual(
+                    set(form["closure_derivations"]),
+                    {
+                        "W_quotient_return",
+                        "E_extension_naturality",
+                        "J_reversal_naturality",
+                        "C_curvature_naturality",
+                        "operation_naturality",
+                        "quotient_resolution_and_openness",
+                        "next_basis_transfer",
+                    },
+                )
+        for relation in self.closure["question_relations"]:
+            form = relation["explicit_relational_closure_form"]
+            self.assertEqual(form["frame_id"], relation["frame_id"])
+            self.assertFalse(form["bare_open_label"])
+        self.assertTrue(self.closure["every_candidate_has_explicit_translational_form"])
+        self.assertTrue(self.closure["every_question_has_explicit_relational_closure_form"])
+        self.assertTrue(
+            self.closure["next_basis"]["explicit_translation_lineage"][
+                "admission_observed"
+            ]
+        )
+
     def test_selected_relation_transfers_one_next_basis_without_meta_token(self) -> None:
         self.assertTrue(self.closure["next_basis"]["axiom_geometry_basis_admitted"])
         self.assertEqual(self.closure["tokens_issued"], 1)
@@ -160,10 +251,23 @@ class ClassicalVersusClosureASITest(unittest.TestCase):
         tampered = json.loads(json.dumps(self.artifact_a))
         tampered["execution"]["operation_table"]["a0"]["a0"] = "a1"
         with self.assertRaises(ValueError):
-            derive_reference_frame(
+            instantiate_assumed_axiom_geometry(
                 tampered,
                 load_json(Path(__file__).parents[1] / "benchmarks" / "classical_vs_closure" / "frame_a_protocol.json"),
             )
+
+    def test_unknown_geometry_is_not_silently_normalized(self) -> None:
+        protocol = load_json(
+            Path(__file__).parents[1]
+            / "benchmarks"
+            / "classical_vs_closure"
+            / "frame_a_protocol.json"
+        )
+        protocol["axiom_geometry_assumption"]["relation_kind"] = (
+            "external_canonical_normal_form"
+        )
+        with self.assertRaisesRegex(ValueError, "not normalized or replaced"):
+            instantiate_assumed_axiom_geometry(self.artifact_a, protocol)
 
     def test_replay_is_byte_identical(self) -> None:
         with tempfile.TemporaryDirectory(prefix="test-classical-vs-closure-replay-") as name:

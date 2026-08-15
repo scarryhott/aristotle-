@@ -419,7 +419,7 @@
     }
   },
   "ordinary_structural_isomorphism_count": 8,
-  "schema_version": 1,
-  "shared_manifest_sha256": "1404f19f2a98bff47cf5acd23984ff425a7888f991ca1b2f4866f820383e74d5",
+  "schema_version": 2,
+  "shared_manifest_sha256": "31824d2a1242c586e03a24e20acb21bed10a0bf0f3e7a7d503a179d266c1aa04",
   "status": "PASS"
 }

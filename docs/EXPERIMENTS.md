@@ -57,11 +57,13 @@ fresh verifier processes. The fixed-frame arm rechecks both local group kernels 
 strong conventional isomorphism analysis. The closure arm receives the same content-addressed
 files and no baseline verdict.
 
-Unlike E0.5, the paired runtime makes equality geometry an explicit upstream artifact. Each frame
-process sees only its own frozen local algebra and equates the distinct programs `x` and `x·e`
-exactly when their complete local right-action signatures agree. Both 16-occurrence equality
-tables, all setoid checks, and the total question definitions are frozen before raw candidate
-construction. The quotient return is derived only after `GeomEquiv` admission.
+Unlike E0.5, the paired runtime makes equality geometry an explicit upstream assumption. Before
+learning, each frame protocol declares its local carrier, admitted equality rule, and closure
+obligations. Each frame process sees only that declaration and its own frozen algebra, instantiates
+the relation `x ~ x·e` through complete local right-action signatures, and audits setoid,
+returning, grounding, operation congruence, and reversal in that geometry. Both 16-occurrence
+equality tables and all total questions are frozen before raw candidate construction. The quotient
+return is derived only after `GeomEquiv` admission.
 
 The controls separate two failure levels:
 
@@ -72,7 +74,8 @@ The controls separate two failure levels:
 Valid reversal and all eight structural isomorphisms are accepted by both arms. Partial comparison
 is `PENDING_COMPARISON`; self-certification and structural non-selection are not `OpenIn`. The
 closure arm additionally produces unique quotient factors, explicit equality-pair witnesses for
-the presentation-constructor question, and one held-out next-basis transfer. This is an executed
+the presentation-constructor question, and one held-out next-basis transfer. Each certificate,
+question result, and next-basis receipt contains explicit assumption/translation lineage. This is an executed
 informational differential, not evidence that closure is a more capable ASI.
 
 See [`CLASSICAL_VS_CLOSURE_RUN.md`](CLASSICAL_VS_CLOSURE_RUN.md) and

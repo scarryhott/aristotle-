@@ -93,7 +93,8 @@ The repository contains finite operational realizations, not claims of general A
 Two isolated symbolic learners independently learn and execute different D4 presentations. Their artifacts are frozen before cross-frame comparison. The operational order is:
 
 ```text
-primitive frame equality
+precommitted local axiom-geometry assumption
+    ≺ internal audit and frozen frame equality
     ≺ raw candidate T
     ≺ GeomEquiv
     ≺ admitted translation
@@ -106,7 +107,7 @@ All eight ordinary D4 isomorphisms are retained as coherent relative frame forms
 
 ### Paired classical-versus-closure runtime
 
-`experiments/classical_vs_closure_asi.py` runs a strong ordinary isomorphism baseline and the translational arm on identical content-addressed frozen inputs. The baseline accepts all eight D4 isomorphisms, including reversal. The translational arm agrees on those ordinary equivalences while additionally producing equality-transport, quotient, naturality, witnessed-openness, and next-basis certificates.
+`experiments/classical_vs_closure_asi.py` runs a strong ordinary isomorphism baseline and the translational arm on identical content-addressed frozen inputs. Before learning or candidate construction, each language commits its own axiom-geometry assumption. A local process instantiates that equality and audits setoid, returning, grounding, operation-congruence, and reversal obligations without substituting an external normal form. The baseline accepts all eight D4 isomorphisms, including reversal. The translational arm agrees on those ordinary equivalences while additionally producing equality-transport, quotient, naturality, witnessed-openness, and next-basis certificates. Every closure result carries its source and target assumption IDs and explicit `(T,phi,pi)` lineage.
 
 This establishes a bounded architectural differential. It does **not** establish that translational verification is superior to all classical verification or that the proxy is an ASI.
 
@@ -171,13 +172,14 @@ See [`docs/IVI.md`](docs/IVI.md).
 - `lean/NRRF631RuntimeFrameConditionalBridge.lean` — runtime frame equality, `GeomEquiv`, quotient resolution, and witnessed openness.
 - `benchmarks/full_stack_d4/` — independent-learning and translation protocols.
 - `experiments/full_stack_math_asi.py` — full-stack bounded translational runtime.
-- `benchmarks/classical_vs_closure/` — paired comparison protocols.
-- `experiments/classical_vs_closure_asi.py` — strong classical baseline versus translational arm.
+- `benchmarks/classical_vs_closure/` — paired comparison and local axiom-geometry assumption protocols.
+- `experiments/classical_vs_closure_asi.py` — local assumption audit plus strong classical baseline versus translational arm.
 - `runs/` — frozen deterministic evidence bundles and receipts.
 - `docs/GRANT.md` — Harmonic/Aristotle proposal.
 - `docs/METAPHYSICS.md` — foundational interpretation.
 - `docs/FRAME_CONDITIONAL_OPENNESS.md` — equality geometry and conditional openness.
 - `docs/RUNTIME_RELATIVE_EQUALITY.md` — formal-to-runtime naturality map.
+- `docs/ASSUMED_AXIOM_GEOMETRIES.md` — local semantic assumptions and explicit translational closure lineage.
 - `docs/CLASSICAL_VS_CLOSURE.md` and `docs/CLASSICAL_VS_CLOSURE_RUN.md` — comparative architecture and executed result.
 - `docs/CLAIM_STATUS.md` — formal/experimental/interpretive audit boundary.
 

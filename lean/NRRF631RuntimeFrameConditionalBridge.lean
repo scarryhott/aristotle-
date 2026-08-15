@@ -27,10 +27,28 @@ universe u v w z
 structure ReferenceFrame (X : Type u) where
   equality : Setoid X
 
+/-- Explicitly install a novel axiom geometry as the equality under which it is evaluated.
+
+`assumed` marks the semantic input order; it does not add a Lean axiom and does not assert that a
+comparison with another frame exists.  Preservation and reflection are still demanded later by
+`GeomEquiv`. -/
+def assumeAxiomGeometry {X : Type u} (equality : Setoid X) : ReferenceFrame X where
+  equality := equality
+
+@[simp] theorem assumeAxiomGeometry_equality {X : Type u} (equality : Setoid X) :
+    (assumeAxiomGeometry equality).equality = equality := rfl
+
 /-- A question is resolved only relative to a frame: it cannot separate frame-equal occurrences. -/
 def ResolvedIn {X : Type u} {Ω : Type v}
     (F : ReferenceFrame X) (Q : X → Ω) : Prop :=
   ∀ ⦃x y⦄, F.equality.r x y → Q x = Q y
+
+/-- Evaluation of a question uses exactly the locally assumed geometry, with no substituted
+external equality. -/
+theorem resolvedIn_assumed_geometry_iff {X : Type u} {Ω : Type v}
+    (equality : Setoid X) (Q : X → Ω) :
+    ResolvedIn (assumeAxiomGeometry equality) Q ↔
+      ∀ ⦃x y⦄, equality.r x y → Q x = Q y := Iff.rfl
 
 /-- Openness is the two-place negation of frame-relative resolution. -/
 def OpenIn {X : Type u} {Ω : Type v}
@@ -54,8 +72,8 @@ theorem openIn_iff_exists_separating_pair {X : Type u} {Ω : Type v}
     exact hneq (hresolved hxy)
 
 /-- The closure frame of a return map admits equality exactly when returns agree. -/
-def closureFrame {X : Type u} {B : Type v} (W : X → B) : ReferenceFrame X where
-  equality := {
+def closureFrame {X : Type u} {B : Type v} (W : X → B) : ReferenceFrame X :=
+  assumeAxiomGeometry {
     r := CEq W
     iseqv := ⟨
       fun _ => rfl,
@@ -65,8 +83,8 @@ def closureFrame {X : Type u} {B : Type v} (W : X → B) : ReferenceFrame X wher
   }
 
 /-- The discrete control frame admits only literal equality. -/
-def discreteFrame (X : Type u) : ReferenceFrame X where
-  equality := {
+def discreteFrame (X : Type u) : ReferenceFrame X :=
+  assumeAxiomGeometry {
     r := Eq
     iseqv := ⟨Eq.refl, Eq.symm, Eq.trans⟩
   }
@@ -248,6 +266,7 @@ theorem runtime_begins_in_axiom_geometry
 end NRRF631Runtime
 
 #print axioms NRRF631Runtime.resolvedIn_iff_factors
+#print axioms NRRF631Runtime.resolvedIn_assumed_geometry_iff
 #print axioms NRRF631Runtime.openIn_iff_exists_separating_pair
 #print axioms NRRF631Runtime.factor_through_quotient_unique
 #print axioms NRRF631Runtime.TransFrame.transGeomEquiv
