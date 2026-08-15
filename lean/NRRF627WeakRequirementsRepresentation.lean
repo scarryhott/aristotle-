@@ -40,7 +40,7 @@ structure PresentationFamily
     (B : L → Type q) (Y : L → Type z) where
   occurrence : ∀ ℓ, X ≃ Y ℓ
   basis : ∀ ℓ, R ≃ B ℓ
-  orientation : ∀ ℓ, Equiv.Perm Pole
+  orientation : (ℓ : L) → Equiv.Perm Pole
 
 /-- The translation-and-return portion of `TransFrame`, before adding `J` and `C`. -/
 structure TranslationClosure
