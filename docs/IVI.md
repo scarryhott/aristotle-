@@ -1,31 +1,50 @@
 # IVI: Intangibly Verified Information
 
-IVI is the proposed bridge between closure metaphysics and operational verification.
+## Mathematical definition
 
-## Core idea
+Let `W : X → B` be a verification return and define its fibre at `b : B` by
 
-Information is not made verified merely by being asserted, measured once, or reproduced syntactically. Verification is an **admissibility boundary on relations**: some transformations return coherently to the maintained basis and others do not.
+`Fibre_W(b) := {u : X | W(u) = b}`.
 
-IVI is therefore information whose identity is recoverable through the closure relation even when its presentation changes.
+Define the non-faithful IVI condition
 
-In the current formal kernel, the closest exact object is the verification return `W` together with closure equality:
+`IVI_W(b) :≡ ∃ u v, u ≠ v ∧ W(u) = b ∧ W(v) = b`.
 
-`CEq W u v := W u = W v`.
+Equivalently, the verifier can certify the returned relation `b` while `W` does not uniquely
+reconstruct which occurrence generated it.
 
-A verdict that is language-independent and closure-respecting is characterized as a measurement of this return.
+**PROVED (conditional):** NRRF627's `return_not_faithful` supplies distinct closure-equal
+occurrences under its `Separated` condition, and its witness models show consistency. The
+axiometric characterization proves that every invariant, closure-respecting verdict factors
+through the return.
 
-## Potential gate
+**NOT PROVED:** every return is non-faithful, every real ASI state has IVI, or all information lost
+inside a fibre is parity. The parity theorem classifies one reversal-generated walk, not arbitrary
+fibres.
 
-The broader IVI program treats verification as a potential gate rather than a claim of omniscience. A runtime should admit three outcomes:
+## Why “intangible” has a technical role
 
-- `PROVED`: the return closes under the stated admissibility conditions;
-- `FALSE_WITH_COUNTEREXAMPLE`: an explicit transformation breaks the proposed closure;
-- `OPEN_WITH_MINIMAL_OBSTRUCTION`: the available relation does not yet close and the obstruction is identified.
+The intangible component is not an unmeasured mystical object. It is the distinction between:
 
-This prevents `OPEN` from being silently converted into either truth or falsity.
+- possession of a certified return `b`; and
+- faithful reconstruction of a unique generating occurrence `u`.
 
-## Why IVI matters to ASI
+When `IVI_W(b)` holds, the first is possible while the second is mathematically underdetermined.
+This gives IVI a verification role without making it an extra physical or metaphysical theorem.
 
-A mathematical ASI may produce an occurrence humans cannot reconstruct while still preserving a verifiable relational identity. `return_not_faithful` deliberately permits this separation. Verification therefore need not mean complete recovery of the ASI's internal occurrence.
+## Three-valued potential gate
 
-The research challenge is to determine which returns are genuinely independent constraints rather than definitions engineered to survive the transformations being tested.
+**EXPERIMENTAL PROTOCOL:** a candidate relation is evaluated as:
+
+- `TRUE` when every required independent return closes;
+- `FALSE` when an explicit counterexample breaks closure;
+- `OPEN` when no contradiction is known but the return is incomplete or unavailable.
+
+Contradiction takes precedence over incompleteness. `OPEN` is not silently promoted to truth, and a
+model's self-certification produces no token.
+
+## Interpretation boundary
+
+**METAPHYSICAL INTERPRETATION:** IVI may be read as identity grounded in recoverable relation rather
+than in a privileged local presentation. The Lean theorems support the non-faithful return
+structure; they do not prove that this interpretation exhausts mathematical or physical reality.

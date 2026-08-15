@@ -1,0 +1,30 @@
+name: Verify formal and experimental kernels
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  experiment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run exhaustive D4 tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Validate TRUE/FALSE/OPEN reference cases
+        run: python3 experiments/aristotle_d4_closure.py --assert-reference
+
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          build: true

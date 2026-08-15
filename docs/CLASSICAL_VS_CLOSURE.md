@@ -1,38 +1,54 @@
-# Classical Mathematical ASI vs Closure Runtime
+# Classical Mathematical AI vs Translational Closure
 
-| Layer | Classical mathematical ASI | Translational / closure ASI |
+## The complementary verification questions
+
+**PROVED / EXISTING VERIFICATION:** Lean and Aristotle establish a local derivability judgment in a
+selected formal language:
+
+`Γ ⊢_L P`.
+
+**CONJECTURED / EXPERIMENTAL EXTENSION:** translational axiometry studies a changed formal frame:
+
+`(L, Γ, P) --(T, φ, π)--> (L′, Γ′, P′)`
+
+and asks whether the independently selected return square commutes.
+
+```mermaid
+flowchart TB
+  subgraph Fixed["Fixed-frame proof checking"]
+    A["Context Γ and claim P in L"] --> B["Lean / Aristotle"] --> C["Kernel judgment Γ ⊢ₗ P"]
+  end
+  subgraph Cross["Cross-frame verification"]
+    D["Occurrence in L"] -->|"T, φ, π"| E["Occurrence in L′"]
+    D --> F["Return Wₗ"]
+    E --> G["Return Wₗ′"]
+    F --> H{"Same returned relation?"}
+    G --> H
+  end
+```
+
+The second layer still requires the first: Lean checks each formalization and the claimed bridge.
+
+| Layer | Classical mathematical AI | Translational / closure verification |
 |---|---|---|
-| Trusted object | proof checked in a fixed kernel | recoverable invariant across admissible translations, ultimately still kernel-checked when formalized |
-| Language | fixed or translated back into a privileged formal language | family of pairwise comparable languages; no language is the metaphysical origin |
-| Capability growth | harder theorem proving, search, synthesis, formalization | may additionally change representation, axiomatization, geometry, internal ontology, and reasoning route |
-| Equality | syntactic/definitional/propositional equality in the formal system | closure equality can identify distinct occurrences with the same verification return |
-| Verification | theorem checks | theorem checks **plus** cross-language return/coherence claim |
-| History | proof object/derivation matters operationally | coherent evolutionary route is predicted to leave no verdict trace beyond endpoints |
-| Internal change | usually implementation detail | return-invisible change is modeled as gauge freedom |
-| Failure | rejected proof / counterexample | rejected proof, broken translation/return, counterexample, or OPEN obstruction |
+| Trusted judgment | proof checked in a selected kernel and context | local proofs plus a checked cross-frame return/coherence relation |
+| Representation | fixed, or normalized back into a privileged formalism | independently generated formalisms connected after generation |
+| Capability growth | stronger search, synthesis, and proof construction | may also alter definitions, axiomatization, geometry, ontology, or route |
+| Equality | definitional/propositional equality inside the formal system | closure equality may identify distinct occurrences with one return |
+| History | derivation matters operationally | path independence is a hypothesis/theorem to test, not assume for real agents |
+| Failure | rejected proof or counterexample | rejected proof, broken return, explicit counterexample, or OPEN bridge |
 
-## Not a replacement for Lean
+## What the current theorem says
 
-Closure verification is not proposed as a substitute for a trusted proof kernel. Lean checks the formal claims about the closure architecture. The new question is what architecture should be checked when the mathematical intelligence can change the presentation in which its reasoning occurs.
+**PROVED:** inside `TransFrame`, coherent translations preserve and reflect closure equality, and
+admissible verdicts are exactly return measurements.
 
-## Classical runtime
+**NOT ESTABLISHED:** arbitrary learning, self-modification, or re-axiomatization is a
+return-preserving `Restructuring`. Calling `capability_is_gauge` does not remove that premise.
 
-A classical runtime can be idealized as:
+## What the experiment changes
 
-`prompt → search/reason → formal statement → proof term → kernel verdict`.
-
-Its central invariant is kernel acceptance in a selected formal environment.
-
-## Closure runtime
-
-A closure runtime adds explicit relational state:
-
-`occurrence in L_i → translation/restructuring/evolution → occurrence in L_j → verification return → comparison/return → verdict`.
-
-The runtime records the translation, return, basis, and obstruction rather than only a final boolean. Its purpose is to test whether mathematical content survives representation change for reasons not hard-coded into the transformation generator.
-
-## Required experimental distinction
-
-A useful closure runtime must contain both **admitted moves**, predicted to preserve the return, and **non-admitted/adversarial moves**, capable of breaking it.
-
-Without the second class, the runtime only demonstrates its own definitions.
+The D4 experiment fixes `W`, independently generates both mathematical presentations, freezes
+them, and discovers a bridge only afterward. Adversarial and partial maps are scored by the same
+gate. This tests whether closure constrains transformations independently rather than defining
+“admitted” to mean “already return-preserving.”
