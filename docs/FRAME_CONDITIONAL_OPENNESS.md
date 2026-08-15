@@ -1,0 +1,56 @@
+# Frame-Conditional Openness in the Runtime
+
+This note integrates the NRRF631 frame-conditional mathematics into the executable D4 runtime. It
+is not a copy of the general NRRF631 development, whose source is maintained outside this
+repository. The local machine-checked interface is
+`lean/NRRF631RuntimeFrameConditionalBridge.lean`.
+
+## Foundation
+
+A reference frame on occurrences is exactly its admitted equality. For a frame `F` and total
+question `Q`:
+
+```text
+ResolvedIn(F,Q) := every pair equated by F receives the same Q-value
+OpenIn(F,Q)     := not ResolvedIn(F,Q).
+```
+
+Resolution is equivalent to factorization through the quotient by the frame equality, with a
+unique factor. Openness is therefore never a property of `Q` alone. Its runtime witness consists of
+`frame_id`, `question_id`, and two frame-equal occurrences that `Q` separates.
+
+A comparison is accepted as `GeomEquiv` before any question is classified:
+
+```text
+GeomEquiv(F,G,T) := T is reversible and
+                    G.equal(Tx,Ty) ↔ F.equal(x,y).
+```
+
+These comparisons compose, invert, and transport both `ResolvedIn` and `OpenIn`. The existing
+NRRF627 `TransFrame.ceq_iff` supplies exactly this preservation-and-reflection law.
+
+## Executable instance
+
+Each D4 language uses `Y_l = Pole × B_l` and `W_l(p,b)=b`. Its closure frame therefore equates the
+two pole presentations over one returned identity. The runtime checks every one of 256 ordered
+occurrence pairs in both directions for every comparison.
+
+It then classifies three concrete frame-question relations:
+
+| Question | Admitted equality | Classification |
+|---|---|---|
+| returned identity | closure equality | resolved; unique quotient factor |
+| literal pole | closure equality | open; equal polar pair is separated |
+| literal pole | discrete equality | resolved |
+
+All eight coherent D4 comparisons transport these classifications. The sign-erasing deformation
+fails equality reflection and is not a `GeomEquiv`. Branches lacking independent contact are simply
+unselected; they do not produce an openness claim.
+
+## Scope
+
+The Lean bridge proves the definitions, quotient characterization and uniqueness, groupoid
+operations, translation invariance, closure-return resolution, and the closure/discrete pole
+example. The Python runtime exhausts the finite D4 instance. Neither layer claims that arbitrary
+systems satisfy the NRRF627 frame laws or that the finite experiment establishes the full general
+NRRF631 theorem independently.

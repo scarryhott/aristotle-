@@ -6,8 +6,8 @@ Status: **EXPERIMENTAL PROTOCOL — ARISTOTLE RUN OPEN**.
 
 Two isolated Aristotle sessions formalize square symmetries as permutations and as
 `Z/4 ⋊ Z/2` normal forms. A third session receives only the frozen artifacts and attempts the
-translation. The vertex-action contact form is committed first. The fixture records a relational
-witness, an open reference question, and a concrete counterexample separately; no qualifying
+translation. The vertex-action contact form is committed first. The fixture records a total
+`GeomEquiv` candidate, an incomplete comparison, and a concrete counterexample separately; no qualifying
 Aristotle evidence bundle has yet been produced. See
 [`../benchmarks/d4/RUNBOOK.md`](../benchmarks/d4/RUNBOOK.md).
 
@@ -20,22 +20,21 @@ languages. Each then executed all 64 products and all 512 associativity cases. T
 frozen before a third process searched for a bridge. A fourth process applied the precommitted
 translational operations that the constructor could not adapt after learning.
 
-The returned relation was:
+After the learners freeze, the mathematical relation is:
 
 ```text
-(W,E,J,C)_precommit → independent learn → local execute → freeze
-             → post-hoc (T,phi,pi) → relative equality
-             → independently returned next basis
+closure equality → ReferenceFrame → post-hoc GeomEquiv(T,phi,pi)
+                 → W,E,J,C naturality → ResolvedIn/OpenIn → next basis
 ```
 
-Its enforced causal order is
-`(W,E,J,C)_precommit ≺ (A,B)_learn+execute ≺ freeze ≺ (T,phi,pi)_posthoc ≺ relative equality`. This order is more important than
+Its enforced mathematical order is
+`frame equality ≺ GeomEquiv ≺ naturality ≺ ResolvedIn/OpenIn ≺ next basis`. This order is more important than
 the raw accuracy totals: neither learner can learn the translator's intended correspondence, and
 the translator cannot alter a frozen learned artifact.
 
-The runtime found eight coherent frame forms. Each passes the full `W,E,T,phi,pi,J,C` and
-relative-equality suite; four preserve and four reverse orientation. The structural-family branch
-therefore realizes relative equality while leaving reference selection open. A sign-erasing
+The runtime found eight coherent `GeomEquiv` forms. Each first preserves and reflects closure
+equality, then passes the full `W,E,T,phi,pi,J,C` suite; four preserve and four reverse orientation.
+The structural-family branch retains all eight without claiming that non-selection is openness. A sign-erasing
 deformation supplies the actual counterexample. Self-certification selects no form. Exactly one
 token was issued for the actual independently returned branch, which supported the next execution
 basis. See
@@ -72,7 +71,7 @@ Status: **BOUNDED PROXY EXECUTED; OPEN-ENDED AGENT OPEN**.
 The D4 full-stack run now verifies the causal architecture using finite program-synthesis learners.
 The next stage must allow a stronger mathematical agent to modify proof strategy, decomposition,
 intermediate representation, and formal language beyond an enumerated hypothesis family. The
-relative-equality verifier remains an external relation over frozen artifacts and is not replaced
+axiom-geometry verifier remains an external relation over frozen artifacts and is not replaced
 by model confidence.
 
 ## E4 — Evolutionary histories
@@ -89,8 +88,8 @@ Status: **IMPLEMENTED FOR BOTH D4 FIXTURES; OPEN BEYOND D4**.
 
 Search for candidates that fail to extend to a coherent `(T,phi,pi)` form. Preserve separately:
 
-- an independently witnessed relative equality form;
-- an open question relative to the current frame;
+- an independently witnessed axiom-geometry equivalence;
+- an open total question relative to a named current frame;
 - an explicit counterexample to operation naturality.
 
 The full-stack suite supplies a sign-erasing non-natural deformation and hash-tampering control.
@@ -121,7 +120,7 @@ an obstruction—from weaker principles:
 ## Evidence rule
 
 Every run must preserve exact inputs and outputs, hashes, environment versions, proof-kernel output,
-counterexamples, and open frame-relative questions. A counterexample counts as successful research; an
+counterexamples, and frame-qualified open questions. A counterexample counts as successful research; an
 undocumented retry selected only because it closes does not.
 
 ## Programme-level falsification
@@ -129,8 +128,8 @@ undocumented retry selected only because it closes does not.
 The architecture fails if, under increasing representational freedom, post-hoc translation cannot
 reliably distinguish:
 
-- independently returned relative equality;
-- a coherent family whose reference selection remains open;
+- an independently selected axiom-geometry equivalence;
+- a coherent family with no independently selected comparison;
 - an explicit failure of the translational operations; and
 - self-certified identity without independent contact.
 

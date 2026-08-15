@@ -15,6 +15,6 @@ The module must:
 7. print the axioms of the translation, homomorphism, inverse, and return-square theorems.
 
 No `sorry`, `admit`, custom axioms, source modification, narrowed domain, or redefinition of `W` is
-permitted. If the full translation cannot be proved, return the smallest missing comparison and
-leave the reference question open relative to the precommitted frame. If an equality fails, return
-a concrete counterexample rather than changing the protocol.
+permitted. If the full translation cannot be proved because data are missing, return the smallest
+pending comparison and do not classify that incompleteness as `OpenIn`. If an equality fails,
+return a concrete counterexample rather than changing the protocol.

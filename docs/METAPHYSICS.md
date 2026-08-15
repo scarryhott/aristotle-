@@ -31,11 +31,13 @@ A fixed identity selected in isolation is arbitrary relative to the pre-linguist
 
 On this view an axiom is not metaphysically prior to geometry, nor geometry prior to axiom. A selected axiomatization and its geometry are mutually disclosed local forms of an underlying translational relation. Mathematical ASI therefore cannot be verified solely by demanding permanent allegiance to one selected axiomatization if the system is permitted to discover new representations.
 
-The corresponding runtime condition is frame-relative. Several coherent comparisons do not form
-an ambiguity internal to one fixed axiom system. Each complete comparison `(T,phi,pi)` presents an
-axiom–geometry equality form, and the reference question is open only insofar as a particular
-relational contact has not selected among those forms. Reversal changes the relative orientation;
-it does not break closure when `W`, `J`, and `C` remain natural through the translated frame.
+The corresponding runtime condition begins in the equality admitted by an axiom geometry. A
+complete comparison `(T,phi,pi)` becomes `GeomEquiv` only when it preserves and reflects that
+equality. Several such comparisons do not form an ambiguity internal to one fixed axiom system,
+and absence of contact is non-selection rather than openness. `OpenIn` applies only when a total
+question separates two occurrences equated by one named frame. Reversal changes the relative
+orientation; it does not break closure when equality is transported and `W`, `J`, and `C` remain
+natural.
 
 ## What is formal and what remains philosophical
 

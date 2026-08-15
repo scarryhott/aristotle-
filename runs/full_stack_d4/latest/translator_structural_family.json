@@ -1,6 +1,7 @@
 {
   "artifact_a_sha256": "a8bd9c1133c745a0c69a0975d5acdc89dd762dd073540f0d3575b831a9d61b90",
   "artifact_b_sha256": "a0b331ab160266df510182b08e7b3e80ee6abe3f08b93cc4313e33d47122a964",
+  "axiom_geometry_equivalence_count": 8,
   "candidate_mappings": [
     {
       "b0": "a0",
@@ -91,13 +92,14 @@
     "mutable learner state"
   ],
   "mode": "structural_family",
-  "protocol_sha256": "b780999be503d5a9cf5aa0e00e5461f996bae5daf008bd10561fcf132e21fdba",
-  "reference_form_open": true,
-  "relative_frame_form_count": 8,
-  "runtime_id": "post-hoc-translational-frame-form-constructor",
-  "schema_version": 3,
+  "protocol_sha256": "08e4d894da887a17e8b0a94c05b511485b8f464795b0d3e018778ad1cbf7216f",
+  "runtime_id": "post-hoc-axiom-geometry-equivalence-constructor",
+  "schema_version": 4,
   "selected_mapping": null,
-  "selection_relation": "all coherent frame forms remain relative; no origin is isolated",
+  "selection": {
+    "relation": "all coherent axiom-geometry equivalences remain; no origin is isolated",
+    "selected": false
+  },
   "self_certification": false,
   "structural_isomorphism_count": 8,
   "visibility": [

@@ -58,39 +58,42 @@ NRRF630 makes the translational consequences categorical. Occurrences and identi
 
 NRRF631 formalizes the axiom-geometry/reference-frame claim directly. A reference frame is its admitted form of equality. A question is resolved in a frame exactly when it factors through the quotient by that equality. The same nonconstant question can therefore be resolved in one frame and open in another. Equivalent axiom-geometries transport resolution and openness, so openness is a relation between a question and a frame, not an absolute truth-status emitted by closure.
 
-The runtime consequently records witnesses, counterexamples, and open reference questions separately. `W` returns relational content; it never returns a static TRUE/FALSE/OPEN label.
+The runtime consequently records independently selected `GeomEquiv` comparisons, concrete counterexamples, and total question relations that explicitly name their frames. Non-selection and incomplete comparisons are not classified as `OpenIn`. `W` returns relational content; it never returns a static TRUE/FALSE/OPEN label.
 
 ## Existing bounded operational realization
 
 The repository contains an executed finite classical mathematical-agent realization of selected translational consequences. It is not an Aristotle run and not a claim about arbitrary ASI.
 
-Its causal order is:
+Its process boundary remains:
 
 ```text
-(W,E,J,C)_precommit
-  ≺ (A,B)_learn+execute
-  ≺ freeze
-  ≺ (T,φ,π)_posthoc
-  ≺ relative equality
-  ≺ next basis
+(A,B)_learn+execute ≺ freeze ≺ (T,φ,π)_posthoc.
 ```
 
-Two isolated symbolic learners independently learn and execute different D4 presentations before their artifacts are frozen. Only afterward is a cross-language frame family constructed.
+After freeze, the mathematics begins in this order:
 
-The post-hoc construction retains all eight coherent D4 frame forms rather than selecting one canonical coordinate system. Four preserve orientation and four reverse it. Relative reversal remains admissible when its induced `φ` and `π` travel naturally with it. A sign-erasing deformation is the negative control: it fails bijectivity and learned-operation naturality and therefore cannot extend to the required translational comparison.
+```text
+closure equality ≺ ReferenceFrame ≺ GeomEquiv(T,φ,π)
+                 ≺ return/naturality ≺ ResolvedIn/OpenIn ≺ next basis.
+```
 
-The finite runtime exhaustively realizes selected NRRF630 consequences:
+Two isolated symbolic learners independently learn and execute different D4 presentations before their artifacts are frozen. Only afterward is a cross-language comparison family constructed.
 
+The post-hoc construction retains all eight coherent D4 `GeomEquiv` forms rather than selecting one canonical coordinate system. Four preserve orientation and four reverse it. Relative reversal remains admissible when its induced `φ` and `π` travel naturally with it. A sign-erasing deformation is the negative control: it fails equality reflection, bijectivity, and learned-operation naturality and therefore cannot extend to the required translational comparison.
+
+The finite runtime exhaustively realizes selected NRRF630/631 consequences:
+
+- preservation and reflection of frame equality over all occurrence pairs;
 - return naturality `W_m(Tu)=φ(W_ℓu)`;
 - occurrence/identity operation naturality;
 - reversal and curvature naturality;
 - quotient-basis recovery;
-- preservation and reflection of relative equality;
 - natural polar sections and reversal of orientation;
 - the complete finite `Ω = Bool` instance of universal factorization;
-- multiple coherent relative frame forms without an absolute origin.
+- transported resolution and openness for explicitly named frame-question pairs;
+- multiple coherent axiom-geometry equivalences without an absolute origin.
 
-The runtime distinguishes mathematical admissibility from episode admission. A coherent frame form can exist without receiving an episode receipt; a receipt requires independently witnessed relational contact in the actual episode. Self-certification is not such a witness.
+The runtime distinguishes mathematical admissibility from episode admission. A coherent `GeomEquiv` can exist without receiving an episode receipt; a receipt requires independently witnessed relational contact in the actual episode. Self-certification is not such a witness.
 
 ## What the grant is for
 
@@ -103,24 +106,24 @@ The funded question is:
 The project has four deliverables.
 
 1. **Frontier-agent translational experiments.** Replace the bounded learners with increasingly capable isolated mathematical agents, ultimately Aristotle, while preserving precommit, independent work, artifact freeze, and post-hoc construction of `(T,φ,π)`.
-2. **Axiom-geometry comparison boundary.** Determine which independently generated mathematical frames admit coherent translational equality, which reference questions remain open relative to their equality forms, and which proposed comparisons have explicit operation-level obstructions.
+2. **Axiom-geometry comparison boundary.** Determine which independently generated mathematical frames admit coherent translational equality, which total questions remain open relative to their named equality frames, and which proposed comparisons have explicit operation-level obstructions.
 3. **Adversarial representation change.** Test orientation reversal, noncanonical but natural re-expression, proof-preserving representation changes, deliberately non-natural deformations, and transformations outside the verifier's anticipated vocabulary.
-4. **Formal return reports.** For every experiment, separate machine-checked relational equalities from counterexamples and from questions still open relative to the compared frames. Formal proof-search statuses may be reported, but they are never outputs of closure itself.
+4. **Formal return reports.** For every experiment, separate machine-checked relational equalities from counterexamples and from total questions still open relative to the compared frames. Formal proof-search statuses may be reported, but they are never outputs of closure itself.
 
 ## Scale-up protocol
 
 Preserve the causal boundary:
 
 ```text
-(W,E,J,C)_precommit
-    → independent mathematical work
+independent mathematical work
     → immutable artifact freeze
-    → (T,φ,π) discovered afterward
-    → W_m(Tu) = φ(W_ℓu) and transported equality/open questions
+    → reference-frame equality
+    → (T,φ,π) discovered and checked as GeomEquiv
+    → W_m(Tu) = φ(W_ℓu) and transported frame-question relations
     → independently returned relation may enter the next learning basis
 ```
 
-The key measurements are not agreement with a canonical coordinate system. They are whether independently generated frames support coherent relative comparisons; whether valid orientation changes remain admissible; whether non-natural transformations expose explicit obstructions; whether nontrivial questions remain conditionally open under the relevant axiom geometry; and whether returned equality can support subsequent mathematical work.
+The key measurements are not agreement with a canonical coordinate system. They are whether independently generated frames support coherent relative comparisons; whether valid orientation changes remain admissible; whether non-natural transformations expose explicit obstructions; whether nontrivial total questions remain conditionally open under the relevant axiom geometry; and whether returned equality can support subsequent mathematical work.
 
 ## Success and falsification
 
@@ -130,7 +133,7 @@ Positive evidence is the discovery of post-hoc translations whose operations com
 
 Negative evidence is an explicit obstruction showing why a proposed comparison cannot extend to such a translation.
 
-An open result is also substantive when the current frame equality does not resolve the reference question and no counterexample selects non-admissibility. Openness is preserved as frame-relative structure rather than converted into an arbitrary static verdict.
+An open result is also substantive when the current frame equality does not resolve a named total question. Openness is preserved as frame-relative structure rather than converted into an arbitrary static verdict. Absence of contact or missing comparison data remains separately classified as non-selection or pending verification.
 
 The architecture is challenged if, as representational freedom increases, the proposed translational conditions cease to distinguish coherent relative equality from non-natural deformation, or if the framework requires secretly privileging one fixed language to make its comparisons work.
 

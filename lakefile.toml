@@ -8,7 +8,8 @@ srcDir = "lean"
 roots = [
   "NRRF627ClosureTranslationalFrameworkAxiometryASIEvolutionaryVerification",
   "NRRF627WeakRequirementsRepresentation",
-  "NRRF627IndependentReturnBridge"
+  "NRRF627IndependentReturnBridge",
+  "NRRF631RuntimeFrameConditionalBridge"
 ]
 
 [[require]]

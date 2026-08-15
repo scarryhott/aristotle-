@@ -17,15 +17,16 @@ A verdict that is language-independent and closure-respecting is characterized a
 ## Relational potential
 
 The broader IVI program treats openness as relational potential rather than as a truth value. `W`
-returns only relational identity. The runtime therefore keeps three nonexclusive predicates:
+returns only relational identity. The runtime therefore keeps distinct relations:
 
-- an independently witnessed frame form carries relative equality;
-- the reference question remains open where no relative contact has selected a form;
+- an independently selected comparison is a `GeomEquiv` preserving and reflecting frame equality;
+- `ResolvedIn(frame, question)` factors a total question through that equality;
+- `OpenIn(frame, question)` has a frame-equal pair separated by that question;
 - a concrete counterexample may show that a proposed transformation is not an admissible form.
 
-Multiplicity is not automatically openness or ambiguity. In the corrected D4 runtime, eight
-isomorphisms become eight coherent `(T,phi,pi)` forms. Each realizes relative equality; only their
-selection relative to a particular contact remains open.
+Multiplicity and non-selection are not automatically openness or ambiguity. In the corrected D4
+runtime, eight isomorphisms become eight coherent `(T,phi,pi)` `GeomEquiv` forms. Openness is used
+only for an explicitly named total occurrence question relative to an explicitly named frame.
 
 ## Why IVI matters to ASI
 

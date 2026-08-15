@@ -6,14 +6,19 @@ claim to instantiate general ASI.  It does implement the stronger experimental
 boundary requested by the project:
 
     independent learning -> exhaustive execution -> frozen artifacts
-      -> post-hoc (T, phi, pi) -> relative equality through W -> next basis
+      -> closure equality defines each reference frame
+      -> post-hoc (T, phi, pi) is checked as an axiom-geometry equivalence
+      -> questions factor through that equality or remain open in that frame
+      -> next basis
 
 Perspective A and perspective B are started as separate subprocesses with
 disjoint protocol files.  The translator is a third subprocess and is not
 given the complete precommitted contact.  A fourth process constructs and
 checks the full translational closure operations.  Multiple coherent frame
-forms are retained as relative equality; they are not classified as an
-ambiguity internal to a fixed axiom system.
+forms are retained as equivalent reference frames; they are not classified as
+an ambiguity internal to a fixed axiom system.  In particular, ``OpenIn`` is
+always recorded as a relation between a frame and a question, never as a bare
+flag on a branch or question.
 """
 
 from __future__ import annotations
@@ -469,7 +474,7 @@ def translate_artifacts(
         selection_relation = (
             "self-claim supplies no independent relative contact"
             if self_assertion
-            else "all coherent frame forms remain relative; no origin is isolated"
+            else "all coherent axiom-geometry equivalences remain; no origin is isolated"
         )
     elif mode == "non_natural_deformation":
         constraints = []
@@ -498,14 +503,14 @@ def translate_artifacts(
             selected_candidates = filtered
         mapping = selected_candidates[0] if len(selected_candidates) == 1 else None
         if not selected_candidates:
-            selection_relation = "the proposed contact meets no coherent relative frame form"
+            selection_relation = "the proposed contact meets no coherent axiom-geometry equivalence"
         elif len(selected_candidates) > 1:
-            selection_relation = "the reference question remains open across coherent frame forms"
+            selection_relation = "independent contact does not select one coherent frame comparison"
         else:
             selection_relation = "relative contact selects one coherent frame form"
     return {
-        "schema_version": 3,
-        "runtime_id": "post-hoc-translational-frame-form-constructor",
+        "schema_version": 4,
+        "runtime_id": "post-hoc-axiom-geometry-equivalence-constructor",
         "mode": mode,
         "visibility": protocol["visible_inputs"],
         "forbidden_inputs": protocol["forbidden_inputs"],
@@ -514,12 +519,14 @@ def translate_artifacts(
         "artifact_b_sha256": file_digest(artifact_b_path),
         "protocol_sha256": file_digest(protocol_path),
         "structural_isomorphism_count": len(structural),
-        "relative_frame_form_count": len(selected_candidates),
+        "axiom_geometry_equivalence_count": len(selected_candidates),
         "contact_constraints": constraints,
         "candidate_mappings": selected_candidates,
         "selected_mapping": mapping,
-        "selection_relation": selection_relation,
-        "reference_form_open": mapping is None,
+        "selection": {
+            "selected": mapping is not None,
+            "relation": selection_relation,
+        },
         "self_certification": self_assertion,
     }
 
@@ -589,15 +596,90 @@ def _boolean_factorization_certificate(basis: Sequence[str]) -> dict[str, Any]:
     }
 
 
-def certify_relative_frame_form(
+def _question_relation_certificate(
+    basis: Sequence[str],
+    frame_id: str,
+    equality_name: str,
+    question_id: str,
+    equality: Callable[[tuple[str, str], tuple[str, str]], bool],
+    question: Callable[[tuple[str, str]], str],
+) -> dict[str, Any]:
+    """Decide ``ResolvedIn(frame, question)`` on the finite occurrence carrier.
+
+    Resolution means constancy on the admitted equality classes, hence finite
+    factorization through the quotient.  A failure is returned as the pair of
+    frame-equal occurrences separated by the question.  This makes openness a
+    two-place relation and gives it an explicit witness.
+    """
+
+    occurrences = tuple((pole, item) for pole in POLES for item in basis)
+    separating_pair: tuple[tuple[str, str], tuple[str, str]] | None = None
+    separating_pair_count = 0
+    comparisons = 0
+    for left in occurrences:
+        for right in occurrences:
+            comparisons += 1
+            if equality(left, right) and question(left) != question(right):
+                separating_pair_count += 1
+                if separating_pair is None:
+                    separating_pair = (left, right)
+
+    resolved = separating_pair is None
+    factor_values: dict[str, str] = {}
+    if resolved:
+        representatives: list[tuple[str, str]] = []
+        for occurrence in occurrences:
+            if not any(equality(occurrence, representative) for representative in representatives):
+                representatives.append(occurrence)
+        factor_values = {
+            digest_value({"frame": frame_id, "representative": representative}): question(representative)
+            for representative in representatives
+        }
+
+    witness = None
+    if separating_pair is not None:
+        left, right = separating_pair
+        witness = {
+            "left": list(left),
+            "right": list(right),
+            "frame_equal": True,
+            "left_value": question(left),
+            "right_value": question(right),
+        }
+
+    return {
+        "frame_id": frame_id,
+        "frame_equality": equality_name,
+        "question_id": question_id,
+        "resolved_in_frame": resolved,
+        "open_in_frame": not resolved,
+        "equality_comparisons": comparisons,
+        "separating_pair_count": separating_pair_count,
+        "factorization": (
+            {
+                "through_frame_quotient": True,
+                "unique": True,
+                "quotient_class_count": len(factor_values),
+                "factor_sha256": digest_value(factor_values),
+            }
+            if resolved
+            else None
+        ),
+        "open_witness": witness,
+    }
+
+
+def certify_axiom_geometry_equivalence(
     artifact_a: dict[str, Any], artifact_b: dict[str, Any], mapping: dict[str, str]
 ) -> dict[str, Any]:
-    """Construct and exhaustively check a finite ``(W,E,T,phi,pi,J,C)`` form.
+    """Construct reference frames, then check their finite ``GeomEquiv``.
 
     Occurrences are ``Pole x B_l`` and ``W_l(p,b)=b``.  A comparison
     transports the relative identity by ``phi`` and its orientation by ``pi``;
-    ``T`` is their product.  Thus coherent alternatives are frame-relative
-    equality forms, not ambiguity inside one fixed axiom system.
+    ``T`` is their product.  The closure equality is defined before the
+    remaining operations.  ``GeomEquiv`` then requires ``T`` to preserve and
+    reflect exactly that admitted equality.  Only afterward are naturality and
+    frame-relative question resolution checked.
     """
 
     a_table = artifact_a["execution"]["operation_table"]
@@ -623,7 +705,8 @@ def certify_relative_frame_form(
     extension_failures: list[Witness] = []
     reversal_failures: list[Witness] = []
     curvature_failures: list[Witness] = []
-    ceq_failures: list[Witness] = []
+    equality_preservation_failures: list[Witness] = []
+    equality_reflection_failures: list[Witness] = []
 
     if total and orientation is not None:
         source_curvature_pole = "zero" if orientation == "preserved" else "infinity"
@@ -655,35 +738,128 @@ def certify_relative_frame_form(
             for right_pole, right_basis in occurrences:
                 source_ceq = left_basis == right_basis
                 target_ceq = mapping[left_basis] == mapping[right_basis]
-                if source_ceq != target_ceq:
-                    ceq_failures.append(
+                if source_ceq and not target_ceq:
+                    equality_preservation_failures.append(
                         Witness(
-                            "ceq_iff",
+                            "geom_equiv_preserves_equality",
                             [[left_pole, left_basis], [right_pole, right_basis]],
-                            source_ceq,
-                            target_ceq,
+                            True,
+                            False,
+                        )
+                    )
+                if target_ceq and not source_ceq:
+                    equality_reflection_failures.append(
+                        Witness(
+                            "geom_equiv_reflects_equality",
+                            [[left_pole, left_basis], [right_pole, right_basis]],
+                            True,
+                            False,
                         )
                     )
 
-    law_failures = (
+    geom_equiv_failures = equality_preservation_failures + equality_reflection_failures
+    naturality_failures = (
         product_failures
         + return_square_failures
         + extension_failures
         + reversal_failures
         + curvature_failures
-        + ceq_failures
     )
-    frame_holds = total and bijective and orientation is not None and not law_failures
-    form_id = digest_value({"mapping": mapping, "orientation": orientation})
+    law_failures = geom_equiv_failures + naturality_failures
+    geom_equiv_holds = total and bijective and orientation is not None and not geom_equiv_failures
+    translational_naturality_holds = geom_equiv_holds and not naturality_failures
+    geom_equiv_id = digest_value({"mapping": mapping, "orientation": orientation})
+    source_closure_frame_id = digest_value(
+        {"language": "B", "carrier": list(b_basis), "equality": "W_B(x)=W_B(y)"}
+    )
+    target_closure_frame_id = digest_value(
+        {"language": "A", "carrier": list(a_basis), "equality": "W_A(x)=W_A(y)"}
+    )
+    source_discrete_frame_id = digest_value(
+        {"language": "B", "carrier": list(b_basis), "equality": "x=y"}
+    )
+    source_closure = lambda left, right: left[1] == right[1]
+    target_closure = lambda left, right: left[1] == right[1]
+    source_discrete = lambda left, right: left == right
+    source_return = lambda occurrence: occurrence[1]
+    target_return = lambda occurrence: occurrence[1]
+    source_literal_pole = lambda occurrence: occurrence[0]
+    target_literal_pole = lambda occurrence: occurrence[0]
+    question_relations = [
+        _question_relation_certificate(
+            b_basis,
+            source_closure_frame_id,
+            "closure equality W_B(x)=W_B(y)",
+            "returned_identity",
+            source_closure,
+            source_return,
+        ),
+        _question_relation_certificate(
+            a_basis,
+            target_closure_frame_id,
+            "closure equality W_A(x)=W_A(y)",
+            "translated_returned_identity",
+            target_closure,
+            target_return,
+        ),
+        _question_relation_certificate(
+            b_basis,
+            source_closure_frame_id,
+            "closure equality W_B(x)=W_B(y)",
+            "literal_pole_presentation",
+            source_closure,
+            source_literal_pole,
+        ),
+        _question_relation_certificate(
+            a_basis,
+            target_closure_frame_id,
+            "closure equality W_A(x)=W_A(y)",
+            "translated_literal_pole_presentation",
+            target_closure,
+            target_literal_pole,
+        ),
+        _question_relation_certificate(
+            b_basis,
+            source_discrete_frame_id,
+            "discrete equality x=y",
+            "literal_pole_presentation",
+            source_discrete,
+            source_literal_pole,
+        ),
+    ]
+    return_source, return_target, pole_source, pole_target, _pole_discrete = question_relations
+    resolved_transport_holds = (
+        return_source["resolved_in_frame"] == return_target["resolved_in_frame"]
+    )
+    openness_transport_holds = pole_source["open_in_frame"] == pole_target["open_in_frame"]
     fallback_failure = {
-        "check": "frame_form",
+        "check": "axiom_geometry_equivalence",
         "input": None,
         "expected": "total bijective polar translation",
         "observed": {"total": total, "bijective": bijective, "orientation": orientation},
-        "reason": "a relative frame comparison must carry identity and orientation invertibly",
+        "reason": "GeomEquiv must carry and reflect the admitted equality invertibly",
     }
     return {
-        "frame_form_sha256": form_id,
+        "axiom_geometry": {
+            "reference_frames": {
+                "source_closure": {
+                    "frame_id": source_closure_frame_id,
+                    "admitted_equality": "W_B(x)=W_B(y)",
+                },
+                "target_closure": {
+                    "frame_id": target_closure_frame_id,
+                    "admitted_equality": "W_A(x)=W_A(y)",
+                },
+                "source_discrete_control": {
+                    "frame_id": source_discrete_frame_id,
+                    "admitted_equality": "x=y",
+                },
+            },
+            "geom_equiv_sha256": geom_equiv_id,
+            "preserves_admitted_equality": not equality_preservation_failures,
+            "reflects_admitted_equality": not equality_reflection_failures,
+            "geom_equiv_holds": geom_equiv_holds,
+        },
         "basis_translation_phi": mapping,
         "orientation_translation_pi": orientation,
         "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
@@ -703,12 +879,14 @@ def certify_relative_frame_form(
             "T_J_failure_count": len(reversal_failures),
             "T_C_cases": len(occurrences) if total and orientation is not None else 0,
             "T_C_failure_count": len(curvature_failures),
-            "ceq_iff_cases": len(occurrences) ** 2 if total and orientation is not None else 0,
-            "ceq_iff_failure_count": len(ceq_failures),
+            "geom_equiv_preservation_cases": len(occurrences) ** 2 if total and orientation is not None else 0,
+            "geom_equiv_preservation_failure_count": len(equality_preservation_failures),
+            "geom_equiv_reflection_cases": len(occurrences) ** 2 if total and orientation is not None else 0,
+            "geom_equiv_reflection_failure_count": len(equality_reflection_failures),
         },
         "quotient_basis": {
             "occurrences_per_language": len(POLES) * len(b_basis),
-            "relative_equality_classes": len(b_basis),
+            "closure_equality_classes": len(b_basis),
             "fibre_size": len(POLES),
             "quotient_equivalent_to_basis": len(b_basis) == len(a_basis),
         },
@@ -720,15 +898,22 @@ def certify_relative_frame_form(
             "reversal_exchanges_sections": orientation is not None and not reversal_failures,
         },
         "universal_factorization": _boolean_factorization_certificate(b_basis),
-        "relative_equality_form_holds": frame_holds,
+        "question_relations": question_relations,
+        "question_transport": {
+            "resolved_questions_transport": resolved_transport_holds,
+            "open_questions_transport": openness_transport_holds,
+            "language_independent": resolved_transport_holds and openness_transport_holds,
+        },
+        "axiom_geometry_equivalence_holds": geom_equiv_holds,
+        "translational_naturality_holds": translational_naturality_holds,
         "failure_count": len(law_failures) + (0 if total else 1) + (0 if bijective else 1),
         "first_failure": asdict(law_failures[0]) if law_failures else (
-            None if frame_holds else fallback_failure
+            None if geom_equiv_holds else fallback_failure
         ),
     }
 
 
-def evaluate_relative_equality(
+def evaluate_axiom_geometry(
     precommit_path: Path,
     artifact_a_path: Path,
     artifact_b_path: Path,
@@ -739,7 +924,7 @@ def evaluate_relative_equality(
     artifact_b = load_json(artifact_b_path)
     translator = load_json(translator_path)
     contradictions: list[Witness] = []
-    open_obligations: list[Witness] = []
+    pending_verifications: list[Witness] = []
 
     for label, path, expected_digest in (
         ("artifact_a", artifact_a_path, translator.get("artifact_a_sha256")),
@@ -753,35 +938,35 @@ def evaluate_relative_equality(
         execution = artifact.get("execution", {})
         model = artifact.get("model", {})
         if execution.get("status") != "PASS":
-            open_obligations.append(Witness("learner_execution", label, reason="execution did not complete"))
+            pending_verifications.append(Witness("learner_execution", label, reason="execution did not complete"))
         if model.get("minimum_training_error") not in (0, 0.0):
             contradictions.append(Witness("learning_error", label, 0, model.get("minimum_training_error")))
         if len(model.get("minimum_error_survivors", [])) != 1:
-            open_obligations.append(Witness("model_selection", label, reason="learned operation is not unique"))
+            pending_verifications.append(Witness("model_selection", label, reason="learned operation is not unique"))
         if execution.get("held_out_error_count") not in (0, 0.0):
             contradictions.append(Witness("held_out_execution", label, 0, execution.get("held_out_error_count")))
         if not execution.get("group_certificate", {}).get("passed", False):
-            open_obligations.append(Witness("finite_proof", label, reason="group certificate unavailable"))
+            pending_verifications.append(Witness("finite_proof", label, reason="group certificate unavailable"))
 
     mapping = translator.get("selected_mapping")
     structural_certificates = [
-        certify_relative_frame_form(artifact_a, artifact_b, candidate)
+        certify_axiom_geometry_equivalence(artifact_a, artifact_b, candidate)
         for candidate in enumerate_isomorphisms(artifact_a, artifact_b)
     ]
     selected_certificate = (
-        certify_relative_frame_form(artifact_a, artifact_b, mapping)
+        certify_axiom_geometry_equivalence(artifact_a, artifact_b, mapping)
         if isinstance(mapping, dict)
         else None
     )
     if selected_certificate is None:
-        open_obligations.append(
+        pending_verifications.append(
             Witness(
-                "relative_reference",
+                "independent_frame_selection",
                 translator.get("mode"),
-                reason=translator.get("selection_relation"),
+                reason=translator.get("selection", {}).get("relation"),
             )
         )
-    elif not selected_certificate["relative_equality_form_holds"]:
+    elif not selected_certificate["translational_naturality_holds"]:
         failure = selected_certificate["first_failure"]
         contradictions.append(
             Witness(
@@ -793,80 +978,103 @@ def evaluate_relative_equality(
             )
         )
 
-    structural_family_realized = bool(structural_certificates) and all(
-        certificate["relative_equality_form_holds"] for certificate in structural_certificates
+    axiom_geometry_groupoid_realized = bool(structural_certificates) and all(
+        certificate["axiom_geometry_equivalence_holds"] for certificate in structural_certificates
+    )
+    translational_closure_family_realized = bool(structural_certificates) and all(
+        certificate["translational_naturality_holds"] for certificate in structural_certificates
     )
     independent_contact = (
         bool(translator.get("contact_constraints"))
         and not bool(translator.get("self_certification"))
     )
-    non_reference_obligations = [
-        obligation for obligation in open_obligations if obligation.check != "relative_reference"
+    non_selection_verifications = [
+        obligation
+        for obligation in pending_verifications
+        if obligation.check != "independent_frame_selection"
     ]
-    relative_equality_witness = bool(
+    selected_geom_equiv_witness = bool(
         selected_certificate
-        and selected_certificate["relative_equality_form_holds"]
+        and selected_certificate["axiom_geometry_equivalence_holds"]
+        and selected_certificate["translational_naturality_holds"]
         and independent_contact
         and not contradictions
-        and not non_reference_obligations
+        and not non_selection_verifications
     )
     episode_role = precommit["cases"][translator.get("mode")]["episode_role"]
-    admitted_to_next_basis = relative_equality_witness and episode_role == "actual"
+    admitted_to_next_basis = selected_geom_equiv_witness and episode_role == "actual"
 
     disclosure: dict[str, Any] | None = None
-    if relative_equality_witness and mapping is not None:
+    if selected_geom_equiv_witness and mapping is not None:
         disclosure = {
             "identity": {
                 "source": artifact_b["execution"]["group_certificate"]["identity"],
                 "target": mapping[artifact_b["execution"]["group_certificate"]["identity"]],
             },
-            "homotopy": "all learned operations commute through phi in this relative frame form",
+            "homotopy": "all learned operations commute through phi in this axiom-geometry equivalence",
             "holonomy": {
                 "relative_frame_forms": translator["structural_isomorphism_count"],
-                "selected_frame_form_sha256": selected_certificate["frame_form_sha256"],
+                "selected_geom_equiv_sha256": selected_certificate["axiom_geometry"]["geom_equiv_sha256"],
             },
-            "closure": "W, E, T, phi, pi, J, C and relative equality commute",
+            "closure": "frame equality is preserved and reflected before W, E, T, phi, pi, J and C naturality",
         }
 
+    question_certificate = selected_certificate or (
+        structural_certificates[0] if structural_certificates else None
+    )
+    frame_conditional_questions = (
+        question_certificate["question_relations"] if question_certificate else []
+    )
+
     return {
-        "schema_version": 3,
+        "schema_version": 4,
         "benchmark": precommit["benchmark"],
         "precommit_sha256": file_digest(precommit_path),
         "translator_sha256": file_digest(translator_path),
         "case": translator.get("mode"),
         "episode_role": episode_role,
-        "relative_equality": {
-            "structural_family_realized": structural_family_realized,
-            "coherent_frame_form_count": len(structural_certificates),
-            "selected_frame_form_sha256": (
-                selected_certificate["frame_form_sha256"] if selected_certificate else None
+        "axiom_geometry_relation": {
+            "reference_frame_definition": "a carrier with its admitted equality",
+            "geom_equiv_definition": "translation preserves and reflects admitted equality",
+            "axiom_geometry_groupoid_realized": axiom_geometry_groupoid_realized,
+            "translational_closure_family_realized": translational_closure_family_realized,
+            "coherent_geom_equiv_count": len(structural_certificates),
+            "selected_geom_equiv_sha256": (
+                selected_certificate["axiom_geometry"]["geom_equiv_sha256"]
+                if selected_certificate
+                else None
             ),
-            "selected_form_satisfies_translational_axiometry": bool(
-                selected_certificate and selected_certificate["relative_equality_form_holds"]
+            "selected_comparison_is_geom_equiv": bool(
+                selected_certificate and selected_certificate["axiom_geometry_equivalence_holds"]
+            ),
+            "selected_comparison_is_natural": bool(
+                selected_certificate and selected_certificate["translational_naturality_holds"]
             ),
             "independent_contact_witnessed": independent_contact,
-            "relative_equality_witnessed": relative_equality_witness,
-            "reference_question_open": not relative_equality_witness,
+            "selected_by_independent_contact": selected_geom_equiv_witness,
             "candidate_counterexample_witnessed": bool(contradictions),
             "interpretation": (
-                "coherent alternatives are relative frame forms, not ambiguity inside fixed axioms"
+                "coherent alternatives are equivalent axiom geometries, not ambiguity inside fixed axioms"
             ),
         },
-        "selected_frame_operations": selected_certificate,
-        "structural_frame_forms": structural_certificates,
+        "frame_conditional_questions": frame_conditional_questions,
+        "selected_geom_equiv": selected_certificate,
+        "structural_geom_equivs": structural_certificates,
         "contradiction_count": len(contradictions),
-        "open_obligation_count": len(open_obligations),
+        "pending_verification_count": len(pending_verifications),
         "first_contradiction": asdict(contradictions[0]) if contradictions else None,
-        "first_open_obligation": asdict(open_obligations[0]) if open_obligations else None,
+        "first_pending_verification": (
+            asdict(pending_verifications[0]) if pending_verifications else None
+        ),
         "self_certification_observed": bool(translator.get("self_certification")),
         "self_certification_used_as_relative_contact": False,
         "relational_disclosure": disclosure,
         "basis_admission": {
             "admitted": admitted_to_next_basis,
             "reason": (
-                "actual independently returned relative equality form"
+                "actual independently selected axiom-geometry equivalence"
                 if admitted_to_next_basis
-                else "no actual independent relative-equality witness for this branch"
+                else "no actual independently selected GeomEquiv for this branch"
             ),
         },
         "tokens_issued": 1 if admitted_to_next_basis else 0,
@@ -879,9 +1087,8 @@ def execute_next_basis(
     mapping = translator.get("selected_mapping")
     if mapping is None:
         return {
-            "relative_equality_basis_admitted": False,
-            "reference_question_open": True,
-            "reason": "no independently returned relative frame form",
+            "axiom_geometry_basis_admitted": False,
+            "reason": "no independently selected axiom-geometry equivalence",
         }
     b_table = artifact_b["execution"]["operation_table"]
     a_table = artifact_a["execution"]["operation_table"]
@@ -903,9 +1110,13 @@ def execute_next_basis(
         target_result = a_table[target_result][value]
     expected_target = mapping[source_result]
     return {
-        "relative_equality_basis_admitted": target_result == expected_target,
-        "reference_question_open": False,
-        "relative_frame_form_sha256": digest_value(mapping),
+        "axiom_geometry_basis_admitted": target_result == expected_target,
+        "selected_geom_equiv_sha256": digest_value(
+            {
+                "mapping": mapping,
+                "orientation": _orientation_form(mapping, artifact_a, artifact_b),
+            }
+        ),
         "new_execution": {
             "source_word": source_word,
             "source_result": source_result,
@@ -951,8 +1162,9 @@ def _run_stage(arguments: Sequence[str]) -> None:
 
 def run_full_stack(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
     output_dir.mkdir(parents=True, exist_ok=True)
-    for obsolete in output_dir.glob("return_audit_*.json"):
-        obsolete.unlink()
+    for obsolete_pattern in ("return_audit_*.json", "relative_equality_*.json"):
+        for obsolete in output_dir.glob(obsolete_pattern):
+            obsolete.unlink()
     for obsolete_name in (
         "translator_structural_only.json",
         "translator_adversarial_reverse_contact.json",
@@ -1003,7 +1215,7 @@ def run_full_stack(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
     cases: list[dict[str, Any]] = []
     for mode in modes:
         translator_path = output_dir / f"translator_{mode}.json"
-        result_path = output_dir / f"relative_equality_{mode}.json"
+        result_path = output_dir / f"axiom_geometry_{mode}.json"
         _run_stage(
             [
                 "--stage", "translate", "--artifact-a", str(artifact_a_path),
@@ -1022,12 +1234,13 @@ def run_full_stack(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
         result = load_json(result_path)
         cases.append(result)
         chain.append(
-            "RELATIVE_EQUALITY_FORM",
+            "AXIOM_GEOMETRY_EQUIVALENCE",
             {
                 "mode": mode,
-                "relative_equality_witnessed": result["relative_equality"]["relative_equality_witnessed"],
-                "reference_question_open": result["relative_equality"]["reference_question_open"],
-                "candidate_counterexample_witnessed": result["relative_equality"]["candidate_counterexample_witnessed"],
+                "geom_equiv_holds": result["axiom_geometry_relation"]["selected_comparison_is_geom_equiv"],
+                "translational_naturality_holds": result["axiom_geometry_relation"]["selected_comparison_is_natural"],
+                "selected_by_independent_contact": result["axiom_geometry_relation"]["selected_by_independent_contact"],
+                "candidate_counterexample_witnessed": result["axiom_geometry_relation"]["candidate_counterexample_witnessed"],
                 "sha256": file_digest(result_path),
             },
         )
@@ -1041,39 +1254,44 @@ def run_full_stack(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
         next_basis = execute_next_basis(load_json(artifact_a_path), load_json(artifact_b_path), main_translator)
     else:
         next_basis = {
-            "relative_equality_basis_admitted": False,
-            "reference_question_open": True,
-            "reason": "the actual branch did not return a relative equality witness",
+            "axiom_geometry_basis_admitted": False,
+            "reason": "the actual branch did not independently select a GeomEquiv",
         }
     write_json(output_dir / "returned_basis.json", next_basis)
     chain.append(
         "NEXT_BASIS",
         {
-            "relative_equality_basis_admitted": next_basis["relative_equality_basis_admitted"],
+            "axiom_geometry_basis_admitted": next_basis["axiom_geometry_basis_admitted"],
             "sha256": file_digest(output_dir / "returned_basis.json"),
         },
     )
 
     token_count = sum(int(case["tokens_issued"]) for case in cases)
     summary = {
-        "schema_version": 3,
+        "schema_version": 4,
         "claim_status": "EXPERIMENTAL_CLASSICAL_MATHEMATICAL_AGENT_PROXY",
         "benchmark": load_json(precommit)["benchmark"],
         "run_id": f"full-stack-{file_digest(precommit)[:16]}",
-        "closure_relation": [
+        "mathematical_runtime_order": [
+            "closure equality defines each ReferenceFrame",
+            "(T, phi, pi) preserves and reflects equality as GeomEquiv",
+            "return, extension, reversal and curvature commute naturally",
+            "ResolvedIn(frame, question) factors through the frame quotient",
+            "OpenIn(frame, question) has a frame-equal separating pair",
+            "next basis",
+        ],
+        "execution_order": [
             "independent learning",
             "exhaustive local execution",
             "frozen artifacts",
-            "post-hoc relative frame form (T, phi, pi)",
-            "W-relative equality with E, J and C naturality",
-            "frame-relative witness, openness, or counterexample",
-            "next basis",
+            "post-hoc frame comparison",
+            "independent selection or explicit non-selection",
         ],
         "process_boundaries": {
             "learner_a": "fresh subprocess; perspective A protocol only",
             "learner_b": "fresh subprocess; perspective B protocol only",
             "translator": "fresh subprocess; frozen artifacts and contact protocol; complete contact withheld",
-            "verifier": "fresh subprocess; constructs W-relative equality and checks every closure operation",
+            "verifier": "fresh subprocess; constructs frame equality first, checks GeomEquiv, then naturality and question factorization",
             "security_claim": "experimental visibility separation, not an OS security sandbox",
         },
         "artifact_hashes": {"perspective_a": frozen_a, "perspective_b": frozen_b},
@@ -1082,10 +1300,10 @@ def run_full_stack(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
         "tokens_issued": token_count,
         "token_bound_respected": token_count <= 1,
         "next_basis": next_basis,
-        "open_reference_forms_retained": [
+        "unselected_or_rejected_comparisons": [
             case["case"]
             for case in cases
-            if case["relative_equality"]["reference_question_open"]
+            if not case["axiom_geometry_relation"]["selected_by_independent_contact"]
         ],
     }
     chain.append("RUN_SUMMARY", {"summary_sha256": digest_value(summary)})
@@ -1123,7 +1341,7 @@ def main() -> int:
         elif args.stage == "translate":
             result = translate_artifacts(args.artifact_a, args.artifact_b, args.protocol, args.mode)
         else:
-            result = evaluate_relative_equality(
+            result = evaluate_axiom_geometry(
                 args.precommit, args.artifact_a, args.artifact_b, args.translator
             )
         write_json(args.output, result)
@@ -1134,15 +1352,16 @@ def main() -> int:
     if args.assert_reference:
         by_case = {case["case"]: case for case in result["cases"]}
         passed = (
-            by_case["relational_contact"]["relative_equality"]["relative_equality_witnessed"]
-            and by_case["relative_reversal"]["relative_equality"]["relative_equality_witnessed"]
-            and by_case["structural_family"]["relative_equality"]["structural_family_realized"]
-            and by_case["structural_family"]["relative_equality"]["reference_question_open"]
-            and by_case["non_natural_deformation"]["relative_equality"]["candidate_counterexample_witnessed"]
-            and by_case["self_certification_only"]["relative_equality"]["reference_question_open"]
+            by_case["relational_contact"]["axiom_geometry_relation"]["selected_by_independent_contact"]
+            and by_case["relative_reversal"]["axiom_geometry_relation"]["selected_by_independent_contact"]
+            and by_case["structural_family"]["axiom_geometry_relation"]["axiom_geometry_groupoid_realized"]
+            and by_case["structural_family"]["axiom_geometry_relation"]["translational_closure_family_realized"]
+            and not by_case["structural_family"]["axiom_geometry_relation"]["selected_by_independent_contact"]
+            and by_case["non_natural_deformation"]["axiom_geometry_relation"]["candidate_counterexample_witnessed"]
+            and not by_case["self_certification_only"]["axiom_geometry_relation"]["selected_by_independent_contact"]
             and result["tokens_issued"] == 1
             and result["token_bound_respected"]
-            and result["next_basis"]["relative_equality_basis_admitted"]
+            and result["next_basis"]["axiom_geometry_basis_admitted"]
             and result["receipt_chain"]["ok"]
         )
         return 0 if passed else 1

@@ -1,6 +1,6 @@
 {
-  "schema_version": 3,
-  "runtime": "post-hoc-translational-frame-form-constructor",
+  "schema_version": 4,
+  "runtime": "post-hoc-axiom-geometry-equivalence-constructor",
   "visible_inputs": ["two frozen learner artifacts", "this protocol"],
   "forbidden_inputs": ["complete return W", "external return audit", "mutable learner state"],
   "selection": {
@@ -29,5 +29,5 @@
       }
     ]
   },
-  "contact_scope": "Only two generator contacts may select a relative frame form. The verifier later constructs phi, pi and T and checks W, E, J, C, all products, relative equality preservation and quotient-basis factorization. Structural-family and self-claim branches isolate no origin; the non-natural deformation is generated independently as an outside-closure control."
+  "contact_scope": "Only two generator contacts may select a GeomEquiv. The verifier first constructs each closure ReferenceFrame, then checks that T preserves and reflects its equality, and only afterward checks phi, pi, W, E, J, C, all products and quotient factorization. Structural-family and self-claim branches isolate no origin; the non-natural deformation is generated independently as a counterexample."
 }

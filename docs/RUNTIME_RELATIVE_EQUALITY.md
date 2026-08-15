@@ -1,11 +1,33 @@
-# Runtime Reunification with Translational Existence and Naturality
+# Runtime Reunification: Axiom Geometry Before Verdict
 
 The full-stack runtime is a finite operational realization of the translational consequences
-described by NRRF630. It does not define closure from one canonical D4 coordinate system.
+described by NRRF630 and the frame-conditional reading described by NRRF631. It does not define
+closure from one canonical D4 coordinate system. The general NRRF631 source is not copied into
+this repository; `NRRF631RuntimeFrameConditionalBridge.lean` proves the interface used here from
+the existing NRRF627 `TransFrame`.
 
-## Unified frame form
+## Mathematical runtime order
 
-After the two learners have frozen their local bases, each coherent comparison supplies
+The mathematics begins at the equality admitted by each axiom geometry:
+
+```text
+closure equality
+    → ReferenceFrame
+    → GeomEquiv (preserve and reflect equality)
+    → return and operation naturality
+    → ResolvedIn(frame, question) or OpenIn(frame, question)
+    → next basis.
+```
+
+After the learners freeze their bases, the occurrence carrier and frame equality are
+
+```text
+Y_l = Pole × B_l
+W_l(p,b)=b
+(p,b) ≈_l (q,c)  iff  W_l(p,b)=W_l(q,c)  iff  b=c.
+```
+
+A coherent comparison supplies
 
 ```text
 phi : B_B ≃ B_A
@@ -14,55 +36,67 @@ T   : Pole × B_B ≃ Pole × B_A
 T(p,b) = (pi(p),phi(b)).
 ```
 
-The remaining operations are
+It is accepted first as `GeomEquiv` only if
 
 ```text
-W_l(p,b)=b
-E_l(p,b)=(p,b)
-J_l(p,b)=(other(p),b)
-C_l(p,b)=the pole section transported through pi.
+x ≈_B y  ↔  T(x) ≈_A T(y).
 ```
 
-Relative equality is therefore
+The runtime checks preservation and reflection separately over all 256 pairs. Return, extension,
+reversal, curvature, and multiplication naturality are downstream obligations, not the source of
+the frame definition.
 
-```text
-(p,b) ≡_C (q,c)  iff  W_l(p,b)=W_l(q,c)  iff  b=c.
-```
+## Frame-conditional questions
 
-No branch assigns truth values to this relation.
+A total question `Q : Y_l → Ω` is resolved in a frame exactly when it cannot separate occurrences
+that frame equates. In the finite runtime this is checked by constructing the unique factor through
+the equality quotient. `OpenIn` is its negation and is witnessed by two frame-equal occurrences
+with different question values.
 
-## NRRF630-to-runtime map
+No output contains an unqualified `reference_question_open` flag. Each question relation contains:
 
-| Translational result | Executable realization |
+- the frame ID and admitted equality;
+- the question ID;
+- `resolved_in_frame` and `open_in_frame` as complementary relational results;
+- either a unique quotient-factorization certificate or a concrete separating pair.
+
+The executed controls make the relativity explicit:
+
+| Question | Frame | Result |
+|---|---|---|
+| returned identity | closure frame | resolved; unique factor through `W` |
+| literal pole presentation | closure frame | open; `(zero,b)` and `(infinity,b)` are frame-equal but separated |
+| literal pole presentation | discrete frame | resolved |
+
+Every one of the eight D4 `GeomEquiv` comparisons transports these classifications. Four preserve
+orientation and four reverse it. Reversal is therefore another axiom-geometry equivalence, not a
+contradiction measured against privileged coordinates.
+
+## NRRF630/631-to-runtime map
+
+| Formal result | Executable realization |
 |---|---|
-| `retNat` | 16 exhaustive instances of `W_A(Ty)=phi(W_B y)` per frame form |
-| natural occurrence/identity functors | 64 exhaustive operation cases carried through `T` and `phi` |
-| `revNat` | 16 exhaustive instances of `T(Jy)=J(Ty)` |
-| `curvNat` | 16 exhaustive instances of `T(Cy)=C(Ty)` |
+| `retNat` | 16 exhaustive instances of `W_A(Ty)=phi(W_B y)` per comparison |
+| `revNat`, `curvNat` | 16 reversal and curvature naturality instances each |
 | `quotBasisEquiv` | 16 polar occurrences quotient to eight returned basis classes |
-| `quotBasisEquiv_natural` | 256 exhaustive preservation-and-reflection cases for relative equality |
-| `polarSection` and naturality | the source section is transported by `pi` to the target section |
-| reversal exchanges sections | preserved and reversed `pi` forms both pass the section/reversal checks |
-| universal factorization | all 256 Bool-valued closure-respecting basis evaluations factor uniquely through `W` per language |
-| no origin representably | all eight coherent D4 frame forms are retained; none is declared the absolute comparison |
+| `quotBasisEquiv_natural` | equality preservation and reflection across all 256 pairs |
+| universal factorization | all 256 Bool-valued closure-respecting evaluations factor uniquely through `W` |
+| `GeomEquiv` | reversible `T` plus explicit preservation and reflection of frame equality |
+| `resolvedIn_iff_factors` | finite question factor and uniqueness certificate |
+| `resolvedIn_transport`, `openIn_transport` | all coherent comparisons preserve question classification |
+| `openness_is_frame_relative` | one literal-pole question is open in closure equality and resolved in discrete equality |
 
-The Bool factorization check is the complete finite instance for `Ω = Bool`. The general
-codomain-independent universal property remains the Lean theorem, not a claim inferred from the
-finite enumeration.
+The Bool enumeration is the complete finite instance for `Ω = Bool`. The general
+codomain-independent universal property remains a Lean theorem, not a claim inferred from that
+enumeration.
 
-## Openness relative to the frame
+## Selection is not openness
 
-The structural-family branch contains eight valid equality forms. Its reference question is open
-because no contact selects one form for that episode, not because the fixed axioms contain an
-unresolved ambiguity. The relative-reversal branch demonstrates this directly: its nontrivial
-`pi` preserves all closure operations.
+The `structural_family` and `self_certification_only` branches select no comparison by independent
+contact. That is recorded as non-selection, not as `OpenIn`: there is no total occurrence question
+being classified there. The sign-erasing deformation is rejected because it fails equality
+reflection, bijectivity, and multiplication naturality, with concrete counterexamples.
 
-The negative branch is instead a sign-erasing map. It collapses distinct basis forms, fails
-bijectivity and multiplication naturality, and therefore cannot extend to a `TransFrame` comparison.
-This is an operation-level obstruction rather than a static false label.
-
-## Admission relation
-
-A basis receipt exists only when the actual episode contains an independently witnessed frame form
-whose operations commute. A self-claim is not such a witness. Counterfactual valid frame forms are
-retained as controls but do not issue additional episode receipts.
+A basis receipt exists only when the actual episode contains an independently selected `GeomEquiv`
+whose downstream operations commute. A self-claim is not such a witness, and counterfactual valid
+comparisons issue no additional token.

@@ -17,22 +17,13 @@ that origin independence and recoverability alone force those codecs remains ope
 
 ## Closure relation
 
-The conceptual progression is
+The mathematical runtime begins with the equality admitted by the axiom geometry:
 
 ```text
-relation / closure
-      ↓
-orientation ↔ extension
-      ↓
-relative axiom ↔ geometry
-      ↓
-closure language
-      ↓
-translation between languages
-      ↓
-verification return W
-      ↓
-relative equality / closure-respecting evaluation
+axiom–geometry equality → ReferenceFrame
+                        → GeomEquiv translation
+                        → return / operation naturality
+                        → ResolvedIn(frame, question) or OpenIn(frame, question)
 ```
 
 No closure language is declared the absolute origin. Languages are compared pairwise through coherent translations. Distinct presentations may therefore remain distinct as occurrences while being closure-equal through their verification return.
@@ -45,10 +36,10 @@ CEq W u v  :=  W_ℓ(u) = W_ℓ(v)
 W_m(T_ℓm u) = φ_ℓm(W_ℓ u)
 ```
 
-The runtime does not attach a three-valued verdict to closure. It records separately whether a
-relative frame form has an independent witness, whether the reference question remains open, and
-whether a candidate has a concrete counterexample. These are predicates with witnesses, not values
-produced by `W`.
+The runtime does not attach a three-valued verdict to closure. It records whether a `GeomEquiv` has
+an independent witness and whether a candidate has a concrete counterexample. Resolution and
+openness occur only in records that name both a frame and a total question. They are not values
+produced by `W` and are never inferred from mere non-selection of a comparison.
 
 ## What NRRF627 establishes
 
@@ -93,30 +84,30 @@ See [`docs/GRANT.md`](docs/GRANT.md) and [`docs/EXPERIMENTS.md`](docs/EXPERIMENT
 
 The repository now contains an executed classical mathematical-agent proxy, not only a proposed
 protocol. Two isolated processes independently learned and executed different D4 presentations;
-their states were frozen before a third process constructed relative frame forms. The verifier then
+their states were frozen before a third process constructed axiom-geometry comparisons. The verifier then
 executed the whole `(W,E,T,phi,pi,J,C)` relation:
 
-| Branch | Relative result | Admission |
+| Branch | Axiom-geometry result | Admission |
 |---|---|---:|
-| relative contact | one preserving frame form independently returned | 1 |
-| relative reversal | another valid frame form with nontrivial `pi` | control |
-| structural family | all eight equality forms cohere; reference selection stays open | 0 |
+| relative contact | one preserving `GeomEquiv` independently selected | 1 |
+| relative reversal | another valid `GeomEquiv` with nontrivial `pi` | control |
+| structural family | all eight `GeomEquiv` forms cohere; none is selected | 0 |
 | non-natural deformation | bijectivity and operation naturality fail explicitly | 0 |
-| self-certification only | no independent contact selects a frame form | 0 |
+| self-certification only | no independent contact selects a `GeomEquiv` | 0 |
 
 Exactly one token was issued after the relation was independently returned, and the returned bridge successfully became
 the next execution basis. This closes the bounded classical-proxy milestone; it does **not** claim
 an Aristotle run or an actual open-ended mathematical ASI.
 
-The experiment's decisive control is causal rather than numerical:
+After the presentations are frozen, the experiment's mathematical order is:
 
 ```text
-(W,E,J,C)_precommit ≺ (A,B)_learn+execute ≺ freeze
-                    ≺ (T,phi,pi)_posthoc ≺ relative equality
+closure equality ≺ ReferenceFrame ≺ GeomEquiv(T,phi,pi)
+                 ≺ return/naturality ≺ ResolvedIn/OpenIn ≺ next basis
 ```
 
 It therefore tests whether learned operation forms extend to natural translational equality. Eight
-coherent comparisons are retained as relative frame forms rather than called an internal ambiguity;
+coherent comparisons are retained as `GeomEquiv` forms rather than called an internal ambiguity;
 only a transformation that fails the operations is rejected.
 
 Reproduce it with:
@@ -141,7 +132,7 @@ See [`docs/METAPHYSICS.md`](docs/METAPHYSICS.md).
 
 ## IVI
 
-**IVI — intangibly verified information —** is the proposed interpretation of information whose identity is given by recoverable closure rather than by identity of its local presentation. In the verification program, IVI is treated as *relational potential*: an equality form is disclosed through admissible return while the reference question remains open wherever no relative contact has yet selected a form.
+**IVI — intangibly verified information —** is the proposed interpretation of information whose identity is given by recoverable closure rather than by identity of its local presentation. In the verification program, IVI is treated as *relational potential*: resolution or openness is meaningful only relative to the equality of a named frame.
 
 See [`docs/IVI.md`](docs/IVI.md).
 
@@ -172,11 +163,13 @@ See [`docs/CLASSICAL_VS_CLOSURE.md`](docs/CLASSICAL_VS_CLOSURE.md).
 - `lean/NRRF627ClosureTranslationalFrameworkAxiometryASIEvolutionaryVerification.lean` — formal kernel.
 - `lean/NRRF627WeakRequirementsRepresentation.lean` — derived translation/return representation bridge.
 - `lean/NRRF627IndependentReturnBridge.lean` — frame-relative equality, witness-based token bound, and independent-return construction.
+- `lean/NRRF631RuntimeFrameConditionalBridge.lean` — runtime `ReferenceFrame`, `GeomEquiv`, quotient factorization, and transported `ResolvedIn`/`OpenIn`.
 - `benchmarks/full_stack_d4/` — precommitted independent-learning and translator protocols.
 - `experiments/full_stack_math_asi.py` — isolated learning, execution, translation, and return runtime.
 - `runs/full_stack_d4/latest/` — frozen deterministic evidence bundle.
 - `docs/FULL_STACK_RUN.md` — exact executed result and claim boundary.
 - `docs/RUNTIME_RELATIVE_EQUALITY.md` — naturality/existence theorem-to-runtime map.
+- `docs/FRAME_CONDITIONAL_OPENNESS.md` — frame equality, `GeomEquiv`, and qualified `ResolvedIn`/`OpenIn` integration.
 - `docs/GRANT.md` — Harmonic/Aristotle research proposal.
 - `docs/METAPHYSICS.md` — relational and translational foundations.
 - `docs/IVI.md` — IVI and open relational potential.

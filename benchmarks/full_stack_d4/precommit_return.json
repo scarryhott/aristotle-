@@ -1,12 +1,18 @@
 {
-  "schema_version": 3,
-  "benchmark": "D4-independent-full-stack-relative-equality-v3",
+  "schema_version": 4,
+  "benchmark": "D4-independent-full-stack-axiom-geometry-v4",
   "claim_status": "EXPERIMENTAL_PROTOCOL",
   "freeze_rule": "This protocol and its return W are fixed before either learner is started.",
   "operational_agent": "A classical mathematical-agent proxy with isolated training, learned operation selection, exhaustive execution, frozen state, and an independent construction/check of the precommitted translational operations.",
+  "mathematical_foundation": {
+    "reference_frame": "A carrier together with the equality admitted by its axiom geometry.",
+    "geom_equiv": "A reversible occurrence translation that preserves and reflects the admitted equality.",
+    "resolved_in": "A total question is constant on the frame equality classes and therefore factors through the quotient.",
+    "open_in": "A relation between one named frame and one total question, witnessed by frame-equal occurrences the question separates."
+  },
   "translational_closure": {
     "occurrence_form": "Y_l = Pole x B_l after each local basis has been learned and frozen.",
-    "return_W": "W_l(p,b)=b; relative equality is equality of the returned basis forms.",
+    "return_W": "W_l(p,b)=b; the reference frame is defined first by W_l(x)=W_l(y).",
     "extension_E": "E_l(p,b)=(p,b), so W_l(E_l(p,b))=b.",
     "basis_translation_phi": "Every candidate frame form carries learned identities by a bijective operation-preserving map phi.",
     "occurrence_translation_T": "T(p,b)=(pi(p),phi(b)).",
@@ -15,7 +21,7 @@
     "curvature_C": "C selects a pole section transported through pi and must be natural through T.",
     "quotient_basis": "Y_l modulo W-relative equality must be equivalent to B_l.",
     "universal_factorization": "Every closure-respecting Bool evaluation must factor uniquely through W_l.",
-    "selection_boundary": "The translator sees frozen local operations and only the listed contacts. The verifier constructs and checks the full relative equality form afterward."
+    "selection_boundary": "The translator sees frozen local operations and only the listed contacts. The verifier constructs the reference frames, checks GeomEquiv preservation and reflection, and only then checks naturality and question factorization."
   },
   "learning": {
     "perspective_a": {
@@ -36,21 +42,22 @@
     "associativity_cases": 512,
     "polar_occurrence_returns_per_frame": 16,
     "ordered_product_naturality_per_frame": 64,
-    "relative_equality_comparisons_per_frame": 256,
+    "geom_equiv_preservation_comparisons_per_frame": 256,
+    "geom_equiv_reflection_comparisons_per_frame": 256,
     "boolean_universal_factorizations_per_language": 256
   },
   "cases": {
     "relational_contact": {
       "episode_role": "actual",
-      "relation": "A precommitted contact selects one orientation-preserving relative frame form."
+      "relation": "A precommitted contact selects one orientation-preserving axiom-geometry equivalence."
     },
     "relative_reversal": {
       "episode_role": "counterfactual_control",
-      "relation": "A reversed contact selects another valid frame form with nontrivial pi; it must remain closure-equal rather than be rejected against fixed coordinates."
+      "relation": "A reversed contact selects another valid GeomEquiv with nontrivial pi; it must not be rejected against fixed coordinates."
     },
     "structural_family": {
       "episode_role": "counterfactual_control",
-      "relation": "All coherent frame forms are retained. The reference choice stays open, but relative equality is already realized by each form."
+      "relation": "All eight coherent GeomEquiv comparisons are retained; no independent contact selects one. This non-selection is not misclassified as OpenIn."
     },
     "non_natural_deformation": {
       "episode_role": "counterfactual_control",
@@ -58,11 +65,11 @@
     },
     "self_certification_only": {
       "episode_role": "counterfactual_control",
-      "relation": "A self-claim selects no relative frame form and provides no independent contact."
+      "relation": "A self-claim selects no GeomEquiv and provides no independent contact."
     }
   },
   "token_policy": {
-    "admission_predicate": "Issue only for the actual branch when an independent contact selects a frame form and W,E,T,phi,pi,J,C and relative equality all commute.",
+    "admission_predicate": "Issue only for the actual branch when independent contact selects a GeomEquiv and the subsequent W,E,T,phi,pi,J,C relations commute.",
     "counterfactual_controls": 0,
     "self_claim_without_contact": 0,
     "maximum_per_run": 1

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exhaustive relative-equality fixture for the blind Aristotle D4 experiment.
+"""Exhaustive axiom-geometry comparison fixture for the blind Aristotle D4 experiment.
 
 This is not an Aristotle result.  It is the frozen, independently executable
 oracle used to score later Aristotle artifacts.  The return protocol lives in
@@ -102,12 +102,16 @@ def _as_json(value: object) -> object:
 
 
 def evaluate_translator(name: str, translator: Translator) -> dict[str, object]:
-    """Expose frame-relative equality witnesses, open obligations, and counterexamples."""
+    """Decide whether a candidate is a total comparison and then a finite GeomEquiv.
+
+    Undefined data is a pending verification obligation, not `OpenIn`: openness is
+    meaningful only for a total question relative to an explicitly named frame.
+    """
 
     elements = d4_elements()
     translated = {value: translator(value) for value in elements}
     contradictions: list[Witness] = []
-    open_obligations: list[Witness] = []
+    pending_verifications: list[Witness] = []
     completed_element_checks = 0
     completed_product_checks = 0
 
@@ -115,7 +119,7 @@ def evaluate_translator(name: str, translator: Translator) -> dict[str, object]:
         observed = translated[value]
         expected = normal_action(value)
         if observed is None:
-            open_obligations.append(
+            pending_verifications.append(
                 Witness("return", value, expected=expected, reason="translator undefined")
             )
             continue
@@ -130,7 +134,7 @@ def evaluate_translator(name: str, translator: Translator) -> dict[str, object]:
             right_image = translated[right]
             product_image = translated[product]
             if left_image is None or right_image is None or product_image is None:
-                open_obligations.append(
+                pending_verifications.append(
                     Witness(
                         "multiplication",
                         (left, right),
@@ -145,15 +149,22 @@ def evaluate_translator(name: str, translator: Translator) -> dict[str, object]:
                     Witness("multiplication", (left, right), product_image, observed)
                 )
 
-    relative_equality_witnessed = not contradictions and not open_obligations
-    reference_question_open = bool(open_obligations) or bool(contradictions)
+    comparison_total = not pending_verifications
+    geom_equiv_candidate_holds = comparison_total and not contradictions
 
     return {
         "translator": name,
-        "relative_equality": {
-            "relative_equality_witnessed": relative_equality_witnessed,
-            "reference_question_open": reference_question_open,
+        "axiom_geometry_relation": {
+            "comparison_total": comparison_total,
+            "geom_equiv_candidate_holds": geom_equiv_candidate_holds,
             "candidate_counterexample_witnessed": bool(contradictions),
+            "classification": (
+                "accepted_geom_equiv"
+                if geom_equiv_candidate_holds
+                else "rejected_counterexample"
+                if contradictions
+                else "not_a_total_frame_comparison"
+            ),
         },
         "coverage": {
             "completed_element_returns": completed_element_checks,
@@ -162,10 +173,10 @@ def evaluate_translator(name: str, translator: Translator) -> dict[str, object]:
             "total_ordered_products": len(elements) ** 2,
         },
         "contradiction_count": len(contradictions),
-        "open_obligation_count": len(open_obligations),
+        "pending_verification_count": len(pending_verifications),
         "first_contradiction": _as_json(asdict(contradictions[0])) if contradictions else None,
-        "first_open_obligation": (
-            _as_json(asdict(open_obligations[0])) if open_obligations else None
+        "first_pending_verification": (
+            _as_json(asdict(pending_verifications[0])) if pending_verifications else None
         ),
     }
 
@@ -173,7 +184,7 @@ def evaluate_translator(name: str, translator: Translator) -> dict[str, object]:
 def load_precommit(path: Path) -> tuple[dict[str, object], str]:
     raw = path.read_bytes()
     protocol = json.loads(raw)
-    if protocol.get("benchmark") != "D4-blind-relative-equality-v3":
+    if protocol.get("benchmark") != "D4-blind-axiom-geometry-v4":
         raise ValueError("unexpected or missing benchmark identifier")
     return protocol, hashlib.sha256(raw).hexdigest()
 
@@ -182,7 +193,7 @@ def run(precommit_path: Path, names: Iterable[str] = TRANSLATORS) -> dict[str, o
     protocol, digest = load_precommit(precommit_path)
     cases = [evaluate_translator(name, TRANSLATORS[name]) for name in names]
     return {
-        "schema_version": 3,
+        "schema_version": 4,
         "claim_status": "EXPERIMENTAL_REFERENCE_FIXTURE",
         "aristotle_execution_status": "UNEXECUTED",
         "benchmark": protocol["benchmark"],
@@ -207,11 +218,11 @@ def main() -> int:
     print(json.dumps(result, indent=2, sort_keys=True))
 
     if args.assert_reference:
-        observed = {case["translator"]: case["relative_equality"] for case in result["cases"]}
+        observed = {case["translator"]: case["axiom_geometry_relation"] for case in result["cases"]}
         passed = all(
             (
                 name == "candidate_correct"
-                and observed[name]["relative_equality_witnessed"]
+                and observed[name]["geom_equiv_candidate_holds"]
             )
             or (
                 name == "adversarial_wrong_sign"
@@ -219,7 +230,7 @@ def main() -> int:
             )
             or (
                 name == "adversarial_partial"
-                and observed[name]["reference_question_open"]
+                and not observed[name]["comparison_total"]
                 and not observed[name]["candidate_counterexample_witnessed"]
             )
             for name in names

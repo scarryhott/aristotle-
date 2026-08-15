@@ -12,6 +12,6 @@ python3 experiments/full_stack_math_asi.py --assert-reference
 lake build
 ```
 
-Generated evidence must preserve coherent relative frame families, open reference questions, and
-concrete counterexamples; do not retain only the admitted actual branch. Any change to a
+Generated evidence must preserve coherent `GeomEquiv` families, explicitly frame-qualified open
+questions, non-selection controls, and concrete counterexamples; do not retain only the admitted actual branch. Any change to a
 precommitted relational protocol creates a new benchmark version.

@@ -27,24 +27,27 @@ class D4ClosureTest(unittest.TestCase):
 
     def test_correct_candidate_closes(self) -> None:
         result = evaluate_translator("candidate", correct_translator)
-        self.assertTrue(result["relative_equality"]["relative_equality_witnessed"])
+        self.assertTrue(result["axiom_geometry_relation"]["geom_equiv_candidate_holds"])
         self.assertEqual(result["contradiction_count"], 0)
-        self.assertEqual(result["open_obligation_count"], 0)
+        self.assertEqual(result["pending_verification_count"], 0)
         self.assertEqual(result["coverage"]["completed_ordered_products"], 64)
 
     def test_wrong_sign_has_counterexample(self) -> None:
         result = evaluate_translator("wrong", wrong_sign_translator)
-        self.assertTrue(result["relative_equality"]["candidate_counterexample_witnessed"])
+        self.assertTrue(result["axiom_geometry_relation"]["candidate_counterexample_witnessed"])
         self.assertIsNotNone(result["first_contradiction"])
 
-    def test_partial_candidate_keeps_reference_question_open(self) -> None:
+    def test_partial_candidate_is_not_misclassified_as_open(self) -> None:
         result = evaluate_translator("partial", rotations_only_translator)
-        self.assertTrue(result["relative_equality"]["reference_question_open"])
-        self.assertFalse(result["relative_equality"]["candidate_counterexample_witnessed"])
+        relation = result["axiom_geometry_relation"]
+        self.assertFalse(relation["comparison_total"])
+        self.assertFalse(relation["candidate_counterexample_witnessed"])
+        self.assertEqual(relation["classification"], "not_a_total_frame_comparison")
+        self.assertNotIn("reference_question_open", relation)
         self.assertEqual(result["contradiction_count"], 0)
-        self.assertGreater(result["open_obligation_count"], 0)
+        self.assertGreater(result["pending_verification_count"], 0)
 
-    def test_counterexample_and_openness_can_coexist(self) -> None:
+    def test_counterexample_and_pending_verification_can_coexist(self) -> None:
         def mixed(value):
             rotation, flip = value
             if flip:
@@ -54,9 +57,9 @@ class D4ClosureTest(unittest.TestCase):
             return normal_action(value)
 
         result = evaluate_translator("mixed", mixed)
-        self.assertTrue(result["relative_equality"]["candidate_counterexample_witnessed"])
-        self.assertTrue(result["relative_equality"]["reference_question_open"])
-        self.assertGreater(result["open_obligation_count"], 0)
+        self.assertTrue(result["axiom_geometry_relation"]["candidate_counterexample_witnessed"])
+        self.assertFalse(result["axiom_geometry_relation"]["comparison_total"])
+        self.assertGreater(result["pending_verification_count"], 0)
 
 
 if __name__ == "__main__":
