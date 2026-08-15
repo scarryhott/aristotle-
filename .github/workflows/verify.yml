@@ -27,4 +27,15 @@ jobs:
       - uses: actions/checkout@v4
       - uses: leanprover/lean-action@v1
         with:
-          build: true
+          auto-config: false
+          build: false
+          test: false
+          lint: false
+          use-github-cache: false
+          use-mathlib-cache: false
+      - name: Resolve pinned Mathlib dependency
+        run: lake update
+      - name: Download Mathlib build cache
+        run: lake exe cache get
+      - name: Build all Lean modules
+        run: lake build
