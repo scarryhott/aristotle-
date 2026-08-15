@@ -1,0 +1,28 @@
+{
+  "benchmark": "D4-independent-full-stack-v1",
+  "case": "self_certification_only",
+  "contradiction_count": 0,
+  "coverage": {
+    "completed_element_returns": 0,
+    "completed_ordered_product_returns": 0,
+    "total_element_returns": 8,
+    "total_ordered_product_returns": 64
+  },
+  "delta_C": "OPEN",
+  "disclosure_after_return": null,
+  "first_contradiction": null,
+  "first_unresolved": {
+    "check": "translation",
+    "expected": null,
+    "input": "self_certification_only",
+    "observed": null,
+    "reason": "self-certification supplies no independent bridge evidence"
+  },
+  "precommit_sha256": "911277acb381448314a58c0c1cb23f6745befc34fad5b5c1a7fc60308eb876da",
+  "schema_version": 1,
+  "self_certification_observed": true,
+  "self_certification_used_as_evidence": false,
+  "tokens_issued": 0,
+  "translator_sha256": "dccc1b753c54fe7be2db2e34f067dd56fc0398281184ed4cc1bd83dce4008535",
+  "unresolved_count": 1
+}

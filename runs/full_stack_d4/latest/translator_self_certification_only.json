@@ -1,0 +1,25 @@
+{
+  "artifact_a_sha256": "a41195deb4c17628497783335520e25a3772105e3df6f02536d676151269e3ec",
+  "artifact_b_sha256": "f345e28f6e63b0d3ae177d5ea2c733b34acb2aab04ddd7c4a02b2c6cb52cc87e",
+  "candidate_mappings": [],
+  "complete_return_W_visible": false,
+  "contact_constraints": [],
+  "forbidden_inputs": [
+    "complete return W",
+    "closure verdict",
+    "mutable learner state"
+  ],
+  "mode": "self_certification_only",
+  "post_contact_candidate_count": 0,
+  "protocol_sha256": "cb9e45c089c5962abe73688e162f04f5d60738328da1157f11614a7350d721db",
+  "runtime_id": "post-hoc-structural-translator",
+  "schema_version": 1,
+  "selected_mapping": null,
+  "self_certification": true,
+  "structural_isomorphism_count": 8,
+  "unresolved_reason": "self-certification supplies no independent bridge evidence",
+  "visibility": [
+    "two frozen learner artifacts",
+    "this protocol"
+  ]
+}

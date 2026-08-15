@@ -10,6 +10,11 @@ The research question is therefore:
 
 The current formal kernel is `lean/NRRF627ClosureTranslationalFrameworkAxiometryASIEvolutionaryVerification.lean`. It defines a self-contained `TransFrame` and proves closure, axiometry, ASI-gauge, evolutionary-verification, and non-vacuity results using Lean/Mathlib.
 
+`lean/NRRF627WeakRequirementsRepresentation.lean` supplies the first representation bridge: a
+common relational carrier plus reversible language codecs constructs translation, inverse
+translation, identity/composition coherence, and the commuting return square. The stronger claim
+that origin independence and recoverability alone force those codecs remains open.
+
 ## Closure relation
 
 The conceptual progression is
@@ -71,6 +76,43 @@ A successful project is not required to confirm the framework. Admissible outcom
 
 See [`docs/GRANT.md`](docs/GRANT.md) and [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md).
 
+## Executed independent full-stack run
+
+The repository now contains an executed classical mathematical-agent proxy, not only a proposed
+protocol. Two isolated processes independently learned and executed different D4 presentations;
+their states were frozen before a third process searched for a translation. The translator could
+not inspect the complete precommitted return `W`. An external gate then produced:
+
+| Branch | Return | Evidence |
+|---|---:|---|
+| relative contact | `TRUE` | 8/8 element returns and 64/64 ordered products |
+| abstract structure only | `OPEN` | eight isomorphisms remain; no arbitrary origin selected |
+| reversed contact | `FALSE` | four explicit return contradictions |
+| self-certification only | `OPEN` | no independent bridge evidence |
+
+Exactly one token was issued after independent `TRUE`, and the returned bridge successfully became
+the next execution basis. This closes the bounded classical-proxy milestone; it does **not** claim
+an Aristotle run or an actual open-ended mathematical ASI.
+
+The experiment's decisive control is causal rather than numerical:
+
+```text
+W_precommit ≺ (A,B)_learn+execute ≺ freeze ≺ T_posthoc ≺ δ_C
+```
+
+It therefore tests returned translational identity separately from abstract isomorphism,
+contradictory re-expression, and self-certification.
+
+Reproduce it with:
+
+```bash
+python3 experiments/full_stack_math_asi.py --assert-reference
+python3 -m unittest discover -s tests -v
+lake build
+```
+
+See [`docs/FULL_STACK_RUN.md`](docs/FULL_STACK_RUN.md).
+
 ## Metaphysical motivation
 
 The metaphysical thesis is **relation prior to isolated selection**. A pole such as `0` or `∞` is not treated as an absolute object whose identity is fixed before comparison. Its identity is disclosed by relative translational order inside closure. Thus `0` and `∞` may be distinct presentations while closure-equal, with orientation recording their relative distinction.
@@ -110,6 +152,12 @@ See [`docs/CLASSICAL_VS_CLOSURE.md`](docs/CLASSICAL_VS_CLOSURE.md).
 ## Repository map
 
 - `lean/NRRF627ClosureTranslationalFrameworkAxiometryASIEvolutionaryVerification.lean` — formal kernel.
+- `lean/NRRF627WeakRequirementsRepresentation.lean` — derived translation/return representation bridge.
+- `lean/NRRF627IndependentReturnBridge.lean` — three-valued gate, token bound, and independent-return construction.
+- `benchmarks/full_stack_d4/` — precommitted independent-learning and translator protocols.
+- `experiments/full_stack_math_asi.py` — isolated learning, execution, translation, and return runtime.
+- `runs/full_stack_d4/latest/` — frozen deterministic evidence bundle.
+- `docs/FULL_STACK_RUN.md` — exact executed result and claim boundary.
 - `docs/GRANT.md` — Harmonic/Aristotle research proposal.
 - `docs/METAPHYSICS.md` — relational and translational foundations.
 - `docs/IVI.md` — IVI and the potential gate.
@@ -118,4 +166,5 @@ See [`docs/CLASSICAL_VS_CLOSURE.md`](docs/CLASSICAL_VS_CLOSURE.md).
 
 ## Research standard
 
-The project separates three levels explicitly: **machine-checked theorem**, **interpretation**, and **open research claim**. The purpose of the grant is to reduce the third category without conflating it with the first.
+The project labels claims as **PROVED**, **CONJECTURED**, **EXPERIMENTAL**, or **METAPHYSICAL
+INTERPRETATION**. The complete audit boundary is [`docs/CLAIM_STATUS.md`](docs/CLAIM_STATUS.md).

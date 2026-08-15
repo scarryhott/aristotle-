@@ -1,4 +1,6 @@
 .lake/
 build/
 *.olean
+__pycache__/
+*.py[cod]
 .DS_Store

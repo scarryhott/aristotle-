@@ -1,0 +1,23 @@
+{
+  "new_execution": {
+    "expected_target_result": "a6",
+    "observed_target_result": "a6",
+    "source_result": "b6",
+    "source_word": [
+      "b2",
+      "b1",
+      "b2",
+      "b2",
+      "b1"
+    ],
+    "translated_word": [
+      "a3",
+      "a1",
+      "a3",
+      "a3",
+      "a1"
+    ]
+  },
+  "returned_relation_sha256": "fbf5aaad279de1b340947405e75e728301915f89771e24253cc41884a629f929",
+  "status": "PASS"
+}

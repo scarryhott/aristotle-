@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "benchmark": "D4-independent-full-stack-v1",
+  "claim_status": "EXPERIMENTAL_PROTOCOL",
+  "freeze_rule": "This protocol and its return W are fixed before either learner is started.",
+  "operational_agent": "A classical mathematical-agent proxy with isolated training, learned operation selection, exhaustive execution, frozen state, and an external closure gate.",
+  "return_W": {
+    "carrier": "The induced action on ordered square vertices [0,1,2,3].",
+    "perspective_a": "The learned permutation occurrence itself.",
+    "perspective_b": "For local form (k,f), [k + (-1)^f*x mod 4 for x=0..3].",
+    "selection_boundary": "The translator may use only the separately listed contact constraints; it may not read this complete return definition."
+  },
+  "learning": {
+    "perspective_a": {
+      "seed": 62701,
+      "training_pairs": 20,
+      "representation": "permutations",
+      "hypothesis_family": "composition programs"
+    },
+    "perspective_b": {
+      "seed": 62702,
+      "training_pairs": 20,
+      "representation": "Z4 x Z2 local forms",
+      "hypothesis_family": "semidirect-product programs"
+    }
+  },
+  "required_execution": {
+    "held_out_products": "Every unobserved ordered product",
+    "associativity_cases": 512,
+    "element_returns": 8,
+    "ordered_product_returns": 64
+  },
+  "delta_C": {
+    "FALSE": "At least one explicit learned-execution, return, product, hash, or translation contradiction is witnessed.",
+    "OPEN": "No contradiction is witnessed, but a learner, artifact, unique bridge, proof obligation, or required return is unresolved.",
+    "TRUE": "Both isolated learners execute completely, the frozen post-hoc bridge is unique under its admitted evidence, and all returns commute.",
+    "precedence": ["FALSE", "OPEN", "TRUE"]
+  },
+  "token_policy": {
+    "TRUE": 1,
+    "FALSE": 0,
+    "OPEN": 0,
+    "self_certification": 0,
+    "maximum_per_run": 1
+  }
+}

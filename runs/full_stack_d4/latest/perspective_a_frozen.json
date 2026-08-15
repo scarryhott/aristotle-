@@ -1,0 +1,309 @@
+{
+  "execution": {
+    "carrier_size": 8,
+    "group_certificate": {
+      "associativity_cases": 512,
+      "associativity_failure_count": 0,
+      "first_associativity_failure": null,
+      "identity": "a0",
+      "identity_candidates": [
+        "a0"
+      ],
+      "inverses": {
+        "a0": "a0",
+        "a1": "a1",
+        "a2": "a2",
+        "a3": "a6",
+        "a4": "a4",
+        "a5": "a5",
+        "a6": "a3",
+        "a7": "a7"
+      },
+      "orders": {
+        "a0": 1,
+        "a1": 2,
+        "a2": 2,
+        "a3": 4,
+        "a4": 2,
+        "a5": 2,
+        "a6": 4,
+        "a7": 2
+      },
+      "passed": true
+    },
+    "held_out_count": 44,
+    "held_out_error_count": 0,
+    "operation_table": {
+      "a0": {
+        "a0": "a0",
+        "a1": "a1",
+        "a2": "a2",
+        "a3": "a3",
+        "a4": "a4",
+        "a5": "a5",
+        "a6": "a6",
+        "a7": "a7"
+      },
+      "a1": {
+        "a0": "a1",
+        "a1": "a0",
+        "a2": "a6",
+        "a3": "a7",
+        "a4": "a5",
+        "a5": "a4",
+        "a6": "a2",
+        "a7": "a3"
+      },
+      "a2": {
+        "a0": "a2",
+        "a1": "a3",
+        "a2": "a0",
+        "a3": "a1",
+        "a4": "a6",
+        "a5": "a7",
+        "a6": "a4",
+        "a7": "a5"
+      },
+      "a3": {
+        "a0": "a3",
+        "a1": "a2",
+        "a2": "a4",
+        "a3": "a5",
+        "a4": "a7",
+        "a5": "a6",
+        "a6": "a0",
+        "a7": "a1"
+      },
+      "a4": {
+        "a0": "a4",
+        "a1": "a5",
+        "a2": "a3",
+        "a3": "a2",
+        "a4": "a0",
+        "a5": "a1",
+        "a6": "a7",
+        "a7": "a6"
+      },
+      "a5": {
+        "a0": "a5",
+        "a1": "a4",
+        "a2": "a7",
+        "a3": "a6",
+        "a4": "a1",
+        "a5": "a0",
+        "a6": "a3",
+        "a7": "a2"
+      },
+      "a6": {
+        "a0": "a6",
+        "a1": "a7",
+        "a2": "a1",
+        "a3": "a0",
+        "a4": "a2",
+        "a5": "a3",
+        "a6": "a5",
+        "a7": "a4"
+      },
+      "a7": {
+        "a0": "a7",
+        "a1": "a6",
+        "a2": "a5",
+        "a3": "a4",
+        "a4": "a3",
+        "a5": "a2",
+        "a6": "a1",
+        "a7": "a0"
+      }
+    },
+    "status": "PASS"
+  },
+  "forbidden_inputs": [
+    "perspective B protocol or state",
+    "translator state",
+    "complete return W",
+    "closure verdict"
+  ],
+  "local_generators": {
+    "reverse": "a1",
+    "turn": "a3"
+  },
+  "model": {
+    "candidate_scores": {
+      "inverse_left_after_right": 2,
+      "inverse_of_composite": 6,
+      "left_after_inverse_right": 3,
+      "left_after_right": 0,
+      "right_after_left": 5
+    },
+    "family": "enumerative composition-program synthesis",
+    "minimum_error_survivors": [
+      "left_after_right"
+    ],
+    "minimum_training_error": 0,
+    "selected_hypothesis": "left_after_right"
+  },
+  "perspective": "A",
+  "presentations": {
+    "a0": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "a1": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "a2": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "a3": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "a4": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "a5": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "a6": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "a7": [
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  "protocol_sha256": "b52f2a04e41fef8b38d4122e9d802e134b2f53ce4d081b74eff1fae1c91bff6e",
+  "runtime_id": "perspective-a-permutation-learner",
+  "schema_version": 1,
+  "self_certification": true,
+  "training": {
+    "observation_count": 20,
+    "observations": [
+      {
+        "left": "a7",
+        "result": "a0",
+        "right": "a7"
+      },
+      {
+        "left": "a5",
+        "result": "a0",
+        "right": "a5"
+      },
+      {
+        "left": "a0",
+        "result": "a4",
+        "right": "a4"
+      },
+      {
+        "left": "a4",
+        "result": "a3",
+        "right": "a2"
+      },
+      {
+        "left": "a1",
+        "result": "a3",
+        "right": "a7"
+      },
+      {
+        "left": "a3",
+        "result": "a3",
+        "right": "a0"
+      },
+      {
+        "left": "a0",
+        "result": "a7",
+        "right": "a7"
+      },
+      {
+        "left": "a2",
+        "result": "a7",
+        "right": "a5"
+      },
+      {
+        "left": "a1",
+        "result": "a0",
+        "right": "a1"
+      },
+      {
+        "left": "a7",
+        "result": "a3",
+        "right": "a4"
+      },
+      {
+        "left": "a4",
+        "result": "a5",
+        "right": "a1"
+      },
+      {
+        "left": "a0",
+        "result": "a0",
+        "right": "a0"
+      },
+      {
+        "left": "a2",
+        "result": "a1",
+        "right": "a3"
+      },
+      {
+        "left": "a4",
+        "result": "a4",
+        "right": "a0"
+      },
+      {
+        "left": "a2",
+        "result": "a4",
+        "right": "a6"
+      },
+      {
+        "left": "a2",
+        "result": "a0",
+        "right": "a2"
+      },
+      {
+        "left": "a7",
+        "result": "a2",
+        "right": "a5"
+      },
+      {
+        "left": "a3",
+        "result": "a6",
+        "right": "a5"
+      },
+      {
+        "left": "a1",
+        "result": "a4",
+        "right": "a5"
+      },
+      {
+        "left": "a0",
+        "result": "a6",
+        "right": "a6"
+      }
+    ],
+    "seed": 62701
+  },
+  "visibility": [
+    "this protocol"
+  ]
+}

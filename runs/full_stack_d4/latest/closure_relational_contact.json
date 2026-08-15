@@ -1,0 +1,33 @@
+{
+  "benchmark": "D4-independent-full-stack-v1",
+  "case": "relational_contact",
+  "contradiction_count": 0,
+  "coverage": {
+    "completed_element_returns": 8,
+    "completed_ordered_product_returns": 64,
+    "total_element_returns": 8,
+    "total_ordered_product_returns": 64
+  },
+  "delta_C": "TRUE",
+  "disclosure_after_return": {
+    "closure": "all eight element returns and all 64 ordered products agree",
+    "holonomy": {
+      "routes_after_relative_contact": 1,
+      "structural_routes_before_contact": 8
+    },
+    "homotopy": "all learned products commute through the returned bridge",
+    "identity": {
+      "source": "b0",
+      "target": "a0"
+    }
+  },
+  "first_contradiction": null,
+  "first_unresolved": null,
+  "precommit_sha256": "911277acb381448314a58c0c1cb23f6745befc34fad5b5c1a7fc60308eb876da",
+  "schema_version": 1,
+  "self_certification_observed": false,
+  "self_certification_used_as_evidence": false,
+  "tokens_issued": 1,
+  "translator_sha256": "6a451c5e2434e9f9dda855fd1ce74b9f48d20c1a9aa379b0ba5e58147ea7588e",
+  "unresolved_count": 0
+}

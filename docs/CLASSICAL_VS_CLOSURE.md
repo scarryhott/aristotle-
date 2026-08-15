@@ -36,3 +36,19 @@ The runtime records the translation, return, basis, and obstruction rather than 
 A useful closure runtime must contain both **admitted moves**, predicted to preserve the return, and **non-admitted/adversarial moves**, capable of breaking it.
 
 Without the second class, the runtime only demonstrates its own definitions.
+
+## Implemented bridge experiment
+
+`experiments/full_stack_math_asi.py` composes both layers without conflating them. Each local
+classical agent learns and executes in its own fixed presentation. Only after both states are frozen
+does a separate translator propose a cross-frame relation; an external gate then checks the
+precommitted return.
+
+The closure relation is therefore:
+
+`local learning/checking in A and B → frozen occurrence relation → post-hoc T → external W → δ_C`.
+
+The observed `OPEN` structure-only branch is important: local proof of two isomorphic D4 groups does
+not by itself choose which of eight relative orientations is the intended return. The `FALSE`
+reversed-contact branch likewise shows that abstract isomorphism is weaker than translational
+verification against a selected external relation.

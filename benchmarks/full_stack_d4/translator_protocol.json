@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "runtime": "post-hoc-structural-translator",
+  "visible_inputs": ["two frozen learner artifacts", "this protocol"],
+  "forbidden_inputs": ["complete return W", "closure verdict", "mutable learner state"],
+  "selection": {
+    "structural_only": [],
+    "relational_contact": [
+      {
+        "source_local_form": [1, 0],
+        "target_order": 4,
+        "target_image_of_vertex_zero": 1
+      },
+      {
+        "source_local_form": [0, 1],
+        "target_order": 2,
+        "target_image_of_vertex_zero": 0
+      }
+    ],
+    "adversarial_reverse_contact": [
+      {
+        "source_local_form": [1, 0],
+        "target_order": 4,
+        "target_image_of_vertex_zero": 3
+      },
+      {
+        "source_local_form": [0, 1],
+        "target_order": 2,
+        "target_image_of_vertex_zero": 0
+      }
+    ]
+  },
+  "contact_scope": "Only two generator contacts are used to select among structural isomorphisms; the external gate withholds the remaining element returns and all product-return checks."
+}

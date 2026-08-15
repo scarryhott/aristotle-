@@ -1,0 +1,222 @@
+{
+  "artifact_hashes": {
+    "perspective_a": "a41195deb4c17628497783335520e25a3772105e3df6f02536d676151269e3ec",
+    "perspective_b": "f345e28f6e63b0d3ae177d5ea2c733b34acb2aab04ddd7c4a02b2c6cb52cc87e"
+  },
+  "benchmark": "D4-independent-full-stack-v1",
+  "cases": [
+    {
+      "benchmark": "D4-independent-full-stack-v1",
+      "case": "relational_contact",
+      "contradiction_count": 0,
+      "coverage": {
+        "completed_element_returns": 8,
+        "completed_ordered_product_returns": 64,
+        "total_element_returns": 8,
+        "total_ordered_product_returns": 64
+      },
+      "delta_C": "TRUE",
+      "disclosure_after_return": {
+        "closure": "all eight element returns and all 64 ordered products agree",
+        "holonomy": {
+          "routes_after_relative_contact": 1,
+          "structural_routes_before_contact": 8
+        },
+        "homotopy": "all learned products commute through the returned bridge",
+        "identity": {
+          "source": "b0",
+          "target": "a0"
+        }
+      },
+      "first_contradiction": null,
+      "first_unresolved": null,
+      "precommit_sha256": "911277acb381448314a58c0c1cb23f6745befc34fad5b5c1a7fc60308eb876da",
+      "schema_version": 1,
+      "self_certification_observed": false,
+      "self_certification_used_as_evidence": false,
+      "tokens_issued": 1,
+      "translator_sha256": "6a451c5e2434e9f9dda855fd1ce74b9f48d20c1a9aa379b0ba5e58147ea7588e",
+      "unresolved_count": 0
+    },
+    {
+      "benchmark": "D4-independent-full-stack-v1",
+      "case": "structural_only",
+      "contradiction_count": 0,
+      "coverage": {
+        "completed_element_returns": 0,
+        "completed_ordered_product_returns": 0,
+        "total_element_returns": 8,
+        "total_ordered_product_returns": 64
+      },
+      "delta_C": "OPEN",
+      "disclosure_after_return": null,
+      "first_contradiction": null,
+      "first_unresolved": {
+        "check": "translation",
+        "expected": null,
+        "input": "structural_only",
+        "observed": null,
+        "reason": "multiple origin choices remain structurally admissible"
+      },
+      "precommit_sha256": "911277acb381448314a58c0c1cb23f6745befc34fad5b5c1a7fc60308eb876da",
+      "schema_version": 1,
+      "self_certification_observed": false,
+      "self_certification_used_as_evidence": false,
+      "tokens_issued": 0,
+      "translator_sha256": "645c21127894e0b92f94b5b570afc92936b9659e392b4d6561f11c486de3fb08",
+      "unresolved_count": 1
+    },
+    {
+      "benchmark": "D4-independent-full-stack-v1",
+      "case": "adversarial_reverse_contact",
+      "contradiction_count": 4,
+      "coverage": {
+        "completed_element_returns": 8,
+        "completed_ordered_product_returns": 64,
+        "total_element_returns": 8,
+        "total_ordered_product_returns": 64
+      },
+      "delta_C": "FALSE",
+      "disclosure_after_return": null,
+      "first_contradiction": {
+        "check": "element_return",
+        "expected": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "input": "b2",
+        "observed": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "reason": null
+      },
+      "first_unresolved": null,
+      "precommit_sha256": "911277acb381448314a58c0c1cb23f6745befc34fad5b5c1a7fc60308eb876da",
+      "schema_version": 1,
+      "self_certification_observed": false,
+      "self_certification_used_as_evidence": false,
+      "tokens_issued": 0,
+      "translator_sha256": "f0490fab46c9cfc007105c7c2237cb1eb55bb3ef356a958de58c91e7995036ee",
+      "unresolved_count": 0
+    },
+    {
+      "benchmark": "D4-independent-full-stack-v1",
+      "case": "self_certification_only",
+      "contradiction_count": 0,
+      "coverage": {
+        "completed_element_returns": 0,
+        "completed_ordered_product_returns": 0,
+        "total_element_returns": 8,
+        "total_ordered_product_returns": 64
+      },
+      "delta_C": "OPEN",
+      "disclosure_after_return": null,
+      "first_contradiction": null,
+      "first_unresolved": {
+        "check": "translation",
+        "expected": null,
+        "input": "self_certification_only",
+        "observed": null,
+        "reason": "self-certification supplies no independent bridge evidence"
+      },
+      "precommit_sha256": "911277acb381448314a58c0c1cb23f6745befc34fad5b5c1a7fc60308eb876da",
+      "schema_version": 1,
+      "self_certification_observed": true,
+      "self_certification_used_as_evidence": false,
+      "tokens_issued": 0,
+      "translator_sha256": "dccc1b753c54fe7be2db2e34f067dd56fc0398281184ed4cc1bd83dce4008535",
+      "unresolved_count": 1
+    }
+  ],
+  "claim_status": "EXPERIMENTAL_CLASSICAL_MATHEMATICAL_AGENT_PROXY",
+  "closure_relation": [
+    "independent learning",
+    "exhaustive local execution",
+    "frozen artifacts",
+    "post-hoc translation",
+    "external return W",
+    "TRUE/FALSE/OPEN",
+    "next basis"
+  ],
+  "main_case": {
+    "benchmark": "D4-independent-full-stack-v1",
+    "case": "relational_contact",
+    "contradiction_count": 0,
+    "coverage": {
+      "completed_element_returns": 8,
+      "completed_ordered_product_returns": 64,
+      "total_element_returns": 8,
+      "total_ordered_product_returns": 64
+    },
+    "delta_C": "TRUE",
+    "disclosure_after_return": {
+      "closure": "all eight element returns and all 64 ordered products agree",
+      "holonomy": {
+        "routes_after_relative_contact": 1,
+        "structural_routes_before_contact": 8
+      },
+      "homotopy": "all learned products commute through the returned bridge",
+      "identity": {
+        "source": "b0",
+        "target": "a0"
+      }
+    },
+    "first_contradiction": null,
+    "first_unresolved": null,
+    "precommit_sha256": "911277acb381448314a58c0c1cb23f6745befc34fad5b5c1a7fc60308eb876da",
+    "schema_version": 1,
+    "self_certification_observed": false,
+    "self_certification_used_as_evidence": false,
+    "tokens_issued": 1,
+    "translator_sha256": "6a451c5e2434e9f9dda855fd1ce74b9f48d20c1a9aa379b0ba5e58147ea7588e",
+    "unresolved_count": 0
+  },
+  "next_basis": {
+    "new_execution": {
+      "expected_target_result": "a6",
+      "observed_target_result": "a6",
+      "source_result": "b6",
+      "source_word": [
+        "b2",
+        "b1",
+        "b2",
+        "b2",
+        "b1"
+      ],
+      "translated_word": [
+        "a3",
+        "a1",
+        "a3",
+        "a3",
+        "a1"
+      ]
+    },
+    "returned_relation_sha256": "fbf5aaad279de1b340947405e75e728301915f89771e24253cc41884a629f929",
+    "status": "PASS"
+  },
+  "open_branches_retained": [
+    "structural_only",
+    "self_certification_only"
+  ],
+  "process_boundaries": {
+    "learner_a": "fresh subprocess; perspective A protocol only",
+    "learner_b": "fresh subprocess; perspective B protocol only",
+    "security_claim": "experimental visibility separation, not an OS security sandbox",
+    "translator": "fresh subprocess; frozen artifacts and contact protocol; complete W withheld",
+    "verifier": "fresh subprocess; precommitted W and frozen artifacts"
+  },
+  "receipt_chain": {
+    "count": 13,
+    "head": "677531103e3397a9abec950b3b0a6573973a3e4ab911dd40a34ec1d640763e0b",
+    "ok": true
+  },
+  "run_id": "full-stack-911277acb3814483",
+  "schema_version": 1,
+  "token_bound_respected": true,
+  "tokens_issued": 1
+}
