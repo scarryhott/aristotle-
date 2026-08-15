@@ -45,18 +45,19 @@ The evidence bundle must contain:
 - the extracted eight-element translation table;
 - the JSON output of the reference scorer.
 
-## Gate
+## Relational-return audit
 
-The gate uses contradiction-first three-valued semantics:
+The audit records evidence about the candidate translation; it is not a return value of `W`.
+Contradiction takes precedence over unresolved evidence:
 
-| Verdict | Requirement | Token |
+| Audit record | Requirement | Token |
 |---|---|---:|
-| `TRUE` | Both frozen formalisms compile; the total translator compiles; all 8 returns and all 64 ordered products agree | 1 |
-| `FALSE` | At least one explicit return or multiplication contradiction is produced | 0 |
-| `OPEN` | No contradiction is known, but a formalism, translation, proof, or required case is unavailable | 0 |
+| `RETURNED` | Both frozen formalisms compile; the total translator compiles; all 8 returns and all 64 ordered products agree | 1 |
+| `CONTRADICTED` | At least one explicit return or multiplication contradiction is produced | 0 |
+| `UNRESOLVED` | No contradiction is known, but a formalism, translation, proof, or required case is unavailable | 0 |
 
 A model's assertion that its own result is correct is not return evidence and produces no token.
-A Lean compilation failure without a mathematical counterexample is `OPEN`, not `FALSE`.
+A Lean compilation failure without a mathematical counterexample is `UNRESOLVED`, not `CONTRADICTED`.
 
 ## Reference adversaries
 
@@ -68,11 +69,11 @@ python3 experiments/aristotle_d4_closure.py --assert-reference
 
 The fixed scorer must return:
 
-- `candidate_correct → TRUE`;
-- `adversarial_wrong_sign → FALSE` (reflection is erased);
-- `adversarial_partial → OPEN` (reflections are undefined).
+- `candidate_correct → RETURNED`;
+- `adversarial_wrong_sign → CONTRADICTED` (reflection is erased);
+- `adversarial_partial → UNRESOLVED` (reflections are undefined).
 
-These are test fixtures for the gate, not evidence that Aristotle has passed the experiment.
+These are test fixtures for the audit, not evidence that Aristotle has passed the experiment.
 
 ## Falsification value
 
@@ -80,9 +81,8 @@ Any of the following is a successful research outcome:
 
 - a post-hoc translator closes without changing the precommitted `W`;
 - an explicit counterexample shows that the predicted invariant fails;
-- a minimal missing hypothesis explains why the bridge remains OPEN;
+- a minimal missing hypothesis explains why the bridge remains UNRESOLVED;
 - a translator closes extensionally but exposes a stronger, representation-sensitive claim as false.
 
 The benchmark therefore tests the framework at its boundary rather than admitting only
 transformations already defined to preserve return.
-

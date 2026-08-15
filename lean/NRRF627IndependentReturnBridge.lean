@@ -22,52 +22,55 @@ open NRRF627
 
 universe u v w z
 
-/-! ## TRUE / FALSE / OPEN and the one-token gate -/
+/-! ## Relational-return audit and the one-token admission rule -/
 
-inductive GateVerdict where
-  | verified
+/- An evidence status for a proposed translation.  This is deliberately not the codomain of `W`:
+`W` returns relational content, while `ReturnAudit` records whether a candidate bridge has returned
+that relation, contradicted it, or remains unresolved. -/
+inductive ReturnAudit where
+  | returned
   | contradicted
-  | open_
+  | unresolved
 deriving DecidableEq, Repr
 
-/-- Independent evidence.  `selfClaim` is retained for audit but cannot decide the gate. -/
+/-- Independent evidence. `selfClaim` is retained for audit but cannot establish return. -/
 structure Evidence where
   sellerReturn : Option Bool
   selfClaim : Bool
 deriving DecidableEq, Repr
 
-def decide (e : Evidence) : GateVerdict :=
+def audit (e : Evidence) : ReturnAudit :=
   match e.sellerReturn with
-  | some true => .verified
+  | some true => .returned
   | some false => .contradicted
-  | none => .open_
+  | none => .unresolved
 
-def tokenCount : GateVerdict → Nat
-  | .verified => 1
+def tokenCount : ReturnAudit → Nat
+  | .returned => 1
   | .contradicted => 0
-  | .open_ => 0
+  | .unresolved => 0
 
-def admittedToNextBasis : GateVerdict → Bool
-  | .verified => true
+def admittedToNextBasis : ReturnAudit → Bool
+  | .returned => true
   | .contradicted => false
-  | .open_ => false
+  | .unresolved => false
 
-theorem episode_tokens_le_one (v : GateVerdict) : tokenCount v ≤ 1 := by
+theorem episode_tokens_le_one (v : ReturnAudit) : tokenCount v ≤ 1 := by
   cases v <;> simp [tokenCount]
 
 theorem self_certification_no_token (claim : Bool) :
-    tokenCount (decide ⟨none, claim⟩) = 0 := by
+    tokenCount (audit ⟨none, claim⟩) = 0 := by
   rfl
 
 theorem seller_contradiction_no_token (claim : Bool) :
-    tokenCount (decide ⟨some false, claim⟩) = 0 := by
+    tokenCount (audit ⟨some false, claim⟩) = 0 := by
   rfl
 
-theorem authenticated_return_one_token (claim : Bool) :
-    tokenCount (decide ⟨some true, claim⟩) = 1 := by
+theorem independently_returned_one_token (claim : Bool) :
+    tokenCount (audit ⟨some true, claim⟩) = 1 := by
   rfl
 
-theorem open_branch_not_in_next_basis : admittedToNextBasis .open_ = false := by
+theorem unresolved_branch_not_in_next_basis : admittedToNextBasis .unresolved = false := by
   rfl
 
 theorem contradiction_not_in_next_basis : admittedToNextBasis .contradicted = false := by
@@ -206,4 +209,3 @@ end NRRF627IndependentReturn
 #print axioms NRRF627IndependentReturn.return_square_is_derived
 #print axioms NRRF627IndependentReturn.axiometry_flows_from_independent_return
 #print axioms NRRF627IndependentReturn.evolution_flows_from_independent_return
-

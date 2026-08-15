@@ -5,8 +5,8 @@ import unittest
 
 from experiments.full_stack_math_asi import (
     BENCHMARK,
-    ClosureVerdict,
-    evaluate_closure,
+    ReturnAudit,
+    audit_translation_return,
     load_json,
     run_full_stack,
     write_json,
@@ -43,51 +43,53 @@ class FullStackMathematicalAgentTest(unittest.TestCase):
         self.assertEqual(translator["post_contact_candidate_count"], 1)
         self.assertIsNotNone(translator["selected_mapping"])
 
-    def test_closure_gate_separates_true_false_and_open(self) -> None:
-        observed = {case["case"]: case["delta_C"] for case in self.result["cases"]}
+    def test_return_audit_separates_returned_contradicted_and_unresolved(self) -> None:
+        observed = {case["case"]: case["return_audit"] for case in self.result["cases"]}
         self.assertEqual(
             observed,
             {
-                "relational_contact": ClosureVerdict.TRUE.value,
-                "structural_only": ClosureVerdict.OPEN.value,
-                "adversarial_reverse_contact": ClosureVerdict.FALSE.value,
-                "self_certification_only": ClosureVerdict.OPEN.value,
+                "relational_contact": ReturnAudit.RETURNED.value,
+                "structural_only": ReturnAudit.UNRESOLVED.value,
+                "adversarial_reverse_contact": ReturnAudit.CONTRADICTED.value,
+                "self_certification_only": ReturnAudit.UNRESOLVED.value,
             },
         )
 
-    def test_complete_return_is_withheld_until_external_gate(self) -> None:
+    def test_complete_return_is_withheld_until_external_audit(self) -> None:
         main = self.result["main_case"]
         self.assertEqual(main["coverage"]["completed_element_returns"], 8)
         self.assertEqual(main["coverage"]["completed_ordered_product_returns"], 64)
         self.assertIsNotNone(main["disclosure_after_return"])
-        open_case = next(case for case in self.result["cases"] if case["case"] == "structural_only")
-        self.assertIsNone(open_case["disclosure_after_return"])
+        unresolved_case = next(
+            case for case in self.result["cases"] if case["case"] == "structural_only"
+        )
+        self.assertIsNone(unresolved_case["disclosure_after_return"])
 
     def test_token_and_next_basis_follow_independent_return(self) -> None:
         self.assertEqual(self.result["tokens_issued"], 1)
         self.assertTrue(self.result["token_bound_respected"])
-        self.assertEqual(self.result["next_basis"]["status"], "PASS")
+        self.assertEqual(self.result["next_basis"]["status"], "RETURNED")
         self.assertEqual(
             self.result["next_basis"]["new_execution"]["observed_target_result"],
             self.result["next_basis"]["new_execution"]["expected_target_result"],
         )
         self.assertEqual(
-            set(self.result["open_branches_retained"]),
+            set(self.result["unresolved_branches_retained"]),
             {"structural_only", "self_certification_only"},
         )
 
-    def test_frozen_artifact_tampering_is_false(self) -> None:
+    def test_frozen_artifact_tampering_is_contradicted(self) -> None:
         tampered_path = self.output / "tampered_a.json"
         tampered = json.loads(json.dumps(self.artifact_a))
         tampered["tamper_probe"] = True
         write_json(tampered_path, tampered)
-        result = evaluate_closure(
+        result = audit_translation_return(
             BENCHMARK / "precommit_return.json",
             tampered_path,
             self.output / "perspective_b_frozen.json",
             self.output / "translator_relational_contact.json",
         )
-        self.assertEqual(result["delta_C"], ClosureVerdict.FALSE.value)
+        self.assertEqual(result["return_audit"], ReturnAudit.CONTRADICTED.value)
         self.assertEqual(result["first_contradiction"]["check"], "frozen_hash")
 
     def test_receipt_chain_is_closed(self) -> None:

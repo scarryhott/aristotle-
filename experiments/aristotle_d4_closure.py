@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exhaustive reference gate for the blind Aristotle D4 translation experiment.
+"""Exhaustive relational-return audit for the blind Aristotle D4 translation experiment.
 
 This is not an Aristotle result.  It is the frozen, independently executable
 oracle used to score later Aristotle artifacts.  The return protocol lives in
@@ -24,10 +24,12 @@ NormalForm = tuple[int, int]
 Translator = Callable[[NormalForm], Permutation | None]
 
 
-class ClosureVerdict(str, Enum):
-    TRUE = "TRUE"
-    FALSE = "FALSE"
-    OPEN = "OPEN"
+class ReturnAudit(str, Enum):
+    """Evidence status for a proposed bridge; not the codomain of closure return ``W``."""
+
+    RETURNED = "RETURNED"
+    CONTRADICTED = "CONTRADICTED"
+    UNRESOLVED = "UNRESOLVED"
 
 
 @dataclass(frozen=True)
@@ -109,11 +111,11 @@ def _as_json(value: object) -> object:
 
 
 def evaluate_translator(name: str, translator: Translator) -> dict[str, object]:
-    """Compute delta_C with FALSE > OPEN > TRUE precedence.
+    """Audit a proposed translation against independently returned relations.
 
-    A witnessed contradiction is FALSE even if other inputs are unresolved.
-    With no contradiction, any unresolved input is OPEN.  Only exhaustive
-    agreement is TRUE.
+    A witnessed contradiction takes precedence over unresolved evidence.
+    With no contradiction, missing relational return remains unresolved. Only
+    exhaustive agreement establishes that the proposed bridge returned.
     """
 
     elements = d4_elements()
@@ -158,15 +160,15 @@ def evaluate_translator(name: str, translator: Translator) -> dict[str, object]:
                 )
 
     if contradictions:
-        verdict = ClosureVerdict.FALSE
+        audit = ReturnAudit.CONTRADICTED
     elif unresolved:
-        verdict = ClosureVerdict.OPEN
+        audit = ReturnAudit.UNRESOLVED
     else:
-        verdict = ClosureVerdict.TRUE
+        audit = ReturnAudit.RETURNED
 
     return {
         "translator": name,
-        "delta_C": verdict.value,
+        "return_audit": audit.value,
         "coverage": {
             "completed_element_returns": completed_element_checks,
             "total_element_returns": len(elements),
@@ -183,7 +185,7 @@ def evaluate_translator(name: str, translator: Translator) -> dict[str, object]:
 def load_precommit(path: Path) -> tuple[dict[str, object], str]:
     raw = path.read_bytes()
     protocol = json.loads(raw)
-    if protocol.get("benchmark") != "D4-blind-translation-v1":
+    if protocol.get("benchmark") != "D4-blind-translation-v2":
         raise ValueError("unexpected or missing benchmark identifier")
     return protocol, hashlib.sha256(raw).hexdigest()
 
@@ -192,9 +194,9 @@ def run(precommit_path: Path, names: Iterable[str] = TRANSLATORS) -> dict[str, o
     protocol, digest = load_precommit(precommit_path)
     cases = [evaluate_translator(name, TRANSLATORS[name]) for name in names]
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "claim_status": "EXPERIMENTAL_REFERENCE_FIXTURE",
-        "aristotle_execution_status": "OPEN",
+        "aristotle_execution_status": "UNEXECUTED",
         "benchmark": protocol["benchmark"],
         "precommit_sha256": digest,
         "cases": cases,
@@ -218,15 +220,14 @@ def main() -> int:
 
     if args.assert_reference:
         expected = {
-            "candidate_correct": "TRUE",
-            "adversarial_wrong_sign": "FALSE",
-            "adversarial_partial": "OPEN",
+            "candidate_correct": "RETURNED",
+            "adversarial_wrong_sign": "CONTRADICTED",
+            "adversarial_partial": "UNRESOLVED",
         }
-        observed = {case["translator"]: case["delta_C"] for case in result["cases"]}
+        observed = {case["translator"]: case["return_audit"] for case in result["cases"]}
         return 0 if observed == {name: expected[name] for name in names} else 1
     return 0
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

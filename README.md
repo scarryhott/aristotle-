@@ -37,6 +37,18 @@ axiometric verdict
 
 No closure language is declared the absolute origin. Languages are compared pairwise through coherent translations. Distinct presentations may therefore remain distinct as occurrences while being closure-equal through their verification return.
 
+The closure language returns relational content, never a truth-status label:
+
+```text
+W_ℓ : Y_ℓ → B_ℓ
+CEq W u v  :=  W_ℓ(u) = W_ℓ(v)
+W_m(T_ℓm u) = φ_ℓm(W_ℓ u)
+```
+
+`RETURNED`, `CONTRADICTED`, and `UNRESOLVED` are external audit records about whether a proposed
+translation established that commuting relation. They are not values produced by `W` and are not
+part of the foundational axiometry.
+
 ## What NRRF627 establishes
 
 Within `TransFrame`:
@@ -81,23 +93,23 @@ See [`docs/GRANT.md`](docs/GRANT.md) and [`docs/EXPERIMENTS.md`](docs/EXPERIMENT
 The repository now contains an executed classical mathematical-agent proxy, not only a proposed
 protocol. Two isolated processes independently learned and executed different D4 presentations;
 their states were frozen before a third process searched for a translation. The translator could
-not inspect the complete precommitted return `W`. An external gate then produced:
+not inspect the complete precommitted return `W`. An external auditor then recorded:
 
 | Branch | Return | Evidence |
 |---|---:|---|
-| relative contact | `TRUE` | 8/8 element returns and 64/64 ordered products |
-| abstract structure only | `OPEN` | eight isomorphisms remain; no arbitrary origin selected |
-| reversed contact | `FALSE` | four explicit return contradictions |
-| self-certification only | `OPEN` | no independent bridge evidence |
+| relative contact | `RETURNED` | 8/8 element returns and 64/64 ordered products |
+| abstract structure only | `UNRESOLVED` | eight isomorphisms remain; no arbitrary origin selected |
+| reversed contact | `CONTRADICTED` | four explicit return contradictions |
+| self-certification only | `UNRESOLVED` | no independent bridge evidence |
 
-Exactly one token was issued after independent `TRUE`, and the returned bridge successfully became
+Exactly one token was issued after the relation was independently returned, and the returned bridge successfully became
 the next execution basis. This closes the bounded classical-proxy milestone; it does **not** claim
 an Aristotle run or an actual open-ended mathematical ASI.
 
 The experiment's decisive control is causal rather than numerical:
 
 ```text
-W_precommit ≺ (A,B)_learn+execute ≺ freeze ≺ T_posthoc ≺ δ_C
+W_precommit ≺ (A,B)_learn+execute ≺ freeze ≺ T_posthoc ≺ ReturnAudit_W(T_posthoc)
 ```
 
 It therefore tests returned translational identity separately from abstract isomorphism,
@@ -123,7 +135,7 @@ See [`docs/METAPHYSICS.md`](docs/METAPHYSICS.md).
 
 ## IVI
 
-**IVI — intangibly verified information —** is the proposed interpretation of information whose identity is given by recoverable closure rather than by identity of its local presentation. In the verification program, IVI is treated as a *potential gate*: a candidate invariant must survive admissible return, while claims that cannot yet be returned remain OPEN rather than being promoted to verified content.
+**IVI — intangibly verified information —** is the proposed interpretation of information whose identity is given by recoverable closure rather than by identity of its local presentation. In the verification program, IVI is treated as *relational potential*: a candidate invariant must survive admissible return, while claims that cannot yet be returned remain UNRESOLVED rather than being promoted to verified content.
 
 See [`docs/IVI.md`](docs/IVI.md).
 
@@ -153,14 +165,14 @@ See [`docs/CLASSICAL_VS_CLOSURE.md`](docs/CLASSICAL_VS_CLOSURE.md).
 
 - `lean/NRRF627ClosureTranslationalFrameworkAxiometryASIEvolutionaryVerification.lean` — formal kernel.
 - `lean/NRRF627WeakRequirementsRepresentation.lean` — derived translation/return representation bridge.
-- `lean/NRRF627IndependentReturnBridge.lean` — three-valued gate, token bound, and independent-return construction.
+- `lean/NRRF627IndependentReturnBridge.lean` — relational-return audit, token bound, and independent-return construction.
 - `benchmarks/full_stack_d4/` — precommitted independent-learning and translator protocols.
 - `experiments/full_stack_math_asi.py` — isolated learning, execution, translation, and return runtime.
 - `runs/full_stack_d4/latest/` — frozen deterministic evidence bundle.
 - `docs/FULL_STACK_RUN.md` — exact executed result and claim boundary.
 - `docs/GRANT.md` — Harmonic/Aristotle research proposal.
 - `docs/METAPHYSICS.md` — relational and translational foundations.
-- `docs/IVI.md` — IVI and the potential gate.
+- `docs/IVI.md` — IVI and unresolved relational potential.
 - `docs/CLASSICAL_VS_CLOSURE.md` — classical mathematical ASI versus closure runtimes.
 - `docs/EXPERIMENTS.md` — falsifiable experimental program.
 

@@ -6,7 +6,7 @@ claim to instantiate general ASI.  It does implement the stronger experimental
 boundary requested by the project:
 
     independent learning -> exhaustive execution -> frozen artifacts
-      -> post-hoc translation -> external W -> TRUE / FALSE / OPEN
+      -> post-hoc translation -> external W -> relational-return audit
 
 Perspective A and perspective B are started as separate subprocesses with
 disjoint protocol files.  The translator is a third subprocess and is not
@@ -40,10 +40,12 @@ Element = tuple[int, ...]
 Operation = Callable[[Element, Element], Element]
 
 
-class ClosureVerdict(str, Enum):
-    TRUE = "TRUE"
-    FALSE = "FALSE"
-    OPEN = "OPEN"
+class ReturnAudit(str, Enum):
+    """Evidence status for a proposed bridge; never the return value of ``W``."""
+
+    RETURNED = "RETURNED"
+    CONTRADICTED = "CONTRADICTED"
+    UNRESOLVED = "UNRESOLVED"
 
 
 @dataclass(frozen=True)
@@ -281,9 +283,9 @@ def learn_agent_a(protocol_path: Path) -> dict[str, Any]:
         if learned_operation(left, right) != permutation_compose(left, right)
     ]
     certificate = group_certificate(table)
-    status = "PASS" if best_error == 0 and len(survivors) == 1 and not held_out_errors and certificate["passed"] else "OPEN"
+    status = "PASS" if best_error == 0 and len(survivors) == 1 and not held_out_errors and certificate["passed"] else "INCOMPLETE"
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "runtime_id": "perspective-a-permutation-learner",
         "perspective": "A",
         "protocol_sha256": file_digest(protocol_path),
@@ -340,9 +342,9 @@ def learn_agent_b(protocol_path: Path) -> dict[str, Any]:
         if learned_operation(left, right) != normal_multiply(left, right)
     ]
     certificate = group_certificate(table)
-    status = "PASS" if best_error == 0 and len(survivors) == 1 and not held_out_errors and certificate["passed"] else "OPEN"
+    status = "PASS" if best_error == 0 and len(survivors) == 1 and not held_out_errors and certificate["passed"] else "INCOMPLETE"
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "runtime_id": "perspective-b-semidir-learner",
         "perspective": "B",
         "protocol_sha256": file_digest(protocol_path),
@@ -474,7 +476,7 @@ def translate_artifacts(
     else:
         unresolved_reason = None
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "runtime_id": "post-hoc-structural-translator",
         "mode": mode,
         "visibility": protocol["visible_inputs"],
@@ -493,7 +495,7 @@ def translate_artifacts(
     }
 
 
-def evaluate_closure(
+def audit_translation_return(
     precommit_path: Path,
     artifact_a_path: Path,
     artifact_b_path: Path,
@@ -565,14 +567,14 @@ def evaluate_closure(
                     contradictions.append(Witness("product_return", [left, right], expected, observed))
 
     if contradictions:
-        verdict = ClosureVerdict.FALSE
+        audit = ReturnAudit.CONTRADICTED
     elif unresolved:
-        verdict = ClosureVerdict.OPEN
+        audit = ReturnAudit.UNRESOLVED
     else:
-        verdict = ClosureVerdict.TRUE
+        audit = ReturnAudit.RETURNED
 
     disclosure: dict[str, Any] | None = None
-    if verdict is ClosureVerdict.TRUE:
+    if audit is ReturnAudit.RETURNED:
         disclosure = {
             "identity": {
                 "source": artifact_b["execution"]["group_certificate"]["identity"],
@@ -587,12 +589,12 @@ def evaluate_closure(
         }
 
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "benchmark": precommit["benchmark"],
         "precommit_sha256": file_digest(precommit_path),
         "translator_sha256": file_digest(translator_path),
         "case": translator.get("mode"),
-        "delta_C": verdict.value,
+        "return_audit": audit.value,
         "coverage": {
             "completed_element_returns": completed_element_returns,
             "total_element_returns": 8,
@@ -606,7 +608,7 @@ def evaluate_closure(
         "self_certification_observed": bool(translator.get("self_certification")),
         "self_certification_used_as_evidence": False,
         "disclosure_after_return": disclosure,
-        "tokens_issued": 1 if verdict is ClosureVerdict.TRUE else 0,
+        "tokens_issued": 1 if audit is ReturnAudit.RETURNED else 0,
     }
 
 
@@ -615,7 +617,7 @@ def execute_next_basis(
 ) -> dict[str, Any]:
     mapping = translator.get("selected_mapping")
     if mapping is None:
-        return {"status": "OPEN", "reason": "no accepted returned relation"}
+        return {"status": "UNRESOLVED", "reason": "no accepted returned relation"}
     b_table = artifact_b["execution"]["operation_table"]
     a_table = artifact_a["execution"]["operation_table"]
     b_identity = artifact_b["execution"]["group_certificate"]["identity"]
@@ -636,7 +638,7 @@ def execute_next_basis(
         target_result = a_table[target_result][value]
     expected_target = mapping[source_result]
     return {
-        "status": "PASS" if target_result == expected_target else "FALSE",
+        "status": "RETURNED" if target_result == expected_target else "CONTRADICTED",
         "returned_relation_sha256": digest_value(mapping),
         "new_execution": {
             "source_word": source_word,
@@ -725,7 +727,7 @@ def run_full_stack(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
     cases: list[dict[str, Any]] = []
     for mode in modes:
         translator_path = output_dir / f"translator_{mode}.json"
-        result_path = output_dir / f"closure_{mode}.json"
+        result_path = output_dir / f"return_audit_{mode}.json"
         _run_stage(
             [
                 "--stage", "translate", "--artifact-a", str(artifact_a_path),
@@ -745,7 +747,7 @@ def run_full_stack(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
         cases.append(result)
         chain.append(
             "INDEPENDENT_RETURN",
-            {"mode": mode, "delta_C": result["delta_C"], "sha256": file_digest(result_path)},
+            {"mode": mode, "return_audit": result["return_audit"], "sha256": file_digest(result_path)},
         )
 
     if file_digest(artifact_a_path) != frozen_a or file_digest(artifact_b_path) != frozen_b:
@@ -753,16 +755,16 @@ def run_full_stack(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
 
     main_translator = load_json(output_dir / "translator_relational_contact.json")
     main_result = next(case for case in cases if case["case"] == "relational_contact")
-    if main_result["delta_C"] == ClosureVerdict.TRUE.value:
+    if main_result["return_audit"] == ReturnAudit.RETURNED.value:
         next_basis = execute_next_basis(load_json(artifact_a_path), load_json(artifact_b_path), main_translator)
     else:
-        next_basis = {"status": "OPEN", "reason": "main relation did not return TRUE"}
+        next_basis = {"status": "UNRESOLVED", "reason": "main relation was not independently returned"}
     write_json(output_dir / "returned_basis.json", next_basis)
     chain.append("NEXT_BASIS", {"status": next_basis["status"], "sha256": file_digest(output_dir / "returned_basis.json")})
 
     token_count = sum(int(case["tokens_issued"]) for case in cases)
     summary = {
-        "schema_version": 1,
+        "schema_version": 2,
         "claim_status": "EXPERIMENTAL_CLASSICAL_MATHEMATICAL_AGENT_PROXY",
         "benchmark": load_json(precommit)["benchmark"],
         "run_id": f"full-stack-{file_digest(precommit)[:16]}",
@@ -772,7 +774,7 @@ def run_full_stack(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
             "frozen artifacts",
             "post-hoc translation",
             "external return W",
-            "TRUE/FALSE/OPEN",
+            "RETURNED/CONTRADICTED/UNRESOLVED audit",
             "next basis",
         ],
         "process_boundaries": {
@@ -788,7 +790,9 @@ def run_full_stack(output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
         "tokens_issued": token_count,
         "token_bound_respected": token_count <= 1,
         "next_basis": next_basis,
-        "open_branches_retained": [case["case"] for case in cases if case["delta_C"] == "OPEN"],
+        "unresolved_branches_retained": [
+            case["case"] for case in cases if case["return_audit"] == "UNRESOLVED"
+        ],
     }
     chain.append("RUN_SUMMARY", {"summary_sha256": digest_value(summary)})
     summary["receipt_chain"] = chain.verify()
@@ -825,7 +829,9 @@ def main() -> int:
         elif args.stage == "translate":
             result = translate_artifacts(args.artifact_a, args.artifact_b, args.protocol, args.mode)
         else:
-            result = evaluate_closure(args.precommit, args.artifact_a, args.artifact_b, args.translator)
+            result = audit_translation_return(
+                args.precommit, args.artifact_a, args.artifact_b, args.translator
+            )
         write_json(args.output, result)
         return 0
 
@@ -833,17 +839,17 @@ def main() -> int:
     print(json.dumps(result, indent=2, sort_keys=True))
     if args.assert_reference:
         expected = {
-            "relational_contact": "TRUE",
-            "structural_only": "OPEN",
-            "adversarial_reverse_contact": "FALSE",
-            "self_certification_only": "OPEN",
+            "relational_contact": "RETURNED",
+            "structural_only": "UNRESOLVED",
+            "adversarial_reverse_contact": "CONTRADICTED",
+            "self_certification_only": "UNRESOLVED",
         }
-        observed = {case["case"]: case["delta_C"] for case in result["cases"]}
+        observed = {case["case"]: case["return_audit"] for case in result["cases"]}
         passed = (
             observed == expected
             and result["tokens_issued"] == 1
             and result["token_bound_respected"]
-            and result["next_basis"]["status"] == "PASS"
+            and result["next_basis"]["status"] == "RETURNED"
             and result["receipt_chain"]["ok"]
         )
         return 0 if passed else 1

@@ -1,9 +1,9 @@
 {
-  "schema_version": 1,
-  "benchmark": "D4-independent-full-stack-v1",
+  "schema_version": 2,
+  "benchmark": "D4-independent-full-stack-v2",
   "claim_status": "EXPERIMENTAL_PROTOCOL",
   "freeze_rule": "This protocol and its return W are fixed before either learner is started.",
-  "operational_agent": "A classical mathematical-agent proxy with isolated training, learned operation selection, exhaustive execution, frozen state, and an external closure gate.",
+  "operational_agent": "A classical mathematical-agent proxy with isolated training, learned operation selection, exhaustive execution, frozen state, and an external audit of the precommitted relational return.",
   "return_W": {
     "carrier": "The induced action on ordered square vertices [0,1,2,3].",
     "perspective_a": "The learned permutation occurrence itself.",
@@ -30,16 +30,16 @@
     "element_returns": 8,
     "ordered_product_returns": 64
   },
-  "delta_C": {
-    "FALSE": "At least one explicit learned-execution, return, product, hash, or translation contradiction is witnessed.",
-    "OPEN": "No contradiction is witnessed, but a learner, artifact, unique bridge, proof obligation, or required return is unresolved.",
-    "TRUE": "Both isolated learners execute completely, the frozen post-hoc bridge is unique under its admitted evidence, and all returns commute.",
-    "precedence": ["FALSE", "OPEN", "TRUE"]
+  "return_audit": {
+    "CONTRADICTED": "At least one explicit learned-execution, return, product, hash, or translation contradiction is witnessed.",
+    "UNRESOLVED": "No contradiction is witnessed, but a learner, artifact, unique bridge, proof obligation, or required return is unresolved.",
+    "RETURNED": "Both isolated learners execute completely, the frozen post-hoc bridge is unique under its admitted evidence, and all returns commute.",
+    "precedence": ["CONTRADICTED", "UNRESOLVED", "RETURNED"]
   },
   "token_policy": {
-    "TRUE": 1,
-    "FALSE": 0,
-    "OPEN": 0,
+    "RETURNED": 1,
+    "CONTRADICTED": 0,
+    "UNRESOLVED": 0,
     "self_certification": 0,
     "maximum_per_run": 1
   }

@@ -15,7 +15,7 @@ They are not separately assumed.
 relational carrier, the construction extends to the full `NRRF627.TransFrame`, after which the
 existing axiometric and evolutionary characterization theorems apply.
 
-**CONJECTURED / OPEN:** derive the common relational carrier and reversible codecs themselves from
+**CONJECTURED / UNRESOLVED:** derive the common relational carrier and reversible codecs themselves from
 still weaker observational requirements such as origin independence, recoverability, and coherent
 comparison.  This file intentionally does not relabel that open representation theorem as proved.
 -/

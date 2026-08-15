@@ -9,7 +9,7 @@
 | Verification | theorem checks | theorem checks **plus** cross-language return/coherence claim |
 | History | proof object/derivation matters operationally | coherent evolutionary route is predicted to leave no verdict trace beyond endpoints |
 | Internal change | usually implementation detail | return-invisible change is modeled as gauge freedom |
-| Failure | rejected proof / counterexample | rejected proof, broken translation/return, counterexample, or OPEN obstruction |
+| Failure | rejected proof / counterexample | rejected proof, broken translation/return, counterexample, or UNRESOLVED obstruction |
 
 ## Not a replacement for Lean
 
@@ -41,14 +41,14 @@ Without the second class, the runtime only demonstrates its own definitions.
 
 `experiments/full_stack_math_asi.py` composes both layers without conflating them. Each local
 classical agent learns and executes in its own fixed presentation. Only after both states are frozen
-does a separate translator propose a cross-frame relation; an external gate then checks the
+does a separate translator propose a cross-frame relation; an external auditor then checks the
 precommitted return.
 
 The closure relation is therefore:
 
-`local learning/checking in A and B → frozen occurrence relation → post-hoc T → external W → δ_C`.
+`local learning/checking in A and B → frozen occurrence relation → post-hoc T → compare W_m(Tu) with φ(W_ℓu) → audit record`.
 
-The observed `OPEN` structure-only branch is important: local proof of two isomorphic D4 groups does
-not by itself choose which of eight relative orientations is the intended return. The `FALSE`
+The observed `UNRESOLVED` structure-only branch is important: local proof of two isomorphic D4 groups does
+not by itself choose which of eight relative orientations is the intended return. The `CONTRADICTED`
 reversed-contact branch likewise shows that abstract isomorphism is weaker than translational
 verification against a selected external relation.

@@ -1,5 +1,5 @@
 {
-  "benchmark": "D4-independent-full-stack-v1",
+  "benchmark": "D4-independent-full-stack-v2",
   "case": "adversarial_reverse_contact",
   "contradiction_count": 4,
   "coverage": {
@@ -8,7 +8,6 @@
     "total_element_returns": 8,
     "total_ordered_product_returns": 64
   },
-  "delta_C": "FALSE",
   "disclosure_after_return": null,
   "first_contradiction": {
     "check": "element_return",
@@ -28,11 +27,12 @@
     "reason": null
   },
   "first_unresolved": null,
-  "precommit_sha256": "911277acb381448314a58c0c1cb23f6745befc34fad5b5c1a7fc60308eb876da",
-  "schema_version": 1,
+  "precommit_sha256": "e07f1176fa133d93a49e6c1c6decd041a120165909bee7e8609121cae53c99ce",
+  "return_audit": "CONTRADICTED",
+  "schema_version": 2,
   "self_certification_observed": false,
   "self_certification_used_as_evidence": false,
   "tokens_issued": 0,
-  "translator_sha256": "f0490fab46c9cfc007105c7c2237cb1eb55bb3ef356a958de58c91e7995036ee",
+  "translator_sha256": "df2fedf3b1ad6238e8c82053b63973de37249ca3f44ee6cfebc6eb3c97bb611a",
   "unresolved_count": 0
 }

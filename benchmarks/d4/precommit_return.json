@@ -1,6 +1,6 @@
 {
-  "schema_version": 1,
-  "benchmark": "D4-blind-translation-v1",
+  "schema_version": 2,
+  "benchmark": "D4-blind-translation-v2",
   "claim_status": "EXPERIMENTAL_PROTOCOL",
   "freeze_rule": "Commit this file and record its SHA-256 before either representation or translator run begins.",
   "mathematical_object": "Dihedral group D4 acting on the four vertices of a square",
@@ -22,27 +22,26 @@
     "elements": "All 8 normal forms",
     "ordered_products": "All 64 ordered pairs"
   },
-  "delta_C": {
-    "FALSE": "At least one explicit return or multiplication contradiction is witnessed.",
-    "OPEN": "No contradiction is witnessed, but at least one required translation is unavailable.",
-    "TRUE": "All 8 element returns and all 64 ordered products agree.",
+  "return_audit": {
+    "CONTRADICTED": "At least one explicit return or multiplication contradiction is witnessed.",
+    "UNRESOLVED": "No contradiction is witnessed, but at least one required translation is unavailable.",
+    "RETURNED": "All 8 element returns and all 64 ordered products agree.",
     "precedence": [
-      "FALSE",
-      "OPEN",
-      "TRUE"
+      "CONTRADICTED",
+      "UNRESOLVED",
+      "RETURNED"
     ]
   },
   "token_policy": {
-    "TRUE": 1,
-    "FALSE": 0,
-    "OPEN": 0,
+    "RETURNED": 1,
+    "CONTRADICTED": 0,
+    "UNRESOLVED": 0,
     "self_certification": 0
   },
   "forbidden_adaptation": [
     "Changing W after viewing either representation output",
     "Dropping a counterexample from the test domain",
-    "Treating an undefined translation as TRUE",
+    "Treating an undefined translation as independently returned",
     "Using the translator's own confidence as return evidence"
   ]
 }
-

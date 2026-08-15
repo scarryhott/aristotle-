@@ -36,12 +36,12 @@ remains the central theoretical target.
 
 The bounded classical proxy has now been run end to end:
 
-`W precommit → independent learning and execution → frozen artifacts → post-hoc translation → external closure gate`.
+`W precommit → independent learning and execution → frozen artifacts → post-hoc translation → external audit of the W-square`.
 
 The causal order is the principal result:
 
 ```text
-W_precommit ≺ (A,B)_learn+execute ≺ freeze ≺ T_posthoc ≺ δ_C
+W_precommit ≺ (A,B)_learn+execute ≺ freeze ≺ T_posthoc ≺ ReturnAudit_W(T_posthoc)
 ```
 
 The return criterion exists before either learner runs; the translator is constructed only after
@@ -52,8 +52,9 @@ the return close.
 Two isolated symbolic learners used different data and hypothesis languages. Each selected its own
 D4 operation and executed all held-out products and 512 associativity cases. A post-hoc translator
 found eight abstract isomorphisms; a precommitted relative contact selected one without exposing the
-complete return. The external gate then returned `TRUE` on 8/8 elements and 64/64 products. A
-reversed contact returned `FALSE`; structure-only and self-certification branches remained `OPEN`.
+complete return. The external audit recorded `RETURNED` after agreement on 8/8 elements and 64/64
+products. A reversed contact was `CONTRADICTED`; structure-only and self-certification remained
+`UNRESOLVED`. These are evidence records about proposed bridges, not values returned by `W`.
 
 This establishes that the proposed experimental architecture is executable and can reject a
 structurally valid but return-incompatible translation. It does not establish open-ended ASI
@@ -74,7 +75,7 @@ The funded work should attack the strongest objection to the present theory: som
 The project therefore has four deliverables:
 
 1. **Weaker-premise derivation.** Determine which `TransFrame` laws follow from minimal requirements for recoverable verification across freely changing mathematical representations.
-2. **Independent closure runtime.** Implement mathematical agents whose transformations are generated independently of the desired invariant, then test whether closure laws emerge, fail, or remain OPEN.
+2. **Independent closure runtime.** Implement mathematical agents whose transformations are generated independently of the desired invariant, then test whether closure laws emerge, fail, or remain UNRESOLVED.
 3. **Adversarial transformation suite.** Include transformations that preserve proof truth but alter representation, transformations that preserve return while changing occurrence, and transformations that deliberately violate proposed return invariants.
 4. **Aristotle-assisted formal verification.** Use formal proof generation/checking to return `PROVED`, `FALSE_WITH_COUNTEREXAMPLE`, or `OPEN_WITH_MINIMAL_OBSTRUCTION`, with explicit axiom and representation-change reports.
 
@@ -89,7 +90,7 @@ A negative result is also valuable if it isolates the minimal obstruction showin
 The programme has an explicit falsification condition: if post-hoc translation cannot continue to
 distinguish returned equivalence from merely structural, contradictory, or self-certified
 re-expression as agent representational freedom increases, the proposed verification architecture
-fails. Continued `TRUE` / `FALSE` / `OPEN` separation is evidence for the architecture, not an
+fails. Continued `RETURNED` / `CONTRADICTED` / `UNRESOLVED` separation is evidence for the architecture, not an
 assumption of it.
 
 ## Scale-up experiment
@@ -102,7 +103,7 @@ W_precommit
     → independent mathematical work
     → immutable artifact freeze
     → translation discovered afterward
-    → external δ_C
+    → external audit of W_m(Tu) = φ(W_ℓu)
     → admitted returned relation becomes the next learning basis
 ```
 

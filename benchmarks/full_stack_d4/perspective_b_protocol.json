@@ -2,7 +2,7 @@
   "schema_version": 1,
   "runtime": "perspective-b-semidir-learner",
   "visible_inputs": ["this protocol"],
-  "forbidden_inputs": ["perspective A protocol or state", "translator state", "complete return W", "closure verdict"],
+  "forbidden_inputs": ["perspective A protocol or state", "translator state", "complete return W", "external return audit"],
   "carrier": "pairs (k,f) with k in Z4 and f in Z2",
   "environment_operation": "hidden from the learner and queried through training interactions",
   "seed": 62702,

@@ -121,7 +121,7 @@
     "perspective B protocol or state",
     "translator state",
     "complete return W",
-    "closure verdict"
+    "external return audit"
   ],
   "local_generators": {
     "reverse": "a1",
@@ -193,9 +193,9 @@
       0
     ]
   },
-  "protocol_sha256": "b52f2a04e41fef8b38d4122e9d802e134b2f53ce4d081b74eff1fae1c91bff6e",
+  "protocol_sha256": "d0d07e4b755afbe2b7b676362650abf5813420c02978b8670bd05b1508e2ffc9",
   "runtime_id": "perspective-a-permutation-learner",
-  "schema_version": 1,
+  "schema_version": 2,
   "self_certification": true,
   "training": {
     "observation_count": 20,

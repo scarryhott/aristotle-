@@ -18,7 +18,7 @@ jobs:
           python-version: "3.12"
       - name: Run exhaustive closure tests
         run: python3 -m unittest discover -s tests -v
-      - name: Validate static TRUE/FALSE/OPEN gate
+      - name: Validate static relational-return audit
         run: python3 experiments/aristotle_d4_closure.py --assert-reference
       - name: Replay independent full-stack runtime
         run: python3 experiments/full_stack_math_asi.py --assert-reference > /tmp/full_stack_result.json

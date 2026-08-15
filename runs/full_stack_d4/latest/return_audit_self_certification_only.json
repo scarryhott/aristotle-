@@ -1,5 +1,5 @@
 {
-  "benchmark": "D4-independent-full-stack-v1",
+  "benchmark": "D4-independent-full-stack-v2",
   "case": "self_certification_only",
   "contradiction_count": 0,
   "coverage": {
@@ -8,7 +8,6 @@
     "total_element_returns": 8,
     "total_ordered_product_returns": 64
   },
-  "delta_C": "OPEN",
   "disclosure_after_return": null,
   "first_contradiction": null,
   "first_unresolved": {
@@ -18,11 +17,12 @@
     "observed": null,
     "reason": "self-certification supplies no independent bridge evidence"
   },
-  "precommit_sha256": "911277acb381448314a58c0c1cb23f6745befc34fad5b5c1a7fc60308eb876da",
-  "schema_version": 1,
+  "precommit_sha256": "e07f1176fa133d93a49e6c1c6decd041a120165909bee7e8609121cae53c99ce",
+  "return_audit": "UNRESOLVED",
+  "schema_version": 2,
   "self_certification_observed": true,
   "self_certification_used_as_evidence": false,
   "tokens_issued": 0,
-  "translator_sha256": "dccc1b753c54fe7be2db2e34f067dd56fc0398281184ed4cc1bd83dce4008535",
+  "translator_sha256": "494b216e2195832c5213bec623b0a3d27bdace8ac2a141dad6045710e85b232d",
   "unresolved_count": 1
 }

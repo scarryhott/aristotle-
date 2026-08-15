@@ -2,7 +2,7 @@
   "schema_version": 1,
   "runtime": "post-hoc-structural-translator",
   "visible_inputs": ["two frozen learner artifacts", "this protocol"],
-  "forbidden_inputs": ["complete return W", "closure verdict", "mutable learner state"],
+  "forbidden_inputs": ["complete return W", "external return audit", "mutable learner state"],
   "selection": {
     "structural_only": [],
     "relational_contact": [
@@ -30,5 +30,5 @@
       }
     ]
   },
-  "contact_scope": "Only two generator contacts are used to select among structural isomorphisms; the external gate withholds the remaining element returns and all product-return checks."
+  "contact_scope": "Only two generator contacts are used to select among structural isomorphisms; the external return auditor withholds the remaining element returns and all product-return checks."
 }

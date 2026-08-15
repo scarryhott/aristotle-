@@ -121,7 +121,7 @@
     "perspective A protocol or state",
     "translator state",
     "complete return W",
-    "closure verdict"
+    "external return audit"
   ],
   "local_generators": {
     "reverse": "b1",
@@ -182,9 +182,9 @@
       1
     ]
   },
-  "protocol_sha256": "0db1b229d70a91703e1b77f154413564805827ff39d79475b5d05bcc3e84687e",
+  "protocol_sha256": "0f99d557882768aa581e8f571016aaa5082d49b3b226af02ecc6cd2a923011f7",
   "runtime_id": "perspective-b-semidir-learner",
-  "schema_version": 1,
+  "schema_version": 2,
   "self_certification": true,
   "training": {
     "observation_count": 20,

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "runtime": "perspective-a-permutation-learner",
   "visible_inputs": ["this protocol"],
-  "forbidden_inputs": ["perspective B protocol or state", "translator state", "complete return W", "closure verdict"],
+  "forbidden_inputs": ["perspective B protocol or state", "translator state", "complete return W", "external return audit"],
   "generators": {
     "turn": [1, 2, 3, 0],
     "reverse": [0, 3, 2, 1]

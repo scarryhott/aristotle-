@@ -16,6 +16,6 @@ The module must:
 
 No `sorry`, `admit`, custom axioms, source modification, narrowed domain, or redefinition of `W` is
 permitted. If the full translation cannot be proved, return the smallest explicit obstruction and
-leave the result OPEN. If an equality fails, return a concrete counterexample rather than changing
+leave the result UNRESOLVED. If an equality fails, return a concrete counterexample rather than changing
 the protocol.
 

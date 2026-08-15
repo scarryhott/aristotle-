@@ -16,9 +16,9 @@ frozen artifact A         frozen artifact B
              \             /
           post-hoc structural translator
                        ↓
-             external δ_C return
+        compare the withheld W-square
                        ↓
-       TRUE / FALSE / OPEN → next basis
+       external ReturnAudit record → next basis
 ```
 
 The two learners run in fresh subprocesses and receive different protocol files. Each selects a
@@ -28,9 +28,10 @@ starts. Process separation is an experimental visibility boundary, not a securit
 
 The translator receives the two frozen artifacts and `translator_protocol.json`; it does not
 receive `precommit_return.json`. It first enumerates every structural isomorphism. D4 has multiple
-automorphisms, so structure alone remains `OPEN`. A separately precommitted two-generator contact
-can select one bridge. Only afterward does the external gate disclose the complete return `W` and
-test all eight elements and all 64 ordered products.
+automorphisms, so structure alone remains `UNRESOLVED`. A separately precommitted two-generator contact
+can select one bridge. Only afterward does the external auditor disclose the complete return `W`
+and test all eight elements and all 64 ordered products. `W` returns the relational basis;
+`ReturnAudit` only records the evidence state of the proposed bridge.
 
 ## Run
 
@@ -45,11 +46,11 @@ The deterministic evidence bundle is written to `runs/full_stack_d4/latest/`.
 
 | Case | Expected return | Reason |
 |---|---|---|
-| `relational_contact` | `TRUE` | A unique post-hoc bridge closes every withheld return |
-| `structural_only` | `OPEN` | Multiple isomorphisms survive; no arbitrary origin is selected |
-| `adversarial_reverse_contact` | `FALSE` | A concrete return disagreement is exposed |
-| `self_certification_only` | `OPEN` | An agent claim is not independent return evidence |
+| `relational_contact` | `RETURNED` | A unique post-hoc bridge closes every withheld return |
+| `structural_only` | `UNRESOLVED` | Multiple isomorphisms survive; no arbitrary origin is selected |
+| `adversarial_reverse_contact` | `CONTRADICTED` | A concrete return disagreement is exposed |
+| `self_certification_only` | `UNRESOLVED` | An agent claim is not independent return evidence |
 
-Exactly one experimental token is issued, only for the independently returned `TRUE` case. The
+Exactly one experimental token is issued only when the relation is independently returned. The
 accepted bridge becomes the next basis for a new cross-presentation execution; unresolved branches
-remain recorded as `OPEN`.
+remain recorded as `UNRESOLVED`.

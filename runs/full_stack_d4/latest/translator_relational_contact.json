@@ -1,6 +1,6 @@
 {
-  "artifact_a_sha256": "a41195deb4c17628497783335520e25a3772105e3df6f02536d676151269e3ec",
-  "artifact_b_sha256": "f345e28f6e63b0d3ae177d5ea2c733b34acb2aab04ddd7c4a02b2c6cb52cc87e",
+  "artifact_a_sha256": "a8bd9c1133c745a0c69a0975d5acdc89dd762dd073540f0d3575b831a9d61b90",
+  "artifact_b_sha256": "a0b331ab160266df510182b08e7b3e80ee6abe3f08b93cc4313e33d47122a964",
   "candidate_mappings": [
     {
       "b0": "a0",
@@ -34,14 +34,14 @@
   ],
   "forbidden_inputs": [
     "complete return W",
-    "closure verdict",
+    "external return audit",
     "mutable learner state"
   ],
   "mode": "relational_contact",
   "post_contact_candidate_count": 1,
-  "protocol_sha256": "cb9e45c089c5962abe73688e162f04f5d60738328da1157f11614a7350d721db",
+  "protocol_sha256": "10d8a935333ff627c767c1eb97e59d0fe0105525c9b6585e44d2e4b5297d2c96",
   "runtime_id": "post-hoc-structural-translator",
-  "schema_version": 1,
+  "schema_version": 2,
   "selected_mapping": {
     "b0": "a0",
     "b1": "a1",

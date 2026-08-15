@@ -2,7 +2,7 @@ from pathlib import Path
 import unittest
 
 from experiments.aristotle_d4_closure import (
-    ClosureVerdict,
+    ReturnAudit,
     correct_translator,
     d4_elements,
     evaluate_translator,
@@ -28,23 +28,23 @@ class D4ClosureTest(unittest.TestCase):
 
     def test_correct_candidate_closes(self) -> None:
         result = evaluate_translator("candidate", correct_translator)
-        self.assertEqual(result["delta_C"], ClosureVerdict.TRUE.value)
+        self.assertEqual(result["return_audit"], ReturnAudit.RETURNED.value)
         self.assertEqual(result["contradiction_count"], 0)
         self.assertEqual(result["unresolved_count"], 0)
         self.assertEqual(result["coverage"]["completed_ordered_products"], 64)
 
     def test_wrong_sign_has_counterexample(self) -> None:
         result = evaluate_translator("wrong", wrong_sign_translator)
-        self.assertEqual(result["delta_C"], ClosureVerdict.FALSE.value)
+        self.assertEqual(result["return_audit"], ReturnAudit.CONTRADICTED.value)
         self.assertIsNotNone(result["first_contradiction"])
 
-    def test_partial_candidate_stays_open(self) -> None:
+    def test_partial_candidate_stays_unresolved(self) -> None:
         result = evaluate_translator("partial", rotations_only_translator)
-        self.assertEqual(result["delta_C"], ClosureVerdict.OPEN.value)
+        self.assertEqual(result["return_audit"], ReturnAudit.UNRESOLVED.value)
         self.assertEqual(result["contradiction_count"], 0)
         self.assertGreater(result["unresolved_count"], 0)
 
-    def test_false_precedes_open(self) -> None:
+    def test_contradiction_precedes_unresolved(self) -> None:
         def mixed(value):
             rotation, flip = value
             if flip:
@@ -54,10 +54,9 @@ class D4ClosureTest(unittest.TestCase):
             return normal_action(value)
 
         result = evaluate_translator("mixed", mixed)
-        self.assertEqual(result["delta_C"], ClosureVerdict.FALSE.value)
+        self.assertEqual(result["return_audit"], ReturnAudit.CONTRADICTED.value)
         self.assertGreater(result["unresolved_count"], 0)
 
 
 if __name__ == "__main__":
     unittest.main()
-

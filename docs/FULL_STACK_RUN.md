@@ -22,20 +22,20 @@ frozen A artifact                frozen B artifact
                       ↓
                external return
                       ↓
-        TRUE / FALSE / OPEN → next basis
+        RETURNED / CONTRADICTED / UNRESOLVED → next basis
 ```
 
 The enforced causal order is:
 
 ```text
-W_precommit ≺ (A,B)_learn+execute ≺ freeze ≺ T_posthoc ≺ δ_C
+W_precommit ≺ (A,B)_learn+execute ≺ freeze ≺ T_posthoc ≺ ReturnAudit_W(T_posthoc)
 ```
 
 This ordering is the central experimental control. Neither learner receives the future bridge, and
 the bridge is searched only after both learned executions have been frozen and hashed.
 
 The precommitted return protocol has SHA-256
-`911277acb381448314a58c0c1cb23f6745befc34fad5b5c1a7fc60308eb876da`.
+`e07f1176fa133d93a49e6c1c6decd041a120165909bee7e8609121cae53c99ce`.
 The translator process was not given the complete return definition.
 
 ## Independent learners
@@ -55,28 +55,29 @@ subprocesses.
 The structural translator found eight group isomorphisms between the frozen learned algebras.
 That ambiguity is preserved rather than resolved by an arbitrary origin choice. A precommitted
 relative contact on two generators selected one candidate without exposing the complete `W`.
-The external gate then tested the withheld relation.
+The external auditor then compared the withheld relational returns. `W` itself returned only the
+relational basis; the audit labels below describe evidence about the proposed bridge.
 
 Consequently the run distinguishes abstract equivalence `A ≅ B` from a bridge whose relation has
 actually returned. It also distinguishes a claimed identity from a returned identity.
 
-| Case | `δ_C` | Element returns | Product returns | Token |
+| Case | External audit | Element returns | Product returns | Token |
 |---|---:|---:|---:|---:|
-| `relational_contact` | `TRUE` | 8/8 | 64/64 | 1 |
-| `structural_only` | `OPEN` | 0/8 | 0/64 | 0 |
-| `adversarial_reverse_contact` | `FALSE` | 8/8 checked; 4 contradictions | 64/64 | 0 |
-| `self_certification_only` | `OPEN` | 0/8 | 0/64 | 0 |
+| `relational_contact` | `RETURNED` | 8/8 | 64/64 | 1 |
+| `structural_only` | `UNRESOLVED` | 0/8 | 0/64 | 0 |
+| `adversarial_reverse_contact` | `CONTRADICTED` | 8/8 checked; 4 contradictions | 64/64 | 0 |
+| `self_certification_only` | `UNRESOLVED` | 0/8 | 0/64 | 0 |
 
 The first negative witness is the learned source occurrence `b2`: its expected return is
 `[1,2,3,0]`, while the reversed-contact bridge returns `[3,0,1,2]`.
 
-Only after `TRUE` did the runtime disclose the returned identity, the common product homotopy, and
+Only after the relation was independently returned did the runtime disclose the returned identity, the common product homotopy, and
 the translation-route count interpreted as holonomy data. The selected bridge then became the next
 basis for a new five-step execution; its translated result was exactly recovered. The two
-unresolved branches remain explicitly `OPEN`.
+unresolved branches remain explicitly `UNRESOLVED`.
 
 Exactly one experimental token was issued. The 13-record hash chain closes at
-`677531103e3397a9abec950b3b0a6573973a3e4ab911dd40a34ec1d640763e0b`.
+`44f413d97649330ab705d76d2a2a65bd4649aeac8fa309cc622ee0a48cab6e0f`.
 
 ## Reproduce
 
@@ -111,7 +112,7 @@ this executed classical proxy
         → isolated Aristotle generation
         → frozen Lean artifacts
         → translator discovered afterward
-       → the same external TRUE / FALSE / OPEN gate.
+       → the same external audit of the commuting W-square.
 ```
 
 The architecture is falsified if this separation collapses as the agents gain representational
