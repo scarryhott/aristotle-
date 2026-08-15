@@ -3,7 +3,6 @@ name: Verify formal and experimental kernels
 on:
   pull_request:
   push:
-    branches: [main]
 
 permissions:
   contents: read
