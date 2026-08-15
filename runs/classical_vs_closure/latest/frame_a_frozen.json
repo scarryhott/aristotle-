@@ -1,0 +1,679 @@
+{
+  "admitted_equality": {
+    "class_of": {
+      "direct:a0": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+      "direct:a1": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+      "direct:a2": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+      "direct:a3": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+      "direct:a4": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb",
+      "direct:a5": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+      "direct:a6": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+      "direct:a7": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+      "right_identity_extended:a0": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+      "right_identity_extended:a1": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+      "right_identity_extended:a2": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+      "right_identity_extended:a3": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+      "right_identity_extended:a4": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb",
+      "right_identity_extended:a5": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+      "right_identity_extended:a6": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+      "right_identity_extended:a7": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601"
+    },
+    "definition": "identical locally computed right-action signatures",
+    "equivalence_classes": [
+      {
+        "class_id": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+        "members": [
+          "direct:a7",
+          "right_identity_extended:a7"
+        ]
+      },
+      {
+        "class_id": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+        "members": [
+          "direct:a5",
+          "right_identity_extended:a5"
+        ]
+      },
+      {
+        "class_id": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+        "members": [
+          "direct:a0",
+          "right_identity_extended:a0"
+        ]
+      },
+      {
+        "class_id": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+        "members": [
+          "direct:a3",
+          "right_identity_extended:a3"
+        ]
+      },
+      {
+        "class_id": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+        "members": [
+          "direct:a2",
+          "right_identity_extended:a2"
+        ]
+      },
+      {
+        "class_id": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+        "members": [
+          "direct:a1",
+          "right_identity_extended:a1"
+        ]
+      },
+      {
+        "class_id": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+        "members": [
+          "direct:a6",
+          "right_identity_extended:a6"
+        ]
+      },
+      {
+        "class_id": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb",
+        "members": [
+          "direct:a4",
+          "right_identity_extended:a4"
+        ]
+      }
+    ],
+    "matrix": {
+      "direct:a0": {
+        "direct:a0": true,
+        "direct:a1": false,
+        "direct:a2": false,
+        "direct:a3": false,
+        "direct:a4": false,
+        "direct:a5": false,
+        "direct:a6": false,
+        "direct:a7": false,
+        "right_identity_extended:a0": true,
+        "right_identity_extended:a1": false,
+        "right_identity_extended:a2": false,
+        "right_identity_extended:a3": false,
+        "right_identity_extended:a4": false,
+        "right_identity_extended:a5": false,
+        "right_identity_extended:a6": false,
+        "right_identity_extended:a7": false
+      },
+      "direct:a1": {
+        "direct:a0": false,
+        "direct:a1": true,
+        "direct:a2": false,
+        "direct:a3": false,
+        "direct:a4": false,
+        "direct:a5": false,
+        "direct:a6": false,
+        "direct:a7": false,
+        "right_identity_extended:a0": false,
+        "right_identity_extended:a1": true,
+        "right_identity_extended:a2": false,
+        "right_identity_extended:a3": false,
+        "right_identity_extended:a4": false,
+        "right_identity_extended:a5": false,
+        "right_identity_extended:a6": false,
+        "right_identity_extended:a7": false
+      },
+      "direct:a2": {
+        "direct:a0": false,
+        "direct:a1": false,
+        "direct:a2": true,
+        "direct:a3": false,
+        "direct:a4": false,
+        "direct:a5": false,
+        "direct:a6": false,
+        "direct:a7": false,
+        "right_identity_extended:a0": false,
+        "right_identity_extended:a1": false,
+        "right_identity_extended:a2": true,
+        "right_identity_extended:a3": false,
+        "right_identity_extended:a4": false,
+        "right_identity_extended:a5": false,
+        "right_identity_extended:a6": false,
+        "right_identity_extended:a7": false
+      },
+      "direct:a3": {
+        "direct:a0": false,
+        "direct:a1": false,
+        "direct:a2": false,
+        "direct:a3": true,
+        "direct:a4": false,
+        "direct:a5": false,
+        "direct:a6": false,
+        "direct:a7": false,
+        "right_identity_extended:a0": false,
+        "right_identity_extended:a1": false,
+        "right_identity_extended:a2": false,
+        "right_identity_extended:a3": true,
+        "right_identity_extended:a4": false,
+        "right_identity_extended:a5": false,
+        "right_identity_extended:a6": false,
+        "right_identity_extended:a7": false
+      },
+      "direct:a4": {
+        "direct:a0": false,
+        "direct:a1": false,
+        "direct:a2": false,
+        "direct:a3": false,
+        "direct:a4": true,
+        "direct:a5": false,
+        "direct:a6": false,
+        "direct:a7": false,
+        "right_identity_extended:a0": false,
+        "right_identity_extended:a1": false,
+        "right_identity_extended:a2": false,
+        "right_identity_extended:a3": false,
+        "right_identity_extended:a4": true,
+        "right_identity_extended:a5": false,
+        "right_identity_extended:a6": false,
+        "right_identity_extended:a7": false
+      },
+      "direct:a5": {
+        "direct:a0": false,
+        "direct:a1": false,
+        "direct:a2": false,
+        "direct:a3": false,
+        "direct:a4": false,
+        "direct:a5": true,
+        "direct:a6": false,
+        "direct:a7": false,
+        "right_identity_extended:a0": false,
+        "right_identity_extended:a1": false,
+        "right_identity_extended:a2": false,
+        "right_identity_extended:a3": false,
+        "right_identity_extended:a4": false,
+        "right_identity_extended:a5": true,
+        "right_identity_extended:a6": false,
+        "right_identity_extended:a7": false
+      },
+      "direct:a6": {
+        "direct:a0": false,
+        "direct:a1": false,
+        "direct:a2": false,
+        "direct:a3": false,
+        "direct:a4": false,
+        "direct:a5": false,
+        "direct:a6": true,
+        "direct:a7": false,
+        "right_identity_extended:a0": false,
+        "right_identity_extended:a1": false,
+        "right_identity_extended:a2": false,
+        "right_identity_extended:a3": false,
+        "right_identity_extended:a4": false,
+        "right_identity_extended:a5": false,
+        "right_identity_extended:a6": true,
+        "right_identity_extended:a7": false
+      },
+      "direct:a7": {
+        "direct:a0": false,
+        "direct:a1": false,
+        "direct:a2": false,
+        "direct:a3": false,
+        "direct:a4": false,
+        "direct:a5": false,
+        "direct:a6": false,
+        "direct:a7": true,
+        "right_identity_extended:a0": false,
+        "right_identity_extended:a1": false,
+        "right_identity_extended:a2": false,
+        "right_identity_extended:a3": false,
+        "right_identity_extended:a4": false,
+        "right_identity_extended:a5": false,
+        "right_identity_extended:a6": false,
+        "right_identity_extended:a7": true
+      },
+      "right_identity_extended:a0": {
+        "direct:a0": true,
+        "direct:a1": false,
+        "direct:a2": false,
+        "direct:a3": false,
+        "direct:a4": false,
+        "direct:a5": false,
+        "direct:a6": false,
+        "direct:a7": false,
+        "right_identity_extended:a0": true,
+        "right_identity_extended:a1": false,
+        "right_identity_extended:a2": false,
+        "right_identity_extended:a3": false,
+        "right_identity_extended:a4": false,
+        "right_identity_extended:a5": false,
+        "right_identity_extended:a6": false,
+        "right_identity_extended:a7": false
+      },
+      "right_identity_extended:a1": {
+        "direct:a0": false,
+        "direct:a1": true,
+        "direct:a2": false,
+        "direct:a3": false,
+        "direct:a4": false,
+        "direct:a5": false,
+        "direct:a6": false,
+        "direct:a7": false,
+        "right_identity_extended:a0": false,
+        "right_identity_extended:a1": true,
+        "right_identity_extended:a2": false,
+        "right_identity_extended:a3": false,
+        "right_identity_extended:a4": false,
+        "right_identity_extended:a5": false,
+        "right_identity_extended:a6": false,
+        "right_identity_extended:a7": false
+      },
+      "right_identity_extended:a2": {
+        "direct:a0": false,
+        "direct:a1": false,
+        "direct:a2": true,
+        "direct:a3": false,
+        "direct:a4": false,
+        "direct:a5": false,
+        "direct:a6": false,
+        "direct:a7": false,
+        "right_identity_extended:a0": false,
+        "right_identity_extended:a1": false,
+        "right_identity_extended:a2": true,
+        "right_identity_extended:a3": false,
+        "right_identity_extended:a4": false,
+        "right_identity_extended:a5": false,
+        "right_identity_extended:a6": false,
+        "right_identity_extended:a7": false
+      },
+      "right_identity_extended:a3": {
+        "direct:a0": false,
+        "direct:a1": false,
+        "direct:a2": false,
+        "direct:a3": true,
+        "direct:a4": false,
+        "direct:a5": false,
+        "direct:a6": false,
+        "direct:a7": false,
+        "right_identity_extended:a0": false,
+        "right_identity_extended:a1": false,
+        "right_identity_extended:a2": false,
+        "right_identity_extended:a3": true,
+        "right_identity_extended:a4": false,
+        "right_identity_extended:a5": false,
+        "right_identity_extended:a6": false,
+        "right_identity_extended:a7": false
+      },
+      "right_identity_extended:a4": {
+        "direct:a0": false,
+        "direct:a1": false,
+        "direct:a2": false,
+        "direct:a3": false,
+        "direct:a4": true,
+        "direct:a5": false,
+        "direct:a6": false,
+        "direct:a7": false,
+        "right_identity_extended:a0": false,
+        "right_identity_extended:a1": false,
+        "right_identity_extended:a2": false,
+        "right_identity_extended:a3": false,
+        "right_identity_extended:a4": true,
+        "right_identity_extended:a5": false,
+        "right_identity_extended:a6": false,
+        "right_identity_extended:a7": false
+      },
+      "right_identity_extended:a5": {
+        "direct:a0": false,
+        "direct:a1": false,
+        "direct:a2": false,
+        "direct:a3": false,
+        "direct:a4": false,
+        "direct:a5": true,
+        "direct:a6": false,
+        "direct:a7": false,
+        "right_identity_extended:a0": false,
+        "right_identity_extended:a1": false,
+        "right_identity_extended:a2": false,
+        "right_identity_extended:a3": false,
+        "right_identity_extended:a4": false,
+        "right_identity_extended:a5": true,
+        "right_identity_extended:a6": false,
+        "right_identity_extended:a7": false
+      },
+      "right_identity_extended:a6": {
+        "direct:a0": false,
+        "direct:a1": false,
+        "direct:a2": false,
+        "direct:a3": false,
+        "direct:a4": false,
+        "direct:a5": false,
+        "direct:a6": true,
+        "direct:a7": false,
+        "right_identity_extended:a0": false,
+        "right_identity_extended:a1": false,
+        "right_identity_extended:a2": false,
+        "right_identity_extended:a3": false,
+        "right_identity_extended:a4": false,
+        "right_identity_extended:a5": false,
+        "right_identity_extended:a6": true,
+        "right_identity_extended:a7": false
+      },
+      "right_identity_extended:a7": {
+        "direct:a0": false,
+        "direct:a1": false,
+        "direct:a2": false,
+        "direct:a3": false,
+        "direct:a4": false,
+        "direct:a5": false,
+        "direct:a6": false,
+        "direct:a7": true,
+        "right_identity_extended:a0": false,
+        "right_identity_extended:a1": false,
+        "right_identity_extended:a2": false,
+        "right_identity_extended:a3": false,
+        "right_identity_extended:a4": false,
+        "right_identity_extended:a5": false,
+        "right_identity_extended:a6": false,
+        "right_identity_extended:a7": true
+      }
+    },
+    "matrix_sha256": "f3290d0b7d0599dcb35f1fff1e5f2e9c8b6ee50539e280f0bc7c634d8d03a791",
+    "setoid_certificate": {
+      "failure_count": 0,
+      "first_failure": null,
+      "reflexivity_cases": 16,
+      "symmetry_cases": 256,
+      "transitivity_cases": 4096
+    }
+  },
+  "candidate_translation_visible": false,
+  "forbidden_inputs": [
+    "perspective B artifact",
+    "candidate comparisons",
+    "cross-frame contact",
+    "question outcomes"
+  ],
+  "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+  "frame_protocol_content_sha256": "1613b6e3a5a028fe90e0c5b8612cdf62e6f737bb0246772bdc4b532b05a11a06",
+  "language": "A",
+  "occurrences": [
+    {
+      "constructor": "direct",
+      "local_program": [
+        "a0"
+      ],
+      "occurrence_id": "direct:a0",
+      "right_action_signature": [
+        "a0",
+        "a1",
+        "a2",
+        "a3",
+        "a4",
+        "a5",
+        "a6",
+        "a7"
+      ]
+    },
+    {
+      "constructor": "direct",
+      "local_program": [
+        "a1"
+      ],
+      "occurrence_id": "direct:a1",
+      "right_action_signature": [
+        "a1",
+        "a0",
+        "a6",
+        "a7",
+        "a5",
+        "a4",
+        "a2",
+        "a3"
+      ]
+    },
+    {
+      "constructor": "direct",
+      "local_program": [
+        "a2"
+      ],
+      "occurrence_id": "direct:a2",
+      "right_action_signature": [
+        "a2",
+        "a3",
+        "a0",
+        "a1",
+        "a6",
+        "a7",
+        "a4",
+        "a5"
+      ]
+    },
+    {
+      "constructor": "direct",
+      "local_program": [
+        "a3"
+      ],
+      "occurrence_id": "direct:a3",
+      "right_action_signature": [
+        "a3",
+        "a2",
+        "a4",
+        "a5",
+        "a7",
+        "a6",
+        "a0",
+        "a1"
+      ]
+    },
+    {
+      "constructor": "direct",
+      "local_program": [
+        "a4"
+      ],
+      "occurrence_id": "direct:a4",
+      "right_action_signature": [
+        "a4",
+        "a5",
+        "a3",
+        "a2",
+        "a0",
+        "a1",
+        "a7",
+        "a6"
+      ]
+    },
+    {
+      "constructor": "direct",
+      "local_program": [
+        "a5"
+      ],
+      "occurrence_id": "direct:a5",
+      "right_action_signature": [
+        "a5",
+        "a4",
+        "a7",
+        "a6",
+        "a1",
+        "a0",
+        "a3",
+        "a2"
+      ]
+    },
+    {
+      "constructor": "direct",
+      "local_program": [
+        "a6"
+      ],
+      "occurrence_id": "direct:a6",
+      "right_action_signature": [
+        "a6",
+        "a7",
+        "a1",
+        "a0",
+        "a2",
+        "a3",
+        "a5",
+        "a4"
+      ]
+    },
+    {
+      "constructor": "direct",
+      "local_program": [
+        "a7"
+      ],
+      "occurrence_id": "direct:a7",
+      "right_action_signature": [
+        "a7",
+        "a6",
+        "a5",
+        "a4",
+        "a3",
+        "a2",
+        "a1",
+        "a0"
+      ]
+    },
+    {
+      "constructor": "right_identity_extended",
+      "local_program": [
+        "a0",
+        "a0"
+      ],
+      "occurrence_id": "right_identity_extended:a0",
+      "right_action_signature": [
+        "a0",
+        "a1",
+        "a2",
+        "a3",
+        "a4",
+        "a5",
+        "a6",
+        "a7"
+      ]
+    },
+    {
+      "constructor": "right_identity_extended",
+      "local_program": [
+        "a1",
+        "a0"
+      ],
+      "occurrence_id": "right_identity_extended:a1",
+      "right_action_signature": [
+        "a1",
+        "a0",
+        "a6",
+        "a7",
+        "a5",
+        "a4",
+        "a2",
+        "a3"
+      ]
+    },
+    {
+      "constructor": "right_identity_extended",
+      "local_program": [
+        "a2",
+        "a0"
+      ],
+      "occurrence_id": "right_identity_extended:a2",
+      "right_action_signature": [
+        "a2",
+        "a3",
+        "a0",
+        "a1",
+        "a6",
+        "a7",
+        "a4",
+        "a5"
+      ]
+    },
+    {
+      "constructor": "right_identity_extended",
+      "local_program": [
+        "a3",
+        "a0"
+      ],
+      "occurrence_id": "right_identity_extended:a3",
+      "right_action_signature": [
+        "a3",
+        "a2",
+        "a4",
+        "a5",
+        "a7",
+        "a6",
+        "a0",
+        "a1"
+      ]
+    },
+    {
+      "constructor": "right_identity_extended",
+      "local_program": [
+        "a4",
+        "a0"
+      ],
+      "occurrence_id": "right_identity_extended:a4",
+      "right_action_signature": [
+        "a4",
+        "a5",
+        "a3",
+        "a2",
+        "a0",
+        "a1",
+        "a7",
+        "a6"
+      ]
+    },
+    {
+      "constructor": "right_identity_extended",
+      "local_program": [
+        "a5",
+        "a0"
+      ],
+      "occurrence_id": "right_identity_extended:a5",
+      "right_action_signature": [
+        "a5",
+        "a4",
+        "a7",
+        "a6",
+        "a1",
+        "a0",
+        "a3",
+        "a2"
+      ]
+    },
+    {
+      "constructor": "right_identity_extended",
+      "local_program": [
+        "a6",
+        "a0"
+      ],
+      "occurrence_id": "right_identity_extended:a6",
+      "right_action_signature": [
+        "a6",
+        "a7",
+        "a1",
+        "a0",
+        "a2",
+        "a3",
+        "a5",
+        "a4"
+      ]
+    },
+    {
+      "constructor": "right_identity_extended",
+      "local_program": [
+        "a7",
+        "a0"
+      ],
+      "occurrence_id": "right_identity_extended:a7",
+      "right_action_signature": [
+        "a7",
+        "a6",
+        "a5",
+        "a4",
+        "a3",
+        "a2",
+        "a1",
+        "a0"
+      ]
+    }
+  ],
+  "quotient_not_selected_as_origin": true,
+  "return_used_to_define_equality": false,
+  "runtime_id": "local-operational-equality-frame",
+  "schema_version": 1,
+  "source_artifact_content_sha256": "f00379bd3762fb74041b1685498902ab2898f7df2487b54f38118113d2c18f42",
+  "visibility": [
+    "frozen perspective A operation table and group certificate"
+  ]
+}

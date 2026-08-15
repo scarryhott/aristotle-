@@ -1,0 +1,34 @@
+{
+  "arms_receive_identical_files": true,
+  "files": {
+    "artifact_a": {
+      "path": "presentation_a_frozen.json",
+      "sha256": "a8bd9c1133c745a0c69a0975d5acdc89dd762dd073540f0d3575b831a9d61b90"
+    },
+    "artifact_b": {
+      "path": "presentation_b_frozen.json",
+      "sha256": "a0b331ab160266df510182b08e7b3e80ee6abe3f08b93cc4313e33d47122a964"
+    },
+    "candidate_family": {
+      "path": "candidate_family_frozen.json",
+      "sha256": "cffa93bfc5ee3b8e7a2e647041f93edc8e5aa75e9d0ad86e3b21139af367efeb"
+    },
+    "frame_a": {
+      "path": "frame_a_frozen.json",
+      "sha256": "6d9c0230b7eda38c49c20726760c95a1884ddc28c2e6f7c234dc7a59458f26a2"
+    },
+    "frame_b": {
+      "path": "frame_b_frozen.json",
+      "sha256": "589ae8e04d1a6ebe395cd1ebb670de87da0979e6127568dcf2dddd71211faad6"
+    },
+    "protocol": {
+      "path": "protocol.json",
+      "sha256": "639a4bf1eb89e48cb5c9c2fca88c1926e0afb88f8efe62aa6c064439725b64f0"
+    },
+    "questions": {
+      "path": "questions.json",
+      "sha256": "5b59846e74978586dddf53c341c82622f7d98066b900f47c43eade3e85edba28"
+    }
+  },
+  "schema_version": 1
+}

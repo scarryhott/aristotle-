@@ -19,12 +19,17 @@ canonical independent return plus reversible temporary-presentation codecs. It h
 enum: a selected comparison is the relational form `(T,phi)` with its commuting return square, and
 the full runtime checks `(W,E,T,phi,pi,J,C)` together.
 
-Build all three modules with the pinned toolchain:
+`NRRF631RuntimeFrameConditionalBridge.lean` makes the executable frame boundary explicit:
+`ReferenceFrame` is admitted equality, `ResolvedIn` is quotient factorization, and `GeomEquiv`
+preserves and reflects equality. `openIn_iff_exists_separating_pair` proves that every `OpenIn`
+claim is equivalent to explicit data `x ~ y` with unequal question values.
+
+Build all four modules with the pinned toolchain:
 
 ```bash
 lake build
 ```
 
-The executable full-stack D4 run is finite Python evidence rather than a Lean theorem that learning
-occurred. Lean establishes the conditional framework; the frozen runtime artifacts establish what
-the independent classical proxy actually selected and executed.
+The executable full-stack and paired-comparison D4 runs are finite Python evidence rather than Lean
+theorems that learning occurred. Lean establishes the conditional framework; the frozen runtime
+artifacts establish what the independent classical proxies actually selected and executed.

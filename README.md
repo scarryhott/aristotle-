@@ -114,6 +114,7 @@ Reproduce it with:
 
 ```bash
 python3 experiments/full_stack_math_asi.py --assert-reference
+python3 experiments/classical_vs_closure_asi.py --assert-reference
 python3 -m unittest discover -s tests -v
 lake build
 ```
@@ -158,6 +159,22 @@ The two are complementary. Closure verification does not replace Lean's trusted 
 
 See [`docs/CLASSICAL_VS_CLOSURE.md`](docs/CLASSICAL_VS_CLOSURE.md).
 
+### Executed paired verification runtime
+
+The repository also executes a controlled fixed-frame-versus-closure comparison over identical
+frozen D4 learner artifacts. Before any candidate map is constructed, each language independently
+freezes a primitive operational equality table: the distinct local programs `x` and `x·e` are
+equated exactly when their complete right-action signatures agree. The quotient return is derived
+only after a candidate preserves and reflects that equality.
+
+The fixed-frame arm is a strong baseline: it accepts all eight ordinary isomorphisms, including
+reversal, and rejects adversarial maps conventionally. The closure arm retains the same eight maps
+while additionally recording `GeomEquiv`, downstream naturality, quotient factors, explicit
+frame-equal openness witnesses, and next-basis transfer. Its bounded differential is executed; the
+corresponding frontier-agent/Aristotle comparison remains open and falsifiable.
+
+See [`docs/CLASSICAL_VS_CLOSURE_RUN.md`](docs/CLASSICAL_VS_CLOSURE_RUN.md).
+
 ## Repository map
 
 - `lean/NRRF627ClosureTranslationalFrameworkAxiometryASIEvolutionaryVerification.lean` — formal kernel.
@@ -167,6 +184,10 @@ See [`docs/CLASSICAL_VS_CLOSURE.md`](docs/CLASSICAL_VS_CLOSURE.md).
 - `benchmarks/full_stack_d4/` — precommitted independent-learning and translator protocols.
 - `experiments/full_stack_math_asi.py` — isolated learning, execution, translation, and return runtime.
 - `runs/full_stack_d4/latest/` — frozen deterministic evidence bundle.
+- `benchmarks/classical_vs_closure/` — paired architecture precommit, primitive-frame protocols, questions, and runbook.
+- `experiments/classical_vs_closure_asi.py` — isolated equality-frame derivation and fixed-frame/closure comparison.
+- `runs/classical_vs_closure/latest/` — deterministic paired evidence bundle.
+- `docs/CLASSICAL_VS_CLOSURE_RUN.md` — exact comparative result and frontier-study boundary.
 - `docs/FULL_STACK_RUN.md` — exact executed result and claim boundary.
 - `docs/RUNTIME_RELATIVE_EQUALITY.md` — naturality/existence theorem-to-runtime map.
 - `docs/FRAME_CONDITIONAL_OPENNESS.md` — frame equality, `GeomEquiv`, and qualified `ResolvedIn`/`OpenIn` integration.

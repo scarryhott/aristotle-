@@ -16,8 +16,9 @@ OpenIn(F,Q)     := not ResolvedIn(F,Q).
 ```
 
 Resolution is equivalent to factorization through the quotient by the frame equality, with a
-unique factor. Openness is therefore never a property of `Q` alone. Its runtime witness consists of
-`frame_id`, `question_id`, and two frame-equal occurrences that `Q` separates.
+unique factor. `openIn_iff_exists_separating_pair` also proves that openness is equivalent to the
+existence of two frame-equal occurrences separated by `Q`. Openness is therefore never a property
+of `Q` alone. Its runtime witness consists of `frame_id`, `question_id`, and that separating pair.
 
 A comparison is accepted as `GeomEquiv` before any question is classified:
 
@@ -47,10 +48,29 @@ All eight coherent D4 comparisons transport these classifications. The sign-eras
 fails equality reflection and is not a `GeomEquiv`. Branches lacking independent contact are simply
 unselected; they do not produce an openness claim.
 
+## Equality-first comparative instance
+
+`experiments/classical_vs_closure_asi.py` implements a stricter upstream test. It does not introduce
+frame equality through `W`. Each language independently freezes a local operational congruence
+before candidate construction: the distinct programs `x` and `x·e` are equal exactly when their
+complete right-action signatures agree. Only after a raw `T` preserves and reflects these frozen
+tables does the verifier derive the quotient return and check naturality.
+
+The resulting sequence is:
+
+```text
+primitive equality geometry → raw T → GeomEquiv → admitted translation
+                            → quotient return/naturality → ResolvedIn/OpenIn.
+```
+
+An equality-collapse control fails reflection. A separate bijective operation twist passes
+`GeomEquiv` and then fails multiplication naturality. This makes equality equivalence and
+downstream translational closure observably distinct gates.
+
 ## Scope
 
 The Lean bridge proves the definitions, quotient characterization and uniqueness, groupoid
-operations, translation invariance, closure-return resolution, and the closure/discrete pole
+operations, explicit separating-witness characterization, translation invariance, closure-return resolution, and the closure/discrete pole
 example. The Python runtime exhausts the finite D4 instance. Neither layer claims that arbitrary
 systems satisfy the NRRF627 frame laws or that the finite experiment establishes the full general
 NRRF631 theorem independently.

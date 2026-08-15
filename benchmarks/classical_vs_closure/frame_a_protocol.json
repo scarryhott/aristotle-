@@ -1,0 +1,12 @@
+{
+  "constructors": ["direct", "right_identity_extended"],
+  "forbidden_inputs": [
+    "perspective B artifact",
+    "candidate comparisons",
+    "cross-frame contact",
+    "question outcomes"
+  ],
+  "language": "A",
+  "schema_version": 1,
+  "visible_inputs": ["frozen perspective A operation table and group certificate"]
+}

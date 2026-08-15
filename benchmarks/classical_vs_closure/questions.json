@@ -1,0 +1,21 @@
+{
+  "commitment": "Question definitions are frozen before either frame is compared. Outcomes are absent from this file.",
+  "questions": [
+    {
+      "definition": "the equivalence class induced by local operational congruence",
+      "id": "quotient_identity",
+      "total": true
+    },
+    {
+      "definition": "the locally verified group order of the occurrence's evaluated program",
+      "id": "element_order",
+      "total": true
+    },
+    {
+      "definition": "the local constructor used to present the occurrence",
+      "id": "presentation_constructor",
+      "total": true
+    }
+  ],
+  "schema_version": 1
+}

@@ -37,6 +37,22 @@ def OpenIn {X : Type u} {Ω : Type v}
     (F : ReferenceFrame X) (Q : X → Ω) : Prop :=
   ¬ ResolvedIn F Q
 
+/-- Openness is witnessed: a total question separates two occurrences its frame equates. -/
+theorem openIn_iff_exists_separating_pair {X : Type u} {Ω : Type v}
+    (F : ReferenceFrame X) (Q : X → Ω) :
+    OpenIn F Q ↔ ∃ x y, F.equality.r x y ∧ Q x ≠ Q y := by
+  classical
+  constructor
+  · intro hopen
+    by_contra hnone
+    apply hopen
+    intro x y hxy
+    by_contra hneq
+    apply hnone
+    exact ⟨x, y, hxy, hneq⟩
+  · rintro ⟨x, y, hxy, hneq⟩ hresolved
+    exact hneq (hresolved hxy)
+
 /-- The closure frame of a return map admits equality exactly when returns agree. -/
 def closureFrame {X : Type u} {B : Type v} (W : X → B) : ReferenceFrame X where
   equality := {
@@ -232,6 +248,7 @@ theorem runtime_begins_in_axiom_geometry
 end NRRF631Runtime
 
 #print axioms NRRF631Runtime.resolvedIn_iff_factors
+#print axioms NRRF631Runtime.openIn_iff_exists_separating_pair
 #print axioms NRRF631Runtime.factor_through_quotient_unique
 #print axioms NRRF631Runtime.TransFrame.transGeomEquiv
 #print axioms NRRF631Runtime.TransFrame.openness_language_independent

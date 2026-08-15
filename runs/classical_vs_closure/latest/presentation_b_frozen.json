@@ -1,0 +1,298 @@
+{
+  "execution": {
+    "carrier_size": 8,
+    "group_certificate": {
+      "associativity_cases": 512,
+      "associativity_failure_count": 0,
+      "first_associativity_failure": null,
+      "identity": "b0",
+      "identity_candidates": [
+        "b0"
+      ],
+      "inverses": {
+        "b0": "b0",
+        "b1": "b1",
+        "b2": "b6",
+        "b3": "b3",
+        "b4": "b4",
+        "b5": "b5",
+        "b6": "b2",
+        "b7": "b7"
+      },
+      "orders": {
+        "b0": 1,
+        "b1": 2,
+        "b2": 4,
+        "b3": 2,
+        "b4": 2,
+        "b5": 2,
+        "b6": 4,
+        "b7": 2
+      },
+      "passed": true
+    },
+    "held_out_count": 44,
+    "held_out_error_count": 0,
+    "operation_table": {
+      "b0": {
+        "b0": "b0",
+        "b1": "b1",
+        "b2": "b2",
+        "b3": "b3",
+        "b4": "b4",
+        "b5": "b5",
+        "b6": "b6",
+        "b7": "b7"
+      },
+      "b1": {
+        "b0": "b1",
+        "b1": "b0",
+        "b2": "b7",
+        "b3": "b6",
+        "b4": "b5",
+        "b5": "b4",
+        "b6": "b3",
+        "b7": "b2"
+      },
+      "b2": {
+        "b0": "b2",
+        "b1": "b3",
+        "b2": "b4",
+        "b3": "b5",
+        "b4": "b6",
+        "b5": "b7",
+        "b6": "b0",
+        "b7": "b1"
+      },
+      "b3": {
+        "b0": "b3",
+        "b1": "b2",
+        "b2": "b1",
+        "b3": "b0",
+        "b4": "b7",
+        "b5": "b6",
+        "b6": "b5",
+        "b7": "b4"
+      },
+      "b4": {
+        "b0": "b4",
+        "b1": "b5",
+        "b2": "b6",
+        "b3": "b7",
+        "b4": "b0",
+        "b5": "b1",
+        "b6": "b2",
+        "b7": "b3"
+      },
+      "b5": {
+        "b0": "b5",
+        "b1": "b4",
+        "b2": "b3",
+        "b3": "b2",
+        "b4": "b1",
+        "b5": "b0",
+        "b6": "b7",
+        "b7": "b6"
+      },
+      "b6": {
+        "b0": "b6",
+        "b1": "b7",
+        "b2": "b0",
+        "b3": "b1",
+        "b4": "b2",
+        "b5": "b3",
+        "b6": "b4",
+        "b7": "b5"
+      },
+      "b7": {
+        "b0": "b7",
+        "b1": "b6",
+        "b2": "b5",
+        "b3": "b4",
+        "b4": "b3",
+        "b5": "b2",
+        "b6": "b1",
+        "b7": "b0"
+      }
+    },
+    "status": "PASS"
+  },
+  "forbidden_inputs": [
+    "perspective A protocol or state",
+    "translator state",
+    "complete return W",
+    "external return audit"
+  ],
+  "local_generators": {
+    "reverse": "b1",
+    "turn": "b2"
+  },
+  "model": {
+    "candidate_scores": {
+      "direct_first_sign": 0,
+      "direct_negative": 4,
+      "direct_no_sign": 4,
+      "direct_second_sign": 5,
+      "direct_xor_sign": 3,
+      "swapped_first_sign": 8,
+      "swapped_negative": 9,
+      "swapped_no_sign": 4,
+      "swapped_second_sign": 5,
+      "swapped_xor_sign": 5
+    },
+    "family": "enumerative semidirect-program synthesis",
+    "minimum_error_survivors": [
+      "direct_first_sign"
+    ],
+    "minimum_training_error": 0,
+    "selected_hypothesis": "direct_first_sign"
+  },
+  "perspective": "B",
+  "presentations": {
+    "b0": [
+      0,
+      0
+    ],
+    "b1": [
+      0,
+      1
+    ],
+    "b2": [
+      1,
+      0
+    ],
+    "b3": [
+      1,
+      1
+    ],
+    "b4": [
+      2,
+      0
+    ],
+    "b5": [
+      2,
+      1
+    ],
+    "b6": [
+      3,
+      0
+    ],
+    "b7": [
+      3,
+      1
+    ]
+  },
+  "protocol_sha256": "0f99d557882768aa581e8f571016aaa5082d49b3b226af02ecc6cd2a923011f7",
+  "runtime_id": "perspective-b-semidir-learner",
+  "schema_version": 2,
+  "self_certification": true,
+  "training": {
+    "observation_count": 20,
+    "observations": [
+      {
+        "left": "b7",
+        "result": "b7",
+        "right": "b0"
+      },
+      {
+        "left": "b5",
+        "result": "b5",
+        "right": "b0"
+      },
+      {
+        "left": "b7",
+        "result": "b2",
+        "right": "b5"
+      },
+      {
+        "left": "b0",
+        "result": "b6",
+        "right": "b6"
+      },
+      {
+        "left": "b3",
+        "result": "b1",
+        "right": "b2"
+      },
+      {
+        "left": "b6",
+        "result": "b2",
+        "right": "b4"
+      },
+      {
+        "left": "b5",
+        "result": "b1",
+        "right": "b4"
+      },
+      {
+        "left": "b1",
+        "result": "b0",
+        "right": "b1"
+      },
+      {
+        "left": "b0",
+        "result": "b3",
+        "right": "b3"
+      },
+      {
+        "left": "b3",
+        "result": "b6",
+        "right": "b5"
+      },
+      {
+        "left": "b6",
+        "result": "b6",
+        "right": "b0"
+      },
+      {
+        "left": "b0",
+        "result": "b2",
+        "right": "b2"
+      },
+      {
+        "left": "b1",
+        "result": "b3",
+        "right": "b6"
+      },
+      {
+        "left": "b6",
+        "result": "b1",
+        "right": "b3"
+      },
+      {
+        "left": "b6",
+        "result": "b7",
+        "right": "b1"
+      },
+      {
+        "left": "b1",
+        "result": "b5",
+        "right": "b4"
+      },
+      {
+        "left": "b1",
+        "result": "b4",
+        "right": "b5"
+      },
+      {
+        "left": "b5",
+        "result": "b2",
+        "right": "b3"
+      },
+      {
+        "left": "b3",
+        "result": "b5",
+        "right": "b6"
+      },
+      {
+        "left": "b5",
+        "result": "b4",
+        "right": "b1"
+      }
+    ],
+    "seed": 62702
+  },
+  "visibility": [
+    "this protocol"
+  ]
+}

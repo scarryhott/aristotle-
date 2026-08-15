@@ -83,6 +83,7 @@ contradiction measured against privileged coordinates.
 | universal factorization | all 256 Bool-valued closure-respecting evaluations factor uniquely through `W` |
 | `GeomEquiv` | reversible `T` plus explicit preservation and reflection of frame equality |
 | `resolvedIn_iff_factors` | finite question factor and uniqueness certificate |
+| `openIn_iff_exists_separating_pair` | every runtime `OpenIn` record contains an explicit equal-pair witness |
 | `resolvedIn_transport`, `openIn_transport` | all coherent comparisons preserve question classification |
 | `openness_is_frame_relative` | one literal-pole question is open in closure equality and resolved in discrete equality |
 
@@ -100,3 +101,12 @@ reflection, bijectivity, and multiplication naturality, with concrete counterexa
 A basis receipt exists only when the actual episode contains an independently selected `GeomEquiv`
 whose downstream operations commute. A self-claim is not such a witness, and counterfactual valid
 comparisons issue no additional token.
+
+## Further equality-first comparison
+
+The first full-stack run uses the NRRF627 return fibre as its closure equality. The paired runtime
+in `classical_vs_closure_asi.py` tests the stronger architectural order directly: it freezes each
+language's operational equality matrix without `W` or a candidate comparison, then derives the
+quotient return after `GeomEquiv`. Its fixed-frame arm recognizes all ordinary isomorphisms; the
+closure differential is the additional frame transport, factorization, witness, and next-basis
+evidence. See [`CLASSICAL_VS_CLOSURE_RUN.md`](CLASSICAL_VS_CLOSURE_RUN.md).

@@ -103,6 +103,31 @@ The funded question is:
 
 > **As independently operating mathematical agents gain enough freedom to invent new representations and axiom-geometries, can verification continue to be recovered as coherent translation and relational equality without fixing one representation as the absolute reference frame?**
 
+### Paired classical-versus-translational study
+
+The funded experiment compares verification architectures over the **same** independently produced
+and frozen mathematical artifacts, tools, proof kernel, and compute budget. It does not compare a
+weakened classical model with a stronger closure model.
+
+The fixed-frame arm records local proof terms and kernel verdicts and applies a strong ordinary
+equivalence/isomorphism baseline to every proposed cross-presentation map. It may accept
+noncanonical isomorphisms and orientation reversal. The translational arm first freezes each
+artifact's independently derived equality geometry and every total question. A raw candidate `T`
+is then promoted to an admitted translation only after equality preservation and reflection establish
+`GeomEquiv`; return, extension, reversal, curvature, quotient factorization, witnessed openness,
+and held-out next-basis transfer are downstream checks.
+
+The comparative hypothesis is not that ordinary mathematics cannot express isomorphism. It is
+that an explicit origin-free frame/`GeomEquiv` pipeline yields auditable cross-presentation
+evidence—transport, obstruction, and frame-qualified resolution/openness—not contained in
+per-artifact kernel acceptance alone.
+
+The repository now executes this paired protocol on a bounded D4 proxy. The grant replaces that
+fixture with independently generated, substantially richer mathematical systems. The
+added-utility hypothesis is not supported if the strong fixed-frame baseline recovers the same
+relations with equal or lower cost, if equality or questions must be revised after `T` is seen, or
+if closure requires a secretly canonical frame.
+
 The project has four deliverables.
 
 1. **Frontier-agent translational experiments.** Replace the bounded learners with increasingly capable isolated mathematical agents, ultimately Aristotle, while preserving precommit, independent work, artifact freeze, and post-hoc construction of `(T,φ,π)`.
@@ -125,6 +150,11 @@ independent mathematical work
 
 The key measurements are not agreement with a canonical coordinate system. They are whether independently generated frames support coherent relative comparisons; whether valid orientation changes remain admissible; whether non-natural transformations expose explicit obstructions; whether nontrivial total questions remain conditionally open under the relevant axiom geometry; and whether returned equality can support subsequent mathematical work.
 
+For the paired study, measurements also include ordinary-isomorphism coverage, false admission on
+adversarial maps, the number and size of equality/naturality certificates, transported quotient
+factors and separating witnesses, downstream task transfer, runtime, and evidence size. The raw
+number of `OpenIn` records is never an optimization target.
+
 ## Success and falsification
 
 A successful project need not show that every mathematical frame closes with every other frame. That would contradict the conditional role of axiom geometry.
@@ -136,6 +166,10 @@ Negative evidence is an explicit obstruction showing why a proposed comparison c
 An open result is also substantive when the current frame equality does not resolve a named total question. Openness is preserved as frame-relative structure rather than converted into an arbitrary static verdict. Absence of contact or missing comparison data remains separately classified as non-selection or pending verification.
 
 The architecture is challenged if, as representational freedom increases, the proposed translational conditions cease to distinguish coherent relative equality from non-natural deformation, or if the framework requires secretly privileging one fixed language to make its comparisons work.
+
+The paired protocol is also invalid if frame equality or total questions are constructed after a
+candidate comparison is inspected. In that case it tests compatibility by design rather than the
+foundational claim.
 
 ## Why this matters for mathematical superintelligence
 

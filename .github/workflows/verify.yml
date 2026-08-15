@@ -22,8 +22,10 @@ jobs:
         run: python3 experiments/aristotle_d4_closure.py --assert-reference
       - name: Replay independent full-stack runtime
         run: python3 experiments/full_stack_math_asi.py --assert-reference > /tmp/full_stack_result.json
+      - name: Replay fixed-frame versus closure runtime
+        run: python3 experiments/classical_vs_closure_asi.py --assert-reference > /tmp/classical_vs_closure_result.json
       - name: Require deterministic committed receipts
-        run: git diff --exit-code -- runs/full_stack_d4/latest
+        run: git diff --exit-code -- runs/full_stack_d4/latest runs/classical_vs_closure/latest
 
   lean:
     runs-on: ubuntu-latest
