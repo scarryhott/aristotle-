@@ -1,0 +1,16 @@
+name = "aristotle"
+version = "0.1.0"
+defaultTargets = ["NRRF627"]
+
+[[lean_lib]]
+name = "NRRF627"
+srcDir = "lean"
+roots = [
+  "NRRF627ClosureTranslationalFrameworkAxiometryASIEvolutionaryVerification",
+  "NRRF627WeakRequirementsRepresentation"
+]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.33.0"

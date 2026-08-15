@@ -1,52 +1,149 @@
-# Grant: From Verified Presentations to Generative Closure
+# Grant: Independently Generated Mathematics and Translational Return
 
-## Research objective
+## Proposal in one sentence
 
-Develop and test **translational axiometry as a verification architecture for mathematical superintelligence**: verification that remains meaningful when the reasoning system can change its own mathematical language, representation, axioms, geometry, proof strategy, and internal state.
+Test whether a precommitted verification return survives translations discovered only after
+independent mathematical systems have been generated, and derive the strongest closure structure
+supported by the result—even when that result is a counterexample.
 
-Classical formal verification answers a crucial question:
+## Operational target
 
-> Does this proof check in the trusted kernel?
+**EXPERIMENTAL DEFINITION:** for this project, a mathematical ASI is an agent whose future
+representational transformations cannot reasonably be enumerated and fixed in advance by its
+verifier. The agent need not be mystical, conscious, or generally superhuman. The definition
+isolates a practical second-order verification problem: the proof kernel can remain fixed while
+the definitions, axioms, internal ontology, and proof presentation supplied to it change.
 
-Mathematical ASI creates a second-order problem:
+Classical formal verification asks:
 
-> What makes a verdict the same verdict when the intelligence can replace the presentation in which that verdict was originally expressed?
+`Γ ⊢_L P ?`
 
-NRRF627 provides a machine-checked candidate framework. The grant is for testing whether its closure structure can be **derived from weaker operational requirements or falsified by independently specified agent dynamics**.
+Translational verification additionally asks whether a transformation of the frame
 
-## Existing result
+`(L, Γ, P) → (L′, Γ′, P′)`
 
-NRRF627 formalizes a family of closure languages with verification returns `W`, relative polar presentations, reversal `J`, curvature representative `C`, and coherent pairwise translations. No language is designated as the absolute origin.
+commutes with an independently fixed return. This makes the proposed work complementary to
+Lean/Aristotle proof checking.
 
-Its central characterization theorem is:
+## Existing formal core
 
-`Invariant(Q) ∧ RespectsClosure(Q) ↔ MeasuredByReturn(Q)`.
+**PROVED:** NRRF627's `TransFrame` gives coherent pairwise translations, verification returns `W`,
+relative polar presentations, reversal `J`, and curvature representative `C`. Its central theorem
+is:
 
-This makes the verification return more than a named verifier: within the framework it characterizes the admissible language-independent, closure-respecting verdicts.
+`(Invariant(Q) ∧ RespectsClosure(Q)) ↔ MeasuredByReturn(Q)`.
 
-The ASI and evolutionary theorems then show that return-invisible restructuring, coherent re-expression, and coherent evolutionary histories preserve those verdicts.
+The proof constructs the return measurement from a selected presentation and proves translation
+compatibility. Its evolutionary theorem similarly characterizes verdicts conserved through every
+coherent generation sequence.
 
-## What the grant is actually for
+**LIMIT:** `TransFrame` already requires the commuting return square and translation coherence.
+Consequently, these theorems characterize the implications of that structure; they do not by
+themselves prove that independently evolving AI systems instantiate it.
 
-The funded work should attack the strongest objection to the present theory: some invariance is built into `TransFrame` through translation coherence and return preservation.
+## First necessity result and exact remaining gap
 
-The project therefore has four deliverables:
+**PROVED:** `NRRF627WeakRequirementsRepresentation.lean` assumes:
 
-1. **Weaker-premise derivation.** Determine which `TransFrame` laws follow from minimal requirements for recoverable verification across freely changing mathematical representations.
-2. **Independent closure runtime.** Implement mathematical agents whose transformations are generated independently of the desired invariant, then test whether closure laws emerge, fail, or remain OPEN.
-3. **Adversarial transformation suite.** Include transformations that preserve proof truth but alter representation, transformations that preserve return while changing occurrence, and transformations that deliberately violate proposed return invariants.
-4. **Aristotle-assisted formal verification.** Use formal proof generation/checking to return `PROVED`, `FALSE_WITH_COUNTEREXAMPLE`, or `OPEN_WITH_MINIMAL_OBSTRUCTION`, with explicit axiom and representation-change reports.
+1. a language-independent relational occurrence carrier and return carrier;
+2. recoverable polar presentations on that carrier;
+3. reversible codecs for each language's occurrences, bases, and orientations.
 
-## Success condition
+It then *constructs* pairwise `T`, `phi`, and `pi`, along with their identity, composition,
+inverse, return-square, and extension laws. With explicit carrier-level `J` and `C`, it constructs a
+full `TransFrame` and inherits NRRF627's axiometric and evolutionary characterization theorems.
 
-The strongest success is not another theorem saying an assumed invariant is invariant. It is a necessity theorem or experimentally grounded boundary:
+**CONJECTURED:** the grant's theoretical target is stronger:
 
-`possibility of coherent verification across freely changing mathematical perspectives → translational closure structure`.
+`origin independence + recoverability + coherent comparison`
 
-A negative result is also valuable if it isolates the minimal obstruction showing where translational verification fails.
+`⇒ existence of a common relational carrier/codecs, or a precisely classified obstruction`.
 
-## Why this matters for mathematical superintelligence
+Thus the new module is a representation bridge and a reduction of the open problem, not a claim
+that necessity has already been proved from the weakest possible premises.
 
-A verifier that requires the future intelligence to retain today's representation risks confusing verification with a capability ceiling. Translational axiometry instead seeks a separation between freedom of mathematical re-expression and discovery, and recoverable invariant content.
+## Preregistered Aristotle experiment
 
-The research question is whether that separation can be made exact enough to verify systems whose mathematics becomes less human-like as their capability increases.
+**EXPERIMENTAL — OPEN:** the first benchmark is the dihedral group `D4` in two independently
+generated forms:
+
+- A: eight permutations acting on the square's vertices;
+- B: eight normal forms in `Z/4 ⋊ Z/2`.
+
+Before either generation, the protocol freezes `W` as the complete induced action on the ordered
+vertices. Two isolated Aristotle sessions formalize A and B. Their exact artifacts and hashes are
+frozen. Only then does a third Aristotle session receive both artifacts and attempt to discover a
+translation, inverse, homomorphism theorem, and commuting return square without editing either
+source.
+
+The executable gate checks all 8 elements and all 64 ordered products:
+
+`δ_C(F) ∈ {TRUE, FALSE, OPEN}`.
+
+`TRUE` requires total closure and complete proof evidence. `FALSE` requires an explicit witness.
+`OPEN` preserves any unresolved bridge, missing proof, or partial translation. Self-certification
+does not issue a token.
+
+## Work packages
+
+### WP1 — Blind mathematical generation
+
+Run multiple representation pairs across finite groups, algebraic structures, combinatorial
+objects, and theorem reformulations. Separate the sessions and freeze all artifacts before bridge
+discovery.
+
+### WP2 — Necessity and obstruction theory
+
+Attempt to derive the carrier/codec hypothesis from weaker operational conditions. When derivation
+fails, formalize the minimal obstruction: non-recoverability, non-functorial comparison, partial
+translation, incompatible returns, or genuine holonomy.
+
+### WP3 — Adversarial closure
+
+Generate transformations deliberately outside admitted closure. Include wrong orientation,
+non-homomorphic maps, total return-breaking maps, partial maps, and presentation-sensitive returns.
+The gate must distinguish contradiction from absence of evidence.
+
+### WP4 — Evolving mathematical agents
+
+Move from static representation pairs to agents that independently change definitions,
+decompositions, libraries, and proof strategies. Test path independence as a prediction rather than
+assuming it in the transition generator.
+
+### WP5 — Fibre and IVI classification
+
+Classify what a non-faithful `W` certifies without reconstructing the occurrence. Test whether fibres
+carry richer residues than the reversal walk's proved parity.
+
+## Milestones
+
+| Milestone | Deliverable | Falsifiable exit condition |
+|---|---|---|
+| M0 | Freeze D4 protocol, prompts, toolchain, and scorer | Any post-hoc change creates a new benchmark version |
+| M1 | Two isolated Aristotle formalizations | Buildable immutable artifacts, or an OPEN report naming the first obstruction |
+| M2 | Post-hoc translator | Total proved bridge, explicit counterexample, or minimal OPEN obstruction |
+| M3 | Adversarial suite | At least one TRUE, one FALSE witness, and one OPEN partial case are correctly separated |
+| M4 | Representation theorem | Weaken the codec premise or prove a no-go/countermodel |
+| M5 | Agent-evolution study | Empirical path-independence boundary with full receipts and replay |
+
+## Evaluation and falsification
+
+The proposal fails in an informative way if precommitted returns systematically depend on the
+chosen presentations, independently generated systems admit no discoverable bridge, or apparently
+coherent histories exhibit irreducible path dependence. Those results must be published as
+counterexamples or minimal obstructions rather than hidden by redefining admissibility.
+
+The strongest positive outcome is:
+
+`independent systems → frozen artifacts → translation discovered afterward → precommitted return closes`.
+
+The strongest theoretical outcome is a necessity theorem. The minimum successful outcome is a
+machine-checked boundary showing exactly which weaker premise fails.
+
+## Relevance to Harmonic
+
+Aristotle supplies the unusual capability this experiment needs: independently generated formal
+mathematics plus machine-checkable bridge attempts. The project does not ask Harmonic to accept
+`TransFrame` as evidence of real ASI invariance. It asks Harmonic to use Aristotle to test whether
+that structure emerges, breaks, or remains OPEN when the mathematical systems are specified first
+and the translation is discovered afterward.

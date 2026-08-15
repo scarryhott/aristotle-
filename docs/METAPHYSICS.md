@@ -2,35 +2,46 @@
 
 ## Relation prior to isolated definition
 
-The foundational claim is not merely that everything is related. It is that **relational translation is prior to an arbitrarily selected self-language origin**. A mathematical identity is disclosed through relative translation and return rather than grounded in an intrinsically privileged presentation.
+**METAPHYSICAL INTERPRETATION:** relational translation is prior to an arbitrarily selected
+self-language origin. Mathematical identity is disclosed through relative translation and return
+rather than grounded in an intrinsically privileged presentation.
 
 The intended generative order is:
 
 `closure/relation → encoding/evaluation potential → relative orientation/extension → axiom/geometry → language-relative identity`.
 
-`T` is interpreted as translation of orientation into extension. Formal groupoid language appears downstream as the coherent mathematical representation of this originless comparison structure.
+`T` is interpreted as translation of orientation into extension. Formal groupoid language appears
+downstream as one coherent mathematical representation of this originless comparison structure.
 
-## 0 and infinity
+## Zero and infinity
 
-The poles `0` and `∞` are not intended as two absolutely isolated substances. They are relatively distinguishable orientations of a closure relation. Their non-equality is presentation-relative; their closure equality is return-relative.
+**METAPHYSICAL INTERPRETATION:** the poles `0` and `∞` are relatively distinguishable orientations
+of a closure relation, not two absolutely isolated substances.
 
-Thus the thesis is not simply `0 = ∞` in ordinary arithmetic. It is:
+**PROVED IN THE FORMAL MODEL:** polar presentations can be distinct occurrences while sharing one
+return; alternating translations have an even/odd displacement law; and that reversal-walk parity
+is compatible with admitted language translation.
 
-- polar presentations can be distinct as occurrences;
-- they can return the same closure identity;
-- their identity is revealed by relative translational order rather than intrinsic naming;
-- alternating translation retains a relative parity without requiring an absolute origin.
-
-NRRF627 models this through `Pole`, `Pole.other`, alternating paths, closure equality, and reversal parity.
+**NOT CLAIMED:** ordinary arithmetic proves `0 = ∞`, or every fibre of every verification return is
+classified by parity.
 
 ## Selection is closure
 
-A fixed identity selected in isolation is arbitrary relative to the pre-linguistic relational structure. Selection becomes non-arbitrary only insofar as it is recoverable through closure. This motivates the distinction between classical selection inside a fixed language and closure selection by relational return.
+**METAPHYSICAL INTERPRETATION:** an isolated selection is arbitrary relative to the prior relational
+structure, and becomes non-arbitrary insofar as it is recoverable through closure. This motivates
+the distinction between classical selection inside a fixed language and relational selection by
+return.
 
 ## Axiom and geometry
 
-On this view an axiom is not metaphysically prior to geometry, nor geometry prior to axiom. A selected axiomatization and its geometry are mutually disclosed local forms of an underlying translational relation. Mathematical ASI therefore cannot be verified solely by demanding permanent allegiance to one selected axiomatization if the system is permitted to discover new representations.
+**METAPHYSICAL INTERPRETATION:** an axiomatization and its geometry are mutually disclosed local
+forms of an underlying translational relation. A future mathematical agent should therefore not be
+required to retain one representation merely so that its verifier can recognize it.
 
-## What is formal and what remains philosophical
+**CONJECTURED:** coherent originless verification forces a TransFrame-like structure. The current
+weaker-requirements theorem derives that structure after a common relational carrier and reversible
+presentation codecs are supplied; deriving those objects from still weaker principles remains the
+open necessity theorem.
 
-NRRF627 formalizes a precise downstream architecture. It does not prove the full metaphysical thesis that all mathematical existence must arise from translational closure. A major research goal is to move from the present conditional formalization toward a necessity result explaining why coherent originless verification forces a TransFrame-like structure.
+The metaphysical thesis motivates the theorem and experiment. It is not presented as a consequence
+of Lean.
