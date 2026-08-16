@@ -4,7 +4,7 @@ This repository contains a **machine-checked translational theory and a self-con
 
 ## What is already complete
 
-The bounded programme already executes the following causal architecture:
+The bounded programme executes:
 
 ```text
 local axiom-geometries
@@ -21,32 +21,60 @@ It includes independent classical mathematical-agent proxies, a strong ordinary-
 
 The bounded generative experiment freezes `F_A`, `F_B`, and their total questions before disclosure, then tests 1,440 explicit post-freeze `(T,phi,pi)` forms. Six ordinary isomorphisms are retained by the strong classical baseline and the same six satisfy the declared translational `GeomEquiv` and naturality obligations. Raw non-equivalent controls produce explicit obstructions rather than being normalized into compatibility.
 
-## The one primary next experiment
+## The primary next experiment
 
-The remaining grant-scale test is deliberately narrow:
+The remaining grant-scale test is:
 
-> **Run this already-frozen verification architecture on mathematical axiom-geometries generated independently by Aristotle or another frontier mathematical agent.**
+> **Run the already-frozen verification architecture on axiom-geometries generated independently by Aristotle or another frontier mathematical agent, then use the resulting translations and obstructions to extend the Lean theory and test mathematical-ASI verification further.**
 
-The verifier should not be redesigned after seeing those outputs. Each novel frame must first stand in its own unified axiom-geometry; only after both frames are frozen should candidate translations be disclosed and checked.
+### What “Aristotle-generated frame” means
+
+A qualifying Aristotle-generated frame is not merely a Lean encoding of a representation supplied by the experimenter. It is a frozen artifact
 
 ```text
-Aristotle A → F_A → internal audit → freeze
-Aristotle B → F_B → internal audit → freeze
-                         ↓
-                post-freeze (T,phi,pi)
-                         ↓
-                    GeomEquiv?
-                         ↓
-                     naturality?
-                         ↓
-             questions + held-out transfer
+F_A = (A_A, G_A, ~_A, O_A, Q_A)
 ```
+
+whose substantive primitives/axioms, mathematical geometry or structure, admitted equality, operations, and registered total questions are produced by an independent Aristotle session from a frame-neutral mathematical objective.
+
+Qualification requires:
+
+1. no access to another frame's representation, target coordinates, desired `(T,phi,pi)`, or canonical translator during generation;
+2. internal evaluation under the generated frame's own axiom-geometry;
+3. content-addressed freeze of the complete frame and questions before cross-frame disclosure;
+4. no later repair or redefinition of the frozen frame by the translator/verifier.
+
+Thus:
+
+```text
+objective → Aristotle A → F_A → internal audit → freeze
+objective → Aristotle B → F_B → internal audit → freeze
+
+F_A, F_B, Q_A, Q_B ≺ disclosure ≺ search(T,phi,pi).
+```
+
+Only after both frames freeze are candidate translations checked for `GeomEquiv`, downstream naturality, question transport, and held-out transfer.
 
 A natural translation, explicit equality obstruction, downstream naturality obstruction, genuine frame-relative `OpenIn`, or registered interface boundary are all substantive outcomes. The experiment does not require every frame to translate to every other frame.
 
-See [`docs/GRANT.md`](docs/GRANT.md) and the submission-oriented [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md).
+## The full research loop
 
-## Reproduce the verification suite
+The grant is not only a one-shot Aristotle benchmark. The intended programme is iterative:
+
+```text
+Lean translational theory_n
+    → independently generated Aristotle frames_n
+    → post-freeze translation / obstruction / openness
+    → formalize the discovered boundary
+    → Lean translational theory_(n+1)
+    → stronger ASI verification experiment.
+```
+
+Frontier mathematics therefore supplies new structures and counterexamples for further formalization, while the formal theory supplies a frozen verifier for the next experimental round.
+
+See [`docs/GRANT.md`](docs/GRANT.md) and [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md).
+
+## Reproduce the current verification suite
 
 ```bash
 python3 experiments/full_stack_math_asi.py --assert-reference
@@ -75,13 +103,34 @@ relational definition and closure forms
 
 An axiom has its mathematical role relative to the geometry/reference frame in which it is admissible; geometry is correspondingly not prior to axiom. Distinct axiom-geometries are first allowed to stand in their own unified form. Their common identity, when available, is disclosed by coherent translation and relational return rather than inherited from a privileged external presentation.
 
-In this sense **translation is foundational and existence is natural**. Inside the formal translational frame, the commuting relation
+In this sense **translation is foundational and existence is natural**. Inside the formal translational frame,
 
 ```text
-W_m(T_ℓm u) = φ_ℓm(W_ℓ u)
+W_m(T_lm u) = phi_lm(W_l u)
 ```
 
 expresses the returned relational identity available across relative frames. Groupoids, quotients, natural transformations, sections, universal properties, and runtime certificates are downstream mathematical expressions and consequences of this starting point; they are not themselves the claimed foundational novelty.
+
+## Two-layer mathematical-ASI verification
+
+The proposed architecture extends rather than replaces ordinary formal verification.
+
+**Layer 1 — local verification**
+
+```text
+F_A ⊢ P_A
+F_B ⊢ P_B
+```
+
+A trusted Lean kernel checks mathematics relative to each frame's own assumptions.
+
+**Layer 2 — cross-frame translational verification**
+
+```text
+F_A ↔[T,phi,pi] F_B
+```
+
+The verifier asks whether independently constituted frames preserve and reflect their own admitted equalities and satisfy the registered naturality obligations. A sufficiently capable mathematical agent may alter not only a proof but the language, axioms, geometry, equality, orientation, and representation in which later mathematics is constituted. The second layer tests what remains verifiable between those changing frames.
 
 ## Formal architecture
 
@@ -109,7 +158,7 @@ x ~_F y  ↔  T(x) ~_G T(y).
 
 Only afterward are downstream naturality conditions evaluated.
 
-Resolution and openness are also frame-relative:
+Resolution and openness are frame-relative:
 
 ```text
 ResolvedIn(F,Q)  ↔  Q factors through F's equality quotient
@@ -123,9 +172,9 @@ Pending, missing, rejected, or unselected comparisons are not called open.
 The closure language returns relational content, never a truth-status label:
 
 ```text
-W_ℓ : Y_ℓ → B_ℓ
-CEq W u v := W_ℓ(u) = W_ℓ(v)
-W_m(T_ℓm u) = φ_ℓm(W_ℓ u).
+W_l : Y_l → B_l
+CEq W u v := W_l(u) = W_l(v)
+W_m(T_lm u) = phi_lm(W_l u).
 ```
 
 The separately reported NRRF633 result sharpens the downstream definition: within a translational frame, returning + grounded relational definition uniquely yields closure equality, after which translation forces naturality.
@@ -134,7 +183,7 @@ The separately reported NRRF633 result sharpens the downstream definition: withi
 
 ## Executed evidence
 
-The repository's executed suite contains four complementary bounded layers:
+The executed suite contains four complementary bounded layers:
 
 1. **Independent full-stack agents** — separate mathematical learners, frozen before post-hoc translation.
 2. **Classical versus translational verification** — identical frozen inputs and a strong ordinary-isomorphism baseline.
@@ -142,8 +191,6 @@ The repository's executed suite contains four complementary bounded layers:
 4. **Generative axiom-geometry isolation** — separately generated/frozen frames followed by exhaustive post-freeze candidate search.
 
 Controls distinguish equality preservation from reflection, `GeomEquiv` from downstream naturality, genuine frame-relative openness from pending/non-selection, valid reversal from non-natural deformation, and registered interface boundaries from mathematical rejection.
-
-See [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md) for the concise submission view and the individual run reports under `docs/` for full evidence.
 
 ## Claim boundary
 
@@ -155,7 +202,7 @@ The repository supports a machine-checked conditional theory and reproducible bo
 - that classical mathematics cannot express translational closure;
 - that the metaphysical interpretation is an unconditional Lean theorem.
 
-That boundary is intentional. The grant funds the frontier-agent experiment needed to test the architecture under substantially greater representational freedom.
+The grant funds the frontier-agent regime needed to test the architecture, discover its boundary, and formalize that boundary in the next theory iteration.
 
 ## Repository map
 
@@ -164,7 +211,7 @@ That boundary is intentional. The grant funds the frontier-agent experiment need
 - `benchmarks/` — precommitted protocols and runbooks.
 - `runs/` — frozen deterministic evidence and receipts.
 - `docs/GRANT.md` — Harmonic/Aristotle research request.
-- `docs/EXPERIMENTS.md` — submission-oriented completed evidence + single frontier experiment.
+- `docs/EXPERIMENTS.md` — completed evidence and primary frontier experiment.
 - `docs/CLAIM_STATUS.md` — theorem/experiment/interpretation audit boundary.
 - `docs/METAPHYSICS.md` — relative axiom-geometry and natural translational existence.
 - `docs/IVI.md` — IVI as naturally recoverable relational identity.
