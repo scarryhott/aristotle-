@@ -43,7 +43,7 @@ evidence to preserve every primitive relation/operation in scope. Emit
 tests. Do not use identity, closure, recovery, or aggregate scores to break a
 tie. Retain these outcomes in coverage and final reporting.
 
-## Executed initial stage
+## Executed stages
 
 Two Aristotle formalization jobs completed from the identical neutral packet.
 They are evidence for Phase A only: each produces a single finite labelled
@@ -56,3 +56,13 @@ The current implementation profile is Harmonic's `aristotlelib` SDK. Record
 SDK version, project/task identifiers, request hash, result hash, and emitted
 model metadata in every future manifest. A later SDK change cannot relax any
 scientific requirement above.
+
+Phase B also completed in a third isolated Aristotle project against the two
+frozen archives. `T_AB v0.1.0` records 66 declaration-role entries: 36
+`MAPPED`, 10 `AMBIGUOUS`, and 20 `UNMAPPED`. Its local Lean evidence and
+machine-checked table hygiene do not introduce a cross-frame map, equality,
+completion, return, IVI, or topology claim. A material interface boundary was
+preserved: both frames declare the same fully qualified `NeutralFrame` names,
+so they cannot be co-imported without changing a frozen source. Phase B
+provenance is committed in
+[`../runs/aristotle_native_translation/phase_b_native_translation/manifest.json`](../runs/aristotle_native_translation/phase_b_native_translation/manifest.json).
