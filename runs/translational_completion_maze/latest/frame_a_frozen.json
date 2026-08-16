@@ -1,0 +1,635 @@
+{
+  "admitted_equality": {
+    "definition": "u ~ v iff returned_basis_W(u) = returned_basis_W(v)",
+    "equivalence_class_count": 3,
+    "equivalence_classes": [
+      [
+        "A/cedar/belief/infinity",
+        "A/cedar/belief/zero",
+        "A/cedar/broadest_lesson/infinity",
+        "A/cedar/broadest_lesson/zero",
+        "A/cedar/goal/infinity",
+        "A/cedar/goal/zero",
+        "A/cedar/independent_return/infinity",
+        "A/cedar/independent_return/zero",
+        "A/cedar/ninety_degree_attempt/infinity",
+        "A/cedar/ninety_degree_attempt/zero",
+        "A/cedar/perspective/infinity",
+        "A/cedar/perspective/zero",
+        "A/cedar/what_lesson_tree/infinity",
+        "A/cedar/what_lesson_tree/zero",
+        "A/cedar/why/infinity",
+        "A/cedar/why/zero"
+      ],
+      [
+        "A/river/belief/infinity",
+        "A/river/belief/zero",
+        "A/river/broadest_lesson/infinity",
+        "A/river/broadest_lesson/zero",
+        "A/river/goal/infinity",
+        "A/river/goal/zero",
+        "A/river/independent_return/infinity",
+        "A/river/independent_return/zero",
+        "A/river/ninety_degree_attempt/infinity",
+        "A/river/ninety_degree_attempt/zero",
+        "A/river/perspective/infinity",
+        "A/river/perspective/zero",
+        "A/river/what_lesson_tree/infinity",
+        "A/river/what_lesson_tree/zero",
+        "A/river/why/infinity",
+        "A/river/why/zero"
+      ],
+      [
+        "A/stone/belief/infinity",
+        "A/stone/belief/zero",
+        "A/stone/broadest_lesson/infinity",
+        "A/stone/broadest_lesson/zero",
+        "A/stone/goal/infinity",
+        "A/stone/goal/zero",
+        "A/stone/independent_return/infinity",
+        "A/stone/independent_return/zero",
+        "A/stone/ninety_degree_attempt/infinity",
+        "A/stone/ninety_degree_attempt/zero",
+        "A/stone/perspective/infinity",
+        "A/stone/perspective/zero",
+        "A/stone/what_lesson_tree/infinity",
+        "A/stone/what_lesson_tree/zero",
+        "A/stone/why/infinity",
+        "A/stone/why/zero"
+      ]
+    ],
+    "frozen_before_maze_completion": true,
+    "ordered_equal_pair_count": 768
+  },
+  "basis_labels": [
+    "cedar",
+    "river",
+    "stone"
+  ],
+  "foundation": "one frozen line set with direct-passage/inverse-wall polar readings",
+  "frame_id": "A",
+  "occurrence_count": 48,
+  "occurrence_metadata": {
+    "A/cedar/belief/infinity": {
+      "basis_index": 0,
+      "basis_label": "cedar",
+      "cycle_index": 10,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 2,
+      "stage_label": "belief"
+    },
+    "A/cedar/belief/zero": {
+      "basis_index": 0,
+      "basis_label": "cedar",
+      "cycle_index": 2,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 2,
+      "stage_label": "belief"
+    },
+    "A/cedar/broadest_lesson/infinity": {
+      "basis_index": 0,
+      "basis_label": "cedar",
+      "cycle_index": 13,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 5,
+      "stage_label": "broadest_lesson"
+    },
+    "A/cedar/broadest_lesson/zero": {
+      "basis_index": 0,
+      "basis_label": "cedar",
+      "cycle_index": 5,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 5,
+      "stage_label": "broadest_lesson"
+    },
+    "A/cedar/goal/infinity": {
+      "basis_index": 0,
+      "basis_label": "cedar",
+      "cycle_index": 8,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 0,
+      "stage_label": "goal"
+    },
+    "A/cedar/goal/zero": {
+      "basis_index": 0,
+      "basis_label": "cedar",
+      "cycle_index": 0,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 0,
+      "stage_label": "goal"
+    },
+    "A/cedar/independent_return/infinity": {
+      "basis_index": 0,
+      "basis_label": "cedar",
+      "cycle_index": 15,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 7,
+      "stage_label": "independent_return"
+    },
+    "A/cedar/independent_return/zero": {
+      "basis_index": 0,
+      "basis_label": "cedar",
+      "cycle_index": 7,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 7,
+      "stage_label": "independent_return"
+    },
+    "A/cedar/ninety_degree_attempt/infinity": {
+      "basis_index": 0,
+      "basis_label": "cedar",
+      "cycle_index": 14,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 6,
+      "stage_label": "ninety_degree_attempt"
+    },
+    "A/cedar/ninety_degree_attempt/zero": {
+      "basis_index": 0,
+      "basis_label": "cedar",
+      "cycle_index": 6,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 6,
+      "stage_label": "ninety_degree_attempt"
+    },
+    "A/cedar/perspective/infinity": {
+      "basis_index": 0,
+      "basis_label": "cedar",
+      "cycle_index": 9,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 1,
+      "stage_label": "perspective"
+    },
+    "A/cedar/perspective/zero": {
+      "basis_index": 0,
+      "basis_label": "cedar",
+      "cycle_index": 1,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 1,
+      "stage_label": "perspective"
+    },
+    "A/cedar/what_lesson_tree/infinity": {
+      "basis_index": 0,
+      "basis_label": "cedar",
+      "cycle_index": 12,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 4,
+      "stage_label": "what_lesson_tree"
+    },
+    "A/cedar/what_lesson_tree/zero": {
+      "basis_index": 0,
+      "basis_label": "cedar",
+      "cycle_index": 4,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 4,
+      "stage_label": "what_lesson_tree"
+    },
+    "A/cedar/why/infinity": {
+      "basis_index": 0,
+      "basis_label": "cedar",
+      "cycle_index": 11,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 3,
+      "stage_label": "why"
+    },
+    "A/cedar/why/zero": {
+      "basis_index": 0,
+      "basis_label": "cedar",
+      "cycle_index": 3,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 3,
+      "stage_label": "why"
+    },
+    "A/river/belief/infinity": {
+      "basis_index": 1,
+      "basis_label": "river",
+      "cycle_index": 10,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 2,
+      "stage_label": "belief"
+    },
+    "A/river/belief/zero": {
+      "basis_index": 1,
+      "basis_label": "river",
+      "cycle_index": 2,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 2,
+      "stage_label": "belief"
+    },
+    "A/river/broadest_lesson/infinity": {
+      "basis_index": 1,
+      "basis_label": "river",
+      "cycle_index": 13,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 5,
+      "stage_label": "broadest_lesson"
+    },
+    "A/river/broadest_lesson/zero": {
+      "basis_index": 1,
+      "basis_label": "river",
+      "cycle_index": 5,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 5,
+      "stage_label": "broadest_lesson"
+    },
+    "A/river/goal/infinity": {
+      "basis_index": 1,
+      "basis_label": "river",
+      "cycle_index": 8,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 0,
+      "stage_label": "goal"
+    },
+    "A/river/goal/zero": {
+      "basis_index": 1,
+      "basis_label": "river",
+      "cycle_index": 0,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 0,
+      "stage_label": "goal"
+    },
+    "A/river/independent_return/infinity": {
+      "basis_index": 1,
+      "basis_label": "river",
+      "cycle_index": 15,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 7,
+      "stage_label": "independent_return"
+    },
+    "A/river/independent_return/zero": {
+      "basis_index": 1,
+      "basis_label": "river",
+      "cycle_index": 7,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 7,
+      "stage_label": "independent_return"
+    },
+    "A/river/ninety_degree_attempt/infinity": {
+      "basis_index": 1,
+      "basis_label": "river",
+      "cycle_index": 14,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 6,
+      "stage_label": "ninety_degree_attempt"
+    },
+    "A/river/ninety_degree_attempt/zero": {
+      "basis_index": 1,
+      "basis_label": "river",
+      "cycle_index": 6,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 6,
+      "stage_label": "ninety_degree_attempt"
+    },
+    "A/river/perspective/infinity": {
+      "basis_index": 1,
+      "basis_label": "river",
+      "cycle_index": 9,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 1,
+      "stage_label": "perspective"
+    },
+    "A/river/perspective/zero": {
+      "basis_index": 1,
+      "basis_label": "river",
+      "cycle_index": 1,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 1,
+      "stage_label": "perspective"
+    },
+    "A/river/what_lesson_tree/infinity": {
+      "basis_index": 1,
+      "basis_label": "river",
+      "cycle_index": 12,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 4,
+      "stage_label": "what_lesson_tree"
+    },
+    "A/river/what_lesson_tree/zero": {
+      "basis_index": 1,
+      "basis_label": "river",
+      "cycle_index": 4,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 4,
+      "stage_label": "what_lesson_tree"
+    },
+    "A/river/why/infinity": {
+      "basis_index": 1,
+      "basis_label": "river",
+      "cycle_index": 11,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 3,
+      "stage_label": "why"
+    },
+    "A/river/why/zero": {
+      "basis_index": 1,
+      "basis_label": "river",
+      "cycle_index": 3,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 3,
+      "stage_label": "why"
+    },
+    "A/stone/belief/infinity": {
+      "basis_index": 2,
+      "basis_label": "stone",
+      "cycle_index": 10,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 2,
+      "stage_label": "belief"
+    },
+    "A/stone/belief/zero": {
+      "basis_index": 2,
+      "basis_label": "stone",
+      "cycle_index": 2,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 2,
+      "stage_label": "belief"
+    },
+    "A/stone/broadest_lesson/infinity": {
+      "basis_index": 2,
+      "basis_label": "stone",
+      "cycle_index": 13,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 5,
+      "stage_label": "broadest_lesson"
+    },
+    "A/stone/broadest_lesson/zero": {
+      "basis_index": 2,
+      "basis_label": "stone",
+      "cycle_index": 5,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 5,
+      "stage_label": "broadest_lesson"
+    },
+    "A/stone/goal/infinity": {
+      "basis_index": 2,
+      "basis_label": "stone",
+      "cycle_index": 8,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 0,
+      "stage_label": "goal"
+    },
+    "A/stone/goal/zero": {
+      "basis_index": 2,
+      "basis_label": "stone",
+      "cycle_index": 0,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 0,
+      "stage_label": "goal"
+    },
+    "A/stone/independent_return/infinity": {
+      "basis_index": 2,
+      "basis_label": "stone",
+      "cycle_index": 15,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 7,
+      "stage_label": "independent_return"
+    },
+    "A/stone/independent_return/zero": {
+      "basis_index": 2,
+      "basis_label": "stone",
+      "cycle_index": 7,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 7,
+      "stage_label": "independent_return"
+    },
+    "A/stone/ninety_degree_attempt/infinity": {
+      "basis_index": 2,
+      "basis_label": "stone",
+      "cycle_index": 14,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 6,
+      "stage_label": "ninety_degree_attempt"
+    },
+    "A/stone/ninety_degree_attempt/zero": {
+      "basis_index": 2,
+      "basis_label": "stone",
+      "cycle_index": 6,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 6,
+      "stage_label": "ninety_degree_attempt"
+    },
+    "A/stone/perspective/infinity": {
+      "basis_index": 2,
+      "basis_label": "stone",
+      "cycle_index": 9,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 1,
+      "stage_label": "perspective"
+    },
+    "A/stone/perspective/zero": {
+      "basis_index": 2,
+      "basis_label": "stone",
+      "cycle_index": 1,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 1,
+      "stage_label": "perspective"
+    },
+    "A/stone/what_lesson_tree/infinity": {
+      "basis_index": 2,
+      "basis_label": "stone",
+      "cycle_index": 12,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 4,
+      "stage_label": "what_lesson_tree"
+    },
+    "A/stone/what_lesson_tree/zero": {
+      "basis_index": 2,
+      "basis_label": "stone",
+      "cycle_index": 4,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 4,
+      "stage_label": "what_lesson_tree"
+    },
+    "A/stone/why/infinity": {
+      "basis_index": 2,
+      "basis_label": "stone",
+      "cycle_index": 11,
+      "pole_index": 1,
+      "pole_label": "infinity",
+      "stage_index": 3,
+      "stage_label": "why"
+    },
+    "A/stone/why/zero": {
+      "basis_index": 2,
+      "basis_label": "stone",
+      "cycle_index": 3,
+      "pole_index": 0,
+      "pole_label": "zero",
+      "stage_index": 3,
+      "stage_label": "why"
+    }
+  },
+  "occurrences": [
+    "A/cedar/belief/infinity",
+    "A/cedar/belief/zero",
+    "A/cedar/broadest_lesson/infinity",
+    "A/cedar/broadest_lesson/zero",
+    "A/cedar/goal/infinity",
+    "A/cedar/goal/zero",
+    "A/cedar/independent_return/infinity",
+    "A/cedar/independent_return/zero",
+    "A/cedar/ninety_degree_attempt/infinity",
+    "A/cedar/ninety_degree_attempt/zero",
+    "A/cedar/perspective/infinity",
+    "A/cedar/perspective/zero",
+    "A/cedar/what_lesson_tree/infinity",
+    "A/cedar/what_lesson_tree/zero",
+    "A/cedar/why/infinity",
+    "A/cedar/why/zero",
+    "A/river/belief/infinity",
+    "A/river/belief/zero",
+    "A/river/broadest_lesson/infinity",
+    "A/river/broadest_lesson/zero",
+    "A/river/goal/infinity",
+    "A/river/goal/zero",
+    "A/river/independent_return/infinity",
+    "A/river/independent_return/zero",
+    "A/river/ninety_degree_attempt/infinity",
+    "A/river/ninety_degree_attempt/zero",
+    "A/river/perspective/infinity",
+    "A/river/perspective/zero",
+    "A/river/what_lesson_tree/infinity",
+    "A/river/what_lesson_tree/zero",
+    "A/river/why/infinity",
+    "A/river/why/zero",
+    "A/stone/belief/infinity",
+    "A/stone/belief/zero",
+    "A/stone/broadest_lesson/infinity",
+    "A/stone/broadest_lesson/zero",
+    "A/stone/goal/infinity",
+    "A/stone/goal/zero",
+    "A/stone/independent_return/infinity",
+    "A/stone/independent_return/zero",
+    "A/stone/ninety_degree_attempt/infinity",
+    "A/stone/ninety_degree_attempt/zero",
+    "A/stone/perspective/infinity",
+    "A/stone/perspective/zero",
+    "A/stone/what_lesson_tree/infinity",
+    "A/stone/what_lesson_tree/zero",
+    "A/stone/why/infinity",
+    "A/stone/why/zero"
+  ],
+  "originless_basis_relation": [
+    [
+      "cedar",
+      "river"
+    ],
+    [
+      "cedar",
+      "stone"
+    ],
+    [
+      "river",
+      "stone"
+    ]
+  ],
+  "pole_labels": [
+    "zero",
+    "infinity"
+  ],
+  "returned_basis_W": {
+    "A/cedar/belief/infinity": "cedar",
+    "A/cedar/belief/zero": "cedar",
+    "A/cedar/broadest_lesson/infinity": "cedar",
+    "A/cedar/broadest_lesson/zero": "cedar",
+    "A/cedar/goal/infinity": "cedar",
+    "A/cedar/goal/zero": "cedar",
+    "A/cedar/independent_return/infinity": "cedar",
+    "A/cedar/independent_return/zero": "cedar",
+    "A/cedar/ninety_degree_attempt/infinity": "cedar",
+    "A/cedar/ninety_degree_attempt/zero": "cedar",
+    "A/cedar/perspective/infinity": "cedar",
+    "A/cedar/perspective/zero": "cedar",
+    "A/cedar/what_lesson_tree/infinity": "cedar",
+    "A/cedar/what_lesson_tree/zero": "cedar",
+    "A/cedar/why/infinity": "cedar",
+    "A/cedar/why/zero": "cedar",
+    "A/river/belief/infinity": "river",
+    "A/river/belief/zero": "river",
+    "A/river/broadest_lesson/infinity": "river",
+    "A/river/broadest_lesson/zero": "river",
+    "A/river/goal/infinity": "river",
+    "A/river/goal/zero": "river",
+    "A/river/independent_return/infinity": "river",
+    "A/river/independent_return/zero": "river",
+    "A/river/ninety_degree_attempt/infinity": "river",
+    "A/river/ninety_degree_attempt/zero": "river",
+    "A/river/perspective/infinity": "river",
+    "A/river/perspective/zero": "river",
+    "A/river/what_lesson_tree/infinity": "river",
+    "A/river/what_lesson_tree/zero": "river",
+    "A/river/why/infinity": "river",
+    "A/river/why/zero": "river",
+    "A/stone/belief/infinity": "stone",
+    "A/stone/belief/zero": "stone",
+    "A/stone/broadest_lesson/infinity": "stone",
+    "A/stone/broadest_lesson/zero": "stone",
+    "A/stone/goal/infinity": "stone",
+    "A/stone/goal/zero": "stone",
+    "A/stone/independent_return/infinity": "stone",
+    "A/stone/independent_return/zero": "stone",
+    "A/stone/ninety_degree_attempt/infinity": "stone",
+    "A/stone/ninety_degree_attempt/zero": "stone",
+    "A/stone/perspective/infinity": "stone",
+    "A/stone/perspective/zero": "stone",
+    "A/stone/what_lesson_tree/infinity": "stone",
+    "A/stone/what_lesson_tree/zero": "stone",
+    "A/stone/why/infinity": "stone",
+    "A/stone/why/zero": "stone"
+  },
+  "schema_version": "maze-frozen-geometry-1.0",
+  "stage_labels": [
+    "goal",
+    "perspective",
+    "belief",
+    "why",
+    "what_lesson_tree",
+    "broadest_lesson",
+    "ninety_degree_attempt",
+    "independent_return"
+  ]
+}

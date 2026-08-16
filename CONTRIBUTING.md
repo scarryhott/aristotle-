@@ -11,6 +11,8 @@ python3 -m unittest discover -s tests -v
 python3 experiments/full_stack_math_asi.py --assert-reference
 python3 experiments/classical_vs_closure_asi.py --assert-reference
 python3 experiments/three_part_assumption_interaction_asi.py --assert-reference
+python3 experiments/generative_axiom_geometry_isolation.py --assert-reference
+python3 experiments/translational_completion_maze.py --assert-reference
 lake build
 ```
 
@@ -33,3 +35,10 @@ transition `GeomEquiv` only when it is a bijection preserving and reflecting equ
 extensions and quotients separately, require total relational coverage and composite agreement,
 and never silently discard an external residue. “Continuous” means finite compositional lineage
 unless a topology and continuity law are explicitly added.
+
+Maze-completion changes must freeze local equality before the line set, derive raw reach without
+symmetrizing it, retain an explicit reverse path or missing-return witness, and check exact
+agreement between completed reach and the frozen equality before constructing the intended
+quotient. `TopoOpen(U)` and project `OpenIn(F,Q)` are different notions. The topology currently
+registered by the maze assay is specifically the finite saturation topology on occurrences; new
+topologies require a new versioned protocol and controls.

@@ -1,0 +1,1893 @@
+{
+  "analysis": {
+    "admitted_equality_alignment": {
+      "admitted_equality_frozen_before_lines": true,
+      "first_overreach_witness": null,
+      "first_undercomplete_witness": null,
+      "local_ivi_w_present": true,
+      "local_ivi_w_witness": [
+        "B/amber/chart_a/left",
+        "B/amber/chart_a/right"
+      ],
+      "overreach_pair_count": 0,
+      "raw_reach_exactly_realizes_admitted_equality": true,
+      "undercomplete_pair_count": 0
+    },
+    "all_generating_edges_have_return_paths": true,
+    "completion_and_nontrivial_mutual_reach": true,
+    "edge_return_paths": [
+      {
+        "edge": [
+          "B/amber/chart_a/left",
+          "B/amber/chart_r/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/amber/chart_r/left",
+          "B/amber/chart_q/right",
+          "B/amber/chart_p/right",
+          "B/amber/chart_b/right",
+          "B/amber/chart_y/right",
+          "B/amber/chart_w/right",
+          "B/amber/chart_l/right",
+          "B/amber/chart_a/right",
+          "B/amber/chart_r/right",
+          "B/amber/chart_q/left",
+          "B/amber/chart_p/left",
+          "B/amber/chart_b/left",
+          "B/amber/chart_y/left",
+          "B/amber/chart_w/left",
+          "B/amber/chart_l/left",
+          "B/amber/chart_a/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/amber/chart_a/right",
+          "B/amber/chart_r/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/amber/chart_r/right",
+          "B/amber/chart_q/left",
+          "B/amber/chart_p/left",
+          "B/amber/chart_b/left",
+          "B/amber/chart_y/left",
+          "B/amber/chart_w/left",
+          "B/amber/chart_l/left",
+          "B/amber/chart_a/left",
+          "B/amber/chart_r/left",
+          "B/amber/chart_q/right",
+          "B/amber/chart_p/right",
+          "B/amber/chart_b/right",
+          "B/amber/chart_y/right",
+          "B/amber/chart_w/right",
+          "B/amber/chart_l/right",
+          "B/amber/chart_a/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/amber/chart_b/left",
+          "B/amber/chart_y/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/amber/chart_y/left",
+          "B/amber/chart_w/left",
+          "B/amber/chart_l/left",
+          "B/amber/chart_a/left",
+          "B/amber/chart_r/left",
+          "B/amber/chart_q/right",
+          "B/amber/chart_p/right",
+          "B/amber/chart_b/right",
+          "B/amber/chart_y/right",
+          "B/amber/chart_w/right",
+          "B/amber/chart_l/right",
+          "B/amber/chart_a/right",
+          "B/amber/chart_r/right",
+          "B/amber/chart_q/left",
+          "B/amber/chart_p/left",
+          "B/amber/chart_b/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/amber/chart_b/right",
+          "B/amber/chart_y/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/amber/chart_y/right",
+          "B/amber/chart_w/right",
+          "B/amber/chart_l/right",
+          "B/amber/chart_a/right",
+          "B/amber/chart_r/right",
+          "B/amber/chart_q/left",
+          "B/amber/chart_p/left",
+          "B/amber/chart_b/left",
+          "B/amber/chart_y/left",
+          "B/amber/chart_w/left",
+          "B/amber/chart_l/left",
+          "B/amber/chart_a/left",
+          "B/amber/chart_r/left",
+          "B/amber/chart_q/right",
+          "B/amber/chart_p/right",
+          "B/amber/chart_b/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/amber/chart_l/left",
+          "B/amber/chart_a/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/amber/chart_a/left",
+          "B/amber/chart_r/left",
+          "B/amber/chart_q/right",
+          "B/amber/chart_p/right",
+          "B/amber/chart_b/right",
+          "B/amber/chart_y/right",
+          "B/amber/chart_w/right",
+          "B/amber/chart_l/right",
+          "B/amber/chart_a/right",
+          "B/amber/chart_r/right",
+          "B/amber/chart_q/left",
+          "B/amber/chart_p/left",
+          "B/amber/chart_b/left",
+          "B/amber/chart_y/left",
+          "B/amber/chart_w/left",
+          "B/amber/chart_l/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/amber/chart_l/right",
+          "B/amber/chart_a/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/amber/chart_a/right",
+          "B/amber/chart_r/right",
+          "B/amber/chart_q/left",
+          "B/amber/chart_p/left",
+          "B/amber/chart_b/left",
+          "B/amber/chart_y/left",
+          "B/amber/chart_w/left",
+          "B/amber/chart_l/left",
+          "B/amber/chart_a/left",
+          "B/amber/chart_r/left",
+          "B/amber/chart_q/right",
+          "B/amber/chart_p/right",
+          "B/amber/chart_b/right",
+          "B/amber/chart_y/right",
+          "B/amber/chart_w/right",
+          "B/amber/chart_l/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/amber/chart_p/left",
+          "B/amber/chart_b/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/amber/chart_b/left",
+          "B/amber/chart_y/left",
+          "B/amber/chart_w/left",
+          "B/amber/chart_l/left",
+          "B/amber/chart_a/left",
+          "B/amber/chart_r/left",
+          "B/amber/chart_q/right",
+          "B/amber/chart_p/right",
+          "B/amber/chart_b/right",
+          "B/amber/chart_y/right",
+          "B/amber/chart_w/right",
+          "B/amber/chart_l/right",
+          "B/amber/chart_a/right",
+          "B/amber/chart_r/right",
+          "B/amber/chart_q/left",
+          "B/amber/chart_p/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/amber/chart_p/right",
+          "B/amber/chart_b/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/amber/chart_b/right",
+          "B/amber/chart_y/right",
+          "B/amber/chart_w/right",
+          "B/amber/chart_l/right",
+          "B/amber/chart_a/right",
+          "B/amber/chart_r/right",
+          "B/amber/chart_q/left",
+          "B/amber/chart_p/left",
+          "B/amber/chart_b/left",
+          "B/amber/chart_y/left",
+          "B/amber/chart_w/left",
+          "B/amber/chart_l/left",
+          "B/amber/chart_a/left",
+          "B/amber/chart_r/left",
+          "B/amber/chart_q/right",
+          "B/amber/chart_p/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/amber/chart_q/left",
+          "B/amber/chart_p/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/amber/chart_p/left",
+          "B/amber/chart_b/left",
+          "B/amber/chart_y/left",
+          "B/amber/chart_w/left",
+          "B/amber/chart_l/left",
+          "B/amber/chart_a/left",
+          "B/amber/chart_r/left",
+          "B/amber/chart_q/right",
+          "B/amber/chart_p/right",
+          "B/amber/chart_b/right",
+          "B/amber/chart_y/right",
+          "B/amber/chart_w/right",
+          "B/amber/chart_l/right",
+          "B/amber/chart_a/right",
+          "B/amber/chart_r/right",
+          "B/amber/chart_q/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/amber/chart_q/right",
+          "B/amber/chart_p/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/amber/chart_p/right",
+          "B/amber/chart_b/right",
+          "B/amber/chart_y/right",
+          "B/amber/chart_w/right",
+          "B/amber/chart_l/right",
+          "B/amber/chart_a/right",
+          "B/amber/chart_r/right",
+          "B/amber/chart_q/left",
+          "B/amber/chart_p/left",
+          "B/amber/chart_b/left",
+          "B/amber/chart_y/left",
+          "B/amber/chart_w/left",
+          "B/amber/chart_l/left",
+          "B/amber/chart_a/left",
+          "B/amber/chart_r/left",
+          "B/amber/chart_q/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/amber/chart_r/left",
+          "B/amber/chart_q/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/amber/chart_q/right",
+          "B/amber/chart_p/right",
+          "B/amber/chart_b/right",
+          "B/amber/chart_y/right",
+          "B/amber/chart_w/right",
+          "B/amber/chart_l/right",
+          "B/amber/chart_a/right",
+          "B/amber/chart_r/right",
+          "B/amber/chart_q/left",
+          "B/amber/chart_p/left",
+          "B/amber/chart_b/left",
+          "B/amber/chart_y/left",
+          "B/amber/chart_w/left",
+          "B/amber/chart_l/left",
+          "B/amber/chart_a/left",
+          "B/amber/chart_r/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/amber/chart_r/right",
+          "B/amber/chart_q/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/amber/chart_q/left",
+          "B/amber/chart_p/left",
+          "B/amber/chart_b/left",
+          "B/amber/chart_y/left",
+          "B/amber/chart_w/left",
+          "B/amber/chart_l/left",
+          "B/amber/chart_a/left",
+          "B/amber/chart_r/left",
+          "B/amber/chart_q/right",
+          "B/amber/chart_p/right",
+          "B/amber/chart_b/right",
+          "B/amber/chart_y/right",
+          "B/amber/chart_w/right",
+          "B/amber/chart_l/right",
+          "B/amber/chart_a/right",
+          "B/amber/chart_r/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/amber/chart_w/left",
+          "B/amber/chart_l/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/amber/chart_l/left",
+          "B/amber/chart_a/left",
+          "B/amber/chart_r/left",
+          "B/amber/chart_q/right",
+          "B/amber/chart_p/right",
+          "B/amber/chart_b/right",
+          "B/amber/chart_y/right",
+          "B/amber/chart_w/right",
+          "B/amber/chart_l/right",
+          "B/amber/chart_a/right",
+          "B/amber/chart_r/right",
+          "B/amber/chart_q/left",
+          "B/amber/chart_p/left",
+          "B/amber/chart_b/left",
+          "B/amber/chart_y/left",
+          "B/amber/chart_w/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/amber/chart_w/right",
+          "B/amber/chart_l/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/amber/chart_l/right",
+          "B/amber/chart_a/right",
+          "B/amber/chart_r/right",
+          "B/amber/chart_q/left",
+          "B/amber/chart_p/left",
+          "B/amber/chart_b/left",
+          "B/amber/chart_y/left",
+          "B/amber/chart_w/left",
+          "B/amber/chart_l/left",
+          "B/amber/chart_a/left",
+          "B/amber/chart_r/left",
+          "B/amber/chart_q/right",
+          "B/amber/chart_p/right",
+          "B/amber/chart_b/right",
+          "B/amber/chart_y/right",
+          "B/amber/chart_w/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/amber/chart_y/left",
+          "B/amber/chart_w/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/amber/chart_w/left",
+          "B/amber/chart_l/left",
+          "B/amber/chart_a/left",
+          "B/amber/chart_r/left",
+          "B/amber/chart_q/right",
+          "B/amber/chart_p/right",
+          "B/amber/chart_b/right",
+          "B/amber/chart_y/right",
+          "B/amber/chart_w/right",
+          "B/amber/chart_l/right",
+          "B/amber/chart_a/right",
+          "B/amber/chart_r/right",
+          "B/amber/chart_q/left",
+          "B/amber/chart_p/left",
+          "B/amber/chart_b/left",
+          "B/amber/chart_y/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/amber/chart_y/right",
+          "B/amber/chart_w/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/amber/chart_w/right",
+          "B/amber/chart_l/right",
+          "B/amber/chart_a/right",
+          "B/amber/chart_r/right",
+          "B/amber/chart_q/left",
+          "B/amber/chart_p/left",
+          "B/amber/chart_b/left",
+          "B/amber/chart_y/left",
+          "B/amber/chart_w/left",
+          "B/amber/chart_l/left",
+          "B/amber/chart_a/left",
+          "B/amber/chart_r/left",
+          "B/amber/chart_q/right",
+          "B/amber/chart_p/right",
+          "B/amber/chart_b/right",
+          "B/amber/chart_y/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/silver/chart_a/left",
+          "B/silver/chart_r/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/silver/chart_r/left",
+          "B/silver/chart_q/right",
+          "B/silver/chart_p/right",
+          "B/silver/chart_b/right",
+          "B/silver/chart_y/right",
+          "B/silver/chart_w/right",
+          "B/silver/chart_l/right",
+          "B/silver/chart_a/right",
+          "B/silver/chart_r/right",
+          "B/silver/chart_q/left",
+          "B/silver/chart_p/left",
+          "B/silver/chart_b/left",
+          "B/silver/chart_y/left",
+          "B/silver/chart_w/left",
+          "B/silver/chart_l/left",
+          "B/silver/chart_a/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/silver/chart_a/right",
+          "B/silver/chart_r/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/silver/chart_r/right",
+          "B/silver/chart_q/left",
+          "B/silver/chart_p/left",
+          "B/silver/chart_b/left",
+          "B/silver/chart_y/left",
+          "B/silver/chart_w/left",
+          "B/silver/chart_l/left",
+          "B/silver/chart_a/left",
+          "B/silver/chart_r/left",
+          "B/silver/chart_q/right",
+          "B/silver/chart_p/right",
+          "B/silver/chart_b/right",
+          "B/silver/chart_y/right",
+          "B/silver/chart_w/right",
+          "B/silver/chart_l/right",
+          "B/silver/chart_a/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/silver/chart_b/left",
+          "B/silver/chart_y/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/silver/chart_y/left",
+          "B/silver/chart_w/left",
+          "B/silver/chart_l/left",
+          "B/silver/chart_a/left",
+          "B/silver/chart_r/left",
+          "B/silver/chart_q/right",
+          "B/silver/chart_p/right",
+          "B/silver/chart_b/right",
+          "B/silver/chart_y/right",
+          "B/silver/chart_w/right",
+          "B/silver/chart_l/right",
+          "B/silver/chart_a/right",
+          "B/silver/chart_r/right",
+          "B/silver/chart_q/left",
+          "B/silver/chart_p/left",
+          "B/silver/chart_b/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/silver/chart_b/right",
+          "B/silver/chart_y/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/silver/chart_y/right",
+          "B/silver/chart_w/right",
+          "B/silver/chart_l/right",
+          "B/silver/chart_a/right",
+          "B/silver/chart_r/right",
+          "B/silver/chart_q/left",
+          "B/silver/chart_p/left",
+          "B/silver/chart_b/left",
+          "B/silver/chart_y/left",
+          "B/silver/chart_w/left",
+          "B/silver/chart_l/left",
+          "B/silver/chart_a/left",
+          "B/silver/chart_r/left",
+          "B/silver/chart_q/right",
+          "B/silver/chart_p/right",
+          "B/silver/chart_b/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/silver/chart_l/left",
+          "B/silver/chart_a/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/silver/chart_a/left",
+          "B/silver/chart_r/left",
+          "B/silver/chart_q/right",
+          "B/silver/chart_p/right",
+          "B/silver/chart_b/right",
+          "B/silver/chart_y/right",
+          "B/silver/chart_w/right",
+          "B/silver/chart_l/right",
+          "B/silver/chart_a/right",
+          "B/silver/chart_r/right",
+          "B/silver/chart_q/left",
+          "B/silver/chart_p/left",
+          "B/silver/chart_b/left",
+          "B/silver/chart_y/left",
+          "B/silver/chart_w/left",
+          "B/silver/chart_l/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/silver/chart_l/right",
+          "B/silver/chart_a/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/silver/chart_a/right",
+          "B/silver/chart_r/right",
+          "B/silver/chart_q/left",
+          "B/silver/chart_p/left",
+          "B/silver/chart_b/left",
+          "B/silver/chart_y/left",
+          "B/silver/chart_w/left",
+          "B/silver/chart_l/left",
+          "B/silver/chart_a/left",
+          "B/silver/chart_r/left",
+          "B/silver/chart_q/right",
+          "B/silver/chart_p/right",
+          "B/silver/chart_b/right",
+          "B/silver/chart_y/right",
+          "B/silver/chart_w/right",
+          "B/silver/chart_l/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/silver/chart_p/left",
+          "B/silver/chart_b/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/silver/chart_b/left",
+          "B/silver/chart_y/left",
+          "B/silver/chart_w/left",
+          "B/silver/chart_l/left",
+          "B/silver/chart_a/left",
+          "B/silver/chart_r/left",
+          "B/silver/chart_q/right",
+          "B/silver/chart_p/right",
+          "B/silver/chart_b/right",
+          "B/silver/chart_y/right",
+          "B/silver/chart_w/right",
+          "B/silver/chart_l/right",
+          "B/silver/chart_a/right",
+          "B/silver/chart_r/right",
+          "B/silver/chart_q/left",
+          "B/silver/chart_p/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/silver/chart_p/right",
+          "B/silver/chart_b/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/silver/chart_b/right",
+          "B/silver/chart_y/right",
+          "B/silver/chart_w/right",
+          "B/silver/chart_l/right",
+          "B/silver/chart_a/right",
+          "B/silver/chart_r/right",
+          "B/silver/chart_q/left",
+          "B/silver/chart_p/left",
+          "B/silver/chart_b/left",
+          "B/silver/chart_y/left",
+          "B/silver/chart_w/left",
+          "B/silver/chart_l/left",
+          "B/silver/chart_a/left",
+          "B/silver/chart_r/left",
+          "B/silver/chart_q/right",
+          "B/silver/chart_p/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/silver/chart_q/left",
+          "B/silver/chart_p/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/silver/chart_p/left",
+          "B/silver/chart_b/left",
+          "B/silver/chart_y/left",
+          "B/silver/chart_w/left",
+          "B/silver/chart_l/left",
+          "B/silver/chart_a/left",
+          "B/silver/chart_r/left",
+          "B/silver/chart_q/right",
+          "B/silver/chart_p/right",
+          "B/silver/chart_b/right",
+          "B/silver/chart_y/right",
+          "B/silver/chart_w/right",
+          "B/silver/chart_l/right",
+          "B/silver/chart_a/right",
+          "B/silver/chart_r/right",
+          "B/silver/chart_q/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/silver/chart_q/right",
+          "B/silver/chart_p/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/silver/chart_p/right",
+          "B/silver/chart_b/right",
+          "B/silver/chart_y/right",
+          "B/silver/chart_w/right",
+          "B/silver/chart_l/right",
+          "B/silver/chart_a/right",
+          "B/silver/chart_r/right",
+          "B/silver/chart_q/left",
+          "B/silver/chart_p/left",
+          "B/silver/chart_b/left",
+          "B/silver/chart_y/left",
+          "B/silver/chart_w/left",
+          "B/silver/chart_l/left",
+          "B/silver/chart_a/left",
+          "B/silver/chart_r/left",
+          "B/silver/chart_q/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/silver/chart_r/left",
+          "B/silver/chart_q/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/silver/chart_q/right",
+          "B/silver/chart_p/right",
+          "B/silver/chart_b/right",
+          "B/silver/chart_y/right",
+          "B/silver/chart_w/right",
+          "B/silver/chart_l/right",
+          "B/silver/chart_a/right",
+          "B/silver/chart_r/right",
+          "B/silver/chart_q/left",
+          "B/silver/chart_p/left",
+          "B/silver/chart_b/left",
+          "B/silver/chart_y/left",
+          "B/silver/chart_w/left",
+          "B/silver/chart_l/left",
+          "B/silver/chart_a/left",
+          "B/silver/chart_r/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/silver/chart_r/right",
+          "B/silver/chart_q/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/silver/chart_q/left",
+          "B/silver/chart_p/left",
+          "B/silver/chart_b/left",
+          "B/silver/chart_y/left",
+          "B/silver/chart_w/left",
+          "B/silver/chart_l/left",
+          "B/silver/chart_a/left",
+          "B/silver/chart_r/left",
+          "B/silver/chart_q/right",
+          "B/silver/chart_p/right",
+          "B/silver/chart_b/right",
+          "B/silver/chart_y/right",
+          "B/silver/chart_w/right",
+          "B/silver/chart_l/right",
+          "B/silver/chart_a/right",
+          "B/silver/chart_r/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/silver/chart_w/left",
+          "B/silver/chart_l/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/silver/chart_l/left",
+          "B/silver/chart_a/left",
+          "B/silver/chart_r/left",
+          "B/silver/chart_q/right",
+          "B/silver/chart_p/right",
+          "B/silver/chart_b/right",
+          "B/silver/chart_y/right",
+          "B/silver/chart_w/right",
+          "B/silver/chart_l/right",
+          "B/silver/chart_a/right",
+          "B/silver/chart_r/right",
+          "B/silver/chart_q/left",
+          "B/silver/chart_p/left",
+          "B/silver/chart_b/left",
+          "B/silver/chart_y/left",
+          "B/silver/chart_w/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/silver/chart_w/right",
+          "B/silver/chart_l/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/silver/chart_l/right",
+          "B/silver/chart_a/right",
+          "B/silver/chart_r/right",
+          "B/silver/chart_q/left",
+          "B/silver/chart_p/left",
+          "B/silver/chart_b/left",
+          "B/silver/chart_y/left",
+          "B/silver/chart_w/left",
+          "B/silver/chart_l/left",
+          "B/silver/chart_a/left",
+          "B/silver/chart_r/left",
+          "B/silver/chart_q/right",
+          "B/silver/chart_p/right",
+          "B/silver/chart_b/right",
+          "B/silver/chart_y/right",
+          "B/silver/chart_w/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/silver/chart_y/left",
+          "B/silver/chart_w/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/silver/chart_w/left",
+          "B/silver/chart_l/left",
+          "B/silver/chart_a/left",
+          "B/silver/chart_r/left",
+          "B/silver/chart_q/right",
+          "B/silver/chart_p/right",
+          "B/silver/chart_b/right",
+          "B/silver/chart_y/right",
+          "B/silver/chart_w/right",
+          "B/silver/chart_l/right",
+          "B/silver/chart_a/right",
+          "B/silver/chart_r/right",
+          "B/silver/chart_q/left",
+          "B/silver/chart_p/left",
+          "B/silver/chart_b/left",
+          "B/silver/chart_y/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/silver/chart_y/right",
+          "B/silver/chart_w/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/silver/chart_w/right",
+          "B/silver/chart_l/right",
+          "B/silver/chart_a/right",
+          "B/silver/chart_r/right",
+          "B/silver/chart_q/left",
+          "B/silver/chart_p/left",
+          "B/silver/chart_b/left",
+          "B/silver/chart_y/left",
+          "B/silver/chart_w/left",
+          "B/silver/chart_l/left",
+          "B/silver/chart_a/left",
+          "B/silver/chart_r/left",
+          "B/silver/chart_q/right",
+          "B/silver/chart_p/right",
+          "B/silver/chart_b/right",
+          "B/silver/chart_y/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/violet/chart_a/left",
+          "B/violet/chart_r/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/violet/chart_r/left",
+          "B/violet/chart_q/right",
+          "B/violet/chart_p/right",
+          "B/violet/chart_b/right",
+          "B/violet/chart_y/right",
+          "B/violet/chart_w/right",
+          "B/violet/chart_l/right",
+          "B/violet/chart_a/right",
+          "B/violet/chart_r/right",
+          "B/violet/chart_q/left",
+          "B/violet/chart_p/left",
+          "B/violet/chart_b/left",
+          "B/violet/chart_y/left",
+          "B/violet/chart_w/left",
+          "B/violet/chart_l/left",
+          "B/violet/chart_a/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/violet/chart_a/right",
+          "B/violet/chart_r/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/violet/chart_r/right",
+          "B/violet/chart_q/left",
+          "B/violet/chart_p/left",
+          "B/violet/chart_b/left",
+          "B/violet/chart_y/left",
+          "B/violet/chart_w/left",
+          "B/violet/chart_l/left",
+          "B/violet/chart_a/left",
+          "B/violet/chart_r/left",
+          "B/violet/chart_q/right",
+          "B/violet/chart_p/right",
+          "B/violet/chart_b/right",
+          "B/violet/chart_y/right",
+          "B/violet/chart_w/right",
+          "B/violet/chart_l/right",
+          "B/violet/chart_a/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/violet/chart_b/left",
+          "B/violet/chart_y/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/violet/chart_y/left",
+          "B/violet/chart_w/left",
+          "B/violet/chart_l/left",
+          "B/violet/chart_a/left",
+          "B/violet/chart_r/left",
+          "B/violet/chart_q/right",
+          "B/violet/chart_p/right",
+          "B/violet/chart_b/right",
+          "B/violet/chart_y/right",
+          "B/violet/chart_w/right",
+          "B/violet/chart_l/right",
+          "B/violet/chart_a/right",
+          "B/violet/chart_r/right",
+          "B/violet/chart_q/left",
+          "B/violet/chart_p/left",
+          "B/violet/chart_b/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/violet/chart_b/right",
+          "B/violet/chart_y/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/violet/chart_y/right",
+          "B/violet/chart_w/right",
+          "B/violet/chart_l/right",
+          "B/violet/chart_a/right",
+          "B/violet/chart_r/right",
+          "B/violet/chart_q/left",
+          "B/violet/chart_p/left",
+          "B/violet/chart_b/left",
+          "B/violet/chart_y/left",
+          "B/violet/chart_w/left",
+          "B/violet/chart_l/left",
+          "B/violet/chart_a/left",
+          "B/violet/chart_r/left",
+          "B/violet/chart_q/right",
+          "B/violet/chart_p/right",
+          "B/violet/chart_b/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/violet/chart_l/left",
+          "B/violet/chart_a/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/violet/chart_a/left",
+          "B/violet/chart_r/left",
+          "B/violet/chart_q/right",
+          "B/violet/chart_p/right",
+          "B/violet/chart_b/right",
+          "B/violet/chart_y/right",
+          "B/violet/chart_w/right",
+          "B/violet/chart_l/right",
+          "B/violet/chart_a/right",
+          "B/violet/chart_r/right",
+          "B/violet/chart_q/left",
+          "B/violet/chart_p/left",
+          "B/violet/chart_b/left",
+          "B/violet/chart_y/left",
+          "B/violet/chart_w/left",
+          "B/violet/chart_l/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/violet/chart_l/right",
+          "B/violet/chart_a/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/violet/chart_a/right",
+          "B/violet/chart_r/right",
+          "B/violet/chart_q/left",
+          "B/violet/chart_p/left",
+          "B/violet/chart_b/left",
+          "B/violet/chart_y/left",
+          "B/violet/chart_w/left",
+          "B/violet/chart_l/left",
+          "B/violet/chart_a/left",
+          "B/violet/chart_r/left",
+          "B/violet/chart_q/right",
+          "B/violet/chart_p/right",
+          "B/violet/chart_b/right",
+          "B/violet/chart_y/right",
+          "B/violet/chart_w/right",
+          "B/violet/chart_l/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/violet/chart_p/left",
+          "B/violet/chart_b/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/violet/chart_b/left",
+          "B/violet/chart_y/left",
+          "B/violet/chart_w/left",
+          "B/violet/chart_l/left",
+          "B/violet/chart_a/left",
+          "B/violet/chart_r/left",
+          "B/violet/chart_q/right",
+          "B/violet/chart_p/right",
+          "B/violet/chart_b/right",
+          "B/violet/chart_y/right",
+          "B/violet/chart_w/right",
+          "B/violet/chart_l/right",
+          "B/violet/chart_a/right",
+          "B/violet/chart_r/right",
+          "B/violet/chart_q/left",
+          "B/violet/chart_p/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/violet/chart_p/right",
+          "B/violet/chart_b/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/violet/chart_b/right",
+          "B/violet/chart_y/right",
+          "B/violet/chart_w/right",
+          "B/violet/chart_l/right",
+          "B/violet/chart_a/right",
+          "B/violet/chart_r/right",
+          "B/violet/chart_q/left",
+          "B/violet/chart_p/left",
+          "B/violet/chart_b/left",
+          "B/violet/chart_y/left",
+          "B/violet/chart_w/left",
+          "B/violet/chart_l/left",
+          "B/violet/chart_a/left",
+          "B/violet/chart_r/left",
+          "B/violet/chart_q/right",
+          "B/violet/chart_p/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/violet/chart_q/left",
+          "B/violet/chart_p/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/violet/chart_p/left",
+          "B/violet/chart_b/left",
+          "B/violet/chart_y/left",
+          "B/violet/chart_w/left",
+          "B/violet/chart_l/left",
+          "B/violet/chart_a/left",
+          "B/violet/chart_r/left",
+          "B/violet/chart_q/right",
+          "B/violet/chart_p/right",
+          "B/violet/chart_b/right",
+          "B/violet/chart_y/right",
+          "B/violet/chart_w/right",
+          "B/violet/chart_l/right",
+          "B/violet/chart_a/right",
+          "B/violet/chart_r/right",
+          "B/violet/chart_q/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/violet/chart_q/right",
+          "B/violet/chart_p/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/violet/chart_p/right",
+          "B/violet/chart_b/right",
+          "B/violet/chart_y/right",
+          "B/violet/chart_w/right",
+          "B/violet/chart_l/right",
+          "B/violet/chart_a/right",
+          "B/violet/chart_r/right",
+          "B/violet/chart_q/left",
+          "B/violet/chart_p/left",
+          "B/violet/chart_b/left",
+          "B/violet/chart_y/left",
+          "B/violet/chart_w/left",
+          "B/violet/chart_l/left",
+          "B/violet/chart_a/left",
+          "B/violet/chart_r/left",
+          "B/violet/chart_q/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/violet/chart_r/left",
+          "B/violet/chart_q/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/violet/chart_q/right",
+          "B/violet/chart_p/right",
+          "B/violet/chart_b/right",
+          "B/violet/chart_y/right",
+          "B/violet/chart_w/right",
+          "B/violet/chart_l/right",
+          "B/violet/chart_a/right",
+          "B/violet/chart_r/right",
+          "B/violet/chart_q/left",
+          "B/violet/chart_p/left",
+          "B/violet/chart_b/left",
+          "B/violet/chart_y/left",
+          "B/violet/chart_w/left",
+          "B/violet/chart_l/left",
+          "B/violet/chart_a/left",
+          "B/violet/chart_r/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/violet/chart_r/right",
+          "B/violet/chart_q/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/violet/chart_q/left",
+          "B/violet/chart_p/left",
+          "B/violet/chart_b/left",
+          "B/violet/chart_y/left",
+          "B/violet/chart_w/left",
+          "B/violet/chart_l/left",
+          "B/violet/chart_a/left",
+          "B/violet/chart_r/left",
+          "B/violet/chart_q/right",
+          "B/violet/chart_p/right",
+          "B/violet/chart_b/right",
+          "B/violet/chart_y/right",
+          "B/violet/chart_w/right",
+          "B/violet/chart_l/right",
+          "B/violet/chart_a/right",
+          "B/violet/chart_r/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/violet/chart_w/left",
+          "B/violet/chart_l/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/violet/chart_l/left",
+          "B/violet/chart_a/left",
+          "B/violet/chart_r/left",
+          "B/violet/chart_q/right",
+          "B/violet/chart_p/right",
+          "B/violet/chart_b/right",
+          "B/violet/chart_y/right",
+          "B/violet/chart_w/right",
+          "B/violet/chart_l/right",
+          "B/violet/chart_a/right",
+          "B/violet/chart_r/right",
+          "B/violet/chart_q/left",
+          "B/violet/chart_p/left",
+          "B/violet/chart_b/left",
+          "B/violet/chart_y/left",
+          "B/violet/chart_w/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/violet/chart_w/right",
+          "B/violet/chart_l/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/violet/chart_l/right",
+          "B/violet/chart_a/right",
+          "B/violet/chart_r/right",
+          "B/violet/chart_q/left",
+          "B/violet/chart_p/left",
+          "B/violet/chart_b/left",
+          "B/violet/chart_y/left",
+          "B/violet/chart_w/left",
+          "B/violet/chart_l/left",
+          "B/violet/chart_a/left",
+          "B/violet/chart_r/left",
+          "B/violet/chart_q/right",
+          "B/violet/chart_p/right",
+          "B/violet/chart_b/right",
+          "B/violet/chart_y/right",
+          "B/violet/chart_w/right"
+        ]
+      },
+      {
+        "edge": [
+          "B/violet/chart_y/left",
+          "B/violet/chart_w/left"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/violet/chart_w/left",
+          "B/violet/chart_l/left",
+          "B/violet/chart_a/left",
+          "B/violet/chart_r/left",
+          "B/violet/chart_q/right",
+          "B/violet/chart_p/right",
+          "B/violet/chart_b/right",
+          "B/violet/chart_y/right",
+          "B/violet/chart_w/right",
+          "B/violet/chart_l/right",
+          "B/violet/chart_a/right",
+          "B/violet/chart_r/right",
+          "B/violet/chart_q/left",
+          "B/violet/chart_p/left",
+          "B/violet/chart_b/left",
+          "B/violet/chart_y/left"
+        ]
+      },
+      {
+        "edge": [
+          "B/violet/chart_y/right",
+          "B/violet/chart_w/right"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "B/violet/chart_w/right",
+          "B/violet/chart_l/right",
+          "B/violet/chart_a/right",
+          "B/violet/chart_r/right",
+          "B/violet/chart_q/left",
+          "B/violet/chart_p/left",
+          "B/violet/chart_b/left",
+          "B/violet/chart_y/left",
+          "B/violet/chart_w/left",
+          "B/violet/chart_l/left",
+          "B/violet/chart_a/left",
+          "B/violet/chart_r/left",
+          "B/violet/chart_q/right",
+          "B/violet/chart_p/right",
+          "B/violet/chart_b/right",
+          "B/violet/chart_y/right"
+        ]
+      }
+    ],
+    "faithful_nondiscrete_proxy_relative_to_frozen_frame": true,
+    "faithful_nondiscrete_resolution_proxy": true,
+    "first_chain_lost_by_mutual_reach_quotient": null,
+    "first_missing_return_witness": null,
+    "first_return_invented_by_undirected_equivalence_closure": null,
+    "generating_edge_count": 48,
+    "line_semantics": {
+      "direct_passage_count": 48,
+      "inverse_wall_count": 48,
+      "inverse_walls_relabeled_as_direct_edges": 0,
+      "line_count": 48,
+      "maximum_return_path_length": 15,
+      "minimum_return_path_length": 15,
+      "one_frozen_line_set": true,
+      "path_or_wall_exclusivity_failure_count": 0,
+      "return_path_count": 48,
+      "structure_certificate": {
+        "checked_line_count": 48,
+        "failures": {
+          "carrier_failure_count": 0,
+          "declared_line_id_failure_count": 0,
+          "declared_return_role_failure_count": 0,
+          "declared_target_failure_count": 0,
+          "duplicate_line_id_count": 0,
+          "duplicate_source_count": 0,
+          "inverse_wall_promoted_to_direct_edge_count": 0,
+          "learning_translation_failure_count": 0,
+          "missing_source_count": 0,
+          "path_or_wall_role_failure_count": 0
+        },
+        "first_carrier_failure": null,
+        "first_declared_line_id_failure": null,
+        "first_declared_return_role_failure": null,
+        "first_declared_target_failure": null,
+        "first_inverse_promotion": null,
+        "first_role_failure": null,
+        "total_source_partition": true,
+        "valid": true
+      }
+    },
+    "local_ivi_w_disclosed_by_completed_reach": true,
+    "mutual_reach_classes": [
+      [
+        "B/amber/chart_a/left",
+        "B/amber/chart_a/right",
+        "B/amber/chart_b/left",
+        "B/amber/chart_b/right",
+        "B/amber/chart_l/left",
+        "B/amber/chart_l/right",
+        "B/amber/chart_p/left",
+        "B/amber/chart_p/right",
+        "B/amber/chart_q/left",
+        "B/amber/chart_q/right",
+        "B/amber/chart_r/left",
+        "B/amber/chart_r/right",
+        "B/amber/chart_w/left",
+        "B/amber/chart_w/right",
+        "B/amber/chart_y/left",
+        "B/amber/chart_y/right"
+      ],
+      [
+        "B/silver/chart_a/left",
+        "B/silver/chart_a/right",
+        "B/silver/chart_b/left",
+        "B/silver/chart_b/right",
+        "B/silver/chart_l/left",
+        "B/silver/chart_l/right",
+        "B/silver/chart_p/left",
+        "B/silver/chart_p/right",
+        "B/silver/chart_q/left",
+        "B/silver/chart_q/right",
+        "B/silver/chart_r/left",
+        "B/silver/chart_r/right",
+        "B/silver/chart_w/left",
+        "B/silver/chart_w/right",
+        "B/silver/chart_y/left",
+        "B/silver/chart_y/right"
+      ],
+      [
+        "B/violet/chart_a/left",
+        "B/violet/chart_a/right",
+        "B/violet/chart_b/left",
+        "B/violet/chart_b/right",
+        "B/violet/chart_l/left",
+        "B/violet/chart_l/right",
+        "B/violet/chart_p/left",
+        "B/violet/chart_p/right",
+        "B/violet/chart_q/left",
+        "B/violet/chart_q/right",
+        "B/violet/chart_r/left",
+        "B/violet/chart_r/right",
+        "B/violet/chart_w/left",
+        "B/violet/chart_w/right",
+        "B/violet/chart_y/left",
+        "B/violet/chart_y/right"
+      ]
+    ],
+    "mutual_reach_quotient_faithfully_represents_raw_reach": true,
+    "node_count": 48,
+    "nontrivial_mutual_reach_present": true,
+    "nontrivial_mutual_reach_witness": [
+      "B/amber/chart_a/left",
+      "B/amber/chart_a/right"
+    ],
+    "proxy_matches_completion_and_nontrivial_mutual_reach": true,
+    "reach_is_reflexive": true,
+    "reach_is_symmetric": true,
+    "reach_is_transitive": true,
+    "reach_pair_count": 768,
+    "reach_sha256": "7bab591bbb58db8f1eb101d43e74a5f25ff555742adba83ac5e6ad99190c736a",
+    "symmetry_case_count": 2304,
+    "symmetry_failure_count": 0,
+    "topology": {
+      "construction": "all unions of completed-reach equivalence classes",
+      "discrete": false,
+      "empty_open": true,
+      "equivalence_class_count": 3,
+      "equivalence_class_sizes": [
+        16,
+        16,
+        16
+      ],
+      "occurrence_count": 48,
+      "open_set_count": 8,
+      "open_sets": [
+        [],
+        [
+          "B/amber/chart_a/left",
+          "B/amber/chart_a/right",
+          "B/amber/chart_b/left",
+          "B/amber/chart_b/right",
+          "B/amber/chart_l/left",
+          "B/amber/chart_l/right",
+          "B/amber/chart_p/left",
+          "B/amber/chart_p/right",
+          "B/amber/chart_q/left",
+          "B/amber/chart_q/right",
+          "B/amber/chart_r/left",
+          "B/amber/chart_r/right",
+          "B/amber/chart_w/left",
+          "B/amber/chart_w/right",
+          "B/amber/chart_y/left",
+          "B/amber/chart_y/right"
+        ],
+        [
+          "B/silver/chart_a/left",
+          "B/silver/chart_a/right",
+          "B/silver/chart_b/left",
+          "B/silver/chart_b/right",
+          "B/silver/chart_l/left",
+          "B/silver/chart_l/right",
+          "B/silver/chart_p/left",
+          "B/silver/chart_p/right",
+          "B/silver/chart_q/left",
+          "B/silver/chart_q/right",
+          "B/silver/chart_r/left",
+          "B/silver/chart_r/right",
+          "B/silver/chart_w/left",
+          "B/silver/chart_w/right",
+          "B/silver/chart_y/left",
+          "B/silver/chart_y/right"
+        ],
+        [
+          "B/amber/chart_a/left",
+          "B/amber/chart_a/right",
+          "B/amber/chart_b/left",
+          "B/amber/chart_b/right",
+          "B/amber/chart_l/left",
+          "B/amber/chart_l/right",
+          "B/amber/chart_p/left",
+          "B/amber/chart_p/right",
+          "B/amber/chart_q/left",
+          "B/amber/chart_q/right",
+          "B/amber/chart_r/left",
+          "B/amber/chart_r/right",
+          "B/amber/chart_w/left",
+          "B/amber/chart_w/right",
+          "B/amber/chart_y/left",
+          "B/amber/chart_y/right",
+          "B/silver/chart_a/left",
+          "B/silver/chart_a/right",
+          "B/silver/chart_b/left",
+          "B/silver/chart_b/right",
+          "B/silver/chart_l/left",
+          "B/silver/chart_l/right",
+          "B/silver/chart_p/left",
+          "B/silver/chart_p/right",
+          "B/silver/chart_q/left",
+          "B/silver/chart_q/right",
+          "B/silver/chart_r/left",
+          "B/silver/chart_r/right",
+          "B/silver/chart_w/left",
+          "B/silver/chart_w/right",
+          "B/silver/chart_y/left",
+          "B/silver/chart_y/right"
+        ],
+        [
+          "B/violet/chart_a/left",
+          "B/violet/chart_a/right",
+          "B/violet/chart_b/left",
+          "B/violet/chart_b/right",
+          "B/violet/chart_l/left",
+          "B/violet/chart_l/right",
+          "B/violet/chart_p/left",
+          "B/violet/chart_p/right",
+          "B/violet/chart_q/left",
+          "B/violet/chart_q/right",
+          "B/violet/chart_r/left",
+          "B/violet/chart_r/right",
+          "B/violet/chart_w/left",
+          "B/violet/chart_w/right",
+          "B/violet/chart_y/left",
+          "B/violet/chart_y/right"
+        ],
+        [
+          "B/amber/chart_a/left",
+          "B/amber/chart_a/right",
+          "B/amber/chart_b/left",
+          "B/amber/chart_b/right",
+          "B/amber/chart_l/left",
+          "B/amber/chart_l/right",
+          "B/amber/chart_p/left",
+          "B/amber/chart_p/right",
+          "B/amber/chart_q/left",
+          "B/amber/chart_q/right",
+          "B/amber/chart_r/left",
+          "B/amber/chart_r/right",
+          "B/amber/chart_w/left",
+          "B/amber/chart_w/right",
+          "B/amber/chart_y/left",
+          "B/amber/chart_y/right",
+          "B/violet/chart_a/left",
+          "B/violet/chart_a/right",
+          "B/violet/chart_b/left",
+          "B/violet/chart_b/right",
+          "B/violet/chart_l/left",
+          "B/violet/chart_l/right",
+          "B/violet/chart_p/left",
+          "B/violet/chart_p/right",
+          "B/violet/chart_q/left",
+          "B/violet/chart_q/right",
+          "B/violet/chart_r/left",
+          "B/violet/chart_r/right",
+          "B/violet/chart_w/left",
+          "B/violet/chart_w/right",
+          "B/violet/chart_y/left",
+          "B/violet/chart_y/right"
+        ],
+        [
+          "B/silver/chart_a/left",
+          "B/silver/chart_a/right",
+          "B/silver/chart_b/left",
+          "B/silver/chart_b/right",
+          "B/silver/chart_l/left",
+          "B/silver/chart_l/right",
+          "B/silver/chart_p/left",
+          "B/silver/chart_p/right",
+          "B/silver/chart_q/left",
+          "B/silver/chart_q/right",
+          "B/silver/chart_r/left",
+          "B/silver/chart_r/right",
+          "B/silver/chart_w/left",
+          "B/silver/chart_w/right",
+          "B/silver/chart_y/left",
+          "B/silver/chart_y/right",
+          "B/violet/chart_a/left",
+          "B/violet/chart_a/right",
+          "B/violet/chart_b/left",
+          "B/violet/chart_b/right",
+          "B/violet/chart_l/left",
+          "B/violet/chart_l/right",
+          "B/violet/chart_p/left",
+          "B/violet/chart_p/right",
+          "B/violet/chart_q/left",
+          "B/violet/chart_q/right",
+          "B/violet/chart_r/left",
+          "B/violet/chart_r/right",
+          "B/violet/chart_w/left",
+          "B/violet/chart_w/right",
+          "B/violet/chart_y/left",
+          "B/violet/chart_y/right"
+        ],
+        [
+          "B/amber/chart_a/left",
+          "B/amber/chart_a/right",
+          "B/amber/chart_b/left",
+          "B/amber/chart_b/right",
+          "B/amber/chart_l/left",
+          "B/amber/chart_l/right",
+          "B/amber/chart_p/left",
+          "B/amber/chart_p/right",
+          "B/amber/chart_q/left",
+          "B/amber/chart_q/right",
+          "B/amber/chart_r/left",
+          "B/amber/chart_r/right",
+          "B/amber/chart_w/left",
+          "B/amber/chart_w/right",
+          "B/amber/chart_y/left",
+          "B/amber/chart_y/right",
+          "B/silver/chart_a/left",
+          "B/silver/chart_a/right",
+          "B/silver/chart_b/left",
+          "B/silver/chart_b/right",
+          "B/silver/chart_l/left",
+          "B/silver/chart_l/right",
+          "B/silver/chart_p/left",
+          "B/silver/chart_p/right",
+          "B/silver/chart_q/left",
+          "B/silver/chart_q/right",
+          "B/silver/chart_r/left",
+          "B/silver/chart_r/right",
+          "B/silver/chart_w/left",
+          "B/silver/chart_w/right",
+          "B/silver/chart_y/left",
+          "B/silver/chart_y/right",
+          "B/violet/chart_a/left",
+          "B/violet/chart_a/right",
+          "B/violet/chart_b/left",
+          "B/violet/chart_b/right",
+          "B/violet/chart_l/left",
+          "B/violet/chart_l/right",
+          "B/violet/chart_p/left",
+          "B/violet/chart_p/right",
+          "B/violet/chart_q/left",
+          "B/violet/chart_q/right",
+          "B/violet/chart_r/left",
+          "B/violet/chart_r/right",
+          "B/violet/chart_w/left",
+          "B/violet/chart_w/right",
+          "B/violet/chart_y/left",
+          "B/violet/chart_y/right"
+        ]
+      ],
+      "open_sets_enumerated": 8,
+      "pairwise_intersection_cases": 64,
+      "pairwise_intersection_failure_count": 0,
+      "pairwise_union_cases": 64,
+      "pairwise_union_failure_count": 0,
+      "return_connected_fibre_count": 3,
+      "topology_axioms_exhaustive_for_reference_partition": true,
+      "whole_open": true,
+      "whole_space_connected_in_standard_topological_sense": false
+    },
+    "translationally_complete": true
+  },
+  "pre_return_analysis": {
+    "admitted_equality_alignment": {
+      "admitted_equality_frozen_before_lines": true,
+      "first_overreach_witness": null,
+      "first_undercomplete_witness": [
+        "B/amber/chart_a/left",
+        "B/amber/chart_a/right"
+      ],
+      "local_ivi_w_present": true,
+      "local_ivi_w_witness": [
+        "B/amber/chart_a/left",
+        "B/amber/chart_a/right"
+      ],
+      "overreach_pair_count": 0,
+      "raw_reach_exactly_realizes_admitted_equality": false,
+      "undercomplete_pair_count": 552
+    },
+    "all_generating_edges_have_return_paths": true,
+    "completion_and_nontrivial_mutual_reach": false,
+    "edge_return_paths": [],
+    "faithful_nondiscrete_resolution_proxy": false,
+    "first_chain_lost_by_mutual_reach_quotient": [
+      "B/amber/chart_a/left",
+      "B/amber/chart_r/left"
+    ],
+    "first_missing_return_witness": [
+      "B/amber/chart_a/left",
+      "B/amber/chart_r/left"
+    ],
+    "first_return_invented_by_undirected_equivalence_closure": [
+      "B/amber/chart_a/left",
+      "B/amber/chart_b/left"
+    ],
+    "forward_line_count": 42,
+    "generating_edge_count": 42,
+    "mutual_reach_classes": [
+      [
+        "B/amber/chart_a/left"
+      ],
+      [
+        "B/amber/chart_a/right"
+      ],
+      [
+        "B/amber/chart_b/left"
+      ],
+      [
+        "B/amber/chart_b/right"
+      ],
+      [
+        "B/amber/chart_l/left"
+      ],
+      [
+        "B/amber/chart_l/right"
+      ],
+      [
+        "B/amber/chart_p/left"
+      ],
+      [
+        "B/amber/chart_p/right"
+      ],
+      [
+        "B/amber/chart_q/left"
+      ],
+      [
+        "B/amber/chart_q/right"
+      ],
+      [
+        "B/amber/chart_r/left"
+      ],
+      [
+        "B/amber/chart_r/right"
+      ],
+      [
+        "B/amber/chart_w/left"
+      ],
+      [
+        "B/amber/chart_w/right"
+      ],
+      [
+        "B/amber/chart_y/left"
+      ],
+      [
+        "B/amber/chart_y/right"
+      ],
+      [
+        "B/silver/chart_a/left"
+      ],
+      [
+        "B/silver/chart_a/right"
+      ],
+      [
+        "B/silver/chart_b/left"
+      ],
+      [
+        "B/silver/chart_b/right"
+      ],
+      [
+        "B/silver/chart_l/left"
+      ],
+      [
+        "B/silver/chart_l/right"
+      ],
+      [
+        "B/silver/chart_p/left"
+      ],
+      [
+        "B/silver/chart_p/right"
+      ],
+      [
+        "B/silver/chart_q/left"
+      ],
+      [
+        "B/silver/chart_q/right"
+      ],
+      [
+        "B/silver/chart_r/left"
+      ],
+      [
+        "B/silver/chart_r/right"
+      ],
+      [
+        "B/silver/chart_w/left"
+      ],
+      [
+        "B/silver/chart_w/right"
+      ],
+      [
+        "B/silver/chart_y/left"
+      ],
+      [
+        "B/silver/chart_y/right"
+      ],
+      [
+        "B/violet/chart_a/left"
+      ],
+      [
+        "B/violet/chart_a/right"
+      ],
+      [
+        "B/violet/chart_b/left"
+      ],
+      [
+        "B/violet/chart_b/right"
+      ],
+      [
+        "B/violet/chart_l/left"
+      ],
+      [
+        "B/violet/chart_l/right"
+      ],
+      [
+        "B/violet/chart_p/left"
+      ],
+      [
+        "B/violet/chart_p/right"
+      ],
+      [
+        "B/violet/chart_q/left"
+      ],
+      [
+        "B/violet/chart_q/right"
+      ],
+      [
+        "B/violet/chart_r/left"
+      ],
+      [
+        "B/violet/chart_r/right"
+      ],
+      [
+        "B/violet/chart_w/left"
+      ],
+      [
+        "B/violet/chart_w/right"
+      ],
+      [
+        "B/violet/chart_y/left"
+      ],
+      [
+        "B/violet/chart_y/right"
+      ]
+    ],
+    "mutual_reach_quotient_faithfully_represents_raw_reach": false,
+    "node_count": 48,
+    "nontrivial_mutual_reach_present": false,
+    "nontrivial_mutual_reach_witness": null,
+    "proxy_matches_completion_and_nontrivial_mutual_reach": true,
+    "reach_is_reflexive": true,
+    "reach_is_symmetric": false,
+    "reach_is_transitive": true,
+    "reach_pair_count": 216,
+    "reach_sha256": "49330dcb92e3a0d26a5c86513a5b86dfaf8ff7d18999a23e1a227c830b44c3cc",
+    "status": "PENDING_INDEPENDENT_RETURN",
+    "symmetry_case_count": 2304,
+    "symmetry_failure_count": 168,
+    "topology": null,
+    "translationally_complete": false,
+    "withheld_return_line_count": 6
+  },
+  "questions": [
+    {
+      "equality_comparisons": 2304,
+      "factorization_unique": true,
+      "frame_equality": "completed raw reachability",
+      "frame_id": "B",
+      "open_in_frame": false,
+      "open_witness": null,
+      "question_anchor": "B/amber/chart_q/left",
+      "question_id": "same_returned_basis_as_translated_anchor",
+      "resolved_in_frame": true,
+      "total_occurrence_values": 48,
+      "unique_quotient_factor": {
+        "class_0": true,
+        "class_1": false,
+        "class_2": false
+      }
+    },
+    {
+      "equality_comparisons": 2304,
+      "factorization_unique": false,
+      "frame_equality": "completed raw reachability",
+      "frame_id": "B",
+      "open_in_frame": true,
+      "open_witness": {
+        "frame_equal": true,
+        "left": "B/amber/chart_a/left",
+        "left_value": true,
+        "right": "B/amber/chart_a/right",
+        "right_value": false,
+        "separates_frame_equal_pair": true
+      },
+      "question_anchor": null,
+      "question_id": "literal_first_pole",
+      "resolved_in_frame": false,
+      "total_occurrence_values": 48,
+      "unique_quotient_factor": null
+    },
+    {
+      "equality_comparisons": 2304,
+      "factorization_unique": false,
+      "frame_equality": "completed raw reachability",
+      "frame_id": "B",
+      "open_in_frame": true,
+      "open_witness": {
+        "frame_equal": true,
+        "left": "B/amber/chart_a/left",
+        "left_value": false,
+        "right": "B/amber/chart_q/left",
+        "right_value": true,
+        "separates_frame_equal_pair": true
+      },
+      "question_anchor": null,
+      "question_id": "literal_goal_stage",
+      "resolved_in_frame": false,
+      "total_occurrence_values": 48,
+      "unique_quotient_factor": null
+    }
+  ],
+  "return_monodromy": {
+    "case_count": 6,
+    "cases": [
+      {
+        "after_one_episode": "B/amber/chart_q/right",
+        "after_two_episodes": "B/amber/chart_q/left",
+        "one_episode_literal_return": false,
+        "one_episode_pole_swapped": true,
+        "one_episode_returns_basis": true,
+        "one_episode_returns_stage": true,
+        "start": "B/amber/chart_q/left",
+        "two_episode_literal_return": true
+      },
+      {
+        "after_one_episode": "B/amber/chart_q/left",
+        "after_two_episodes": "B/amber/chart_q/right",
+        "one_episode_literal_return": false,
+        "one_episode_pole_swapped": true,
+        "one_episode_returns_basis": true,
+        "one_episode_returns_stage": true,
+        "start": "B/amber/chart_q/right",
+        "two_episode_literal_return": true
+      },
+      {
+        "after_one_episode": "B/violet/chart_q/right",
+        "after_two_episodes": "B/violet/chart_q/left",
+        "one_episode_literal_return": false,
+        "one_episode_pole_swapped": true,
+        "one_episode_returns_basis": true,
+        "one_episode_returns_stage": true,
+        "start": "B/violet/chart_q/left",
+        "two_episode_literal_return": true
+      },
+      {
+        "after_one_episode": "B/violet/chart_q/left",
+        "after_two_episodes": "B/violet/chart_q/right",
+        "one_episode_literal_return": false,
+        "one_episode_pole_swapped": true,
+        "one_episode_returns_basis": true,
+        "one_episode_returns_stage": true,
+        "start": "B/violet/chart_q/right",
+        "two_episode_literal_return": true
+      },
+      {
+        "after_one_episode": "B/silver/chart_q/right",
+        "after_two_episodes": "B/silver/chart_q/left",
+        "one_episode_literal_return": false,
+        "one_episode_pole_swapped": true,
+        "one_episode_returns_basis": true,
+        "one_episode_returns_stage": true,
+        "start": "B/silver/chart_q/left",
+        "two_episode_literal_return": true
+      },
+      {
+        "after_one_episode": "B/silver/chart_q/left",
+        "after_two_episodes": "B/silver/chart_q/right",
+        "one_episode_literal_return": false,
+        "one_episode_pole_swapped": true,
+        "one_episode_returns_basis": true,
+        "one_episode_returns_stage": true,
+        "start": "B/silver/chart_q/right",
+        "two_episode_literal_return": true
+      }
+    ],
+    "formal_holonomy_or_homotopy_status": "PENDING_PRE_COHERENCE_PATH_LAYER",
+    "interpretation": "the eight-step return episode induces a nontrivial pole-swap monodromy while preserving returned basis",
+    "nontrivial_occurrence_monodromy_count": 6,
+    "pole_swap_count": 6,
+    "returned_basis_identity_count": 6,
+    "two_episode_literal_return_count": 6
+  }
+}

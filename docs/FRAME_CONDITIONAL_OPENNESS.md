@@ -20,7 +20,9 @@ unique factor. `openIn_iff_exists_separating_pair` also proves that openness is 
 existence of two frame-equal occurrences separated by `Q`. Openness is therefore never a property
 of `Q` alone. Its runtime witness consists of `frame_id`, `question_id`, and that separating pair.
 
-A comparison is accepted as `GeomEquiv` before any question is classified:
+A local question can be classified inside its own frozen frame before any
+comparison exists. Cross-frame agreement for independently supplied questions
+is checked only after a comparison is accepted as `GeomEquiv`:
 
 ```text
 GeomEquiv(F,G,T) := T is reversible and
@@ -67,6 +69,14 @@ assumed local equality → internal audit → raw T → GeomEquiv → explicit (
 An equality-collapse control fails reflection. A separate bijective operation twist passes
 `GeomEquiv` and then fails multiplication naturality. This makes equality equivalence and
 downstream translational closure observably distinct gates.
+
+## Not the same as a topologically open set
+
+The maze-completion experiment now defines a finite topology whose open subsets are unions of
+completed-reach classes. Those `TopoOpen(U)` subsets are not the project predicate `OpenIn(F,Q)`.
+A question is `OpenIn` when it varies inside one such class; its inverse images therefore fail to
+be saturated. The runtime keeps both notions in separate fields and still requires an explicit
+frame-equal separating witness for every `OpenIn` classification.
 
 ## Scope
 

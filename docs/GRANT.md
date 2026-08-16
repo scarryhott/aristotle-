@@ -81,7 +81,7 @@ Within a translational frame, closure equality is
 u ≡_C v  iff  W_l(u) = W_l(v).
 ```
 
-Translation preserves and reflects this equality. The broader formal sequence establishes quotient/naturality/universal-property consequences and frame-conditional openness. The separately reported NRRF633 result further shows that, conditional on the translational frame, a returning and grounded relational definition is uniquely closure equality; translation then forces its naturality.
+Translation preserves and reflects this equality. The broader formal sequence establishes quotient/naturality/universal-property consequences and frame-conditional openness. The separately reported NRRF633 result further shows that, conditional on the translational frame, a returning and grounded relational definition is uniquely closure equality; translation then forces its naturality. The separately reported NRRF639 result adds that the closure thesis holds exactly when raw translational reach is completed by returns and IVI is present. NRRF633/639 sources absent from this checkout are not reconstructed or presented as locally re-audited.
 
 A runtime reference frame is represented by its admitted equality. A comparison becomes `GeomEquiv` only when it preserves and reflects both frames' equalities:
 
@@ -121,12 +121,15 @@ The completed suite includes:
 - a strong ordinary proof/isomorphism baseline on identical frozen inputs;
 - external axiom-geometry interaction with typed relational lineage;
 - generative axiom-geometry isolation with post-freeze candidate search;
+- a pre-quotient maze assay deriving completed reach, exact equality realization, saturation topology, `LocalIVI_W`, return monodromy, and receipt-after-resolution from explicit return paths;
 - explicit equality-collapse, operation-twist, cardinality, non-isomorphism, pending, and interface-boundary controls;
 - deterministic evidence replay and Lean/experiment CI.
 
 The strong classical baseline accepts genuine ordinary isomorphisms, including noncanonical orientation changes. The translational arm does not claim classical mathematics is incapable of expressing closure; it adds explicit frame-equality, preservation/reflection, naturality, quotient-question, obstruction, lineage, and transfer certificates.
 
 The bounded generative lane enumerates 1,440 post-freeze forms and admits six fully natural translations corresponding to the six ordinary isomorphisms retained independently by the classical baseline. Preserved raw D4/S3 and D4/Q8 controls expose cardinality and operation-level obstructions without normalizing the frames into compatibility.
+
+The bounded maze lane separately begins before quotient resolution while retaining a supplied Setoid-like frame equality: two 48-occurrence frames freeze their equality before the deterministic process derives and reloads the learning-line subsets; 42 forward lines remain incomplete, while six return lines complete 768 reach pairs into the exact three frozen fibres. The resulting occurrence-space saturation topology has eight opens. Six finite proxy fixtures—the four completion/`LocalIVI_W` combinations plus `UNDERCOMPLETE` and `OVERREACH`—a before/after receipt-gate recomputation, and a matching strong classical topology baseline keep the claim falsifiable. The runtime gate is completion plus `LocalIVI_W` plus exact reach/equality alignment; it is a bounded proxy, not a redefinition of the unavailable NRRF639 `ClosureThesis`.
 
 These are bounded protocol results, not an executed Aristotle or general ASI result.
 

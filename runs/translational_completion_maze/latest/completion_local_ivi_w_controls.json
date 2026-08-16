@@ -1,0 +1,516 @@
+{
+  "all_six_cases_match_runtime_three_condition_gate": true,
+  "case_count": 4,
+  "cases": {
+    "completion_with_local_ivi_w": {
+      "admitted_equality_alignment": {
+        "admitted_equality_frozen_before_lines": true,
+        "first_overreach_witness": null,
+        "first_undercomplete_witness": null,
+        "local_ivi_w_present": true,
+        "local_ivi_w_witness": [
+          "a",
+          "b"
+        ],
+        "overreach_pair_count": 0,
+        "raw_reach_exactly_realizes_admitted_equality": true,
+        "undercomplete_pair_count": 0
+      },
+      "all_generating_edges_have_return_paths": true,
+      "completion_and_nontrivial_mutual_reach": true,
+      "edge_return_paths": [],
+      "faithful_nondiscrete_proxy_relative_to_frozen_frame": true,
+      "faithful_nondiscrete_resolution_proxy": true,
+      "first_chain_lost_by_mutual_reach_quotient": null,
+      "first_missing_return_witness": null,
+      "first_return_invented_by_undirected_equivalence_closure": null,
+      "generating_edge_count": 4,
+      "local_ivi_w_present": true,
+      "mutual_reach_classes": [
+        [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      ],
+      "mutual_reach_quotient_faithfully_represents_raw_reach": true,
+      "node_count": 4,
+      "nontrivial_mutual_reach_present": true,
+      "nontrivial_mutual_reach_witness": [
+        "a",
+        "b"
+      ],
+      "proxy_matches_completion_and_nontrivial_mutual_reach": true,
+      "proxy_matches_runtime_three_condition_gate": true,
+      "reach_is_reflexive": true,
+      "reach_is_symmetric": true,
+      "reach_is_transitive": true,
+      "reach_pair_count": 16,
+      "reach_sha256": "6f1212f35e4ce45e017ddeaf68d84bbc22bf7038e7133375b77c298f6fcacb09",
+      "runtime_gate_completion_local_ivi_w_and_alignment": true,
+      "symmetry_case_count": 16,
+      "symmetry_failure_count": 0,
+      "topology": {
+        "construction": "all unions of completed-reach equivalence classes",
+        "discrete": false,
+        "empty_open": true,
+        "equivalence_class_count": 1,
+        "equivalence_class_sizes": [
+          4
+        ],
+        "occurrence_count": 4,
+        "open_set_count": 2,
+        "open_sets": [
+          [],
+          [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        ],
+        "open_sets_enumerated": 2,
+        "pairwise_intersection_cases": 4,
+        "pairwise_intersection_failure_count": 0,
+        "pairwise_union_cases": 4,
+        "pairwise_union_failure_count": 0,
+        "return_connected_fibre_count": 1,
+        "topology_axioms_exhaustive_for_reference_partition": true,
+        "whole_open": true,
+        "whole_space_connected_in_standard_topological_sense": true
+      },
+      "translationally_complete": true
+    },
+    "completion_without_local_ivi_w": {
+      "admitted_equality_alignment": {
+        "admitted_equality_frozen_before_lines": true,
+        "first_overreach_witness": null,
+        "first_undercomplete_witness": null,
+        "local_ivi_w_present": false,
+        "local_ivi_w_witness": null,
+        "overreach_pair_count": 0,
+        "raw_reach_exactly_realizes_admitted_equality": true,
+        "undercomplete_pair_count": 0
+      },
+      "all_generating_edges_have_return_paths": true,
+      "completion_and_nontrivial_mutual_reach": false,
+      "edge_return_paths": [],
+      "faithful_nondiscrete_proxy_relative_to_frozen_frame": false,
+      "faithful_nondiscrete_resolution_proxy": false,
+      "first_chain_lost_by_mutual_reach_quotient": null,
+      "first_missing_return_witness": null,
+      "first_return_invented_by_undirected_equivalence_closure": null,
+      "generating_edge_count": 0,
+      "local_ivi_w_present": false,
+      "mutual_reach_classes": [
+        [
+          "a"
+        ],
+        [
+          "b"
+        ],
+        [
+          "c"
+        ],
+        [
+          "d"
+        ]
+      ],
+      "mutual_reach_quotient_faithfully_represents_raw_reach": true,
+      "node_count": 4,
+      "nontrivial_mutual_reach_present": false,
+      "nontrivial_mutual_reach_witness": null,
+      "proxy_matches_completion_and_nontrivial_mutual_reach": true,
+      "proxy_matches_runtime_three_condition_gate": true,
+      "reach_is_reflexive": true,
+      "reach_is_symmetric": true,
+      "reach_is_transitive": true,
+      "reach_pair_count": 4,
+      "reach_sha256": "fd5e9f06787a95df41559b2ce70a054c9359626284aa621017e71069cf098a19",
+      "runtime_gate_completion_local_ivi_w_and_alignment": false,
+      "symmetry_case_count": 16,
+      "symmetry_failure_count": 0,
+      "topology": {
+        "construction": "all unions of completed-reach equivalence classes",
+        "discrete": true,
+        "empty_open": true,
+        "equivalence_class_count": 4,
+        "equivalence_class_sizes": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "occurrence_count": 4,
+        "open_set_count": 16,
+        "open_sets": [
+          [],
+          [
+            "a"
+          ],
+          [
+            "b"
+          ],
+          [
+            "a",
+            "b"
+          ],
+          [
+            "c"
+          ],
+          [
+            "a",
+            "c"
+          ],
+          [
+            "b",
+            "c"
+          ],
+          [
+            "a",
+            "b",
+            "c"
+          ],
+          [
+            "d"
+          ],
+          [
+            "a",
+            "d"
+          ],
+          [
+            "b",
+            "d"
+          ],
+          [
+            "a",
+            "b",
+            "d"
+          ],
+          [
+            "c",
+            "d"
+          ],
+          [
+            "a",
+            "c",
+            "d"
+          ],
+          [
+            "b",
+            "c",
+            "d"
+          ],
+          [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        ],
+        "open_sets_enumerated": 16,
+        "pairwise_intersection_cases": 256,
+        "pairwise_intersection_failure_count": 0,
+        "pairwise_union_cases": 256,
+        "pairwise_union_failure_count": 0,
+        "return_connected_fibre_count": 4,
+        "topology_axioms_exhaustive_for_reference_partition": true,
+        "whole_open": true,
+        "whole_space_connected_in_standard_topological_sense": false
+      },
+      "translationally_complete": true
+    },
+    "local_ivi_w_without_completion": {
+      "admitted_equality_alignment": {
+        "admitted_equality_frozen_before_lines": true,
+        "first_overreach_witness": null,
+        "first_undercomplete_witness": [
+          "c",
+          "a"
+        ],
+        "local_ivi_w_present": true,
+        "local_ivi_w_witness": [
+          "a",
+          "b"
+        ],
+        "overreach_pair_count": 0,
+        "raw_reach_exactly_realizes_admitted_equality": false,
+        "undercomplete_pair_count": 2
+      },
+      "all_generating_edges_have_return_paths": true,
+      "completion_and_nontrivial_mutual_reach": false,
+      "edge_return_paths": [],
+      "faithful_nondiscrete_proxy_relative_to_frozen_frame": false,
+      "faithful_nondiscrete_resolution_proxy": false,
+      "first_chain_lost_by_mutual_reach_quotient": [
+        "a",
+        "c"
+      ],
+      "first_missing_return_witness": [
+        "a",
+        "c"
+      ],
+      "first_return_invented_by_undirected_equivalence_closure": [
+        "c",
+        "a"
+      ],
+      "generating_edge_count": 3,
+      "local_ivi_w_present": true,
+      "mutual_reach_classes": [
+        [
+          "a",
+          "b"
+        ],
+        [
+          "c"
+        ]
+      ],
+      "mutual_reach_quotient_faithfully_represents_raw_reach": false,
+      "node_count": 3,
+      "nontrivial_mutual_reach_present": true,
+      "nontrivial_mutual_reach_witness": [
+        "a",
+        "b"
+      ],
+      "proxy_matches_completion_and_nontrivial_mutual_reach": true,
+      "proxy_matches_runtime_three_condition_gate": true,
+      "reach_is_reflexive": true,
+      "reach_is_symmetric": false,
+      "reach_is_transitive": true,
+      "reach_pair_count": 7,
+      "reach_sha256": "328729206a7a02d061d00a8eb4f780cb88d6111be9990e636017ef62bab98395",
+      "runtime_gate_completion_local_ivi_w_and_alignment": false,
+      "symmetry_case_count": 9,
+      "symmetry_failure_count": 2,
+      "topology": null,
+      "translationally_complete": false
+    },
+    "neither_completion_nor_local_ivi_w": {
+      "admitted_equality_alignment": {
+        "admitted_equality_frozen_before_lines": true,
+        "first_overreach_witness": [
+          "a",
+          "b"
+        ],
+        "first_undercomplete_witness": null,
+        "local_ivi_w_present": false,
+        "local_ivi_w_witness": null,
+        "overreach_pair_count": 1,
+        "raw_reach_exactly_realizes_admitted_equality": false,
+        "undercomplete_pair_count": 0
+      },
+      "all_generating_edges_have_return_paths": true,
+      "completion_and_nontrivial_mutual_reach": false,
+      "edge_return_paths": [],
+      "faithful_nondiscrete_proxy_relative_to_frozen_frame": false,
+      "faithful_nondiscrete_resolution_proxy": false,
+      "first_chain_lost_by_mutual_reach_quotient": [
+        "a",
+        "b"
+      ],
+      "first_missing_return_witness": [
+        "a",
+        "b"
+      ],
+      "first_return_invented_by_undirected_equivalence_closure": [
+        "b",
+        "a"
+      ],
+      "generating_edge_count": 1,
+      "local_ivi_w_present": false,
+      "mutual_reach_classes": [
+        [
+          "a"
+        ],
+        [
+          "b"
+        ]
+      ],
+      "mutual_reach_quotient_faithfully_represents_raw_reach": false,
+      "node_count": 2,
+      "nontrivial_mutual_reach_present": false,
+      "nontrivial_mutual_reach_witness": null,
+      "proxy_matches_completion_and_nontrivial_mutual_reach": true,
+      "proxy_matches_runtime_three_condition_gate": true,
+      "reach_is_reflexive": true,
+      "reach_is_symmetric": false,
+      "reach_is_transitive": true,
+      "reach_pair_count": 3,
+      "reach_sha256": "1ef7f72df7d011b4f03e2cf2fb95216634caa6681492bf971faaa39c5fb63cf7",
+      "runtime_gate_completion_local_ivi_w_and_alignment": false,
+      "symmetry_case_count": 4,
+      "symmetry_failure_count": 1,
+      "topology": null,
+      "translationally_complete": false
+    }
+  },
+  "frame_reach_alignment_controls": {
+    "overreach_relative_to_frozen_equality": {
+      "admitted_equality_alignment": {
+        "admitted_equality_frozen_before_lines": true,
+        "first_overreach_witness": [
+          "a",
+          "b"
+        ],
+        "first_undercomplete_witness": null,
+        "local_ivi_w_present": false,
+        "local_ivi_w_witness": null,
+        "overreach_pair_count": 2,
+        "raw_reach_exactly_realizes_admitted_equality": false,
+        "undercomplete_pair_count": 0
+      },
+      "all_generating_edges_have_return_paths": true,
+      "completion_and_nontrivial_mutual_reach": true,
+      "edge_return_paths": [],
+      "faithful_nondiscrete_proxy_relative_to_frozen_frame": false,
+      "faithful_nondiscrete_resolution_proxy": true,
+      "first_chain_lost_by_mutual_reach_quotient": null,
+      "first_missing_return_witness": null,
+      "first_return_invented_by_undirected_equivalence_closure": null,
+      "generating_edge_count": 2,
+      "local_ivi_w_present": false,
+      "mutual_reach_classes": [
+        [
+          "a",
+          "b"
+        ]
+      ],
+      "mutual_reach_quotient_faithfully_represents_raw_reach": true,
+      "node_count": 2,
+      "nontrivial_mutual_reach_present": true,
+      "nontrivial_mutual_reach_witness": [
+        "a",
+        "b"
+      ],
+      "proxy_matches_completion_and_nontrivial_mutual_reach": true,
+      "proxy_matches_runtime_three_condition_gate": true,
+      "reach_is_reflexive": true,
+      "reach_is_symmetric": true,
+      "reach_is_transitive": true,
+      "reach_pair_count": 4,
+      "reach_sha256": "467562d1e5361104169620906a2838650c423c7a22b35ef1638c205f41bc5e04",
+      "runtime_gate_completion_local_ivi_w_and_alignment": false,
+      "symmetry_case_count": 4,
+      "symmetry_failure_count": 0,
+      "topology": {
+        "construction": "all unions of completed-reach equivalence classes",
+        "discrete": false,
+        "empty_open": true,
+        "equivalence_class_count": 1,
+        "equivalence_class_sizes": [
+          2
+        ],
+        "occurrence_count": 2,
+        "open_set_count": 2,
+        "open_sets": [
+          [],
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "open_sets_enumerated": 2,
+        "pairwise_intersection_cases": 4,
+        "pairwise_intersection_failure_count": 0,
+        "pairwise_union_cases": 4,
+        "pairwise_union_failure_count": 0,
+        "return_connected_fibre_count": 1,
+        "topology_axioms_exhaustive_for_reference_partition": true,
+        "whole_open": true,
+        "whole_space_connected_in_standard_topological_sense": true
+      },
+      "translationally_complete": true
+    },
+    "undercomplete_reach_relative_to_frozen_equality": {
+      "admitted_equality_alignment": {
+        "admitted_equality_frozen_before_lines": true,
+        "first_overreach_witness": null,
+        "first_undercomplete_witness": [
+          "a",
+          "b"
+        ],
+        "local_ivi_w_present": true,
+        "local_ivi_w_witness": [
+          "a",
+          "b"
+        ],
+        "overreach_pair_count": 0,
+        "raw_reach_exactly_realizes_admitted_equality": false,
+        "undercomplete_pair_count": 2
+      },
+      "all_generating_edges_have_return_paths": true,
+      "completion_and_nontrivial_mutual_reach": false,
+      "edge_return_paths": [],
+      "faithful_nondiscrete_proxy_relative_to_frozen_frame": false,
+      "faithful_nondiscrete_resolution_proxy": false,
+      "first_chain_lost_by_mutual_reach_quotient": null,
+      "first_missing_return_witness": null,
+      "first_return_invented_by_undirected_equivalence_closure": null,
+      "generating_edge_count": 0,
+      "local_ivi_w_present": true,
+      "mutual_reach_classes": [
+        [
+          "a"
+        ],
+        [
+          "b"
+        ]
+      ],
+      "mutual_reach_quotient_faithfully_represents_raw_reach": true,
+      "node_count": 2,
+      "nontrivial_mutual_reach_present": false,
+      "nontrivial_mutual_reach_witness": null,
+      "proxy_matches_completion_and_nontrivial_mutual_reach": true,
+      "proxy_matches_runtime_three_condition_gate": true,
+      "reach_is_reflexive": true,
+      "reach_is_symmetric": true,
+      "reach_is_transitive": true,
+      "reach_pair_count": 2,
+      "reach_sha256": "dc82df3be55ef09114bd1f51a3bcec9b499292d3987c2f47eba88df312d44c9e",
+      "runtime_gate_completion_local_ivi_w_and_alignment": false,
+      "symmetry_case_count": 4,
+      "symmetry_failure_count": 0,
+      "topology": {
+        "construction": "all unions of completed-reach equivalence classes",
+        "discrete": true,
+        "empty_open": true,
+        "equivalence_class_count": 2,
+        "equivalence_class_sizes": [
+          1,
+          1
+        ],
+        "occurrence_count": 2,
+        "open_set_count": 4,
+        "open_sets": [
+          [],
+          [
+            "a"
+          ],
+          [
+            "b"
+          ],
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "open_sets_enumerated": 4,
+        "pairwise_intersection_cases": 16,
+        "pairwise_intersection_failure_count": 0,
+        "pairwise_union_cases": 16,
+        "pairwise_union_failure_count": 0,
+        "return_connected_fibre_count": 2,
+        "topology_axioms_exhaustive_for_reference_partition": true,
+        "whole_open": true,
+        "whole_space_connected_in_standard_topological_sense": false
+      },
+      "translationally_complete": true
+    }
+  },
+  "neither_condition_implies_the_other": true,
+  "overreach_witness_retained": true,
+  "runtime_gate": "translational completion AND LocalIVI_W AND exact reach/equality alignment",
+  "schema_version": "completion-local-ivi-w-controls-1.0",
+  "undercomplete_witness_retained": true
+}

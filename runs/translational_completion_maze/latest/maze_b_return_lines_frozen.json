@@ -1,0 +1,73 @@
+{
+  "frame_id": "B",
+  "frozen_after_local_equality": true,
+  "learning_translation": {
+    "B/amber/chart_r/left": "B/amber/chart_q/right",
+    "B/amber/chart_r/right": "B/amber/chart_q/left",
+    "B/silver/chart_r/left": "B/silver/chart_q/right",
+    "B/silver/chart_r/right": "B/silver/chart_q/left",
+    "B/violet/chart_r/left": "B/violet/chart_q/right",
+    "B/violet/chart_r/right": "B/violet/chart_q/left"
+  },
+  "line_set": [
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "B:line:0:15",
+      "path_or_wall_exclusive": true,
+      "source": "B/amber/chart_r/right",
+      "target": "B/amber/chart_q/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "B:line:0:7",
+      "path_or_wall_exclusive": true,
+      "source": "B/amber/chart_r/left",
+      "target": "B/amber/chart_q/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "B:line:1:15",
+      "path_or_wall_exclusive": true,
+      "source": "B/violet/chart_r/right",
+      "target": "B/violet/chart_q/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "B:line:1:7",
+      "path_or_wall_exclusive": true,
+      "source": "B/violet/chart_r/left",
+      "target": "B/violet/chart_q/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "B:line:2:15",
+      "path_or_wall_exclusive": true,
+      "source": "B/silver/chart_r/right",
+      "target": "B/silver/chart_q/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "B:line:2:7",
+      "path_or_wall_exclusive": true,
+      "source": "B/silver/chart_r/left",
+      "target": "B/silver/chart_q/right"
+    }
+  ],
+  "line_subset": "return",
+  "parent_frozen_geometry_sha256": "4d13a0813cbee538c67b537f7a3e1f7a9e67b843c67ebbaf96ed0d5bc37c6cfe",
+  "process_independence_claimed": false,
+  "same_process_designed_fixture": true,
+  "schema_version": "maze-line-subset-1.0"
+}

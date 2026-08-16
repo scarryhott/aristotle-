@@ -127,6 +127,52 @@ IVI across frames therefore means that relational identity survives this typed t
 
 ## Runtime interpretation
 
+### IVI and translational completion
+
+The project currently uses the executed closure-translational runtime as its
+operational specification and cites the NRRF599/639 Lean development as an
+external formal reference. The external report guides comparison and future
+bridging, but its unavailable definitions are not silently imported into the
+runtime vocabulary.
+
+The bounded maze uses a deliberately weaker local predicate:
+
+```text
+LocalIVI_W(F,b) := exists u v, u != v and W_F(u)=b and W_F(v)=b
+LocalIVI_W(F)   := exists b, LocalIVI_W(F,b).
+```
+
+`LocalIVI_W` says only that a frozen return has a non-singleton fibre. It is a
+local non-faithfulness witness; it does not by itself establish the stronger
+cross-frame, naturally recoverable translational IVI defined above.
+
+The separately reported NRRF639 result supplies a condition that the earlier
+archive did not state: the closure thesis holds exactly when translational
+completion and IVI are both present. Completion means that every raw directed
+reach chain has an actual return chain, so raw reach itself is an equivalence
+relation. IVI supplies the non-injective relational content: distinct
+occurrences resolve together without becoming literally identical.
+
+For the bounded runtime, the roles of completion and `LocalIVI_W` are
+independent. Completion without `LocalIVI_W` yields a discrete resolved
+presentation space; `LocalIVI_W` in a frozen equality without completed return
+does not yet disclose a faithful reach quotient. A mutual-reach quotient can lose
+one-way chains, while a manufactured equivalence closure can invent missing
+returns. Neither substitutes for completion of the original relation.
+
+NRRF639 and its NRRF599 dependency are not present in this checkout, so these
+theorems remain marked as reported outside the checkout and not locally
+audited. The bounded maze runtime instead executes six fixtures for a distinct
+three-premise proxy: completion, `LocalIVI_W`, and exact realization of the
+equality frozen before the maze was evaluated. It does not identify that proxy
+with the unavailable NRRF639 `ClosureThesis`.
+
+The exact finite topology used by that runtime is the saturation topology on
+occurrences: open sets are unions of completed-reach classes. It is
+non-discrete when a `LocalIVI_W` fibre has multiple occurrences. This does not imply
+that the resolved quotient space itself is non-discrete or that completion
+implies standard topological connectedness.
+
 The current bounded runtimes operationalize IVI through explicit evidence lineage rather than a static verdict.
 
 The relevant order is:

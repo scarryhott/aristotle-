@@ -87,6 +87,38 @@ This is causal generative isolation inside a deterministic bounded proxy. It doe
 
 See [`GENERATIVE_AXIOM_GEOMETRY_ISOLATION_PROTOCOL.md`](GENERATIVE_AXIOM_GEOMETRY_ISOLATION_PROTOCOL.md), [`GENERATIVE_AXIOM_GEOMETRY_ISOLATION_RUN.md`](GENERATIVE_AXIOM_GEOMETRY_ISOLATION_RUN.md), and [`../benchmarks/generative_axiom_geometry_isolation/RUNBOOK.md`](../benchmarks/generative_axiom_geometry_isolation/RUNBOOK.md).
 
+### E1.1 — Translational-completion maze topology
+
+Status: **EXECUTED BOUNDED DESIGNED PROXY**.
+
+This standalone run does not retrofit topology onto the older receipt-lineage
+experiments. It freezes each local axiom-geometry/equality before a single
+directed learning-line set, derives raw reach, and withholds the six declared
+return lines for a pre-return control. Before return, reach has 168 missing
+reverse pairs and fails to realize 552 frozen-equality pairs. After return, all
+48 generating lines have explicit 15-line reverse paths; the 768 reach pairs
+form an equivalence and exactly realize three previously frozen classes of 16.
+
+Only then does the runtime derive the saturation topology on occurrences: 8
+open sets, three return-connected (strongly/mutually reachable) fibres, and a non-discrete occurrence space.
+The whole space is not connected in the standard topological sense, which is
+reported separately from completion. One learning episode has pole-swap return
+monodromy while preserving returned identity; two episodes return
+literally. Proof-relevant homotopy classification remains pending.
+
+The run executes the four completion/`LocalIVI_W` combinations, explicit
+`UNDERCOMPLETE` and `OVERREACH` controls, SCC-loss and manufactured-return
+controls for incomplete relations, quotient factorization, witnessed
+`OpenIn`, a 96-form post-freeze translation family with 12 fully natural forms
+and 1,728 passing registered-question transport cases,
+and a before/after receipt-gate recomputation. A strong classical Floyd-Warshall/SCC baseline
+reproduces the finite relations and topology counts exactly.
+
+NRRF639 is a separately reported result whose source is not in this checkout;
+this experiment tests a finite analogue whose conditions can be compared with
+the reported boundary; it does not re-audit or replace it. See
+[`TRANSLATIONAL_COMPLETION_MAZE_TOPOLOGY_RUN.md`](TRANSLATIONAL_COMPLETION_MAZE_TOPOLOGY_RUN.md).
+
 ## Reproduction
 
 A reviewer can reproduce the principal verification suite directly:
@@ -96,6 +128,7 @@ python3 experiments/full_stack_math_asi.py --assert-reference
 python3 experiments/classical_vs_closure_asi.py --assert-reference
 python3 experiments/three_part_assumption_interaction_asi.py --assert-reference
 python3 experiments/generative_axiom_geometry_isolation.py --assert-reference
+python3 experiments/translational_completion_maze.py --assert-reference
 python3 -m unittest discover -s tests -v
 lake build
 ```

@@ -82,6 +82,26 @@ records its unique quotient factor. An open question records an actual pair `x~y
 `Q(x) != Q(y)`. Cross-frame transport is attached only to admitted translational-form identifiers,
 and the held-out next basis cites the exact selected form.
 
+## Maze reach relative to frozen equality
+
+The translational-completion maze adds a distinct pre-quotient check. Each local admitted equality
+freezes and reloads before the deterministic process derives its learning-line subsets. Forward
+reach is evaluated before the return subset is derived; the disclosed full line set is reloaded and
+validated against both subset hashes before analysis. Raw directed reach is derived without using
+the equality to add edges. A completed maze is admitted for topology resolution only when:
+
+```text
+raw reach is symmetric
+and
+raw reach(x,y) iff x ~_F y.
+```
+
+The first condition is translational completion; the second prevents completion from silently
+changing the local axiom-geometry. `UNDERCOMPLETE` records frame-equal pairs not realized by the
+maze, while `OVERREACH` records paths crossing a frozen equality boundary. Both are typed
+obstructions, not `OpenIn` questions and not invitations to redefine the frame after seeing the
+lines.
+
 ## Formal boundary
 
 `NRRF631RuntimeFrameConditionalBridge.lean` exposes `assumeAxiomGeometry`: an explicit constructor

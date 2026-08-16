@@ -1,0 +1,53 @@
+{
+  "admission_token": {
+    "count": 0,
+    "issued": false,
+    "return_process_independent": false,
+    "selected_translation": null,
+    "selected_translation_admitted": false,
+    "status": "NOT_ADMITTED_WITHOUT_INDEPENDENT_RETURN_AND_ADMITTED_SELECTION"
+  },
+  "bounded_topology_receipt": {
+    "admitted_translation_count": 12,
+    "cause_of_topology": false,
+    "conditions": {
+      "local_ivi_w_present": true,
+      "raw_reach_exactly_realizes_frozen_equality": true,
+      "translational_completion": true
+    },
+    "failed_conditions": [],
+    "issued": true,
+    "issued_after_topology": true,
+    "receipt_kind": "resolved_topology_receipt",
+    "selected_translation": null,
+    "source_topology_sha256": "dee84b63e67cba8f0ec20457a9a848f1a35216dcf7c6d6a36e72a294873648d0",
+    "status": "ISSUED_BOUNDED_TOPOLOGY_RECEIPT",
+    "topology_recomputation": {
+      "input_names": [
+        "frozen_geometry",
+        "disclosed_line_set",
+        "raw_reach"
+      ],
+      "line_count_after_receipt_gate": 96,
+      "line_count_before_receipt_gate": 96,
+      "receipt_used_as_input": false,
+      "topology_sha256_after_receipt_gate": "dee84b63e67cba8f0ec20457a9a848f1a35216dcf7c6d6a36e72a294873648d0",
+      "topology_sha256_before_receipt_gate": "dee84b63e67cba8f0ec20457a9a848f1a35216dcf7c6d6a36e72a294873648d0"
+    }
+  },
+  "self_certified_control": {
+    "conditions": {
+      "local_ivi_w_present": true,
+      "raw_reach_exactly_realizes_frozen_equality": false,
+      "translational_completion": false
+    },
+    "failed_conditions": [
+      "translational_completion",
+      "raw_reach_exactly_realizes_frozen_equality"
+    ],
+    "issued": false,
+    "receipt_kind": "resolved_topology_receipt",
+    "requested_by": "self_certified_control",
+    "status": "REJECTED_TOPOLOGY_RECEIPT_GATE"
+  }
+}
