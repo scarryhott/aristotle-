@@ -2,6 +2,32 @@
 
 This repository contains a **machine-checked translational theory and a self-contained executed verification suite** for verification across changing mathematical reference frames. It is not only a proposal.
 
+## Central thesis
+
+The research begins from one question:
+
+> **Does there exist a translation independent of the selection of an origin language, whose relations themselves form reference frames, and can such translation relate formal identities across changing frames?**
+
+The proposed answer is investigated rather than assumed as an unconditional theorem. Local axiom-geometries are treated as relative formations within an origin-independent translational relation. A frame can organize a local equality and perspective without becoming the permanent origin from which every other frame must inherit identity.
+
+The thesis is therefore:
+
+```text
+origin-independent translation
+    → relational formations / relative reference frames
+    → local axiom ↔ geometry ↔ admitted equality
+    → translation + relational return
+    → interactive continual completion (closure)
+    → IVI / recoverable relational identity
+    → next perspective or axiometric basis
+```
+
+**Closure is interactive continual completion, not the freezing of axiometry.** Experimental artifacts are frozen only to preserve causal evidence during a particular comparison; completed relational return may subsequently participate in a new frame and a new axiometric basis.
+
+A motivating application is agreement between reasoning minds. Different minds may carry different local definitions or measurements of value and credit. The project asks whether shared identity can be recovered through relative translation rather than by declaring one local definition the privileged global definition. The current runtimes test the mathematical architecture of that claim; they do not claim to solve economic value or interpersonal agreement in general.
+
+See [`docs/METAPHYSICS.md`](docs/METAPHYSICS.md) for the full thesis and its formal boundary.
+
 ## What is already complete
 
 The bounded programme executes:
@@ -9,12 +35,12 @@ The bounded programme executes:
 ```text
 local axiom-geometries
   → internal equality audit
-  → immutable freeze
+  → immutable evidence freeze
   → post-freeze candidate (T,phi,pi)
   → GeomEquiv preservation + reflection
   → W/E/J/C and operation naturality
   → quotient ResolvedIn / explicit OpenIn witness
-  → held-out transfer / next basis
+  → translational completion / returned basis
 ```
 
 It includes independent classical mathematical-agent proxies, a strong ordinary-isomorphism baseline on identical frozen inputs, external axiom-geometry interaction, generative frame isolation, exhaustive candidate search, explicit positive/negative/pending controls, deterministic evidence replay, and Lean verification.
@@ -25,52 +51,38 @@ The bounded generative experiment freezes `F_A`, `F_B`, and their total question
 
 The remaining grant-scale test is:
 
-> **Run the already-frozen verification architecture on axiom-geometries generated independently by Aristotle or another frontier mathematical agent, then use the resulting translations and obstructions to extend the Lean theory and test mathematical-ASI verification further.**
+> **Run the existing verification architecture on axiom-geometries generated independently by Aristotle or another frontier mathematical agent, then use the resulting translations, completions, and obstructions to extend the Lean theory and test mathematical-ASI verification further.**
 
-### What “Aristotle-generated frame” means
+A qualifying Aristotle-generated frame is not merely a Lean encoding of a representation supplied by the experimenter. It is an independently produced local mathematical formation whose primitives/axioms, geometry or structure, admitted equality, operations, and registered total questions are evaluated in their own frame before cross-frame comparison.
 
-A qualifying Aristotle-generated frame is not merely a Lean encoding of a representation supplied by the experimenter. It is a frozen artifact
-
-```text
-F_A = (A_A, G_A, ~_A, O_A, Q_A)
-```
-
-whose substantive primitives/axioms, mathematical geometry or structure, admitted equality, operations, and registered total questions are produced by an independent Aristotle session from a frame-neutral mathematical objective.
-
-Qualification requires:
-
-1. no access to another frame's representation, target coordinates, desired `(T,phi,pi)`, or canonical translator during generation;
-2. internal evaluation under the generated frame's own axiom-geometry;
-3. content-addressed freeze of the complete frame and questions before cross-frame disclosure;
-4. no later repair or redefinition of the frozen frame by the translator/verifier.
-
-Thus:
+The experiment freezes the produced evidence before disclosure so that the translator cannot retrospectively rewrite it. That freeze is methodological, not a claim that the ASI's axiometry must remain static.
 
 ```text
-objective → Aristotle A → F_A → internal audit → freeze
-objective → Aristotle B → F_B → internal audit → freeze
+objective → Aristotle A → F_A → internal audit → evidence freeze
+objective → Aristotle B → F_B → internal audit → evidence freeze
 
-F_A, F_B, Q_A, Q_B ≺ disclosure ≺ search(T,phi,pi).
+F_A, F_B, Q_A, Q_B ≺ disclosure ≺ search(T,phi,pi)
 ```
 
-Only after both frames freeze are candidate translations checked for `GeomEquiv`, downstream naturality, question transport, and held-out transfer.
+Only after both episode artifacts freeze are candidate translations checked for `GeomEquiv`, downstream naturality, translational completion, question transport, IVI disclosure, and held-out transfer.
 
-A natural translation, explicit equality obstruction, downstream naturality obstruction, genuine frame-relative `OpenIn`, or registered interface boundary are all substantive outcomes. The experiment does not require every frame to translate to every other frame.
+A natural translation, explicit equality obstruction, downstream naturality obstruction, incomplete return, genuine frame-relative `OpenIn`, or registered interface boundary are all substantive outcomes. The experiment does not require every frame to translate to every other frame.
 
 ## The full research loop
 
-The grant is not only a one-shot Aristotle benchmark. The intended programme is iterative:
+The grant is not only a one-shot Aristotle benchmark:
 
 ```text
 Lean translational theory_n
-    → independently generated Aristotle frames_n
-    → post-freeze translation / obstruction / openness
+    → independently generated Aristotle perspectives / frames_n
+    → post-hoc translation + return
+    → completion / obstruction / openness / IVI
     → formalize the discovered boundary
     → Lean translational theory_(n+1)
-    → stronger ASI verification experiment.
+    → next mathematical perspective / ASI verification experiment.
 ```
 
-Frontier mathematics therefore supplies new structures and counterexamples for further formalization, while the formal theory supplies a frozen verifier for the next experimental round.
+Frontier mathematics supplies new structures and counterexamples for further formalization, while the formal theory supplies auditable relations for the next experimental round.
 
 See [`docs/GRANT.md`](docs/GRANT.md) and [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md).
 
@@ -87,30 +99,6 @@ lake build
 ```
 
 Committed evidence is designed to replay deterministically; CI reruns the experimental and Lean kernels.
-
-## Foundational starting point
-
-The project does **not** begin with one fixed axiom system, one absolute geometry, or already isolated mathematical objects to which translations are added afterward. Its foundational proposal is:
-
-```text
-natural translational existence
-        ↓
-relative axiom ↔ geometry / reference frame
-        ↓
-admitted relational equality
-        ↓
-relational definition and closure forms
-```
-
-An axiom has its mathematical role relative to the geometry/reference frame in which it is admissible; geometry is correspondingly not prior to axiom. Distinct axiom-geometries are first allowed to stand in their own unified form. Their common identity, when available, is disclosed by coherent translation and relational return rather than inherited from a privileged external presentation.
-
-In this sense **translation is foundational and existence is natural**. Inside the formal translational frame,
-
-```text
-W_m(T_lm u) = phi_lm(W_l u)
-```
-
-expresses the returned relational identity available across relative frames. Groupoids, quotients, natural transformations, sections, universal properties, and runtime certificates are downstream mathematical expressions and consequences of this starting point; they are not themselves the claimed foundational novelty.
 
 ## Two-layer mathematical-ASI verification
 
@@ -131,7 +119,7 @@ A trusted Lean kernel checks mathematics relative to each frame's own assumption
 F_A ↔[T,phi,pi] F_B
 ```
 
-The verifier asks whether independently constituted frames preserve and reflect their own admitted equalities and satisfy the registered naturality obligations. A sufficiently capable mathematical agent may alter not only a proof but the language, axioms, geometry, equality, orientation, and representation in which later mathematics is constituted. The second layer tests what remains verifiable between those changing frames.
+The second layer asks what relational identity remains auditable when mathematical intelligence changes the language, axioms, geometry, equality, orientation, or representation in which it reasons. It does not require those changes to stop after verification; successful return may enter the next perspective basis.
 
 ## Formal architecture
 
@@ -147,28 +135,7 @@ The available bridges make later layers explicit:
 
 The broader NRRF618–633 sequence develops the observation-free relational foundation, originless translational order, existence/naturality, frame-conditional openness, and the unique admissible open relational definition. The later NRRF634–640 learning/maze/completion results are separately reported but are not present in this checkout. General sources not present here are reported as such rather than reconstructed or falsely re-audited. See [`docs/EXTERNAL_LEAN_REFERENCES.md`](docs/EXTERNAL_LEAN_REFERENCES.md) for the exact source-status ledger.
 
-## Relative axiom geometry
-
-A novel axiom-geometry is evaluated first in its **own** unified frame. It is not judged by silently treating an older frame as neutral.
-
-A comparison becomes an axiom-geometry equivalence only when it preserves and reflects both frames' admitted equalities:
-
-```text
-x ~_F y  ↔  T(x) ~_G T(y).
-```
-
-Only afterward are downstream naturality conditions evaluated.
-
-Resolution and openness are frame-relative:
-
-```text
-ResolvedIn(F,Q)  ↔  Q factors through F's equality quotient
-OpenIn(F,Q)      ↔  Q separates an explicit pair that F equates.
-```
-
-Pending, missing, rejected, or unselected comparisons are not called open.
-
-## Relational return and IVI
+## Relational return, translational completion, and IVI
 
 The closure language returns relational content, never a truth-status label:
 
@@ -178,31 +145,29 @@ CEq W u v := W_l(u) = W_l(v)
 W_m(T_lm u) = phi_lm(W_l u).
 ```
 
-The separately reported NRRF633 result sharpens the downstream definition: within a translational frame, returning + grounded relational definition uniquely yields closure equality, after which translation forces naturality.
+Translation alone is not completion. The bounded maze runtime starts before the quotient: it freezes local episode evidence, derives raw reach from one path/wall line set, requires explicit returns before treating reach as equality, derives the finite saturation topology, and issues a receipt only afterward. It executes six finite fixtures for its three-premise bounded proxy:
 
-**IVI — intangible verified information —** is the interpretation of naturally recoverable relational identity that does not require unique reconstruction of its local occurrence. It is downstream of relational return rather than a separate truth primitive. See [`docs/IVI.md`](docs/IVI.md).
+```text
+completion ∧ LocalIVI_W ∧ exact reach/equality alignment.
+```
 
-The new bounded maze run starts before the quotient: it freezes local equality, derives raw reach from one path/wall line set, requires explicit returns before treating reach as equality, derives the finite saturation topology, and issues a receipt only afterward. It executes six finite fixtures for its three-premise bounded proxy—completion, `LocalIVI_W`, and exact reach/equality alignment—without treating that proxy as the unavailable NRRF639 `ClosureThesis`. See [`docs/TRANSLATIONAL_COMPLETION_MAZE_TOPOLOGY_RUN.md`](docs/TRANSLATIONAL_COMPLETION_MAZE_TOPOLOGY_RUN.md).
+This runtime proxy is not identified by definition with the separately reported NRRF639 `ClosureThesis`.
 
-For current project work, this full closure-translational runtime is the
-operative executable specification. The separately reported NRRF599/639/640 Lean
-results are retained as external formal references and comparison targets;
-they do not redefine the runtime or count as locally audited evidence until
-their exact sources and dependencies are imported and rebuilt here. Claims
-supported only by those sources remain labelled **reported outside this
-checkout**.
+**IVI — intangibly verified information —** is the informational interpretation of naturally recoverable relational identity that does not require unique reconstruction of its local occurrence. IVI supplies the nontrivial informational side of closure; translational completion supplies the returned structural side. See [`docs/IVI.md`](docs/IVI.md) and [`docs/TRANSLATIONAL_COMPLETION_MAZE_TOPOLOGY_RUN.md`](docs/TRANSLATIONAL_COMPLETION_MAZE_TOPOLOGY_RUN.md).
+
+For current project work, the full closure-translational runtime is the operative executable specification. Separately reported NRRF599/639/640 results are external formal references and comparison targets; they do not redefine the runtime or count as locally audited evidence until their exact sources/dependencies are imported and rebuilt here.
 
 ## Executed evidence
 
 The executed suite contains five complementary bounded layers:
 
-1. **Independent full-stack agents** — separate mathematical learners, frozen before post-hoc translation.
-2. **Classical versus translational verification** — identical frozen inputs and a strong ordinary-isomorphism baseline.
+1. **Independent full-stack agents** — separate mathematical learners, with episode evidence frozen before post-hoc translation.
+2. **Classical versus translational verification** — identical episode artifacts and a strong ordinary-isomorphism baseline.
 3. **External axiom-geometry interaction** — separately committed geometry, typed preservation lineage, and explicit non-equivalence edges.
-4. **Generative axiom-geometry isolation** — separately generated/frozen frames followed by exhaustive post-freeze candidate search.
+4. **Generative axiom-geometry isolation** — separately generated episode frames followed by exhaustive post-hoc candidate search.
 5. **Translational-completion maze topology** — raw learning reach, explicit return completion, exact equality realization, saturation topology, `LocalIVI_W`, return monodromy, and receipt-after-resolution controls.
 
-Controls distinguish equality preservation from reflection, `GeomEquiv` from downstream naturality, genuine frame-relative openness from pending/non-selection, valid reversal from non-natural deformation, and registered interface boundaries from mathematical rejection.
+Controls distinguish equality preservation from reflection, `GeomEquiv` from downstream naturality, translation from completion, genuine frame-relative openness from pending/non-selection, valid reversal from non-natural deformation, and registered interface boundaries from mathematical rejection.
 
 ## Claim boundary
 
@@ -212,6 +177,8 @@ The repository supports a machine-checked conditional theory and reproducible bo
 - general mathematical-ASI verification;
 - that every pair of axiom-geometries is equivalent;
 - that classical mathematics cannot express translational closure;
+- that one frame or language is the permanent origin of mathematical identity;
+- that experimental evidence-freezing means axiometry is metaphysically frozen;
 - that the metaphysical interpretation is an unconditional Lean theorem.
 
 The grant funds the frontier-agent regime needed to test the architecture, discover its boundary, and formalize that boundary in the next theory iteration.
@@ -225,7 +192,7 @@ The grant funds the frontier-agent regime needed to test the architecture, disco
 - `docs/GRANT.md` — Harmonic/Aristotle research request.
 - `docs/EXPERIMENTS.md` — completed evidence and primary frontier experiment.
 - `docs/CLAIM_STATUS.md` — theorem/experiment/interpretation audit boundary.
-- `docs/METAPHYSICS.md` — relative axiom-geometry and natural translational existence.
+- `docs/METAPHYSICS.md` — origin-independent translation, relational frames, and interactive continual completion.
 - `docs/IVI.md` — IVI as naturally recoverable relational identity.
 - `docs/TRANSLATIONAL_COMPLETION_MAZE_TOPOLOGY_RUN.md` — executed pre-quotient maze completion/topology evidence and next-stage plan.
 
