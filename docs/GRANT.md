@@ -167,6 +167,42 @@ the interacting verifier sees them. The central question is whether richer auton
 provides nontrivial traces of this kind—or useful explicit obstructions—without redefining earlier
 equalities after contact.
 
+### Bounded generative-isolation rehearsal
+
+The executed bounded rehearsal separates three evidential questions. First, can two mathematical
+generators choose internally well-defined axiom-geometries within distinct registered construction
+contracts and matched task/resource limits? Second, after both products freeze, can a fresh
+translator discover an explicit bridge without a pre-seeded coordinate dictionary? Third, does
+any admitted bridge provide conditional natural-existential evidence by passing both equality
+directions and all registered commuting laws?
+
+Its causal order is fixed in advance:
+
+```text
+F_A, F_B, Q_A, Q_B
+  ≺ disclose
+  ≺ candidate (T,phi,pi)
+  ≺ GeomEquiv
+  ≺ naturality.
+```
+
+Each frame is evaluated using its own assumed equality before disclosure. A failed candidate is
+an obstruction to that candidate; a bounded search finding no witness is not global
+nonexistence; and neither result is `OpenIn` without a total frame-question relation and an
+explicit separating witness. Fresh subprocesses and manifests are acceptable causal controls for
+a rehearsal, but a frontier claim of blindness or autonomous generation requires enforced
+sandboxing or independently administered sessions.
+
+In the deterministic reference lane, both local kernels pass, the strong classical baseline
+retains six ordinary isomorphisms, and six of 1,440 explicit forms pass the full naturality and
+transfer chain. In a separate preserved raw-artifact lane, D4 and S3 frames remain locally valid
+but their different occurrence cardinalities block `GeomEquiv`; the evaluator does not repair or
+normalize them. The bundle does not prove the upstream generation sessions' provenance. These are
+bounded protocol results, not an executed Aristotle or ASI result.
+
+See [`GENERATIVE_AXIOM_GEOMETRY_ISOLATION_PROTOCOL.md`](GENERATIVE_AXIOM_GEOMETRY_ISOLATION_PROTOCOL.md)
+and [`GENERATIVE_AXIOM_GEOMETRY_ISOLATION_RUN.md`](GENERATIVE_AXIOM_GEOMETRY_ISOLATION_RUN.md).
+
 The project has four deliverables.
 
 1. **Frontier-agent frame generation.** Replace bounded learners with increasingly capable isolated mathematical agents, ultimately Aristotle, and freeze each generated frame before cross-frame candidate search.

@@ -430,7 +430,7 @@
   "external_geometry_or_candidate_packet_was_not_an_input": true,
   "formal_kernel_integration": {
     "bridge_module": "lean/NRRF631RuntimeFrameConditionalBridge.lean",
-    "bridge_source_sha256": "0af22be07a0d09f8b7a269a082f04f38c6e1072cc9a45cdf7afe5ffbb5053d88",
+    "bridge_source_sha256": "d9ee60ac080bebd8be43b471c680b1b1ba6a3a8bdc3da26222cbe811da600cf5",
     "lake_target": "NRRF627",
     "verification": "separate lake build and CI job; this JSON does not forge a kernel verdict"
   },

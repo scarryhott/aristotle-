@@ -1,0 +1,1437 @@
+{
+  "admitted_natural_translation_count": 6,
+  "admitted_natural_translations": [
+    {
+      "candidate_id": "dacd222f0bb825610ad5deb79b3523aaf34b359b06dc944bcff3c9459c0f957b",
+      "downstream_transport": {
+        "all_question_statuses_and_values_transport": true,
+        "held_out_transfer": {
+          "mapped_source_solution_count": 4,
+          "phi_source_result": "perm_a_02",
+          "solution_problem_id": "involutive_elements",
+          "solution_transfer_holds": true,
+          "source_result": "aff_b_05",
+          "target_result": "perm_a_02",
+          "target_solution_count": 4,
+          "word_length": 6,
+          "word_sha256": "142fe96942657fa16153c11c4f1d9ff435ebede80dcbcae19e4ba3b46b64e814",
+          "word_transfer_holds": true
+        },
+        "passed": true,
+        "question_transport": [
+          {
+            "first_failure": null,
+            "question_id": "element_order",
+            "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+            "source_open": false,
+            "source_open_witness": null,
+            "source_resolved": true,
+            "status_transport_agrees": true,
+            "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+            "target_open": false,
+            "target_open_witness": null,
+            "target_resolved": true,
+            "translational_form_id": "dacd222f0bb825610ad5deb79b3523aaf34b359b06dc944bcff3c9459c0f957b",
+            "value_transport_cases": 12,
+            "value_transport_failure_count": 0
+          },
+          {
+            "first_failure": null,
+            "question_id": "square_is_identity",
+            "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+            "source_open": false,
+            "source_open_witness": null,
+            "source_resolved": true,
+            "status_transport_agrees": true,
+            "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+            "target_open": false,
+            "target_open_witness": null,
+            "target_resolved": true,
+            "translational_form_id": "dacd222f0bb825610ad5deb79b3523aaf34b359b06dc944bcff3c9459c0f957b",
+            "value_transport_cases": 12,
+            "value_transport_failure_count": 0
+          },
+          {
+            "first_failure": null,
+            "question_id": "literal_pole",
+            "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+            "source_open": true,
+            "source_open_witness": {
+              "frame_equal": true,
+              "left": "B/return::aff_b_00",
+              "left_value": "return",
+              "right": "B/source::aff_b_00",
+              "right_value": "source"
+            },
+            "source_resolved": false,
+            "status_transport_agrees": true,
+            "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+            "target_open": true,
+            "target_open_witness": {
+              "frame_equal": true,
+              "left": "A/face::perm_a_00",
+              "left_value": "face",
+              "right": "A/vertex::perm_a_00",
+              "right_value": "vertex"
+            },
+            "target_resolved": false,
+            "translational_form_id": "dacd222f0bb825610ad5deb79b3523aaf34b359b06dc944bcff3c9459c0f957b",
+            "value_transport_cases": 12,
+            "value_transport_failure_count": 0
+          }
+        ]
+      },
+      "first_obstruction": null,
+      "geom_equiv": {
+        "holds": true,
+        "preservation_cases": 144,
+        "preservation_failure_count": 0,
+        "reflection_cases": 144,
+        "reflection_failure_count": 0
+      },
+      "naturality": {
+        "C_cases": 12,
+        "C_failure_count": 0,
+        "E_cases": 12,
+        "E_failure_count": 0,
+        "J_cases": 12,
+        "J_failure_count": 0,
+        "W_cases": 12,
+        "W_failure_count": 0,
+        "holds": true,
+        "operation_cases": 36,
+        "operation_failure_count": 0
+      },
+      "non_admission_is_not_openness": false,
+      "open_in_emitted": false,
+      "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+      "status": "ADMITTED_NATURAL_TRANSLATION",
+      "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+      "totality_and_bijection": {
+        "T_bijective": true,
+        "T_phi_pi_coherent": true,
+        "T_total": true,
+        "phi_bijective": true,
+        "phi_total": true,
+        "pi_valid": true
+      },
+      "translation_tuple_T_phi_pi": {
+        "T": {
+          "B/return::aff_b_00": "A/vertex::perm_a_00",
+          "B/return::aff_b_01": "A/vertex::perm_a_03",
+          "B/return::aff_b_02": "A/vertex::perm_a_04",
+          "B/return::aff_b_03": "A/vertex::perm_a_01",
+          "B/return::aff_b_04": "A/vertex::perm_a_05",
+          "B/return::aff_b_05": "A/vertex::perm_a_02",
+          "B/source::aff_b_00": "A/face::perm_a_00",
+          "B/source::aff_b_01": "A/face::perm_a_03",
+          "B/source::aff_b_02": "A/face::perm_a_04",
+          "B/source::aff_b_03": "A/face::perm_a_01",
+          "B/source::aff_b_04": "A/face::perm_a_05",
+          "B/source::aff_b_05": "A/face::perm_a_02"
+        },
+        "phi": {
+          "aff_b_00": "perm_a_00",
+          "aff_b_01": "perm_a_03",
+          "aff_b_02": "perm_a_04",
+          "aff_b_03": "perm_a_01",
+          "aff_b_04": "perm_a_05",
+          "aff_b_05": "perm_a_02"
+        },
+        "pi": "reversed"
+      }
+    },
+    {
+      "candidate_id": "1d20d47c3db030f3e426f03b3dd1de904bf00a03d42e2e22ab888859321c021f",
+      "downstream_transport": {
+        "all_question_statuses_and_values_transport": true,
+        "held_out_transfer": {
+          "mapped_source_solution_count": 4,
+          "phi_source_result": "perm_a_02",
+          "solution_problem_id": "involutive_elements",
+          "solution_transfer_holds": true,
+          "source_result": "aff_b_05",
+          "target_result": "perm_a_02",
+          "target_solution_count": 4,
+          "word_length": 6,
+          "word_sha256": "142fe96942657fa16153c11c4f1d9ff435ebede80dcbcae19e4ba3b46b64e814",
+          "word_transfer_holds": true
+        },
+        "passed": true,
+        "question_transport": [
+          {
+            "first_failure": null,
+            "question_id": "element_order",
+            "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+            "source_open": false,
+            "source_open_witness": null,
+            "source_resolved": true,
+            "status_transport_agrees": true,
+            "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+            "target_open": false,
+            "target_open_witness": null,
+            "target_resolved": true,
+            "translational_form_id": "1d20d47c3db030f3e426f03b3dd1de904bf00a03d42e2e22ab888859321c021f",
+            "value_transport_cases": 12,
+            "value_transport_failure_count": 0
+          },
+          {
+            "first_failure": null,
+            "question_id": "square_is_identity",
+            "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+            "source_open": false,
+            "source_open_witness": null,
+            "source_resolved": true,
+            "status_transport_agrees": true,
+            "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+            "target_open": false,
+            "target_open_witness": null,
+            "target_resolved": true,
+            "translational_form_id": "1d20d47c3db030f3e426f03b3dd1de904bf00a03d42e2e22ab888859321c021f",
+            "value_transport_cases": 12,
+            "value_transport_failure_count": 0
+          },
+          {
+            "first_failure": null,
+            "question_id": "literal_pole",
+            "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+            "source_open": true,
+            "source_open_witness": {
+              "frame_equal": true,
+              "left": "B/return::aff_b_00",
+              "left_value": "return",
+              "right": "B/source::aff_b_00",
+              "right_value": "source"
+            },
+            "source_resolved": false,
+            "status_transport_agrees": true,
+            "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+            "target_open": true,
+            "target_open_witness": {
+              "frame_equal": true,
+              "left": "A/face::perm_a_00",
+              "left_value": "face",
+              "right": "A/vertex::perm_a_00",
+              "right_value": "vertex"
+            },
+            "target_resolved": false,
+            "translational_form_id": "1d20d47c3db030f3e426f03b3dd1de904bf00a03d42e2e22ab888859321c021f",
+            "value_transport_cases": 12,
+            "value_transport_failure_count": 0
+          }
+        ]
+      },
+      "first_obstruction": null,
+      "geom_equiv": {
+        "holds": true,
+        "preservation_cases": 144,
+        "preservation_failure_count": 0,
+        "reflection_cases": 144,
+        "reflection_failure_count": 0
+      },
+      "naturality": {
+        "C_cases": 12,
+        "C_failure_count": 0,
+        "E_cases": 12,
+        "E_failure_count": 0,
+        "J_cases": 12,
+        "J_failure_count": 0,
+        "W_cases": 12,
+        "W_failure_count": 0,
+        "holds": true,
+        "operation_cases": 36,
+        "operation_failure_count": 0
+      },
+      "non_admission_is_not_openness": false,
+      "open_in_emitted": false,
+      "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+      "status": "ADMITTED_NATURAL_TRANSLATION",
+      "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+      "totality_and_bijection": {
+        "T_bijective": true,
+        "T_phi_pi_coherent": true,
+        "T_total": true,
+        "phi_bijective": true,
+        "phi_total": true,
+        "pi_valid": true
+      },
+      "translation_tuple_T_phi_pi": {
+        "T": {
+          "B/return::aff_b_00": "A/vertex::perm_a_00",
+          "B/return::aff_b_01": "A/vertex::perm_a_04",
+          "B/return::aff_b_02": "A/vertex::perm_a_05",
+          "B/return::aff_b_03": "A/vertex::perm_a_01",
+          "B/return::aff_b_04": "A/vertex::perm_a_03",
+          "B/return::aff_b_05": "A/vertex::perm_a_02",
+          "B/source::aff_b_00": "A/face::perm_a_00",
+          "B/source::aff_b_01": "A/face::perm_a_04",
+          "B/source::aff_b_02": "A/face::perm_a_05",
+          "B/source::aff_b_03": "A/face::perm_a_01",
+          "B/source::aff_b_04": "A/face::perm_a_03",
+          "B/source::aff_b_05": "A/face::perm_a_02"
+        },
+        "phi": {
+          "aff_b_00": "perm_a_00",
+          "aff_b_01": "perm_a_04",
+          "aff_b_02": "perm_a_05",
+          "aff_b_03": "perm_a_01",
+          "aff_b_04": "perm_a_03",
+          "aff_b_05": "perm_a_02"
+        },
+        "pi": "reversed"
+      }
+    },
+    {
+      "candidate_id": "a78855458acfbb5eac0b7e327e4e9ffd78fb2dad79fe8e7175a5f3286564db52",
+      "downstream_transport": {
+        "all_question_statuses_and_values_transport": true,
+        "held_out_transfer": {
+          "mapped_source_solution_count": 4,
+          "phi_source_result": "perm_a_02",
+          "solution_problem_id": "involutive_elements",
+          "solution_transfer_holds": true,
+          "source_result": "aff_b_05",
+          "target_result": "perm_a_02",
+          "target_solution_count": 4,
+          "word_length": 6,
+          "word_sha256": "142fe96942657fa16153c11c4f1d9ff435ebede80dcbcae19e4ba3b46b64e814",
+          "word_transfer_holds": true
+        },
+        "passed": true,
+        "question_transport": [
+          {
+            "first_failure": null,
+            "question_id": "element_order",
+            "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+            "source_open": false,
+            "source_open_witness": null,
+            "source_resolved": true,
+            "status_transport_agrees": true,
+            "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+            "target_open": false,
+            "target_open_witness": null,
+            "target_resolved": true,
+            "translational_form_id": "a78855458acfbb5eac0b7e327e4e9ffd78fb2dad79fe8e7175a5f3286564db52",
+            "value_transport_cases": 12,
+            "value_transport_failure_count": 0
+          },
+          {
+            "first_failure": null,
+            "question_id": "square_is_identity",
+            "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+            "source_open": false,
+            "source_open_witness": null,
+            "source_resolved": true,
+            "status_transport_agrees": true,
+            "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+            "target_open": false,
+            "target_open_witness": null,
+            "target_resolved": true,
+            "translational_form_id": "a78855458acfbb5eac0b7e327e4e9ffd78fb2dad79fe8e7175a5f3286564db52",
+            "value_transport_cases": 12,
+            "value_transport_failure_count": 0
+          },
+          {
+            "first_failure": null,
+            "question_id": "literal_pole",
+            "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+            "source_open": true,
+            "source_open_witness": {
+              "frame_equal": true,
+              "left": "B/return::aff_b_00",
+              "left_value": "return",
+              "right": "B/source::aff_b_00",
+              "right_value": "source"
+            },
+            "source_resolved": false,
+            "status_transport_agrees": true,
+            "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+            "target_open": true,
+            "target_open_witness": {
+              "frame_equal": true,
+              "left": "A/face::perm_a_00",
+              "left_value": "face",
+              "right": "A/vertex::perm_a_00",
+              "right_value": "vertex"
+            },
+            "target_resolved": false,
+            "translational_form_id": "a78855458acfbb5eac0b7e327e4e9ffd78fb2dad79fe8e7175a5f3286564db52",
+            "value_transport_cases": 12,
+            "value_transport_failure_count": 0
+          }
+        ]
+      },
+      "first_obstruction": null,
+      "geom_equiv": {
+        "holds": true,
+        "preservation_cases": 144,
+        "preservation_failure_count": 0,
+        "reflection_cases": 144,
+        "reflection_failure_count": 0
+      },
+      "naturality": {
+        "C_cases": 12,
+        "C_failure_count": 0,
+        "E_cases": 12,
+        "E_failure_count": 0,
+        "J_cases": 12,
+        "J_failure_count": 0,
+        "W_cases": 12,
+        "W_failure_count": 0,
+        "holds": true,
+        "operation_cases": 36,
+        "operation_failure_count": 0
+      },
+      "non_admission_is_not_openness": false,
+      "open_in_emitted": false,
+      "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+      "status": "ADMITTED_NATURAL_TRANSLATION",
+      "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+      "totality_and_bijection": {
+        "T_bijective": true,
+        "T_phi_pi_coherent": true,
+        "T_total": true,
+        "phi_bijective": true,
+        "phi_total": true,
+        "pi_valid": true
+      },
+      "translation_tuple_T_phi_pi": {
+        "T": {
+          "B/return::aff_b_00": "A/vertex::perm_a_00",
+          "B/return::aff_b_01": "A/vertex::perm_a_05",
+          "B/return::aff_b_02": "A/vertex::perm_a_03",
+          "B/return::aff_b_03": "A/vertex::perm_a_01",
+          "B/return::aff_b_04": "A/vertex::perm_a_04",
+          "B/return::aff_b_05": "A/vertex::perm_a_02",
+          "B/source::aff_b_00": "A/face::perm_a_00",
+          "B/source::aff_b_01": "A/face::perm_a_05",
+          "B/source::aff_b_02": "A/face::perm_a_03",
+          "B/source::aff_b_03": "A/face::perm_a_01",
+          "B/source::aff_b_04": "A/face::perm_a_04",
+          "B/source::aff_b_05": "A/face::perm_a_02"
+        },
+        "phi": {
+          "aff_b_00": "perm_a_00",
+          "aff_b_01": "perm_a_05",
+          "aff_b_02": "perm_a_03",
+          "aff_b_03": "perm_a_01",
+          "aff_b_04": "perm_a_04",
+          "aff_b_05": "perm_a_02"
+        },
+        "pi": "reversed"
+      }
+    },
+    {
+      "candidate_id": "6b43961f3448215c1c608d9235e9ee02d25af7ba6492786b49a73ac9b97170bd",
+      "downstream_transport": {
+        "all_question_statuses_and_values_transport": true,
+        "held_out_transfer": {
+          "mapped_source_solution_count": 4,
+          "phi_source_result": "perm_a_02",
+          "solution_problem_id": "involutive_elements",
+          "solution_transfer_holds": true,
+          "source_result": "aff_b_05",
+          "target_result": "perm_a_02",
+          "target_solution_count": 4,
+          "word_length": 6,
+          "word_sha256": "142fe96942657fa16153c11c4f1d9ff435ebede80dcbcae19e4ba3b46b64e814",
+          "word_transfer_holds": true
+        },
+        "passed": true,
+        "question_transport": [
+          {
+            "first_failure": null,
+            "question_id": "element_order",
+            "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+            "source_open": false,
+            "source_open_witness": null,
+            "source_resolved": true,
+            "status_transport_agrees": true,
+            "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+            "target_open": false,
+            "target_open_witness": null,
+            "target_resolved": true,
+            "translational_form_id": "6b43961f3448215c1c608d9235e9ee02d25af7ba6492786b49a73ac9b97170bd",
+            "value_transport_cases": 12,
+            "value_transport_failure_count": 0
+          },
+          {
+            "first_failure": null,
+            "question_id": "square_is_identity",
+            "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+            "source_open": false,
+            "source_open_witness": null,
+            "source_resolved": true,
+            "status_transport_agrees": true,
+            "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+            "target_open": false,
+            "target_open_witness": null,
+            "target_resolved": true,
+            "translational_form_id": "6b43961f3448215c1c608d9235e9ee02d25af7ba6492786b49a73ac9b97170bd",
+            "value_transport_cases": 12,
+            "value_transport_failure_count": 0
+          },
+          {
+            "first_failure": null,
+            "question_id": "literal_pole",
+            "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+            "source_open": true,
+            "source_open_witness": {
+              "frame_equal": true,
+              "left": "B/return::aff_b_00",
+              "left_value": "return",
+              "right": "B/source::aff_b_00",
+              "right_value": "source"
+            },
+            "source_resolved": false,
+            "status_transport_agrees": true,
+            "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+            "target_open": true,
+            "target_open_witness": {
+              "frame_equal": true,
+              "left": "A/face::perm_a_00",
+              "left_value": "face",
+              "right": "A/vertex::perm_a_00",
+              "right_value": "vertex"
+            },
+            "target_resolved": false,
+            "translational_form_id": "6b43961f3448215c1c608d9235e9ee02d25af7ba6492786b49a73ac9b97170bd",
+            "value_transport_cases": 12,
+            "value_transport_failure_count": 0
+          }
+        ]
+      },
+      "first_obstruction": null,
+      "geom_equiv": {
+        "holds": true,
+        "preservation_cases": 144,
+        "preservation_failure_count": 0,
+        "reflection_cases": 144,
+        "reflection_failure_count": 0
+      },
+      "naturality": {
+        "C_cases": 12,
+        "C_failure_count": 0,
+        "E_cases": 12,
+        "E_failure_count": 0,
+        "J_cases": 12,
+        "J_failure_count": 0,
+        "W_cases": 12,
+        "W_failure_count": 0,
+        "holds": true,
+        "operation_cases": 36,
+        "operation_failure_count": 0
+      },
+      "non_admission_is_not_openness": false,
+      "open_in_emitted": false,
+      "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+      "status": "ADMITTED_NATURAL_TRANSLATION",
+      "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+      "totality_and_bijection": {
+        "T_bijective": true,
+        "T_phi_pi_coherent": true,
+        "T_total": true,
+        "phi_bijective": true,
+        "phi_total": true,
+        "pi_valid": true
+      },
+      "translation_tuple_T_phi_pi": {
+        "T": {
+          "B/return::aff_b_00": "A/vertex::perm_a_01",
+          "B/return::aff_b_01": "A/vertex::perm_a_03",
+          "B/return::aff_b_02": "A/vertex::perm_a_05",
+          "B/return::aff_b_03": "A/vertex::perm_a_00",
+          "B/return::aff_b_04": "A/vertex::perm_a_04",
+          "B/return::aff_b_05": "A/vertex::perm_a_02",
+          "B/source::aff_b_00": "A/face::perm_a_01",
+          "B/source::aff_b_01": "A/face::perm_a_03",
+          "B/source::aff_b_02": "A/face::perm_a_05",
+          "B/source::aff_b_03": "A/face::perm_a_00",
+          "B/source::aff_b_04": "A/face::perm_a_04",
+          "B/source::aff_b_05": "A/face::perm_a_02"
+        },
+        "phi": {
+          "aff_b_00": "perm_a_01",
+          "aff_b_01": "perm_a_03",
+          "aff_b_02": "perm_a_05",
+          "aff_b_03": "perm_a_00",
+          "aff_b_04": "perm_a_04",
+          "aff_b_05": "perm_a_02"
+        },
+        "pi": "reversed"
+      }
+    },
+    {
+      "candidate_id": "3687569f649c397ad1946f02395d148c1917c922c54d6312744baf6f932b8e01",
+      "downstream_transport": {
+        "all_question_statuses_and_values_transport": true,
+        "held_out_transfer": {
+          "mapped_source_solution_count": 4,
+          "phi_source_result": "perm_a_02",
+          "solution_problem_id": "involutive_elements",
+          "solution_transfer_holds": true,
+          "source_result": "aff_b_05",
+          "target_result": "perm_a_02",
+          "target_solution_count": 4,
+          "word_length": 6,
+          "word_sha256": "142fe96942657fa16153c11c4f1d9ff435ebede80dcbcae19e4ba3b46b64e814",
+          "word_transfer_holds": true
+        },
+        "passed": true,
+        "question_transport": [
+          {
+            "first_failure": null,
+            "question_id": "element_order",
+            "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+            "source_open": false,
+            "source_open_witness": null,
+            "source_resolved": true,
+            "status_transport_agrees": true,
+            "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+            "target_open": false,
+            "target_open_witness": null,
+            "target_resolved": true,
+            "translational_form_id": "3687569f649c397ad1946f02395d148c1917c922c54d6312744baf6f932b8e01",
+            "value_transport_cases": 12,
+            "value_transport_failure_count": 0
+          },
+          {
+            "first_failure": null,
+            "question_id": "square_is_identity",
+            "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+            "source_open": false,
+            "source_open_witness": null,
+            "source_resolved": true,
+            "status_transport_agrees": true,
+            "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+            "target_open": false,
+            "target_open_witness": null,
+            "target_resolved": true,
+            "translational_form_id": "3687569f649c397ad1946f02395d148c1917c922c54d6312744baf6f932b8e01",
+            "value_transport_cases": 12,
+            "value_transport_failure_count": 0
+          },
+          {
+            "first_failure": null,
+            "question_id": "literal_pole",
+            "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+            "source_open": true,
+            "source_open_witness": {
+              "frame_equal": true,
+              "left": "B/return::aff_b_00",
+              "left_value": "return",
+              "right": "B/source::aff_b_00",
+              "right_value": "source"
+            },
+            "source_resolved": false,
+            "status_transport_agrees": true,
+            "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+            "target_open": true,
+            "target_open_witness": {
+              "frame_equal": true,
+              "left": "A/face::perm_a_00",
+              "left_value": "face",
+              "right": "A/vertex::perm_a_00",
+              "right_value": "vertex"
+            },
+            "target_resolved": false,
+            "translational_form_id": "3687569f649c397ad1946f02395d148c1917c922c54d6312744baf6f932b8e01",
+            "value_transport_cases": 12,
+            "value_transport_failure_count": 0
+          }
+        ]
+      },
+      "first_obstruction": null,
+      "geom_equiv": {
+        "holds": true,
+        "preservation_cases": 144,
+        "preservation_failure_count": 0,
+        "reflection_cases": 144,
+        "reflection_failure_count": 0
+      },
+      "naturality": {
+        "C_cases": 12,
+        "C_failure_count": 0,
+        "E_cases": 12,
+        "E_failure_count": 0,
+        "J_cases": 12,
+        "J_failure_count": 0,
+        "W_cases": 12,
+        "W_failure_count": 0,
+        "holds": true,
+        "operation_cases": 36,
+        "operation_failure_count": 0
+      },
+      "non_admission_is_not_openness": false,
+      "open_in_emitted": false,
+      "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+      "status": "ADMITTED_NATURAL_TRANSLATION",
+      "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+      "totality_and_bijection": {
+        "T_bijective": true,
+        "T_phi_pi_coherent": true,
+        "T_total": true,
+        "phi_bijective": true,
+        "phi_total": true,
+        "pi_valid": true
+      },
+      "translation_tuple_T_phi_pi": {
+        "T": {
+          "B/return::aff_b_00": "A/vertex::perm_a_01",
+          "B/return::aff_b_01": "A/vertex::perm_a_04",
+          "B/return::aff_b_02": "A/vertex::perm_a_03",
+          "B/return::aff_b_03": "A/vertex::perm_a_00",
+          "B/return::aff_b_04": "A/vertex::perm_a_05",
+          "B/return::aff_b_05": "A/vertex::perm_a_02",
+          "B/source::aff_b_00": "A/face::perm_a_01",
+          "B/source::aff_b_01": "A/face::perm_a_04",
+          "B/source::aff_b_02": "A/face::perm_a_03",
+          "B/source::aff_b_03": "A/face::perm_a_00",
+          "B/source::aff_b_04": "A/face::perm_a_05",
+          "B/source::aff_b_05": "A/face::perm_a_02"
+        },
+        "phi": {
+          "aff_b_00": "perm_a_01",
+          "aff_b_01": "perm_a_04",
+          "aff_b_02": "perm_a_03",
+          "aff_b_03": "perm_a_00",
+          "aff_b_04": "perm_a_05",
+          "aff_b_05": "perm_a_02"
+        },
+        "pi": "reversed"
+      }
+    },
+    {
+      "candidate_id": "a1c84a75a9197b358b4b11b01b1d199126fdc92c3b385389e40fe8338d550851",
+      "downstream_transport": {
+        "all_question_statuses_and_values_transport": true,
+        "held_out_transfer": {
+          "mapped_source_solution_count": 4,
+          "phi_source_result": "perm_a_02",
+          "solution_problem_id": "involutive_elements",
+          "solution_transfer_holds": true,
+          "source_result": "aff_b_05",
+          "target_result": "perm_a_02",
+          "target_solution_count": 4,
+          "word_length": 6,
+          "word_sha256": "142fe96942657fa16153c11c4f1d9ff435ebede80dcbcae19e4ba3b46b64e814",
+          "word_transfer_holds": true
+        },
+        "passed": true,
+        "question_transport": [
+          {
+            "first_failure": null,
+            "question_id": "element_order",
+            "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+            "source_open": false,
+            "source_open_witness": null,
+            "source_resolved": true,
+            "status_transport_agrees": true,
+            "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+            "target_open": false,
+            "target_open_witness": null,
+            "target_resolved": true,
+            "translational_form_id": "a1c84a75a9197b358b4b11b01b1d199126fdc92c3b385389e40fe8338d550851",
+            "value_transport_cases": 12,
+            "value_transport_failure_count": 0
+          },
+          {
+            "first_failure": null,
+            "question_id": "square_is_identity",
+            "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+            "source_open": false,
+            "source_open_witness": null,
+            "source_resolved": true,
+            "status_transport_agrees": true,
+            "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+            "target_open": false,
+            "target_open_witness": null,
+            "target_resolved": true,
+            "translational_form_id": "a1c84a75a9197b358b4b11b01b1d199126fdc92c3b385389e40fe8338d550851",
+            "value_transport_cases": 12,
+            "value_transport_failure_count": 0
+          },
+          {
+            "first_failure": null,
+            "question_id": "literal_pole",
+            "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+            "source_open": true,
+            "source_open_witness": {
+              "frame_equal": true,
+              "left": "B/return::aff_b_00",
+              "left_value": "return",
+              "right": "B/source::aff_b_00",
+              "right_value": "source"
+            },
+            "source_resolved": false,
+            "status_transport_agrees": true,
+            "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+            "target_open": true,
+            "target_open_witness": {
+              "frame_equal": true,
+              "left": "A/face::perm_a_00",
+              "left_value": "face",
+              "right": "A/vertex::perm_a_00",
+              "right_value": "vertex"
+            },
+            "target_resolved": false,
+            "translational_form_id": "a1c84a75a9197b358b4b11b01b1d199126fdc92c3b385389e40fe8338d550851",
+            "value_transport_cases": 12,
+            "value_transport_failure_count": 0
+          }
+        ]
+      },
+      "first_obstruction": null,
+      "geom_equiv": {
+        "holds": true,
+        "preservation_cases": 144,
+        "preservation_failure_count": 0,
+        "reflection_cases": 144,
+        "reflection_failure_count": 0
+      },
+      "naturality": {
+        "C_cases": 12,
+        "C_failure_count": 0,
+        "E_cases": 12,
+        "E_failure_count": 0,
+        "J_cases": 12,
+        "J_failure_count": 0,
+        "W_cases": 12,
+        "W_failure_count": 0,
+        "holds": true,
+        "operation_cases": 36,
+        "operation_failure_count": 0
+      },
+      "non_admission_is_not_openness": false,
+      "open_in_emitted": false,
+      "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+      "status": "ADMITTED_NATURAL_TRANSLATION",
+      "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+      "totality_and_bijection": {
+        "T_bijective": true,
+        "T_phi_pi_coherent": true,
+        "T_total": true,
+        "phi_bijective": true,
+        "phi_total": true,
+        "pi_valid": true
+      },
+      "translation_tuple_T_phi_pi": {
+        "T": {
+          "B/return::aff_b_00": "A/vertex::perm_a_01",
+          "B/return::aff_b_01": "A/vertex::perm_a_05",
+          "B/return::aff_b_02": "A/vertex::perm_a_04",
+          "B/return::aff_b_03": "A/vertex::perm_a_00",
+          "B/return::aff_b_04": "A/vertex::perm_a_03",
+          "B/return::aff_b_05": "A/vertex::perm_a_02",
+          "B/source::aff_b_00": "A/face::perm_a_01",
+          "B/source::aff_b_01": "A/face::perm_a_05",
+          "B/source::aff_b_02": "A/face::perm_a_04",
+          "B/source::aff_b_03": "A/face::perm_a_00",
+          "B/source::aff_b_04": "A/face::perm_a_03",
+          "B/source::aff_b_05": "A/face::perm_a_02"
+        },
+        "phi": {
+          "aff_b_00": "perm_a_01",
+          "aff_b_01": "perm_a_05",
+          "aff_b_02": "perm_a_04",
+          "aff_b_03": "perm_a_00",
+          "aff_b_04": "perm_a_03",
+          "aff_b_05": "perm_a_02"
+        },
+        "pi": "reversed"
+      }
+    }
+  ],
+  "adversarial_controls": {
+    "D4_Q8_free_choice_contrast": {
+      "D4_local_group_valid": true,
+      "D4_order_multiset": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4
+      ],
+      "Q8_local_group_valid": true,
+      "Q8_order_multiset": [
+        1,
+        2,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "basis_bijection_count": 40320,
+      "control": "D4_Q8_free_choice_contrast",
+      "equality_fibre_count_status": "STRUCTURALLY_DERIVED_NOT_OCCURRENCE_PAIR_ENUMERATED",
+      "equality_fibre_geom_equiv_form_count": 80640,
+      "explicit_first_control_form": {
+        "T": {
+          "q0@pole_0": "d0@pole_0",
+          "q0@pole_1": "d0@pole_1",
+          "q1@pole_0": "d1@pole_0",
+          "q1@pole_1": "d1@pole_1",
+          "q2@pole_0": "d2@pole_0",
+          "q2@pole_1": "d2@pole_1",
+          "q3@pole_0": "d3@pole_0",
+          "q3@pole_1": "d3@pole_1",
+          "q4@pole_0": "d4@pole_0",
+          "q4@pole_1": "d4@pole_1",
+          "q5@pole_0": "d5@pole_0",
+          "q5@pole_1": "d5@pole_1",
+          "q6@pole_0": "d6@pole_0",
+          "q6@pole_1": "d6@pole_1",
+          "q7@pole_0": "d7@pole_0",
+          "q7@pole_1": "d7@pole_1"
+        },
+        "T_rule": "T(q@pole) = phi(q)@pi(pole)",
+        "alternate_pi_also_considered": "reversed",
+        "equality_fibre_geom_equiv": "structurally induced by the displayed bijective phi and pi",
+        "operation_counterexample": [
+          "q1",
+          "q2",
+          "d3",
+          "d7"
+        ],
+        "phi": {
+          "q0": "d0",
+          "q1": "d1",
+          "q2": "d2",
+          "q3": "d3",
+          "q4": "d4",
+          "q5": "d5",
+          "q6": "d6",
+          "q7": "d7"
+        },
+        "pi": "preserved"
+      },
+      "first_operation_counterexample": [
+        "q1",
+        "q2",
+        "d3",
+        "d7"
+      ],
+      "local_well_definedness_does_not_imply_natural_translation": true,
+      "obstruction_is_not_openness": true,
+      "open_in_emitted": false,
+      "operation_natural_basis_map_count": 0,
+      "operation_natural_translation_count": 0,
+      "orientation_forms_per_basis_bijection": 2,
+      "status": "NATURALITY_OBSTRUCTION"
+    },
+    "T_phi_mismatch": {
+      "candidate_id": "fc61902edfd635617e57ab09474426c2c28423b8bc20be00537ccd4b7b5316f7",
+      "first_obstruction": {
+        "check": "T_phi_pi_coherence",
+        "expected_sha256": "69abacd14db4761a595079d91c8b16b9e54a30910959a5cf28fb00cfed8be44b",
+        "observed_sha256": "fef54eec29c07f6414cb9f59e87581690c20a778f36db9d7d9bcc390013abab7"
+      },
+      "geom_equiv": {
+        "holds": false,
+        "preservation_cases": 144,
+        "preservation_failure_count": 0,
+        "reflection_cases": 144,
+        "reflection_failure_count": 0
+      },
+      "naturality": {
+        "C_cases": 0,
+        "C_failure_count": 0,
+        "E_cases": 0,
+        "E_failure_count": 0,
+        "J_cases": 0,
+        "J_failure_count": 0,
+        "W_cases": 12,
+        "W_failure_count": 6,
+        "holds": false,
+        "operation_cases": 0,
+        "operation_failure_count": 0
+      },
+      "non_admission_is_not_openness": true,
+      "open_in_emitted": false,
+      "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+      "status": "NATURALITY_OBSTRUCTION",
+      "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+      "totality_and_bijection": {
+        "T_bijective": true,
+        "T_phi_pi_coherent": false,
+        "T_total": true,
+        "phi_bijective": true,
+        "phi_total": true,
+        "pi_valid": true
+      },
+      "translation_tuple_T_phi_pi": {
+        "T": {
+          "B/return::aff_b_00": "A/vertex::perm_a_00",
+          "B/return::aff_b_01": "A/vertex::perm_a_04",
+          "B/return::aff_b_02": "A/vertex::perm_a_05",
+          "B/return::aff_b_03": "A/vertex::perm_a_01",
+          "B/return::aff_b_04": "A/vertex::perm_a_03",
+          "B/return::aff_b_05": "A/vertex::perm_a_02",
+          "B/source::aff_b_00": "A/face::perm_a_00",
+          "B/source::aff_b_01": "A/face::perm_a_04",
+          "B/source::aff_b_02": "A/face::perm_a_05",
+          "B/source::aff_b_03": "A/face::perm_a_01",
+          "B/source::aff_b_04": "A/face::perm_a_03",
+          "B/source::aff_b_05": "A/face::perm_a_02"
+        },
+        "phi": {
+          "aff_b_00": "perm_a_00",
+          "aff_b_01": "perm_a_03",
+          "aff_b_02": "perm_a_04",
+          "aff_b_03": "perm_a_01",
+          "aff_b_04": "perm_a_05",
+          "aff_b_05": "perm_a_02"
+        },
+        "pi": "reversed"
+      }
+    },
+    "artifact_hash_mutation": {
+      "control": "artifact_hash_mutation",
+      "hash_mismatch_detected": true,
+      "mutated_payload_content_id": "ab9c69450c0677dc33686428c8f67347f8a5f13e1b055451a60b3fc669f8f189",
+      "open_in_emitted": false,
+      "status": "MANIFEST_REJECTED",
+      "stored_artifact_content_id": "14c82dac1937ccbef05b6ebe0eb1f3adf5d1cd7e99f58df296b5415398e72083"
+    },
+    "equality_collapse": {
+      "candidate_id": "c26a627b13f3dbe838b7ddbeaa3e941745586169dd630eaebc2f265a5837e410",
+      "first_obstruction": {
+        "check": "equality_reflection",
+        "expected": true,
+        "input": [
+          "B/return::aff_b_00",
+          "B/return::aff_b_01"
+        ],
+        "observed": false
+      },
+      "geom_equiv": {
+        "holds": false,
+        "preservation_cases": 144,
+        "preservation_failure_count": 0,
+        "reflection_cases": 144,
+        "reflection_failure_count": 120
+      },
+      "naturality": {
+        "C_cases": 0,
+        "C_failure_count": 0,
+        "E_cases": 0,
+        "E_failure_count": 0,
+        "J_cases": 0,
+        "J_failure_count": 0,
+        "W_cases": 12,
+        "W_failure_count": 0,
+        "holds": false,
+        "operation_cases": 0,
+        "operation_failure_count": 0
+      },
+      "non_admission_is_not_openness": true,
+      "open_in_emitted": false,
+      "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+      "status": "EQUALITY_OBSTRUCTION",
+      "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+      "totality_and_bijection": {
+        "T_bijective": false,
+        "T_phi_pi_coherent": true,
+        "T_total": true,
+        "phi_bijective": false,
+        "phi_total": true,
+        "pi_valid": true
+      },
+      "translation_tuple_T_phi_pi": {
+        "T": {
+          "B/return::aff_b_00": "A/face::perm_a_02",
+          "B/return::aff_b_01": "A/face::perm_a_02",
+          "B/return::aff_b_02": "A/face::perm_a_02",
+          "B/return::aff_b_03": "A/face::perm_a_02",
+          "B/return::aff_b_04": "A/face::perm_a_02",
+          "B/return::aff_b_05": "A/face::perm_a_02",
+          "B/source::aff_b_00": "A/vertex::perm_a_02",
+          "B/source::aff_b_01": "A/vertex::perm_a_02",
+          "B/source::aff_b_02": "A/vertex::perm_a_02",
+          "B/source::aff_b_03": "A/vertex::perm_a_02",
+          "B/source::aff_b_04": "A/vertex::perm_a_02",
+          "B/source::aff_b_05": "A/vertex::perm_a_02"
+        },
+        "phi": {
+          "aff_b_00": "perm_a_02",
+          "aff_b_01": "perm_a_02",
+          "aff_b_02": "perm_a_02",
+          "aff_b_03": "perm_a_02",
+          "aff_b_04": "perm_a_02",
+          "aff_b_05": "perm_a_02"
+        },
+        "pi": "preserved"
+      }
+    },
+    "missing_orientation_pi": {
+      "candidate_id": "3564d21300eb40c81bfa0d5b9600987c6842b9f3c5b85348c5e8cab4fdd4f05d",
+      "first_obstruction": {
+        "check": "pi_required",
+        "observed": null
+      },
+      "geom_equiv": {
+        "holds": false,
+        "preservation_cases": 144,
+        "preservation_failure_count": 0,
+        "reflection_cases": 144,
+        "reflection_failure_count": 0
+      },
+      "naturality": {
+        "C_cases": 0,
+        "C_failure_count": 0,
+        "E_cases": 0,
+        "E_failure_count": 0,
+        "J_cases": 0,
+        "J_failure_count": 0,
+        "W_cases": 12,
+        "W_failure_count": 0,
+        "holds": false,
+        "operation_cases": 0,
+        "operation_failure_count": 0
+      },
+      "non_admission_is_not_openness": true,
+      "open_in_emitted": false,
+      "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+      "status": "SCHEMA_OBSTRUCTION",
+      "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+      "totality_and_bijection": {
+        "T_bijective": true,
+        "T_phi_pi_coherent": false,
+        "T_total": true,
+        "phi_bijective": true,
+        "phi_total": true,
+        "pi_valid": false
+      },
+      "translation_tuple_T_phi_pi": {
+        "T": {
+          "B/return::aff_b_00": "A/vertex::perm_a_00",
+          "B/return::aff_b_01": "A/vertex::perm_a_03",
+          "B/return::aff_b_02": "A/vertex::perm_a_04",
+          "B/return::aff_b_03": "A/vertex::perm_a_01",
+          "B/return::aff_b_04": "A/vertex::perm_a_05",
+          "B/return::aff_b_05": "A/vertex::perm_a_02",
+          "B/source::aff_b_00": "A/face::perm_a_00",
+          "B/source::aff_b_01": "A/face::perm_a_03",
+          "B/source::aff_b_02": "A/face::perm_a_04",
+          "B/source::aff_b_03": "A/face::perm_a_01",
+          "B/source::aff_b_04": "A/face::perm_a_05",
+          "B/source::aff_b_05": "A/face::perm_a_02"
+        },
+        "phi": {
+          "aff_b_00": "perm_a_00",
+          "aff_b_01": "perm_a_03",
+          "aff_b_02": "perm_a_04",
+          "aff_b_03": "perm_a_01",
+          "aff_b_04": "perm_a_05",
+          "aff_b_05": "perm_a_02"
+        },
+        "pi": null
+      }
+    },
+    "operation_twist": {
+      "candidate_id": "7cb1715849dbc9e9d5d037debeec9ce48c739835952a918d3d49deef0975499f",
+      "first_obstruction": {
+        "check": "C_naturality",
+        "expected": "A/vertex::perm_a_00",
+        "input": "B/return::aff_b_00",
+        "observed": "A/face::perm_a_00"
+      },
+      "geom_equiv": {
+        "holds": true,
+        "preservation_cases": 144,
+        "preservation_failure_count": 0,
+        "reflection_cases": 144,
+        "reflection_failure_count": 0
+      },
+      "naturality": {
+        "C_cases": 12,
+        "C_failure_count": 12,
+        "E_cases": 12,
+        "E_failure_count": 0,
+        "J_cases": 12,
+        "J_failure_count": 0,
+        "W_cases": 12,
+        "W_failure_count": 0,
+        "holds": false,
+        "operation_cases": 36,
+        "operation_failure_count": 33
+      },
+      "non_admission_is_not_openness": true,
+      "open_in_emitted": false,
+      "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+      "status": "NATURALITY_OBSTRUCTION",
+      "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+      "totality_and_bijection": {
+        "T_bijective": true,
+        "T_phi_pi_coherent": true,
+        "T_total": true,
+        "phi_bijective": true,
+        "phi_total": true,
+        "pi_valid": true
+      },
+      "translation_tuple_T_phi_pi": {
+        "T": {
+          "B/return::aff_b_00": "A/face::perm_a_00",
+          "B/return::aff_b_01": "A/face::perm_a_01",
+          "B/return::aff_b_02": "A/face::perm_a_02",
+          "B/return::aff_b_03": "A/face::perm_a_03",
+          "B/return::aff_b_04": "A/face::perm_a_04",
+          "B/return::aff_b_05": "A/face::perm_a_05",
+          "B/source::aff_b_00": "A/vertex::perm_a_00",
+          "B/source::aff_b_01": "A/vertex::perm_a_01",
+          "B/source::aff_b_02": "A/vertex::perm_a_02",
+          "B/source::aff_b_03": "A/vertex::perm_a_03",
+          "B/source::aff_b_04": "A/vertex::perm_a_04",
+          "B/source::aff_b_05": "A/vertex::perm_a_05"
+        },
+        "phi": {
+          "aff_b_00": "perm_a_00",
+          "aff_b_01": "perm_a_01",
+          "aff_b_02": "perm_a_02",
+          "aff_b_03": "perm_a_03",
+          "aff_b_04": "perm_a_04",
+          "aff_b_05": "perm_a_05"
+        },
+        "pi": "preserved"
+      }
+    },
+    "partial_comparison": {
+      "candidate_id": "16ff68878920e4c9625efdb1a53c49aecd3c7de6988c5561f6394d8afd027af5",
+      "first_obstruction": null,
+      "geom_equiv": {
+        "holds": false,
+        "preservation_cases": 0,
+        "preservation_failure_count": 0,
+        "reflection_cases": 0,
+        "reflection_failure_count": 0
+      },
+      "naturality": {
+        "C_cases": 0,
+        "C_failure_count": 0,
+        "E_cases": 0,
+        "E_failure_count": 0,
+        "J_cases": 0,
+        "J_failure_count": 0,
+        "W_cases": 0,
+        "W_failure_count": 0,
+        "holds": false,
+        "operation_cases": 0,
+        "operation_failure_count": 0
+      },
+      "non_admission_is_not_openness": true,
+      "open_in_emitted": false,
+      "source_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+      "status": "PENDING_COMPARISON",
+      "target_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+      "totality_and_bijection": {
+        "T_bijective": false,
+        "T_phi_pi_coherent": true,
+        "T_total": false,
+        "phi_bijective": false,
+        "phi_total": false,
+        "pi_valid": true
+      },
+      "translation_tuple_T_phi_pi": {
+        "T": {
+          "B/return::aff_b_00": "A/face::perm_a_00",
+          "B/return::aff_b_01": "A/face::perm_a_03",
+          "B/return::aff_b_02": "A/face::perm_a_04",
+          "B/source::aff_b_00": "A/vertex::perm_a_00",
+          "B/source::aff_b_01": "A/vertex::perm_a_03",
+          "B/source::aff_b_02": "A/vertex::perm_a_04"
+        },
+        "phi": {
+          "aff_b_00": "perm_a_00",
+          "aff_b_01": "perm_a_03",
+          "aff_b_02": "perm_a_04"
+        },
+        "pi": "preserved"
+      }
+    },
+    "question_hash_mutation": {
+      "control": "question_hash_mutation",
+      "hash_mismatch_detected": true,
+      "mutated_objective_content_id": "06aa624420304049265a792ae983d4e7677fdbd7f333b4dcdbac8d805a605dab",
+      "open_in_emitted": false,
+      "status": "MANIFEST_REJECTED",
+      "stored_objective_content_id": "b46393bae1338fc4d8ea740b08976f1691b0dd28993c043e7de9f42861466a4d"
+    }
+  },
+  "all_admitted_forms_have_explicit_T_phi_pi": true,
+  "all_admitted_forms_pass_downstream_transfer": true,
+  "candidate_enumeration": {
+    "basis_bijection_count": 720,
+    "candidate_search_inputs": [
+      "immutable basis carriers",
+      "immutable occurrence fibres",
+      "frozen equality matrices"
+    ],
+    "enumeration_receipt_sha256": "cbbe542844c05a5ec4ed2e53fc92874b243c1f15e5b2a1856c768544e5054d1f",
+    "orientation_maps_per_bijection": 2,
+    "questions_or_held_out_used_during_enumeration": false,
+    "raw_T_phi_pi_count": 1440,
+    "status_histogram": {
+      "ADMITTED_NATURAL_TRANSLATION": 6,
+      "NATURALITY_OBSTRUCTION": 1434
+    }
+  },
+  "claim_boundary": "bounded exhaustive verifier subprocess; not actual ASI",
+  "comparison_interpretations": {
+    "classical_well_defined_isolation": {
+      "agent_a_local_replay_passed": true,
+      "agent_b_local_replay_passed": true,
+      "cross_frame_identity_asserted_by_local_checks": false,
+      "status": "BOTH_LOCALLY_WELL_DEFINED"
+    },
+    "natural_existential_conditional": {
+      "canonical_translation_selected": false,
+      "conditions": [
+        "both frozen local geometry replays pass",
+        "candidate enumeration starts only after disclosure",
+        "at least one complete T-phi-pi form passes every equality and naturality check"
+      ],
+      "existence_witness_ids": [
+        "dacd222f0bb825610ad5deb79b3523aaf34b359b06dc944bcff3c9459c0f957b",
+        "1d20d47c3db030f3e426f03b3dd1de904bf00a03d42e2e22ab888859321c021f",
+        "a78855458acfbb5eac0b7e327e4e9ffd78fb2dad79fe8e7175a5f3286564db52",
+        "6b43961f3448215c1c608d9235e9ee02d25af7ba6492786b49a73ac9b97170bd",
+        "3687569f649c397ad1946f02395d148c1917c922c54d6312744baf6f932b8e01",
+        "a1c84a75a9197b358b4b11b01b1d199126fdc92c3b385389e40fe8338d550851"
+      ],
+      "natural_translation_form_count": 6,
+      "status": "CONDITIONALLY_WITNESSED",
+      "unique_translation_claimed": false
+    },
+    "translational_open_isolation": {
+      "agent_a_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+      "agent_a_open_witness": {
+        "frame_equal": true,
+        "left": "A/face::perm_a_00",
+        "left_value": "face",
+        "right": "A/vertex::perm_a_00",
+        "right_value": "vertex"
+      },
+      "agent_b_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+      "agent_b_open_witness": {
+        "frame_equal": true,
+        "left": "B/return::aff_b_00",
+        "left_value": "return",
+        "right": "B/source::aff_b_00",
+        "right_value": "source"
+      },
+      "every_admitted_translation_preserves_open_status": true,
+      "missing_or_rejected_comparison_called_open": false,
+      "question_id": "literal_pole",
+      "status": "OPEN_IN_BOTH_FRAMES_AND_TRANSLATION_INVARIANT"
+    }
+  },
+  "failure_partial_or_unselected_called_open": false,
+  "immutable_manifest_sha256": "77b6a655a41b2b3a06d1ff5376ed2ccb5217520544f06496362ba207f7277ad3",
+  "local_geometry_replay": {
+    "A": {
+      "W_matches_occurrence_payload": true,
+      "artifact_content_id_matches": true,
+      "equality_recomputed_from_local_rule": true,
+      "local_axiom_geometry_audit": {
+        "cases": {
+          "C_idempotence": 12,
+          "C_return_preservation": 12,
+          "J": 12,
+          "grounded": 36,
+          "operation_congruence": 576,
+          "quotient_recovery": 144,
+          "returning": 12,
+          "setoid_reflexivity": 12,
+          "setoid_symmetry": 144,
+          "setoid_transitivity": 1728
+        },
+        "evaluated_under_own_frozen_equality": true,
+        "failure_count": 0,
+        "failure_counts": {
+          "C_idempotence": 0,
+          "C_return_preservation": 0,
+          "J_involution": 0,
+          "grounded": 0,
+          "operation_congruence": 0,
+          "quotient_recovery": 0,
+          "returning": 0,
+          "setoid": 0
+        },
+        "group_certificate_passed": true,
+        "passed": true
+      },
+      "operation_payload_matches": true,
+      "passed": true,
+      "questions_replayed_exactly": true,
+      "solutions_replayed_exactly": true
+    },
+    "B": {
+      "W_matches_occurrence_payload": true,
+      "artifact_content_id_matches": true,
+      "equality_recomputed_from_local_rule": true,
+      "local_axiom_geometry_audit": {
+        "cases": {
+          "C_idempotence": 12,
+          "C_return_preservation": 12,
+          "J": 12,
+          "grounded": 36,
+          "operation_congruence": 576,
+          "quotient_recovery": 144,
+          "returning": 12,
+          "setoid_reflexivity": 12,
+          "setoid_symmetry": 144,
+          "setoid_transitivity": 1728
+        },
+        "evaluated_under_own_frozen_equality": true,
+        "failure_count": 0,
+        "failure_counts": {
+          "C_idempotence": 0,
+          "C_return_preservation": 0,
+          "J_involution": 0,
+          "grounded": 0,
+          "operation_congruence": 0,
+          "quotient_recovery": 0,
+          "returning": 0,
+          "setoid": 0
+        },
+        "group_certificate_passed": true,
+        "passed": true
+      },
+      "operation_payload_matches": true,
+      "passed": true,
+      "questions_replayed_exactly": true,
+      "solutions_replayed_exactly": true
+    }
+  },
+  "manifest_validation": {
+    "checked_roles": [
+      "agent_a",
+      "agent_b"
+    ],
+    "failure_count": 0,
+    "passed": true
+  },
+  "runtime_id": "post-freeze-generative-axiom-geometry-verifier",
+  "schema_version": 1,
+  "status": "PASS",
+  "strong_classical_post_disclosure_baseline": {
+    "accepts_every_operation_preserving_phi": true,
+    "ordinary_group_isomorphism_count": 6,
+    "ordinary_group_isomorphism_phi_ids": [
+      "0584209f054b764a3f12f9ae8da827088de5f19ea1d5a873ee83486531168f88",
+      "649e407b6518ae30381ef19c91a293a23d70c077c800367cd4ec906d67ef888a",
+      "826c8a50e3d6b73999dc1e5217347904ac640fb10a5c340241fe28d7b89aa277",
+      "930f9814513a4a738c4e8bd9db8c53fc27001a41f56dc9832450bcf67dd02cc5",
+      "c5bd27d2f19a1ed5edb50376a5f145f43b37c8074d6f7f30fb6a0fe99e5599b0",
+      "da8a23aeffc2e25a467cf2830b729bbc951ec1411748ef48e77fb094796206d7"
+    ],
+    "orientation_pi_ignored_for_classical_count": true
+  },
+  "tokens_issued": 0,
+  "verifier_started_after_both_artifacts_frozen": true
+}

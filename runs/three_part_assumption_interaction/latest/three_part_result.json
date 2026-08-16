@@ -6,7 +6,7 @@
     "external_candidates": "bc017833560b45692d0c7bf0f90a67fbbc39796e1c04dae8c27da33e40f5bf20",
     "external_frames": "1c4d8da6a4e6e83ab7da75681e64bea675714cbc538a7c0aa8c1d20bfc070017",
     "external_geometries": "2e7aaf20c868cf33c1d28bb7b5a063f36c8abd598f932f0a80d1bef6b3da8438",
-    "part_1": "2a5a28b47e4da2022584b90d6ed51dd4d173791629d12a27bc165aff6b7625a3",
+    "part_1": "66c4bd52f5bb10a996132d1c73665b75df849f809fc135712a686adcd35b0b39",
     "part_2": "fd70509d43daecfd4b4c37f67b5b6c34bb3b69456a58051874d161d127dcce75",
     "part_3": "512688124bc8046e70f36e8cf1ffeae00056db7c745c671befccd7fc847a2084",
     "protocol": "5a380f775a3df79beb3b11f90c91f76e5339a9c60fe3c2bdca85dea1fe263992",
@@ -34,7 +34,7 @@
   },
   "receipt_chain": {
     "count": 9,
-    "head": "47197a577072d7a5917c4157f7413d16f97bdac0512de9edec80303776f3d148",
+    "head": "827d577992557e9f03dcdc25ae9efe025c41c9f319e5e776a035ce43beb1cd8e",
     "ok": true
   },
   "schema_version": 1,

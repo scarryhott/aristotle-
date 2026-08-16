@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "agent_role": "A",
+  "seed": 271828,
+  "construction_family": "generated_permutation_groups",
+  "candidate_degrees": [2, 4, 3],
+  "local_label_prefix": "perm",
+  "pole_labels": ["vertex", "face"],
+  "curvature_representative_pole": "vertex",
+  "visible_inputs": ["shared objective", "this context"],
+  "forbidden_inputs": ["agent B context", "agent B artifact", "verifier protocol"]
+}

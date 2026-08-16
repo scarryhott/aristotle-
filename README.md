@@ -142,9 +142,39 @@ Reproduce the current runtime with:
 python3 experiments/full_stack_math_asi.py --assert-reference
 python3 experiments/classical_vs_closure_asi.py --assert-reference
 python3 experiments/three_part_assumption_interaction_asi.py --assert-reference
+python3 experiments/generative_axiom_geometry_isolation.py --assert-reference
 python3 -m unittest discover -s tests -v
 lake build
 ```
+
+### Executed bounded generative axiom-geometry isolation
+
+The bounded reference run now executes two separate generator subprocesses followed by a third
+post-freeze verifier. It enforces:
+
+```text
+F_A, F_B, Q_A, Q_B
+  ≺ disclose
+  ≺ candidate (T,phi,pi)
+  ≺ GeomEquiv
+  ≺ naturality.
+```
+
+Each frame is assumed conditionally and audited in its own admitted equality before disclosure.
+Only a post-freeze explicit witness that preserves and reflects both equalities and passes the
+downstream commuting laws counts as conditional natural-existential evidence. A rejected,
+partial, missing, or unselected comparison is not `OpenIn`; formal openness still requires a
+named total question and an explicit frame-equal separating pair.
+
+The exhaustive verifier retained all six ordinary isomorphisms and found six fully natural forms
+among 1,440 explicit candidates; all six use the relative pole reversal forced by the two local
+curvature conventions. A separate preserved raw D4/S3 assay stops at a cardinality `GeomEquiv`
+obstruction without rewriting either frame; its upstream session provenance is not established by
+the evidence bundle. Subprocess and manifest isolation are causal controls,
+not a security sandbox, autonomous ASI, or Aristotle run. See the
+[`docs/GENERATIVE_AXIOM_GEOMETRY_ISOLATION_PROTOCOL.md`](docs/GENERATIVE_AXIOM_GEOMETRY_ISOLATION_PROTOCOL.md)
+and [executed run](docs/GENERATIVE_AXIOM_GEOMETRY_ISOLATION_RUN.md), plus the
+[`benchmarks/generative_axiom_geometry_isolation/RUNBOOK.md`](benchmarks/generative_axiom_geometry_isolation/RUNBOOK.md).
 
 ## Grant program
 
@@ -202,6 +232,8 @@ See [`docs/IVI.md`](docs/IVI.md).
 - `experiments/classical_vs_closure_asi.py` — local assumption audit plus strong classical baseline versus translational arm.
 - `benchmarks/three_part_assumption_interaction/` — committed three-part and external-assumption protocol.
 - `experiments/three_part_assumption_interaction_asi.py` — classical, closure-native, and external-interaction bounded simulation.
+- `benchmarks/generative_axiom_geometry_isolation/` — generator contracts, verifier protocol, and preserved raw frames.
+- `experiments/generative_axiom_geometry_isolation.py` — three-process post-freeze comparison runtime.
 - `runs/` — frozen deterministic evidence bundles and receipts.
 - `docs/GRANT.md` — Harmonic/Aristotle proposal.
 - `docs/METAPHYSICS.md` — foundational interpretation.
@@ -210,6 +242,7 @@ See [`docs/IVI.md`](docs/IVI.md).
 - `docs/ASSUMED_AXIOM_GEOMETRIES.md` — local semantic assumptions and explicit translational closure lineage.
 - `docs/CLASSICAL_VS_CLOSURE.md` and `docs/CLASSICAL_VS_CLOSURE_RUN.md` — comparative architecture and executed result.
 - `docs/THREE_PART_EXTERNAL_ASSUMPTION_RUN.md` — executed longitudinal isolation/interaction result.
+- `docs/GENERATIVE_AXIOM_GEOMETRY_ISOLATION_PROTOCOL.md` and `docs/GENERATIVE_AXIOM_GEOMETRY_ISOLATION_RUN.md` — protocol and executed bounded result.
 - `docs/CLAIM_STATUS.md` — formal/experimental/interpretive audit boundary.
 
 ## Research standard

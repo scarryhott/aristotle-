@@ -199,6 +199,25 @@ theorem openIn_transport {X : Type u} {Y : Type v} {Ω : Type z}
     OpenIn F Q ↔ OpenIn G (transportQuestion e Q) := by
   exact not_congr (resolvedIn_transport e Q)
 
+/-- Conditional comparison of two questions supplied independently of question transport.
+
+The runtime may use this theorem only after both questions are frozen and a comparison is
+admitted.  Lean does not formalize that process order here: `e` and `hQ` are explicit hypotheses,
+so the theorem neither constructs a translator nor asserts that independently generated questions
+agree. -/
+theorem independently_supplied_questions_agree_after_admission
+    {X : Type u} {Y : Type v} {Ω : Type z}
+    {F : ReferenceFrame X} {G : ReferenceFrame Y}
+    (e : GeomEquiv F G) (Qsource : X → Ω) (Qtarget : Y → Ω)
+    (hQ : ∀ x, Qtarget (e.occurrenceEquiv x) = Qsource x) :
+    (ResolvedIn F Qsource ↔ ResolvedIn G Qtarget) ∧
+    (OpenIn F Qsource ↔ OpenIn G Qtarget) := by
+  have htransport : Qtarget = transportQuestion e Qsource := by
+    funext y
+    simpa [transportQuestion] using hQ (e.occurrenceEquiv.symm y)
+  rw [htransport]
+  exact ⟨resolvedIn_transport e Qsource, openIn_transport e Qsource⟩
+
 end GeomEquiv
 
 /-! ## Conditional three-frame external interaction -/
@@ -326,6 +345,7 @@ end NRRF631Runtime
 #print axioms NRRF631Runtime.factor_through_quotient_unique
 #print axioms NRRF631Runtime.TransFrame.transGeomEquiv
 #print axioms NRRF631Runtime.TransFrame.openness_language_independent
+#print axioms NRRF631Runtime.GeomEquiv.independently_supplied_questions_agree_after_admission
 #print axioms NRRF631Runtime.three_frame_continuous_relational_identification
 #print axioms NRRF631Runtime.literalPole_open_in_closure
 #print axioms NRRF631Runtime.runtime_begins_in_axiom_geometry

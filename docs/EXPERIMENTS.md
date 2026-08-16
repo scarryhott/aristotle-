@@ -119,13 +119,45 @@ occurrence paths, and composite agreement. It is finite/compositional continuity
 See [`THREE_PART_EXTERNAL_ASSUMPTION_RUN.md`](THREE_PART_EXTERNAL_ASSUMPTION_RUN.md) and
 [`../benchmarks/three_part_assumption_interaction/RUNBOOK.md`](../benchmarks/three_part_assumption_interaction/RUNBOOK.md).
 
-## E1 — Representation re-expression
+## E1 — Generative axiom-geometry isolation
 
-Status: **EXPERIMENTAL DESIGN**.
+Status: **EXECUTED FOR BOUNDED GENERATIVE PROXY; FRONTIER TEST OPEN**.
 
-Repeat the independent-generation protocol on nontrivial mathematical benchmarks with materially
-different definitions. Establish translations only after generation and compare independently
-computed returns fixed before either artifact was seen.
+Two generative mathematical processes receive matched task, proof-kernel, tool, and budget
+contracts but search within distinct registered construction families. The initial bounded design
+may fix carrier size and an equality schema; its free choice is local construction and
+presentation, not unconstrained invention. Each emits a frame and registered total questions.
+Every frame is assumed conditionally and audited in its own admitted equality; neither local
+evaluator may replace that equality with a shared normal form.
+
+The protocol requires the strict order:
+
+```text
+F_A, F_B, Q_A, Q_B
+  ≺ disclose
+  ≺ candidate (T,phi,pi)
+  ≺ GeomEquiv
+  ≺ W/E/J/C, operation, and question naturality.
+```
+
+The classical control records local well-definedness and applies a strong conventional
+equivalence search after disclosure. The translational search begins from the same frozen
+artifacts but records explicit preservation, reflection, naturality, quotient-factor,
+frame-qualified openness, and obstruction evidence. A passing candidate is conditional
+natural-existential evidence for that frozen pair, not an unconditional existence theorem.
+
+The reference implementation enforces causal non-use with separate subprocesses, immutable input
+manifests, and post-verifier hash revalidation. It enumerates 1,440 explicit forms and admits six;
+a strong classical baseline retains the corresponding six ordinary isomorphisms. A preserved raw
+D4/S3 pair instead yields a cardinality `GeomEquiv` obstruction without normalization; the bundle
+does not establish its upstream session provenance. This is not
+security blinding, autonomous ASI, or Aristotle evidence. Rejected,
+partial, missing, and coherently unselected candidates are not `OpenIn`; an `OpenIn` result still
+requires a precommitted total question and an explicit equal-pair separator.
+
+See [`GENERATIVE_AXIOM_GEOMETRY_ISOLATION_PROTOCOL.md`](GENERATIVE_AXIOM_GEOMETRY_ISOLATION_PROTOCOL.md)
+and [`GENERATIVE_AXIOM_GEOMETRY_ISOLATION_RUN.md`](GENERATIVE_AXIOM_GEOMETRY_ISOLATION_RUN.md), plus
+[`../benchmarks/generative_axiom_geometry_isolation/RUNBOOK.md`](../benchmarks/generative_axiom_geometry_isolation/RUNBOOK.md).
 
 ## E2 — Axiom/geometry migration
 

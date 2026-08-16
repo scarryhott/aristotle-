@@ -1,0 +1,759 @@
+{
+  "C": {
+    "A/face::perm_a_00": "A/vertex::perm_a_00",
+    "A/face::perm_a_01": "A/vertex::perm_a_01",
+    "A/face::perm_a_02": "A/vertex::perm_a_02",
+    "A/face::perm_a_03": "A/vertex::perm_a_03",
+    "A/face::perm_a_04": "A/vertex::perm_a_04",
+    "A/face::perm_a_05": "A/vertex::perm_a_05",
+    "A/vertex::perm_a_00": "A/vertex::perm_a_00",
+    "A/vertex::perm_a_01": "A/vertex::perm_a_01",
+    "A/vertex::perm_a_02": "A/vertex::perm_a_02",
+    "A/vertex::perm_a_03": "A/vertex::perm_a_03",
+    "A/vertex::perm_a_04": "A/vertex::perm_a_04",
+    "A/vertex::perm_a_05": "A/vertex::perm_a_05"
+  },
+  "E": {
+    "face": {
+      "perm_a_00": "A/face::perm_a_00",
+      "perm_a_01": "A/face::perm_a_01",
+      "perm_a_02": "A/face::perm_a_02",
+      "perm_a_03": "A/face::perm_a_03",
+      "perm_a_04": "A/face::perm_a_04",
+      "perm_a_05": "A/face::perm_a_05"
+    },
+    "vertex": {
+      "perm_a_00": "A/vertex::perm_a_00",
+      "perm_a_01": "A/vertex::perm_a_01",
+      "perm_a_02": "A/vertex::perm_a_02",
+      "perm_a_03": "A/vertex::perm_a_03",
+      "perm_a_04": "A/vertex::perm_a_04",
+      "perm_a_05": "A/vertex::perm_a_05"
+    }
+  },
+  "J": {
+    "A/face::perm_a_00": "A/vertex::perm_a_00",
+    "A/face::perm_a_01": "A/vertex::perm_a_01",
+    "A/face::perm_a_02": "A/vertex::perm_a_02",
+    "A/face::perm_a_03": "A/vertex::perm_a_03",
+    "A/face::perm_a_04": "A/vertex::perm_a_04",
+    "A/face::perm_a_05": "A/vertex::perm_a_05",
+    "A/vertex::perm_a_00": "A/face::perm_a_00",
+    "A/vertex::perm_a_01": "A/face::perm_a_01",
+    "A/vertex::perm_a_02": "A/face::perm_a_02",
+    "A/vertex::perm_a_03": "A/face::perm_a_03",
+    "A/vertex::perm_a_04": "A/face::perm_a_04",
+    "A/vertex::perm_a_05": "A/face::perm_a_05"
+  },
+  "W": {
+    "A/face::perm_a_00": "perm_a_00",
+    "A/face::perm_a_01": "perm_a_01",
+    "A/face::perm_a_02": "perm_a_02",
+    "A/face::perm_a_03": "perm_a_03",
+    "A/face::perm_a_04": "perm_a_04",
+    "A/face::perm_a_05": "perm_a_05",
+    "A/vertex::perm_a_00": "perm_a_00",
+    "A/vertex::perm_a_01": "perm_a_01",
+    "A/vertex::perm_a_02": "perm_a_02",
+    "A/vertex::perm_a_03": "perm_a_03",
+    "A/vertex::perm_a_04": "perm_a_04",
+    "A/vertex::perm_a_05": "perm_a_05"
+  },
+  "admitted_equality": {
+    "class_of": {
+      "A/face::perm_a_00": "eeba57fd6afa8e116672236949b27b5b2dfa92ffda0f187f6b2ac9b157a0d0a9",
+      "A/face::perm_a_01": "61593be4554d213b68095356e4382bc6ccf7965b3aa8a1e75c652de37ce6cb83",
+      "A/face::perm_a_02": "1958af9234abd2c4cf1c56445cbdddd89a6f4cb6362773d9c300d9ff9edcaffe",
+      "A/face::perm_a_03": "01a70c63b71fe839bee41bb8575e54bc997d570c12e06bbaf0e175cefb8163af",
+      "A/face::perm_a_04": "376696cfa33d138f32fa152c310cfc1ca8a9723ddb091a83c22d970a098828f4",
+      "A/face::perm_a_05": "d773467322abf5d7c5596c1666782f8ac0ef6e1005825378ae2a21fa919226e5",
+      "A/vertex::perm_a_00": "eeba57fd6afa8e116672236949b27b5b2dfa92ffda0f187f6b2ac9b157a0d0a9",
+      "A/vertex::perm_a_01": "61593be4554d213b68095356e4382bc6ccf7965b3aa8a1e75c652de37ce6cb83",
+      "A/vertex::perm_a_02": "1958af9234abd2c4cf1c56445cbdddd89a6f4cb6362773d9c300d9ff9edcaffe",
+      "A/vertex::perm_a_03": "01a70c63b71fe839bee41bb8575e54bc997d570c12e06bbaf0e175cefb8163af",
+      "A/vertex::perm_a_04": "376696cfa33d138f32fa152c310cfc1ca8a9723ddb091a83c22d970a098828f4",
+      "A/vertex::perm_a_05": "d773467322abf5d7c5596c1666782f8ac0ef6e1005825378ae2a21fa919226e5"
+    },
+    "equivalence_classes": [
+      {
+        "class_id": "01a70c63b71fe839bee41bb8575e54bc997d570c12e06bbaf0e175cefb8163af",
+        "members": [
+          "A/face::perm_a_03",
+          "A/vertex::perm_a_03"
+        ]
+      },
+      {
+        "class_id": "1958af9234abd2c4cf1c56445cbdddd89a6f4cb6362773d9c300d9ff9edcaffe",
+        "members": [
+          "A/face::perm_a_02",
+          "A/vertex::perm_a_02"
+        ]
+      },
+      {
+        "class_id": "376696cfa33d138f32fa152c310cfc1ca8a9723ddb091a83c22d970a098828f4",
+        "members": [
+          "A/face::perm_a_04",
+          "A/vertex::perm_a_04"
+        ]
+      },
+      {
+        "class_id": "61593be4554d213b68095356e4382bc6ccf7965b3aa8a1e75c652de37ce6cb83",
+        "members": [
+          "A/face::perm_a_01",
+          "A/vertex::perm_a_01"
+        ]
+      },
+      {
+        "class_id": "d773467322abf5d7c5596c1666782f8ac0ef6e1005825378ae2a21fa919226e5",
+        "members": [
+          "A/face::perm_a_05",
+          "A/vertex::perm_a_05"
+        ]
+      },
+      {
+        "class_id": "eeba57fd6afa8e116672236949b27b5b2dfa92ffda0f187f6b2ac9b157a0d0a9",
+        "members": [
+          "A/face::perm_a_00",
+          "A/vertex::perm_a_00"
+        ]
+      }
+    ],
+    "matrix": {
+      "A/face::perm_a_00": {
+        "A/face::perm_a_00": true,
+        "A/face::perm_a_01": false,
+        "A/face::perm_a_02": false,
+        "A/face::perm_a_03": false,
+        "A/face::perm_a_04": false,
+        "A/face::perm_a_05": false,
+        "A/vertex::perm_a_00": true,
+        "A/vertex::perm_a_01": false,
+        "A/vertex::perm_a_02": false,
+        "A/vertex::perm_a_03": false,
+        "A/vertex::perm_a_04": false,
+        "A/vertex::perm_a_05": false
+      },
+      "A/face::perm_a_01": {
+        "A/face::perm_a_00": false,
+        "A/face::perm_a_01": true,
+        "A/face::perm_a_02": false,
+        "A/face::perm_a_03": false,
+        "A/face::perm_a_04": false,
+        "A/face::perm_a_05": false,
+        "A/vertex::perm_a_00": false,
+        "A/vertex::perm_a_01": true,
+        "A/vertex::perm_a_02": false,
+        "A/vertex::perm_a_03": false,
+        "A/vertex::perm_a_04": false,
+        "A/vertex::perm_a_05": false
+      },
+      "A/face::perm_a_02": {
+        "A/face::perm_a_00": false,
+        "A/face::perm_a_01": false,
+        "A/face::perm_a_02": true,
+        "A/face::perm_a_03": false,
+        "A/face::perm_a_04": false,
+        "A/face::perm_a_05": false,
+        "A/vertex::perm_a_00": false,
+        "A/vertex::perm_a_01": false,
+        "A/vertex::perm_a_02": true,
+        "A/vertex::perm_a_03": false,
+        "A/vertex::perm_a_04": false,
+        "A/vertex::perm_a_05": false
+      },
+      "A/face::perm_a_03": {
+        "A/face::perm_a_00": false,
+        "A/face::perm_a_01": false,
+        "A/face::perm_a_02": false,
+        "A/face::perm_a_03": true,
+        "A/face::perm_a_04": false,
+        "A/face::perm_a_05": false,
+        "A/vertex::perm_a_00": false,
+        "A/vertex::perm_a_01": false,
+        "A/vertex::perm_a_02": false,
+        "A/vertex::perm_a_03": true,
+        "A/vertex::perm_a_04": false,
+        "A/vertex::perm_a_05": false
+      },
+      "A/face::perm_a_04": {
+        "A/face::perm_a_00": false,
+        "A/face::perm_a_01": false,
+        "A/face::perm_a_02": false,
+        "A/face::perm_a_03": false,
+        "A/face::perm_a_04": true,
+        "A/face::perm_a_05": false,
+        "A/vertex::perm_a_00": false,
+        "A/vertex::perm_a_01": false,
+        "A/vertex::perm_a_02": false,
+        "A/vertex::perm_a_03": false,
+        "A/vertex::perm_a_04": true,
+        "A/vertex::perm_a_05": false
+      },
+      "A/face::perm_a_05": {
+        "A/face::perm_a_00": false,
+        "A/face::perm_a_01": false,
+        "A/face::perm_a_02": false,
+        "A/face::perm_a_03": false,
+        "A/face::perm_a_04": false,
+        "A/face::perm_a_05": true,
+        "A/vertex::perm_a_00": false,
+        "A/vertex::perm_a_01": false,
+        "A/vertex::perm_a_02": false,
+        "A/vertex::perm_a_03": false,
+        "A/vertex::perm_a_04": false,
+        "A/vertex::perm_a_05": true
+      },
+      "A/vertex::perm_a_00": {
+        "A/face::perm_a_00": true,
+        "A/face::perm_a_01": false,
+        "A/face::perm_a_02": false,
+        "A/face::perm_a_03": false,
+        "A/face::perm_a_04": false,
+        "A/face::perm_a_05": false,
+        "A/vertex::perm_a_00": true,
+        "A/vertex::perm_a_01": false,
+        "A/vertex::perm_a_02": false,
+        "A/vertex::perm_a_03": false,
+        "A/vertex::perm_a_04": false,
+        "A/vertex::perm_a_05": false
+      },
+      "A/vertex::perm_a_01": {
+        "A/face::perm_a_00": false,
+        "A/face::perm_a_01": true,
+        "A/face::perm_a_02": false,
+        "A/face::perm_a_03": false,
+        "A/face::perm_a_04": false,
+        "A/face::perm_a_05": false,
+        "A/vertex::perm_a_00": false,
+        "A/vertex::perm_a_01": true,
+        "A/vertex::perm_a_02": false,
+        "A/vertex::perm_a_03": false,
+        "A/vertex::perm_a_04": false,
+        "A/vertex::perm_a_05": false
+      },
+      "A/vertex::perm_a_02": {
+        "A/face::perm_a_00": false,
+        "A/face::perm_a_01": false,
+        "A/face::perm_a_02": true,
+        "A/face::perm_a_03": false,
+        "A/face::perm_a_04": false,
+        "A/face::perm_a_05": false,
+        "A/vertex::perm_a_00": false,
+        "A/vertex::perm_a_01": false,
+        "A/vertex::perm_a_02": true,
+        "A/vertex::perm_a_03": false,
+        "A/vertex::perm_a_04": false,
+        "A/vertex::perm_a_05": false
+      },
+      "A/vertex::perm_a_03": {
+        "A/face::perm_a_00": false,
+        "A/face::perm_a_01": false,
+        "A/face::perm_a_02": false,
+        "A/face::perm_a_03": true,
+        "A/face::perm_a_04": false,
+        "A/face::perm_a_05": false,
+        "A/vertex::perm_a_00": false,
+        "A/vertex::perm_a_01": false,
+        "A/vertex::perm_a_02": false,
+        "A/vertex::perm_a_03": true,
+        "A/vertex::perm_a_04": false,
+        "A/vertex::perm_a_05": false
+      },
+      "A/vertex::perm_a_04": {
+        "A/face::perm_a_00": false,
+        "A/face::perm_a_01": false,
+        "A/face::perm_a_02": false,
+        "A/face::perm_a_03": false,
+        "A/face::perm_a_04": true,
+        "A/face::perm_a_05": false,
+        "A/vertex::perm_a_00": false,
+        "A/vertex::perm_a_01": false,
+        "A/vertex::perm_a_02": false,
+        "A/vertex::perm_a_03": false,
+        "A/vertex::perm_a_04": true,
+        "A/vertex::perm_a_05": false
+      },
+      "A/vertex::perm_a_05": {
+        "A/face::perm_a_00": false,
+        "A/face::perm_a_01": false,
+        "A/face::perm_a_02": false,
+        "A/face::perm_a_03": false,
+        "A/face::perm_a_04": false,
+        "A/face::perm_a_05": true,
+        "A/vertex::perm_a_00": false,
+        "A/vertex::perm_a_01": false,
+        "A/vertex::perm_a_02": false,
+        "A/vertex::perm_a_03": false,
+        "A/vertex::perm_a_04": false,
+        "A/vertex::perm_a_05": true
+      }
+    },
+    "matrix_sha256": "88aed6a9f61911d85fe4d5e0ded6b65ab2135136dc97258f87e296c8a121836a"
+  },
+  "agent_role": "A",
+  "artifact_content_id": "7d145e48830d172200db0043218291d67719fccf46453ef6e244131fd5ab3e34",
+  "axiom_geometry_assumption": {
+    "carrier": "two independently named occurrence presentations per local identity",
+    "curvature_representative_pole": "vertex",
+    "poles": [
+      "vertex",
+      "face"
+    ],
+    "rule": "equal complete local right-action signatures",
+    "status": "ASSUMED_THEN_EXHAUSTIVELY_AUDITED_LOCALLY"
+  },
+  "axiom_geometry_assumption_id": "94fe1295880f7aaca755a387af9b09bb0869b280603357df6d6911af195fc7d9",
+  "basis": [
+    "perm_a_00",
+    "perm_a_01",
+    "perm_a_02",
+    "perm_a_03",
+    "perm_a_04",
+    "perm_a_05"
+  ],
+  "claim_boundary": "deterministic constrained model search in one subprocess",
+  "construction_family": "generated_permutation_groups",
+  "context_content_id": "fe223bdba08c1f2b4235694424217f2ee50e123e1242aab7338301dcfbbffe6e",
+  "context_file_sha256": "9b7bea7dc35390e4f239d2186f79b657b691da9e9a77c8e15fb7d39a182be5a5",
+  "frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+  "group_certificate": {
+    "associativity_cases": 216,
+    "associativity_failure_count": 0,
+    "first_associativity_failure": null,
+    "identity": "perm_a_02",
+    "identity_candidates": [
+      "perm_a_02"
+    ],
+    "inverses": {
+      "perm_a_00": "perm_a_01",
+      "perm_a_01": "perm_a_00",
+      "perm_a_02": "perm_a_02",
+      "perm_a_03": "perm_a_03",
+      "perm_a_04": "perm_a_04",
+      "perm_a_05": "perm_a_05"
+    },
+    "orders": {
+      "perm_a_00": 3,
+      "perm_a_01": 3,
+      "perm_a_02": 1,
+      "perm_a_03": 2,
+      "perm_a_04": 2,
+      "perm_a_05": 2
+    },
+    "passed": true
+  },
+  "internal_unified_evaluation": {
+    "cases": {
+      "C_idempotence": 12,
+      "C_return_preservation": 12,
+      "J": 12,
+      "grounded": 36,
+      "operation_congruence": 576,
+      "quotient_recovery": 144,
+      "returning": 12,
+      "setoid_reflexivity": 12,
+      "setoid_symmetry": 144,
+      "setoid_transitivity": 1728
+    },
+    "evaluated_under_own_frozen_equality": true,
+    "failure_count": 0,
+    "failure_counts": {
+      "C_idempotence": 0,
+      "C_return_preservation": 0,
+      "J_involution": 0,
+      "grounded": 0,
+      "operation_congruence": 0,
+      "quotient_recovery": 0,
+      "returning": 0,
+      "setoid": 0
+    },
+    "group_certificate_passed": true,
+    "passed": true
+  },
+  "local_encodings": {
+    "perm_a_00": [
+      1,
+      2,
+      0
+    ],
+    "perm_a_01": [
+      2,
+      0,
+      1
+    ],
+    "perm_a_02": [
+      0,
+      1,
+      2
+    ],
+    "perm_a_03": [
+      0,
+      2,
+      1
+    ],
+    "perm_a_04": [
+      1,
+      0,
+      2
+    ],
+    "perm_a_05": [
+      2,
+      1,
+      0
+    ]
+  },
+  "local_generators": {
+    "r": "perm_a_00",
+    "s": "perm_a_03"
+  },
+  "objective_content_id": "b46393bae1338fc4d8ea740b08976f1691b0dd28993c043e7de9f42861466a4d",
+  "objective_file_sha256": "1c455668dbbe9b84a7fa8a2e7d728767ae3df8bda1f581403965be98880d3b70",
+  "occurrences": [
+    {
+      "occurrence_id": "A/face::perm_a_00",
+      "pole": "face",
+      "returned_identity": "perm_a_00",
+      "right_action_signature": [
+        "perm_a_01",
+        "perm_a_02",
+        "perm_a_00",
+        "perm_a_04",
+        "perm_a_05",
+        "perm_a_03"
+      ]
+    },
+    {
+      "occurrence_id": "A/face::perm_a_01",
+      "pole": "face",
+      "returned_identity": "perm_a_01",
+      "right_action_signature": [
+        "perm_a_02",
+        "perm_a_00",
+        "perm_a_01",
+        "perm_a_05",
+        "perm_a_03",
+        "perm_a_04"
+      ]
+    },
+    {
+      "occurrence_id": "A/face::perm_a_02",
+      "pole": "face",
+      "returned_identity": "perm_a_02",
+      "right_action_signature": [
+        "perm_a_00",
+        "perm_a_01",
+        "perm_a_02",
+        "perm_a_03",
+        "perm_a_04",
+        "perm_a_05"
+      ]
+    },
+    {
+      "occurrence_id": "A/face::perm_a_03",
+      "pole": "face",
+      "returned_identity": "perm_a_03",
+      "right_action_signature": [
+        "perm_a_05",
+        "perm_a_04",
+        "perm_a_03",
+        "perm_a_02",
+        "perm_a_01",
+        "perm_a_00"
+      ]
+    },
+    {
+      "occurrence_id": "A/face::perm_a_04",
+      "pole": "face",
+      "returned_identity": "perm_a_04",
+      "right_action_signature": [
+        "perm_a_03",
+        "perm_a_05",
+        "perm_a_04",
+        "perm_a_00",
+        "perm_a_02",
+        "perm_a_01"
+      ]
+    },
+    {
+      "occurrence_id": "A/face::perm_a_05",
+      "pole": "face",
+      "returned_identity": "perm_a_05",
+      "right_action_signature": [
+        "perm_a_04",
+        "perm_a_03",
+        "perm_a_05",
+        "perm_a_01",
+        "perm_a_00",
+        "perm_a_02"
+      ]
+    },
+    {
+      "occurrence_id": "A/vertex::perm_a_00",
+      "pole": "vertex",
+      "returned_identity": "perm_a_00",
+      "right_action_signature": [
+        "perm_a_01",
+        "perm_a_02",
+        "perm_a_00",
+        "perm_a_04",
+        "perm_a_05",
+        "perm_a_03"
+      ]
+    },
+    {
+      "occurrence_id": "A/vertex::perm_a_01",
+      "pole": "vertex",
+      "returned_identity": "perm_a_01",
+      "right_action_signature": [
+        "perm_a_02",
+        "perm_a_00",
+        "perm_a_01",
+        "perm_a_05",
+        "perm_a_03",
+        "perm_a_04"
+      ]
+    },
+    {
+      "occurrence_id": "A/vertex::perm_a_02",
+      "pole": "vertex",
+      "returned_identity": "perm_a_02",
+      "right_action_signature": [
+        "perm_a_00",
+        "perm_a_01",
+        "perm_a_02",
+        "perm_a_03",
+        "perm_a_04",
+        "perm_a_05"
+      ]
+    },
+    {
+      "occurrence_id": "A/vertex::perm_a_03",
+      "pole": "vertex",
+      "returned_identity": "perm_a_03",
+      "right_action_signature": [
+        "perm_a_05",
+        "perm_a_04",
+        "perm_a_03",
+        "perm_a_02",
+        "perm_a_01",
+        "perm_a_00"
+      ]
+    },
+    {
+      "occurrence_id": "A/vertex::perm_a_04",
+      "pole": "vertex",
+      "returned_identity": "perm_a_04",
+      "right_action_signature": [
+        "perm_a_03",
+        "perm_a_05",
+        "perm_a_04",
+        "perm_a_00",
+        "perm_a_02",
+        "perm_a_01"
+      ]
+    },
+    {
+      "occurrence_id": "A/vertex::perm_a_05",
+      "pole": "vertex",
+      "returned_identity": "perm_a_05",
+      "right_action_signature": [
+        "perm_a_04",
+        "perm_a_03",
+        "perm_a_05",
+        "perm_a_01",
+        "perm_a_00",
+        "perm_a_02"
+      ]
+    }
+  ],
+  "operation_table": {
+    "perm_a_00": {
+      "perm_a_00": "perm_a_01",
+      "perm_a_01": "perm_a_02",
+      "perm_a_02": "perm_a_00",
+      "perm_a_03": "perm_a_04",
+      "perm_a_04": "perm_a_05",
+      "perm_a_05": "perm_a_03"
+    },
+    "perm_a_01": {
+      "perm_a_00": "perm_a_02",
+      "perm_a_01": "perm_a_00",
+      "perm_a_02": "perm_a_01",
+      "perm_a_03": "perm_a_05",
+      "perm_a_04": "perm_a_03",
+      "perm_a_05": "perm_a_04"
+    },
+    "perm_a_02": {
+      "perm_a_00": "perm_a_00",
+      "perm_a_01": "perm_a_01",
+      "perm_a_02": "perm_a_02",
+      "perm_a_03": "perm_a_03",
+      "perm_a_04": "perm_a_04",
+      "perm_a_05": "perm_a_05"
+    },
+    "perm_a_03": {
+      "perm_a_00": "perm_a_05",
+      "perm_a_01": "perm_a_04",
+      "perm_a_02": "perm_a_03",
+      "perm_a_03": "perm_a_02",
+      "perm_a_04": "perm_a_01",
+      "perm_a_05": "perm_a_00"
+    },
+    "perm_a_04": {
+      "perm_a_00": "perm_a_03",
+      "perm_a_01": "perm_a_05",
+      "perm_a_02": "perm_a_04",
+      "perm_a_03": "perm_a_00",
+      "perm_a_04": "perm_a_02",
+      "perm_a_05": "perm_a_01"
+    },
+    "perm_a_05": {
+      "perm_a_00": "perm_a_04",
+      "perm_a_01": "perm_a_03",
+      "perm_a_02": "perm_a_05",
+      "perm_a_03": "perm_a_01",
+      "perm_a_04": "perm_a_00",
+      "perm_a_05": "perm_a_02"
+    }
+  },
+  "other_agent_artifact_visible": false,
+  "question_relations": [
+    {
+      "axiom_geometry_assumption_id": "94fe1295880f7aaca755a387af9b09bb0869b280603357df6d6911af195fc7d9",
+      "bare_open_label": false,
+      "factorization": {
+        "factor": {
+          "01a70c63b71fe839bee41bb8575e54bc997d570c12e06bbaf0e175cefb8163af": 2,
+          "1958af9234abd2c4cf1c56445cbdddd89a6f4cb6362773d9c300d9ff9edcaffe": 1,
+          "376696cfa33d138f32fa152c310cfc1ca8a9723ddb091a83c22d970a098828f4": 2,
+          "61593be4554d213b68095356e4382bc6ccf7965b3aa8a1e75c652de37ce6cb83": 3,
+          "d773467322abf5d7c5596c1666782f8ac0ef6e1005825378ae2a21fa919226e5": 2,
+          "eeba57fd6afa8e116672236949b27b5b2dfa92ffda0f187f6b2ac9b157a0d0a9": 3
+        },
+        "factor_sha256": "d421e01b05f94b257c4cc58688a36d0cfd32783c1a281a51a3641bbd5de54c18",
+        "through_frame_quotient": true,
+        "unique": true
+      },
+      "frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+      "open_in_frame": false,
+      "open_witness": null,
+      "question_definition_sha256": "e230356aa9c6c65d22af8d9dce0bf978971f13d4da9d4428068a4202ab3b7050",
+      "question_id": "element_order",
+      "resolved_in_frame": true,
+      "separating_pair_count": 0,
+      "total": true
+    },
+    {
+      "axiom_geometry_assumption_id": "94fe1295880f7aaca755a387af9b09bb0869b280603357df6d6911af195fc7d9",
+      "bare_open_label": false,
+      "factorization": {
+        "factor": {
+          "01a70c63b71fe839bee41bb8575e54bc997d570c12e06bbaf0e175cefb8163af": true,
+          "1958af9234abd2c4cf1c56445cbdddd89a6f4cb6362773d9c300d9ff9edcaffe": true,
+          "376696cfa33d138f32fa152c310cfc1ca8a9723ddb091a83c22d970a098828f4": true,
+          "61593be4554d213b68095356e4382bc6ccf7965b3aa8a1e75c652de37ce6cb83": false,
+          "d773467322abf5d7c5596c1666782f8ac0ef6e1005825378ae2a21fa919226e5": true,
+          "eeba57fd6afa8e116672236949b27b5b2dfa92ffda0f187f6b2ac9b157a0d0a9": false
+        },
+        "factor_sha256": "8e2faa65592fe4206b9deedaba3357bc1fb98caf26c87c37392a2ce1535ec286",
+        "through_frame_quotient": true,
+        "unique": true
+      },
+      "frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+      "open_in_frame": false,
+      "open_witness": null,
+      "question_definition_sha256": "1751b443312880ed77eab7bc96b1decf1617ee2d61be7aab0c295efa0e28e585",
+      "question_id": "square_is_identity",
+      "resolved_in_frame": true,
+      "separating_pair_count": 0,
+      "total": true
+    },
+    {
+      "axiom_geometry_assumption_id": "94fe1295880f7aaca755a387af9b09bb0869b280603357df6d6911af195fc7d9",
+      "bare_open_label": false,
+      "factorization": null,
+      "frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+      "open_in_frame": true,
+      "open_witness": {
+        "frame_equal": true,
+        "left": "A/face::perm_a_00",
+        "left_value": "face",
+        "right": "A/vertex::perm_a_00",
+        "right_value": "vertex"
+      },
+      "question_definition_sha256": "549ab7f062b765a68f5d1a0a1436580a1fff732a0deb81e965b36d6b56bd9092",
+      "question_id": "literal_pole",
+      "resolved_in_frame": false,
+      "separating_pair_count": 12,
+      "total": true
+    }
+  ],
+  "runtime_id": "isolated-generative-local-axiom-geometry",
+  "schema_version": 1,
+  "search_trace": [
+    {
+      "candidate_parameter": 2,
+      "carrier_size": 2,
+      "construction": "rotation/reflection permutation closure",
+      "element_order_multiset": [
+        1,
+        2
+      ],
+      "group_certificate_passed": true,
+      "matches_objective": false,
+      "nonabelian": false
+    },
+    {
+      "candidate_parameter": 4,
+      "carrier_size": 8,
+      "construction": "rotation/reflection permutation closure",
+      "element_order_multiset": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4
+      ],
+      "group_certificate_passed": true,
+      "matches_objective": false,
+      "nonabelian": true
+    },
+    {
+      "candidate_parameter": 3,
+      "carrier_size": 6,
+      "construction": "rotation/reflection permutation closure",
+      "element_order_multiset": [
+        1,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "group_certificate_passed": true,
+      "matches_objective": true,
+      "nonabelian": true
+    }
+  ],
+  "selected_parameter": 3,
+  "solution_artifact": {
+    "all_listed_satisfy": true,
+    "all_solutions_listed": true,
+    "exhaustive_cases": 6,
+    "problem_id": "involutive_elements",
+    "solutions": [
+      "perm_a_02",
+      "perm_a_03",
+      "perm_a_04",
+      "perm_a_05"
+    ]
+  },
+  "verifier_protocol_visible": false,
+  "visible_inputs": [
+    "objective.json",
+    "agent_a_context.json"
+  ]
+}

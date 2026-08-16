@@ -1,0 +1,24 @@
+{
+  "causal_boundary": "both generator subprocesses exited before verifier launch",
+  "files": {
+    "agent_a": {
+      "artifact_content_id": "7d145e48830d172200db0043218291d67719fccf46453ef6e244131fd5ab3e34",
+      "path": "agent_a.56e0b23ac76fb7e1.json",
+      "sha256": "56e0b23ac76fb7e1070faa555f1ee49205bb2fcd0b0b3094f2521e287ec292f8"
+    },
+    "agent_b": {
+      "artifact_content_id": "14c82dac1937ccbef05b6ebe0eb1f3adf5d1cd7e99f58df296b5415398e72083",
+      "path": "agent_b.a87712850742df6b.json",
+      "sha256": "a87712850742df6b1207db255f979d5782e70711cbe4d5e3ee23c4abbf244f44"
+    },
+    "objective": {
+      "path": "objective.json",
+      "sha256": "1c455668dbbe9b84a7fa8a2e7d728767ae3df8bda1f581403965be98880d3b70"
+    },
+    "verifier_protocol": {
+      "path": "verifier_protocol.json",
+      "sha256": "e51ab811b4b27783a4ee971d0aa4e417d2fc58210adf43c660ca37a791866cc8"
+    }
+  },
+  "schema_version": 1
+}

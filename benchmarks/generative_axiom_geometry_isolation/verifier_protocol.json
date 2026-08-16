@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "verifier_id": "post-freeze-originless-finite-comparison",
+  "claim_boundary": "A third deterministic subprocess verifies immutable finite artifacts; it is not an ASI or Aristotle run.",
+  "candidate_policy": {
+    "basis_maps": "enumerate every bijection from B's returned identity basis to A's",
+    "orientation_maps": ["preserved", "reversed"],
+    "selection": "retain every fully natural form; select no canonical translator"
+  },
+  "required_checks": [
+    "artifact manifest hashes",
+    "local geometry replay under each frozen equality",
+    "T and phi totality and bijection",
+    "T-phi-pi coherence",
+    "equality preservation and reflection",
+    "W naturality",
+    "E naturality",
+    "J naturality",
+    "C naturality",
+    "operation naturality",
+    "transported ResolvedIn factorization or witnessed OpenIn",
+    "held-out word and solution transfer"
+  ],
+  "held_out_transfer": {
+    "word": ["r", "s", "r", "r", "s", "r"],
+    "solution_problem_id": "involutive_elements"
+  },
+  "comparison_interpretations": [
+    "classical_well_defined_isolation",
+    "translational_open_isolation",
+    "natural_existential_conditional"
+  ],
+  "adversarial_controls": [
+    "equality_collapse",
+    "operation_twist",
+    "partial_comparison",
+    "missing_orientation_pi",
+    "T_phi_mismatch",
+    "artifact_hash_mutation",
+    "question_hash_mutation",
+    "D4_Q8_free_choice_contrast"
+  ],
+  "openness_rule": "OpenIn requires a named frame, a total question, and an explicit x~y with unequal question values. Missing or rejected translations are never OpenIn."
+}
