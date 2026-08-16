@@ -207,10 +207,12 @@ record the original directed chains.
 
 ### P1 — import and bridge the exact formal sources
 
-Add the exact NRRF634–639 files and dependencies, build them without `sorry`,
+Add the exact NRRF634–640 files and dependencies, build them without `sorry`,
 and audit their actual definitions. Then add a thin certificate bridge from
 the runtime's frozen lines, reach, completion, `LocalIVI_W` witness, and topology into
-the precise NRRF639 structures. Until that happens, keep NRRF639 marked
+the precise NRRF639/640 structures. In particular, prove rather than assume
+that the runtime's finite equality-saturation topology agrees with NRRF640's
+reported wall topology on the disclosed symmetric line set. Until that happens, keep NRRF639/640 marked
 **REPORTED PROVED OUTSIDE CHECKOUT — NOT LOCALLY AUDITED**.
 
 ### P2 — proof-relevant maze paths, holonomy, and homotopy

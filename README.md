@@ -145,7 +145,7 @@ The available bridges make later layers explicit:
 - `lean/NRRF627IndependentReturnBridge.lean` — relative equality and independently witnessed admission;
 - `lean/NRRF631RuntimeFrameConditionalBridge.lean` — runtime `ReferenceFrame`, `GeomEquiv`, quotient factorization, transported `ResolvedIn`/`OpenIn`, and external-frame compositional identification.
 
-The broader NRRF618–633 sequence develops the observation-free relational foundation, originless translational order, existence/naturality, frame-conditional openness, and the unique admissible open relational definition. The later NRRF634–639 learning/maze/completion results are separately reported but are not present in this checkout. General sources not present here are reported as such rather than reconstructed or falsely re-audited.
+The broader NRRF618–633 sequence develops the observation-free relational foundation, originless translational order, existence/naturality, frame-conditional openness, and the unique admissible open relational definition. The later NRRF634–640 learning/maze/completion results are separately reported but are not present in this checkout. General sources not present here are reported as such rather than reconstructed or falsely re-audited. See [`docs/EXTERNAL_LEAN_REFERENCES.md`](docs/EXTERNAL_LEAN_REFERENCES.md) for the exact source-status ledger.
 
 ## Relative axiom geometry
 
@@ -180,12 +180,12 @@ W_m(T_lm u) = phi_lm(W_l u).
 
 The separately reported NRRF633 result sharpens the downstream definition: within a translational frame, returning + grounded relational definition uniquely yields closure equality, after which translation forces naturality.
 
-**IVI — intangibly verified information —** is the interpretation of naturally recoverable relational identity that does not require unique reconstruction of its local occurrence. It is downstream of relational return rather than a separate truth primitive. See [`docs/IVI.md`](docs/IVI.md).
+**IVI — intangible verified information —** is the interpretation of naturally recoverable relational identity that does not require unique reconstruction of its local occurrence. It is downstream of relational return rather than a separate truth primitive. See [`docs/IVI.md`](docs/IVI.md).
 
 The new bounded maze run starts before the quotient: it freezes local equality, derives raw reach from one path/wall line set, requires explicit returns before treating reach as equality, derives the finite saturation topology, and issues a receipt only afterward. It executes six finite fixtures for its three-premise bounded proxy—completion, `LocalIVI_W`, and exact reach/equality alignment—without treating that proxy as the unavailable NRRF639 `ClosureThesis`. See [`docs/TRANSLATIONAL_COMPLETION_MAZE_TOPOLOGY_RUN.md`](docs/TRANSLATIONAL_COMPLETION_MAZE_TOPOLOGY_RUN.md).
 
 For current project work, this full closure-translational runtime is the
-operative executable specification. The separately reported NRRF599/639 Lean
+operative executable specification. The separately reported NRRF599/639/640 Lean
 results are retained as external formal references and comparison targets;
 they do not redefine the runtime or count as locally audited evidence until
 their exact sources and dependencies are imported and rebuilt here. Claims

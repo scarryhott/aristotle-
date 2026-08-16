@@ -36,3 +36,9 @@ lake build
 The executable full-stack and paired-comparison D4 runs are finite Python evidence rather than Lean
 theorems that learning occurred. Lean establishes the conditional framework; the frozen runtime
 artifacts establish what the independent classical proxies actually selected and executed.
+
+NRRF599 and NRRF633–640 are external formal references, not build roots in this
+checkout. Their reported theorem names and source status are recorded in
+`docs/EXTERNAL_LEAN_REFERENCES.md`. They must be imported with their exact
+dependencies and rebuilt before any runtime-to-NRRF639/640 bridge is labelled
+locally machine-checked.

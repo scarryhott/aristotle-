@@ -1,4 +1,4 @@
-# IVI: Intangibly Verified Information
+# IVI: Intangible Verified Information
 
 IVI is the informational interpretation of the translational axiometry. It does **not** supply closure, a privileged verifier, or an external truth frame. It belongs downstream of the project's foundational order:
 
