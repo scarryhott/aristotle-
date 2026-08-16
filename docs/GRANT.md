@@ -166,13 +166,15 @@ Replace the bounded generators with qualifying independent Aristotle sessions wh
 Aristotle A → F_A → audit → freeze
 Aristotle B → F_B → audit → freeze
                     ↓
-          post-freeze (T,phi,pi)
+          frozen native translation T_AB
                     ↓
-               GeomEquiv?
+     primitive/held-out validation + recovery
                     ↓
-                naturality?
+          candidate equality / GeomEquiv?
                     ↓
-       question transport + held-out transfer
+         independent return generation
+                    ↓
+ completion + local/cross-frame IVI + topology/receipts
 ```
 
 A natural translation, explicit equality obstruction, downstream naturality obstruction, genuine frame-relative `OpenIn`, or registered interface boundary are all substantive outcomes.

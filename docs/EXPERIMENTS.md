@@ -137,11 +137,11 @@ Committed evidence must replay byte-identically. CI reruns the experimental and 
 
 ## Primary frontier experiment — Aristotle-generated frames
 
-Status: **OPEN; THIS IS THE GRANT-SCALE EXPERIMENT**.
+Status: **ACTIVE; isolated local generation executed, all cross-frame stages remain open.** This native-translation-first protocol is the sole primary frontier experiment. It replaces the earlier generic instruction to begin with `GeomEquiv`.
 
 The next experiment should not redesign the verifier. It should replace the bounded frame generators with genuinely independent frontier mathematical-agent sessions while preserving the published protocol.
 
-### Phase A — independent local generation
+### Phase A — independent local generation (executed initial pair)
 
 Two isolated Aristotle sessions receive the same abstract mathematical objective but no access to each other's construction, terminology, equality, or eventual translator. Each session may choose its own primitives, axioms, geometry, representation, and proof decomposition.
 
@@ -152,24 +152,35 @@ Aristotle A → F_A, Q_A → internal audit → hash/freeze
 Aristotle B → F_B, Q_B → internal audit → hash/freeze
 ```
 
-No older frame is silently substituted as a normal form.
+No older frame is silently substituted as a normal form. The initial pair was created as two separate Aristotle jobs from the same neutral packet and each formalizes a single frame only. Each reports no `sorry` and deliberately omits identity quotients, cross-frame equivalence, translations, completion, and reverse-path targets. See [`ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md`](ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md).
 
-### Phase B — post-freeze translation
+### Phase B — native translation and identity-independent validation
 
 Only after both frames freeze are they disclosed to the translation process:
 
 ```text
 F_A, F_B
-  → raw candidate (T,phi,pi)
-  → GeomEquiv?
-  → W/E/J/C + operation naturality?
-  → question transport?
-  → held-out cross-frame transfer?
+  → frozen native translation T_AB
+  → primitive-relation/operation preservation
+  → held-out local consequences + recovery
+  → candidate relational equality / GeomEquiv?
 ```
 
-Neither source frame may be repaired after candidate disclosure.
+The validator must apply its preregistered `UNMAPPED`/`AMBIGUOUS` rule rather than use a later equality or completion result to repair a translation. Neither source frame may be repaired after candidate disclosure.
 
-### Phase C — outcomes
+### Phase C — independent return and downstream evaluation
+
+Only after candidate equality is recorded does a return generator receive the admitted frozen forward interface. It may not receive target reverse edges, identity outcome, or downstream scores.
+
+```text
+candidate equality
+  → independent return generation
+  → translational completion
+  → LocalIVI_A, LocalIVI_B, CrossFrameIVI_AB
+  → topology naturality, receipts, question transport, held-out transfer
+```
+
+### Phase D — outcomes
 
 All outcomes are informative and must retain lineage:
 
@@ -179,7 +190,7 @@ All outcomes are informative and must retain lineage:
 - **frame-relative openness:** a precommitted total question has an explicit frame-equal separating witness;
 - **pending/interface boundary:** evidence is insufficient or the artifact lies outside the registered comparison interface; this is not `OpenIn`.
 
-The strongest positive result would be substantially different independently generated Aristotle frames connected by the unchanged post-freeze protocol, with successful held-out mathematical transfer and no canonical normalization.
+The strongest positive result would be substantially different independently generated Aristotle frames connected by the frozen protocol, with successful held-out mathematical transfer and no canonical normalization. `LocalIVI_A` and `LocalIVI_B` are not cross-frame evidence by themselves; `CrossFrameIVI_AB` requires a returned relational identification that survives the admitted native translation and its identity-independent validation.
 
 ## Submission claim boundary
 
@@ -194,7 +205,7 @@ The repository currently supports these statements:
 
 It does **not** currently establish:
 
-- a qualifying autonomous Aristotle run;
+- a completed cross-frame Aristotle result (the isolated local-generation stage is complete, but translation and downstream stages are not);
 - general mathematical-ASI verification;
 - that every pair of axiom-geometries admits translation;
 - that classical foundations cannot express translational closure;

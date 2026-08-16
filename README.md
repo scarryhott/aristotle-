@@ -55,16 +55,21 @@ The remaining grant-scale test is:
 
 A qualifying Aristotle-generated frame is not merely a Lean encoding of a representation supplied by the experimenter. It is an independently produced local mathematical formation whose primitives/axioms, geometry or structure, admitted equality, operations, and registered total questions are evaluated in their own frame before cross-frame comparison.
 
-The experiment freezes the produced evidence before disclosure so that the translator cannot retrospectively rewrite it. That freeze is methodological, not a claim that the ASI's axiometry must remain static.
+The experiment freezes the produced evidence before disclosure so that the translator cannot retrospectively rewrite it. That freeze is methodological, not a claim that the ASI's axiometry must remain static. Native translation is an independent artefact, and candidate equality is tested only after that artefact has passed identity-independent validation.
 
 ```text
 objective → Aristotle A → F_A → internal audit → evidence freeze
 objective → Aristotle B → F_B → internal audit → evidence freeze
 
-F_A, F_B, Q_A, Q_B ≺ disclosure ≺ search(T,phi,pi)
+F_A, F_B, Q_A, Q_B
+  ≺ native translation T_AB
+  ≺ primitive/held-out validation + recovery
+  ≺ candidate relational equality
+  ≺ independent return generation
+  ≺ translational completion / IVI / topology / receipts
 ```
 
-Only after both episode artifacts freeze are candidate translations checked for `GeomEquiv`, downstream naturality, translational completion, question transport, IVI disclosure, and held-out transfer.
+The initial isolated-generation stage has now been executed with two Aristotle formalization jobs. It establishes only two separately generated single-frame Lean artefacts; it does not yet claim a cross-frame translation or equality. The frozen scientific protocol and provenance are in [`docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md`](docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md).
 
 A natural translation, explicit equality obstruction, downstream naturality obstruction, incomplete return, genuine frame-relative `OpenIn`, or registered interface boundary are all substantive outcomes. The experiment does not require every frame to translate to every other frame.
 
