@@ -85,6 +85,11 @@ relatively completes a literally unglued pair, and records a relative
 obstruction for a literally glued pair. It is a runtime control, not the
 general inverse-limit theorem still required here.
 
+The companion [development-bridges run](CLOSURE_NATIVE_DEVELOPMENT_BRIDGES_RUN.md)
+adds the inter-level control: recovery alone is blind, and a composition of
+injective relation-reflecting bridges is the receipt that distinguishes a
+translated development from a stack of merely frozen local closures.
+
 ### O5 — Turing/topos mutual realization
 
 Specify two local presentations—computational and categorical/topological—with

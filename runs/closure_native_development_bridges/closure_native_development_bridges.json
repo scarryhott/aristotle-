@@ -1,0 +1,39 @@
+{
+  "bridge_composition": {
+    "absolute_carrier_identity_claimed": false,
+    "bridge01_injective": true,
+    "bridge12_injective": true,
+    "bridge_chain": {
+      "0": 20,
+      "1": 21
+    },
+    "global_return_is_identity_on_earlier_level": true,
+    "global_return_of_level0": {
+      "0": 0,
+      "1": 1
+    }
+  },
+  "claim_boundary": "bounded runtime controls; not a local rebuild of NRRF653 or an audit of earlier Lean modules",
+  "frozen_round": {
+    "classification": "FROZEN_OR_NONTRANSLATING",
+    "moves_some_presentation": false,
+    "recovers_every_state_in_local_relation": true
+  },
+  "protocol": "closure_native_development_bridges_v1",
+  "recovery_test_blind": true,
+  "syntactic_axiometry": {
+    "asserted_axiom_is_derived_in_base": false,
+    "countermodel": {
+      "p": false,
+      "q": true
+    },
+    "genuine_substitution_is_interpretation": true,
+    "identity_substitution_is_interpretation": false,
+    "translation_transfers_new_axiom_to_base_consequence": true
+  },
+  "translating_round": {
+    "classification": "TRANSLATING",
+    "moves_some_presentation": true,
+    "recovers_every_state_in_local_relation": true
+  }
+}
