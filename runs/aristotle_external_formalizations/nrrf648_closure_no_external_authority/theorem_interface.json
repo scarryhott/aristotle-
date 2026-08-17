@@ -1,0 +1,23 @@
+{
+  "status": "reported_interfaces_not_locally_typechecked",
+  "namespace": "NRRF648ClosureNoExternalAuthority",
+  "source": "NRRF648ClosureNoExternalAuthorityConceptualFormTranslation.lean",
+  "reported_theorems": {
+    "closure_eq_internal_sInter": "internal topological closure characterization",
+    "closure_unique_internal": "uniqueness under extensive, monotone, closed-valued, closed-form-fixing assumptions",
+    "closure_equivariant": "translation equivariance of topological closure",
+    "read_closure": "perspective chart commutes with topological closure",
+    "interpret_closure_subset": "continuous identification gives inclusion transport",
+    "interpret_closure_eq_of_isClosedEmbedding": "exact transport under closed embedding",
+    "identification_not_determined": "two continuous identifications need not determine the same data-level closure",
+    "interpret_closure_eq_of_continuous_false": "continuity alone is insufficient for exact transport"
+  },
+  "local_comparison_targets": {
+    "TransFrame": "OPEN — requires an explicit coherence and return-square construction",
+    "CEq_W_or_runtime_completion": "OPEN — requires an equality/realization theorem, not terminology",
+    "ResolvedIn": "OPEN — requires factorization through the admitted local relation",
+    "runtime_question_data_map": "OPEN — exact transport only under explicit sufficient hypotheses"
+  },
+  "direct_imports": ["Mathlib"],
+  "no_local_typecheck": true
+}
