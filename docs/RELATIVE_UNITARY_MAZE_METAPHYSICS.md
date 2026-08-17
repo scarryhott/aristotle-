@@ -2,15 +2,24 @@
 
 ## Status
 
-**Foundational interpretation informed by an external Aristotle runtime report.
-Not locally built, not a main Lean root, and not an input to native Phase C2.**
+**Foundational interpretation informed by externally attested Aristotle source
+bytes. Not locally built, not a main Lean root, and not an input to native
+Phase C2.**
 
 The external task [c9b622d6-f387-4f94-9f83-856106d0fc43](https://aristotle.harmonic.fun/dashboard/requests/c9b622d6-f387-4f94-9f83-856106d0fc43)
-reports `NRRF649BallHairBigBangReanalysisThreeClosureLevels.lean`. Its exact
-archive, source hash, toolchain, and dependency closure have not yet received a
-quarantined provenance intake in this repository. The statements below are
-therefore a faithful metaphysical reading of the reported result, not local
-proof evidence.
+reports `NRRF649BallHairBigBangReanalysisThreeClosureLevels.lean`. The archive
+and selected source bytes are now attested in
+`runs/aristotle_external_formalizations/nrrf649_three_closure_levels/`; its
+toolchain environment is identified only at the external Lake/Mathlib level and
+has not been rebuilt here. The statements below remain a metaphysical reading,
+not local proof evidence.
+
+The later completed runtime task
+[`41f7db18-bab8-4b48-96a7-731b60d2d3ce`](https://aristotle.harmonic.fun/dashboard/requests/41f7db18-bab8-4b48-96a7-731b60d2d3ce)
+returns `NRRF650ReunifiedOriginlessTranslationPerspectivalReadings.lean`.
+It is separately recorded as external source-attested evidence. Its reported
+inverse-limit choice, Turing/topos-reading, and triangle claims are comparison
+targets, not local theorems or native-experiment inputs.
 
 ## Three relative closure levels
 
