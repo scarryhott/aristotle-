@@ -79,6 +79,12 @@ This does not assert that a global inverse limit exists, nor that the resulting
 object is a privileged global language. It records only the compatible relation
 available from a particular diagram.
 
+The bounded [closure-native relative-completion run](CLOSURE_NATIVE_RELATIVE_COMPLETION_RUN.md)
+now supplies the minimal two-overlap control: it retains frozen local receipts,
+relatively completes a literally unglued pair, and records a relative
+obstruction for a literally glued pair. It is a runtime control, not the
+general inverse-limit theorem still required here.
+
 ### O5 — Turing/topos mutual realization
 
 Specify two local presentations—computational and categorical/topological—with

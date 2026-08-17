@@ -1,0 +1,49 @@
+{
+  "freeze_means": "immutable provenance receipt, not absolute identity",
+  "frozen_identity_control": {
+    "absolute_full_presentation_identity_claimed": false,
+    "admitted_overlap": [
+      "u0",
+      "u1"
+    ],
+    "receipt_integrity": true,
+    "residue": 0,
+    "residue_is_neutral": true,
+    "return_recovers_admitted_overlap": true,
+    "round_moves_an_admitted_presentation": false,
+    "status": "FROZEN_AXIOMETRY",
+    "translation_preserves_relative_relation": true,
+    "translation_reflects_admitted_distinction": true
+  },
+  "protocol": "closure_native_relative_translation_v1",
+  "relative_gluing_of_literally_unglued_pair": {
+    "absolute_full_presentation_identity_claimed": false,
+    "admitted_overlap": [
+      "u0",
+      "u1"
+    ],
+    "receipt_integrity": true,
+    "residue": 1,
+    "residue_is_neutral": false,
+    "return_recovers_admitted_overlap": true,
+    "round_moves_an_admitted_presentation": true,
+    "status": "RELATIVE_COMPLETION_WITH_OPENING",
+    "translation_preserves_relative_relation": true,
+    "translation_reflects_admitted_distinction": true
+  },
+  "relative_obstruction_of_literally_glued_pair": {
+    "absolute_full_presentation_identity_claimed": false,
+    "admitted_overlap": [
+      "u0",
+      "u1"
+    ],
+    "receipt_integrity": true,
+    "residue": 0,
+    "residue_is_neutral": true,
+    "return_recovers_admitted_overlap": false,
+    "round_moves_an_admitted_presentation": false,
+    "status": "RELATIVE_OBSTRUCTION",
+    "translation_preserves_relative_relation": true,
+    "translation_reflects_admitted_distinction": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "stage": "external_formalization_intake",
+  "status": "source_attested_external_not_built",
+  "sdk": {"package": "aristotlelib", "version": "2.1.0"},
+  "project_id": "068068ee-b720-4df1-a203-571e0928ec3d",
+  "task_id": "e75c1e9e-a115-4fc3-9006-3945095b3bc1",
+  "task_status": "COMPLETE",
+  "artifact": {
+    "result_tar_sha256": "2328eb9341928aa4421e8c5abce2f29a9d19a5d2cd7d559c5edbea1359023d2b",
+    "lean_source": "NRRF653LeanClosureFrozenAxiometryVersusTranslation.lean",
+    "lean_source_sha256": "4f103fa01e1fb9b4f464ba56e85a6a1701b541c331f962ae13cd1f7318961a56",
+    "notes": "LEAN_CLOSURE_FROZEN_AXIOMETRY_NRRF653_NOTES.md",
+    "notes_sha256": "257bf8257b219dc9ecaf498289a8d65b58cf105df1fb8fa6f0635fd98edb2e81"
+  },
+  "claim_boundary": "NRRF653 formally models the diagnosis at an external finite-model interface. It does not establish that any earlier repository module is frozen, does not locally build here, and is not a native Phase C2 input."
+}
