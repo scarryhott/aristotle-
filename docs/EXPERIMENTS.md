@@ -154,7 +154,7 @@ Aristotle B → F_B, Q_B → internal audit → hash/freeze
 
 No older frame is silently substituted as a normal form. The initial pair was created as two separate Aristotle jobs from the same neutral packet and each formalizes a single frame only. Each reports no `sorry` and deliberately omits identity quotients, cross-frame equivalence, translations, completion, and reverse-path targets. See [`ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md`](ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md).
 
-### Phase B — native translation (executed); identity-independent validation (open)
+### Phase B — native translation and identity-independent validation (executed)
 
 Only after both frames freeze are they disclosed to the translation process:
 
@@ -168,7 +168,9 @@ F_A, F_B
 
 The Phase B translator completed `T_AB v0.1.0`: 66 declaration-role entries, comprising 36 `MAPPED`, 10 `AMBIGUOUS`, and 20 `UNMAPPED` entries. It preserves a typed evidence table, every unresolved item, and local Lean evidence without making any cross-frame equality or `GeomEquiv` claim. The result discovered a concrete interface boundary: the two frozen artifacts declare the same fully qualified `NeutralFrame` names and cannot be co-imported without editing frozen sources. This prevents a cross-frame Lean map at this stage and is retained as evidence, not repaired by renaming.
 
-The next open step is identity-independent validation: primitive-relation/operation preservation, held-out local consequences, and recovery against the admitted translation interface. The validator must apply its preregistered `UNMAPPED`/`AMBIGUOUS` rule rather than use a later equality or completion result to repair a translation. Neither source frame may be repaired after candidate disclosure. See the committed Phase B manifest for project/task identifiers and content hashes.
+Phase B2 identity-independent validation also completed. Of the 36 frozen `MAPPED` entries, 34 pass primitive preservation, held-out local consequences, and recovery; `frame-structure` fails because the two frozen signatures are not interderivable; and `main-preamble` is `OUTSIDE_INTERFACE`. The failure is a precise structural obstruction, not a repairable translation result and not a cross-frame equality conclusion. All 10 `AMBIGUOUS` and 20 `UNMAPPED` entries remain untouched. See the committed Phase B2 manifest for project/task identifiers and content hashes.
+
+The next open step is candidate relational equality under the admitted interface, which must account for this recorded structural obstruction rather than silently narrowing or repairing the frozen translation.
 
 ### Phase C — independent return and downstream evaluation
 

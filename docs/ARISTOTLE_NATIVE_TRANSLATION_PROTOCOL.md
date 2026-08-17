@@ -66,3 +66,13 @@ preserved: both frames declare the same fully qualified `NeutralFrame` names,
 so they cannot be co-imported without changing a frozen source. Phase B
 provenance is committed in
 [`../runs/aristotle_native_translation/phase_b_native_translation/manifest.json`](../runs/aristotle_native_translation/phase_b_native_translation/manifest.json).
+
+Phase B2 validation completed in a fourth isolated project. It preserves the
+frozen table and reports 34 `PASS`, one `FAIL` (`frame-structure`), and one
+`OUTSIDE_INTERFACE` (`main-preamble`) verdict across the 36 mapped entries.
+The failure is an identity-independent signature obstruction: A requires a
+nonempty node type while B admits an empty one, and B requires finite labels
+and observables while A admits infinite ones. The validator leaves all 10
+ambiguous and 20 unmapped entries unchanged and makes no equality or return
+claim. Its provenance is in
+[`../runs/aristotle_native_translation/phase_b2_validation/manifest.json`](../runs/aristotle_native_translation/phase_b2_validation/manifest.json).
