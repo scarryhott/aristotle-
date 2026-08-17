@@ -5,7 +5,9 @@
 **Research comparison and integration plan — not a theorem of this checkout.**
 
 This note situates the translational framework beside institution theory and
-Hets. It does not claim that the current runtime implements Hets, that every
+Hets. Institutions are treated as downstream local representations of the
+foundational translational relation, not as the relation's metaphysical source.
+It does not claim that the current runtime implements Hets, that every
 translation is an institution morphism/comorphism, or that a Phase B/C outcome
 is already a sheaf-cohomology or model-amalgamation invariant.
 
@@ -13,7 +15,7 @@ is already a sheaf-cohomology or model-amalgamation invariant.
 
 | Translational framework | Institution-theoretic candidate | Required formal work |
 | --- | --- | --- |
-| local definitions, axioms, and language qualities | a local institution/theory | specify signatures, sentences, models, and satisfaction |
+| local definitions, axioms, and language qualities | a local institution/theory representation | derive/define the representation from the prior translation structure, then specify signatures, sentences, models, and satisfaction |
 | translation as globally available but frame-relative | institution morphism/comorphism in an indexed network | prove the satisfaction condition and composition law |
 | local/global closure | indexed institution and its Grothendieck globalization | define the index category and the precise global object |
 | interactive proof/review | heterogeneous proof management over a development graph | preserve proof obligations and provenance through translations |
@@ -105,6 +107,11 @@ local. Any Turing/topos realization remains a separate bridge obligation.
 6. Build a Hets adapter only when the interface above is stable: its purpose is
    interactive heterogeneous proof management and provenance-preserving
    checking, not canonical normalization of local frames.
+
+The prior opening is documented in
+[Pre-institutional translation: formal openings](PREINSTITUTIONAL_TRANSLATION_OPENINGS.md):
+it asks for the relational translation structure from which these local
+institutional representations would be obtained.
 
 ## Sources for the comparison
 

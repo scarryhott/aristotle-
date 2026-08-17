@@ -22,6 +22,11 @@ to exhaust subsequent formations. A completed relation can change the next
 available basis without retrospectively rewriting the history that made it
 admissible.
 
+This priority is metaphysical at present: the existing formal kernel receives
+local frames and translations as data. The transition to a pre-institutional
+translation structure is an explicit research opening, not a hidden premise;
+see [Pre-institutional translation: formal openings](PREINSTITUTIONAL_TRANSLATION_OPENINGS.md).
+
 ## Choice before naturality
 
 The programme must not say that “naturality” creates or preselects a

@@ -8,6 +8,13 @@ The foundational claim is not merely that everything is related, nor merely that
 
 The thesis proposes that **axioms are relative to their geometries/reference frames and translation is foundational to the natural existence available between such frames**. A reference frame is therefore not metaphysically prior to relation: local frames are formations within an origin-independent translational relation.
 
+More strongly, translation is understood here in a relational sense prior to
+the distinction between a fixed language, definition, institution, or local
+topos. Those structures are local appearances of a translational relation, not
+its absolute source. The present formal kernel does not yet begin at that prior
+level; its required formal openings are recorded in
+[Pre-institutional translation: formal openings](PREINSTITUTIONAL_TRANSLATION_OPENINGS.md).
+
 ```text
 origin-independent translational relation
         ↓
