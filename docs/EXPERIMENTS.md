@@ -213,7 +213,7 @@ The repository currently supports these statements:
 
 It does **not** currently establish:
 
-- a completed cross-frame Aristotle result (the isolated local-generation and native-translation stages are complete, but identity-independent validation and downstream stages are not);
+- a completed whole-frame cross-frame Aristotle result: identity-independent validation, subinterface-only candidate equality, and local independent-return evidence are complete, but assembled return, completion, IVI, topology, receipts, and transfer remain open;
 - general mathematical-ASI verification;
 - that every pair of axiom-geometries admits translation;
 - that classical foundations cannot express translational closure;

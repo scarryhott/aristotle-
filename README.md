@@ -69,7 +69,7 @@ F_A, F_B, Q_A, Q_B
   ≺ translational completion / IVI / topology / receipts
 ```
 
-The initial isolated-generation stage has now been executed with two Aristotle formalization jobs. It establishes only two separately generated single-frame Lean artefacts; it does not yet claim a cross-frame translation or equality. The frozen scientific protocol and provenance are in [`docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md`](docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md).
+The initial isolated-generation stage, frozen native translation, identity-independent validation, subinterface-only candidate equality, and independent local-return stage have now been executed. The current evidence supports a 34-role admitted subinterface only: it does **not** establish whole-frame equality, `GeomEquiv`, assembled cross-frame return, completion, or IVI. The frozen scientific protocol is in [`docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md`](docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md); the direct request links, manifests, hashes, and exact claim boundary are in [`docs/ARISTOTLE_NATIVE_TRANSLATION_EVIDENCE.md`](docs/ARISTOTLE_NATIVE_TRANSLATION_EVIDENCE.md).
 
 A natural translation, explicit equality obstruction, downstream naturality obstruction, incomplete return, genuine frame-relative `OpenIn`, or registered interface boundary are all substantive outcomes. The experiment does not require every frame to translate to every other frame.
 
@@ -196,6 +196,7 @@ The grant funds the frontier-agent regime needed to test the architecture, disco
 - `runs/` — frozen deterministic evidence and receipts.
 - `docs/GRANT.md` — Harmonic/Aristotle research request.
 - `docs/EXPERIMENTS.md` — completed evidence and primary frontier experiment.
+- `docs/ARISTOTLE_NATIVE_TRANSLATION_EVIDENCE.md` — reviewer index for the executed Aristotle Phase A–C1 artifacts.
 - `docs/CLAIM_STATUS.md` — theorem/experiment/interpretation audit boundary.
 - `docs/METAPHYSICS.md` — origin-independent translation, relational frames, and interactive continual completion.
 - `docs/IVI.md` — IVI as naturally recoverable relational identity.
