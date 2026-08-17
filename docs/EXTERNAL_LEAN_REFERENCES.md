@@ -11,6 +11,30 @@ files and dependencies:
 
 - [Harmonic request 068068ee-b720-4df1-a203-571e0928ec3d](https://aristotle.harmonic.fun/dashboard/requests/068068ee-b720-4df1-a203-571e0928ec3d)
 
+## NRRF648: closure without external authority
+
+The downloaded external artifact reports that
+`NRRF648ClosureNoExternalAuthorityConceptualFormTranslation.lean` formalizes
+an originless equality continuum as a topological torsor, models a conceptual
+form as a subset of that continuum, and treats a perspective as a translated
+chart. It reports internal characterization and naturality results for
+topological closure, plus the boundary that a subsequent identification with
+data is an additional map rather than a consequence of the abstract closure
+layer.
+
+Reported identifiers include `closure_eq_internal_sInter`,
+`closure_unique_internal`, `closure_equivariant`, `read_closure`,
+`closure_perspective_independent`, `interpret_closure_subset`,
+`interpret_closure_eq_of_isClosedEmbedding`, and
+`identification_not_determined`. It also reports an explicit counterexample
+showing that continuity alone does not make data-level closure transport exact.
+
+Repository status: **REPORTED PROVED OUTSIDE CHECKOUT — NOT LOCALLY
+AUDITED**. The downloaded tarball and exact source hashes are recorded in
+[`../runs/aristotle_external_formalizations/nrrf648_closure_no_external_authority/manifest.json`](../runs/aristotle_external_formalizations/nrrf648_closure_no_external_authority/manifest.json).
+This result constrains neither the frozen Phase B/C native-translation outcome
+nor any whole-frame equality claim.
+
 ## Terminology
 
 IVI is expanded in project prose as **intangible verified information**.
