@@ -197,6 +197,7 @@ The grant funds the frontier-agent regime needed to test the architecture, disco
 - `docs/GRANT.md` — Harmonic/Aristotle research request.
 - `docs/EXPERIMENTS.md` — completed evidence and primary frontier experiment.
 - `docs/ARISTOTLE_NATIVE_TRANSLATION_EVIDENCE.md` — reviewer index for the executed Aristotle Phase A–C1 artifacts.
+- `docs/INSTITUTIONS_INTERACTIVE_PROOF_COMPARISON.md` — institution/Hets comparison, choice-naturality boundary, and the proposed interactive-proof bridge.
 - `docs/CLAIM_STATUS.md` — theorem/experiment/interpretation audit boundary.
 - `docs/METAPHYSICS.md` — origin-independent translation, relational frames, and interactive continual completion.
 - `docs/IVI.md` — IVI as naturally recoverable relational identity.
