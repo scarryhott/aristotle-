@@ -76,3 +76,12 @@ and observables while A admits infinite ones. The validator leaves all 10
 ambiguous and 20 unmapped entries unchanged and makes no equality or return
 claim. Its provenance is in
 [`../runs/aristotle_native_translation/phase_b2_validation/manifest.json`](../runs/aristotle_native_translation/phase_b2_validation/manifest.json).
+
+Phase B3 completed in a fifth isolated project. It accepts a candidate
+relational equality only at the declaration-role level of a neutral 34-role
+subinterface, with a realization in each frame's own module. Machine-checked
+non-promotion witnesses show that this scope admits a B-legal empty-node frame
+and an A-legal infinite-label/observable frame, so it cannot be promoted to
+whole-frame equality or `GeomEquiv`. The frozen structural failure, ambiguity,
+and unmapped records remain excluded and unchanged. Provenance is in
+[`../runs/aristotle_native_translation/phase_b3_candidate_equality/manifest.json`](../runs/aristotle_native_translation/phase_b3_candidate_equality/manifest.json).

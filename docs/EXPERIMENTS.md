@@ -170,7 +170,9 @@ The Phase B translator completed `T_AB v0.1.0`: 66 declaration-role entries, com
 
 Phase B2 identity-independent validation also completed. Of the 36 frozen `MAPPED` entries, 34 pass primitive preservation, held-out local consequences, and recovery; `frame-structure` fails because the two frozen signatures are not interderivable; and `main-preamble` is `OUTSIDE_INTERFACE`. The failure is a precise structural obstruction, not a repairable translation result and not a cross-frame equality conclusion. All 10 `AMBIGUOUS` and 20 `UNMAPPED` entries remain untouched. See the committed Phase B2 manifest for project/task identifiers and content hashes.
 
-The next open step is candidate relational equality under the admitted interface, which must account for this recorded structural obstruction rather than silently narrowing or repairing the frozen translation.
+Phase B3 candidate-equality evaluation completed. It accepts `C_AB v0.1.0` only on the explicitly frozen 34-role subinterface: each frame realizes a neutral signature for those roles with the recorded reshaping only. The result is witnessed by non-promotion countermodels showing that the subinterface admits B's empty-node frame and A's infinite-label/observable frame. Whole-frame equality and `GeomEquiv` remain **BLOCKED** by the frozen structural failure; no excluded entry is repaired or reclassified. See the Phase B3 manifest for provenance and hashes.
+
+The next open step is independent return generation. Its generator may see only the admitted frozen forward subinterface and must not see the accepted subinterface-equality outcome, target reverse edges, or downstream metrics.
 
 ### Phase C — independent return and downstream evaluation
 
