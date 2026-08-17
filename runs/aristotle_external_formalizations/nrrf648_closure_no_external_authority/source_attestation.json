@@ -1,0 +1,48 @@
+{
+  "artifact_checks": {
+    "inventory_sha256": "dd2168f48c884e4173b585f3618a9257200ed55adcef5e2ee563dcac45259564",
+    "regular_file_count": 3052,
+    "result_tar_sha256": "4f5b4d28422db7148d457c440f4bb65acc71845768c57bd708336884e2356819",
+    "result_tar_sha256_match": true,
+    "selected_files": {
+      "CLOSURE_NO_EXTERNAL_AUTHORITY_NRRF648_NOTES.md": {
+        "bytes": 3936,
+        "sha256": "9c59580f80c55e5b767ef2edf45ff0756bce0938c19639226e54a7de8d3e1930"
+      },
+      "NRRF648ClosureNoExternalAuthorityConceptualFormTranslation.lean": {
+        "bytes": 14844,
+        "sha256": "e4643d86577859bf2659a417d42683e65f52e6605fdb899b0021d8cbae6e0321"
+      },
+      "lakefile.toml": {
+        "bytes": 54198,
+        "sha256": "22f6cb43d7ab96cc38be28e1fda9ab3d9638cddfa6e82075a7347c35e0e554ca"
+      }
+    },
+    "selected_hashes_match": true
+  },
+  "artifact_custody": {
+    "archive_committed": false,
+    "redistribution_status": "not_assumed",
+    "retrieval_kind": "authenticated_aristotle_download"
+  },
+  "input_manifest_commit": "490a588",
+  "local_formal_checks": {
+    "axiom_audit": "NOT_RUN",
+    "lake_build": "NOT_RUN",
+    "sorry_audit": "NOT_RUN"
+  },
+  "non_implications": [
+    "not_a_main_lake_build_root",
+    "not_a_local_machine_checked_result",
+    "not_a_phase_c2_input",
+    "not_a_whole_frame_geom_equiv",
+    "not_an_identification_of_topological_closure_with_translational_completion"
+  ],
+  "proof_environment": {
+    "complete_import_closure": "OPEN",
+    "external_lakefile_sha256": "22f6cb43d7ab96cc38be28e1fda9ab3d9638cddfa6e82075a7347c35e0e554ca",
+    "external_mathlib_revision": "v4.28.0"
+  },
+  "stage": "external_source_environment_attestation",
+  "status": "source_bytes_verified_not_built"
+}

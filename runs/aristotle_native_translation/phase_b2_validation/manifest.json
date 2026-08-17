@@ -1,0 +1,34 @@
+{
+  "protocol": "docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md",
+  "stage": "phase_b2_identity_independent_validation_only",
+  "status": "complete",
+  "sdk": {"package": "aristotlelib", "version": "2.1.0"},
+  "project_id": "570cbfb0-0d66-45d6-9dc9-da93b89c7d50",
+  "task_id": "ea684ccd-f50d-4e6f-97ca-31c2463517c5",
+  "task_status": "COMPLETE",
+  "input_phase_b_result_tar_sha256": "d4af7b72601414c38f2c6f77e54f86fdf70b4805758da951713af05b2a759c6d",
+  "outputs": {
+    "result_tar_sha256": "c3c05eae85fa0357501f177cbbcebbe103a9f29c90926d9ee9b5e08ac4dd5da8",
+    "validation_markdown_sha256": "870842ffd09e5c7fae519da404636bf015bbc102e04a8dc73313bbdf89b80008",
+    "mapped_entries_validated": 36,
+    "pass": 34,
+    "fail": 1,
+    "outside_interface": 1,
+    "retained_ambiguous": 10,
+    "retained_unmapped": 20
+  },
+  "failure": {
+    "entry": "frame-structure",
+    "criterion": "primitive_relation_operation_preservation",
+    "finding": "The frozen frame signatures are not interderivable: A requires a nonempty node type, while B admits an empty one; B requires finite labels and observables, while A admits infinite ones."
+  },
+  "not_evaluated": [
+    "candidate_relational_equality",
+    "independent_return_generation",
+    "completion",
+    "local_or_cross_frame_ivi",
+    "topology_naturality",
+    "receipts",
+    "heldout_transfer"
+  ]
+}

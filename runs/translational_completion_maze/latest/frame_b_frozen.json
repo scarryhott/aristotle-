@@ -1,0 +1,635 @@
+{
+  "admitted_equality": {
+    "definition": "u ~ v iff returned_basis_W(u) = returned_basis_W(v)",
+    "equivalence_class_count": 3,
+    "equivalence_classes": [
+      [
+        "B/amber/chart_a/left",
+        "B/amber/chart_a/right",
+        "B/amber/chart_b/left",
+        "B/amber/chart_b/right",
+        "B/amber/chart_l/left",
+        "B/amber/chart_l/right",
+        "B/amber/chart_p/left",
+        "B/amber/chart_p/right",
+        "B/amber/chart_q/left",
+        "B/amber/chart_q/right",
+        "B/amber/chart_r/left",
+        "B/amber/chart_r/right",
+        "B/amber/chart_w/left",
+        "B/amber/chart_w/right",
+        "B/amber/chart_y/left",
+        "B/amber/chart_y/right"
+      ],
+      [
+        "B/violet/chart_a/left",
+        "B/violet/chart_a/right",
+        "B/violet/chart_b/left",
+        "B/violet/chart_b/right",
+        "B/violet/chart_l/left",
+        "B/violet/chart_l/right",
+        "B/violet/chart_p/left",
+        "B/violet/chart_p/right",
+        "B/violet/chart_q/left",
+        "B/violet/chart_q/right",
+        "B/violet/chart_r/left",
+        "B/violet/chart_r/right",
+        "B/violet/chart_w/left",
+        "B/violet/chart_w/right",
+        "B/violet/chart_y/left",
+        "B/violet/chart_y/right"
+      ],
+      [
+        "B/silver/chart_a/left",
+        "B/silver/chart_a/right",
+        "B/silver/chart_b/left",
+        "B/silver/chart_b/right",
+        "B/silver/chart_l/left",
+        "B/silver/chart_l/right",
+        "B/silver/chart_p/left",
+        "B/silver/chart_p/right",
+        "B/silver/chart_q/left",
+        "B/silver/chart_q/right",
+        "B/silver/chart_r/left",
+        "B/silver/chart_r/right",
+        "B/silver/chart_w/left",
+        "B/silver/chart_w/right",
+        "B/silver/chart_y/left",
+        "B/silver/chart_y/right"
+      ]
+    ],
+    "frozen_before_maze_completion": true,
+    "ordered_equal_pair_count": 768
+  },
+  "basis_labels": [
+    "amber",
+    "violet",
+    "silver"
+  ],
+  "foundation": "one frozen line set with direct-passage/inverse-wall polar readings",
+  "frame_id": "B",
+  "occurrence_count": 48,
+  "occurrence_metadata": {
+    "B/amber/chart_a/left": {
+      "basis_index": 0,
+      "basis_label": "amber",
+      "cycle_index": 6,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 6,
+      "stage_label": "chart_a"
+    },
+    "B/amber/chart_a/right": {
+      "basis_index": 0,
+      "basis_label": "amber",
+      "cycle_index": 14,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 6,
+      "stage_label": "chart_a"
+    },
+    "B/amber/chart_b/left": {
+      "basis_index": 0,
+      "basis_label": "amber",
+      "cycle_index": 2,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 2,
+      "stage_label": "chart_b"
+    },
+    "B/amber/chart_b/right": {
+      "basis_index": 0,
+      "basis_label": "amber",
+      "cycle_index": 10,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 2,
+      "stage_label": "chart_b"
+    },
+    "B/amber/chart_l/left": {
+      "basis_index": 0,
+      "basis_label": "amber",
+      "cycle_index": 5,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 5,
+      "stage_label": "chart_l"
+    },
+    "B/amber/chart_l/right": {
+      "basis_index": 0,
+      "basis_label": "amber",
+      "cycle_index": 13,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 5,
+      "stage_label": "chart_l"
+    },
+    "B/amber/chart_p/left": {
+      "basis_index": 0,
+      "basis_label": "amber",
+      "cycle_index": 1,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 1,
+      "stage_label": "chart_p"
+    },
+    "B/amber/chart_p/right": {
+      "basis_index": 0,
+      "basis_label": "amber",
+      "cycle_index": 9,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 1,
+      "stage_label": "chart_p"
+    },
+    "B/amber/chart_q/left": {
+      "basis_index": 0,
+      "basis_label": "amber",
+      "cycle_index": 0,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 0,
+      "stage_label": "chart_q"
+    },
+    "B/amber/chart_q/right": {
+      "basis_index": 0,
+      "basis_label": "amber",
+      "cycle_index": 8,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 0,
+      "stage_label": "chart_q"
+    },
+    "B/amber/chart_r/left": {
+      "basis_index": 0,
+      "basis_label": "amber",
+      "cycle_index": 7,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 7,
+      "stage_label": "chart_r"
+    },
+    "B/amber/chart_r/right": {
+      "basis_index": 0,
+      "basis_label": "amber",
+      "cycle_index": 15,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 7,
+      "stage_label": "chart_r"
+    },
+    "B/amber/chart_w/left": {
+      "basis_index": 0,
+      "basis_label": "amber",
+      "cycle_index": 4,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 4,
+      "stage_label": "chart_w"
+    },
+    "B/amber/chart_w/right": {
+      "basis_index": 0,
+      "basis_label": "amber",
+      "cycle_index": 12,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 4,
+      "stage_label": "chart_w"
+    },
+    "B/amber/chart_y/left": {
+      "basis_index": 0,
+      "basis_label": "amber",
+      "cycle_index": 3,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 3,
+      "stage_label": "chart_y"
+    },
+    "B/amber/chart_y/right": {
+      "basis_index": 0,
+      "basis_label": "amber",
+      "cycle_index": 11,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 3,
+      "stage_label": "chart_y"
+    },
+    "B/silver/chart_a/left": {
+      "basis_index": 2,
+      "basis_label": "silver",
+      "cycle_index": 6,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 6,
+      "stage_label": "chart_a"
+    },
+    "B/silver/chart_a/right": {
+      "basis_index": 2,
+      "basis_label": "silver",
+      "cycle_index": 14,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 6,
+      "stage_label": "chart_a"
+    },
+    "B/silver/chart_b/left": {
+      "basis_index": 2,
+      "basis_label": "silver",
+      "cycle_index": 2,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 2,
+      "stage_label": "chart_b"
+    },
+    "B/silver/chart_b/right": {
+      "basis_index": 2,
+      "basis_label": "silver",
+      "cycle_index": 10,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 2,
+      "stage_label": "chart_b"
+    },
+    "B/silver/chart_l/left": {
+      "basis_index": 2,
+      "basis_label": "silver",
+      "cycle_index": 5,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 5,
+      "stage_label": "chart_l"
+    },
+    "B/silver/chart_l/right": {
+      "basis_index": 2,
+      "basis_label": "silver",
+      "cycle_index": 13,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 5,
+      "stage_label": "chart_l"
+    },
+    "B/silver/chart_p/left": {
+      "basis_index": 2,
+      "basis_label": "silver",
+      "cycle_index": 1,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 1,
+      "stage_label": "chart_p"
+    },
+    "B/silver/chart_p/right": {
+      "basis_index": 2,
+      "basis_label": "silver",
+      "cycle_index": 9,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 1,
+      "stage_label": "chart_p"
+    },
+    "B/silver/chart_q/left": {
+      "basis_index": 2,
+      "basis_label": "silver",
+      "cycle_index": 0,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 0,
+      "stage_label": "chart_q"
+    },
+    "B/silver/chart_q/right": {
+      "basis_index": 2,
+      "basis_label": "silver",
+      "cycle_index": 8,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 0,
+      "stage_label": "chart_q"
+    },
+    "B/silver/chart_r/left": {
+      "basis_index": 2,
+      "basis_label": "silver",
+      "cycle_index": 7,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 7,
+      "stage_label": "chart_r"
+    },
+    "B/silver/chart_r/right": {
+      "basis_index": 2,
+      "basis_label": "silver",
+      "cycle_index": 15,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 7,
+      "stage_label": "chart_r"
+    },
+    "B/silver/chart_w/left": {
+      "basis_index": 2,
+      "basis_label": "silver",
+      "cycle_index": 4,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 4,
+      "stage_label": "chart_w"
+    },
+    "B/silver/chart_w/right": {
+      "basis_index": 2,
+      "basis_label": "silver",
+      "cycle_index": 12,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 4,
+      "stage_label": "chart_w"
+    },
+    "B/silver/chart_y/left": {
+      "basis_index": 2,
+      "basis_label": "silver",
+      "cycle_index": 3,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 3,
+      "stage_label": "chart_y"
+    },
+    "B/silver/chart_y/right": {
+      "basis_index": 2,
+      "basis_label": "silver",
+      "cycle_index": 11,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 3,
+      "stage_label": "chart_y"
+    },
+    "B/violet/chart_a/left": {
+      "basis_index": 1,
+      "basis_label": "violet",
+      "cycle_index": 6,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 6,
+      "stage_label": "chart_a"
+    },
+    "B/violet/chart_a/right": {
+      "basis_index": 1,
+      "basis_label": "violet",
+      "cycle_index": 14,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 6,
+      "stage_label": "chart_a"
+    },
+    "B/violet/chart_b/left": {
+      "basis_index": 1,
+      "basis_label": "violet",
+      "cycle_index": 2,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 2,
+      "stage_label": "chart_b"
+    },
+    "B/violet/chart_b/right": {
+      "basis_index": 1,
+      "basis_label": "violet",
+      "cycle_index": 10,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 2,
+      "stage_label": "chart_b"
+    },
+    "B/violet/chart_l/left": {
+      "basis_index": 1,
+      "basis_label": "violet",
+      "cycle_index": 5,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 5,
+      "stage_label": "chart_l"
+    },
+    "B/violet/chart_l/right": {
+      "basis_index": 1,
+      "basis_label": "violet",
+      "cycle_index": 13,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 5,
+      "stage_label": "chart_l"
+    },
+    "B/violet/chart_p/left": {
+      "basis_index": 1,
+      "basis_label": "violet",
+      "cycle_index": 1,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 1,
+      "stage_label": "chart_p"
+    },
+    "B/violet/chart_p/right": {
+      "basis_index": 1,
+      "basis_label": "violet",
+      "cycle_index": 9,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 1,
+      "stage_label": "chart_p"
+    },
+    "B/violet/chart_q/left": {
+      "basis_index": 1,
+      "basis_label": "violet",
+      "cycle_index": 0,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 0,
+      "stage_label": "chart_q"
+    },
+    "B/violet/chart_q/right": {
+      "basis_index": 1,
+      "basis_label": "violet",
+      "cycle_index": 8,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 0,
+      "stage_label": "chart_q"
+    },
+    "B/violet/chart_r/left": {
+      "basis_index": 1,
+      "basis_label": "violet",
+      "cycle_index": 7,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 7,
+      "stage_label": "chart_r"
+    },
+    "B/violet/chart_r/right": {
+      "basis_index": 1,
+      "basis_label": "violet",
+      "cycle_index": 15,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 7,
+      "stage_label": "chart_r"
+    },
+    "B/violet/chart_w/left": {
+      "basis_index": 1,
+      "basis_label": "violet",
+      "cycle_index": 4,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 4,
+      "stage_label": "chart_w"
+    },
+    "B/violet/chart_w/right": {
+      "basis_index": 1,
+      "basis_label": "violet",
+      "cycle_index": 12,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 4,
+      "stage_label": "chart_w"
+    },
+    "B/violet/chart_y/left": {
+      "basis_index": 1,
+      "basis_label": "violet",
+      "cycle_index": 3,
+      "pole_index": 0,
+      "pole_label": "left",
+      "stage_index": 3,
+      "stage_label": "chart_y"
+    },
+    "B/violet/chart_y/right": {
+      "basis_index": 1,
+      "basis_label": "violet",
+      "cycle_index": 11,
+      "pole_index": 1,
+      "pole_label": "right",
+      "stage_index": 3,
+      "stage_label": "chart_y"
+    }
+  },
+  "occurrences": [
+    "B/amber/chart_a/left",
+    "B/amber/chart_a/right",
+    "B/amber/chart_b/left",
+    "B/amber/chart_b/right",
+    "B/amber/chart_l/left",
+    "B/amber/chart_l/right",
+    "B/amber/chart_p/left",
+    "B/amber/chart_p/right",
+    "B/amber/chart_q/left",
+    "B/amber/chart_q/right",
+    "B/amber/chart_r/left",
+    "B/amber/chart_r/right",
+    "B/amber/chart_w/left",
+    "B/amber/chart_w/right",
+    "B/amber/chart_y/left",
+    "B/amber/chart_y/right",
+    "B/silver/chart_a/left",
+    "B/silver/chart_a/right",
+    "B/silver/chart_b/left",
+    "B/silver/chart_b/right",
+    "B/silver/chart_l/left",
+    "B/silver/chart_l/right",
+    "B/silver/chart_p/left",
+    "B/silver/chart_p/right",
+    "B/silver/chart_q/left",
+    "B/silver/chart_q/right",
+    "B/silver/chart_r/left",
+    "B/silver/chart_r/right",
+    "B/silver/chart_w/left",
+    "B/silver/chart_w/right",
+    "B/silver/chart_y/left",
+    "B/silver/chart_y/right",
+    "B/violet/chart_a/left",
+    "B/violet/chart_a/right",
+    "B/violet/chart_b/left",
+    "B/violet/chart_b/right",
+    "B/violet/chart_l/left",
+    "B/violet/chart_l/right",
+    "B/violet/chart_p/left",
+    "B/violet/chart_p/right",
+    "B/violet/chart_q/left",
+    "B/violet/chart_q/right",
+    "B/violet/chart_r/left",
+    "B/violet/chart_r/right",
+    "B/violet/chart_w/left",
+    "B/violet/chart_w/right",
+    "B/violet/chart_y/left",
+    "B/violet/chart_y/right"
+  ],
+  "originless_basis_relation": [
+    [
+      "amber",
+      "violet"
+    ],
+    [
+      "amber",
+      "silver"
+    ],
+    [
+      "violet",
+      "silver"
+    ]
+  ],
+  "pole_labels": [
+    "left",
+    "right"
+  ],
+  "returned_basis_W": {
+    "B/amber/chart_a/left": "amber",
+    "B/amber/chart_a/right": "amber",
+    "B/amber/chart_b/left": "amber",
+    "B/amber/chart_b/right": "amber",
+    "B/amber/chart_l/left": "amber",
+    "B/amber/chart_l/right": "amber",
+    "B/amber/chart_p/left": "amber",
+    "B/amber/chart_p/right": "amber",
+    "B/amber/chart_q/left": "amber",
+    "B/amber/chart_q/right": "amber",
+    "B/amber/chart_r/left": "amber",
+    "B/amber/chart_r/right": "amber",
+    "B/amber/chart_w/left": "amber",
+    "B/amber/chart_w/right": "amber",
+    "B/amber/chart_y/left": "amber",
+    "B/amber/chart_y/right": "amber",
+    "B/silver/chart_a/left": "silver",
+    "B/silver/chart_a/right": "silver",
+    "B/silver/chart_b/left": "silver",
+    "B/silver/chart_b/right": "silver",
+    "B/silver/chart_l/left": "silver",
+    "B/silver/chart_l/right": "silver",
+    "B/silver/chart_p/left": "silver",
+    "B/silver/chart_p/right": "silver",
+    "B/silver/chart_q/left": "silver",
+    "B/silver/chart_q/right": "silver",
+    "B/silver/chart_r/left": "silver",
+    "B/silver/chart_r/right": "silver",
+    "B/silver/chart_w/left": "silver",
+    "B/silver/chart_w/right": "silver",
+    "B/silver/chart_y/left": "silver",
+    "B/silver/chart_y/right": "silver",
+    "B/violet/chart_a/left": "violet",
+    "B/violet/chart_a/right": "violet",
+    "B/violet/chart_b/left": "violet",
+    "B/violet/chart_b/right": "violet",
+    "B/violet/chart_l/left": "violet",
+    "B/violet/chart_l/right": "violet",
+    "B/violet/chart_p/left": "violet",
+    "B/violet/chart_p/right": "violet",
+    "B/violet/chart_q/left": "violet",
+    "B/violet/chart_q/right": "violet",
+    "B/violet/chart_r/left": "violet",
+    "B/violet/chart_r/right": "violet",
+    "B/violet/chart_w/left": "violet",
+    "B/violet/chart_w/right": "violet",
+    "B/violet/chart_y/left": "violet",
+    "B/violet/chart_y/right": "violet"
+  },
+  "schema_version": "maze-frozen-geometry-1.0",
+  "stage_labels": [
+    "chart_q",
+    "chart_p",
+    "chart_b",
+    "chart_y",
+    "chart_w",
+    "chart_l",
+    "chart_a",
+    "chart_r"
+  ]
+}

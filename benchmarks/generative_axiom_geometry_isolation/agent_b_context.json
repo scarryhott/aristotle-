@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "agent_role": "B",
+  "seed": 314159,
+  "construction_family": "affine_groups_over_prime_fields",
+  "candidate_primes": [2, 5, 3],
+  "local_label_prefix": "aff",
+  "pole_labels": ["source", "return"],
+  "curvature_representative_pole": "return",
+  "visible_inputs": ["shared objective", "this context"],
+  "forbidden_inputs": ["agent A context", "agent A artifact", "verifier protocol"]
+}

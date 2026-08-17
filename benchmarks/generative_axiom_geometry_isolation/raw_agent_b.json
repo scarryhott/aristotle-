@@ -1,0 +1,398 @@
+{
+  "schema_version": "1.0",
+  "generator_label": "raw-frame-generator-B",
+  "private_seed_commitment_description": "This record is the deterministic image of an undisclosed private seed; its token spellings, poles, maps, questions, and held-out word jointly serve as the commitment.",
+  "local_name": "Obsidian Hexad",
+  "axioms": [
+    {
+      "name": "closure",
+      "statement": "For every x and y in the carrier, x star y is the unique carrier entry shown in the operation table."
+    },
+    {
+      "name": "index_law",
+      "statement": "For i,j in {0,1,2,3,4,5}, g_i star g_j = g_((i+j) mod 6)."
+    },
+    {
+      "name": "associativity",
+      "statement": "For all x,y,z in the carrier, (x star y) star z = x star (y star z)."
+    },
+    {
+      "name": "identity",
+      "statement": "For every x in the carrier, g0 star x = x = x star g0."
+    },
+    {
+      "name": "inverses",
+      "statement": "Every carrier element has the displayed two-sided inverse.",
+      "inverse_table": {
+        "g0": "g0",
+        "g1": "g5",
+        "g2": "g4",
+        "g3": "g3",
+        "g4": "g2",
+        "g5": "g1"
+      }
+    }
+  ],
+  "carrier": [
+    "g0",
+    "g1",
+    "g2",
+    "g3",
+    "g4",
+    "g5"
+  ],
+  "identity": "g0",
+  "operation_table": {
+    "operation": "star",
+    "column_order": [
+      "g0",
+      "g1",
+      "g2",
+      "g3",
+      "g4",
+      "g5"
+    ],
+    "rows": {
+      "g0": [
+        "g0",
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g5"
+      ],
+      "g1": [
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g5",
+        "g0"
+      ],
+      "g2": [
+        "g2",
+        "g3",
+        "g4",
+        "g5",
+        "g0",
+        "g1"
+      ],
+      "g3": [
+        "g3",
+        "g4",
+        "g5",
+        "g0",
+        "g1",
+        "g2"
+      ],
+      "g4": [
+        "g4",
+        "g5",
+        "g0",
+        "g1",
+        "g2",
+        "g3"
+      ],
+      "g5": [
+        "g5",
+        "g0",
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ]
+    }
+  },
+  "poles": {
+    "first": {
+      "word": [
+        "u2"
+      ],
+      "carrier_value": "g2"
+    },
+    "second": {
+      "word": [
+        "v5"
+      ],
+      "carrier_value": "g5"
+    }
+  },
+  "occurrences": [
+    {
+      "raw": "u0",
+      "carrier_identity": "g0"
+    },
+    {
+      "raw": "v0",
+      "carrier_identity": "g0"
+    },
+    {
+      "raw": "u1",
+      "carrier_identity": "g1"
+    },
+    {
+      "raw": "v1",
+      "carrier_identity": "g1"
+    },
+    {
+      "raw": "u2",
+      "carrier_identity": "g2"
+    },
+    {
+      "raw": "v2",
+      "carrier_identity": "g2"
+    },
+    {
+      "raw": "u3",
+      "carrier_identity": "g3"
+    },
+    {
+      "raw": "v3",
+      "carrier_identity": "g3"
+    },
+    {
+      "raw": "u4",
+      "carrier_identity": "g4"
+    },
+    {
+      "raw": "v4",
+      "carrier_identity": "g4"
+    },
+    {
+      "raw": "u5",
+      "carrier_identity": "g5"
+    },
+    {
+      "raw": "v5",
+      "carrier_identity": "g5"
+    }
+  ],
+  "W": {
+    "definition": "W is the set of all finite JSON arrays whose entries are raw occurrence tokens, including the empty array.",
+    "alphabet": [
+      "u0",
+      "v0",
+      "u1",
+      "v1",
+      "u2",
+      "v2",
+      "u3",
+      "v3",
+      "u4",
+      "v4",
+      "u5",
+      "v5"
+    ],
+    "empty_word": []
+  },
+  "admitted_equality_definition": {
+    "domain": "W",
+    "symbol": "~",
+    "definition": "For words w and z, w ~ z if and only if E(w) = E(z).",
+    "index_rule": "Each token u_i or v_i has index i, and the empty sum is 0.",
+    "equivalence_classes": [
+      {
+        "label": "K0",
+        "members": "All words whose token-index sum is congruent to 0 modulo 6."
+      },
+      {
+        "label": "K1",
+        "members": "All words whose token-index sum is congruent to 1 modulo 6."
+      },
+      {
+        "label": "K2",
+        "members": "All words whose token-index sum is congruent to 2 modulo 6."
+      },
+      {
+        "label": "K3",
+        "members": "All words whose token-index sum is congruent to 3 modulo 6."
+      },
+      {
+        "label": "K4",
+        "members": "All words whose token-index sum is congruent to 4 modulo 6."
+      },
+      {
+        "label": "K5",
+        "members": "All words whose token-index sum is congruent to 5 modulo 6."
+      }
+    ],
+    "singleton_occurrence_pairs": [
+      [
+        [
+          "u0"
+        ],
+        [
+          "v0"
+        ]
+      ],
+      [
+        [
+          "u1"
+        ],
+        [
+          "v1"
+        ]
+      ],
+      [
+        [
+          "u2"
+        ],
+        [
+          "v2"
+        ]
+      ],
+      [
+        [
+          "u3"
+        ],
+        [
+          "v3"
+        ]
+      ],
+      [
+        [
+          "u4"
+        ],
+        [
+          "v4"
+        ]
+      ],
+      [
+        [
+          "u5"
+        ],
+        [
+          "v5"
+        ]
+      ]
+    ]
+  },
+  "E": {
+    "domain": "W",
+    "codomain": "carrier",
+    "total": true,
+    "letter_table": {
+      "u0": "g0",
+      "v0": "g0",
+      "u1": "g1",
+      "v1": "g1",
+      "u2": "g2",
+      "v2": "g2",
+      "u3": "g3",
+      "v3": "g3",
+      "u4": "g4",
+      "v4": "g4",
+      "u5": "g5",
+      "v5": "g5"
+    },
+    "definition": "E([])=g0. For w=[a1,...,an], E(w) is E([a1]) star ... star E([an]); equivalently, if the token-index sum is s, E(w)=g_(s mod 6)."
+  },
+  "J": {
+    "domain": "W",
+    "codomain": "W",
+    "total": true,
+    "letter_table": {
+      "u0": "v0",
+      "v0": "u0",
+      "u1": "v5",
+      "v1": "u5",
+      "u2": "v4",
+      "v2": "u4",
+      "u3": "v3",
+      "v3": "u3",
+      "u4": "v2",
+      "v4": "u2",
+      "u5": "v1",
+      "v5": "u1"
+    },
+    "definition": "J([])=[]. If w=[a1,...,an], then J(w)=[j(an),...,j(a1)], where j is the displayed letter table.",
+    "involution_certificate": "The letter table consists entirely of two-cycles, so j(j(a))=a for every token; reversing a word twice also restores it. Hence J(J(w))=w for every w in W.",
+    "evaluation_property": "E(J(w)) is the group inverse of E(w)."
+  },
+  "C": {
+    "domain": "W",
+    "codomain": "W",
+    "total": true,
+    "output_table_by_E": {
+      "g0": [
+        "u0"
+      ],
+      "g1": [
+        "u1"
+      ],
+      "g2": [
+        "u2"
+      ],
+      "g3": [
+        "u3"
+      ],
+      "g4": [
+        "u4"
+      ],
+      "g5": [
+        "u5"
+      ]
+    },
+    "definition": "If E(w)=g_i, then C(w)=[u_i].",
+    "idempotence_certificate": "E([u_i])=g_i, so C(C(w))=C(w) for every w in W."
+  },
+  "questions": [
+    {
+      "id": "Q_even_residue",
+      "domain": "W",
+      "codomain": "Bool",
+      "total": true,
+      "quotient_resolved": true,
+      "definition": "Return true exactly when E(w) is g0, g2, or g4.",
+      "factor_table": {
+        "g0": true,
+        "g1": false,
+        "g2": true,
+        "g3": false,
+        "g4": true,
+        "g5": false
+      }
+    },
+    {
+      "id": "Q_raw_v_parity",
+      "domain": "W",
+      "codomain": "Bool",
+      "total": true,
+      "quotient_resolved": false,
+      "definition": "Return true exactly when the number of raw tokens from {v0,v1,v2,v3,v4,v5} occurring in w is odd.",
+      "equal_pair_separator": {
+        "left": [
+          "u2"
+        ],
+        "right": [
+          "v2"
+        ],
+        "admitted_equal": true,
+        "left_value": false,
+        "right_value": true
+      }
+    },
+    {
+      "id": "Q_pole_value",
+      "domain": "W",
+      "codomain": "Bool",
+      "total": true,
+      "quotient_resolved": true,
+      "definition": "Return true exactly when E(w) equals the carrier value of either distinguished pole.",
+      "factor_table": {
+        "g0": false,
+        "g1": false,
+        "g2": true,
+        "g3": false,
+        "g4": false,
+        "g5": true
+      }
+    }
+  ],
+  "held_out_word": [
+    "v4",
+    "u5",
+    "v3",
+    "u1"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "commitment": "Definitions only. No observed verdict or expected status is encoded. The packet is content-addressed before Parts 1 and 2 and parsed only after they freeze.",
+  "exact_geometries": [
+    {
+      "assumption_id": "external_coordinate_reexpression",
+      "declared_obligations": [
+        "setoid",
+        "returning",
+        "grounded",
+        "operation_congruence",
+        "presentation_reversal"
+      ],
+      "equality_rule": "local_right_action_signature_equivalence",
+      "language": "ExternalCoordinate"
+    },
+    {
+      "assumption_id": "literal_isolation_split",
+      "declared_obligations": [
+        "setoid",
+        "grounded",
+        "operation_congruence"
+      ],
+      "equality_rule": "local_signature_and_constructor_equivalence",
+      "language": "ExternalLiteralSplit"
+    },
+    {
+      "assumption_id": "normal_subgroup_parity_collapse",
+      "declared_obligations": [
+        "setoid",
+        "returning",
+        "operation_congruence",
+        "presentation_reversal"
+      ],
+      "equality_rule": "rotation_reflection_parity_equivalence",
+      "language": "ExternalParityQuotient"
+    },
+    {
+      "assumption_id": "external_basis_twist",
+      "declared_obligations": [
+        "setoid",
+        "returning",
+        "grounded",
+        "operation_congruence",
+        "presentation_reversal"
+      ],
+      "equality_rule": "local_right_action_signature_equivalence",
+      "language": "ExternalTwist"
+    },
+    {
+      "assumption_id": "partial_external_interaction",
+      "declared_obligations": [
+        "setoid",
+        "returning",
+        "grounded",
+        "operation_congruence",
+        "presentation_reversal"
+      ],
+      "equality_rule": "local_right_action_signature_equivalence",
+      "language": "ExternalPartial"
+    }
+  ],
+  "non_bijective_interaction": {
+    "assumption_id": "external_central_c2_isolation",
+    "declared_obligations": [
+      "setoid",
+      "returning",
+      "grounded",
+      "operation_congruence",
+      "presentation_reversal"
+    ],
+    "equality_rule": "external_right_action_signature_equivalence",
+    "external_operation": "direct_product_with_central_C2",
+    "interaction_sequence": [
+      "SPLIT_EXTENSION",
+      "CLOSURE_QUOTIENT"
+    ],
+    "language": "ExternalCentralIsolation"
+  },
+  "schema_version": 1
+}

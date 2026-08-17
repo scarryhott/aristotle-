@@ -1,0 +1,492 @@
+{
+  "frame_id": "A",
+  "learning_translation": {
+    "A/cedar/belief/infinity": "A/cedar/why/infinity",
+    "A/cedar/belief/zero": "A/cedar/why/zero",
+    "A/cedar/broadest_lesson/infinity": "A/cedar/ninety_degree_attempt/infinity",
+    "A/cedar/broadest_lesson/zero": "A/cedar/ninety_degree_attempt/zero",
+    "A/cedar/goal/infinity": "A/cedar/perspective/infinity",
+    "A/cedar/goal/zero": "A/cedar/perspective/zero",
+    "A/cedar/independent_return/infinity": "A/cedar/goal/zero",
+    "A/cedar/independent_return/zero": "A/cedar/goal/infinity",
+    "A/cedar/ninety_degree_attempt/infinity": "A/cedar/independent_return/infinity",
+    "A/cedar/ninety_degree_attempt/zero": "A/cedar/independent_return/zero",
+    "A/cedar/perspective/infinity": "A/cedar/belief/infinity",
+    "A/cedar/perspective/zero": "A/cedar/belief/zero",
+    "A/cedar/what_lesson_tree/infinity": "A/cedar/broadest_lesson/infinity",
+    "A/cedar/what_lesson_tree/zero": "A/cedar/broadest_lesson/zero",
+    "A/cedar/why/infinity": "A/cedar/what_lesson_tree/infinity",
+    "A/cedar/why/zero": "A/cedar/what_lesson_tree/zero",
+    "A/river/belief/infinity": "A/river/why/infinity",
+    "A/river/belief/zero": "A/river/why/zero",
+    "A/river/broadest_lesson/infinity": "A/river/ninety_degree_attempt/infinity",
+    "A/river/broadest_lesson/zero": "A/river/ninety_degree_attempt/zero",
+    "A/river/goal/infinity": "A/river/perspective/infinity",
+    "A/river/goal/zero": "A/river/perspective/zero",
+    "A/river/independent_return/infinity": "A/river/goal/zero",
+    "A/river/independent_return/zero": "A/river/goal/infinity",
+    "A/river/ninety_degree_attempt/infinity": "A/river/independent_return/infinity",
+    "A/river/ninety_degree_attempt/zero": "A/river/independent_return/zero",
+    "A/river/perspective/infinity": "A/river/belief/infinity",
+    "A/river/perspective/zero": "A/river/belief/zero",
+    "A/river/what_lesson_tree/infinity": "A/river/broadest_lesson/infinity",
+    "A/river/what_lesson_tree/zero": "A/river/broadest_lesson/zero",
+    "A/river/why/infinity": "A/river/what_lesson_tree/infinity",
+    "A/river/why/zero": "A/river/what_lesson_tree/zero",
+    "A/stone/belief/infinity": "A/stone/why/infinity",
+    "A/stone/belief/zero": "A/stone/why/zero",
+    "A/stone/broadest_lesson/infinity": "A/stone/ninety_degree_attempt/infinity",
+    "A/stone/broadest_lesson/zero": "A/stone/ninety_degree_attempt/zero",
+    "A/stone/goal/infinity": "A/stone/perspective/infinity",
+    "A/stone/goal/zero": "A/stone/perspective/zero",
+    "A/stone/independent_return/infinity": "A/stone/goal/zero",
+    "A/stone/independent_return/zero": "A/stone/goal/infinity",
+    "A/stone/ninety_degree_attempt/infinity": "A/stone/independent_return/infinity",
+    "A/stone/ninety_degree_attempt/zero": "A/stone/independent_return/zero",
+    "A/stone/perspective/infinity": "A/stone/belief/infinity",
+    "A/stone/perspective/zero": "A/stone/belief/zero",
+    "A/stone/what_lesson_tree/infinity": "A/stone/broadest_lesson/infinity",
+    "A/stone/what_lesson_tree/zero": "A/stone/broadest_lesson/zero",
+    "A/stone/why/infinity": "A/stone/what_lesson_tree/infinity",
+    "A/stone/why/zero": "A/stone/what_lesson_tree/zero"
+  },
+  "line_set": [
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:0:0",
+      "path_or_wall_exclusive": true,
+      "source": "A/cedar/goal/zero",
+      "target": "A/cedar/perspective/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:0:1",
+      "path_or_wall_exclusive": true,
+      "source": "A/cedar/perspective/zero",
+      "target": "A/cedar/belief/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:0:10",
+      "path_or_wall_exclusive": true,
+      "source": "A/cedar/belief/infinity",
+      "target": "A/cedar/why/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:0:11",
+      "path_or_wall_exclusive": true,
+      "source": "A/cedar/why/infinity",
+      "target": "A/cedar/what_lesson_tree/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:0:12",
+      "path_or_wall_exclusive": true,
+      "source": "A/cedar/what_lesson_tree/infinity",
+      "target": "A/cedar/broadest_lesson/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:0:13",
+      "path_or_wall_exclusive": true,
+      "source": "A/cedar/broadest_lesson/infinity",
+      "target": "A/cedar/ninety_degree_attempt/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:0:14",
+      "path_or_wall_exclusive": true,
+      "source": "A/cedar/ninety_degree_attempt/infinity",
+      "target": "A/cedar/independent_return/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "A:line:0:15",
+      "path_or_wall_exclusive": true,
+      "source": "A/cedar/independent_return/infinity",
+      "target": "A/cedar/goal/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:0:2",
+      "path_or_wall_exclusive": true,
+      "source": "A/cedar/belief/zero",
+      "target": "A/cedar/why/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:0:3",
+      "path_or_wall_exclusive": true,
+      "source": "A/cedar/why/zero",
+      "target": "A/cedar/what_lesson_tree/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:0:4",
+      "path_or_wall_exclusive": true,
+      "source": "A/cedar/what_lesson_tree/zero",
+      "target": "A/cedar/broadest_lesson/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:0:5",
+      "path_or_wall_exclusive": true,
+      "source": "A/cedar/broadest_lesson/zero",
+      "target": "A/cedar/ninety_degree_attempt/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:0:6",
+      "path_or_wall_exclusive": true,
+      "source": "A/cedar/ninety_degree_attempt/zero",
+      "target": "A/cedar/independent_return/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "A:line:0:7",
+      "path_or_wall_exclusive": true,
+      "source": "A/cedar/independent_return/zero",
+      "target": "A/cedar/goal/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:0:8",
+      "path_or_wall_exclusive": true,
+      "source": "A/cedar/goal/infinity",
+      "target": "A/cedar/perspective/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:0:9",
+      "path_or_wall_exclusive": true,
+      "source": "A/cedar/perspective/infinity",
+      "target": "A/cedar/belief/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:1:0",
+      "path_or_wall_exclusive": true,
+      "source": "A/river/goal/zero",
+      "target": "A/river/perspective/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:1:1",
+      "path_or_wall_exclusive": true,
+      "source": "A/river/perspective/zero",
+      "target": "A/river/belief/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:1:10",
+      "path_or_wall_exclusive": true,
+      "source": "A/river/belief/infinity",
+      "target": "A/river/why/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:1:11",
+      "path_or_wall_exclusive": true,
+      "source": "A/river/why/infinity",
+      "target": "A/river/what_lesson_tree/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:1:12",
+      "path_or_wall_exclusive": true,
+      "source": "A/river/what_lesson_tree/infinity",
+      "target": "A/river/broadest_lesson/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:1:13",
+      "path_or_wall_exclusive": true,
+      "source": "A/river/broadest_lesson/infinity",
+      "target": "A/river/ninety_degree_attempt/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:1:14",
+      "path_or_wall_exclusive": true,
+      "source": "A/river/ninety_degree_attempt/infinity",
+      "target": "A/river/independent_return/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "A:line:1:15",
+      "path_or_wall_exclusive": true,
+      "source": "A/river/independent_return/infinity",
+      "target": "A/river/goal/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:1:2",
+      "path_or_wall_exclusive": true,
+      "source": "A/river/belief/zero",
+      "target": "A/river/why/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:1:3",
+      "path_or_wall_exclusive": true,
+      "source": "A/river/why/zero",
+      "target": "A/river/what_lesson_tree/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:1:4",
+      "path_or_wall_exclusive": true,
+      "source": "A/river/what_lesson_tree/zero",
+      "target": "A/river/broadest_lesson/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:1:5",
+      "path_or_wall_exclusive": true,
+      "source": "A/river/broadest_lesson/zero",
+      "target": "A/river/ninety_degree_attempt/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:1:6",
+      "path_or_wall_exclusive": true,
+      "source": "A/river/ninety_degree_attempt/zero",
+      "target": "A/river/independent_return/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "A:line:1:7",
+      "path_or_wall_exclusive": true,
+      "source": "A/river/independent_return/zero",
+      "target": "A/river/goal/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:1:8",
+      "path_or_wall_exclusive": true,
+      "source": "A/river/goal/infinity",
+      "target": "A/river/perspective/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:1:9",
+      "path_or_wall_exclusive": true,
+      "source": "A/river/perspective/infinity",
+      "target": "A/river/belief/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:2:0",
+      "path_or_wall_exclusive": true,
+      "source": "A/stone/goal/zero",
+      "target": "A/stone/perspective/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:2:1",
+      "path_or_wall_exclusive": true,
+      "source": "A/stone/perspective/zero",
+      "target": "A/stone/belief/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:2:10",
+      "path_or_wall_exclusive": true,
+      "source": "A/stone/belief/infinity",
+      "target": "A/stone/why/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:2:11",
+      "path_or_wall_exclusive": true,
+      "source": "A/stone/why/infinity",
+      "target": "A/stone/what_lesson_tree/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:2:12",
+      "path_or_wall_exclusive": true,
+      "source": "A/stone/what_lesson_tree/infinity",
+      "target": "A/stone/broadest_lesson/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:2:13",
+      "path_or_wall_exclusive": true,
+      "source": "A/stone/broadest_lesson/infinity",
+      "target": "A/stone/ninety_degree_attempt/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:2:14",
+      "path_or_wall_exclusive": true,
+      "source": "A/stone/ninety_degree_attempt/infinity",
+      "target": "A/stone/independent_return/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "A:line:2:15",
+      "path_or_wall_exclusive": true,
+      "source": "A/stone/independent_return/infinity",
+      "target": "A/stone/goal/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:2:2",
+      "path_or_wall_exclusive": true,
+      "source": "A/stone/belief/zero",
+      "target": "A/stone/why/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:2:3",
+      "path_or_wall_exclusive": true,
+      "source": "A/stone/why/zero",
+      "target": "A/stone/what_lesson_tree/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:2:4",
+      "path_or_wall_exclusive": true,
+      "source": "A/stone/what_lesson_tree/zero",
+      "target": "A/stone/broadest_lesson/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:2:5",
+      "path_or_wall_exclusive": true,
+      "source": "A/stone/broadest_lesson/zero",
+      "target": "A/stone/ninety_degree_attempt/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:2:6",
+      "path_or_wall_exclusive": true,
+      "source": "A/stone/ninety_degree_attempt/zero",
+      "target": "A/stone/independent_return/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "A:line:2:7",
+      "path_or_wall_exclusive": true,
+      "source": "A/stone/independent_return/zero",
+      "target": "A/stone/goal/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:2:8",
+      "path_or_wall_exclusive": true,
+      "source": "A/stone/goal/infinity",
+      "target": "A/stone/perspective/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "A:line:2:9",
+      "path_or_wall_exclusive": true,
+      "source": "A/stone/perspective/infinity",
+      "target": "A/stone/belief/infinity"
+    }
+  ],
+  "one_line_set_after_disclosure": true,
+  "parent_forward_lines_sha256": "f4682b4ed72503724d7d7a9dcdfd7f53220c24206fb0120b066fbaf6dccf0c47",
+  "parent_frozen_geometry_sha256": "7a2f6a56d49c861d7f12850cdb880f47e40bd8c60365ffc66aa7f4d4224784c2",
+  "parent_return_lines_sha256": "45fa04deda8010c3ddbedeb5d9a21fc116a3e4eb450c5fe5f1880578dc12d952",
+  "schema_version": "maze-line-set-disclosure-1.0"
+}

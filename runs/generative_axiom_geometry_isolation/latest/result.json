@@ -1,0 +1,125 @@
+{
+  "actual_asi_or_aristotle_run": false,
+  "admitted_natural_translation_count": 6,
+  "benchmark": "generative-axiom-geometry-isolation-v1",
+  "canonical_translation_selected": false,
+  "causal_order": [
+    "shared objective and distinct generator contexts precommitted",
+    "generator A and B launched as separate subprocesses with disjoint arguments",
+    "both local axiom geometries, equalities, questions, and solutions frozen",
+    "content-addressed disclosure manifest frozen",
+    "third verifier subprocess launched afterward",
+    "all candidate T-phi-pi forms enumerated",
+    "GeomEquiv then W/E/J/C/operation naturality checked",
+    "frame-qualified questions and held-out transfer checked"
+  ],
+  "claim_status": "EXECUTED_BOUNDED_GENERATIVE_PROXY",
+  "comparison_interpretations": {
+    "classical_well_defined_isolation": {
+      "agent_a_local_replay_passed": true,
+      "agent_b_local_replay_passed": true,
+      "cross_frame_identity_asserted_by_local_checks": false,
+      "status": "BOTH_LOCALLY_WELL_DEFINED"
+    },
+    "natural_existential_conditional": {
+      "canonical_translation_selected": false,
+      "conditions": [
+        "both frozen local geometry replays pass",
+        "candidate enumeration starts only after disclosure",
+        "at least one complete T-phi-pi form passes every equality and naturality check"
+      ],
+      "existence_witness_ids": [
+        "dacd222f0bb825610ad5deb79b3523aaf34b359b06dc944bcff3c9459c0f957b",
+        "1d20d47c3db030f3e426f03b3dd1de904bf00a03d42e2e22ab888859321c021f",
+        "a78855458acfbb5eac0b7e327e4e9ffd78fb2dad79fe8e7175a5f3286564db52",
+        "6b43961f3448215c1c608d9235e9ee02d25af7ba6492786b49a73ac9b97170bd",
+        "3687569f649c397ad1946f02395d148c1917c922c54d6312744baf6f932b8e01",
+        "a1c84a75a9197b358b4b11b01b1d199126fdc92c3b385389e40fe8338d550851"
+      ],
+      "natural_translation_form_count": 6,
+      "status": "CONDITIONALLY_WITNESSED",
+      "unique_translation_claimed": false
+    },
+    "translational_open_isolation": {
+      "agent_a_frame_id": "3975433ec800704262bc8081708132f2e166fbe923a4c82dc26cdb92ab712ec1",
+      "agent_a_open_witness": {
+        "frame_equal": true,
+        "left": "A/face::perm_a_00",
+        "left_value": "face",
+        "right": "A/vertex::perm_a_00",
+        "right_value": "vertex"
+      },
+      "agent_b_frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+      "agent_b_open_witness": {
+        "frame_equal": true,
+        "left": "B/return::aff_b_00",
+        "left_value": "return",
+        "right": "B/source::aff_b_00",
+        "right_value": "source"
+      },
+      "every_admitted_translation_preserves_open_status": true,
+      "missing_or_rejected_comparison_called_open": false,
+      "question_id": "literal_pole",
+      "status": "OPEN_IN_BOTH_FRAMES_AND_TRANSLATION_INVARIANT"
+    }
+  },
+  "disclosure_manifest": {
+    "path": "disclosure_manifest.json",
+    "sha256": "77b6a655a41b2b3a06d1ff5376ed2ccb5217520544f06496362ba207f7277ad3"
+  },
+  "generator_artifacts": {
+    "A": {
+      "path": "agent_a.56e0b23ac76fb7e1.json",
+      "sha256": "56e0b23ac76fb7e1070faa555f1ee49205bb2fcd0b0b3094f2521e287ec292f8"
+    },
+    "B": {
+      "path": "agent_b.a87712850742df6b.json",
+      "sha256": "a87712850742df6b1207db255f979d5782e70711cbe4d5e3ee23c4abbf244f44"
+    }
+  },
+  "independence_claim": "subprocess and causal input separation only; no claim of epistemic, organizational, or adversarial sandbox independence",
+  "optional_raw_generation_assay": {
+    "comparison_status": "CARDINALITY_GEOM_EQUIV_OBSTRUCTION",
+    "path": "raw_generation_assay.json",
+    "reference_pass_dependency": false,
+    "status": "ASSAY_COMPLETE"
+  },
+  "optional_raw_interface_variant_assay": {
+    "comparison_status": "TRANSLATOR_SEARCH_NOT_RUN_INTERFACE_BOUNDARY",
+    "path": "raw_generation_interface_variant_assay.json",
+    "reference_pass_dependency": false,
+    "status": "ASSAY_COMPLETE"
+  },
+  "post_verifier_hash_revalidation": {
+    "agent_a_unchanged": true,
+    "agent_b_unchanged": true,
+    "manifest_unchanged": true,
+    "passed": true,
+    "verifier_copy_matches_frozen_source": true
+  },
+  "receipt_chain": {
+    "count": 8,
+    "head": "b9637680304eb8421fcefb4502b8b610a3cf060404cf4ddb8dc6908dbab21512",
+    "ok": true
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "strong_classical_post_disclosure_baseline": {
+    "accepts_every_operation_preserving_phi": true,
+    "ordinary_group_isomorphism_count": 6,
+    "ordinary_group_isomorphism_phi_ids": [
+      "0584209f054b764a3f12f9ae8da827088de5f19ea1d5a873ee83486531168f88",
+      "649e407b6518ae30381ef19c91a293a23d70c077c800367cd4ec906d67ef888a",
+      "826c8a50e3d6b73999dc1e5217347904ac640fb10a5c340241fe28d7b89aa277",
+      "930f9814513a4a738c4e8bd9db8c53fc27001a41f56dc9832450bcf67dd02cc5",
+      "c5bd27d2f19a1ed5edb50376a5f145f43b37c8074d6f7f30fb6a0fe99e5599b0",
+      "da8a23aeffc2e25a467cf2830b729bbc951ec1411748ef48e77fb094796206d7"
+    ],
+    "orientation_pi_ignored_for_classical_count": true
+  },
+  "tokens_issued": 0,
+  "verifier_artifact": {
+    "path": "verifier.9b430e9f3035605b.json",
+    "sha256": "9b430e9f3035605b53f6272e60ea723d0471777c6f4d773a615be86d2299dd01"
+  }
+}

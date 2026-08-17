@@ -1,0 +1,65 @@
+{
+  "artifact_a_sha256": "a8bd9c1133c745a0c69a0975d5acdc89dd762dd073540f0d3575b831a9d61b90",
+  "artifact_b_sha256": "a0b331ab160266df510182b08e7b3e80ee6abe3f08b93cc4313e33d47122a964",
+  "axiom_geometry_equivalence_count": 1,
+  "candidate_mappings": [
+    {
+      "b0": "a0",
+      "b1": "a1",
+      "b2": "a3",
+      "b3": "a2",
+      "b4": "a5",
+      "b5": "a4",
+      "b6": "a6",
+      "b7": "a7"
+    }
+  ],
+  "complete_return_W_visible": false,
+  "contact_constraints": [
+    {
+      "source_local_form": [
+        1,
+        0
+      ],
+      "target_image_of_vertex_zero": 1,
+      "target_order": 4
+    },
+    {
+      "source_local_form": [
+        0,
+        1
+      ],
+      "target_image_of_vertex_zero": 0,
+      "target_order": 2
+    }
+  ],
+  "forbidden_inputs": [
+    "complete return W",
+    "external return audit",
+    "mutable learner state"
+  ],
+  "mode": "relational_contact",
+  "protocol_sha256": "08e4d894da887a17e8b0a94c05b511485b8f464795b0d3e018778ad1cbf7216f",
+  "runtime_id": "post-hoc-axiom-geometry-equivalence-constructor",
+  "schema_version": 4,
+  "selected_mapping": {
+    "b0": "a0",
+    "b1": "a1",
+    "b2": "a3",
+    "b3": "a2",
+    "b4": "a5",
+    "b5": "a4",
+    "b6": "a6",
+    "b7": "a7"
+  },
+  "selection": {
+    "relation": "relative contact selects one coherent frame form",
+    "selected": true
+  },
+  "self_certification": false,
+  "structural_isomorphism_count": 8,
+  "visibility": [
+    "two frozen learner artifacts",
+    "this protocol"
+  ]
+}

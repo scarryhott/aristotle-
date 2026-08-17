@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "objective_id": "independently-generate-nonabelian-order-six-geometry",
+  "claim_boundary": "A bounded deterministic finite-model objective, not an ASI task or evidence of cognitive independence.",
+  "shared_abstract_constraints": {
+    "carrier_size": 6,
+    "finite_group": true,
+    "nonabelian": true,
+    "element_order_multiset": [1, 2, 2, 2, 3, 3],
+    "generator_relations": {
+      "r_order": 3,
+      "s_order": 2,
+      "s_r_s_equals_r_inverse": true
+    }
+  },
+  "local_axiom_geometry_contract": {
+    "occurrence_presentations_per_identity": 2,
+    "admitted_equality_rule": "equal complete local right-action signatures",
+    "required_operations": ["W", "E", "J", "C", "multiplication"],
+    "required_audits": [
+      "setoid",
+      "returning",
+      "grounded",
+      "quotient_recovery",
+      "operation_congruence",
+      "J_involution",
+      "C_idempotence",
+      "C_return_preservation"
+    ]
+  },
+  "questions": [
+    {
+      "id": "element_order",
+      "definition": "the local group order of the identity returned by W",
+      "total": true
+    },
+    {
+      "id": "square_is_identity",
+      "definition": "whether the square of the identity returned by W is the local identity",
+      "total": true
+    },
+    {
+      "id": "literal_pole",
+      "definition": "the literal local presentation pole of the occurrence",
+      "total": true
+    }
+  ],
+  "local_solution_problem": {
+    "id": "involutive_elements",
+    "definition": "enumerate every local identity x satisfying x*x=e"
+  },
+  "forbidden_shared_data": [
+    "a cross-language dictionary",
+    "a canonical carrier labelling",
+    "a preselected translator",
+    "the other generator's context or artifact",
+    "verifier outcomes"
+  ]
+}

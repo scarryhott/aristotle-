@@ -1,121 +1,211 @@
 # Translational Axiometry for Mathematical ASI Verification
 
-This repository develops a machine-checkable research program for **verification under mathematical self-reexpression**.
+This repository contains a **machine-checked translational theory and a self-contained executed verification suite** for verification across changing mathematical reference frames. It is not only a proposal.
 
-The motivating problem is not only whether an AI can produce a proof that a fixed kernel accepts. A mathematical superintelligence may change representations, invent mathematical languages, alter internal proof strategies, reorganize axiomatizations, and pass through intermediate reasoning systems that are not naturally identified with the verifier's starting language.
+## Central thesis
 
-The research question is therefore:
+The research begins from one question:
 
-> **What can remain verifiable when mathematical intelligence is allowed to change the language and representation in which it reasons?**
+> **Does there exist a translation independent of the selection of an origin language, whose relations themselves form reference frames, and can such translation relate formal identities across changing frames?**
 
-The current formal kernel is `lean/NRRF627ClosureTranslationalFrameworkAxiometryASIEvolutionaryVerification.lean`. It defines a self-contained `TransFrame` and proves closure, axiometry, ASI-gauge, evolutionary-verification, and non-vacuity results using Lean/Mathlib.
+The proposed answer is investigated rather than assumed as an unconditional theorem. Local axiom-geometries are treated as relative formations within an origin-independent translational relation. A frame can organize a local equality and perspective without becoming the permanent origin from which every other frame must inherit identity.
 
-## Closure relation
-
-The conceptual progression is
+The thesis is therefore:
 
 ```text
-relation / closure
-      ↓
-orientation ↔ extension
-      ↓
-relative axiom ↔ geometry
-      ↓
-closure language
-      ↓
-translation between languages
-      ↓
-verification return W
-      ↓
-axiometric verdict
+origin-independent translation
+    → relational formations / relative reference frames
+    → local axiom ↔ geometry ↔ admitted equality
+    → translation + relational return
+    → interactive continual completion (closure)
+    → IVI / recoverable relational identity
+    → next perspective or axiometric basis
 ```
 
-No closure language is declared the absolute origin. Languages are compared pairwise through coherent translations. Distinct presentations may therefore remain distinct as occurrences while being closure-equal through their verification return.
+**Closure is interactive continual completion, not the freezing of axiometry.** Experimental artifacts are frozen only to preserve causal evidence during a particular comparison; completed relational return may subsequently participate in a new frame and a new axiometric basis.
 
-## What NRRF627 establishes
+A motivating application is agreement between reasoning minds. Different minds may carry different local definitions or measurements of value and credit. The project asks whether shared identity can be recovered through relative translation rather than by declaring one local definition the privileged global definition. The current runtimes test the mathematical architecture of that claim; they do not claim to solve economic value or interpersonal agreement in general.
 
-Within `TransFrame`:
+See [`docs/METAPHYSICS.md`](docs/METAPHYSICS.md) for the full thesis and its formal boundary.
+The choice-before-naturality and relative local/global topology formulation is
+in [`docs/OPEN_TRANSLATIONAL_FOUNDATION.md`](docs/OPEN_TRANSLATIONAL_FOUNDATION.md).
 
-- closure equality is preserved and reflected by translation;
-- polar presentations can be closure-equal without being identical occurrences;
-- language-independent, closure-respecting verdicts are exactly measurements of the verification return;
-- return-invisible restructuring preserves such verdicts;
-- reexpression through another language preserves verification;
-- coherent evolutionary routes depend only on endpoints;
-- evolutionary verification is exactly return measurement;
-- verification need not reconstruct the full occurrence;
-- a reversal walk retains a translation-compatible parity residue;
-- explicit models witness non-vacuity.
+## What is already complete
 
-These are conditional mathematical results. The repository does **not** claim that arbitrary AI self-modification automatically satisfies `TransFrame`.
-
-## The grant program
-
-The proposed Harmonic/Aristotle research project asks whether the closure structure can be **derived, tested, or falsified on independently specified mathematical-agent dynamics**.
-
-The grant would fund the missing bridge:
+The bounded programme executes:
 
 ```text
-independently specified mathematical agent
-              ↓
-representation / language changes
-              ↓
-recoverable translations and returns?
-              ↓
-derive TransFrame  OR  produce obstruction
-              ↓
-machine-checked verification boundary
+local axiom-geometries
+  → internal equality audit
+  → immutable evidence freeze
+  → post-freeze candidate (T,phi,pi)
+  → GeomEquiv preservation + reflection
+  → W/E/J/C and operation naturality
+  → quotient ResolvedIn / explicit OpenIn witness
+  → translational completion / returned basis
 ```
 
-A successful project is not required to confirm the framework. Admissible outcomes are `PROVED`, `FALSE_WITH_COUNTEREXAMPLE`, or `OPEN_WITH_MINIMAL_OBSTRUCTION`.
+It includes independent classical mathematical-agent proxies, a strong ordinary-isomorphism baseline on identical frozen inputs, external axiom-geometry interaction, generative frame isolation, exhaustive candidate search, explicit positive/negative/pending controls, deterministic evidence replay, and Lean verification.
+
+The bounded generative experiment freezes `F_A`, `F_B`, and their total questions before disclosure, then tests 1,440 explicit post-freeze `(T,phi,pi)` forms. Six ordinary isomorphisms are retained by the strong classical baseline and the same six satisfy the declared translational `GeomEquiv` and naturality obligations. Raw non-equivalent controls produce explicit obstructions rather than being normalized into compatibility.
+
+## The primary next experiment
+
+The remaining grant-scale test is:
+
+> **Run the existing verification architecture on axiom-geometries generated independently by Aristotle or another frontier mathematical agent, then use the resulting translations, completions, and obstructions to extend the Lean theory and test mathematical-ASI verification further.**
+
+A qualifying Aristotle-generated frame is not merely a Lean encoding of a representation supplied by the experimenter. It is an independently produced local mathematical formation whose primitives/axioms, geometry or structure, admitted equality, operations, and registered total questions are evaluated in their own frame before cross-frame comparison.
+
+The experiment freezes the produced evidence before disclosure so that the translator cannot retrospectively rewrite it. That freeze is methodological, not a claim that the ASI's axiometry must remain static. Native translation is an independent artefact, and candidate equality is tested only after that artefact has passed identity-independent validation.
+
+```text
+objective → Aristotle A → F_A → internal audit → evidence freeze
+objective → Aristotle B → F_B → internal audit → evidence freeze
+
+F_A, F_B, Q_A, Q_B
+  ≺ native translation T_AB
+  ≺ primitive/held-out validation + recovery
+  ≺ candidate relational equality
+  ≺ independent return generation
+  ≺ translational completion / IVI / topology / receipts
+```
+
+The initial isolated-generation stage, frozen native translation, identity-independent validation, subinterface-only candidate equality, and independent local-return stage have now been executed. The current evidence supports a 34-role admitted subinterface only: it does **not** establish whole-frame equality, `GeomEquiv`, assembled cross-frame return, completion, or IVI. The frozen scientific protocol is in [`docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md`](docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md); the direct request links, manifests, hashes, and exact claim boundary are in [`docs/ARISTOTLE_NATIVE_TRANSLATION_EVIDENCE.md`](docs/ARISTOTLE_NATIVE_TRANSLATION_EVIDENCE.md).
+
+A natural translation, explicit equality obstruction, downstream naturality obstruction, incomplete return, genuine frame-relative `OpenIn`, or registered interface boundary are all substantive outcomes. The experiment does not require every frame to translate to every other frame.
+
+## The full research loop
+
+The grant is not only a one-shot Aristotle benchmark:
+
+```text
+Lean translational theory_n
+    → independently generated Aristotle perspectives / frames_n
+    → post-hoc translation + return
+    → completion / obstruction / openness / IVI
+    → formalize the discovered boundary
+    → Lean translational theory_(n+1)
+    → next mathematical perspective / ASI verification experiment.
+```
+
+Frontier mathematics supplies new structures and counterexamples for further formalization, while the formal theory supplies auditable relations for the next experimental round.
 
 See [`docs/GRANT.md`](docs/GRANT.md) and [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md).
 
-## Metaphysical motivation
+## Reproduce the current verification suite
 
-The metaphysical thesis is **relation prior to isolated selection**. A pole such as `0` or `∞` is not treated as an absolute object whose identity is fixed before comparison. Its identity is disclosed by relative translational order inside closure. Thus `0` and `∞` may be distinct presentations while closure-equal, with orientation recording their relative distinction.
-
-Axiometry, in this usage, is therefore not simply another fixed axiom system. It asks for the relation between axiom, geometry, language, translation, and recoverable return when no one language is privileged as the global origin.
-
-See [`docs/METAPHYSICS.md`](docs/METAPHYSICS.md).
-
-## IVI
-
-**IVI — intangibly verified information —** is the proposed interpretation of information whose identity is given by recoverable closure rather than by identity of its local presentation. In the verification program, IVI is treated as a *potential gate*: a candidate invariant must survive admissible return, while claims that cannot yet be returned remain OPEN rather than being promoted to verified content.
-
-See [`docs/IVI.md`](docs/IVI.md).
-
-## Classical mathematical ASI vs closure runtimes
-
-A classical mathematical ASI can be idealized as becoming increasingly capable inside a sufficiently fixed formal substrate:
-
-```text
-statement → proof search → proof term → trusted kernel
+```bash
+python3 experiments/full_stack_math_asi.py --assert-reference
+python3 experiments/classical_vs_closure_asi.py --assert-reference
+python3 experiments/three_part_assumption_interaction_asi.py --assert-reference
+python3 experiments/generative_axiom_geometry_isolation.py --assert-reference
+python3 experiments/translational_completion_maze.py --assert-reference
+python3 -m unittest discover -s tests -v
+lake build
 ```
 
-A closure runtime studies the higher-order case in which the agent can also change the representational language:
+Committed evidence is designed to replay deterministically; CI reruns the experimental and Lean kernels.
+
+## Two-layer mathematical-ASI verification
+
+The proposed architecture extends rather than replaces ordinary formal verification.
+
+**Layer 1 — local verification**
 
 ```text
-L₀ → L₁ → ... → Lₙ
- |              |
- W₀            Wₙ
-  \____________/
-   recoverable return
+F_A ⊢ P_A
+F_B ⊢ P_B
 ```
 
-The two are complementary. Closure verification does not replace Lean's trusted kernel. Lean checks each formal theorem; translational axiometry asks what relation should be checked **between changing formal perspectives**.
+A trusted Lean kernel checks mathematics relative to each frame's own assumptions.
 
-See [`docs/CLASSICAL_VS_CLOSURE.md`](docs/CLASSICAL_VS_CLOSURE.md).
+**Layer 2 — cross-frame translational verification**
+
+```text
+F_A ↔[T,phi,pi] F_B
+```
+
+The second layer asks what relational identity remains auditable when mathematical intelligence changes the language, axioms, geometry, equality, orientation, or representation in which it reasons. It does not require those changes to stop after verification; successful return may enter the next perspective basis.
+
+## Formal architecture
+
+The observation-free kernel is `lean/NRRF627ClosureTranslationalFrameworkAxiometryASIEvolutionaryVerification.lean`. It formalizes pairwise translations `(T,phi,pi)`, return `W`, presentations `E`, reversal `J`, and curvature representative `C`, with no language designated as the absolute origin.
+
+Within `TransFrame`, closure equality is preserved and reflected by translation; polar presentations can be closure-equal without being literally identical; language-independent closure-respecting verdicts factor through return; coherent reexpression preserves those verdicts; and verification need not reconstruct the full occurrence.
+
+The available bridges make later layers explicit:
+
+- `lean/NRRF627WeakRequirementsRepresentation.lean` — representation bridge;
+- `lean/NRRF627IndependentReturnBridge.lean` — relative equality and independently witnessed admission;
+- `lean/NRRF631RuntimeFrameConditionalBridge.lean` — runtime `ReferenceFrame`, `GeomEquiv`, quotient factorization, transported `ResolvedIn`/`OpenIn`, and external-frame compositional identification.
+
+The broader NRRF618–633 sequence develops the observation-free relational foundation, originless translational order, existence/naturality, frame-conditional openness, and the unique admissible open relational definition. The later NRRF634–640 learning/maze/completion results are separately reported but are not present in this checkout. General sources not present here are reported as such rather than reconstructed or falsely re-audited. See [`docs/EXTERNAL_LEAN_REFERENCES.md`](docs/EXTERNAL_LEAN_REFERENCES.md) for the exact source-status ledger.
+
+## Relational return, translational completion, and IVI
+
+The closure language returns relational content, never a truth-status label:
+
+```text
+W_l : Y_l → B_l
+CEq W u v := W_l(u) = W_l(v)
+W_m(T_lm u) = phi_lm(W_l u).
+```
+
+Translation alone is not completion. The bounded maze runtime starts before the quotient: it freezes local episode evidence, derives raw reach from one path/wall line set, requires explicit returns before treating reach as equality, derives the finite saturation topology, and issues a receipt only afterward. It executes six finite fixtures for its three-premise bounded proxy:
+
+```text
+completion ∧ LocalIVI_W ∧ exact reach/equality alignment.
+```
+
+This runtime proxy is not identified by definition with the separately reported NRRF639 `ClosureThesis`.
+
+**IVI — intangibly verified information —** is the informational interpretation of naturally recoverable relational identity that does not require unique reconstruction of its local occurrence. IVI supplies the nontrivial informational side of closure; translational completion supplies the returned structural side. See [`docs/IVI.md`](docs/IVI.md) and [`docs/TRANSLATIONAL_COMPLETION_MAZE_TOPOLOGY_RUN.md`](docs/TRANSLATIONAL_COMPLETION_MAZE_TOPOLOGY_RUN.md).
+
+For current project work, the full closure-translational runtime is the operative executable specification. Separately reported NRRF599/639/640 results are external formal references and comparison targets; they do not redefine the runtime or count as locally audited evidence until their exact sources/dependencies are imported and rebuilt here.
+
+## Executed evidence
+
+The executed suite contains five complementary bounded layers:
+
+1. **Independent full-stack agents** — separate mathematical learners, with episode evidence frozen before post-hoc translation.
+2. **Classical versus translational verification** — identical episode artifacts and a strong ordinary-isomorphism baseline.
+3. **External axiom-geometry interaction** — separately committed geometry, typed preservation lineage, and explicit non-equivalence edges.
+4. **Generative axiom-geometry isolation** — separately generated episode frames followed by exhaustive post-hoc candidate search.
+5. **Translational-completion maze topology** — raw learning reach, explicit return completion, exact equality realization, saturation topology, `LocalIVI_W`, return monodromy, and receipt-after-resolution controls.
+
+Controls distinguish equality preservation from reflection, `GeomEquiv` from downstream naturality, translation from completion, genuine frame-relative openness from pending/non-selection, valid reversal from non-natural deformation, and registered interface boundaries from mathematical rejection.
+
+## Claim boundary
+
+The repository supports a machine-checked conditional theory and reproducible bounded verification architecture. It does **not** currently claim:
+
+- a qualifying autonomous Aristotle run;
+- general mathematical-ASI verification;
+- that every pair of axiom-geometries is equivalent;
+- that classical mathematics cannot express translational closure;
+- that one frame or language is the permanent origin of mathematical identity;
+- that experimental evidence-freezing means axiometry is metaphysically frozen;
+- that the metaphysical interpretation is an unconditional Lean theorem.
+
+The grant funds the frontier-agent regime needed to test the architecture, discover its boundary, and formalize that boundary in the next theory iteration.
 
 ## Repository map
 
-- `lean/NRRF627ClosureTranslationalFrameworkAxiometryASIEvolutionaryVerification.lean` — formal kernel.
-- `docs/GRANT.md` — Harmonic/Aristotle research proposal.
-- `docs/METAPHYSICS.md` — relational and translational foundations.
-- `docs/IVI.md` — IVI and the potential gate.
-- `docs/CLASSICAL_VS_CLOSURE.md` — classical mathematical ASI versus closure runtimes.
-- `docs/EXPERIMENTS.md` — falsifiable experimental program.
+- `lean/` — formal kernel and runtime bridges.
+- `experiments/` — executable bounded verification runtimes.
+- `benchmarks/` — precommitted protocols and runbooks.
+- `runs/` — frozen deterministic evidence and receipts.
+- `docs/GRANT.md` — Harmonic/Aristotle research request.
+- `docs/EXPERIMENTS.md` — completed evidence and primary frontier experiment.
+- `docs/ARISTOTLE_NATIVE_TRANSLATION_EVIDENCE.md` — reviewer index for the executed Aristotle Phase A–C1 artifacts.
+- `docs/INSTITUTIONS_INTERACTIVE_PROOF_COMPARISON.md` — institution/Hets comparison, choice-naturality boundary, and the proposed interactive-proof bridge.
+- `docs/CLAIM_STATUS.md` — theorem/experiment/interpretation audit boundary.
+- `docs/METAPHYSICS.md` — origin-independent translation, relational frames, and interactive continual completion.
+- `docs/OPEN_TRANSLATIONAL_FOUNDATION.md` — translation as global language, local definitions/geometries, post-choice naturality, relative asymmetry, and the Turing/topos bridge boundary.
+- `docs/IVI.md` — IVI as naturally recoverable relational identity.
+- `docs/TRANSLATIONAL_COMPLETION_MAZE_TOPOLOGY_RUN.md` — executed pre-quotient maze completion/topology evidence and next-stage plan.
 
 ## Research standard
 
-The project separates three levels explicitly: **machine-checked theorem**, **interpretation**, and **open research claim**. The purpose of the grant is to reduce the third category without conflating it with the first.
+Claims are separated as **PROVED**, **EXPERIMENTAL**, **OPEN/CONJECTURED**, or **METAPHYSICAL INTERPRETATION**. Familiar categorical machinery is used to express consequences of the proposed foundation; it is not presented as the foundational novelty itself.

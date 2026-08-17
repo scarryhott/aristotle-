@@ -1,0 +1,24 @@
+{
+  "A": {
+    "classical_foundation_can_express_all_finite_certificates": true,
+    "completion_exact_match": true,
+    "component_exact_match": true,
+    "method": "within-assay Floyd-Warshall/SCC recomputation on identical frozen lines",
+    "process_independence_claimed": false,
+    "reach_exact_match": true,
+    "reach_pair_count": 768,
+    "topology_count_exact_match": true,
+    "topology_open_set_count": 8
+  },
+  "B": {
+    "classical_foundation_can_express_all_finite_certificates": true,
+    "completion_exact_match": true,
+    "component_exact_match": true,
+    "method": "within-assay Floyd-Warshall/SCC recomputation on identical frozen lines",
+    "process_independence_claimed": false,
+    "reach_exact_match": true,
+    "reach_pair_count": 768,
+    "topology_count_exact_match": true,
+    "topology_open_set_count": 8
+  }
+}

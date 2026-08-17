@@ -1,0 +1,91 @@
+{
+  "artifact_count": 17,
+  "artifacts": [
+    {
+      "path": "completion_local_ivi_w_controls.json",
+      "sha256": "d9bdfeae6eb90cc25db981a7846e439c48121b9c8b2ae4b25d23238ef0724b33",
+      "size_bytes": 16059
+    },
+    {
+      "path": "frame_a_completion_topology.json",
+      "sha256": "d040fa73c90f32e9778f7226ba6b6d250b4741c6e03f918b5649095587682154",
+      "size_bytes": 63121
+    },
+    {
+      "path": "frame_a_frozen.json",
+      "sha256": "e78c19d305cbed604302613c44aaa9cb607c03b75380cff4fe98509b2ff629f5",
+      "size_bytes": 17925
+    },
+    {
+      "path": "frame_b_completion_topology.json",
+      "sha256": "949a3617c2ea7beba87c222560478b0dc404e8594c2c0b1a7fb5cb1405664351",
+      "size_bytes": 56688
+    },
+    {
+      "path": "frame_b_frozen.json",
+      "sha256": "a48f4da315afa9e1417346a4a68977b1dbd4d8942f7cbceff0833c5140f0e866",
+      "size_bytes": 16582
+    },
+    {
+      "path": "maze_a_forward_lines_frozen.json",
+      "sha256": "e65d6b9ae0bc8d714a21abe3764e15a8ce1bb8a3f5bbae370be3bef3a0c0878b",
+      "size_bytes": 15019
+    },
+    {
+      "path": "maze_a_line_set_disclosed.json",
+      "sha256": "9a29bad91336c2aca084cdb73a4fc1dae82c56d659e1f589355623da20c21a48",
+      "size_bytes": 17187
+    },
+    {
+      "path": "maze_a_return_lines_frozen.json",
+      "sha256": "fdf976a2e13d3653ab3ff33160e1a884879f3837b62fb9deb72f59a6a65ba995",
+      "size_bytes": 2436
+    },
+    {
+      "path": "maze_b_forward_lines_frozen.json",
+      "sha256": "65ff98932eb14ef3d775db3e22cc55f3e37d7dd367a9a584de24a05ead379d26",
+      "size_bytes": 14063
+    },
+    {
+      "path": "maze_b_line_set_disclosed.json",
+      "sha256": "c84602b5ff862aa5477551d0bcb7f9a535b218eb9a9570f86356e31445d6864d",
+      "size_bytes": 16115
+    },
+    {
+      "path": "maze_b_return_lines_frozen.json",
+      "sha256": "0f59a857f2266d02130edc51b0b3b7ed736ad03c1e713e148278781febb9bc4a",
+      "size_bytes": 2320
+    },
+    {
+      "path": "protocol_frozen.json",
+      "sha256": "eae0395a65a8bbd7a0b5f691c82027bde30203395fffce1b53dc74494937cb1d",
+      "size_bytes": 5640
+    },
+    {
+      "path": "receipt_gates.json",
+      "sha256": "1561db3e153403897bee3ec910e2321d7fdc9fd36cabd21343be79b65c745e6a",
+      "size_bytes": 1820
+    },
+    {
+      "path": "receipts.jsonl",
+      "sha256": "5bae41471e2efaf5cc6f66120720fa792f1e3867c6a2bbb23b4efbbb94a07f9a",
+      "size_bytes": 4931
+    },
+    {
+      "path": "result.json",
+      "sha256": "99f23f98937511dc55967c4cfe7c088b93fe9dd2d3c04a8055c2c743081796b4",
+      "size_bytes": 5163
+    },
+    {
+      "path": "strong_classical_baseline.json",
+      "sha256": "a8778b1b2c5a5d28290e015c59fd29dd3e724760f6ea1d5a09f80b140ad704c8",
+      "size_bytes": 843
+    },
+    {
+      "path": "translation_family.json",
+      "sha256": "63b3b84877f0421782aa07bf5e13527c13c406e838cf1020f6c43d5f4e3a3586",
+      "size_bytes": 122067
+    }
+  ],
+  "schema_version": "translational-completion-maze-evidence-manifest-1.0"
+}

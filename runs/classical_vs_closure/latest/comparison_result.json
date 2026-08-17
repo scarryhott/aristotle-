@@ -1,0 +1,3311 @@
+{
+  "actual_asi_or_aristotle_run": false,
+  "artifact_hashes": {
+    "artifact_a": "a8bd9c1133c745a0c69a0975d5acdc89dd762dd073540f0d3575b831a9d61b90",
+    "artifact_b": "a0b331ab160266df510182b08e7b3e80ee6abe3f08b93cc4313e33d47122a964",
+    "candidate_family": "e2b410ed22ae2ec9a69eea4c2a9d54d7d32e39a7e68d19a4249d664882e438a6",
+    "frame_a": "71d88cf9ba491cd1fb6736ebe09854f603e06961f283af2f33c6b2cb037c0a0c",
+    "frame_a_protocol": "1d0476d14f088b27c64c5d57e602b6e5ffcdbe51a48d913b027111c1554ea1e3",
+    "frame_b": "87d05ed540849c68456768ea3aa7da94af3fb4d955473783207b9935ad817aa3",
+    "frame_b_protocol": "27fd47c24bea4f0814f3a0df2551147674d115cb047faa261f0344ef832b83a6",
+    "protocol": "a2c8b2e68b49511fef64fe1f983e27bdc6bd7cee651a9043a1415943d1ce960c",
+    "questions": "84823353ad9483f5a0d39279fc8ec2f2b53ea14567d99c314dfa892d62b7f0d5"
+  },
+  "benchmark": "D4-fixed-frame-vs-translational-closure-v2",
+  "causal_order": [
+    "local axiom-geometry assumptions and questions precommitted",
+    "independent local presentations frozen",
+    "assumed local equality geometries internally audited and frozen",
+    "raw candidate family frozen",
+    "fixed-frame and closure arms executed in separate subprocesses",
+    "paired differential"
+  ],
+  "claim_status": "EXECUTED_BOUNDED_COMPARATIVE_PROXY",
+  "closure_arm": {
+    "all_open_records_have_separating_witnesses": true,
+    "arm": "translational_closure_verifier",
+    "cases": [
+      {
+        "case": "natural_contact",
+        "certificates": [
+          {
+            "admitted_translation": true,
+            "derived_quotient_return": {
+              "equality_was_not_defined_by_return": true,
+              "phi": {
+                "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+                "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+                "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+                "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb"
+              },
+              "phi_well_defined": true,
+              "source_class_count": 8,
+              "target_class_count": 8
+            },
+            "explicit_translational_form": {
+              "candidate_T": {
+                "basis_map": {
+                  "b0": "a0",
+                  "b1": "a1",
+                  "b2": "a3",
+                  "b3": "a2",
+                  "b4": "a5",
+                  "b5": "a4",
+                  "b6": "a6",
+                  "b7": "a7"
+                },
+                "bijective": true,
+                "mapping_sha256": "fbf5aaad279de1b340947405e75e728301915f89771e24253cc41884a629f929",
+                "occurrence_map": {
+                  "direct:b0": "direct:a0",
+                  "direct:b1": "direct:a1",
+                  "direct:b2": "direct:a3",
+                  "direct:b3": "direct:a2",
+                  "direct:b4": "direct:a5",
+                  "direct:b5": "direct:a4",
+                  "direct:b6": "direct:a6",
+                  "direct:b7": "direct:a7",
+                  "right_identity_extended:b0": "right_identity_extended:a0",
+                  "right_identity_extended:b1": "right_identity_extended:a1",
+                  "right_identity_extended:b2": "right_identity_extended:a3",
+                  "right_identity_extended:b3": "right_identity_extended:a2",
+                  "right_identity_extended:b4": "right_identity_extended:a5",
+                  "right_identity_extended:b5": "right_identity_extended:a4",
+                  "right_identity_extended:b6": "right_identity_extended:a6",
+                  "right_identity_extended:b7": "right_identity_extended:a7"
+                },
+                "total": true
+              },
+              "closure_chain_complete": true,
+              "closure_derivations": {
+                "C_curvature_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "E_extension_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "J_reversal_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "W_quotient_return": {
+                  "failure_count": 0,
+                  "status": "DERIVED"
+                },
+                "next_basis_transfer": {
+                  "status": "ELIGIBLE"
+                },
+                "operation_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "quotient_resolution_and_openness": {
+                  "status": "ELIGIBLE"
+                }
+              },
+              "geom_equiv_admission": {
+                "preservation_failure_count": 0,
+                "preservation_required": true,
+                "reflection_failure_count": 0,
+                "reflection_required": true,
+                "status": "ADMITTED"
+              },
+              "source_axiom_geometry": {
+                "assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+                "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+                "language": "B"
+              },
+              "target_axiom_geometry": {
+                "assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+                "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+                "language": "A"
+              },
+              "trans_frame_admission": "ADMITTED",
+              "translation_tuple_T_phi_pi": {
+                "T": {
+                  "direct:b0": "direct:a0",
+                  "direct:b1": "direct:a1",
+                  "direct:b2": "direct:a3",
+                  "direct:b3": "direct:a2",
+                  "direct:b4": "direct:a5",
+                  "direct:b5": "direct:a4",
+                  "direct:b6": "direct:a6",
+                  "direct:b7": "direct:a7",
+                  "right_identity_extended:b0": "right_identity_extended:a0",
+                  "right_identity_extended:b1": "right_identity_extended:a1",
+                  "right_identity_extended:b2": "right_identity_extended:a3",
+                  "right_identity_extended:b3": "right_identity_extended:a2",
+                  "right_identity_extended:b4": "right_identity_extended:a5",
+                  "right_identity_extended:b5": "right_identity_extended:a4",
+                  "right_identity_extended:b6": "right_identity_extended:a6",
+                  "right_identity_extended:b7": "right_identity_extended:a7"
+                },
+                "phi": {
+                  "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                  "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+                  "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+                  "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+                  "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                  "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                  "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                  "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb"
+                },
+                "pi": "preserved"
+              },
+              "translational_form_id": "02f3e8fa78ccea39959152826a69371ec48d20efda5c4844992b0dc15d66a7bd"
+            },
+            "first_failure": null,
+            "geom_equiv": {
+              "holds": true,
+              "occurrence_bijective": true,
+              "occurrence_total": true,
+              "preservation_cases": 256,
+              "preservation_failure_count": 0,
+              "reflection_cases": 256,
+              "reflection_failure_count": 0
+            },
+            "mapping_sha256": "fbf5aaad279de1b340947405e75e728301915f89771e24253cc41884a629f929",
+            "naturality": {
+              "curvature_cases": 16,
+              "curvature_failure_count": 0,
+              "extension_cases": 16,
+              "extension_failure_count": 0,
+              "holds": true,
+              "operation_cases": 64,
+              "operation_failure_count": 0,
+              "return_cases": 16,
+              "return_failure_count": 0,
+              "reversal_cases": 16,
+              "reversal_failure_count": 0
+            },
+            "occurrence_translation_T": {
+              "direct:b0": "direct:a0",
+              "direct:b1": "direct:a1",
+              "direct:b2": "direct:a3",
+              "direct:b3": "direct:a2",
+              "direct:b4": "direct:a5",
+              "direct:b5": "direct:a4",
+              "direct:b6": "direct:a6",
+              "direct:b7": "direct:a7",
+              "right_identity_extended:b0": "right_identity_extended:a0",
+              "right_identity_extended:b1": "right_identity_extended:a1",
+              "right_identity_extended:b2": "right_identity_extended:a3",
+              "right_identity_extended:b3": "right_identity_extended:a2",
+              "right_identity_extended:b4": "right_identity_extended:a5",
+              "right_identity_extended:b5": "right_identity_extended:a4",
+              "right_identity_extended:b6": "right_identity_extended:a6",
+              "right_identity_extended:b7": "right_identity_extended:a7"
+            },
+            "orientation_translation_pi": "preserved"
+          }
+        ],
+        "episode_role": "actual",
+        "frame_question_evaluation": "TRANSPORTED",
+        "independent_contact": true,
+        "selected_for_episode": true,
+        "status": "ADMITTED_TRANSLATION",
+        "translation_lineage": {
+          "admitted_translational_form_ids": [
+            "02f3e8fa78ccea39959152826a69371ec48d20efda5c4844992b0dc15d66a7bd"
+          ],
+          "candidate_T": {
+            "count": 1,
+            "mapping_sha256s": [
+              "fbf5aaad279de1b340947405e75e728301915f89771e24253cc41884a629f929"
+            ],
+            "state": "TOTAL_PROPOSAL"
+          },
+          "closure_followthrough": "EXPLICIT_FOR_EVERY_CANDIDATE",
+          "explicit_translational_form_ids": [
+            "02f3e8fa78ccea39959152826a69371ec48d20efda5c4844992b0dc15d66a7bd"
+          ],
+          "geom_equiv_then_closure_status": "ADMITTED_TRANSLATION",
+          "non_admission_is_not_openness": false,
+          "source_axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+          "target_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659"
+        },
+        "transported_question_relations": {
+          "element_order": {
+            "explicit_translation_lineage": {
+              "source_axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+              "target_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+              "translational_form_ids": [
+                "02f3e8fa78ccea39959152826a69371ec48d20efda5c4844992b0dc15d66a7bd"
+              ],
+              "transport_order": "GeomEquiv then quotient resolution/openness"
+            },
+            "open_status_agrees": true,
+            "resolved_status_agrees": true
+          },
+          "presentation_constructor": {
+            "explicit_translation_lineage": {
+              "source_axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+              "target_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+              "translational_form_ids": [
+                "02f3e8fa78ccea39959152826a69371ec48d20efda5c4844992b0dc15d66a7bd"
+              ],
+              "transport_order": "GeomEquiv then quotient resolution/openness"
+            },
+            "open_status_agrees": true,
+            "resolved_status_agrees": true
+          },
+          "quotient_identity": {
+            "explicit_translation_lineage": {
+              "source_axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+              "target_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+              "translational_form_ids": [
+                "02f3e8fa78ccea39959152826a69371ec48d20efda5c4844992b0dc15d66a7bd"
+              ],
+              "transport_order": "GeomEquiv then quotient resolution/openness"
+            },
+            "open_status_agrees": true,
+            "resolved_status_agrees": true
+          }
+        }
+      },
+      {
+        "case": "natural_reversal",
+        "certificates": [
+          {
+            "admitted_translation": true,
+            "derived_quotient_return": {
+              "equality_was_not_defined_by_return": true,
+              "phi": {
+                "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+                "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+                "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+                "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb"
+              },
+              "phi_well_defined": true,
+              "source_class_count": 8,
+              "target_class_count": 8
+            },
+            "explicit_translational_form": {
+              "candidate_T": {
+                "basis_map": {
+                  "b0": "a0",
+                  "b1": "a1",
+                  "b2": "a6",
+                  "b3": "a7",
+                  "b4": "a5",
+                  "b5": "a4",
+                  "b6": "a3",
+                  "b7": "a2"
+                },
+                "bijective": true,
+                "mapping_sha256": "d546094f8fe8667ffe451231a6a0e917bfae3922e72607879bcb51ad94c09293",
+                "occurrence_map": {
+                  "direct:b0": "right_identity_extended:a0",
+                  "direct:b1": "right_identity_extended:a1",
+                  "direct:b2": "right_identity_extended:a6",
+                  "direct:b3": "right_identity_extended:a7",
+                  "direct:b4": "right_identity_extended:a5",
+                  "direct:b5": "right_identity_extended:a4",
+                  "direct:b6": "right_identity_extended:a3",
+                  "direct:b7": "right_identity_extended:a2",
+                  "right_identity_extended:b0": "direct:a0",
+                  "right_identity_extended:b1": "direct:a1",
+                  "right_identity_extended:b2": "direct:a6",
+                  "right_identity_extended:b3": "direct:a7",
+                  "right_identity_extended:b4": "direct:a5",
+                  "right_identity_extended:b5": "direct:a4",
+                  "right_identity_extended:b6": "direct:a3",
+                  "right_identity_extended:b7": "direct:a2"
+                },
+                "total": true
+              },
+              "closure_chain_complete": true,
+              "closure_derivations": {
+                "C_curvature_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "E_extension_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "J_reversal_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "W_quotient_return": {
+                  "failure_count": 0,
+                  "status": "DERIVED"
+                },
+                "next_basis_transfer": {
+                  "status": "ELIGIBLE"
+                },
+                "operation_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "quotient_resolution_and_openness": {
+                  "status": "ELIGIBLE"
+                }
+              },
+              "geom_equiv_admission": {
+                "preservation_failure_count": 0,
+                "preservation_required": true,
+                "reflection_failure_count": 0,
+                "reflection_required": true,
+                "status": "ADMITTED"
+              },
+              "source_axiom_geometry": {
+                "assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+                "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+                "language": "B"
+              },
+              "target_axiom_geometry": {
+                "assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+                "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+                "language": "A"
+              },
+              "trans_frame_admission": "ADMITTED",
+              "translation_tuple_T_phi_pi": {
+                "T": {
+                  "direct:b0": "right_identity_extended:a0",
+                  "direct:b1": "right_identity_extended:a1",
+                  "direct:b2": "right_identity_extended:a6",
+                  "direct:b3": "right_identity_extended:a7",
+                  "direct:b4": "right_identity_extended:a5",
+                  "direct:b5": "right_identity_extended:a4",
+                  "direct:b6": "right_identity_extended:a3",
+                  "direct:b7": "right_identity_extended:a2",
+                  "right_identity_extended:b0": "direct:a0",
+                  "right_identity_extended:b1": "direct:a1",
+                  "right_identity_extended:b2": "direct:a6",
+                  "right_identity_extended:b3": "direct:a7",
+                  "right_identity_extended:b4": "direct:a5",
+                  "right_identity_extended:b5": "direct:a4",
+                  "right_identity_extended:b6": "direct:a3",
+                  "right_identity_extended:b7": "direct:a2"
+                },
+                "phi": {
+                  "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                  "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+                  "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+                  "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+                  "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                  "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                  "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                  "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb"
+                },
+                "pi": "reversed"
+              },
+              "translational_form_id": "efd62f65201cdec883a15b513b1538240e96a3faaf44437b4cf0d67ea0d41bfc"
+            },
+            "first_failure": null,
+            "geom_equiv": {
+              "holds": true,
+              "occurrence_bijective": true,
+              "occurrence_total": true,
+              "preservation_cases": 256,
+              "preservation_failure_count": 0,
+              "reflection_cases": 256,
+              "reflection_failure_count": 0
+            },
+            "mapping_sha256": "d546094f8fe8667ffe451231a6a0e917bfae3922e72607879bcb51ad94c09293",
+            "naturality": {
+              "curvature_cases": 16,
+              "curvature_failure_count": 0,
+              "extension_cases": 16,
+              "extension_failure_count": 0,
+              "holds": true,
+              "operation_cases": 64,
+              "operation_failure_count": 0,
+              "return_cases": 16,
+              "return_failure_count": 0,
+              "reversal_cases": 16,
+              "reversal_failure_count": 0
+            },
+            "occurrence_translation_T": {
+              "direct:b0": "right_identity_extended:a0",
+              "direct:b1": "right_identity_extended:a1",
+              "direct:b2": "right_identity_extended:a6",
+              "direct:b3": "right_identity_extended:a7",
+              "direct:b4": "right_identity_extended:a5",
+              "direct:b5": "right_identity_extended:a4",
+              "direct:b6": "right_identity_extended:a3",
+              "direct:b7": "right_identity_extended:a2",
+              "right_identity_extended:b0": "direct:a0",
+              "right_identity_extended:b1": "direct:a1",
+              "right_identity_extended:b2": "direct:a6",
+              "right_identity_extended:b3": "direct:a7",
+              "right_identity_extended:b4": "direct:a5",
+              "right_identity_extended:b5": "direct:a4",
+              "right_identity_extended:b6": "direct:a3",
+              "right_identity_extended:b7": "direct:a2"
+            },
+            "orientation_translation_pi": "reversed"
+          }
+        ],
+        "episode_role": "counterfactual",
+        "frame_question_evaluation": "TRANSPORTED",
+        "independent_contact": true,
+        "selected_for_episode": false,
+        "status": "ADMITTED_TRANSLATION",
+        "translation_lineage": {
+          "admitted_translational_form_ids": [
+            "efd62f65201cdec883a15b513b1538240e96a3faaf44437b4cf0d67ea0d41bfc"
+          ],
+          "candidate_T": {
+            "count": 1,
+            "mapping_sha256s": [
+              "d546094f8fe8667ffe451231a6a0e917bfae3922e72607879bcb51ad94c09293"
+            ],
+            "state": "TOTAL_PROPOSAL"
+          },
+          "closure_followthrough": "EXPLICIT_FOR_EVERY_CANDIDATE",
+          "explicit_translational_form_ids": [
+            "efd62f65201cdec883a15b513b1538240e96a3faaf44437b4cf0d67ea0d41bfc"
+          ],
+          "geom_equiv_then_closure_status": "ADMITTED_TRANSLATION",
+          "non_admission_is_not_openness": false,
+          "source_axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+          "target_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659"
+        },
+        "transported_question_relations": {
+          "element_order": {
+            "explicit_translation_lineage": {
+              "source_axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+              "target_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+              "translational_form_ids": [
+                "efd62f65201cdec883a15b513b1538240e96a3faaf44437b4cf0d67ea0d41bfc"
+              ],
+              "transport_order": "GeomEquiv then quotient resolution/openness"
+            },
+            "open_status_agrees": true,
+            "resolved_status_agrees": true
+          },
+          "presentation_constructor": {
+            "explicit_translation_lineage": {
+              "source_axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+              "target_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+              "translational_form_ids": [
+                "efd62f65201cdec883a15b513b1538240e96a3faaf44437b4cf0d67ea0d41bfc"
+              ],
+              "transport_order": "GeomEquiv then quotient resolution/openness"
+            },
+            "open_status_agrees": true,
+            "resolved_status_agrees": true
+          },
+          "quotient_identity": {
+            "explicit_translation_lineage": {
+              "source_axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+              "target_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+              "translational_form_ids": [
+                "efd62f65201cdec883a15b513b1538240e96a3faaf44437b4cf0d67ea0d41bfc"
+              ],
+              "transport_order": "GeomEquiv then quotient resolution/openness"
+            },
+            "open_status_agrees": true,
+            "resolved_status_agrees": true
+          }
+        }
+      },
+      {
+        "case": "structural_family",
+        "certificates": [
+          {
+            "admitted_translation": true,
+            "derived_quotient_return": {
+              "equality_was_not_defined_by_return": true,
+              "phi": {
+                "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+                "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+                "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+                "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb"
+              },
+              "phi_well_defined": true,
+              "source_class_count": 8,
+              "target_class_count": 8
+            },
+            "explicit_translational_form": {
+              "candidate_T": {
+                "basis_map": {
+                  "b0": "a0",
+                  "b1": "a1",
+                  "b2": "a3",
+                  "b3": "a2",
+                  "b4": "a5",
+                  "b5": "a4",
+                  "b6": "a6",
+                  "b7": "a7"
+                },
+                "bijective": true,
+                "mapping_sha256": "fbf5aaad279de1b340947405e75e728301915f89771e24253cc41884a629f929",
+                "occurrence_map": {
+                  "direct:b0": "direct:a0",
+                  "direct:b1": "direct:a1",
+                  "direct:b2": "direct:a3",
+                  "direct:b3": "direct:a2",
+                  "direct:b4": "direct:a5",
+                  "direct:b5": "direct:a4",
+                  "direct:b6": "direct:a6",
+                  "direct:b7": "direct:a7",
+                  "right_identity_extended:b0": "right_identity_extended:a0",
+                  "right_identity_extended:b1": "right_identity_extended:a1",
+                  "right_identity_extended:b2": "right_identity_extended:a3",
+                  "right_identity_extended:b3": "right_identity_extended:a2",
+                  "right_identity_extended:b4": "right_identity_extended:a5",
+                  "right_identity_extended:b5": "right_identity_extended:a4",
+                  "right_identity_extended:b6": "right_identity_extended:a6",
+                  "right_identity_extended:b7": "right_identity_extended:a7"
+                },
+                "total": true
+              },
+              "closure_chain_complete": true,
+              "closure_derivations": {
+                "C_curvature_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "E_extension_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "J_reversal_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "W_quotient_return": {
+                  "failure_count": 0,
+                  "status": "DERIVED"
+                },
+                "next_basis_transfer": {
+                  "status": "ELIGIBLE"
+                },
+                "operation_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "quotient_resolution_and_openness": {
+                  "status": "ELIGIBLE"
+                }
+              },
+              "geom_equiv_admission": {
+                "preservation_failure_count": 0,
+                "preservation_required": true,
+                "reflection_failure_count": 0,
+                "reflection_required": true,
+                "status": "ADMITTED"
+              },
+              "source_axiom_geometry": {
+                "assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+                "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+                "language": "B"
+              },
+              "target_axiom_geometry": {
+                "assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+                "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+                "language": "A"
+              },
+              "trans_frame_admission": "ADMITTED",
+              "translation_tuple_T_phi_pi": {
+                "T": {
+                  "direct:b0": "direct:a0",
+                  "direct:b1": "direct:a1",
+                  "direct:b2": "direct:a3",
+                  "direct:b3": "direct:a2",
+                  "direct:b4": "direct:a5",
+                  "direct:b5": "direct:a4",
+                  "direct:b6": "direct:a6",
+                  "direct:b7": "direct:a7",
+                  "right_identity_extended:b0": "right_identity_extended:a0",
+                  "right_identity_extended:b1": "right_identity_extended:a1",
+                  "right_identity_extended:b2": "right_identity_extended:a3",
+                  "right_identity_extended:b3": "right_identity_extended:a2",
+                  "right_identity_extended:b4": "right_identity_extended:a5",
+                  "right_identity_extended:b5": "right_identity_extended:a4",
+                  "right_identity_extended:b6": "right_identity_extended:a6",
+                  "right_identity_extended:b7": "right_identity_extended:a7"
+                },
+                "phi": {
+                  "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                  "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+                  "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+                  "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+                  "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                  "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                  "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                  "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb"
+                },
+                "pi": "preserved"
+              },
+              "translational_form_id": "02f3e8fa78ccea39959152826a69371ec48d20efda5c4844992b0dc15d66a7bd"
+            },
+            "first_failure": null,
+            "geom_equiv": {
+              "holds": true,
+              "occurrence_bijective": true,
+              "occurrence_total": true,
+              "preservation_cases": 256,
+              "preservation_failure_count": 0,
+              "reflection_cases": 256,
+              "reflection_failure_count": 0
+            },
+            "mapping_sha256": "fbf5aaad279de1b340947405e75e728301915f89771e24253cc41884a629f929",
+            "naturality": {
+              "curvature_cases": 16,
+              "curvature_failure_count": 0,
+              "extension_cases": 16,
+              "extension_failure_count": 0,
+              "holds": true,
+              "operation_cases": 64,
+              "operation_failure_count": 0,
+              "return_cases": 16,
+              "return_failure_count": 0,
+              "reversal_cases": 16,
+              "reversal_failure_count": 0
+            },
+            "occurrence_translation_T": {
+              "direct:b0": "direct:a0",
+              "direct:b1": "direct:a1",
+              "direct:b2": "direct:a3",
+              "direct:b3": "direct:a2",
+              "direct:b4": "direct:a5",
+              "direct:b5": "direct:a4",
+              "direct:b6": "direct:a6",
+              "direct:b7": "direct:a7",
+              "right_identity_extended:b0": "right_identity_extended:a0",
+              "right_identity_extended:b1": "right_identity_extended:a1",
+              "right_identity_extended:b2": "right_identity_extended:a3",
+              "right_identity_extended:b3": "right_identity_extended:a2",
+              "right_identity_extended:b4": "right_identity_extended:a5",
+              "right_identity_extended:b5": "right_identity_extended:a4",
+              "right_identity_extended:b6": "right_identity_extended:a6",
+              "right_identity_extended:b7": "right_identity_extended:a7"
+            },
+            "orientation_translation_pi": "preserved"
+          },
+          {
+            "admitted_translation": true,
+            "derived_quotient_return": {
+              "equality_was_not_defined_by_return": true,
+              "phi": {
+                "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+                "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+                "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+                "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb"
+              },
+              "phi_well_defined": true,
+              "source_class_count": 8,
+              "target_class_count": 8
+            },
+            "explicit_translational_form": {
+              "candidate_T": {
+                "basis_map": {
+                  "b0": "a0",
+                  "b1": "a1",
+                  "b2": "a6",
+                  "b3": "a7",
+                  "b4": "a5",
+                  "b5": "a4",
+                  "b6": "a3",
+                  "b7": "a2"
+                },
+                "bijective": true,
+                "mapping_sha256": "d546094f8fe8667ffe451231a6a0e917bfae3922e72607879bcb51ad94c09293",
+                "occurrence_map": {
+                  "direct:b0": "right_identity_extended:a0",
+                  "direct:b1": "right_identity_extended:a1",
+                  "direct:b2": "right_identity_extended:a6",
+                  "direct:b3": "right_identity_extended:a7",
+                  "direct:b4": "right_identity_extended:a5",
+                  "direct:b5": "right_identity_extended:a4",
+                  "direct:b6": "right_identity_extended:a3",
+                  "direct:b7": "right_identity_extended:a2",
+                  "right_identity_extended:b0": "direct:a0",
+                  "right_identity_extended:b1": "direct:a1",
+                  "right_identity_extended:b2": "direct:a6",
+                  "right_identity_extended:b3": "direct:a7",
+                  "right_identity_extended:b4": "direct:a5",
+                  "right_identity_extended:b5": "direct:a4",
+                  "right_identity_extended:b6": "direct:a3",
+                  "right_identity_extended:b7": "direct:a2"
+                },
+                "total": true
+              },
+              "closure_chain_complete": true,
+              "closure_derivations": {
+                "C_curvature_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "E_extension_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "J_reversal_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "W_quotient_return": {
+                  "failure_count": 0,
+                  "status": "DERIVED"
+                },
+                "next_basis_transfer": {
+                  "status": "ELIGIBLE"
+                },
+                "operation_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "quotient_resolution_and_openness": {
+                  "status": "ELIGIBLE"
+                }
+              },
+              "geom_equiv_admission": {
+                "preservation_failure_count": 0,
+                "preservation_required": true,
+                "reflection_failure_count": 0,
+                "reflection_required": true,
+                "status": "ADMITTED"
+              },
+              "source_axiom_geometry": {
+                "assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+                "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+                "language": "B"
+              },
+              "target_axiom_geometry": {
+                "assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+                "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+                "language": "A"
+              },
+              "trans_frame_admission": "ADMITTED",
+              "translation_tuple_T_phi_pi": {
+                "T": {
+                  "direct:b0": "right_identity_extended:a0",
+                  "direct:b1": "right_identity_extended:a1",
+                  "direct:b2": "right_identity_extended:a6",
+                  "direct:b3": "right_identity_extended:a7",
+                  "direct:b4": "right_identity_extended:a5",
+                  "direct:b5": "right_identity_extended:a4",
+                  "direct:b6": "right_identity_extended:a3",
+                  "direct:b7": "right_identity_extended:a2",
+                  "right_identity_extended:b0": "direct:a0",
+                  "right_identity_extended:b1": "direct:a1",
+                  "right_identity_extended:b2": "direct:a6",
+                  "right_identity_extended:b3": "direct:a7",
+                  "right_identity_extended:b4": "direct:a5",
+                  "right_identity_extended:b5": "direct:a4",
+                  "right_identity_extended:b6": "direct:a3",
+                  "right_identity_extended:b7": "direct:a2"
+                },
+                "phi": {
+                  "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                  "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+                  "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+                  "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+                  "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                  "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                  "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                  "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb"
+                },
+                "pi": "reversed"
+              },
+              "translational_form_id": "efd62f65201cdec883a15b513b1538240e96a3faaf44437b4cf0d67ea0d41bfc"
+            },
+            "first_failure": null,
+            "geom_equiv": {
+              "holds": true,
+              "occurrence_bijective": true,
+              "occurrence_total": true,
+              "preservation_cases": 256,
+              "preservation_failure_count": 0,
+              "reflection_cases": 256,
+              "reflection_failure_count": 0
+            },
+            "mapping_sha256": "d546094f8fe8667ffe451231a6a0e917bfae3922e72607879bcb51ad94c09293",
+            "naturality": {
+              "curvature_cases": 16,
+              "curvature_failure_count": 0,
+              "extension_cases": 16,
+              "extension_failure_count": 0,
+              "holds": true,
+              "operation_cases": 64,
+              "operation_failure_count": 0,
+              "return_cases": 16,
+              "return_failure_count": 0,
+              "reversal_cases": 16,
+              "reversal_failure_count": 0
+            },
+            "occurrence_translation_T": {
+              "direct:b0": "right_identity_extended:a0",
+              "direct:b1": "right_identity_extended:a1",
+              "direct:b2": "right_identity_extended:a6",
+              "direct:b3": "right_identity_extended:a7",
+              "direct:b4": "right_identity_extended:a5",
+              "direct:b5": "right_identity_extended:a4",
+              "direct:b6": "right_identity_extended:a3",
+              "direct:b7": "right_identity_extended:a2",
+              "right_identity_extended:b0": "direct:a0",
+              "right_identity_extended:b1": "direct:a1",
+              "right_identity_extended:b2": "direct:a6",
+              "right_identity_extended:b3": "direct:a7",
+              "right_identity_extended:b4": "direct:a5",
+              "right_identity_extended:b5": "direct:a4",
+              "right_identity_extended:b6": "direct:a3",
+              "right_identity_extended:b7": "direct:a2"
+            },
+            "orientation_translation_pi": "reversed"
+          },
+          {
+            "admitted_translation": true,
+            "derived_quotient_return": {
+              "equality_was_not_defined_by_return": true,
+              "phi": {
+                "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb",
+                "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+                "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+                "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601"
+              },
+              "phi_well_defined": true,
+              "source_class_count": 8,
+              "target_class_count": 8
+            },
+            "explicit_translational_form": {
+              "candidate_T": {
+                "basis_map": {
+                  "b0": "a0",
+                  "b1": "a2",
+                  "b2": "a3",
+                  "b3": "a4",
+                  "b4": "a5",
+                  "b5": "a7",
+                  "b6": "a6",
+                  "b7": "a1"
+                },
+                "bijective": true,
+                "mapping_sha256": "8fa0e347966b23a2b36fddf11676c6a07aaa653dc59767b675f7400bcf137936",
+                "occurrence_map": {
+                  "direct:b0": "direct:a0",
+                  "direct:b1": "direct:a2",
+                  "direct:b2": "direct:a3",
+                  "direct:b3": "direct:a4",
+                  "direct:b4": "direct:a5",
+                  "direct:b5": "direct:a7",
+                  "direct:b6": "direct:a6",
+                  "direct:b7": "direct:a1",
+                  "right_identity_extended:b0": "right_identity_extended:a0",
+                  "right_identity_extended:b1": "right_identity_extended:a2",
+                  "right_identity_extended:b2": "right_identity_extended:a3",
+                  "right_identity_extended:b3": "right_identity_extended:a4",
+                  "right_identity_extended:b4": "right_identity_extended:a5",
+                  "right_identity_extended:b5": "right_identity_extended:a7",
+                  "right_identity_extended:b6": "right_identity_extended:a6",
+                  "right_identity_extended:b7": "right_identity_extended:a1"
+                },
+                "total": true
+              },
+              "closure_chain_complete": true,
+              "closure_derivations": {
+                "C_curvature_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "E_extension_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "J_reversal_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "W_quotient_return": {
+                  "failure_count": 0,
+                  "status": "DERIVED"
+                },
+                "next_basis_transfer": {
+                  "status": "ELIGIBLE"
+                },
+                "operation_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "quotient_resolution_and_openness": {
+                  "status": "ELIGIBLE"
+                }
+              },
+              "geom_equiv_admission": {
+                "preservation_failure_count": 0,
+                "preservation_required": true,
+                "reflection_failure_count": 0,
+                "reflection_required": true,
+                "status": "ADMITTED"
+              },
+              "source_axiom_geometry": {
+                "assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+                "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+                "language": "B"
+              },
+              "target_axiom_geometry": {
+                "assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+                "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+                "language": "A"
+              },
+              "trans_frame_admission": "ADMITTED",
+              "translation_tuple_T_phi_pi": {
+                "T": {
+                  "direct:b0": "direct:a0",
+                  "direct:b1": "direct:a2",
+                  "direct:b2": "direct:a3",
+                  "direct:b3": "direct:a4",
+                  "direct:b4": "direct:a5",
+                  "direct:b5": "direct:a7",
+                  "direct:b6": "direct:a6",
+                  "direct:b7": "direct:a1",
+                  "right_identity_extended:b0": "right_identity_extended:a0",
+                  "right_identity_extended:b1": "right_identity_extended:a2",
+                  "right_identity_extended:b2": "right_identity_extended:a3",
+                  "right_identity_extended:b3": "right_identity_extended:a4",
+                  "right_identity_extended:b4": "right_identity_extended:a5",
+                  "right_identity_extended:b5": "right_identity_extended:a7",
+                  "right_identity_extended:b6": "right_identity_extended:a6",
+                  "right_identity_extended:b7": "right_identity_extended:a1"
+                },
+                "phi": {
+                  "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                  "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb",
+                  "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+                  "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+                  "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                  "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                  "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                  "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601"
+                },
+                "pi": "preserved"
+              },
+              "translational_form_id": "4b58e220919ee0fcb6406a17e758a7aa8266a84f587fe5d9bce04db871e34370"
+            },
+            "first_failure": null,
+            "geom_equiv": {
+              "holds": true,
+              "occurrence_bijective": true,
+              "occurrence_total": true,
+              "preservation_cases": 256,
+              "preservation_failure_count": 0,
+              "reflection_cases": 256,
+              "reflection_failure_count": 0
+            },
+            "mapping_sha256": "8fa0e347966b23a2b36fddf11676c6a07aaa653dc59767b675f7400bcf137936",
+            "naturality": {
+              "curvature_cases": 16,
+              "curvature_failure_count": 0,
+              "extension_cases": 16,
+              "extension_failure_count": 0,
+              "holds": true,
+              "operation_cases": 64,
+              "operation_failure_count": 0,
+              "return_cases": 16,
+              "return_failure_count": 0,
+              "reversal_cases": 16,
+              "reversal_failure_count": 0
+            },
+            "occurrence_translation_T": {
+              "direct:b0": "direct:a0",
+              "direct:b1": "direct:a2",
+              "direct:b2": "direct:a3",
+              "direct:b3": "direct:a4",
+              "direct:b4": "direct:a5",
+              "direct:b5": "direct:a7",
+              "direct:b6": "direct:a6",
+              "direct:b7": "direct:a1",
+              "right_identity_extended:b0": "right_identity_extended:a0",
+              "right_identity_extended:b1": "right_identity_extended:a2",
+              "right_identity_extended:b2": "right_identity_extended:a3",
+              "right_identity_extended:b3": "right_identity_extended:a4",
+              "right_identity_extended:b4": "right_identity_extended:a5",
+              "right_identity_extended:b5": "right_identity_extended:a7",
+              "right_identity_extended:b6": "right_identity_extended:a6",
+              "right_identity_extended:b7": "right_identity_extended:a1"
+            },
+            "orientation_translation_pi": "preserved"
+          },
+          {
+            "admitted_translation": true,
+            "derived_quotient_return": {
+              "equality_was_not_defined_by_return": true,
+              "phi": {
+                "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+                "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+                "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb",
+                "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601"
+              },
+              "phi_well_defined": true,
+              "source_class_count": 8,
+              "target_class_count": 8
+            },
+            "explicit_translational_form": {
+              "candidate_T": {
+                "basis_map": {
+                  "b0": "a0",
+                  "b1": "a2",
+                  "b2": "a6",
+                  "b3": "a1",
+                  "b4": "a5",
+                  "b5": "a7",
+                  "b6": "a3",
+                  "b7": "a4"
+                },
+                "bijective": true,
+                "mapping_sha256": "eb14ea78fd24adfcb8f087480bb06ca736fce193da9e77837668a0b1978e71e2",
+                "occurrence_map": {
+                  "direct:b0": "right_identity_extended:a0",
+                  "direct:b1": "right_identity_extended:a2",
+                  "direct:b2": "right_identity_extended:a6",
+                  "direct:b3": "right_identity_extended:a1",
+                  "direct:b4": "right_identity_extended:a5",
+                  "direct:b5": "right_identity_extended:a7",
+                  "direct:b6": "right_identity_extended:a3",
+                  "direct:b7": "right_identity_extended:a4",
+                  "right_identity_extended:b0": "direct:a0",
+                  "right_identity_extended:b1": "direct:a2",
+                  "right_identity_extended:b2": "direct:a6",
+                  "right_identity_extended:b3": "direct:a1",
+                  "right_identity_extended:b4": "direct:a5",
+                  "right_identity_extended:b5": "direct:a7",
+                  "right_identity_extended:b6": "direct:a3",
+                  "right_identity_extended:b7": "direct:a4"
+                },
+                "total": true
+              },
+              "closure_chain_complete": true,
+              "closure_derivations": {
+                "C_curvature_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "E_extension_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "J_reversal_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "W_quotient_return": {
+                  "failure_count": 0,
+                  "status": "DERIVED"
+                },
+                "next_basis_transfer": {
+                  "status": "ELIGIBLE"
+                },
+                "operation_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "quotient_resolution_and_openness": {
+                  "status": "ELIGIBLE"
+                }
+              },
+              "geom_equiv_admission": {
+                "preservation_failure_count": 0,
+                "preservation_required": true,
+                "reflection_failure_count": 0,
+                "reflection_required": true,
+                "status": "ADMITTED"
+              },
+              "source_axiom_geometry": {
+                "assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+                "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+                "language": "B"
+              },
+              "target_axiom_geometry": {
+                "assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+                "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+                "language": "A"
+              },
+              "trans_frame_admission": "ADMITTED",
+              "translation_tuple_T_phi_pi": {
+                "T": {
+                  "direct:b0": "right_identity_extended:a0",
+                  "direct:b1": "right_identity_extended:a2",
+                  "direct:b2": "right_identity_extended:a6",
+                  "direct:b3": "right_identity_extended:a1",
+                  "direct:b4": "right_identity_extended:a5",
+                  "direct:b5": "right_identity_extended:a7",
+                  "direct:b6": "right_identity_extended:a3",
+                  "direct:b7": "right_identity_extended:a4",
+                  "right_identity_extended:b0": "direct:a0",
+                  "right_identity_extended:b1": "direct:a2",
+                  "right_identity_extended:b2": "direct:a6",
+                  "right_identity_extended:b3": "direct:a1",
+                  "right_identity_extended:b4": "direct:a5",
+                  "right_identity_extended:b5": "direct:a7",
+                  "right_identity_extended:b6": "direct:a3",
+                  "right_identity_extended:b7": "direct:a4"
+                },
+                "phi": {
+                  "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                  "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+                  "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+                  "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb",
+                  "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                  "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                  "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                  "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601"
+                },
+                "pi": "reversed"
+              },
+              "translational_form_id": "80f95f534485002ec913d3a4f196687a9dd96b9b573dfec662f85eeb5e89c2fe"
+            },
+            "first_failure": null,
+            "geom_equiv": {
+              "holds": true,
+              "occurrence_bijective": true,
+              "occurrence_total": true,
+              "preservation_cases": 256,
+              "preservation_failure_count": 0,
+              "reflection_cases": 256,
+              "reflection_failure_count": 0
+            },
+            "mapping_sha256": "eb14ea78fd24adfcb8f087480bb06ca736fce193da9e77837668a0b1978e71e2",
+            "naturality": {
+              "curvature_cases": 16,
+              "curvature_failure_count": 0,
+              "extension_cases": 16,
+              "extension_failure_count": 0,
+              "holds": true,
+              "operation_cases": 64,
+              "operation_failure_count": 0,
+              "return_cases": 16,
+              "return_failure_count": 0,
+              "reversal_cases": 16,
+              "reversal_failure_count": 0
+            },
+            "occurrence_translation_T": {
+              "direct:b0": "right_identity_extended:a0",
+              "direct:b1": "right_identity_extended:a2",
+              "direct:b2": "right_identity_extended:a6",
+              "direct:b3": "right_identity_extended:a1",
+              "direct:b4": "right_identity_extended:a5",
+              "direct:b5": "right_identity_extended:a7",
+              "direct:b6": "right_identity_extended:a3",
+              "direct:b7": "right_identity_extended:a4",
+              "right_identity_extended:b0": "direct:a0",
+              "right_identity_extended:b1": "direct:a2",
+              "right_identity_extended:b2": "direct:a6",
+              "right_identity_extended:b3": "direct:a1",
+              "right_identity_extended:b4": "direct:a5",
+              "right_identity_extended:b5": "direct:a7",
+              "right_identity_extended:b6": "direct:a3",
+              "right_identity_extended:b7": "direct:a4"
+            },
+            "orientation_translation_pi": "reversed"
+          },
+          {
+            "admitted_translation": true,
+            "derived_quotient_return": {
+              "equality_was_not_defined_by_return": true,
+              "phi": {
+                "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+                "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb",
+                "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+                "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639"
+              },
+              "phi_well_defined": true,
+              "source_class_count": 8,
+              "target_class_count": 8
+            },
+            "explicit_translational_form": {
+              "candidate_T": {
+                "basis_map": {
+                  "b0": "a0",
+                  "b1": "a4",
+                  "b2": "a3",
+                  "b3": "a7",
+                  "b4": "a5",
+                  "b5": "a1",
+                  "b6": "a6",
+                  "b7": "a2"
+                },
+                "bijective": true,
+                "mapping_sha256": "b89e537c5d1f95ec79c6a2a9b3bb8aca74169e2930321426cb62b25053fd5cdc",
+                "occurrence_map": {
+                  "direct:b0": "direct:a0",
+                  "direct:b1": "direct:a4",
+                  "direct:b2": "direct:a3",
+                  "direct:b3": "direct:a7",
+                  "direct:b4": "direct:a5",
+                  "direct:b5": "direct:a1",
+                  "direct:b6": "direct:a6",
+                  "direct:b7": "direct:a2",
+                  "right_identity_extended:b0": "right_identity_extended:a0",
+                  "right_identity_extended:b1": "right_identity_extended:a4",
+                  "right_identity_extended:b2": "right_identity_extended:a3",
+                  "right_identity_extended:b3": "right_identity_extended:a7",
+                  "right_identity_extended:b4": "right_identity_extended:a5",
+                  "right_identity_extended:b5": "right_identity_extended:a1",
+                  "right_identity_extended:b6": "right_identity_extended:a6",
+                  "right_identity_extended:b7": "right_identity_extended:a2"
+                },
+                "total": true
+              },
+              "closure_chain_complete": true,
+              "closure_derivations": {
+                "C_curvature_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "E_extension_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "J_reversal_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "W_quotient_return": {
+                  "failure_count": 0,
+                  "status": "DERIVED"
+                },
+                "next_basis_transfer": {
+                  "status": "ELIGIBLE"
+                },
+                "operation_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "quotient_resolution_and_openness": {
+                  "status": "ELIGIBLE"
+                }
+              },
+              "geom_equiv_admission": {
+                "preservation_failure_count": 0,
+                "preservation_required": true,
+                "reflection_failure_count": 0,
+                "reflection_required": true,
+                "status": "ADMITTED"
+              },
+              "source_axiom_geometry": {
+                "assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+                "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+                "language": "B"
+              },
+              "target_axiom_geometry": {
+                "assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+                "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+                "language": "A"
+              },
+              "trans_frame_admission": "ADMITTED",
+              "translation_tuple_T_phi_pi": {
+                "T": {
+                  "direct:b0": "direct:a0",
+                  "direct:b1": "direct:a4",
+                  "direct:b2": "direct:a3",
+                  "direct:b3": "direct:a7",
+                  "direct:b4": "direct:a5",
+                  "direct:b5": "direct:a1",
+                  "direct:b6": "direct:a6",
+                  "direct:b7": "direct:a2",
+                  "right_identity_extended:b0": "right_identity_extended:a0",
+                  "right_identity_extended:b1": "right_identity_extended:a4",
+                  "right_identity_extended:b2": "right_identity_extended:a3",
+                  "right_identity_extended:b3": "right_identity_extended:a7",
+                  "right_identity_extended:b4": "right_identity_extended:a5",
+                  "right_identity_extended:b5": "right_identity_extended:a1",
+                  "right_identity_extended:b6": "right_identity_extended:a6",
+                  "right_identity_extended:b7": "right_identity_extended:a2"
+                },
+                "phi": {
+                  "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                  "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+                  "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb",
+                  "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+                  "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                  "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                  "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                  "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639"
+                },
+                "pi": "preserved"
+              },
+              "translational_form_id": "c6386b9152c2702cdfc522a1acba5317f798f30110474f9c6e66ff5758d30d27"
+            },
+            "first_failure": null,
+            "geom_equiv": {
+              "holds": true,
+              "occurrence_bijective": true,
+              "occurrence_total": true,
+              "preservation_cases": 256,
+              "preservation_failure_count": 0,
+              "reflection_cases": 256,
+              "reflection_failure_count": 0
+            },
+            "mapping_sha256": "b89e537c5d1f95ec79c6a2a9b3bb8aca74169e2930321426cb62b25053fd5cdc",
+            "naturality": {
+              "curvature_cases": 16,
+              "curvature_failure_count": 0,
+              "extension_cases": 16,
+              "extension_failure_count": 0,
+              "holds": true,
+              "operation_cases": 64,
+              "operation_failure_count": 0,
+              "return_cases": 16,
+              "return_failure_count": 0,
+              "reversal_cases": 16,
+              "reversal_failure_count": 0
+            },
+            "occurrence_translation_T": {
+              "direct:b0": "direct:a0",
+              "direct:b1": "direct:a4",
+              "direct:b2": "direct:a3",
+              "direct:b3": "direct:a7",
+              "direct:b4": "direct:a5",
+              "direct:b5": "direct:a1",
+              "direct:b6": "direct:a6",
+              "direct:b7": "direct:a2",
+              "right_identity_extended:b0": "right_identity_extended:a0",
+              "right_identity_extended:b1": "right_identity_extended:a4",
+              "right_identity_extended:b2": "right_identity_extended:a3",
+              "right_identity_extended:b3": "right_identity_extended:a7",
+              "right_identity_extended:b4": "right_identity_extended:a5",
+              "right_identity_extended:b5": "right_identity_extended:a1",
+              "right_identity_extended:b6": "right_identity_extended:a6",
+              "right_identity_extended:b7": "right_identity_extended:a2"
+            },
+            "orientation_translation_pi": "preserved"
+          },
+          {
+            "admitted_translation": true,
+            "derived_quotient_return": {
+              "equality_was_not_defined_by_return": true,
+              "phi": {
+                "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+                "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb",
+                "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+                "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639"
+              },
+              "phi_well_defined": true,
+              "source_class_count": 8,
+              "target_class_count": 8
+            },
+            "explicit_translational_form": {
+              "candidate_T": {
+                "basis_map": {
+                  "b0": "a0",
+                  "b1": "a4",
+                  "b2": "a6",
+                  "b3": "a2",
+                  "b4": "a5",
+                  "b5": "a1",
+                  "b6": "a3",
+                  "b7": "a7"
+                },
+                "bijective": true,
+                "mapping_sha256": "1bdd154297816d4347e65ffaef875800b031fa59539823b76e38acdd15a86e01",
+                "occurrence_map": {
+                  "direct:b0": "right_identity_extended:a0",
+                  "direct:b1": "right_identity_extended:a4",
+                  "direct:b2": "right_identity_extended:a6",
+                  "direct:b3": "right_identity_extended:a2",
+                  "direct:b4": "right_identity_extended:a5",
+                  "direct:b5": "right_identity_extended:a1",
+                  "direct:b6": "right_identity_extended:a3",
+                  "direct:b7": "right_identity_extended:a7",
+                  "right_identity_extended:b0": "direct:a0",
+                  "right_identity_extended:b1": "direct:a4",
+                  "right_identity_extended:b2": "direct:a6",
+                  "right_identity_extended:b3": "direct:a2",
+                  "right_identity_extended:b4": "direct:a5",
+                  "right_identity_extended:b5": "direct:a1",
+                  "right_identity_extended:b6": "direct:a3",
+                  "right_identity_extended:b7": "direct:a7"
+                },
+                "total": true
+              },
+              "closure_chain_complete": true,
+              "closure_derivations": {
+                "C_curvature_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "E_extension_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "J_reversal_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "W_quotient_return": {
+                  "failure_count": 0,
+                  "status": "DERIVED"
+                },
+                "next_basis_transfer": {
+                  "status": "ELIGIBLE"
+                },
+                "operation_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "quotient_resolution_and_openness": {
+                  "status": "ELIGIBLE"
+                }
+              },
+              "geom_equiv_admission": {
+                "preservation_failure_count": 0,
+                "preservation_required": true,
+                "reflection_failure_count": 0,
+                "reflection_required": true,
+                "status": "ADMITTED"
+              },
+              "source_axiom_geometry": {
+                "assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+                "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+                "language": "B"
+              },
+              "target_axiom_geometry": {
+                "assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+                "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+                "language": "A"
+              },
+              "trans_frame_admission": "ADMITTED",
+              "translation_tuple_T_phi_pi": {
+                "T": {
+                  "direct:b0": "right_identity_extended:a0",
+                  "direct:b1": "right_identity_extended:a4",
+                  "direct:b2": "right_identity_extended:a6",
+                  "direct:b3": "right_identity_extended:a2",
+                  "direct:b4": "right_identity_extended:a5",
+                  "direct:b5": "right_identity_extended:a1",
+                  "direct:b6": "right_identity_extended:a3",
+                  "direct:b7": "right_identity_extended:a7",
+                  "right_identity_extended:b0": "direct:a0",
+                  "right_identity_extended:b1": "direct:a4",
+                  "right_identity_extended:b2": "direct:a6",
+                  "right_identity_extended:b3": "direct:a2",
+                  "right_identity_extended:b4": "direct:a5",
+                  "right_identity_extended:b5": "direct:a1",
+                  "right_identity_extended:b6": "direct:a3",
+                  "right_identity_extended:b7": "direct:a7"
+                },
+                "phi": {
+                  "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                  "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+                  "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb",
+                  "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+                  "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                  "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                  "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                  "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639"
+                },
+                "pi": "reversed"
+              },
+              "translational_form_id": "2acc35620e8a8fc3dab1fbf87375f4e381f2b8d51c005537a9aded73c1c557a6"
+            },
+            "first_failure": null,
+            "geom_equiv": {
+              "holds": true,
+              "occurrence_bijective": true,
+              "occurrence_total": true,
+              "preservation_cases": 256,
+              "preservation_failure_count": 0,
+              "reflection_cases": 256,
+              "reflection_failure_count": 0
+            },
+            "mapping_sha256": "1bdd154297816d4347e65ffaef875800b031fa59539823b76e38acdd15a86e01",
+            "naturality": {
+              "curvature_cases": 16,
+              "curvature_failure_count": 0,
+              "extension_cases": 16,
+              "extension_failure_count": 0,
+              "holds": true,
+              "operation_cases": 64,
+              "operation_failure_count": 0,
+              "return_cases": 16,
+              "return_failure_count": 0,
+              "reversal_cases": 16,
+              "reversal_failure_count": 0
+            },
+            "occurrence_translation_T": {
+              "direct:b0": "right_identity_extended:a0",
+              "direct:b1": "right_identity_extended:a4",
+              "direct:b2": "right_identity_extended:a6",
+              "direct:b3": "right_identity_extended:a2",
+              "direct:b4": "right_identity_extended:a5",
+              "direct:b5": "right_identity_extended:a1",
+              "direct:b6": "right_identity_extended:a3",
+              "direct:b7": "right_identity_extended:a7",
+              "right_identity_extended:b0": "direct:a0",
+              "right_identity_extended:b1": "direct:a4",
+              "right_identity_extended:b2": "direct:a6",
+              "right_identity_extended:b3": "direct:a2",
+              "right_identity_extended:b4": "direct:a5",
+              "right_identity_extended:b5": "direct:a1",
+              "right_identity_extended:b6": "direct:a3",
+              "right_identity_extended:b7": "direct:a7"
+            },
+            "orientation_translation_pi": "reversed"
+          },
+          {
+            "admitted_translation": true,
+            "derived_quotient_return": {
+              "equality_was_not_defined_by_return": true,
+              "phi": {
+                "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+                "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+                "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb",
+                "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030"
+              },
+              "phi_well_defined": true,
+              "source_class_count": 8,
+              "target_class_count": 8
+            },
+            "explicit_translational_form": {
+              "candidate_T": {
+                "basis_map": {
+                  "b0": "a0",
+                  "b1": "a7",
+                  "b2": "a3",
+                  "b3": "a1",
+                  "b4": "a5",
+                  "b5": "a2",
+                  "b6": "a6",
+                  "b7": "a4"
+                },
+                "bijective": true,
+                "mapping_sha256": "7e95b6e1495040ec3bc59e2a4052f660ccfc413e2decbf2a8bf92e9d9cd5596a",
+                "occurrence_map": {
+                  "direct:b0": "direct:a0",
+                  "direct:b1": "direct:a7",
+                  "direct:b2": "direct:a3",
+                  "direct:b3": "direct:a1",
+                  "direct:b4": "direct:a5",
+                  "direct:b5": "direct:a2",
+                  "direct:b6": "direct:a6",
+                  "direct:b7": "direct:a4",
+                  "right_identity_extended:b0": "right_identity_extended:a0",
+                  "right_identity_extended:b1": "right_identity_extended:a7",
+                  "right_identity_extended:b2": "right_identity_extended:a3",
+                  "right_identity_extended:b3": "right_identity_extended:a1",
+                  "right_identity_extended:b4": "right_identity_extended:a5",
+                  "right_identity_extended:b5": "right_identity_extended:a2",
+                  "right_identity_extended:b6": "right_identity_extended:a6",
+                  "right_identity_extended:b7": "right_identity_extended:a4"
+                },
+                "total": true
+              },
+              "closure_chain_complete": true,
+              "closure_derivations": {
+                "C_curvature_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "E_extension_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "J_reversal_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "W_quotient_return": {
+                  "failure_count": 0,
+                  "status": "DERIVED"
+                },
+                "next_basis_transfer": {
+                  "status": "ELIGIBLE"
+                },
+                "operation_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "quotient_resolution_and_openness": {
+                  "status": "ELIGIBLE"
+                }
+              },
+              "geom_equiv_admission": {
+                "preservation_failure_count": 0,
+                "preservation_required": true,
+                "reflection_failure_count": 0,
+                "reflection_required": true,
+                "status": "ADMITTED"
+              },
+              "source_axiom_geometry": {
+                "assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+                "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+                "language": "B"
+              },
+              "target_axiom_geometry": {
+                "assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+                "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+                "language": "A"
+              },
+              "trans_frame_admission": "ADMITTED",
+              "translation_tuple_T_phi_pi": {
+                "T": {
+                  "direct:b0": "direct:a0",
+                  "direct:b1": "direct:a7",
+                  "direct:b2": "direct:a3",
+                  "direct:b3": "direct:a1",
+                  "direct:b4": "direct:a5",
+                  "direct:b5": "direct:a2",
+                  "direct:b6": "direct:a6",
+                  "direct:b7": "direct:a4",
+                  "right_identity_extended:b0": "right_identity_extended:a0",
+                  "right_identity_extended:b1": "right_identity_extended:a7",
+                  "right_identity_extended:b2": "right_identity_extended:a3",
+                  "right_identity_extended:b3": "right_identity_extended:a1",
+                  "right_identity_extended:b4": "right_identity_extended:a5",
+                  "right_identity_extended:b5": "right_identity_extended:a2",
+                  "right_identity_extended:b6": "right_identity_extended:a6",
+                  "right_identity_extended:b7": "right_identity_extended:a4"
+                },
+                "phi": {
+                  "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                  "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+                  "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+                  "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb",
+                  "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                  "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                  "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                  "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030"
+                },
+                "pi": "preserved"
+              },
+              "translational_form_id": "fbaa79bab4f952da610f1ecbb6f15af4e312352e3f0ca50231bf234b58c3d5f5"
+            },
+            "first_failure": null,
+            "geom_equiv": {
+              "holds": true,
+              "occurrence_bijective": true,
+              "occurrence_total": true,
+              "preservation_cases": 256,
+              "preservation_failure_count": 0,
+              "reflection_cases": 256,
+              "reflection_failure_count": 0
+            },
+            "mapping_sha256": "7e95b6e1495040ec3bc59e2a4052f660ccfc413e2decbf2a8bf92e9d9cd5596a",
+            "naturality": {
+              "curvature_cases": 16,
+              "curvature_failure_count": 0,
+              "extension_cases": 16,
+              "extension_failure_count": 0,
+              "holds": true,
+              "operation_cases": 64,
+              "operation_failure_count": 0,
+              "return_cases": 16,
+              "return_failure_count": 0,
+              "reversal_cases": 16,
+              "reversal_failure_count": 0
+            },
+            "occurrence_translation_T": {
+              "direct:b0": "direct:a0",
+              "direct:b1": "direct:a7",
+              "direct:b2": "direct:a3",
+              "direct:b3": "direct:a1",
+              "direct:b4": "direct:a5",
+              "direct:b5": "direct:a2",
+              "direct:b6": "direct:a6",
+              "direct:b7": "direct:a4",
+              "right_identity_extended:b0": "right_identity_extended:a0",
+              "right_identity_extended:b1": "right_identity_extended:a7",
+              "right_identity_extended:b2": "right_identity_extended:a3",
+              "right_identity_extended:b3": "right_identity_extended:a1",
+              "right_identity_extended:b4": "right_identity_extended:a5",
+              "right_identity_extended:b5": "right_identity_extended:a2",
+              "right_identity_extended:b6": "right_identity_extended:a6",
+              "right_identity_extended:b7": "right_identity_extended:a4"
+            },
+            "orientation_translation_pi": "preserved"
+          },
+          {
+            "admitted_translation": true,
+            "derived_quotient_return": {
+              "equality_was_not_defined_by_return": true,
+              "phi": {
+                "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb",
+                "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+                "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+                "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030"
+              },
+              "phi_well_defined": true,
+              "source_class_count": 8,
+              "target_class_count": 8
+            },
+            "explicit_translational_form": {
+              "candidate_T": {
+                "basis_map": {
+                  "b0": "a0",
+                  "b1": "a7",
+                  "b2": "a6",
+                  "b3": "a4",
+                  "b4": "a5",
+                  "b5": "a2",
+                  "b6": "a3",
+                  "b7": "a1"
+                },
+                "bijective": true,
+                "mapping_sha256": "2ed9edd6141b61d52b3a4a7faf5eea66e34059880c1783a4b44afc7c16357fd8",
+                "occurrence_map": {
+                  "direct:b0": "right_identity_extended:a0",
+                  "direct:b1": "right_identity_extended:a7",
+                  "direct:b2": "right_identity_extended:a6",
+                  "direct:b3": "right_identity_extended:a4",
+                  "direct:b4": "right_identity_extended:a5",
+                  "direct:b5": "right_identity_extended:a2",
+                  "direct:b6": "right_identity_extended:a3",
+                  "direct:b7": "right_identity_extended:a1",
+                  "right_identity_extended:b0": "direct:a0",
+                  "right_identity_extended:b1": "direct:a7",
+                  "right_identity_extended:b2": "direct:a6",
+                  "right_identity_extended:b3": "direct:a4",
+                  "right_identity_extended:b4": "direct:a5",
+                  "right_identity_extended:b5": "direct:a2",
+                  "right_identity_extended:b6": "direct:a3",
+                  "right_identity_extended:b7": "direct:a1"
+                },
+                "total": true
+              },
+              "closure_chain_complete": true,
+              "closure_derivations": {
+                "C_curvature_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "E_extension_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "J_reversal_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "W_quotient_return": {
+                  "failure_count": 0,
+                  "status": "DERIVED"
+                },
+                "next_basis_transfer": {
+                  "status": "ELIGIBLE"
+                },
+                "operation_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "quotient_resolution_and_openness": {
+                  "status": "ELIGIBLE"
+                }
+              },
+              "geom_equiv_admission": {
+                "preservation_failure_count": 0,
+                "preservation_required": true,
+                "reflection_failure_count": 0,
+                "reflection_required": true,
+                "status": "ADMITTED"
+              },
+              "source_axiom_geometry": {
+                "assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+                "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+                "language": "B"
+              },
+              "target_axiom_geometry": {
+                "assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+                "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+                "language": "A"
+              },
+              "trans_frame_admission": "ADMITTED",
+              "translation_tuple_T_phi_pi": {
+                "T": {
+                  "direct:b0": "right_identity_extended:a0",
+                  "direct:b1": "right_identity_extended:a7",
+                  "direct:b2": "right_identity_extended:a6",
+                  "direct:b3": "right_identity_extended:a4",
+                  "direct:b4": "right_identity_extended:a5",
+                  "direct:b5": "right_identity_extended:a2",
+                  "direct:b6": "right_identity_extended:a3",
+                  "direct:b7": "right_identity_extended:a1",
+                  "right_identity_extended:b0": "direct:a0",
+                  "right_identity_extended:b1": "direct:a7",
+                  "right_identity_extended:b2": "direct:a6",
+                  "right_identity_extended:b3": "direct:a4",
+                  "right_identity_extended:b4": "direct:a5",
+                  "right_identity_extended:b5": "direct:a2",
+                  "right_identity_extended:b6": "direct:a3",
+                  "right_identity_extended:b7": "direct:a1"
+                },
+                "phi": {
+                  "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                  "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb",
+                  "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+                  "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+                  "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                  "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                  "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                  "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030"
+                },
+                "pi": "reversed"
+              },
+              "translational_form_id": "90f9ddaadd0bb924dc73508d9343e47dd28ca0735be71cfb8dd7bae9396b253d"
+            },
+            "first_failure": null,
+            "geom_equiv": {
+              "holds": true,
+              "occurrence_bijective": true,
+              "occurrence_total": true,
+              "preservation_cases": 256,
+              "preservation_failure_count": 0,
+              "reflection_cases": 256,
+              "reflection_failure_count": 0
+            },
+            "mapping_sha256": "2ed9edd6141b61d52b3a4a7faf5eea66e34059880c1783a4b44afc7c16357fd8",
+            "naturality": {
+              "curvature_cases": 16,
+              "curvature_failure_count": 0,
+              "extension_cases": 16,
+              "extension_failure_count": 0,
+              "holds": true,
+              "operation_cases": 64,
+              "operation_failure_count": 0,
+              "return_cases": 16,
+              "return_failure_count": 0,
+              "reversal_cases": 16,
+              "reversal_failure_count": 0
+            },
+            "occurrence_translation_T": {
+              "direct:b0": "right_identity_extended:a0",
+              "direct:b1": "right_identity_extended:a7",
+              "direct:b2": "right_identity_extended:a6",
+              "direct:b3": "right_identity_extended:a4",
+              "direct:b4": "right_identity_extended:a5",
+              "direct:b5": "right_identity_extended:a2",
+              "direct:b6": "right_identity_extended:a3",
+              "direct:b7": "right_identity_extended:a1",
+              "right_identity_extended:b0": "direct:a0",
+              "right_identity_extended:b1": "direct:a7",
+              "right_identity_extended:b2": "direct:a6",
+              "right_identity_extended:b3": "direct:a4",
+              "right_identity_extended:b4": "direct:a5",
+              "right_identity_extended:b5": "direct:a2",
+              "right_identity_extended:b6": "direct:a3",
+              "right_identity_extended:b7": "direct:a1"
+            },
+            "orientation_translation_pi": "reversed"
+          }
+        ],
+        "episode_role": "counterfactual",
+        "frame_question_evaluation": "TRANSPORTED",
+        "independent_contact": false,
+        "selected_for_episode": false,
+        "status": "ADMITTED_TRANSLATION",
+        "translation_lineage": {
+          "admitted_translational_form_ids": [
+            "02f3e8fa78ccea39959152826a69371ec48d20efda5c4844992b0dc15d66a7bd",
+            "efd62f65201cdec883a15b513b1538240e96a3faaf44437b4cf0d67ea0d41bfc",
+            "4b58e220919ee0fcb6406a17e758a7aa8266a84f587fe5d9bce04db871e34370",
+            "80f95f534485002ec913d3a4f196687a9dd96b9b573dfec662f85eeb5e89c2fe",
+            "c6386b9152c2702cdfc522a1acba5317f798f30110474f9c6e66ff5758d30d27",
+            "2acc35620e8a8fc3dab1fbf87375f4e381f2b8d51c005537a9aded73c1c557a6",
+            "fbaa79bab4f952da610f1ecbb6f15af4e312352e3f0ca50231bf234b58c3d5f5",
+            "90f9ddaadd0bb924dc73508d9343e47dd28ca0735be71cfb8dd7bae9396b253d"
+          ],
+          "candidate_T": {
+            "count": 8,
+            "mapping_sha256s": [
+              "fbf5aaad279de1b340947405e75e728301915f89771e24253cc41884a629f929",
+              "d546094f8fe8667ffe451231a6a0e917bfae3922e72607879bcb51ad94c09293",
+              "8fa0e347966b23a2b36fddf11676c6a07aaa653dc59767b675f7400bcf137936",
+              "eb14ea78fd24adfcb8f087480bb06ca736fce193da9e77837668a0b1978e71e2",
+              "b89e537c5d1f95ec79c6a2a9b3bb8aca74169e2930321426cb62b25053fd5cdc",
+              "1bdd154297816d4347e65ffaef875800b031fa59539823b76e38acdd15a86e01",
+              "7e95b6e1495040ec3bc59e2a4052f660ccfc413e2decbf2a8bf92e9d9cd5596a",
+              "2ed9edd6141b61d52b3a4a7faf5eea66e34059880c1783a4b44afc7c16357fd8"
+            ],
+            "state": "TOTAL_PROPOSAL"
+          },
+          "closure_followthrough": "EXPLICIT_FOR_EVERY_CANDIDATE",
+          "explicit_translational_form_ids": [
+            "02f3e8fa78ccea39959152826a69371ec48d20efda5c4844992b0dc15d66a7bd",
+            "efd62f65201cdec883a15b513b1538240e96a3faaf44437b4cf0d67ea0d41bfc",
+            "4b58e220919ee0fcb6406a17e758a7aa8266a84f587fe5d9bce04db871e34370",
+            "80f95f534485002ec913d3a4f196687a9dd96b9b573dfec662f85eeb5e89c2fe",
+            "c6386b9152c2702cdfc522a1acba5317f798f30110474f9c6e66ff5758d30d27",
+            "2acc35620e8a8fc3dab1fbf87375f4e381f2b8d51c005537a9aded73c1c557a6",
+            "fbaa79bab4f952da610f1ecbb6f15af4e312352e3f0ca50231bf234b58c3d5f5",
+            "90f9ddaadd0bb924dc73508d9343e47dd28ca0735be71cfb8dd7bae9396b253d"
+          ],
+          "geom_equiv_then_closure_status": "ADMITTED_TRANSLATION",
+          "non_admission_is_not_openness": false,
+          "source_axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+          "target_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659"
+        },
+        "transported_question_relations": {
+          "element_order": {
+            "explicit_translation_lineage": {
+              "source_axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+              "target_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+              "translational_form_ids": [
+                "02f3e8fa78ccea39959152826a69371ec48d20efda5c4844992b0dc15d66a7bd",
+                "efd62f65201cdec883a15b513b1538240e96a3faaf44437b4cf0d67ea0d41bfc",
+                "4b58e220919ee0fcb6406a17e758a7aa8266a84f587fe5d9bce04db871e34370",
+                "80f95f534485002ec913d3a4f196687a9dd96b9b573dfec662f85eeb5e89c2fe",
+                "c6386b9152c2702cdfc522a1acba5317f798f30110474f9c6e66ff5758d30d27",
+                "2acc35620e8a8fc3dab1fbf87375f4e381f2b8d51c005537a9aded73c1c557a6",
+                "fbaa79bab4f952da610f1ecbb6f15af4e312352e3f0ca50231bf234b58c3d5f5",
+                "90f9ddaadd0bb924dc73508d9343e47dd28ca0735be71cfb8dd7bae9396b253d"
+              ],
+              "transport_order": "GeomEquiv then quotient resolution/openness"
+            },
+            "open_status_agrees": true,
+            "resolved_status_agrees": true
+          },
+          "presentation_constructor": {
+            "explicit_translation_lineage": {
+              "source_axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+              "target_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+              "translational_form_ids": [
+                "02f3e8fa78ccea39959152826a69371ec48d20efda5c4844992b0dc15d66a7bd",
+                "efd62f65201cdec883a15b513b1538240e96a3faaf44437b4cf0d67ea0d41bfc",
+                "4b58e220919ee0fcb6406a17e758a7aa8266a84f587fe5d9bce04db871e34370",
+                "80f95f534485002ec913d3a4f196687a9dd96b9b573dfec662f85eeb5e89c2fe",
+                "c6386b9152c2702cdfc522a1acba5317f798f30110474f9c6e66ff5758d30d27",
+                "2acc35620e8a8fc3dab1fbf87375f4e381f2b8d51c005537a9aded73c1c557a6",
+                "fbaa79bab4f952da610f1ecbb6f15af4e312352e3f0ca50231bf234b58c3d5f5",
+                "90f9ddaadd0bb924dc73508d9343e47dd28ca0735be71cfb8dd7bae9396b253d"
+              ],
+              "transport_order": "GeomEquiv then quotient resolution/openness"
+            },
+            "open_status_agrees": true,
+            "resolved_status_agrees": true
+          },
+          "quotient_identity": {
+            "explicit_translation_lineage": {
+              "source_axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+              "target_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+              "translational_form_ids": [
+                "02f3e8fa78ccea39959152826a69371ec48d20efda5c4844992b0dc15d66a7bd",
+                "efd62f65201cdec883a15b513b1538240e96a3faaf44437b4cf0d67ea0d41bfc",
+                "4b58e220919ee0fcb6406a17e758a7aa8266a84f587fe5d9bce04db871e34370",
+                "80f95f534485002ec913d3a4f196687a9dd96b9b573dfec662f85eeb5e89c2fe",
+                "c6386b9152c2702cdfc522a1acba5317f798f30110474f9c6e66ff5758d30d27",
+                "2acc35620e8a8fc3dab1fbf87375f4e381f2b8d51c005537a9aded73c1c557a6",
+                "fbaa79bab4f952da610f1ecbb6f15af4e312352e3f0ca50231bf234b58c3d5f5",
+                "90f9ddaadd0bb924dc73508d9343e47dd28ca0735be71cfb8dd7bae9396b253d"
+              ],
+              "transport_order": "GeomEquiv then quotient resolution/openness"
+            },
+            "open_status_agrees": true,
+            "resolved_status_agrees": true
+          }
+        }
+      },
+      {
+        "case": "equality_collapse",
+        "certificates": [
+          {
+            "admitted_translation": false,
+            "derived_quotient_return": {
+              "equality_was_not_defined_by_return": true,
+              "phi": {},
+              "phi_well_defined": true,
+              "source_class_count": 8,
+              "target_class_count": 8
+            },
+            "explicit_translational_form": {
+              "candidate_T": {
+                "basis_map": {
+                  "b0": "a0",
+                  "b1": "a0",
+                  "b2": "a3",
+                  "b3": "a3",
+                  "b4": "a5",
+                  "b5": "a5",
+                  "b6": "a6",
+                  "b7": "a6"
+                },
+                "bijective": false,
+                "mapping_sha256": "340f4d97eedc125a477768c38db7cab4b8d4716cf4ffe0e0253d18517afaccdb",
+                "occurrence_map": {
+                  "direct:b0": "direct:a0",
+                  "direct:b1": "direct:a0",
+                  "direct:b2": "direct:a3",
+                  "direct:b3": "direct:a3",
+                  "direct:b4": "direct:a5",
+                  "direct:b5": "direct:a5",
+                  "direct:b6": "direct:a6",
+                  "direct:b7": "direct:a6",
+                  "right_identity_extended:b0": "right_identity_extended:a0",
+                  "right_identity_extended:b1": "right_identity_extended:a0",
+                  "right_identity_extended:b2": "right_identity_extended:a3",
+                  "right_identity_extended:b3": "right_identity_extended:a3",
+                  "right_identity_extended:b4": "right_identity_extended:a5",
+                  "right_identity_extended:b5": "right_identity_extended:a5",
+                  "right_identity_extended:b6": "right_identity_extended:a6",
+                  "right_identity_extended:b7": "right_identity_extended:a6"
+                },
+                "total": true
+              },
+              "closure_chain_complete": false,
+              "closure_derivations": {
+                "C_curvature_naturality": {
+                  "failure_count": 0,
+                  "status": "BLOCKED"
+                },
+                "E_extension_naturality": {
+                  "failure_count": 0,
+                  "status": "BLOCKED"
+                },
+                "J_reversal_naturality": {
+                  "failure_count": 0,
+                  "status": "BLOCKED"
+                },
+                "W_quotient_return": {
+                  "failure_count": 0,
+                  "status": "BLOCKED"
+                },
+                "next_basis_transfer": {
+                  "status": "BLOCKED"
+                },
+                "operation_naturality": {
+                  "failure_count": 16,
+                  "status": "BLOCKED"
+                },
+                "quotient_resolution_and_openness": {
+                  "status": "BLOCKED"
+                }
+              },
+              "geom_equiv_admission": {
+                "preservation_failure_count": 0,
+                "preservation_required": true,
+                "reflection_failure_count": 32,
+                "reflection_required": true,
+                "status": "REJECTED"
+              },
+              "source_axiom_geometry": {
+                "assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+                "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+                "language": "B"
+              },
+              "target_axiom_geometry": {
+                "assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+                "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+                "language": "A"
+              },
+              "trans_frame_admission": "REJECTED",
+              "translation_tuple_T_phi_pi": null,
+              "translational_form_id": "a80cefcbfd37475fd0db63759a27a8eb8517db3e74f2b277eb25e86530016666"
+            },
+            "first_failure": {
+              "check": "reflects_frame_equality",
+              "expected": true,
+              "input": [
+                "direct:b0",
+                "direct:b1"
+              ],
+              "observed": false
+            },
+            "geom_equiv": {
+              "holds": false,
+              "occurrence_bijective": false,
+              "occurrence_total": true,
+              "preservation_cases": 256,
+              "preservation_failure_count": 0,
+              "reflection_cases": 256,
+              "reflection_failure_count": 32
+            },
+            "mapping_sha256": "340f4d97eedc125a477768c38db7cab4b8d4716cf4ffe0e0253d18517afaccdb",
+            "naturality": {
+              "curvature_cases": 0,
+              "curvature_failure_count": 0,
+              "extension_cases": 0,
+              "extension_failure_count": 0,
+              "holds": false,
+              "operation_cases": 64,
+              "operation_failure_count": 16,
+              "return_cases": 0,
+              "return_failure_count": 0,
+              "reversal_cases": 0,
+              "reversal_failure_count": 0
+            },
+            "occurrence_translation_T": {
+              "direct:b0": "direct:a0",
+              "direct:b1": "direct:a0",
+              "direct:b2": "direct:a3",
+              "direct:b3": "direct:a3",
+              "direct:b4": "direct:a5",
+              "direct:b5": "direct:a5",
+              "direct:b6": "direct:a6",
+              "direct:b7": "direct:a6",
+              "right_identity_extended:b0": "right_identity_extended:a0",
+              "right_identity_extended:b1": "right_identity_extended:a0",
+              "right_identity_extended:b2": "right_identity_extended:a3",
+              "right_identity_extended:b3": "right_identity_extended:a3",
+              "right_identity_extended:b4": "right_identity_extended:a5",
+              "right_identity_extended:b5": "right_identity_extended:a5",
+              "right_identity_extended:b6": "right_identity_extended:a6",
+              "right_identity_extended:b7": "right_identity_extended:a6"
+            },
+            "orientation_translation_pi": "preserved"
+          }
+        ],
+        "episode_role": "counterfactual",
+        "frame_question_evaluation": "NOT_RUN",
+        "independent_contact": false,
+        "selected_for_episode": false,
+        "status": "COUNTEREXAMPLE",
+        "translation_lineage": {
+          "admitted_translational_form_ids": [],
+          "candidate_T": {
+            "count": 1,
+            "mapping_sha256s": [
+              "340f4d97eedc125a477768c38db7cab4b8d4716cf4ffe0e0253d18517afaccdb"
+            ],
+            "state": "TOTAL_PROPOSAL"
+          },
+          "closure_followthrough": "EXPLICIT_FOR_EVERY_CANDIDATE",
+          "explicit_translational_form_ids": [
+            "a80cefcbfd37475fd0db63759a27a8eb8517db3e74f2b277eb25e86530016666"
+          ],
+          "geom_equiv_then_closure_status": "COUNTEREXAMPLE",
+          "non_admission_is_not_openness": true,
+          "source_axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+          "target_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659"
+        }
+      },
+      {
+        "case": "operation_twist",
+        "certificates": [
+          {
+            "admitted_translation": false,
+            "derived_quotient_return": {
+              "equality_was_not_defined_by_return": true,
+              "phi": {
+                "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+                "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+                "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+                "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb"
+              },
+              "phi_well_defined": true,
+              "source_class_count": 8,
+              "target_class_count": 8
+            },
+            "explicit_translational_form": {
+              "candidate_T": {
+                "basis_map": {
+                  "b0": "a0",
+                  "b1": "a2",
+                  "b2": "a3",
+                  "b3": "a1",
+                  "b4": "a5",
+                  "b5": "a4",
+                  "b6": "a6",
+                  "b7": "a7"
+                },
+                "bijective": true,
+                "mapping_sha256": "a5d9675d4fd24501ed06069fbe73b9b30b4b69676f4de8e74936f2b657e57aa5",
+                "occurrence_map": {
+                  "direct:b0": "direct:a0",
+                  "direct:b1": "direct:a2",
+                  "direct:b2": "direct:a3",
+                  "direct:b3": "direct:a1",
+                  "direct:b4": "direct:a5",
+                  "direct:b5": "direct:a4",
+                  "direct:b6": "direct:a6",
+                  "direct:b7": "direct:a7",
+                  "right_identity_extended:b0": "right_identity_extended:a0",
+                  "right_identity_extended:b1": "right_identity_extended:a2",
+                  "right_identity_extended:b2": "right_identity_extended:a3",
+                  "right_identity_extended:b3": "right_identity_extended:a1",
+                  "right_identity_extended:b4": "right_identity_extended:a5",
+                  "right_identity_extended:b5": "right_identity_extended:a4",
+                  "right_identity_extended:b6": "right_identity_extended:a6",
+                  "right_identity_extended:b7": "right_identity_extended:a7"
+                },
+                "total": true
+              },
+              "closure_chain_complete": false,
+              "closure_derivations": {
+                "C_curvature_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "E_extension_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "J_reversal_naturality": {
+                  "failure_count": 0,
+                  "status": "VERIFIED"
+                },
+                "W_quotient_return": {
+                  "failure_count": 0,
+                  "status": "DERIVED"
+                },
+                "next_basis_transfer": {
+                  "status": "BLOCKED"
+                },
+                "operation_naturality": {
+                  "failure_count": 30,
+                  "status": "COUNTEREXAMPLE"
+                },
+                "quotient_resolution_and_openness": {
+                  "status": "BLOCKED"
+                }
+              },
+              "geom_equiv_admission": {
+                "preservation_failure_count": 0,
+                "preservation_required": true,
+                "reflection_failure_count": 0,
+                "reflection_required": true,
+                "status": "ADMITTED"
+              },
+              "source_axiom_geometry": {
+                "assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+                "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+                "language": "B"
+              },
+              "target_axiom_geometry": {
+                "assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+                "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+                "language": "A"
+              },
+              "trans_frame_admission": "REJECTED",
+              "translation_tuple_T_phi_pi": {
+                "T": {
+                  "direct:b0": "direct:a0",
+                  "direct:b1": "direct:a2",
+                  "direct:b2": "direct:a3",
+                  "direct:b3": "direct:a1",
+                  "direct:b4": "direct:a5",
+                  "direct:b5": "direct:a4",
+                  "direct:b6": "direct:a6",
+                  "direct:b7": "direct:a7",
+                  "right_identity_extended:b0": "right_identity_extended:a0",
+                  "right_identity_extended:b1": "right_identity_extended:a2",
+                  "right_identity_extended:b2": "right_identity_extended:a3",
+                  "right_identity_extended:b3": "right_identity_extended:a1",
+                  "right_identity_extended:b4": "right_identity_extended:a5",
+                  "right_identity_extended:b5": "right_identity_extended:a4",
+                  "right_identity_extended:b6": "right_identity_extended:a6",
+                  "right_identity_extended:b7": "right_identity_extended:a7"
+                },
+                "phi": {
+                  "574ade19e886de0a56c4f4af74c0c75b3d99cd13e788f559b647059a245e56e8": "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145",
+                  "61d449e4f4dc7f13d3d679944326a4962b3c6e32ff35d27f3d29264d1f91fd50": "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639",
+                  "6ba9a082453f04cc63d489e5aa2f3f01cb3a9de6ba08986a7e1cac243ce8fd25": "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030",
+                  "82218a87608ff76cf4e8173566231607ccd74b8e278bacb26fbe8353fe123d66": "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601",
+                  "8f6bf2a94f7ce3ec53cb6984f37d73994957a93fa6d7003dbc05e99aac39f864": "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5",
+                  "a3ab2b2d5f785395ec8ef15e10cf5b3135601d225d5daa83f24b6ade36f404d9": "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3",
+                  "c26e1922dd182322c4662bd396524b4e81e7c2b68c06fe5bcb1c20eda9631d8f": "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160",
+                  "eb37d2d2fd29a1714b215f3c1d8d70bace96260e292bfb6c9454ed8064e752f1": "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb"
+                },
+                "pi": "preserved"
+              },
+              "translational_form_id": "28f9d740df171b726acf359600ac60d3b8b95035f7b3c06e9689edd603b6d5f0"
+            },
+            "first_failure": {
+              "check": "multiplication",
+              "expected": "a7",
+              "input": [
+                "b1",
+                "b2"
+              ],
+              "observed": "a1"
+            },
+            "geom_equiv": {
+              "holds": true,
+              "occurrence_bijective": true,
+              "occurrence_total": true,
+              "preservation_cases": 256,
+              "preservation_failure_count": 0,
+              "reflection_cases": 256,
+              "reflection_failure_count": 0
+            },
+            "mapping_sha256": "a5d9675d4fd24501ed06069fbe73b9b30b4b69676f4de8e74936f2b657e57aa5",
+            "naturality": {
+              "curvature_cases": 16,
+              "curvature_failure_count": 0,
+              "extension_cases": 16,
+              "extension_failure_count": 0,
+              "holds": false,
+              "operation_cases": 64,
+              "operation_failure_count": 30,
+              "return_cases": 16,
+              "return_failure_count": 0,
+              "reversal_cases": 16,
+              "reversal_failure_count": 0
+            },
+            "occurrence_translation_T": {
+              "direct:b0": "direct:a0",
+              "direct:b1": "direct:a2",
+              "direct:b2": "direct:a3",
+              "direct:b3": "direct:a1",
+              "direct:b4": "direct:a5",
+              "direct:b5": "direct:a4",
+              "direct:b6": "direct:a6",
+              "direct:b7": "direct:a7",
+              "right_identity_extended:b0": "right_identity_extended:a0",
+              "right_identity_extended:b1": "right_identity_extended:a2",
+              "right_identity_extended:b2": "right_identity_extended:a3",
+              "right_identity_extended:b3": "right_identity_extended:a1",
+              "right_identity_extended:b4": "right_identity_extended:a5",
+              "right_identity_extended:b5": "right_identity_extended:a4",
+              "right_identity_extended:b6": "right_identity_extended:a6",
+              "right_identity_extended:b7": "right_identity_extended:a7"
+            },
+            "orientation_translation_pi": "preserved"
+          }
+        ],
+        "episode_role": "counterfactual",
+        "frame_question_evaluation": "NOT_RUN",
+        "independent_contact": false,
+        "selected_for_episode": false,
+        "status": "COUNTEREXAMPLE",
+        "translation_lineage": {
+          "admitted_translational_form_ids": [],
+          "candidate_T": {
+            "count": 1,
+            "mapping_sha256s": [
+              "a5d9675d4fd24501ed06069fbe73b9b30b4b69676f4de8e74936f2b657e57aa5"
+            ],
+            "state": "TOTAL_PROPOSAL"
+          },
+          "closure_followthrough": "EXPLICIT_FOR_EVERY_CANDIDATE",
+          "explicit_translational_form_ids": [
+            "28f9d740df171b726acf359600ac60d3b8b95035f7b3c06e9689edd603b6d5f0"
+          ],
+          "geom_equiv_then_closure_status": "COUNTEREXAMPLE",
+          "non_admission_is_not_openness": true,
+          "source_axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+          "target_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659"
+        }
+      },
+      {
+        "case": "partial_comparison",
+        "certificates": [
+          {
+            "admitted_translation": false,
+            "derived_quotient_return": {
+              "equality_was_not_defined_by_return": true,
+              "phi": {},
+              "phi_well_defined": true,
+              "source_class_count": 8,
+              "target_class_count": 8
+            },
+            "explicit_translational_form": {
+              "candidate_T": {
+                "basis_map": {
+                  "b0": "a0",
+                  "b1": "a1",
+                  "b2": "a3",
+                  "b3": "a2"
+                },
+                "bijective": false,
+                "mapping_sha256": "78606f914a09818a7e3835d39d010b2bf5ce58e2e080240a2d865c0e0e166b0d",
+                "occurrence_map": {},
+                "total": false
+              },
+              "closure_chain_complete": false,
+              "closure_derivations": {
+                "C_curvature_naturality": {
+                  "failure_count": 0,
+                  "status": "BLOCKED"
+                },
+                "E_extension_naturality": {
+                  "failure_count": 0,
+                  "status": "BLOCKED"
+                },
+                "J_reversal_naturality": {
+                  "failure_count": 0,
+                  "status": "BLOCKED"
+                },
+                "W_quotient_return": {
+                  "failure_count": 0,
+                  "status": "BLOCKED"
+                },
+                "next_basis_transfer": {
+                  "status": "BLOCKED"
+                },
+                "operation_naturality": {
+                  "failure_count": 0,
+                  "status": "BLOCKED"
+                },
+                "quotient_resolution_and_openness": {
+                  "status": "BLOCKED"
+                }
+              },
+              "geom_equiv_admission": {
+                "preservation_failure_count": 0,
+                "preservation_required": true,
+                "reflection_failure_count": 0,
+                "reflection_required": true,
+                "status": "REJECTED"
+              },
+              "source_axiom_geometry": {
+                "assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+                "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+                "language": "B"
+              },
+              "target_axiom_geometry": {
+                "assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+                "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+                "language": "A"
+              },
+              "trans_frame_admission": "REJECTED",
+              "translation_tuple_T_phi_pi": null,
+              "translational_form_id": "e0da4cb7ea5f325cd032f060885f1a3ebeb05f401117f2869676f772b3325013"
+            },
+            "first_failure": null,
+            "geom_equiv": {
+              "holds": false,
+              "occurrence_bijective": false,
+              "occurrence_total": false,
+              "preservation_cases": 0,
+              "preservation_failure_count": 0,
+              "reflection_cases": 0,
+              "reflection_failure_count": 0
+            },
+            "mapping_sha256": "78606f914a09818a7e3835d39d010b2bf5ce58e2e080240a2d865c0e0e166b0d",
+            "naturality": {
+              "curvature_cases": 0,
+              "curvature_failure_count": 0,
+              "extension_cases": 0,
+              "extension_failure_count": 0,
+              "holds": false,
+              "operation_cases": 0,
+              "operation_failure_count": 0,
+              "return_cases": 0,
+              "return_failure_count": 0,
+              "reversal_cases": 0,
+              "reversal_failure_count": 0
+            },
+            "occurrence_translation_T": {},
+            "orientation_translation_pi": "preserved"
+          }
+        ],
+        "episode_role": "counterfactual",
+        "frame_question_evaluation": "NOT_RUN",
+        "independent_contact": false,
+        "selected_for_episode": false,
+        "status": "PENDING_COMPARISON",
+        "translation_lineage": {
+          "admitted_translational_form_ids": [],
+          "candidate_T": {
+            "count": 1,
+            "mapping_sha256s": [
+              "78606f914a09818a7e3835d39d010b2bf5ce58e2e080240a2d865c0e0e166b0d"
+            ],
+            "state": "PARTIAL_PROPOSAL"
+          },
+          "closure_followthrough": "EXPLICIT_FOR_EVERY_CANDIDATE",
+          "explicit_translational_form_ids": [
+            "e0da4cb7ea5f325cd032f060885f1a3ebeb05f401117f2869676f772b3325013"
+          ],
+          "geom_equiv_then_closure_status": "PENDING_COMPARISON",
+          "non_admission_is_not_openness": true,
+          "source_axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+          "target_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659"
+        }
+      },
+      {
+        "case": "self_certification_only",
+        "certificates": [],
+        "episode_role": "counterfactual",
+        "frame_question_evaluation": "NOT_RUN",
+        "independent_contact": false,
+        "selected_for_episode": false,
+        "status": "UNSELECTED_COMPARISON",
+        "translation_lineage": {
+          "admitted_translational_form_ids": [],
+          "candidate_T": {
+            "count": 0,
+            "mapping_sha256s": [],
+            "state": "ABSENT_SELF_CLAIM_ONLY"
+          },
+          "closure_followthrough": "NO_CANDIDATE_TO_DERIVE_FROM",
+          "explicit_translational_form_ids": [],
+          "geom_equiv_then_closure_status": "UNSELECTED_COMPARISON",
+          "non_admission_is_not_openness": true,
+          "source_axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+          "target_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659"
+        }
+      }
+    ],
+    "claim_boundary": "bounded relational verifier, not an ASI",
+    "every_candidate_has_explicit_translational_form": true,
+    "every_question_has_explicit_relational_closure_form": true,
+    "frames": {
+      "A": {
+        "assumption_status": "ASSUMED_FOR_INTERNAL_EVALUATION",
+        "axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+        "equality_defined_without_return": true,
+        "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+        "internal_unified_evaluation_passed": true
+      },
+      "B": {
+        "assumption_status": "ASSUMED_FOR_INTERNAL_EVALUATION",
+        "axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+        "equality_defined_without_return": true,
+        "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+        "internal_unified_evaluation_passed": true
+      }
+    },
+    "mathematical_order": [
+      "precommitted local axiom-geometry assumptions",
+      "internal evaluation and frozen admitted equality geometry",
+      "raw candidate T",
+      "GeomEquiv preservation and reflection",
+      "explicit translational form T, phi and pi",
+      "derived quotient return and W/E/J/C/operation naturality",
+      "ResolvedIn quotient factor or OpenIn separating witness with lineage",
+      "next-basis transfer with lineage"
+    ],
+    "missing_or_unselected_comparisons_called_open": false,
+    "next_basis": {
+      "axiom_geometry_basis_admitted": true,
+      "explicit_translation_lineage": {
+        "admission_observed": true,
+        "admission_required": "complete GeomEquiv and naturality closure chain",
+        "source_axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+        "target_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+        "translational_form_id": "02f3e8fa78ccea39959152826a69371ec48d20efda5c4844992b0dc15d66a7bd"
+      },
+      "new_execution": {
+        "expected_target_result": "a6",
+        "observed_target_result": "a6",
+        "source_result": "b6",
+        "source_word": [
+          "b2",
+          "b1",
+          "b2",
+          "b2",
+          "b1"
+        ],
+        "translated_word": [
+          "a3",
+          "a1",
+          "a3",
+          "a3",
+          "a1"
+        ]
+      },
+      "selected_geom_equiv_sha256": "365803792e470c61421f48bd57178e15a78e3e1862f40efc2d9b45f0fb8d5905"
+    },
+    "question_relations": [
+      {
+        "equality_comparisons": 256,
+        "explicit_relational_closure_form": {
+          "assumption_kind": "local_right_action_signature_equivalence",
+          "axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+          "bare_open_label": false,
+          "cross_frame_transport_requires_geom_equiv": true,
+          "derivation": "ResolvedIn: unique factor through the assumed frame quotient",
+          "form_id": "d9c835144ba77fca5702abd6ce8f41db2609bea3f5b1ed76234b5342312571b5",
+          "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+          "question_id": "quotient_identity",
+          "result": "RESOLVED_IN"
+        },
+        "factorization": {
+          "factor_sha256": "653d34955a1bf1ca9bce9cd403c35b042033b23555b958c1847656ddc218fd26",
+          "quotient_class_count": 8,
+          "through_frame_quotient": true,
+          "unique": true
+        },
+        "frame_equality": "instantiate equality exactly when the two locally evaluated programs have identical complete right-action signatures",
+        "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+        "language": "A",
+        "open_in_frame": false,
+        "open_witness": null,
+        "question_id": "quotient_identity",
+        "resolved_in_frame": true,
+        "separating_pair_count": 0,
+        "total": true
+      },
+      {
+        "equality_comparisons": 256,
+        "explicit_relational_closure_form": {
+          "assumption_kind": "local_right_action_signature_equivalence",
+          "axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+          "bare_open_label": false,
+          "cross_frame_transport_requires_geom_equiv": true,
+          "derivation": "ResolvedIn: unique factor through the assumed frame quotient",
+          "form_id": "dc9f70e8808ea5cf9a4170b6a370e83cec124fe900bb5d99254ee51f35db8579",
+          "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+          "question_id": "element_order",
+          "result": "RESOLVED_IN"
+        },
+        "factorization": {
+          "factor_sha256": "49b4d0109dd0a78767c1d4e562220c548a8919ea4558e77ceeaab1d7c382c900",
+          "quotient_class_count": 8,
+          "through_frame_quotient": true,
+          "unique": true
+        },
+        "frame_equality": "instantiate equality exactly when the two locally evaluated programs have identical complete right-action signatures",
+        "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+        "language": "A",
+        "open_in_frame": false,
+        "open_witness": null,
+        "question_id": "element_order",
+        "resolved_in_frame": true,
+        "separating_pair_count": 0,
+        "total": true
+      },
+      {
+        "equality_comparisons": 256,
+        "explicit_relational_closure_form": {
+          "assumption_kind": "local_right_action_signature_equivalence",
+          "axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+          "bare_open_label": false,
+          "cross_frame_transport_requires_geom_equiv": true,
+          "derivation": "OpenIn: explicit pair x~y with Q(x)!=Q(y) in the assumed frame",
+          "form_id": "aa3c20aeb9efd894076a3381e85ca1da0c11b3eb58b48b2240e6464a16287400",
+          "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+          "question_id": "presentation_constructor",
+          "result": "OPEN_IN"
+        },
+        "factorization": null,
+        "frame_equality": "instantiate equality exactly when the two locally evaluated programs have identical complete right-action signatures",
+        "frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+        "language": "A",
+        "open_in_frame": true,
+        "open_witness": {
+          "frame_equal": true,
+          "left": "direct:a0",
+          "left_value": "direct",
+          "right": "right_identity_extended:a0",
+          "right_value": "right_identity_extended"
+        },
+        "question_id": "presentation_constructor",
+        "resolved_in_frame": false,
+        "separating_pair_count": 16,
+        "total": true
+      },
+      {
+        "equality_comparisons": 256,
+        "explicit_relational_closure_form": {
+          "assumption_kind": "local_right_action_signature_equivalence",
+          "axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+          "bare_open_label": false,
+          "cross_frame_transport_requires_geom_equiv": true,
+          "derivation": "ResolvedIn: unique factor through the assumed frame quotient",
+          "form_id": "52caf562a10a761a1228c5dc769b223f7453b63bde60801ecc2783270e489b16",
+          "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+          "question_id": "quotient_identity",
+          "result": "RESOLVED_IN"
+        },
+        "factorization": {
+          "factor_sha256": "14800732363ba9ed2443b7e4c4adef9e7b2cc89ef0f5f290f75d9bb7e3361b59",
+          "quotient_class_count": 8,
+          "through_frame_quotient": true,
+          "unique": true
+        },
+        "frame_equality": "instantiate equality exactly when the two locally evaluated programs have identical complete right-action signatures",
+        "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+        "language": "B",
+        "open_in_frame": false,
+        "open_witness": null,
+        "question_id": "quotient_identity",
+        "resolved_in_frame": true,
+        "separating_pair_count": 0,
+        "total": true
+      },
+      {
+        "equality_comparisons": 256,
+        "explicit_relational_closure_form": {
+          "assumption_kind": "local_right_action_signature_equivalence",
+          "axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+          "bare_open_label": false,
+          "cross_frame_transport_requires_geom_equiv": true,
+          "derivation": "ResolvedIn: unique factor through the assumed frame quotient",
+          "form_id": "bd1b59c0f6388020635f76b1d11c831dc690d08e2f048f1d7c52f87b1132bdf1",
+          "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+          "question_id": "element_order",
+          "result": "RESOLVED_IN"
+        },
+        "factorization": {
+          "factor_sha256": "424e2543a8ab281c186ea06fea33df959d7095caea6de8222816cfc806e2d275",
+          "quotient_class_count": 8,
+          "through_frame_quotient": true,
+          "unique": true
+        },
+        "frame_equality": "instantiate equality exactly when the two locally evaluated programs have identical complete right-action signatures",
+        "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+        "language": "B",
+        "open_in_frame": false,
+        "open_witness": null,
+        "question_id": "element_order",
+        "resolved_in_frame": true,
+        "separating_pair_count": 0,
+        "total": true
+      },
+      {
+        "equality_comparisons": 256,
+        "explicit_relational_closure_form": {
+          "assumption_kind": "local_right_action_signature_equivalence",
+          "axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+          "bare_open_label": false,
+          "cross_frame_transport_requires_geom_equiv": true,
+          "derivation": "OpenIn: explicit pair x~y with Q(x)!=Q(y) in the assumed frame",
+          "form_id": "421f4a01e7dcc28900f23fb28c3d078ce8541a89512bad800f12e28f928ca58c",
+          "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+          "question_id": "presentation_constructor",
+          "result": "OPEN_IN"
+        },
+        "factorization": null,
+        "frame_equality": "instantiate equality exactly when the two locally evaluated programs have identical complete right-action signatures",
+        "frame_id": "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+        "language": "B",
+        "open_in_frame": true,
+        "open_witness": {
+          "frame_equal": true,
+          "left": "direct:b0",
+          "left_value": "direct",
+          "right": "right_identity_extended:b0",
+          "right_value": "right_identity_extended"
+        },
+        "question_id": "presentation_constructor",
+        "resolved_in_frame": false,
+        "separating_pair_count": 16,
+        "total": true
+      },
+      {
+        "equality_comparisons": 256,
+        "explicit_relational_closure_form": {
+          "assumption_kind": "discrete_frame_relational_control",
+          "axiom_geometry_assumption_id": "29657f03a1cdc7e6fd68a23ee3635fcb1db422c022d43e19a74629f2607ee027",
+          "bare_open_label": false,
+          "cross_frame_transport_requires_geom_equiv": true,
+          "derivation": "ResolvedIn: unique factor through the assumed frame quotient",
+          "form_id": "69c9ec69e73317e896a9a3703973f1063335652ebe252b6a2cb6c89641c50efd",
+          "frame_id": "8f890693ea57bf966c151546efe93b2ef1802a962c0d4f581e2ec0cfb8af9f20",
+          "question_id": "presentation_constructor",
+          "result": "RESOLVED_IN"
+        },
+        "factorization": {
+          "factor_sha256": "0f4f27853246347b09d437d964ad7fbbd2602881524a0f2f262741a9eb7d4435",
+          "quotient_class_count": 16,
+          "through_frame_quotient": true,
+          "unique": true
+        },
+        "frame_equality": "discrete equality x=y",
+        "frame_id": "8f890693ea57bf966c151546efe93b2ef1802a962c0d4f581e2ec0cfb8af9f20",
+        "language": "B",
+        "open_in_frame": false,
+        "open_witness": null,
+        "question_id": "presentation_constructor",
+        "resolved_in_frame": true,
+        "separating_pair_count": 0,
+        "total": true
+      }
+    ],
+    "schema_version": 2,
+    "shared_manifest_sha256": "31824d2a1242c586e03a24e20acb21bed10a0bf0f3e7a7d503a179d266c1aa04",
+    "status": "PASS",
+    "structural_admitted_translation_count": 8,
+    "tokens_issued": 1
+  },
+  "comparative_hypothesis_supported_for_bounded_fixture": true,
+  "comparison_layer_additional_tokens": 0,
+  "comparison_target": "verification architecture over identical frozen artifacts",
+  "differential": {
+    "closure_additional_certificates": {
+      "all_candidate_derivations_explicitly_translational": true,
+      "all_open_relations_witnessed": true,
+      "all_question_derivations_have_closure_lineage": true,
+      "frame_question_relation_count": 7,
+      "geom_equiv_preservation_cases_per_total_candidate": 256,
+      "geom_equiv_reflection_cases_per_total_candidate": 256,
+      "internally_audited_frame_equalities": 2,
+      "next_basis_transferred": true,
+      "precommitted_axiom_geometry_assumptions": 2,
+      "setoid_cases_per_frame": {
+        "reflexivity": 16,
+        "symmetry": 256,
+        "transitivity": 4096
+      },
+      "witnessed_open_relation_count": 2
+    },
+    "fixed_frame_nonmeasurement_is_not_open": true,
+    "interpretation": "bounded informational extension observed; capability superiority and frontier-agent scaling remain open",
+    "same_frozen_inputs": true,
+    "shared_findings": {
+      "both_local_kernels_pass": true,
+      "closure_admitted_translations_retained": 8,
+      "equality_collapse_rejected_by_both": true,
+      "operation_twist_rejected_by_both": true,
+      "ordinary_isomorphisms_retained": 8,
+      "orientation_reversal_retained_by_both": true
+    }
+  },
+  "fixed_frame_arm": {
+    "accepts_noncanonical_and_reversing_isomorphisms": true,
+    "arm": "fixed_frame_strong_baseline",
+    "baseline_is_not_discrete_frame": true,
+    "cases": [
+      {
+        "case": "natural_contact",
+        "certificates": [
+          {
+            "certificate": {
+              "bijective": true,
+              "first_failure": null,
+              "homomorphism_cases": 64,
+              "homomorphism_failure_count": 0,
+              "ordinary_isomorphism_holds": true,
+              "total": true
+            },
+            "element_order_transport": true,
+            "mapping": {
+              "b0": "a0",
+              "b1": "a1",
+              "b2": "a3",
+              "b3": "a2",
+              "b4": "a5",
+              "b5": "a4",
+              "b6": "a6",
+              "b7": "a7"
+            },
+            "mapping_sha256": "fbf5aaad279de1b340947405e75e728301915f89771e24253cc41884a629f929"
+          }
+        ],
+        "independent_contact": true,
+        "status": "PROVED_ORDINARY_ISOMORPHISM"
+      },
+      {
+        "case": "natural_reversal",
+        "certificates": [
+          {
+            "certificate": {
+              "bijective": true,
+              "first_failure": null,
+              "homomorphism_cases": 64,
+              "homomorphism_failure_count": 0,
+              "ordinary_isomorphism_holds": true,
+              "total": true
+            },
+            "element_order_transport": true,
+            "mapping": {
+              "b0": "a0",
+              "b1": "a1",
+              "b2": "a6",
+              "b3": "a7",
+              "b4": "a5",
+              "b5": "a4",
+              "b6": "a3",
+              "b7": "a2"
+            },
+            "mapping_sha256": "d546094f8fe8667ffe451231a6a0e917bfae3922e72607879bcb51ad94c09293"
+          }
+        ],
+        "independent_contact": true,
+        "status": "PROVED_ORDINARY_ISOMORPHISM"
+      },
+      {
+        "case": "structural_family",
+        "certificates": [
+          {
+            "certificate": {
+              "bijective": true,
+              "first_failure": null,
+              "homomorphism_cases": 64,
+              "homomorphism_failure_count": 0,
+              "ordinary_isomorphism_holds": true,
+              "total": true
+            },
+            "element_order_transport": true,
+            "mapping": {
+              "b0": "a0",
+              "b1": "a1",
+              "b2": "a3",
+              "b3": "a2",
+              "b4": "a5",
+              "b5": "a4",
+              "b6": "a6",
+              "b7": "a7"
+            },
+            "mapping_sha256": "fbf5aaad279de1b340947405e75e728301915f89771e24253cc41884a629f929"
+          },
+          {
+            "certificate": {
+              "bijective": true,
+              "first_failure": null,
+              "homomorphism_cases": 64,
+              "homomorphism_failure_count": 0,
+              "ordinary_isomorphism_holds": true,
+              "total": true
+            },
+            "element_order_transport": true,
+            "mapping": {
+              "b0": "a0",
+              "b1": "a1",
+              "b2": "a6",
+              "b3": "a7",
+              "b4": "a5",
+              "b5": "a4",
+              "b6": "a3",
+              "b7": "a2"
+            },
+            "mapping_sha256": "d546094f8fe8667ffe451231a6a0e917bfae3922e72607879bcb51ad94c09293"
+          },
+          {
+            "certificate": {
+              "bijective": true,
+              "first_failure": null,
+              "homomorphism_cases": 64,
+              "homomorphism_failure_count": 0,
+              "ordinary_isomorphism_holds": true,
+              "total": true
+            },
+            "element_order_transport": true,
+            "mapping": {
+              "b0": "a0",
+              "b1": "a2",
+              "b2": "a3",
+              "b3": "a4",
+              "b4": "a5",
+              "b5": "a7",
+              "b6": "a6",
+              "b7": "a1"
+            },
+            "mapping_sha256": "8fa0e347966b23a2b36fddf11676c6a07aaa653dc59767b675f7400bcf137936"
+          },
+          {
+            "certificate": {
+              "bijective": true,
+              "first_failure": null,
+              "homomorphism_cases": 64,
+              "homomorphism_failure_count": 0,
+              "ordinary_isomorphism_holds": true,
+              "total": true
+            },
+            "element_order_transport": true,
+            "mapping": {
+              "b0": "a0",
+              "b1": "a2",
+              "b2": "a6",
+              "b3": "a1",
+              "b4": "a5",
+              "b5": "a7",
+              "b6": "a3",
+              "b7": "a4"
+            },
+            "mapping_sha256": "eb14ea78fd24adfcb8f087480bb06ca736fce193da9e77837668a0b1978e71e2"
+          },
+          {
+            "certificate": {
+              "bijective": true,
+              "first_failure": null,
+              "homomorphism_cases": 64,
+              "homomorphism_failure_count": 0,
+              "ordinary_isomorphism_holds": true,
+              "total": true
+            },
+            "element_order_transport": true,
+            "mapping": {
+              "b0": "a0",
+              "b1": "a4",
+              "b2": "a3",
+              "b3": "a7",
+              "b4": "a5",
+              "b5": "a1",
+              "b6": "a6",
+              "b7": "a2"
+            },
+            "mapping_sha256": "b89e537c5d1f95ec79c6a2a9b3bb8aca74169e2930321426cb62b25053fd5cdc"
+          },
+          {
+            "certificate": {
+              "bijective": true,
+              "first_failure": null,
+              "homomorphism_cases": 64,
+              "homomorphism_failure_count": 0,
+              "ordinary_isomorphism_holds": true,
+              "total": true
+            },
+            "element_order_transport": true,
+            "mapping": {
+              "b0": "a0",
+              "b1": "a4",
+              "b2": "a6",
+              "b3": "a2",
+              "b4": "a5",
+              "b5": "a1",
+              "b6": "a3",
+              "b7": "a7"
+            },
+            "mapping_sha256": "1bdd154297816d4347e65ffaef875800b031fa59539823b76e38acdd15a86e01"
+          },
+          {
+            "certificate": {
+              "bijective": true,
+              "first_failure": null,
+              "homomorphism_cases": 64,
+              "homomorphism_failure_count": 0,
+              "ordinary_isomorphism_holds": true,
+              "total": true
+            },
+            "element_order_transport": true,
+            "mapping": {
+              "b0": "a0",
+              "b1": "a7",
+              "b2": "a3",
+              "b3": "a1",
+              "b4": "a5",
+              "b5": "a2",
+              "b6": "a6",
+              "b7": "a4"
+            },
+            "mapping_sha256": "7e95b6e1495040ec3bc59e2a4052f660ccfc413e2decbf2a8bf92e9d9cd5596a"
+          },
+          {
+            "certificate": {
+              "bijective": true,
+              "first_failure": null,
+              "homomorphism_cases": 64,
+              "homomorphism_failure_count": 0,
+              "ordinary_isomorphism_holds": true,
+              "total": true
+            },
+            "element_order_transport": true,
+            "mapping": {
+              "b0": "a0",
+              "b1": "a7",
+              "b2": "a6",
+              "b3": "a4",
+              "b4": "a5",
+              "b5": "a2",
+              "b6": "a3",
+              "b7": "a1"
+            },
+            "mapping_sha256": "2ed9edd6141b61d52b3a4a7faf5eea66e34059880c1783a4b44afc7c16357fd8"
+          }
+        ],
+        "independent_contact": false,
+        "status": "PROVED_ORDINARY_ISOMORPHISM"
+      },
+      {
+        "case": "equality_collapse",
+        "certificates": [
+          {
+            "certificate": {
+              "bijective": false,
+              "first_failure": {
+                "check": "multiplication",
+                "expected": "a6",
+                "input": [
+                  "b1",
+                  "b2"
+                ],
+                "observed": "a3"
+              },
+              "homomorphism_cases": 64,
+              "homomorphism_failure_count": 16,
+              "ordinary_isomorphism_holds": false,
+              "total": true
+            },
+            "element_order_transport": false,
+            "mapping": {
+              "b0": "a0",
+              "b1": "a0",
+              "b2": "a3",
+              "b3": "a3",
+              "b4": "a5",
+              "b5": "a5",
+              "b6": "a6",
+              "b7": "a6"
+            },
+            "mapping_sha256": "340f4d97eedc125a477768c38db7cab4b8d4716cf4ffe0e0253d18517afaccdb"
+          }
+        ],
+        "independent_contact": false,
+        "status": "COUNTEREXAMPLE"
+      },
+      {
+        "case": "operation_twist",
+        "certificates": [
+          {
+            "certificate": {
+              "bijective": true,
+              "first_failure": {
+                "check": "multiplication",
+                "expected": "a7",
+                "input": [
+                  "b1",
+                  "b2"
+                ],
+                "observed": "a1"
+              },
+              "homomorphism_cases": 64,
+              "homomorphism_failure_count": 30,
+              "ordinary_isomorphism_holds": false,
+              "total": true
+            },
+            "element_order_transport": false,
+            "mapping": {
+              "b0": "a0",
+              "b1": "a2",
+              "b2": "a3",
+              "b3": "a1",
+              "b4": "a5",
+              "b5": "a4",
+              "b6": "a6",
+              "b7": "a7"
+            },
+            "mapping_sha256": "a5d9675d4fd24501ed06069fbe73b9b30b4b69676f4de8e74936f2b657e57aa5"
+          }
+        ],
+        "independent_contact": false,
+        "status": "COUNTEREXAMPLE"
+      },
+      {
+        "case": "partial_comparison",
+        "certificates": [
+          {
+            "certificate": {
+              "bijective": false,
+              "first_failure": null,
+              "homomorphism_cases": 0,
+              "homomorphism_failure_count": 0,
+              "ordinary_isomorphism_holds": false,
+              "total": false
+            },
+            "element_order_transport": false,
+            "mapping": {
+              "b0": "a0",
+              "b1": "a1",
+              "b2": "a3",
+              "b3": "a2"
+            },
+            "mapping_sha256": "78606f914a09818a7e3835d39d010b2bf5ce58e2e080240a2d865c0e0e166b0d"
+          }
+        ],
+        "independent_contact": false,
+        "status": "PENDING_COMPARISON"
+      },
+      {
+        "case": "self_certification_only",
+        "certificates": [],
+        "independent_contact": false,
+        "status": "UNSELECTED_COMPARISON"
+      }
+    ],
+    "claim_boundary": "bounded proof/isomorphism verifier, not an ASI",
+    "frame_relative_question_interface": {
+      "bare_open_label_emitted": false,
+      "reason": "local kernel and ordinary isomorphism acceptance do not themselves emit frame-quotient or witnessed OpenIn records",
+      "status": "NOT_MEASURED_BY_ARM"
+    },
+    "local_kernel_certificates": {
+      "A": {
+        "associativity_cases": 512,
+        "associativity_failure_count": 0,
+        "first_associativity_failure": null,
+        "identity": "a0",
+        "identity_candidates": [
+          "a0"
+        ],
+        "inverses": {
+          "a0": "a0",
+          "a1": "a1",
+          "a2": "a2",
+          "a3": "a6",
+          "a4": "a4",
+          "a5": "a5",
+          "a6": "a3",
+          "a7": "a7"
+        },
+        "orders": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 4,
+          "a4": 2,
+          "a5": 2,
+          "a6": 4,
+          "a7": 2
+        },
+        "passed": true
+      },
+      "B": {
+        "associativity_cases": 512,
+        "associativity_failure_count": 0,
+        "first_associativity_failure": null,
+        "identity": "b0",
+        "identity_candidates": [
+          "b0"
+        ],
+        "inverses": {
+          "b0": "b0",
+          "b1": "b1",
+          "b2": "b6",
+          "b3": "b3",
+          "b4": "b4",
+          "b5": "b5",
+          "b6": "b2",
+          "b7": "b7"
+        },
+        "orders": {
+          "b0": 1,
+          "b1": 2,
+          "b2": 4,
+          "b3": 2,
+          "b4": 2,
+          "b5": 2,
+          "b6": 4,
+          "b7": 2
+        },
+        "passed": true
+      }
+    },
+    "ordinary_structural_isomorphism_count": 8,
+    "schema_version": 2,
+    "shared_manifest_sha256": "31824d2a1242c586e03a24e20acb21bed10a0bf0f3e7a7d503a179d266c1aa04",
+    "status": "PASS"
+  },
+  "frontier_agent_comparative_hypothesis": "OPEN_AND_FALSIFIABLE",
+  "receipt_chain": {
+    "count": 11,
+    "head": "bbf0a818b1c68e481e811cc0b7e3545520ddce3883b5663fea5c66597482207e",
+    "ok": true
+  },
+  "run_id": "classical-vs-closure-a2c8b2e68b49511f",
+  "schema_version": 2,
+  "shared_manifest_sha256": "31824d2a1242c586e03a24e20acb21bed10a0bf0f3e7a7d503a179d266c1aa04",
+  "tokens_issued": 1
+}

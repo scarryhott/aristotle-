@@ -1,0 +1,23 @@
+{
+  "axiom_geometry_basis_admitted": true,
+  "new_execution": {
+    "expected_target_result": "a6",
+    "observed_target_result": "a6",
+    "source_result": "b6",
+    "source_word": [
+      "b2",
+      "b1",
+      "b2",
+      "b2",
+      "b1"
+    ],
+    "translated_word": [
+      "a3",
+      "a1",
+      "a3",
+      "a3",
+      "a1"
+    ]
+  },
+  "selected_geom_equiv_sha256": "365803792e470c61421f48bd57178e15a78e3e1862f40efc2d9b45f0fb8d5905"
+}

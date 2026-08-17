@@ -1,0 +1,73 @@
+{
+  "frame_id": "A",
+  "frozen_after_local_equality": true,
+  "learning_translation": {
+    "A/cedar/independent_return/infinity": "A/cedar/goal/zero",
+    "A/cedar/independent_return/zero": "A/cedar/goal/infinity",
+    "A/river/independent_return/infinity": "A/river/goal/zero",
+    "A/river/independent_return/zero": "A/river/goal/infinity",
+    "A/stone/independent_return/infinity": "A/stone/goal/zero",
+    "A/stone/independent_return/zero": "A/stone/goal/infinity"
+  },
+  "line_set": [
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "A:line:0:15",
+      "path_or_wall_exclusive": true,
+      "source": "A/cedar/independent_return/infinity",
+      "target": "A/cedar/goal/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "A:line:0:7",
+      "path_or_wall_exclusive": true,
+      "source": "A/cedar/independent_return/zero",
+      "target": "A/cedar/goal/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "A:line:1:15",
+      "path_or_wall_exclusive": true,
+      "source": "A/river/independent_return/infinity",
+      "target": "A/river/goal/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "A:line:1:7",
+      "path_or_wall_exclusive": true,
+      "source": "A/river/independent_return/zero",
+      "target": "A/river/goal/infinity"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "A:line:2:15",
+      "path_or_wall_exclusive": true,
+      "source": "A/stone/independent_return/infinity",
+      "target": "A/stone/goal/zero"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "A:line:2:7",
+      "path_or_wall_exclusive": true,
+      "source": "A/stone/independent_return/zero",
+      "target": "A/stone/goal/infinity"
+    }
+  ],
+  "line_subset": "return",
+  "parent_frozen_geometry_sha256": "7a2f6a56d49c861d7f12850cdb880f47e40bd8c60365ffc66aa7f4d4224784c2",
+  "process_independence_claimed": false,
+  "same_process_designed_fixture": true,
+  "schema_version": "maze-line-subset-1.0"
+}

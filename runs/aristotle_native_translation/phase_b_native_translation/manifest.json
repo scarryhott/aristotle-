@@ -1,0 +1,33 @@
+{
+  "protocol": "docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md",
+  "stage": "phase_b_native_translation_only",
+  "status": "complete",
+  "sdk": {"package": "aristotlelib", "version": "2.1.0"},
+  "project_id": "4aee33e7-46d2-40fa-850e-c1c60182d1ff",
+  "task_id": "e4b59a82-d7b8-46fd-b7e5-a8ba059f44a1",
+  "task_status": "COMPLETE",
+  "inputs": {
+    "frame_a_result_tar_sha256": "03546d4799235949041c73f0c1d4c2b56dbda30a984747098c0ec52d57860e5c",
+    "frame_b_result_tar_sha256": "d7ae65938db79a3405a364f03804d5c738ccaef0ca9acc79f61ac2b5ec1910a4"
+  },
+  "outputs": {
+    "result_tar_sha256": "d4af7b72601414c38f2c6f77e54f86fdf70b4805758da951713af05b2a759c6d",
+    "native_translation_markdown_sha256": "5671c3715714fdf3cfff227cee04cbb4b0d29783c3254d9ea97ecbb1bc18a108",
+    "typed_table_lean_sha256": "8ec06163fb6ec52d752c941a8ce19f8ebbb7dbba7ded12b190b47e3f26c7512d",
+    "entry_count": 66,
+    "mapped": 36,
+    "ambiguous": 10,
+    "unmapped": 20
+  },
+  "preserved_boundary": "The two frozen artifacts share fully qualified NeutralFrame declarations and cannot be co-imported without modifying a frozen source.",
+  "not_evaluated": [
+    "identity_independent_translation_validation",
+    "candidate_relational_equality",
+    "independent_return_generation",
+    "completion",
+    "local_or_cross_frame_ivi",
+    "topology_naturality",
+    "receipts",
+    "heldout_transfer"
+  ]
+}

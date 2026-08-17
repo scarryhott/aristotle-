@@ -1,0 +1,425 @@
+{
+  "accepts_noncanonical_and_reversing_isomorphisms": true,
+  "arm": "fixed_frame_strong_baseline",
+  "baseline_is_not_discrete_frame": true,
+  "cases": [
+    {
+      "case": "natural_contact",
+      "certificates": [
+        {
+          "certificate": {
+            "bijective": true,
+            "first_failure": null,
+            "homomorphism_cases": 64,
+            "homomorphism_failure_count": 0,
+            "ordinary_isomorphism_holds": true,
+            "total": true
+          },
+          "element_order_transport": true,
+          "mapping": {
+            "b0": "a0",
+            "b1": "a1",
+            "b2": "a3",
+            "b3": "a2",
+            "b4": "a5",
+            "b5": "a4",
+            "b6": "a6",
+            "b7": "a7"
+          },
+          "mapping_sha256": "fbf5aaad279de1b340947405e75e728301915f89771e24253cc41884a629f929"
+        }
+      ],
+      "independent_contact": true,
+      "status": "PROVED_ORDINARY_ISOMORPHISM"
+    },
+    {
+      "case": "natural_reversal",
+      "certificates": [
+        {
+          "certificate": {
+            "bijective": true,
+            "first_failure": null,
+            "homomorphism_cases": 64,
+            "homomorphism_failure_count": 0,
+            "ordinary_isomorphism_holds": true,
+            "total": true
+          },
+          "element_order_transport": true,
+          "mapping": {
+            "b0": "a0",
+            "b1": "a1",
+            "b2": "a6",
+            "b3": "a7",
+            "b4": "a5",
+            "b5": "a4",
+            "b6": "a3",
+            "b7": "a2"
+          },
+          "mapping_sha256": "d546094f8fe8667ffe451231a6a0e917bfae3922e72607879bcb51ad94c09293"
+        }
+      ],
+      "independent_contact": true,
+      "status": "PROVED_ORDINARY_ISOMORPHISM"
+    },
+    {
+      "case": "structural_family",
+      "certificates": [
+        {
+          "certificate": {
+            "bijective": true,
+            "first_failure": null,
+            "homomorphism_cases": 64,
+            "homomorphism_failure_count": 0,
+            "ordinary_isomorphism_holds": true,
+            "total": true
+          },
+          "element_order_transport": true,
+          "mapping": {
+            "b0": "a0",
+            "b1": "a1",
+            "b2": "a3",
+            "b3": "a2",
+            "b4": "a5",
+            "b5": "a4",
+            "b6": "a6",
+            "b7": "a7"
+          },
+          "mapping_sha256": "fbf5aaad279de1b340947405e75e728301915f89771e24253cc41884a629f929"
+        },
+        {
+          "certificate": {
+            "bijective": true,
+            "first_failure": null,
+            "homomorphism_cases": 64,
+            "homomorphism_failure_count": 0,
+            "ordinary_isomorphism_holds": true,
+            "total": true
+          },
+          "element_order_transport": true,
+          "mapping": {
+            "b0": "a0",
+            "b1": "a1",
+            "b2": "a6",
+            "b3": "a7",
+            "b4": "a5",
+            "b5": "a4",
+            "b6": "a3",
+            "b7": "a2"
+          },
+          "mapping_sha256": "d546094f8fe8667ffe451231a6a0e917bfae3922e72607879bcb51ad94c09293"
+        },
+        {
+          "certificate": {
+            "bijective": true,
+            "first_failure": null,
+            "homomorphism_cases": 64,
+            "homomorphism_failure_count": 0,
+            "ordinary_isomorphism_holds": true,
+            "total": true
+          },
+          "element_order_transport": true,
+          "mapping": {
+            "b0": "a0",
+            "b1": "a2",
+            "b2": "a3",
+            "b3": "a4",
+            "b4": "a5",
+            "b5": "a7",
+            "b6": "a6",
+            "b7": "a1"
+          },
+          "mapping_sha256": "8fa0e347966b23a2b36fddf11676c6a07aaa653dc59767b675f7400bcf137936"
+        },
+        {
+          "certificate": {
+            "bijective": true,
+            "first_failure": null,
+            "homomorphism_cases": 64,
+            "homomorphism_failure_count": 0,
+            "ordinary_isomorphism_holds": true,
+            "total": true
+          },
+          "element_order_transport": true,
+          "mapping": {
+            "b0": "a0",
+            "b1": "a2",
+            "b2": "a6",
+            "b3": "a1",
+            "b4": "a5",
+            "b5": "a7",
+            "b6": "a3",
+            "b7": "a4"
+          },
+          "mapping_sha256": "eb14ea78fd24adfcb8f087480bb06ca736fce193da9e77837668a0b1978e71e2"
+        },
+        {
+          "certificate": {
+            "bijective": true,
+            "first_failure": null,
+            "homomorphism_cases": 64,
+            "homomorphism_failure_count": 0,
+            "ordinary_isomorphism_holds": true,
+            "total": true
+          },
+          "element_order_transport": true,
+          "mapping": {
+            "b0": "a0",
+            "b1": "a4",
+            "b2": "a3",
+            "b3": "a7",
+            "b4": "a5",
+            "b5": "a1",
+            "b6": "a6",
+            "b7": "a2"
+          },
+          "mapping_sha256": "b89e537c5d1f95ec79c6a2a9b3bb8aca74169e2930321426cb62b25053fd5cdc"
+        },
+        {
+          "certificate": {
+            "bijective": true,
+            "first_failure": null,
+            "homomorphism_cases": 64,
+            "homomorphism_failure_count": 0,
+            "ordinary_isomorphism_holds": true,
+            "total": true
+          },
+          "element_order_transport": true,
+          "mapping": {
+            "b0": "a0",
+            "b1": "a4",
+            "b2": "a6",
+            "b3": "a2",
+            "b4": "a5",
+            "b5": "a1",
+            "b6": "a3",
+            "b7": "a7"
+          },
+          "mapping_sha256": "1bdd154297816d4347e65ffaef875800b031fa59539823b76e38acdd15a86e01"
+        },
+        {
+          "certificate": {
+            "bijective": true,
+            "first_failure": null,
+            "homomorphism_cases": 64,
+            "homomorphism_failure_count": 0,
+            "ordinary_isomorphism_holds": true,
+            "total": true
+          },
+          "element_order_transport": true,
+          "mapping": {
+            "b0": "a0",
+            "b1": "a7",
+            "b2": "a3",
+            "b3": "a1",
+            "b4": "a5",
+            "b5": "a2",
+            "b6": "a6",
+            "b7": "a4"
+          },
+          "mapping_sha256": "7e95b6e1495040ec3bc59e2a4052f660ccfc413e2decbf2a8bf92e9d9cd5596a"
+        },
+        {
+          "certificate": {
+            "bijective": true,
+            "first_failure": null,
+            "homomorphism_cases": 64,
+            "homomorphism_failure_count": 0,
+            "ordinary_isomorphism_holds": true,
+            "total": true
+          },
+          "element_order_transport": true,
+          "mapping": {
+            "b0": "a0",
+            "b1": "a7",
+            "b2": "a6",
+            "b3": "a4",
+            "b4": "a5",
+            "b5": "a2",
+            "b6": "a3",
+            "b7": "a1"
+          },
+          "mapping_sha256": "2ed9edd6141b61d52b3a4a7faf5eea66e34059880c1783a4b44afc7c16357fd8"
+        }
+      ],
+      "independent_contact": false,
+      "status": "PROVED_ORDINARY_ISOMORPHISM"
+    },
+    {
+      "case": "equality_collapse",
+      "certificates": [
+        {
+          "certificate": {
+            "bijective": false,
+            "first_failure": {
+              "check": "multiplication",
+              "expected": "a6",
+              "input": [
+                "b1",
+                "b2"
+              ],
+              "observed": "a3"
+            },
+            "homomorphism_cases": 64,
+            "homomorphism_failure_count": 16,
+            "ordinary_isomorphism_holds": false,
+            "total": true
+          },
+          "element_order_transport": false,
+          "mapping": {
+            "b0": "a0",
+            "b1": "a0",
+            "b2": "a3",
+            "b3": "a3",
+            "b4": "a5",
+            "b5": "a5",
+            "b6": "a6",
+            "b7": "a6"
+          },
+          "mapping_sha256": "340f4d97eedc125a477768c38db7cab4b8d4716cf4ffe0e0253d18517afaccdb"
+        }
+      ],
+      "independent_contact": false,
+      "status": "COUNTEREXAMPLE"
+    },
+    {
+      "case": "operation_twist",
+      "certificates": [
+        {
+          "certificate": {
+            "bijective": true,
+            "first_failure": {
+              "check": "multiplication",
+              "expected": "a7",
+              "input": [
+                "b1",
+                "b2"
+              ],
+              "observed": "a1"
+            },
+            "homomorphism_cases": 64,
+            "homomorphism_failure_count": 30,
+            "ordinary_isomorphism_holds": false,
+            "total": true
+          },
+          "element_order_transport": false,
+          "mapping": {
+            "b0": "a0",
+            "b1": "a2",
+            "b2": "a3",
+            "b3": "a1",
+            "b4": "a5",
+            "b5": "a4",
+            "b6": "a6",
+            "b7": "a7"
+          },
+          "mapping_sha256": "a5d9675d4fd24501ed06069fbe73b9b30b4b69676f4de8e74936f2b657e57aa5"
+        }
+      ],
+      "independent_contact": false,
+      "status": "COUNTEREXAMPLE"
+    },
+    {
+      "case": "partial_comparison",
+      "certificates": [
+        {
+          "certificate": {
+            "bijective": false,
+            "first_failure": null,
+            "homomorphism_cases": 0,
+            "homomorphism_failure_count": 0,
+            "ordinary_isomorphism_holds": false,
+            "total": false
+          },
+          "element_order_transport": false,
+          "mapping": {
+            "b0": "a0",
+            "b1": "a1",
+            "b2": "a3",
+            "b3": "a2"
+          },
+          "mapping_sha256": "78606f914a09818a7e3835d39d010b2bf5ce58e2e080240a2d865c0e0e166b0d"
+        }
+      ],
+      "independent_contact": false,
+      "status": "PENDING_COMPARISON"
+    },
+    {
+      "case": "self_certification_only",
+      "certificates": [],
+      "independent_contact": false,
+      "status": "UNSELECTED_COMPARISON"
+    }
+  ],
+  "claim_boundary": "bounded proof/isomorphism verifier, not an ASI",
+  "frame_relative_question_interface": {
+    "bare_open_label_emitted": false,
+    "reason": "local kernel and ordinary isomorphism acceptance do not themselves emit frame-quotient or witnessed OpenIn records",
+    "status": "NOT_MEASURED_BY_ARM"
+  },
+  "local_kernel_certificates": {
+    "A": {
+      "associativity_cases": 512,
+      "associativity_failure_count": 0,
+      "first_associativity_failure": null,
+      "identity": "a0",
+      "identity_candidates": [
+        "a0"
+      ],
+      "inverses": {
+        "a0": "a0",
+        "a1": "a1",
+        "a2": "a2",
+        "a3": "a6",
+        "a4": "a4",
+        "a5": "a5",
+        "a6": "a3",
+        "a7": "a7"
+      },
+      "orders": {
+        "a0": 1,
+        "a1": 2,
+        "a2": 2,
+        "a3": 4,
+        "a4": 2,
+        "a5": 2,
+        "a6": 4,
+        "a7": 2
+      },
+      "passed": true
+    },
+    "B": {
+      "associativity_cases": 512,
+      "associativity_failure_count": 0,
+      "first_associativity_failure": null,
+      "identity": "b0",
+      "identity_candidates": [
+        "b0"
+      ],
+      "inverses": {
+        "b0": "b0",
+        "b1": "b1",
+        "b2": "b6",
+        "b3": "b3",
+        "b4": "b4",
+        "b5": "b5",
+        "b6": "b2",
+        "b7": "b7"
+      },
+      "orders": {
+        "b0": 1,
+        "b1": 2,
+        "b2": 4,
+        "b3": 2,
+        "b4": 2,
+        "b5": 2,
+        "b6": 4,
+        "b7": 2
+      },
+      "passed": true
+    }
+  },
+  "ordinary_structural_isomorphism_count": 8,
+  "schema_version": 2,
+  "shared_manifest_sha256": "31824d2a1242c586e03a24e20acb21bed10a0bf0f3e7a7d503a179d266c1aa04",
+  "status": "PASS"
+}

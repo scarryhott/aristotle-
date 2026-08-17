@@ -1,0 +1,102 @@
+{
+  "admissible_outcomes": [
+    "SHARED_FINDING",
+    "CLOSURE_ADDITIONAL_CERTIFICATE",
+    "NOT_MEASURED_BY_ARM",
+    "PENDING_COMPARISON",
+    "UNSELECTED_COMPARISON",
+    "COUNTEREXAMPLE"
+  ],
+  "arms": {
+    "closure": {
+      "contract": "Precommit each novel axiom geometry as a local admitted equality; instantiate and audit it in its own local terms; freeze it and each total question before comparison search; promote a raw candidate T only after preservation and reflection of equality, then carry an explicit (T, phi, pi) translational form through return, operation, orientation, curvature, quotient factorization, witnessed openness, and next-basis transfer.",
+      "required_order": [
+        "precommitted local axiom-geometry assumptions",
+        "internally audited and frozen frame equalities",
+        "raw candidate comparison T",
+        "GeomEquiv admission by preservation and reflection",
+        "explicit translational form (T, phi, pi)",
+        "return, extension, reversal, curvature, and operation naturality",
+        "quotient ResolvedIn or witnessed OpenIn with translation lineage",
+        "next-basis transfer with translation lineage"
+      ]
+    },
+    "fixed_frame": {
+      "contract": "Check each frozen local algebra and every supplied cross-presentation map using ordinary group/isomorphism verification. This is a strong baseline: it may accept noncanonical isomorphisms and orientation reversal.",
+      "not_in_contract": [
+        "constructing Pole x B occurrence fibres",
+        "choosing frame equality after seeing a comparison",
+        "emitting a bare OPEN label",
+        "treating lack of a unique isomorphism as failure"
+      ]
+    }
+  },
+  "benchmark": "D4-fixed-frame-vs-translational-closure-v2",
+  "claim_boundary": "Executed bounded comparative proxy; neither arm is an actual ASI or Aristotle run. The experiment compares verification architectures over identical frozen symbolic artifacts, not model capability.",
+  "comparative_hypothesis": "An explicit origin-free ReferenceFrame/GeomEquiv pipeline produces auditable cross-presentation transport, obstruction, and frame-qualified resolution/openness certificates that per-artifact kernel acceptance plus standard isomorphism checking does not itself record.",
+  "falsification": [
+    "The arms do not receive byte-identical frozen mathematical inputs.",
+    "A frame equality or total question is revised after a candidate comparison is inspected.",
+    "The fixed-frame baseline rejects a valid ordinary isomorphism merely because it is noncanonical or reverses orientation.",
+    "The closure arm classifies missing data or non-selection as OpenIn.",
+    "The closure arm emits OpenIn without x~y and Q(x)!=Q(y).",
+    "The closure arm must secretly privilege a canonical frame to produce its certificates.",
+    "On richer paired studies, the strong fixed-frame baseline recovers the same auditable relations with equal or lower cost."
+  ],
+  "frontier_scaleup_contract": {
+    "allowed_tools": "precommit the same model, proof kernels, retrieval tools, and resource limits for both verification arms",
+    "artifact_requirements": [
+      "carrier and local operations or axioms",
+      "locally assumed admitted equality geometry and its internal coherence obligations",
+      "total question definitions",
+      "proof-kernel outputs",
+      "immutable content hashes"
+    ],
+    "budget_rule": "record equal model and tool access plus wall time, tokens, proof-check time, and evidence bytes",
+    "candidate_rule": "candidate search begins only after both local axiom-geometry assumptions, their instantiated equality tables, and all total questions are frozen",
+    "geometry_rule": "A novel geometry is evaluated under its own precommitted admitted equality. The evaluator may report an internal coherence counterexample but may not redefine that equality after seeing another frame or a candidate translator."
+  },
+  "precommitted_questions": [
+    {
+      "id": "local_group_validity",
+      "measured_by": ["fixed_frame", "closure"]
+    },
+    {
+      "id": "ordinary_cross_presentation_isomorphism",
+      "measured_by": ["fixed_frame", "closure"]
+    },
+    {
+      "id": "returned_identity_through_frame_quotient",
+      "measured_by": ["closure"]
+    },
+    {
+      "id": "literal_pole_in_closure_frame",
+      "measured_by": ["closure"],
+      "required_open_evidence": "explicit frame-equal separating pair"
+    },
+    {
+      "id": "literal_pole_in_discrete_control_frame",
+      "measured_by": ["closure"]
+    },
+    {
+      "id": "non_natural_deformation",
+      "measured_by": ["fixed_frame", "closure"]
+    },
+    {
+      "id": "next_basis_transfer",
+      "measured_by": ["closure"]
+    }
+  ],
+  "schema_version": 2,
+  "shared_input": {
+    "candidate_visibility": "Both arms receive the same raw post-freeze candidate maps. Neither receives the other arm's verdicts.",
+    "source": "Fresh deterministic executions of the two isolated D4 learners, followed by isolated instantiation and internal audit of each precommitted local axiom-geometry assumption before candidate construction.",
+    "source_boundary": "The bounded fixture supplies independently learned and frozen presentations; it is not frontier-agent evidence."
+  },
+  "success_is_not": [
+    "more OPEN labels",
+    "proof that ordinary mathematics cannot express isomorphism",
+    "proof that closure ASI is more capable",
+    "an Aristotle or open-ended ASI result"
+  ]
+}

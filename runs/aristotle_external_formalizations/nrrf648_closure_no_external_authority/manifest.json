@@ -1,0 +1,23 @@
+{
+  "stage": "external_formalization_intake",
+  "status": "reported_complete_outside_checkout",
+  "sdk": {"package": "aristotlelib", "version": "2.1.0"},
+  "project_id": "068068ee-b720-4df1-a203-571e0928ec3d",
+  "task_id": "f65bba40-3a38-43de-8171-d674a64fb31b",
+  "task_status": "COMPLETE",
+  "artifact": {
+    "result_tar_sha256": "4f5b4d28422db7148d457c440f4bb65acc71845768c57bd708336884e2356819",
+    "lean_source": "NRRF648ClosureNoExternalAuthorityConceptualFormTranslation.lean",
+    "lean_source_sha256": "e4643d86577859bf2659a417d42683e65f52e6605fdb899b0021d8cbae6e0321",
+    "notes": "CLOSURE_NO_EXTERNAL_AUTHORITY_NRRF648_NOTES.md",
+    "notes_sha256": "9c59580f80c55e5b767ef2edf45ff0756bce0938c19639226e54a7de8d3e1930"
+  },
+  "reported_scope": [
+    "originless torsor continuum and perspective charts",
+    "closure characterized by internal closed-form data",
+    "translation and homeomorphism naturality",
+    "identification with data as a separate map",
+    "counterexample to exact closure transport under continuity alone"
+  ],
+  "claim_boundary": "The exact source is retained in the downloaded external artifact, not imported into this checkout or registered as a lake build root. Its reported proofs are not local machine-checked evidence until the source and matching dependency environment are imported and rebuilt."
+}

@@ -1,0 +1,1773 @@
+{
+  "axiom_geometry_relation": {
+    "axiom_geometry_groupoid_realized": true,
+    "candidate_counterexample_witnessed": true,
+    "coherent_geom_equiv_count": 8,
+    "geom_equiv_definition": "translation preserves and reflects admitted equality",
+    "independent_contact_witnessed": false,
+    "interpretation": "coherent alternatives are equivalent axiom geometries, not ambiguity inside fixed axioms",
+    "reference_frame_definition": "a carrier with its admitted equality",
+    "selected_by_independent_contact": false,
+    "selected_comparison_is_geom_equiv": false,
+    "selected_comparison_is_natural": false,
+    "selected_geom_equiv_sha256": "9421b9074f15b9cbe6a657a57978c48e1d89f1413fe97e6880634e5191669ec8",
+    "translational_closure_family_realized": true
+  },
+  "basis_admission": {
+    "admitted": false,
+    "reason": "no actual independently selected GeomEquiv for this branch"
+  },
+  "benchmark": "D4-independent-full-stack-axiom-geometry-v4",
+  "case": "non_natural_deformation",
+  "contradiction_count": 1,
+  "episode_role": "counterfactual_control",
+  "first_contradiction": {
+    "check": "geom_equiv_reflects_equality",
+    "expected": true,
+    "input": [
+      [
+        "zero",
+        "b0"
+      ],
+      [
+        "zero",
+        "b1"
+      ]
+    ],
+    "observed": false,
+    "reason": null
+  },
+  "first_pending_verification": null,
+  "frame_conditional_questions": [
+    {
+      "equality_comparisons": 256,
+      "factorization": {
+        "factor_sha256": "3ee8605af3a491535311e426a586d0c859dc200d2f7e0ad3a1543fb756e0f49e",
+        "quotient_class_count": 8,
+        "through_frame_quotient": true,
+        "unique": true
+      },
+      "frame_equality": "closure equality W_B(x)=W_B(y)",
+      "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+      "open_in_frame": false,
+      "open_witness": null,
+      "question_id": "returned_identity",
+      "resolved_in_frame": true,
+      "separating_pair_count": 0
+    },
+    {
+      "equality_comparisons": 256,
+      "factorization": {
+        "factor_sha256": "86a5e1bf9c57269d7ae33f7fa0a8aac5b5518faa6828e41562f988dca3d8f144",
+        "quotient_class_count": 8,
+        "through_frame_quotient": true,
+        "unique": true
+      },
+      "frame_equality": "closure equality W_A(x)=W_A(y)",
+      "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+      "open_in_frame": false,
+      "open_witness": null,
+      "question_id": "translated_returned_identity",
+      "resolved_in_frame": true,
+      "separating_pair_count": 0
+    },
+    {
+      "equality_comparisons": 256,
+      "factorization": null,
+      "frame_equality": "closure equality W_B(x)=W_B(y)",
+      "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+      "open_in_frame": true,
+      "open_witness": {
+        "frame_equal": true,
+        "left": [
+          "zero",
+          "b0"
+        ],
+        "left_value": "zero",
+        "right": [
+          "infinity",
+          "b0"
+        ],
+        "right_value": "infinity"
+      },
+      "question_id": "literal_pole_presentation",
+      "resolved_in_frame": false,
+      "separating_pair_count": 16
+    },
+    {
+      "equality_comparisons": 256,
+      "factorization": null,
+      "frame_equality": "closure equality W_A(x)=W_A(y)",
+      "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+      "open_in_frame": true,
+      "open_witness": {
+        "frame_equal": true,
+        "left": [
+          "zero",
+          "a0"
+        ],
+        "left_value": "zero",
+        "right": [
+          "infinity",
+          "a0"
+        ],
+        "right_value": "infinity"
+      },
+      "question_id": "translated_literal_pole_presentation",
+      "resolved_in_frame": false,
+      "separating_pair_count": 16
+    },
+    {
+      "equality_comparisons": 256,
+      "factorization": {
+        "factor_sha256": "be9a09e504a857ac984da5c7564b9e9ea34f0c712007863f6c2f4308c2b19097",
+        "quotient_class_count": 16,
+        "through_frame_quotient": true,
+        "unique": true
+      },
+      "frame_equality": "discrete equality x=y",
+      "frame_id": "7d35f0a5b41fedd529d6c3109690ddacce1278ff30fbcc9afc23d6c8a93d220c",
+      "open_in_frame": false,
+      "open_witness": null,
+      "question_id": "literal_pole_presentation",
+      "resolved_in_frame": true,
+      "separating_pair_count": 0
+    }
+  ],
+  "pending_verification_count": 0,
+  "precommit_sha256": "6b6b72dcffcb607af720b966bd3081b7a2ca2f8e1d964b459c26387489811298",
+  "relational_disclosure": null,
+  "schema_version": 4,
+  "selected_geom_equiv": {
+    "axiom_geometry": {
+      "geom_equiv_holds": false,
+      "geom_equiv_sha256": "9421b9074f15b9cbe6a657a57978c48e1d89f1413fe97e6880634e5191669ec8",
+      "preserves_admitted_equality": true,
+      "reference_frames": {
+        "source_closure": {
+          "admitted_equality": "W_B(x)=W_B(y)",
+          "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521"
+        },
+        "source_discrete_control": {
+          "admitted_equality": "x=y",
+          "frame_id": "7d35f0a5b41fedd529d6c3109690ddacce1278ff30fbcc9afc23d6c8a93d220c"
+        },
+        "target_closure": {
+          "admitted_equality": "W_A(x)=W_A(y)",
+          "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b"
+        }
+      },
+      "reflects_admitted_equality": false
+    },
+    "axiom_geometry_equivalence_holds": false,
+    "basis_translation_phi": {
+      "b0": "a0",
+      "b1": "a0",
+      "b2": "a3",
+      "b3": "a3",
+      "b4": "a5",
+      "b5": "a5",
+      "b6": "a6",
+      "b7": "a6"
+    },
+    "curvature_C": "the chosen pole section transported through pi",
+    "extension_E": "E_l(p,b)=(p,b)",
+    "failure_count": 49,
+    "first_failure": {
+      "check": "geom_equiv_reflects_equality",
+      "expected": true,
+      "input": [
+        [
+          "zero",
+          "b0"
+        ],
+        [
+          "zero",
+          "b1"
+        ]
+      ],
+      "observed": false,
+      "reason": null
+    },
+    "laws": {
+      "T_C_cases": 16,
+      "T_C_failure_count": 0,
+      "T_J_cases": 16,
+      "T_J_failure_count": 0,
+      "T_ext_cases": 16,
+      "T_ext_failure_count": 0,
+      "T_ret_cases": 16,
+      "T_ret_failure_count": 0,
+      "geom_equiv_preservation_cases": 256,
+      "geom_equiv_preservation_failure_count": 0,
+      "geom_equiv_reflection_cases": 256,
+      "geom_equiv_reflection_failure_count": 32,
+      "phi_is_bijection": false,
+      "phi_operation_cases": 64,
+      "phi_operation_failure_count": 16
+    },
+    "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+    "orientation_translation_pi": "preserved",
+    "polar_section": {
+      "natural_through_pi": true,
+      "return_splits": true,
+      "reversal_exchanges_sections": true,
+      "source_pole": "zero",
+      "target_pole": "zero"
+    },
+    "question_relations": [
+      {
+        "equality_comparisons": 256,
+        "factorization": {
+          "factor_sha256": "3ee8605af3a491535311e426a586d0c859dc200d2f7e0ad3a1543fb756e0f49e",
+          "quotient_class_count": 8,
+          "through_frame_quotient": true,
+          "unique": true
+        },
+        "frame_equality": "closure equality W_B(x)=W_B(y)",
+        "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+        "open_in_frame": false,
+        "open_witness": null,
+        "question_id": "returned_identity",
+        "resolved_in_frame": true,
+        "separating_pair_count": 0
+      },
+      {
+        "equality_comparisons": 256,
+        "factorization": {
+          "factor_sha256": "86a5e1bf9c57269d7ae33f7fa0a8aac5b5518faa6828e41562f988dca3d8f144",
+          "quotient_class_count": 8,
+          "through_frame_quotient": true,
+          "unique": true
+        },
+        "frame_equality": "closure equality W_A(x)=W_A(y)",
+        "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+        "open_in_frame": false,
+        "open_witness": null,
+        "question_id": "translated_returned_identity",
+        "resolved_in_frame": true,
+        "separating_pair_count": 0
+      },
+      {
+        "equality_comparisons": 256,
+        "factorization": null,
+        "frame_equality": "closure equality W_B(x)=W_B(y)",
+        "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+        "open_in_frame": true,
+        "open_witness": {
+          "frame_equal": true,
+          "left": [
+            "zero",
+            "b0"
+          ],
+          "left_value": "zero",
+          "right": [
+            "infinity",
+            "b0"
+          ],
+          "right_value": "infinity"
+        },
+        "question_id": "literal_pole_presentation",
+        "resolved_in_frame": false,
+        "separating_pair_count": 16
+      },
+      {
+        "equality_comparisons": 256,
+        "factorization": null,
+        "frame_equality": "closure equality W_A(x)=W_A(y)",
+        "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+        "open_in_frame": true,
+        "open_witness": {
+          "frame_equal": true,
+          "left": [
+            "zero",
+            "a0"
+          ],
+          "left_value": "zero",
+          "right": [
+            "infinity",
+            "a0"
+          ],
+          "right_value": "infinity"
+        },
+        "question_id": "translated_literal_pole_presentation",
+        "resolved_in_frame": false,
+        "separating_pair_count": 16
+      },
+      {
+        "equality_comparisons": 256,
+        "factorization": {
+          "factor_sha256": "be9a09e504a857ac984da5c7564b9e9ea34f0c712007863f6c2f4308c2b19097",
+          "quotient_class_count": 16,
+          "through_frame_quotient": true,
+          "unique": true
+        },
+        "frame_equality": "discrete equality x=y",
+        "frame_id": "7d35f0a5b41fedd529d6c3109690ddacce1278ff30fbcc9afc23d6c8a93d220c",
+        "open_in_frame": false,
+        "open_witness": null,
+        "question_id": "literal_pole_presentation",
+        "resolved_in_frame": true,
+        "separating_pair_count": 0
+      }
+    ],
+    "question_transport": {
+      "language_independent": true,
+      "open_questions_transport": true,
+      "resolved_questions_transport": true
+    },
+    "quotient_basis": {
+      "closure_equality_classes": 8,
+      "fibre_size": 2,
+      "occurrences_per_language": 16,
+      "quotient_equivalent_to_basis": true
+    },
+    "return_W": "W_l(p,b)=b",
+    "reversal_J": "J_l(p,b)=(other(p),b)",
+    "translational_naturality_holds": false,
+    "universal_factorization": {
+      "closure_respecting_evaluators_checked_per_language": 256,
+      "codomain": "Bool",
+      "pole_sensitive_nonfactor_example_rejected": true,
+      "unique_factorizations_through_W": 256
+    }
+  },
+  "self_certification_observed": false,
+  "self_certification_used_as_relative_contact": false,
+  "structural_geom_equivs": [
+    {
+      "axiom_geometry": {
+        "geom_equiv_holds": true,
+        "geom_equiv_sha256": "365803792e470c61421f48bd57178e15a78e3e1862f40efc2d9b45f0fb8d5905",
+        "preserves_admitted_equality": true,
+        "reference_frames": {
+          "source_closure": {
+            "admitted_equality": "W_B(x)=W_B(y)",
+            "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521"
+          },
+          "source_discrete_control": {
+            "admitted_equality": "x=y",
+            "frame_id": "7d35f0a5b41fedd529d6c3109690ddacce1278ff30fbcc9afc23d6c8a93d220c"
+          },
+          "target_closure": {
+            "admitted_equality": "W_A(x)=W_A(y)",
+            "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b"
+          }
+        },
+        "reflects_admitted_equality": true
+      },
+      "axiom_geometry_equivalence_holds": true,
+      "basis_translation_phi": {
+        "b0": "a0",
+        "b1": "a1",
+        "b2": "a3",
+        "b3": "a2",
+        "b4": "a5",
+        "b5": "a4",
+        "b6": "a6",
+        "b7": "a7"
+      },
+      "curvature_C": "the chosen pole section transported through pi",
+      "extension_E": "E_l(p,b)=(p,b)",
+      "failure_count": 0,
+      "first_failure": null,
+      "laws": {
+        "T_C_cases": 16,
+        "T_C_failure_count": 0,
+        "T_J_cases": 16,
+        "T_J_failure_count": 0,
+        "T_ext_cases": 16,
+        "T_ext_failure_count": 0,
+        "T_ret_cases": 16,
+        "T_ret_failure_count": 0,
+        "geom_equiv_preservation_cases": 256,
+        "geom_equiv_preservation_failure_count": 0,
+        "geom_equiv_reflection_cases": 256,
+        "geom_equiv_reflection_failure_count": 0,
+        "phi_is_bijection": true,
+        "phi_operation_cases": 64,
+        "phi_operation_failure_count": 0
+      },
+      "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+      "orientation_translation_pi": "preserved",
+      "polar_section": {
+        "natural_through_pi": true,
+        "return_splits": true,
+        "reversal_exchanges_sections": true,
+        "source_pole": "zero",
+        "target_pole": "zero"
+      },
+      "question_relations": [
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "3ee8605af3a491535311e426a586d0c859dc200d2f7e0ad3a1543fb756e0f49e",
+            "quotient_class_count": 8,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "closure equality W_B(x)=W_B(y)",
+          "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "returned_identity",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "86a5e1bf9c57269d7ae33f7fa0a8aac5b5518faa6828e41562f988dca3d8f144",
+            "quotient_class_count": 8,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "closure equality W_A(x)=W_A(y)",
+          "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "translated_returned_identity",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": null,
+          "frame_equality": "closure equality W_B(x)=W_B(y)",
+          "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+          "open_in_frame": true,
+          "open_witness": {
+            "frame_equal": true,
+            "left": [
+              "zero",
+              "b0"
+            ],
+            "left_value": "zero",
+            "right": [
+              "infinity",
+              "b0"
+            ],
+            "right_value": "infinity"
+          },
+          "question_id": "literal_pole_presentation",
+          "resolved_in_frame": false,
+          "separating_pair_count": 16
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": null,
+          "frame_equality": "closure equality W_A(x)=W_A(y)",
+          "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+          "open_in_frame": true,
+          "open_witness": {
+            "frame_equal": true,
+            "left": [
+              "zero",
+              "a0"
+            ],
+            "left_value": "zero",
+            "right": [
+              "infinity",
+              "a0"
+            ],
+            "right_value": "infinity"
+          },
+          "question_id": "translated_literal_pole_presentation",
+          "resolved_in_frame": false,
+          "separating_pair_count": 16
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "be9a09e504a857ac984da5c7564b9e9ea34f0c712007863f6c2f4308c2b19097",
+            "quotient_class_count": 16,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "discrete equality x=y",
+          "frame_id": "7d35f0a5b41fedd529d6c3109690ddacce1278ff30fbcc9afc23d6c8a93d220c",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "literal_pole_presentation",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        }
+      ],
+      "question_transport": {
+        "language_independent": true,
+        "open_questions_transport": true,
+        "resolved_questions_transport": true
+      },
+      "quotient_basis": {
+        "closure_equality_classes": 8,
+        "fibre_size": 2,
+        "occurrences_per_language": 16,
+        "quotient_equivalent_to_basis": true
+      },
+      "return_W": "W_l(p,b)=b",
+      "reversal_J": "J_l(p,b)=(other(p),b)",
+      "translational_naturality_holds": true,
+      "universal_factorization": {
+        "closure_respecting_evaluators_checked_per_language": 256,
+        "codomain": "Bool",
+        "pole_sensitive_nonfactor_example_rejected": true,
+        "unique_factorizations_through_W": 256
+      }
+    },
+    {
+      "axiom_geometry": {
+        "geom_equiv_holds": true,
+        "geom_equiv_sha256": "c0534c72021b05f589404d350ef46f53debc605a782e14634e404536d40b0bad",
+        "preserves_admitted_equality": true,
+        "reference_frames": {
+          "source_closure": {
+            "admitted_equality": "W_B(x)=W_B(y)",
+            "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521"
+          },
+          "source_discrete_control": {
+            "admitted_equality": "x=y",
+            "frame_id": "7d35f0a5b41fedd529d6c3109690ddacce1278ff30fbcc9afc23d6c8a93d220c"
+          },
+          "target_closure": {
+            "admitted_equality": "W_A(x)=W_A(y)",
+            "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b"
+          }
+        },
+        "reflects_admitted_equality": true
+      },
+      "axiom_geometry_equivalence_holds": true,
+      "basis_translation_phi": {
+        "b0": "a0",
+        "b1": "a1",
+        "b2": "a6",
+        "b3": "a7",
+        "b4": "a5",
+        "b5": "a4",
+        "b6": "a3",
+        "b7": "a2"
+      },
+      "curvature_C": "the chosen pole section transported through pi",
+      "extension_E": "E_l(p,b)=(p,b)",
+      "failure_count": 0,
+      "first_failure": null,
+      "laws": {
+        "T_C_cases": 16,
+        "T_C_failure_count": 0,
+        "T_J_cases": 16,
+        "T_J_failure_count": 0,
+        "T_ext_cases": 16,
+        "T_ext_failure_count": 0,
+        "T_ret_cases": 16,
+        "T_ret_failure_count": 0,
+        "geom_equiv_preservation_cases": 256,
+        "geom_equiv_preservation_failure_count": 0,
+        "geom_equiv_reflection_cases": 256,
+        "geom_equiv_reflection_failure_count": 0,
+        "phi_is_bijection": true,
+        "phi_operation_cases": 64,
+        "phi_operation_failure_count": 0
+      },
+      "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+      "orientation_translation_pi": "reversed",
+      "polar_section": {
+        "natural_through_pi": true,
+        "return_splits": true,
+        "reversal_exchanges_sections": true,
+        "source_pole": "infinity",
+        "target_pole": "zero"
+      },
+      "question_relations": [
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "3ee8605af3a491535311e426a586d0c859dc200d2f7e0ad3a1543fb756e0f49e",
+            "quotient_class_count": 8,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "closure equality W_B(x)=W_B(y)",
+          "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "returned_identity",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "86a5e1bf9c57269d7ae33f7fa0a8aac5b5518faa6828e41562f988dca3d8f144",
+            "quotient_class_count": 8,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "closure equality W_A(x)=W_A(y)",
+          "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "translated_returned_identity",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": null,
+          "frame_equality": "closure equality W_B(x)=W_B(y)",
+          "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+          "open_in_frame": true,
+          "open_witness": {
+            "frame_equal": true,
+            "left": [
+              "zero",
+              "b0"
+            ],
+            "left_value": "zero",
+            "right": [
+              "infinity",
+              "b0"
+            ],
+            "right_value": "infinity"
+          },
+          "question_id": "literal_pole_presentation",
+          "resolved_in_frame": false,
+          "separating_pair_count": 16
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": null,
+          "frame_equality": "closure equality W_A(x)=W_A(y)",
+          "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+          "open_in_frame": true,
+          "open_witness": {
+            "frame_equal": true,
+            "left": [
+              "zero",
+              "a0"
+            ],
+            "left_value": "zero",
+            "right": [
+              "infinity",
+              "a0"
+            ],
+            "right_value": "infinity"
+          },
+          "question_id": "translated_literal_pole_presentation",
+          "resolved_in_frame": false,
+          "separating_pair_count": 16
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "be9a09e504a857ac984da5c7564b9e9ea34f0c712007863f6c2f4308c2b19097",
+            "quotient_class_count": 16,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "discrete equality x=y",
+          "frame_id": "7d35f0a5b41fedd529d6c3109690ddacce1278ff30fbcc9afc23d6c8a93d220c",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "literal_pole_presentation",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        }
+      ],
+      "question_transport": {
+        "language_independent": true,
+        "open_questions_transport": true,
+        "resolved_questions_transport": true
+      },
+      "quotient_basis": {
+        "closure_equality_classes": 8,
+        "fibre_size": 2,
+        "occurrences_per_language": 16,
+        "quotient_equivalent_to_basis": true
+      },
+      "return_W": "W_l(p,b)=b",
+      "reversal_J": "J_l(p,b)=(other(p),b)",
+      "translational_naturality_holds": true,
+      "universal_factorization": {
+        "closure_respecting_evaluators_checked_per_language": 256,
+        "codomain": "Bool",
+        "pole_sensitive_nonfactor_example_rejected": true,
+        "unique_factorizations_through_W": 256
+      }
+    },
+    {
+      "axiom_geometry": {
+        "geom_equiv_holds": true,
+        "geom_equiv_sha256": "ca658517eb806e6545b4475e1f53e6ebc8739a6412e50f0b5dc3342bd5e8c754",
+        "preserves_admitted_equality": true,
+        "reference_frames": {
+          "source_closure": {
+            "admitted_equality": "W_B(x)=W_B(y)",
+            "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521"
+          },
+          "source_discrete_control": {
+            "admitted_equality": "x=y",
+            "frame_id": "7d35f0a5b41fedd529d6c3109690ddacce1278ff30fbcc9afc23d6c8a93d220c"
+          },
+          "target_closure": {
+            "admitted_equality": "W_A(x)=W_A(y)",
+            "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b"
+          }
+        },
+        "reflects_admitted_equality": true
+      },
+      "axiom_geometry_equivalence_holds": true,
+      "basis_translation_phi": {
+        "b0": "a0",
+        "b1": "a2",
+        "b2": "a3",
+        "b3": "a4",
+        "b4": "a5",
+        "b5": "a7",
+        "b6": "a6",
+        "b7": "a1"
+      },
+      "curvature_C": "the chosen pole section transported through pi",
+      "extension_E": "E_l(p,b)=(p,b)",
+      "failure_count": 0,
+      "first_failure": null,
+      "laws": {
+        "T_C_cases": 16,
+        "T_C_failure_count": 0,
+        "T_J_cases": 16,
+        "T_J_failure_count": 0,
+        "T_ext_cases": 16,
+        "T_ext_failure_count": 0,
+        "T_ret_cases": 16,
+        "T_ret_failure_count": 0,
+        "geom_equiv_preservation_cases": 256,
+        "geom_equiv_preservation_failure_count": 0,
+        "geom_equiv_reflection_cases": 256,
+        "geom_equiv_reflection_failure_count": 0,
+        "phi_is_bijection": true,
+        "phi_operation_cases": 64,
+        "phi_operation_failure_count": 0
+      },
+      "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+      "orientation_translation_pi": "preserved",
+      "polar_section": {
+        "natural_through_pi": true,
+        "return_splits": true,
+        "reversal_exchanges_sections": true,
+        "source_pole": "zero",
+        "target_pole": "zero"
+      },
+      "question_relations": [
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "3ee8605af3a491535311e426a586d0c859dc200d2f7e0ad3a1543fb756e0f49e",
+            "quotient_class_count": 8,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "closure equality W_B(x)=W_B(y)",
+          "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "returned_identity",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "86a5e1bf9c57269d7ae33f7fa0a8aac5b5518faa6828e41562f988dca3d8f144",
+            "quotient_class_count": 8,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "closure equality W_A(x)=W_A(y)",
+          "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "translated_returned_identity",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": null,
+          "frame_equality": "closure equality W_B(x)=W_B(y)",
+          "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+          "open_in_frame": true,
+          "open_witness": {
+            "frame_equal": true,
+            "left": [
+              "zero",
+              "b0"
+            ],
+            "left_value": "zero",
+            "right": [
+              "infinity",
+              "b0"
+            ],
+            "right_value": "infinity"
+          },
+          "question_id": "literal_pole_presentation",
+          "resolved_in_frame": false,
+          "separating_pair_count": 16
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": null,
+          "frame_equality": "closure equality W_A(x)=W_A(y)",
+          "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+          "open_in_frame": true,
+          "open_witness": {
+            "frame_equal": true,
+            "left": [
+              "zero",
+              "a0"
+            ],
+            "left_value": "zero",
+            "right": [
+              "infinity",
+              "a0"
+            ],
+            "right_value": "infinity"
+          },
+          "question_id": "translated_literal_pole_presentation",
+          "resolved_in_frame": false,
+          "separating_pair_count": 16
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "be9a09e504a857ac984da5c7564b9e9ea34f0c712007863f6c2f4308c2b19097",
+            "quotient_class_count": 16,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "discrete equality x=y",
+          "frame_id": "7d35f0a5b41fedd529d6c3109690ddacce1278ff30fbcc9afc23d6c8a93d220c",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "literal_pole_presentation",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        }
+      ],
+      "question_transport": {
+        "language_independent": true,
+        "open_questions_transport": true,
+        "resolved_questions_transport": true
+      },
+      "quotient_basis": {
+        "closure_equality_classes": 8,
+        "fibre_size": 2,
+        "occurrences_per_language": 16,
+        "quotient_equivalent_to_basis": true
+      },
+      "return_W": "W_l(p,b)=b",
+      "reversal_J": "J_l(p,b)=(other(p),b)",
+      "translational_naturality_holds": true,
+      "universal_factorization": {
+        "closure_respecting_evaluators_checked_per_language": 256,
+        "codomain": "Bool",
+        "pole_sensitive_nonfactor_example_rejected": true,
+        "unique_factorizations_through_W": 256
+      }
+    },
+    {
+      "axiom_geometry": {
+        "geom_equiv_holds": true,
+        "geom_equiv_sha256": "b4edfe3e4163840a3df465447766b36a7d6b18dab0f82319f7e7a2b1d790bb5d",
+        "preserves_admitted_equality": true,
+        "reference_frames": {
+          "source_closure": {
+            "admitted_equality": "W_B(x)=W_B(y)",
+            "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521"
+          },
+          "source_discrete_control": {
+            "admitted_equality": "x=y",
+            "frame_id": "7d35f0a5b41fedd529d6c3109690ddacce1278ff30fbcc9afc23d6c8a93d220c"
+          },
+          "target_closure": {
+            "admitted_equality": "W_A(x)=W_A(y)",
+            "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b"
+          }
+        },
+        "reflects_admitted_equality": true
+      },
+      "axiom_geometry_equivalence_holds": true,
+      "basis_translation_phi": {
+        "b0": "a0",
+        "b1": "a2",
+        "b2": "a6",
+        "b3": "a1",
+        "b4": "a5",
+        "b5": "a7",
+        "b6": "a3",
+        "b7": "a4"
+      },
+      "curvature_C": "the chosen pole section transported through pi",
+      "extension_E": "E_l(p,b)=(p,b)",
+      "failure_count": 0,
+      "first_failure": null,
+      "laws": {
+        "T_C_cases": 16,
+        "T_C_failure_count": 0,
+        "T_J_cases": 16,
+        "T_J_failure_count": 0,
+        "T_ext_cases": 16,
+        "T_ext_failure_count": 0,
+        "T_ret_cases": 16,
+        "T_ret_failure_count": 0,
+        "geom_equiv_preservation_cases": 256,
+        "geom_equiv_preservation_failure_count": 0,
+        "geom_equiv_reflection_cases": 256,
+        "geom_equiv_reflection_failure_count": 0,
+        "phi_is_bijection": true,
+        "phi_operation_cases": 64,
+        "phi_operation_failure_count": 0
+      },
+      "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+      "orientation_translation_pi": "reversed",
+      "polar_section": {
+        "natural_through_pi": true,
+        "return_splits": true,
+        "reversal_exchanges_sections": true,
+        "source_pole": "infinity",
+        "target_pole": "zero"
+      },
+      "question_relations": [
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "3ee8605af3a491535311e426a586d0c859dc200d2f7e0ad3a1543fb756e0f49e",
+            "quotient_class_count": 8,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "closure equality W_B(x)=W_B(y)",
+          "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "returned_identity",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "86a5e1bf9c57269d7ae33f7fa0a8aac5b5518faa6828e41562f988dca3d8f144",
+            "quotient_class_count": 8,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "closure equality W_A(x)=W_A(y)",
+          "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "translated_returned_identity",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": null,
+          "frame_equality": "closure equality W_B(x)=W_B(y)",
+          "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+          "open_in_frame": true,
+          "open_witness": {
+            "frame_equal": true,
+            "left": [
+              "zero",
+              "b0"
+            ],
+            "left_value": "zero",
+            "right": [
+              "infinity",
+              "b0"
+            ],
+            "right_value": "infinity"
+          },
+          "question_id": "literal_pole_presentation",
+          "resolved_in_frame": false,
+          "separating_pair_count": 16
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": null,
+          "frame_equality": "closure equality W_A(x)=W_A(y)",
+          "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+          "open_in_frame": true,
+          "open_witness": {
+            "frame_equal": true,
+            "left": [
+              "zero",
+              "a0"
+            ],
+            "left_value": "zero",
+            "right": [
+              "infinity",
+              "a0"
+            ],
+            "right_value": "infinity"
+          },
+          "question_id": "translated_literal_pole_presentation",
+          "resolved_in_frame": false,
+          "separating_pair_count": 16
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "be9a09e504a857ac984da5c7564b9e9ea34f0c712007863f6c2f4308c2b19097",
+            "quotient_class_count": 16,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "discrete equality x=y",
+          "frame_id": "7d35f0a5b41fedd529d6c3109690ddacce1278ff30fbcc9afc23d6c8a93d220c",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "literal_pole_presentation",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        }
+      ],
+      "question_transport": {
+        "language_independent": true,
+        "open_questions_transport": true,
+        "resolved_questions_transport": true
+      },
+      "quotient_basis": {
+        "closure_equality_classes": 8,
+        "fibre_size": 2,
+        "occurrences_per_language": 16,
+        "quotient_equivalent_to_basis": true
+      },
+      "return_W": "W_l(p,b)=b",
+      "reversal_J": "J_l(p,b)=(other(p),b)",
+      "translational_naturality_holds": true,
+      "universal_factorization": {
+        "closure_respecting_evaluators_checked_per_language": 256,
+        "codomain": "Bool",
+        "pole_sensitive_nonfactor_example_rejected": true,
+        "unique_factorizations_through_W": 256
+      }
+    },
+    {
+      "axiom_geometry": {
+        "geom_equiv_holds": true,
+        "geom_equiv_sha256": "e9a7dd207eaaef1fa372939e8bb2019bf3aa29f01b141e4320c363c3dcaf701f",
+        "preserves_admitted_equality": true,
+        "reference_frames": {
+          "source_closure": {
+            "admitted_equality": "W_B(x)=W_B(y)",
+            "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521"
+          },
+          "source_discrete_control": {
+            "admitted_equality": "x=y",
+            "frame_id": "7d35f0a5b41fedd529d6c3109690ddacce1278ff30fbcc9afc23d6c8a93d220c"
+          },
+          "target_closure": {
+            "admitted_equality": "W_A(x)=W_A(y)",
+            "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b"
+          }
+        },
+        "reflects_admitted_equality": true
+      },
+      "axiom_geometry_equivalence_holds": true,
+      "basis_translation_phi": {
+        "b0": "a0",
+        "b1": "a4",
+        "b2": "a3",
+        "b3": "a7",
+        "b4": "a5",
+        "b5": "a1",
+        "b6": "a6",
+        "b7": "a2"
+      },
+      "curvature_C": "the chosen pole section transported through pi",
+      "extension_E": "E_l(p,b)=(p,b)",
+      "failure_count": 0,
+      "first_failure": null,
+      "laws": {
+        "T_C_cases": 16,
+        "T_C_failure_count": 0,
+        "T_J_cases": 16,
+        "T_J_failure_count": 0,
+        "T_ext_cases": 16,
+        "T_ext_failure_count": 0,
+        "T_ret_cases": 16,
+        "T_ret_failure_count": 0,
+        "geom_equiv_preservation_cases": 256,
+        "geom_equiv_preservation_failure_count": 0,
+        "geom_equiv_reflection_cases": 256,
+        "geom_equiv_reflection_failure_count": 0,
+        "phi_is_bijection": true,
+        "phi_operation_cases": 64,
+        "phi_operation_failure_count": 0
+      },
+      "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+      "orientation_translation_pi": "preserved",
+      "polar_section": {
+        "natural_through_pi": true,
+        "return_splits": true,
+        "reversal_exchanges_sections": true,
+        "source_pole": "zero",
+        "target_pole": "zero"
+      },
+      "question_relations": [
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "3ee8605af3a491535311e426a586d0c859dc200d2f7e0ad3a1543fb756e0f49e",
+            "quotient_class_count": 8,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "closure equality W_B(x)=W_B(y)",
+          "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "returned_identity",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "86a5e1bf9c57269d7ae33f7fa0a8aac5b5518faa6828e41562f988dca3d8f144",
+            "quotient_class_count": 8,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "closure equality W_A(x)=W_A(y)",
+          "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "translated_returned_identity",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": null,
+          "frame_equality": "closure equality W_B(x)=W_B(y)",
+          "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+          "open_in_frame": true,
+          "open_witness": {
+            "frame_equal": true,
+            "left": [
+              "zero",
+              "b0"
+            ],
+            "left_value": "zero",
+            "right": [
+              "infinity",
+              "b0"
+            ],
+            "right_value": "infinity"
+          },
+          "question_id": "literal_pole_presentation",
+          "resolved_in_frame": false,
+          "separating_pair_count": 16
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": null,
+          "frame_equality": "closure equality W_A(x)=W_A(y)",
+          "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+          "open_in_frame": true,
+          "open_witness": {
+            "frame_equal": true,
+            "left": [
+              "zero",
+              "a0"
+            ],
+            "left_value": "zero",
+            "right": [
+              "infinity",
+              "a0"
+            ],
+            "right_value": "infinity"
+          },
+          "question_id": "translated_literal_pole_presentation",
+          "resolved_in_frame": false,
+          "separating_pair_count": 16
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "be9a09e504a857ac984da5c7564b9e9ea34f0c712007863f6c2f4308c2b19097",
+            "quotient_class_count": 16,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "discrete equality x=y",
+          "frame_id": "7d35f0a5b41fedd529d6c3109690ddacce1278ff30fbcc9afc23d6c8a93d220c",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "literal_pole_presentation",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        }
+      ],
+      "question_transport": {
+        "language_independent": true,
+        "open_questions_transport": true,
+        "resolved_questions_transport": true
+      },
+      "quotient_basis": {
+        "closure_equality_classes": 8,
+        "fibre_size": 2,
+        "occurrences_per_language": 16,
+        "quotient_equivalent_to_basis": true
+      },
+      "return_W": "W_l(p,b)=b",
+      "reversal_J": "J_l(p,b)=(other(p),b)",
+      "translational_naturality_holds": true,
+      "universal_factorization": {
+        "closure_respecting_evaluators_checked_per_language": 256,
+        "codomain": "Bool",
+        "pole_sensitive_nonfactor_example_rejected": true,
+        "unique_factorizations_through_W": 256
+      }
+    },
+    {
+      "axiom_geometry": {
+        "geom_equiv_holds": true,
+        "geom_equiv_sha256": "22b20085778c01219e146f7c5bcc2b5e2bd0286ae33a60d5e0226ed786943411",
+        "preserves_admitted_equality": true,
+        "reference_frames": {
+          "source_closure": {
+            "admitted_equality": "W_B(x)=W_B(y)",
+            "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521"
+          },
+          "source_discrete_control": {
+            "admitted_equality": "x=y",
+            "frame_id": "7d35f0a5b41fedd529d6c3109690ddacce1278ff30fbcc9afc23d6c8a93d220c"
+          },
+          "target_closure": {
+            "admitted_equality": "W_A(x)=W_A(y)",
+            "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b"
+          }
+        },
+        "reflects_admitted_equality": true
+      },
+      "axiom_geometry_equivalence_holds": true,
+      "basis_translation_phi": {
+        "b0": "a0",
+        "b1": "a4",
+        "b2": "a6",
+        "b3": "a2",
+        "b4": "a5",
+        "b5": "a1",
+        "b6": "a3",
+        "b7": "a7"
+      },
+      "curvature_C": "the chosen pole section transported through pi",
+      "extension_E": "E_l(p,b)=(p,b)",
+      "failure_count": 0,
+      "first_failure": null,
+      "laws": {
+        "T_C_cases": 16,
+        "T_C_failure_count": 0,
+        "T_J_cases": 16,
+        "T_J_failure_count": 0,
+        "T_ext_cases": 16,
+        "T_ext_failure_count": 0,
+        "T_ret_cases": 16,
+        "T_ret_failure_count": 0,
+        "geom_equiv_preservation_cases": 256,
+        "geom_equiv_preservation_failure_count": 0,
+        "geom_equiv_reflection_cases": 256,
+        "geom_equiv_reflection_failure_count": 0,
+        "phi_is_bijection": true,
+        "phi_operation_cases": 64,
+        "phi_operation_failure_count": 0
+      },
+      "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+      "orientation_translation_pi": "reversed",
+      "polar_section": {
+        "natural_through_pi": true,
+        "return_splits": true,
+        "reversal_exchanges_sections": true,
+        "source_pole": "infinity",
+        "target_pole": "zero"
+      },
+      "question_relations": [
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "3ee8605af3a491535311e426a586d0c859dc200d2f7e0ad3a1543fb756e0f49e",
+            "quotient_class_count": 8,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "closure equality W_B(x)=W_B(y)",
+          "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "returned_identity",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "86a5e1bf9c57269d7ae33f7fa0a8aac5b5518faa6828e41562f988dca3d8f144",
+            "quotient_class_count": 8,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "closure equality W_A(x)=W_A(y)",
+          "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "translated_returned_identity",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": null,
+          "frame_equality": "closure equality W_B(x)=W_B(y)",
+          "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+          "open_in_frame": true,
+          "open_witness": {
+            "frame_equal": true,
+            "left": [
+              "zero",
+              "b0"
+            ],
+            "left_value": "zero",
+            "right": [
+              "infinity",
+              "b0"
+            ],
+            "right_value": "infinity"
+          },
+          "question_id": "literal_pole_presentation",
+          "resolved_in_frame": false,
+          "separating_pair_count": 16
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": null,
+          "frame_equality": "closure equality W_A(x)=W_A(y)",
+          "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+          "open_in_frame": true,
+          "open_witness": {
+            "frame_equal": true,
+            "left": [
+              "zero",
+              "a0"
+            ],
+            "left_value": "zero",
+            "right": [
+              "infinity",
+              "a0"
+            ],
+            "right_value": "infinity"
+          },
+          "question_id": "translated_literal_pole_presentation",
+          "resolved_in_frame": false,
+          "separating_pair_count": 16
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "be9a09e504a857ac984da5c7564b9e9ea34f0c712007863f6c2f4308c2b19097",
+            "quotient_class_count": 16,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "discrete equality x=y",
+          "frame_id": "7d35f0a5b41fedd529d6c3109690ddacce1278ff30fbcc9afc23d6c8a93d220c",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "literal_pole_presentation",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        }
+      ],
+      "question_transport": {
+        "language_independent": true,
+        "open_questions_transport": true,
+        "resolved_questions_transport": true
+      },
+      "quotient_basis": {
+        "closure_equality_classes": 8,
+        "fibre_size": 2,
+        "occurrences_per_language": 16,
+        "quotient_equivalent_to_basis": true
+      },
+      "return_W": "W_l(p,b)=b",
+      "reversal_J": "J_l(p,b)=(other(p),b)",
+      "translational_naturality_holds": true,
+      "universal_factorization": {
+        "closure_respecting_evaluators_checked_per_language": 256,
+        "codomain": "Bool",
+        "pole_sensitive_nonfactor_example_rejected": true,
+        "unique_factorizations_through_W": 256
+      }
+    },
+    {
+      "axiom_geometry": {
+        "geom_equiv_holds": true,
+        "geom_equiv_sha256": "9c5889c60219538563951e3d919c0af15fb4c63b5a550c030e9bf3d816095ab7",
+        "preserves_admitted_equality": true,
+        "reference_frames": {
+          "source_closure": {
+            "admitted_equality": "W_B(x)=W_B(y)",
+            "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521"
+          },
+          "source_discrete_control": {
+            "admitted_equality": "x=y",
+            "frame_id": "7d35f0a5b41fedd529d6c3109690ddacce1278ff30fbcc9afc23d6c8a93d220c"
+          },
+          "target_closure": {
+            "admitted_equality": "W_A(x)=W_A(y)",
+            "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b"
+          }
+        },
+        "reflects_admitted_equality": true
+      },
+      "axiom_geometry_equivalence_holds": true,
+      "basis_translation_phi": {
+        "b0": "a0",
+        "b1": "a7",
+        "b2": "a3",
+        "b3": "a1",
+        "b4": "a5",
+        "b5": "a2",
+        "b6": "a6",
+        "b7": "a4"
+      },
+      "curvature_C": "the chosen pole section transported through pi",
+      "extension_E": "E_l(p,b)=(p,b)",
+      "failure_count": 0,
+      "first_failure": null,
+      "laws": {
+        "T_C_cases": 16,
+        "T_C_failure_count": 0,
+        "T_J_cases": 16,
+        "T_J_failure_count": 0,
+        "T_ext_cases": 16,
+        "T_ext_failure_count": 0,
+        "T_ret_cases": 16,
+        "T_ret_failure_count": 0,
+        "geom_equiv_preservation_cases": 256,
+        "geom_equiv_preservation_failure_count": 0,
+        "geom_equiv_reflection_cases": 256,
+        "geom_equiv_reflection_failure_count": 0,
+        "phi_is_bijection": true,
+        "phi_operation_cases": 64,
+        "phi_operation_failure_count": 0
+      },
+      "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+      "orientation_translation_pi": "preserved",
+      "polar_section": {
+        "natural_through_pi": true,
+        "return_splits": true,
+        "reversal_exchanges_sections": true,
+        "source_pole": "zero",
+        "target_pole": "zero"
+      },
+      "question_relations": [
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "3ee8605af3a491535311e426a586d0c859dc200d2f7e0ad3a1543fb756e0f49e",
+            "quotient_class_count": 8,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "closure equality W_B(x)=W_B(y)",
+          "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "returned_identity",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "86a5e1bf9c57269d7ae33f7fa0a8aac5b5518faa6828e41562f988dca3d8f144",
+            "quotient_class_count": 8,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "closure equality W_A(x)=W_A(y)",
+          "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "translated_returned_identity",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": null,
+          "frame_equality": "closure equality W_B(x)=W_B(y)",
+          "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+          "open_in_frame": true,
+          "open_witness": {
+            "frame_equal": true,
+            "left": [
+              "zero",
+              "b0"
+            ],
+            "left_value": "zero",
+            "right": [
+              "infinity",
+              "b0"
+            ],
+            "right_value": "infinity"
+          },
+          "question_id": "literal_pole_presentation",
+          "resolved_in_frame": false,
+          "separating_pair_count": 16
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": null,
+          "frame_equality": "closure equality W_A(x)=W_A(y)",
+          "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+          "open_in_frame": true,
+          "open_witness": {
+            "frame_equal": true,
+            "left": [
+              "zero",
+              "a0"
+            ],
+            "left_value": "zero",
+            "right": [
+              "infinity",
+              "a0"
+            ],
+            "right_value": "infinity"
+          },
+          "question_id": "translated_literal_pole_presentation",
+          "resolved_in_frame": false,
+          "separating_pair_count": 16
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "be9a09e504a857ac984da5c7564b9e9ea34f0c712007863f6c2f4308c2b19097",
+            "quotient_class_count": 16,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "discrete equality x=y",
+          "frame_id": "7d35f0a5b41fedd529d6c3109690ddacce1278ff30fbcc9afc23d6c8a93d220c",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "literal_pole_presentation",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        }
+      ],
+      "question_transport": {
+        "language_independent": true,
+        "open_questions_transport": true,
+        "resolved_questions_transport": true
+      },
+      "quotient_basis": {
+        "closure_equality_classes": 8,
+        "fibre_size": 2,
+        "occurrences_per_language": 16,
+        "quotient_equivalent_to_basis": true
+      },
+      "return_W": "W_l(p,b)=b",
+      "reversal_J": "J_l(p,b)=(other(p),b)",
+      "translational_naturality_holds": true,
+      "universal_factorization": {
+        "closure_respecting_evaluators_checked_per_language": 256,
+        "codomain": "Bool",
+        "pole_sensitive_nonfactor_example_rejected": true,
+        "unique_factorizations_through_W": 256
+      }
+    },
+    {
+      "axiom_geometry": {
+        "geom_equiv_holds": true,
+        "geom_equiv_sha256": "fbb442fab8778d2a0a306ea574766ad2483d0071e201894257cd745b98750ce1",
+        "preserves_admitted_equality": true,
+        "reference_frames": {
+          "source_closure": {
+            "admitted_equality": "W_B(x)=W_B(y)",
+            "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521"
+          },
+          "source_discrete_control": {
+            "admitted_equality": "x=y",
+            "frame_id": "7d35f0a5b41fedd529d6c3109690ddacce1278ff30fbcc9afc23d6c8a93d220c"
+          },
+          "target_closure": {
+            "admitted_equality": "W_A(x)=W_A(y)",
+            "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b"
+          }
+        },
+        "reflects_admitted_equality": true
+      },
+      "axiom_geometry_equivalence_holds": true,
+      "basis_translation_phi": {
+        "b0": "a0",
+        "b1": "a7",
+        "b2": "a6",
+        "b3": "a4",
+        "b4": "a5",
+        "b5": "a2",
+        "b6": "a3",
+        "b7": "a1"
+      },
+      "curvature_C": "the chosen pole section transported through pi",
+      "extension_E": "E_l(p,b)=(p,b)",
+      "failure_count": 0,
+      "first_failure": null,
+      "laws": {
+        "T_C_cases": 16,
+        "T_C_failure_count": 0,
+        "T_J_cases": 16,
+        "T_J_failure_count": 0,
+        "T_ext_cases": 16,
+        "T_ext_failure_count": 0,
+        "T_ret_cases": 16,
+        "T_ret_failure_count": 0,
+        "geom_equiv_preservation_cases": 256,
+        "geom_equiv_preservation_failure_count": 0,
+        "geom_equiv_reflection_cases": 256,
+        "geom_equiv_reflection_failure_count": 0,
+        "phi_is_bijection": true,
+        "phi_operation_cases": 64,
+        "phi_operation_failure_count": 0
+      },
+      "occurrence_translation_T": "(p,b) maps to (pi(p),phi(b))",
+      "orientation_translation_pi": "reversed",
+      "polar_section": {
+        "natural_through_pi": true,
+        "return_splits": true,
+        "reversal_exchanges_sections": true,
+        "source_pole": "infinity",
+        "target_pole": "zero"
+      },
+      "question_relations": [
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "3ee8605af3a491535311e426a586d0c859dc200d2f7e0ad3a1543fb756e0f49e",
+            "quotient_class_count": 8,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "closure equality W_B(x)=W_B(y)",
+          "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "returned_identity",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "86a5e1bf9c57269d7ae33f7fa0a8aac5b5518faa6828e41562f988dca3d8f144",
+            "quotient_class_count": 8,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "closure equality W_A(x)=W_A(y)",
+          "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "translated_returned_identity",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": null,
+          "frame_equality": "closure equality W_B(x)=W_B(y)",
+          "frame_id": "f696dedb1dcb966139f3a020076be6a4fafccacb8a1cf92b75bf6ded34b0b521",
+          "open_in_frame": true,
+          "open_witness": {
+            "frame_equal": true,
+            "left": [
+              "zero",
+              "b0"
+            ],
+            "left_value": "zero",
+            "right": [
+              "infinity",
+              "b0"
+            ],
+            "right_value": "infinity"
+          },
+          "question_id": "literal_pole_presentation",
+          "resolved_in_frame": false,
+          "separating_pair_count": 16
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": null,
+          "frame_equality": "closure equality W_A(x)=W_A(y)",
+          "frame_id": "c76fd389c122adbb00cebc38d7cdd6c4cb3c7f1bd6625957a3fcd80e8846497b",
+          "open_in_frame": true,
+          "open_witness": {
+            "frame_equal": true,
+            "left": [
+              "zero",
+              "a0"
+            ],
+            "left_value": "zero",
+            "right": [
+              "infinity",
+              "a0"
+            ],
+            "right_value": "infinity"
+          },
+          "question_id": "translated_literal_pole_presentation",
+          "resolved_in_frame": false,
+          "separating_pair_count": 16
+        },
+        {
+          "equality_comparisons": 256,
+          "factorization": {
+            "factor_sha256": "be9a09e504a857ac984da5c7564b9e9ea34f0c712007863f6c2f4308c2b19097",
+            "quotient_class_count": 16,
+            "through_frame_quotient": true,
+            "unique": true
+          },
+          "frame_equality": "discrete equality x=y",
+          "frame_id": "7d35f0a5b41fedd529d6c3109690ddacce1278ff30fbcc9afc23d6c8a93d220c",
+          "open_in_frame": false,
+          "open_witness": null,
+          "question_id": "literal_pole_presentation",
+          "resolved_in_frame": true,
+          "separating_pair_count": 0
+        }
+      ],
+      "question_transport": {
+        "language_independent": true,
+        "open_questions_transport": true,
+        "resolved_questions_transport": true
+      },
+      "quotient_basis": {
+        "closure_equality_classes": 8,
+        "fibre_size": 2,
+        "occurrences_per_language": 16,
+        "quotient_equivalent_to_basis": true
+      },
+      "return_W": "W_l(p,b)=b",
+      "reversal_J": "J_l(p,b)=(other(p),b)",
+      "translational_naturality_holds": true,
+      "universal_factorization": {
+        "closure_respecting_evaluators_checked_per_language": 256,
+        "codomain": "Bool",
+        "pole_sensitive_nonfactor_example_rejected": true,
+        "unique_factorizations_through_W": 256
+      }
+    }
+  ],
+  "tokens_issued": 0,
+  "translator_sha256": "968c99959ac55e2c4fa2ae8004b909fa98a87c05322e9ec36e8ab44cfcb4485d"
+}

@@ -1,0 +1,1655 @@
+{
+  "all_open_records_have_separating_witnesses": true,
+  "architecture": "closure_preservation_under_external_assumption_interaction",
+  "candidate_packet_revealed_after_external_frame_freeze": true,
+  "claim_boundary": "bounded external-assumption stress test; does not establish the truth of the assumptions or preservation under arbitrary mathematics",
+  "closure_preservation_definition": "identity remains recoverable through every immutable isolation by typed adjacent relations, exhaustive W/E/J/C/operation checks, relational coverage, and coherent composition",
+  "continuous_does_not_mean_topological": true,
+  "continuous_relational_identification": {
+    "adjacent_relations": [
+      {
+        "closure_lineage_complete": true,
+        "geom_equiv": {
+          "holds": true,
+          "occurrence_bijective": true,
+          "occurrence_total": true,
+          "preservation_cases": 256,
+          "preservation_failure_count": 0,
+          "reflection_cases": 256,
+          "reflection_failure_count": 0
+        },
+        "naturality": {
+          "curvature_cases": 16,
+          "curvature_failure_count": 0,
+          "extension_cases": 16,
+          "extension_failure_count": 0,
+          "holds": true,
+          "operation_cases": 64,
+          "operation_failure_count": 0,
+          "return_cases": 16,
+          "return_failure_count": 0,
+          "reversal_cases": 16,
+          "reversal_failure_count": 0
+        },
+        "relation_kind": "GEOM_EQUIV",
+        "source_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+        "target_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+        "transition_id": "02f3e8fa78ccea39959152826a69371ec48d20efda5c4844992b0dc15d66a7bd",
+        "transition_role": "closure_native_translation"
+      },
+      {
+        "closure_lineage_complete": true,
+        "geom_equiv": {
+          "bijective": true,
+          "holds": true,
+          "preservation_cases": 256,
+          "preservation_failure_count": 0,
+          "reflection_cases": 256,
+          "reflection_failure_count": 0,
+          "total": true
+        },
+        "naturality": {
+          "C_cases": 8,
+          "C_failure_count": 0,
+          "E_cases": 8,
+          "E_failure_count": 0,
+          "J_cases": 16,
+          "J_failure_count": 0,
+          "W_cases": 16,
+          "W_failure_count": 0,
+          "holds": true,
+          "operation_cases": 64,
+          "operation_failure_count": 0,
+          "translation_tuple_cases": 16,
+          "translation_tuple_failure_count": 0
+        },
+        "relation_kind": "GEOM_EQUIV",
+        "source_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+        "target_assumption_id": "bcaf6f4bb8bd03b48225be5b086be754251052d966c472cd8177717f6fa689a8",
+        "transition_id": "d29035920bb0ac9b9c7327def90ea824381668e98c6bf33e3c06774d6b5cfccf",
+        "transition_role": "external_coordinate_reexpression"
+      },
+      {
+        "closure_lineage_complete": true,
+        "coverage": {
+          "new_target_residues": [
+            "ExternalCentralIsolation/direct:a0|z1",
+            "ExternalCentralIsolation/direct:a1|z1",
+            "ExternalCentralIsolation/direct:a2|z1",
+            "ExternalCentralIsolation/direct:a3|z1",
+            "ExternalCentralIsolation/direct:a4|z1",
+            "ExternalCentralIsolation/direct:a5|z1",
+            "ExternalCentralIsolation/direct:a6|z1",
+            "ExternalCentralIsolation/direct:a7|z1",
+            "ExternalCentralIsolation/right_identity_extended:a0|z1",
+            "ExternalCentralIsolation/right_identity_extended:a1|z1",
+            "ExternalCentralIsolation/right_identity_extended:a2|z1",
+            "ExternalCentralIsolation/right_identity_extended:a3|z1",
+            "ExternalCentralIsolation/right_identity_extended:a4|z1",
+            "ExternalCentralIsolation/right_identity_extended:a5|z1",
+            "ExternalCentralIsolation/right_identity_extended:a6|z1",
+            "ExternalCentralIsolation/right_identity_extended:a7|z1"
+          ],
+          "source_total": true,
+          "target_total": true,
+          "unrelated_target_residues": []
+        },
+        "embedding_e": {
+          "ExternalCoordinate/direct:a0": "ExternalCentralIsolation/direct:a0|z0",
+          "ExternalCoordinate/direct:a1": "ExternalCentralIsolation/direct:a1|z0",
+          "ExternalCoordinate/direct:a2": "ExternalCentralIsolation/direct:a2|z0",
+          "ExternalCoordinate/direct:a3": "ExternalCentralIsolation/direct:a3|z0",
+          "ExternalCoordinate/direct:a4": "ExternalCentralIsolation/direct:a4|z0",
+          "ExternalCoordinate/direct:a5": "ExternalCentralIsolation/direct:a5|z0",
+          "ExternalCoordinate/direct:a6": "ExternalCentralIsolation/direct:a6|z0",
+          "ExternalCoordinate/direct:a7": "ExternalCentralIsolation/direct:a7|z0",
+          "ExternalCoordinate/right_identity_extended:a0": "ExternalCentralIsolation/right_identity_extended:a0|z0",
+          "ExternalCoordinate/right_identity_extended:a1": "ExternalCentralIsolation/right_identity_extended:a1|z0",
+          "ExternalCoordinate/right_identity_extended:a2": "ExternalCentralIsolation/right_identity_extended:a2|z0",
+          "ExternalCoordinate/right_identity_extended:a3": "ExternalCentralIsolation/right_identity_extended:a3|z0",
+          "ExternalCoordinate/right_identity_extended:a4": "ExternalCentralIsolation/right_identity_extended:a4|z0",
+          "ExternalCoordinate/right_identity_extended:a5": "ExternalCentralIsolation/right_identity_extended:a5|z0",
+          "ExternalCoordinate/right_identity_extended:a6": "ExternalCentralIsolation/right_identity_extended:a6|z0",
+          "ExternalCoordinate/right_identity_extended:a7": "ExternalCentralIsolation/right_identity_extended:a7|z0"
+        },
+        "equality_law": {
+          "cases": 256,
+          "failure_count": 0,
+          "first_failure": null,
+          "mode": "iff_on_embedding_image"
+        },
+        "identity_relation_S": [
+          [
+            "a0",
+            "a0|z0"
+          ],
+          [
+            "a0",
+            "a0|z1"
+          ],
+          [
+            "a1",
+            "a1|z0"
+          ],
+          [
+            "a1",
+            "a1|z1"
+          ],
+          [
+            "a2",
+            "a2|z0"
+          ],
+          [
+            "a2",
+            "a2|z1"
+          ],
+          [
+            "a3",
+            "a3|z0"
+          ],
+          [
+            "a3",
+            "a3|z1"
+          ],
+          [
+            "a4",
+            "a4|z0"
+          ],
+          [
+            "a4",
+            "a4|z1"
+          ],
+          [
+            "a5",
+            "a5|z0"
+          ],
+          [
+            "a5",
+            "a5|z1"
+          ],
+          [
+            "a6",
+            "a6|z0"
+          ],
+          [
+            "a6",
+            "a6|z1"
+          ],
+          [
+            "a7",
+            "a7|z0"
+          ],
+          [
+            "a7",
+            "a7|z1"
+          ]
+        ],
+        "naturality": {
+          "C_failure_count": 0,
+          "C_relation_cases": 16,
+          "E_failure_count": 0,
+          "E_relation_cases": 16,
+          "J_failure_count": 0,
+          "J_relation_cases": 64,
+          "W_failure_count": 0,
+          "W_relation_cases": 64,
+          "embedding_operation_cases": 64,
+          "embedding_operation_failure_count": 0,
+          "operation_cases": 256,
+          "operation_failure_count": 0
+        },
+        "occurrence_relation_R": [
+          [
+            "ExternalCoordinate/direct:a0",
+            "ExternalCentralIsolation/direct:a0|z0"
+          ],
+          [
+            "ExternalCoordinate/direct:a0",
+            "ExternalCentralIsolation/direct:a0|z1"
+          ],
+          [
+            "ExternalCoordinate/direct:a0",
+            "ExternalCentralIsolation/right_identity_extended:a0|z0"
+          ],
+          [
+            "ExternalCoordinate/direct:a0",
+            "ExternalCentralIsolation/right_identity_extended:a0|z1"
+          ],
+          [
+            "ExternalCoordinate/direct:a1",
+            "ExternalCentralIsolation/direct:a1|z0"
+          ],
+          [
+            "ExternalCoordinate/direct:a1",
+            "ExternalCentralIsolation/direct:a1|z1"
+          ],
+          [
+            "ExternalCoordinate/direct:a1",
+            "ExternalCentralIsolation/right_identity_extended:a1|z0"
+          ],
+          [
+            "ExternalCoordinate/direct:a1",
+            "ExternalCentralIsolation/right_identity_extended:a1|z1"
+          ],
+          [
+            "ExternalCoordinate/direct:a2",
+            "ExternalCentralIsolation/direct:a2|z0"
+          ],
+          [
+            "ExternalCoordinate/direct:a2",
+            "ExternalCentralIsolation/direct:a2|z1"
+          ],
+          [
+            "ExternalCoordinate/direct:a2",
+            "ExternalCentralIsolation/right_identity_extended:a2|z0"
+          ],
+          [
+            "ExternalCoordinate/direct:a2",
+            "ExternalCentralIsolation/right_identity_extended:a2|z1"
+          ],
+          [
+            "ExternalCoordinate/direct:a3",
+            "ExternalCentralIsolation/direct:a3|z0"
+          ],
+          [
+            "ExternalCoordinate/direct:a3",
+            "ExternalCentralIsolation/direct:a3|z1"
+          ],
+          [
+            "ExternalCoordinate/direct:a3",
+            "ExternalCentralIsolation/right_identity_extended:a3|z0"
+          ],
+          [
+            "ExternalCoordinate/direct:a3",
+            "ExternalCentralIsolation/right_identity_extended:a3|z1"
+          ],
+          [
+            "ExternalCoordinate/direct:a4",
+            "ExternalCentralIsolation/direct:a4|z0"
+          ],
+          [
+            "ExternalCoordinate/direct:a4",
+            "ExternalCentralIsolation/direct:a4|z1"
+          ],
+          [
+            "ExternalCoordinate/direct:a4",
+            "ExternalCentralIsolation/right_identity_extended:a4|z0"
+          ],
+          [
+            "ExternalCoordinate/direct:a4",
+            "ExternalCentralIsolation/right_identity_extended:a4|z1"
+          ],
+          [
+            "ExternalCoordinate/direct:a5",
+            "ExternalCentralIsolation/direct:a5|z0"
+          ],
+          [
+            "ExternalCoordinate/direct:a5",
+            "ExternalCentralIsolation/direct:a5|z1"
+          ],
+          [
+            "ExternalCoordinate/direct:a5",
+            "ExternalCentralIsolation/right_identity_extended:a5|z0"
+          ],
+          [
+            "ExternalCoordinate/direct:a5",
+            "ExternalCentralIsolation/right_identity_extended:a5|z1"
+          ],
+          [
+            "ExternalCoordinate/direct:a6",
+            "ExternalCentralIsolation/direct:a6|z0"
+          ],
+          [
+            "ExternalCoordinate/direct:a6",
+            "ExternalCentralIsolation/direct:a6|z1"
+          ],
+          [
+            "ExternalCoordinate/direct:a6",
+            "ExternalCentralIsolation/right_identity_extended:a6|z0"
+          ],
+          [
+            "ExternalCoordinate/direct:a6",
+            "ExternalCentralIsolation/right_identity_extended:a6|z1"
+          ],
+          [
+            "ExternalCoordinate/direct:a7",
+            "ExternalCentralIsolation/direct:a7|z0"
+          ],
+          [
+            "ExternalCoordinate/direct:a7",
+            "ExternalCentralIsolation/direct:a7|z1"
+          ],
+          [
+            "ExternalCoordinate/direct:a7",
+            "ExternalCentralIsolation/right_identity_extended:a7|z0"
+          ],
+          [
+            "ExternalCoordinate/direct:a7",
+            "ExternalCentralIsolation/right_identity_extended:a7|z1"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a0",
+            "ExternalCentralIsolation/direct:a0|z0"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a0",
+            "ExternalCentralIsolation/direct:a0|z1"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a0",
+            "ExternalCentralIsolation/right_identity_extended:a0|z0"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a0",
+            "ExternalCentralIsolation/right_identity_extended:a0|z1"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a1",
+            "ExternalCentralIsolation/direct:a1|z0"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a1",
+            "ExternalCentralIsolation/direct:a1|z1"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a1",
+            "ExternalCentralIsolation/right_identity_extended:a1|z0"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a1",
+            "ExternalCentralIsolation/right_identity_extended:a1|z1"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a2",
+            "ExternalCentralIsolation/direct:a2|z0"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a2",
+            "ExternalCentralIsolation/direct:a2|z1"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a2",
+            "ExternalCentralIsolation/right_identity_extended:a2|z0"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a2",
+            "ExternalCentralIsolation/right_identity_extended:a2|z1"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a3",
+            "ExternalCentralIsolation/direct:a3|z0"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a3",
+            "ExternalCentralIsolation/direct:a3|z1"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a3",
+            "ExternalCentralIsolation/right_identity_extended:a3|z0"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a3",
+            "ExternalCentralIsolation/right_identity_extended:a3|z1"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a4",
+            "ExternalCentralIsolation/direct:a4|z0"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a4",
+            "ExternalCentralIsolation/direct:a4|z1"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a4",
+            "ExternalCentralIsolation/right_identity_extended:a4|z0"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a4",
+            "ExternalCentralIsolation/right_identity_extended:a4|z1"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a5",
+            "ExternalCentralIsolation/direct:a5|z0"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a5",
+            "ExternalCentralIsolation/direct:a5|z1"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a5",
+            "ExternalCentralIsolation/right_identity_extended:a5|z0"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a5",
+            "ExternalCentralIsolation/right_identity_extended:a5|z1"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a6",
+            "ExternalCentralIsolation/direct:a6|z0"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a6",
+            "ExternalCentralIsolation/direct:a6|z1"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a6",
+            "ExternalCentralIsolation/right_identity_extended:a6|z0"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a6",
+            "ExternalCentralIsolation/right_identity_extended:a6|z1"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a7",
+            "ExternalCentralIsolation/direct:a7|z0"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a7",
+            "ExternalCentralIsolation/direct:a7|z1"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a7",
+            "ExternalCentralIsolation/right_identity_extended:a7|z0"
+          ],
+          [
+            "ExternalCoordinate/right_identity_extended:a7",
+            "ExternalCentralIsolation/right_identity_extended:a7|z1"
+          ]
+        ],
+        "orientation_translation_pi": "preserved_on_embedding",
+        "relation_kind": "SPLIT_EXTENSION",
+        "source_assumption_id": "bcaf6f4bb8bd03b48225be5b086be754251052d966c472cd8177717f6fa689a8",
+        "target_assumption_id": "b8e894c45e645efbf2446bca047c43c385d428e76bd738ac24d18101bcf3a604",
+        "transition_id": "5e1862483969e0dd38cc688b945ea5ade4ea1527d16df30f10e9a4f102dbc26a",
+        "typed_not_geom_equiv": true
+      },
+      {
+        "closure_lineage_complete": true,
+        "coverage": {
+          "source_total": true,
+          "target_total": true
+        },
+        "equality_law": {
+          "collapsed_fibre_pair_count": 64,
+          "first_collapsed_fibre": {
+            "check": "closure_quotient_expected_fibre",
+            "expected": false,
+            "input": [
+              "ExternalCentralIsolation/direct:a0|z0",
+              "ExternalCentralIsolation/direct:a0|z1"
+            ],
+            "observed": true
+          },
+          "mode": "quotient_preservation_with_explicit_fibres",
+          "preservation_cases": 1024,
+          "preservation_failure_count": 0,
+          "reflection_not_required_for_quotient": true
+        },
+        "naturality": {
+          "C_cases": 16,
+          "C_failure_count": 0,
+          "E_cases": 16,
+          "E_failure_count": 0,
+          "J_cases": 32,
+          "J_failure_count": 0,
+          "W_cases": 32,
+          "W_failure_count": 0,
+          "operation_cases": 256,
+          "operation_failure_count": 0
+        },
+        "orientation_translation_pi": "reversed",
+        "quotient_q": {
+          "ExternalCentralIsolation/direct:a0|z0": "right_identity_extended:a0",
+          "ExternalCentralIsolation/direct:a0|z1": "right_identity_extended:a0",
+          "ExternalCentralIsolation/direct:a1|z0": "right_identity_extended:a1",
+          "ExternalCentralIsolation/direct:a1|z1": "right_identity_extended:a1",
+          "ExternalCentralIsolation/direct:a2|z0": "right_identity_extended:a2",
+          "ExternalCentralIsolation/direct:a2|z1": "right_identity_extended:a2",
+          "ExternalCentralIsolation/direct:a3|z0": "right_identity_extended:a3",
+          "ExternalCentralIsolation/direct:a3|z1": "right_identity_extended:a3",
+          "ExternalCentralIsolation/direct:a4|z0": "right_identity_extended:a4",
+          "ExternalCentralIsolation/direct:a4|z1": "right_identity_extended:a4",
+          "ExternalCentralIsolation/direct:a5|z0": "right_identity_extended:a5",
+          "ExternalCentralIsolation/direct:a5|z1": "right_identity_extended:a5",
+          "ExternalCentralIsolation/direct:a6|z0": "right_identity_extended:a6",
+          "ExternalCentralIsolation/direct:a6|z1": "right_identity_extended:a6",
+          "ExternalCentralIsolation/direct:a7|z0": "right_identity_extended:a7",
+          "ExternalCentralIsolation/direct:a7|z1": "right_identity_extended:a7",
+          "ExternalCentralIsolation/right_identity_extended:a0|z0": "direct:a0",
+          "ExternalCentralIsolation/right_identity_extended:a0|z1": "direct:a0",
+          "ExternalCentralIsolation/right_identity_extended:a1|z0": "direct:a1",
+          "ExternalCentralIsolation/right_identity_extended:a1|z1": "direct:a1",
+          "ExternalCentralIsolation/right_identity_extended:a2|z0": "direct:a2",
+          "ExternalCentralIsolation/right_identity_extended:a2|z1": "direct:a2",
+          "ExternalCentralIsolation/right_identity_extended:a3|z0": "direct:a3",
+          "ExternalCentralIsolation/right_identity_extended:a3|z1": "direct:a3",
+          "ExternalCentralIsolation/right_identity_extended:a4|z0": "direct:a4",
+          "ExternalCentralIsolation/right_identity_extended:a4|z1": "direct:a4",
+          "ExternalCentralIsolation/right_identity_extended:a5|z0": "direct:a5",
+          "ExternalCentralIsolation/right_identity_extended:a5|z1": "direct:a5",
+          "ExternalCentralIsolation/right_identity_extended:a6|z0": "direct:a6",
+          "ExternalCentralIsolation/right_identity_extended:a6|z1": "direct:a6",
+          "ExternalCentralIsolation/right_identity_extended:a7|z0": "direct:a7",
+          "ExternalCentralIsolation/right_identity_extended:a7|z1": "direct:a7"
+        },
+        "relation_kind": "CLOSURE_QUOTIENT",
+        "source_assumption_id": "b8e894c45e645efbf2446bca047c43c385d428e76bd738ac24d18101bcf3a604",
+        "target_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+        "transition_id": "585368f70e9777cadf635f220b1d5497de85069567953f77600f29bf7ef0b2b4",
+        "typed_not_geom_equiv": true
+      }
+    ],
+    "all_new_isolation_residues_relationally_identified": true,
+    "composite_coherence": {
+      "cases": 16,
+      "direct_recomputation_agrees": true,
+      "equality_cases": 256,
+      "equality_failure_count": 0,
+      "failure_count": 0,
+      "full_relational_composite_is_native_closure_relation": true,
+      "full_relational_composition_failure_count": 0,
+      "full_relational_endpoint_pair_count": 32,
+      "full_relational_endpoint_pairs": [
+        [
+          "direct:b0",
+          "direct:a0"
+        ],
+        [
+          "direct:b0",
+          "right_identity_extended:a0"
+        ],
+        [
+          "direct:b1",
+          "direct:a1"
+        ],
+        [
+          "direct:b1",
+          "right_identity_extended:a1"
+        ],
+        [
+          "direct:b2",
+          "direct:a3"
+        ],
+        [
+          "direct:b2",
+          "right_identity_extended:a3"
+        ],
+        [
+          "direct:b3",
+          "direct:a2"
+        ],
+        [
+          "direct:b3",
+          "right_identity_extended:a2"
+        ],
+        [
+          "direct:b4",
+          "direct:a5"
+        ],
+        [
+          "direct:b4",
+          "right_identity_extended:a5"
+        ],
+        [
+          "direct:b5",
+          "direct:a4"
+        ],
+        [
+          "direct:b5",
+          "right_identity_extended:a4"
+        ],
+        [
+          "direct:b6",
+          "direct:a6"
+        ],
+        [
+          "direct:b6",
+          "right_identity_extended:a6"
+        ],
+        [
+          "direct:b7",
+          "direct:a7"
+        ],
+        [
+          "direct:b7",
+          "right_identity_extended:a7"
+        ],
+        [
+          "right_identity_extended:b0",
+          "direct:a0"
+        ],
+        [
+          "right_identity_extended:b0",
+          "right_identity_extended:a0"
+        ],
+        [
+          "right_identity_extended:b1",
+          "direct:a1"
+        ],
+        [
+          "right_identity_extended:b1",
+          "right_identity_extended:a1"
+        ],
+        [
+          "right_identity_extended:b2",
+          "direct:a3"
+        ],
+        [
+          "right_identity_extended:b2",
+          "right_identity_extended:a3"
+        ],
+        [
+          "right_identity_extended:b3",
+          "direct:a2"
+        ],
+        [
+          "right_identity_extended:b3",
+          "right_identity_extended:a2"
+        ],
+        [
+          "right_identity_extended:b4",
+          "direct:a5"
+        ],
+        [
+          "right_identity_extended:b4",
+          "right_identity_extended:a5"
+        ],
+        [
+          "right_identity_extended:b5",
+          "direct:a4"
+        ],
+        [
+          "right_identity_extended:b5",
+          "right_identity_extended:a4"
+        ],
+        [
+          "right_identity_extended:b6",
+          "direct:a6"
+        ],
+        [
+          "right_identity_extended:b6",
+          "right_identity_extended:a6"
+        ],
+        [
+          "right_identity_extended:b7",
+          "direct:a7"
+        ],
+        [
+          "right_identity_extended:b7",
+          "right_identity_extended:a7"
+        ]
+      ],
+      "selected_split_retraction_point_map": {
+        "direct:b0": "direct:a0",
+        "direct:b1": "direct:a1",
+        "direct:b2": "direct:a3",
+        "direct:b3": "direct:a2",
+        "direct:b4": "direct:a5",
+        "direct:b5": "direct:a4",
+        "direct:b6": "direct:a6",
+        "direct:b7": "direct:a7",
+        "right_identity_extended:b0": "right_identity_extended:a0",
+        "right_identity_extended:b1": "right_identity_extended:a1",
+        "right_identity_extended:b2": "right_identity_extended:a3",
+        "right_identity_extended:b3": "right_identity_extended:a2",
+        "right_identity_extended:b4": "right_identity_extended:a5",
+        "right_identity_extended:b5": "right_identity_extended:a4",
+        "right_identity_extended:b6": "right_identity_extended:a6",
+        "right_identity_extended:b7": "right_identity_extended:a7"
+      }
+    },
+    "continuity_meaning": "gap-free finite relational and receipt continuity, not topology",
+    "final_returned_basis": {
+      "axiom_geometry_basis_admitted": true,
+      "explicit_translation_lineage": {
+        "admission_observed": true,
+        "admission_required": "complete GeomEquiv and naturality closure chain",
+        "source_axiom_geometry_assumption_id": "d414f81d72f60747d4e02854cc0321af069e8d5304bee2414b8c201df86b0a59",
+        "target_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+        "translational_form_id": "02f3e8fa78ccea39959152826a69371ec48d20efda5c4844992b0dc15d66a7bd"
+      },
+      "new_execution": {
+        "expected_target_result": "a6",
+        "observed_target_result": "a6",
+        "source_result": "b6",
+        "source_word": [
+          "b2",
+          "b1",
+          "b2",
+          "b2",
+          "b1"
+        ],
+        "translated_word": [
+          "a3",
+          "a1",
+          "a3",
+          "a3",
+          "a1"
+        ]
+      },
+      "selected_geom_equiv_sha256": "365803792e470c61421f48bd57178e15a78e3e1862f40efc2d9b45f0fb8d5905"
+    },
+    "first_obstruction": null,
+    "held_out_next_basis_replay": {
+      "central_extension_result": "a6|z0",
+      "central_extension_word": [
+        "a3|z0",
+        "a1|z0",
+        "a3|z0",
+        "a3|z0",
+        "a1|z0"
+      ],
+      "closure_quotient_result": "a6",
+      "expected_returned_result": "a6",
+      "external_coordinate_result": "a6",
+      "external_coordinate_word": [
+        "a3",
+        "a1",
+        "a3",
+        "a3",
+        "a1"
+      ],
+      "native_translated_word": [
+        "a3",
+        "a1",
+        "a3",
+        "a3",
+        "a1"
+      ],
+      "passed": true,
+      "source_word": [
+        "b2",
+        "b1",
+        "b2",
+        "b2",
+        "b1"
+      ]
+    },
+    "isolation_sequence": [
+      "688b9f5e8ff8523a90348c05494ef26ba3628230c04b2d8b0097987427e79fc0",
+      "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+      "cd24f56453a2a1320b7f78784fcce187e2ed179687f20b2868921ffdb43e066e",
+      "24675e9c9bbf5ab3203dc884b9cf7e35c8db19f276ff84a4bdb6ab8dc2475eb5",
+      "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9"
+    ],
+    "lineage_count": 16,
+    "occurrence_lineages": [
+      {
+        "all_external_branches_recover_native_closure_identity": true,
+        "central_isolation_occurrences": [
+          "ExternalCentralIsolation/direct:a0|z0",
+          "ExternalCentralIsolation/direct:a0|z1",
+          "ExternalCentralIsolation/right_identity_extended:a0|z0",
+          "ExternalCentralIsolation/right_identity_extended:a0|z1"
+        ],
+        "external_coordinate_occurrence": "ExternalCoordinate/right_identity_extended:a0",
+        "native_occurrence": "direct:a0",
+        "relational_composite_is_exactly_native_closure_fibre": true,
+        "returned_occurrences": [
+          "direct:a0",
+          "right_identity_extended:a0"
+        ],
+        "selected_embedding_retraction_agrees_with_native_occurrence": true,
+        "source_occurrence": "direct:b0"
+      },
+      {
+        "all_external_branches_recover_native_closure_identity": true,
+        "central_isolation_occurrences": [
+          "ExternalCentralIsolation/direct:a1|z0",
+          "ExternalCentralIsolation/direct:a1|z1",
+          "ExternalCentralIsolation/right_identity_extended:a1|z0",
+          "ExternalCentralIsolation/right_identity_extended:a1|z1"
+        ],
+        "external_coordinate_occurrence": "ExternalCoordinate/right_identity_extended:a1",
+        "native_occurrence": "direct:a1",
+        "relational_composite_is_exactly_native_closure_fibre": true,
+        "returned_occurrences": [
+          "direct:a1",
+          "right_identity_extended:a1"
+        ],
+        "selected_embedding_retraction_agrees_with_native_occurrence": true,
+        "source_occurrence": "direct:b1"
+      },
+      {
+        "all_external_branches_recover_native_closure_identity": true,
+        "central_isolation_occurrences": [
+          "ExternalCentralIsolation/direct:a3|z0",
+          "ExternalCentralIsolation/direct:a3|z1",
+          "ExternalCentralIsolation/right_identity_extended:a3|z0",
+          "ExternalCentralIsolation/right_identity_extended:a3|z1"
+        ],
+        "external_coordinate_occurrence": "ExternalCoordinate/right_identity_extended:a3",
+        "native_occurrence": "direct:a3",
+        "relational_composite_is_exactly_native_closure_fibre": true,
+        "returned_occurrences": [
+          "direct:a3",
+          "right_identity_extended:a3"
+        ],
+        "selected_embedding_retraction_agrees_with_native_occurrence": true,
+        "source_occurrence": "direct:b2"
+      },
+      {
+        "all_external_branches_recover_native_closure_identity": true,
+        "central_isolation_occurrences": [
+          "ExternalCentralIsolation/direct:a2|z0",
+          "ExternalCentralIsolation/direct:a2|z1",
+          "ExternalCentralIsolation/right_identity_extended:a2|z0",
+          "ExternalCentralIsolation/right_identity_extended:a2|z1"
+        ],
+        "external_coordinate_occurrence": "ExternalCoordinate/right_identity_extended:a2",
+        "native_occurrence": "direct:a2",
+        "relational_composite_is_exactly_native_closure_fibre": true,
+        "returned_occurrences": [
+          "direct:a2",
+          "right_identity_extended:a2"
+        ],
+        "selected_embedding_retraction_agrees_with_native_occurrence": true,
+        "source_occurrence": "direct:b3"
+      },
+      {
+        "all_external_branches_recover_native_closure_identity": true,
+        "central_isolation_occurrences": [
+          "ExternalCentralIsolation/direct:a5|z0",
+          "ExternalCentralIsolation/direct:a5|z1",
+          "ExternalCentralIsolation/right_identity_extended:a5|z0",
+          "ExternalCentralIsolation/right_identity_extended:a5|z1"
+        ],
+        "external_coordinate_occurrence": "ExternalCoordinate/right_identity_extended:a5",
+        "native_occurrence": "direct:a5",
+        "relational_composite_is_exactly_native_closure_fibre": true,
+        "returned_occurrences": [
+          "direct:a5",
+          "right_identity_extended:a5"
+        ],
+        "selected_embedding_retraction_agrees_with_native_occurrence": true,
+        "source_occurrence": "direct:b4"
+      },
+      {
+        "all_external_branches_recover_native_closure_identity": true,
+        "central_isolation_occurrences": [
+          "ExternalCentralIsolation/direct:a4|z0",
+          "ExternalCentralIsolation/direct:a4|z1",
+          "ExternalCentralIsolation/right_identity_extended:a4|z0",
+          "ExternalCentralIsolation/right_identity_extended:a4|z1"
+        ],
+        "external_coordinate_occurrence": "ExternalCoordinate/right_identity_extended:a4",
+        "native_occurrence": "direct:a4",
+        "relational_composite_is_exactly_native_closure_fibre": true,
+        "returned_occurrences": [
+          "direct:a4",
+          "right_identity_extended:a4"
+        ],
+        "selected_embedding_retraction_agrees_with_native_occurrence": true,
+        "source_occurrence": "direct:b5"
+      },
+      {
+        "all_external_branches_recover_native_closure_identity": true,
+        "central_isolation_occurrences": [
+          "ExternalCentralIsolation/direct:a6|z0",
+          "ExternalCentralIsolation/direct:a6|z1",
+          "ExternalCentralIsolation/right_identity_extended:a6|z0",
+          "ExternalCentralIsolation/right_identity_extended:a6|z1"
+        ],
+        "external_coordinate_occurrence": "ExternalCoordinate/right_identity_extended:a6",
+        "native_occurrence": "direct:a6",
+        "relational_composite_is_exactly_native_closure_fibre": true,
+        "returned_occurrences": [
+          "direct:a6",
+          "right_identity_extended:a6"
+        ],
+        "selected_embedding_retraction_agrees_with_native_occurrence": true,
+        "source_occurrence": "direct:b6"
+      },
+      {
+        "all_external_branches_recover_native_closure_identity": true,
+        "central_isolation_occurrences": [
+          "ExternalCentralIsolation/direct:a7|z0",
+          "ExternalCentralIsolation/direct:a7|z1",
+          "ExternalCentralIsolation/right_identity_extended:a7|z0",
+          "ExternalCentralIsolation/right_identity_extended:a7|z1"
+        ],
+        "external_coordinate_occurrence": "ExternalCoordinate/right_identity_extended:a7",
+        "native_occurrence": "direct:a7",
+        "relational_composite_is_exactly_native_closure_fibre": true,
+        "returned_occurrences": [
+          "direct:a7",
+          "right_identity_extended:a7"
+        ],
+        "selected_embedding_retraction_agrees_with_native_occurrence": true,
+        "source_occurrence": "direct:b7"
+      },
+      {
+        "all_external_branches_recover_native_closure_identity": true,
+        "central_isolation_occurrences": [
+          "ExternalCentralIsolation/direct:a0|z0",
+          "ExternalCentralIsolation/direct:a0|z1",
+          "ExternalCentralIsolation/right_identity_extended:a0|z0",
+          "ExternalCentralIsolation/right_identity_extended:a0|z1"
+        ],
+        "external_coordinate_occurrence": "ExternalCoordinate/direct:a0",
+        "native_occurrence": "right_identity_extended:a0",
+        "relational_composite_is_exactly_native_closure_fibre": true,
+        "returned_occurrences": [
+          "direct:a0",
+          "right_identity_extended:a0"
+        ],
+        "selected_embedding_retraction_agrees_with_native_occurrence": true,
+        "source_occurrence": "right_identity_extended:b0"
+      },
+      {
+        "all_external_branches_recover_native_closure_identity": true,
+        "central_isolation_occurrences": [
+          "ExternalCentralIsolation/direct:a1|z0",
+          "ExternalCentralIsolation/direct:a1|z1",
+          "ExternalCentralIsolation/right_identity_extended:a1|z0",
+          "ExternalCentralIsolation/right_identity_extended:a1|z1"
+        ],
+        "external_coordinate_occurrence": "ExternalCoordinate/direct:a1",
+        "native_occurrence": "right_identity_extended:a1",
+        "relational_composite_is_exactly_native_closure_fibre": true,
+        "returned_occurrences": [
+          "direct:a1",
+          "right_identity_extended:a1"
+        ],
+        "selected_embedding_retraction_agrees_with_native_occurrence": true,
+        "source_occurrence": "right_identity_extended:b1"
+      },
+      {
+        "all_external_branches_recover_native_closure_identity": true,
+        "central_isolation_occurrences": [
+          "ExternalCentralIsolation/direct:a3|z0",
+          "ExternalCentralIsolation/direct:a3|z1",
+          "ExternalCentralIsolation/right_identity_extended:a3|z0",
+          "ExternalCentralIsolation/right_identity_extended:a3|z1"
+        ],
+        "external_coordinate_occurrence": "ExternalCoordinate/direct:a3",
+        "native_occurrence": "right_identity_extended:a3",
+        "relational_composite_is_exactly_native_closure_fibre": true,
+        "returned_occurrences": [
+          "direct:a3",
+          "right_identity_extended:a3"
+        ],
+        "selected_embedding_retraction_agrees_with_native_occurrence": true,
+        "source_occurrence": "right_identity_extended:b2"
+      },
+      {
+        "all_external_branches_recover_native_closure_identity": true,
+        "central_isolation_occurrences": [
+          "ExternalCentralIsolation/direct:a2|z0",
+          "ExternalCentralIsolation/direct:a2|z1",
+          "ExternalCentralIsolation/right_identity_extended:a2|z0",
+          "ExternalCentralIsolation/right_identity_extended:a2|z1"
+        ],
+        "external_coordinate_occurrence": "ExternalCoordinate/direct:a2",
+        "native_occurrence": "right_identity_extended:a2",
+        "relational_composite_is_exactly_native_closure_fibre": true,
+        "returned_occurrences": [
+          "direct:a2",
+          "right_identity_extended:a2"
+        ],
+        "selected_embedding_retraction_agrees_with_native_occurrence": true,
+        "source_occurrence": "right_identity_extended:b3"
+      },
+      {
+        "all_external_branches_recover_native_closure_identity": true,
+        "central_isolation_occurrences": [
+          "ExternalCentralIsolation/direct:a5|z0",
+          "ExternalCentralIsolation/direct:a5|z1",
+          "ExternalCentralIsolation/right_identity_extended:a5|z0",
+          "ExternalCentralIsolation/right_identity_extended:a5|z1"
+        ],
+        "external_coordinate_occurrence": "ExternalCoordinate/direct:a5",
+        "native_occurrence": "right_identity_extended:a5",
+        "relational_composite_is_exactly_native_closure_fibre": true,
+        "returned_occurrences": [
+          "direct:a5",
+          "right_identity_extended:a5"
+        ],
+        "selected_embedding_retraction_agrees_with_native_occurrence": true,
+        "source_occurrence": "right_identity_extended:b4"
+      },
+      {
+        "all_external_branches_recover_native_closure_identity": true,
+        "central_isolation_occurrences": [
+          "ExternalCentralIsolation/direct:a4|z0",
+          "ExternalCentralIsolation/direct:a4|z1",
+          "ExternalCentralIsolation/right_identity_extended:a4|z0",
+          "ExternalCentralIsolation/right_identity_extended:a4|z1"
+        ],
+        "external_coordinate_occurrence": "ExternalCoordinate/direct:a4",
+        "native_occurrence": "right_identity_extended:a4",
+        "relational_composite_is_exactly_native_closure_fibre": true,
+        "returned_occurrences": [
+          "direct:a4",
+          "right_identity_extended:a4"
+        ],
+        "selected_embedding_retraction_agrees_with_native_occurrence": true,
+        "source_occurrence": "right_identity_extended:b5"
+      },
+      {
+        "all_external_branches_recover_native_closure_identity": true,
+        "central_isolation_occurrences": [
+          "ExternalCentralIsolation/direct:a6|z0",
+          "ExternalCentralIsolation/direct:a6|z1",
+          "ExternalCentralIsolation/right_identity_extended:a6|z0",
+          "ExternalCentralIsolation/right_identity_extended:a6|z1"
+        ],
+        "external_coordinate_occurrence": "ExternalCoordinate/direct:a6",
+        "native_occurrence": "right_identity_extended:a6",
+        "relational_composite_is_exactly_native_closure_fibre": true,
+        "returned_occurrences": [
+          "direct:a6",
+          "right_identity_extended:a6"
+        ],
+        "selected_embedding_retraction_agrees_with_native_occurrence": true,
+        "source_occurrence": "right_identity_extended:b6"
+      },
+      {
+        "all_external_branches_recover_native_closure_identity": true,
+        "central_isolation_occurrences": [
+          "ExternalCentralIsolation/direct:a7|z0",
+          "ExternalCentralIsolation/direct:a7|z1",
+          "ExternalCentralIsolation/right_identity_extended:a7|z0",
+          "ExternalCentralIsolation/right_identity_extended:a7|z1"
+        ],
+        "external_coordinate_occurrence": "ExternalCoordinate/direct:a7",
+        "native_occurrence": "right_identity_extended:a7",
+        "relational_composite_is_exactly_native_closure_fibre": true,
+        "returned_occurrences": [
+          "direct:a7",
+          "right_identity_extended:a7"
+        ],
+        "selected_embedding_retraction_agrees_with_native_occurrence": true,
+        "source_occurrence": "right_identity_extended:b7"
+      }
+    ],
+    "returned_basis_content_sha256": "3c28e7c4c4d9794283bc5b840bc338ef0e2ef5a1f177dc909c7bef636c366dc7",
+    "selected_translation_ids": [
+      "02f3e8fa78ccea39959152826a69371ec48d20efda5c4844992b0dc15d66a7bd",
+      "d29035920bb0ac9b9c7327def90ea824381668e98c6bf33e3c06774d6b5cfccf",
+      "5e1862483969e0dd38cc688b945ea5ade4ea1527d16df30f10e9a4f102dbc26a",
+      "585368f70e9777cadf635f220b1d5497de85069567953f77600f29bf7ef0b2b4"
+    ],
+    "split_relation_pair_count": 64,
+    "status": "TRACE_PRESERVED",
+    "tokens_issued": 0
+  },
+  "exact_interactions": [
+    {
+      "candidate_constructed_after_target_freeze": true,
+      "case": "external_basis_twist",
+      "explicit_translational_form": {
+        "candidate_T": {
+          "basis_map": {
+            "a0": "a0",
+            "a1": "a2",
+            "a2": "a1",
+            "a3": "a3",
+            "a4": "a4",
+            "a5": "a5",
+            "a6": "a6",
+            "a7": "a7"
+          },
+          "bijective": true,
+          "occurrence_map": {
+            "direct:a0": "ExternalTwist/direct:a0",
+            "direct:a1": "ExternalTwist/direct:a2",
+            "direct:a2": "ExternalTwist/direct:a1",
+            "direct:a3": "ExternalTwist/direct:a3",
+            "direct:a4": "ExternalTwist/direct:a4",
+            "direct:a5": "ExternalTwist/direct:a5",
+            "direct:a6": "ExternalTwist/direct:a6",
+            "direct:a7": "ExternalTwist/direct:a7",
+            "right_identity_extended:a0": "ExternalTwist/right_identity_extended:a0",
+            "right_identity_extended:a1": "ExternalTwist/right_identity_extended:a2",
+            "right_identity_extended:a2": "ExternalTwist/right_identity_extended:a1",
+            "right_identity_extended:a3": "ExternalTwist/right_identity_extended:a3",
+            "right_identity_extended:a4": "ExternalTwist/right_identity_extended:a4",
+            "right_identity_extended:a5": "ExternalTwist/right_identity_extended:a5",
+            "right_identity_extended:a6": "ExternalTwist/right_identity_extended:a6",
+            "right_identity_extended:a7": "ExternalTwist/right_identity_extended:a7"
+          },
+          "total": true
+        },
+        "closure_chain_complete": false,
+        "closure_derivations": {
+          "C": "VERIFIED",
+          "E": "VERIFIED",
+          "J": "VERIFIED",
+          "W": "VERIFIED",
+          "next_basis": "BLOCKED",
+          "operation": "COUNTEREXAMPLE",
+          "quotient_questions": "BLOCKED"
+        },
+        "geom_equiv_admission": "ADMITTED",
+        "source_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+        "target_axiom_geometry_assumption_id": "9d37d0d0d903426ab23287f470478396f8588eade4bcf65b3e8c001a139311af",
+        "translation_tuple_T_phi_pi": {
+          "T": {
+            "direct:a0": "ExternalTwist/direct:a0",
+            "direct:a1": "ExternalTwist/direct:a2",
+            "direct:a2": "ExternalTwist/direct:a1",
+            "direct:a3": "ExternalTwist/direct:a3",
+            "direct:a4": "ExternalTwist/direct:a4",
+            "direct:a5": "ExternalTwist/direct:a5",
+            "direct:a6": "ExternalTwist/direct:a6",
+            "direct:a7": "ExternalTwist/direct:a7",
+            "right_identity_extended:a0": "ExternalTwist/right_identity_extended:a0",
+            "right_identity_extended:a1": "ExternalTwist/right_identity_extended:a2",
+            "right_identity_extended:a2": "ExternalTwist/right_identity_extended:a1",
+            "right_identity_extended:a3": "ExternalTwist/right_identity_extended:a3",
+            "right_identity_extended:a4": "ExternalTwist/right_identity_extended:a4",
+            "right_identity_extended:a5": "ExternalTwist/right_identity_extended:a5",
+            "right_identity_extended:a6": "ExternalTwist/right_identity_extended:a6",
+            "right_identity_extended:a7": "ExternalTwist/right_identity_extended:a7"
+          },
+          "phi": {
+            "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601": "ecf846397fb1b7c62b9a60c0408ef7236d6244f9648966935f5b2704b1ba9c94",
+            "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3": "ff9b082280d37e366a95aa72b219b7499539b5591f520e352a7f6e38aa3541b8",
+            "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160": "96a2a15c4524f0e3e94e8b7bbf87af2ead2a21ba57cf3625cc2110cc6078215c",
+            "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145": "35eba5f54763282af10fae4556afa2a868f941f3e0621a6e89105bae8761e6a8",
+            "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030": "8b5b5ff84ff910a18c2090faa92ec7322aa9f9a9d8a1c17d38c4611fd939ff41",
+            "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639": "9b3963c4566783140b0658b03b5a3d96b3ea9c1912d997fdf1e4360c4c63b64e",
+            "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5": "2553b928c60cecc7f56d223a17c8c0012485ea047ca0cab8f76948b69e5ad9d7",
+            "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb": "3cccb67be653e2dd2716e053e9805f34b995b5cb5b9855a858e9fed627744c22"
+          },
+          "pi": "preserved"
+        },
+        "translational_form_id": "1ed74d3e0f6364911d5dc8323defbfcf6c246f33a2e6c338d3e1e6a024fd2f68"
+      },
+      "first_obstruction": {
+        "check": "external_operation_naturality",
+        "expected": "a6",
+        "input": [
+          "a1",
+          "a2"
+        ],
+        "observed": "a3"
+      },
+      "geom_equiv": {
+        "bijective": true,
+        "holds": true,
+        "preservation_cases": 256,
+        "preservation_failure_count": 0,
+        "reflection_cases": 256,
+        "reflection_failure_count": 0,
+        "total": true
+      },
+      "naturality": {
+        "C_cases": 8,
+        "C_failure_count": 0,
+        "E_cases": 8,
+        "E_failure_count": 0,
+        "J_cases": 16,
+        "J_failure_count": 0,
+        "W_cases": 16,
+        "W_failure_count": 0,
+        "holds": false,
+        "operation_cases": 64,
+        "operation_failure_count": 30,
+        "translation_tuple_cases": 16,
+        "translation_tuple_failure_count": 0
+      },
+      "non_admission_is_not_openness": true,
+      "open_in_emitted": false,
+      "source_isolation_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+      "status": "NATURALITY_OBSTRUCTION",
+      "target_isolation_id": "9e3dbb4601b253b458bfa39ea48e5cf4ba9d5b2b595aade9fe69962475a062fc",
+      "tokens_issued": 0
+    },
+    {
+      "candidate_constructed_after_target_freeze": true,
+      "case": "external_coordinate_reexpression",
+      "explicit_translational_form": {
+        "candidate_T": {
+          "basis_map": {
+            "a0": "a0",
+            "a1": "a1",
+            "a2": "a2",
+            "a3": "a3",
+            "a4": "a4",
+            "a5": "a5",
+            "a6": "a6",
+            "a7": "a7"
+          },
+          "bijective": true,
+          "occurrence_map": {
+            "direct:a0": "ExternalCoordinate/right_identity_extended:a0",
+            "direct:a1": "ExternalCoordinate/right_identity_extended:a1",
+            "direct:a2": "ExternalCoordinate/right_identity_extended:a2",
+            "direct:a3": "ExternalCoordinate/right_identity_extended:a3",
+            "direct:a4": "ExternalCoordinate/right_identity_extended:a4",
+            "direct:a5": "ExternalCoordinate/right_identity_extended:a5",
+            "direct:a6": "ExternalCoordinate/right_identity_extended:a6",
+            "direct:a7": "ExternalCoordinate/right_identity_extended:a7",
+            "right_identity_extended:a0": "ExternalCoordinate/direct:a0",
+            "right_identity_extended:a1": "ExternalCoordinate/direct:a1",
+            "right_identity_extended:a2": "ExternalCoordinate/direct:a2",
+            "right_identity_extended:a3": "ExternalCoordinate/direct:a3",
+            "right_identity_extended:a4": "ExternalCoordinate/direct:a4",
+            "right_identity_extended:a5": "ExternalCoordinate/direct:a5",
+            "right_identity_extended:a6": "ExternalCoordinate/direct:a6",
+            "right_identity_extended:a7": "ExternalCoordinate/direct:a7"
+          },
+          "total": true
+        },
+        "closure_chain_complete": true,
+        "closure_derivations": {
+          "C": "VERIFIED",
+          "E": "VERIFIED",
+          "J": "VERIFIED",
+          "W": "VERIFIED",
+          "next_basis": "ELIGIBLE",
+          "operation": "VERIFIED",
+          "quotient_questions": "ELIGIBLE"
+        },
+        "geom_equiv_admission": "ADMITTED",
+        "source_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+        "target_axiom_geometry_assumption_id": "bcaf6f4bb8bd03b48225be5b086be754251052d966c472cd8177717f6fa689a8",
+        "translation_tuple_T_phi_pi": {
+          "T": {
+            "direct:a0": "ExternalCoordinate/right_identity_extended:a0",
+            "direct:a1": "ExternalCoordinate/right_identity_extended:a1",
+            "direct:a2": "ExternalCoordinate/right_identity_extended:a2",
+            "direct:a3": "ExternalCoordinate/right_identity_extended:a3",
+            "direct:a4": "ExternalCoordinate/right_identity_extended:a4",
+            "direct:a5": "ExternalCoordinate/right_identity_extended:a5",
+            "direct:a6": "ExternalCoordinate/right_identity_extended:a6",
+            "direct:a7": "ExternalCoordinate/right_identity_extended:a7",
+            "right_identity_extended:a0": "ExternalCoordinate/direct:a0",
+            "right_identity_extended:a1": "ExternalCoordinate/direct:a1",
+            "right_identity_extended:a2": "ExternalCoordinate/direct:a2",
+            "right_identity_extended:a3": "ExternalCoordinate/direct:a3",
+            "right_identity_extended:a4": "ExternalCoordinate/direct:a4",
+            "right_identity_extended:a5": "ExternalCoordinate/direct:a5",
+            "right_identity_extended:a6": "ExternalCoordinate/direct:a6",
+            "right_identity_extended:a7": "ExternalCoordinate/direct:a7"
+          },
+          "phi": {
+            "42e3a168032768918428ec7539cafd0f24b53ff6becf41829cb722ae69329601": "8eb07e692f40c0a08a14cefc2a28c850b923e4d751a85ce9318cd6ea7404807b",
+            "52326ef5588bd4d6932f174412f2ef99fac1d668dc57e807ebda22239b8fdfd3": "9710343a1922351be9b39f7fd831b3e5b7354eb0631fea6d1ba25e82996fbac5",
+            "5c68c313e6c9812e50646b8cbb9e7afe013ef62b84ab92c57b6287116a831160": "f3746ff45605de782625893c2978d8635c2147e73eabe9a571d9b69ee966f14d",
+            "7c2d3c27f477f8b72a7d5b7860d802a81d01593e62a516c3c797974051eec145": "bacdb08bfe2c0c835a56c99ecf0c8db5f9ac33b1b75de4e542e159716c6bc6b7",
+            "cfad793b16b0cb3778ad3614d1b7ca00a14227e15ad7838b04b7ced7894fa030": "2dd7701d166d69c523e7b97f8652f5ec71db472a3066209f3e25fd541b9b4fe9",
+            "eaea3d73a9be1750f7f627127f6bccfcba0b2eb3fd36d9a805f56fa10bfe6639": "1fac1b958558b875be79035424ff56e7a57a7da0ba9f1cadabbd9d7c3c72707f",
+            "f94131872f5064fe3f5ce9140485029b05e78cab8bec33f01394eabd34b224e5": "a5bdb96dc5570156deedfe05c6147ce27767f52c9bd3d7d2d224396a0c50eba1",
+            "fd67898097915d16c6976b639352b8b48c41d1d84c0e143a7b5cc644bded53bb": "9a3c93eb5ccad0ea85da227425cc73793626dc3d64976c2766ef49ae90634043"
+          },
+          "pi": "reversed"
+        },
+        "translational_form_id": "d29035920bb0ac9b9c7327def90ea824381668e98c6bf33e3c06774d6b5cfccf"
+      },
+      "first_obstruction": null,
+      "geom_equiv": {
+        "bijective": true,
+        "holds": true,
+        "preservation_cases": 256,
+        "preservation_failure_count": 0,
+        "reflection_cases": 256,
+        "reflection_failure_count": 0,
+        "total": true
+      },
+      "naturality": {
+        "C_cases": 8,
+        "C_failure_count": 0,
+        "E_cases": 8,
+        "E_failure_count": 0,
+        "J_cases": 16,
+        "J_failure_count": 0,
+        "W_cases": 16,
+        "W_failure_count": 0,
+        "holds": true,
+        "operation_cases": 64,
+        "operation_failure_count": 0,
+        "translation_tuple_cases": 16,
+        "translation_tuple_failure_count": 0
+      },
+      "non_admission_is_not_openness": false,
+      "open_in_emitted": false,
+      "source_isolation_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+      "status": "TRACE_PRESERVED",
+      "target_isolation_id": "cd24f56453a2a1320b7f78784fcce187e2ed179687f20b2868921ffdb43e066e",
+      "tokens_issued": 0
+    },
+    {
+      "candidate_constructed_after_target_freeze": true,
+      "case": "literal_isolation_split",
+      "explicit_translational_form": {
+        "candidate_T": {
+          "basis_map": {
+            "a0": "a0",
+            "a1": "a1",
+            "a2": "a2",
+            "a3": "a3",
+            "a4": "a4",
+            "a5": "a5",
+            "a6": "a6",
+            "a7": "a7"
+          },
+          "bijective": true,
+          "occurrence_map": {
+            "direct:a0": "ExternalLiteralSplit/direct:a0",
+            "direct:a1": "ExternalLiteralSplit/direct:a1",
+            "direct:a2": "ExternalLiteralSplit/direct:a2",
+            "direct:a3": "ExternalLiteralSplit/direct:a3",
+            "direct:a4": "ExternalLiteralSplit/direct:a4",
+            "direct:a5": "ExternalLiteralSplit/direct:a5",
+            "direct:a6": "ExternalLiteralSplit/direct:a6",
+            "direct:a7": "ExternalLiteralSplit/direct:a7",
+            "right_identity_extended:a0": "ExternalLiteralSplit/right_identity_extended:a0",
+            "right_identity_extended:a1": "ExternalLiteralSplit/right_identity_extended:a1",
+            "right_identity_extended:a2": "ExternalLiteralSplit/right_identity_extended:a2",
+            "right_identity_extended:a3": "ExternalLiteralSplit/right_identity_extended:a3",
+            "right_identity_extended:a4": "ExternalLiteralSplit/right_identity_extended:a4",
+            "right_identity_extended:a5": "ExternalLiteralSplit/right_identity_extended:a5",
+            "right_identity_extended:a6": "ExternalLiteralSplit/right_identity_extended:a6",
+            "right_identity_extended:a7": "ExternalLiteralSplit/right_identity_extended:a7"
+          },
+          "total": true
+        },
+        "closure_chain_complete": false,
+        "closure_derivations": {
+          "C": "BLOCKED",
+          "E": "BLOCKED",
+          "J": "BLOCKED",
+          "W": "BLOCKED",
+          "next_basis": "BLOCKED",
+          "operation": "BLOCKED",
+          "quotient_questions": "BLOCKED"
+        },
+        "geom_equiv_admission": "REJECTED",
+        "source_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+        "target_axiom_geometry_assumption_id": "8919025b9ebc4c409f0dbef3ca079465cb2d6f3ca7e0abc3f4625ee49fac0332",
+        "translation_tuple_T_phi_pi": null,
+        "translational_form_id": "60c0bd41cc6314a860c284f803a5db01dc4c53e89b5f39f0c52ff7007c52f249"
+      },
+      "first_obstruction": {
+        "check": "preserves_external_equality",
+        "expected": true,
+        "input": [
+          "direct:a0",
+          "right_identity_extended:a0"
+        ],
+        "observed": false
+      },
+      "geom_equiv": {
+        "bijective": true,
+        "holds": false,
+        "preservation_cases": 256,
+        "preservation_failure_count": 16,
+        "reflection_cases": 256,
+        "reflection_failure_count": 0,
+        "total": true
+      },
+      "naturality": {
+        "C_cases": 0,
+        "C_failure_count": 0,
+        "E_cases": 0,
+        "E_failure_count": 0,
+        "J_cases": 0,
+        "J_failure_count": 0,
+        "W_cases": 0,
+        "W_failure_count": 0,
+        "holds": false,
+        "operation_cases": 64,
+        "operation_failure_count": 0,
+        "translation_tuple_cases": 0,
+        "translation_tuple_failure_count": 0
+      },
+      "non_admission_is_not_openness": true,
+      "open_in_emitted": false,
+      "source_isolation_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+      "status": "EQUALITY_OBSTRUCTION",
+      "target_isolation_id": "bea687851d716bb7af4a2f5e64e16fcdf4647a488e79cd1ceac300f2403bf338",
+      "tokens_issued": 0
+    },
+    {
+      "candidate_constructed_after_target_freeze": true,
+      "case": "normal_subgroup_parity_collapse",
+      "explicit_translational_form": {
+        "candidate_T": {
+          "basis_map": {
+            "a0": "a0",
+            "a1": "a1",
+            "a2": "a2",
+            "a3": "a3",
+            "a4": "a4",
+            "a5": "a5",
+            "a6": "a6",
+            "a7": "a7"
+          },
+          "bijective": true,
+          "occurrence_map": {
+            "direct:a0": "ExternalParityQuotient/direct:a0",
+            "direct:a1": "ExternalParityQuotient/direct:a1",
+            "direct:a2": "ExternalParityQuotient/direct:a2",
+            "direct:a3": "ExternalParityQuotient/direct:a3",
+            "direct:a4": "ExternalParityQuotient/direct:a4",
+            "direct:a5": "ExternalParityQuotient/direct:a5",
+            "direct:a6": "ExternalParityQuotient/direct:a6",
+            "direct:a7": "ExternalParityQuotient/direct:a7",
+            "right_identity_extended:a0": "ExternalParityQuotient/right_identity_extended:a0",
+            "right_identity_extended:a1": "ExternalParityQuotient/right_identity_extended:a1",
+            "right_identity_extended:a2": "ExternalParityQuotient/right_identity_extended:a2",
+            "right_identity_extended:a3": "ExternalParityQuotient/right_identity_extended:a3",
+            "right_identity_extended:a4": "ExternalParityQuotient/right_identity_extended:a4",
+            "right_identity_extended:a5": "ExternalParityQuotient/right_identity_extended:a5",
+            "right_identity_extended:a6": "ExternalParityQuotient/right_identity_extended:a6",
+            "right_identity_extended:a7": "ExternalParityQuotient/right_identity_extended:a7"
+          },
+          "total": true
+        },
+        "closure_chain_complete": false,
+        "closure_derivations": {
+          "C": "BLOCKED",
+          "E": "BLOCKED",
+          "J": "BLOCKED",
+          "W": "BLOCKED",
+          "next_basis": "BLOCKED",
+          "operation": "BLOCKED",
+          "quotient_questions": "BLOCKED"
+        },
+        "geom_equiv_admission": "REJECTED",
+        "source_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+        "target_axiom_geometry_assumption_id": "e7a07c5fd985771e1b8f6f550d0894b2f92d107aa2ca6b05a6b999fd7a898d74",
+        "translation_tuple_T_phi_pi": null,
+        "translational_form_id": "61719836ebae3557a67da064b0019ce7492855d8532f75b11bcebf112eb31cb3"
+      },
+      "first_obstruction": {
+        "check": "reflects_external_equality",
+        "expected": true,
+        "input": [
+          "direct:a0",
+          "direct:a3"
+        ],
+        "observed": false
+      },
+      "geom_equiv": {
+        "bijective": true,
+        "holds": false,
+        "preservation_cases": 256,
+        "preservation_failure_count": 0,
+        "reflection_cases": 256,
+        "reflection_failure_count": 96,
+        "total": true
+      },
+      "naturality": {
+        "C_cases": 0,
+        "C_failure_count": 0,
+        "E_cases": 0,
+        "E_failure_count": 0,
+        "J_cases": 0,
+        "J_failure_count": 0,
+        "W_cases": 0,
+        "W_failure_count": 0,
+        "holds": false,
+        "operation_cases": 64,
+        "operation_failure_count": 0,
+        "translation_tuple_cases": 0,
+        "translation_tuple_failure_count": 0
+      },
+      "non_admission_is_not_openness": true,
+      "open_in_emitted": false,
+      "source_isolation_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+      "status": "EQUALITY_OBSTRUCTION",
+      "target_isolation_id": "452e9a12115e9be254a98fb11a07ef43e84c8ce867e5f813b1a2ba0fd193f4e6",
+      "tokens_issued": 0
+    },
+    {
+      "candidate_constructed_after_target_freeze": true,
+      "case": "partial_external_interaction",
+      "explicit_translational_form": {
+        "candidate_T": {
+          "basis_map": {
+            "a0": "a0",
+            "a1": "a1",
+            "a2": "a2",
+            "a3": "a3"
+          },
+          "bijective": false,
+          "occurrence_map": {
+            "direct:a0": "ExternalPartial/direct:a0",
+            "direct:a1": "ExternalPartial/direct:a1",
+            "direct:a2": "ExternalPartial/direct:a2",
+            "direct:a3": "ExternalPartial/direct:a3",
+            "direct:a4": "ExternalPartial/direct:a4",
+            "direct:a5": "ExternalPartial/direct:a5",
+            "direct:a6": "ExternalPartial/direct:a6",
+            "direct:a7": "ExternalPartial/direct:a7"
+          },
+          "total": false
+        },
+        "closure_chain_complete": false,
+        "closure_derivations": {
+          "C": "BLOCKED",
+          "E": "BLOCKED",
+          "J": "BLOCKED",
+          "W": "BLOCKED",
+          "next_basis": "BLOCKED",
+          "operation": "BLOCKED",
+          "quotient_questions": "BLOCKED"
+        },
+        "geom_equiv_admission": "REJECTED",
+        "source_axiom_geometry_assumption_id": "c36d3fdb8e8d4110dce05aef7cee2cb3ce36b2e1fc1b4ea4c03d234eeb432659",
+        "target_axiom_geometry_assumption_id": "260300ac4fba0f995660cb743887659cab1fa2e449ad251f6d775cc78c1a6143",
+        "translation_tuple_T_phi_pi": null,
+        "translational_form_id": "74073af0210ffd19ae5e69880b7e0e215b85493bb6d202fb76cc227eb5ef923b"
+      },
+      "first_obstruction": null,
+      "geom_equiv": {
+        "bijective": false,
+        "holds": false,
+        "preservation_cases": 0,
+        "preservation_failure_count": 0,
+        "reflection_cases": 0,
+        "reflection_failure_count": 0,
+        "total": false
+      },
+      "naturality": {
+        "C_cases": 0,
+        "C_failure_count": 0,
+        "E_cases": 0,
+        "E_failure_count": 0,
+        "J_cases": 0,
+        "J_failure_count": 0,
+        "W_cases": 0,
+        "W_failure_count": 0,
+        "holds": false,
+        "operation_cases": 0,
+        "operation_failure_count": 0,
+        "translation_tuple_cases": 0,
+        "translation_tuple_failure_count": 0
+      },
+      "non_admission_is_not_openness": true,
+      "open_in_emitted": false,
+      "source_isolation_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+      "status": "PENDING_COMPARISON",
+      "target_isolation_id": "e1aadb71a784ed7f722b6f03d3791233c4b94deae115ec3e1b215a14e5514ae9",
+      "tokens_issued": 0
+    }
+  ],
+  "external_candidate_packet_sha256": "c680870624567c83a8591c57de3128e87cb98b30a43e8775e313ef5a78ad1f3b",
+  "external_geometry_packet_sha256": "2e7aaf20c868cf33c1d28bb7b5a063f36c8abd598f932f0a80d1bef6b3da8438",
+  "failure_or_partial_data_is_never_open": true,
+  "geometry_packet_revealed_after_parts_1_and_2": true,
+  "part": 3,
+  "schema_version": 1,
+  "status": "PASS",
+  "tokens_issued": 0,
+  "transported_frame_question_relations": [
+    {
+      "bare_open_label": false,
+      "explicit_translation_lineage": {
+        "composite_occurrence_map_sha256": "1ef6a794b1b4bab52a4329633ba725feb76653951f4fcc415e68263188b34654",
+        "target_axiom_geometry_assumption_id": "bcaf6f4bb8bd03b48225be5b086be754251052d966c472cd8177717f6fa689a8",
+        "translational_form_ids": [
+          "02f3e8fa78ccea39959152826a69371ec48d20efda5c4844992b0dc15d66a7bd",
+          "d29035920bb0ac9b9c7327def90ea824381668e98c6bf33e3c06774d6b5cfccf"
+        ]
+      },
+      "factorization": {
+        "factor_sha256": "05f5f6ff5ab30c1c737df065aec0883ba3aeb28728621f226cd89ad4bd85e482",
+        "through_external_frame_quotient": true,
+        "unique": true
+      },
+      "frame_equality": "the precommitted external rule evaluated on the external carrier",
+      "frame_id": "cd24f56453a2a1320b7f78784fcce187e2ed179687f20b2868921ffdb43e066e",
+      "language": "ExternalCoordinate",
+      "open_in_frame": false,
+      "open_witness": null,
+      "question_id": "quotient_identity",
+      "resolved_in_frame": true,
+      "total": true
+    },
+    {
+      "bare_open_label": false,
+      "explicit_translation_lineage": {
+        "composite_occurrence_map_sha256": "1ef6a794b1b4bab52a4329633ba725feb76653951f4fcc415e68263188b34654",
+        "target_axiom_geometry_assumption_id": "bcaf6f4bb8bd03b48225be5b086be754251052d966c472cd8177717f6fa689a8",
+        "translational_form_ids": [
+          "02f3e8fa78ccea39959152826a69371ec48d20efda5c4844992b0dc15d66a7bd",
+          "d29035920bb0ac9b9c7327def90ea824381668e98c6bf33e3c06774d6b5cfccf"
+        ]
+      },
+      "factorization": {
+        "factor_sha256": "ff2f75c4d7b2864535f193f1e993f5f831098f471b6f53d5e4303cf29fd6bf53",
+        "through_external_frame_quotient": true,
+        "unique": true
+      },
+      "frame_equality": "the precommitted external rule evaluated on the external carrier",
+      "frame_id": "cd24f56453a2a1320b7f78784fcce187e2ed179687f20b2868921ffdb43e066e",
+      "language": "ExternalCoordinate",
+      "open_in_frame": false,
+      "open_witness": null,
+      "question_id": "element_order",
+      "resolved_in_frame": true,
+      "total": true
+    },
+    {
+      "bare_open_label": false,
+      "explicit_translation_lineage": {
+        "composite_occurrence_map_sha256": "1ef6a794b1b4bab52a4329633ba725feb76653951f4fcc415e68263188b34654",
+        "target_axiom_geometry_assumption_id": "bcaf6f4bb8bd03b48225be5b086be754251052d966c472cd8177717f6fa689a8",
+        "translational_form_ids": [
+          "02f3e8fa78ccea39959152826a69371ec48d20efda5c4844992b0dc15d66a7bd",
+          "d29035920bb0ac9b9c7327def90ea824381668e98c6bf33e3c06774d6b5cfccf"
+        ]
+      },
+      "factorization": null,
+      "frame_equality": "the precommitted external rule evaluated on the external carrier",
+      "frame_id": "cd24f56453a2a1320b7f78784fcce187e2ed179687f20b2868921ffdb43e066e",
+      "language": "ExternalCoordinate",
+      "open_in_frame": true,
+      "open_witness": {
+        "frame_equal": true,
+        "left": "ExternalCoordinate/direct:a0",
+        "left_value": "right_identity_extended",
+        "right": "ExternalCoordinate/right_identity_extended:a0",
+        "right_value": "direct"
+      },
+      "question_id": "presentation_constructor",
+      "resolved_in_frame": false,
+      "total": true
+    }
+  ]
+}

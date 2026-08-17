@@ -1,0 +1,771 @@
+{
+  "C": {
+    "B/return::aff_b_00": "B/return::aff_b_00",
+    "B/return::aff_b_01": "B/return::aff_b_01",
+    "B/return::aff_b_02": "B/return::aff_b_02",
+    "B/return::aff_b_03": "B/return::aff_b_03",
+    "B/return::aff_b_04": "B/return::aff_b_04",
+    "B/return::aff_b_05": "B/return::aff_b_05",
+    "B/source::aff_b_00": "B/return::aff_b_00",
+    "B/source::aff_b_01": "B/return::aff_b_01",
+    "B/source::aff_b_02": "B/return::aff_b_02",
+    "B/source::aff_b_03": "B/return::aff_b_03",
+    "B/source::aff_b_04": "B/return::aff_b_04",
+    "B/source::aff_b_05": "B/return::aff_b_05"
+  },
+  "E": {
+    "return": {
+      "aff_b_00": "B/return::aff_b_00",
+      "aff_b_01": "B/return::aff_b_01",
+      "aff_b_02": "B/return::aff_b_02",
+      "aff_b_03": "B/return::aff_b_03",
+      "aff_b_04": "B/return::aff_b_04",
+      "aff_b_05": "B/return::aff_b_05"
+    },
+    "source": {
+      "aff_b_00": "B/source::aff_b_00",
+      "aff_b_01": "B/source::aff_b_01",
+      "aff_b_02": "B/source::aff_b_02",
+      "aff_b_03": "B/source::aff_b_03",
+      "aff_b_04": "B/source::aff_b_04",
+      "aff_b_05": "B/source::aff_b_05"
+    }
+  },
+  "J": {
+    "B/return::aff_b_00": "B/source::aff_b_00",
+    "B/return::aff_b_01": "B/source::aff_b_01",
+    "B/return::aff_b_02": "B/source::aff_b_02",
+    "B/return::aff_b_03": "B/source::aff_b_03",
+    "B/return::aff_b_04": "B/source::aff_b_04",
+    "B/return::aff_b_05": "B/source::aff_b_05",
+    "B/source::aff_b_00": "B/return::aff_b_00",
+    "B/source::aff_b_01": "B/return::aff_b_01",
+    "B/source::aff_b_02": "B/return::aff_b_02",
+    "B/source::aff_b_03": "B/return::aff_b_03",
+    "B/source::aff_b_04": "B/return::aff_b_04",
+    "B/source::aff_b_05": "B/return::aff_b_05"
+  },
+  "W": {
+    "B/return::aff_b_00": "aff_b_00",
+    "B/return::aff_b_01": "aff_b_01",
+    "B/return::aff_b_02": "aff_b_02",
+    "B/return::aff_b_03": "aff_b_03",
+    "B/return::aff_b_04": "aff_b_04",
+    "B/return::aff_b_05": "aff_b_05",
+    "B/source::aff_b_00": "aff_b_00",
+    "B/source::aff_b_01": "aff_b_01",
+    "B/source::aff_b_02": "aff_b_02",
+    "B/source::aff_b_03": "aff_b_03",
+    "B/source::aff_b_04": "aff_b_04",
+    "B/source::aff_b_05": "aff_b_05"
+  },
+  "admitted_equality": {
+    "class_of": {
+      "B/return::aff_b_00": "f0c0536cd23757613a4d774748bd3ce2005264bcc3523d1fcdc5a7efae198412",
+      "B/return::aff_b_01": "b60b2f66019ed4bcf75bcded6a54649431a1f5acab3d6c6afff33ffdcd337352",
+      "B/return::aff_b_02": "faaf9ad7ab96a4f0174cb01ac1de039974a2eb1c935b6a9a29273d9f852da71b",
+      "B/return::aff_b_03": "48480d39f4149b21115d84f3d7469513e9e0a08d4d67df30dd46c663e92a59e5",
+      "B/return::aff_b_04": "c43541078d3037f4bdecb29d61b5248d17056ca9b9d8315c26ebf8dd3d0c4867",
+      "B/return::aff_b_05": "e0ef6c3a526e4f6019497371587055bd1d9dcf867a006e989a4a943287bcbd93",
+      "B/source::aff_b_00": "f0c0536cd23757613a4d774748bd3ce2005264bcc3523d1fcdc5a7efae198412",
+      "B/source::aff_b_01": "b60b2f66019ed4bcf75bcded6a54649431a1f5acab3d6c6afff33ffdcd337352",
+      "B/source::aff_b_02": "faaf9ad7ab96a4f0174cb01ac1de039974a2eb1c935b6a9a29273d9f852da71b",
+      "B/source::aff_b_03": "48480d39f4149b21115d84f3d7469513e9e0a08d4d67df30dd46c663e92a59e5",
+      "B/source::aff_b_04": "c43541078d3037f4bdecb29d61b5248d17056ca9b9d8315c26ebf8dd3d0c4867",
+      "B/source::aff_b_05": "e0ef6c3a526e4f6019497371587055bd1d9dcf867a006e989a4a943287bcbd93"
+    },
+    "equivalence_classes": [
+      {
+        "class_id": "48480d39f4149b21115d84f3d7469513e9e0a08d4d67df30dd46c663e92a59e5",
+        "members": [
+          "B/return::aff_b_03",
+          "B/source::aff_b_03"
+        ]
+      },
+      {
+        "class_id": "b60b2f66019ed4bcf75bcded6a54649431a1f5acab3d6c6afff33ffdcd337352",
+        "members": [
+          "B/return::aff_b_01",
+          "B/source::aff_b_01"
+        ]
+      },
+      {
+        "class_id": "c43541078d3037f4bdecb29d61b5248d17056ca9b9d8315c26ebf8dd3d0c4867",
+        "members": [
+          "B/return::aff_b_04",
+          "B/source::aff_b_04"
+        ]
+      },
+      {
+        "class_id": "e0ef6c3a526e4f6019497371587055bd1d9dcf867a006e989a4a943287bcbd93",
+        "members": [
+          "B/return::aff_b_05",
+          "B/source::aff_b_05"
+        ]
+      },
+      {
+        "class_id": "f0c0536cd23757613a4d774748bd3ce2005264bcc3523d1fcdc5a7efae198412",
+        "members": [
+          "B/return::aff_b_00",
+          "B/source::aff_b_00"
+        ]
+      },
+      {
+        "class_id": "faaf9ad7ab96a4f0174cb01ac1de039974a2eb1c935b6a9a29273d9f852da71b",
+        "members": [
+          "B/return::aff_b_02",
+          "B/source::aff_b_02"
+        ]
+      }
+    ],
+    "matrix": {
+      "B/return::aff_b_00": {
+        "B/return::aff_b_00": true,
+        "B/return::aff_b_01": false,
+        "B/return::aff_b_02": false,
+        "B/return::aff_b_03": false,
+        "B/return::aff_b_04": false,
+        "B/return::aff_b_05": false,
+        "B/source::aff_b_00": true,
+        "B/source::aff_b_01": false,
+        "B/source::aff_b_02": false,
+        "B/source::aff_b_03": false,
+        "B/source::aff_b_04": false,
+        "B/source::aff_b_05": false
+      },
+      "B/return::aff_b_01": {
+        "B/return::aff_b_00": false,
+        "B/return::aff_b_01": true,
+        "B/return::aff_b_02": false,
+        "B/return::aff_b_03": false,
+        "B/return::aff_b_04": false,
+        "B/return::aff_b_05": false,
+        "B/source::aff_b_00": false,
+        "B/source::aff_b_01": true,
+        "B/source::aff_b_02": false,
+        "B/source::aff_b_03": false,
+        "B/source::aff_b_04": false,
+        "B/source::aff_b_05": false
+      },
+      "B/return::aff_b_02": {
+        "B/return::aff_b_00": false,
+        "B/return::aff_b_01": false,
+        "B/return::aff_b_02": true,
+        "B/return::aff_b_03": false,
+        "B/return::aff_b_04": false,
+        "B/return::aff_b_05": false,
+        "B/source::aff_b_00": false,
+        "B/source::aff_b_01": false,
+        "B/source::aff_b_02": true,
+        "B/source::aff_b_03": false,
+        "B/source::aff_b_04": false,
+        "B/source::aff_b_05": false
+      },
+      "B/return::aff_b_03": {
+        "B/return::aff_b_00": false,
+        "B/return::aff_b_01": false,
+        "B/return::aff_b_02": false,
+        "B/return::aff_b_03": true,
+        "B/return::aff_b_04": false,
+        "B/return::aff_b_05": false,
+        "B/source::aff_b_00": false,
+        "B/source::aff_b_01": false,
+        "B/source::aff_b_02": false,
+        "B/source::aff_b_03": true,
+        "B/source::aff_b_04": false,
+        "B/source::aff_b_05": false
+      },
+      "B/return::aff_b_04": {
+        "B/return::aff_b_00": false,
+        "B/return::aff_b_01": false,
+        "B/return::aff_b_02": false,
+        "B/return::aff_b_03": false,
+        "B/return::aff_b_04": true,
+        "B/return::aff_b_05": false,
+        "B/source::aff_b_00": false,
+        "B/source::aff_b_01": false,
+        "B/source::aff_b_02": false,
+        "B/source::aff_b_03": false,
+        "B/source::aff_b_04": true,
+        "B/source::aff_b_05": false
+      },
+      "B/return::aff_b_05": {
+        "B/return::aff_b_00": false,
+        "B/return::aff_b_01": false,
+        "B/return::aff_b_02": false,
+        "B/return::aff_b_03": false,
+        "B/return::aff_b_04": false,
+        "B/return::aff_b_05": true,
+        "B/source::aff_b_00": false,
+        "B/source::aff_b_01": false,
+        "B/source::aff_b_02": false,
+        "B/source::aff_b_03": false,
+        "B/source::aff_b_04": false,
+        "B/source::aff_b_05": true
+      },
+      "B/source::aff_b_00": {
+        "B/return::aff_b_00": true,
+        "B/return::aff_b_01": false,
+        "B/return::aff_b_02": false,
+        "B/return::aff_b_03": false,
+        "B/return::aff_b_04": false,
+        "B/return::aff_b_05": false,
+        "B/source::aff_b_00": true,
+        "B/source::aff_b_01": false,
+        "B/source::aff_b_02": false,
+        "B/source::aff_b_03": false,
+        "B/source::aff_b_04": false,
+        "B/source::aff_b_05": false
+      },
+      "B/source::aff_b_01": {
+        "B/return::aff_b_00": false,
+        "B/return::aff_b_01": true,
+        "B/return::aff_b_02": false,
+        "B/return::aff_b_03": false,
+        "B/return::aff_b_04": false,
+        "B/return::aff_b_05": false,
+        "B/source::aff_b_00": false,
+        "B/source::aff_b_01": true,
+        "B/source::aff_b_02": false,
+        "B/source::aff_b_03": false,
+        "B/source::aff_b_04": false,
+        "B/source::aff_b_05": false
+      },
+      "B/source::aff_b_02": {
+        "B/return::aff_b_00": false,
+        "B/return::aff_b_01": false,
+        "B/return::aff_b_02": true,
+        "B/return::aff_b_03": false,
+        "B/return::aff_b_04": false,
+        "B/return::aff_b_05": false,
+        "B/source::aff_b_00": false,
+        "B/source::aff_b_01": false,
+        "B/source::aff_b_02": true,
+        "B/source::aff_b_03": false,
+        "B/source::aff_b_04": false,
+        "B/source::aff_b_05": false
+      },
+      "B/source::aff_b_03": {
+        "B/return::aff_b_00": false,
+        "B/return::aff_b_01": false,
+        "B/return::aff_b_02": false,
+        "B/return::aff_b_03": true,
+        "B/return::aff_b_04": false,
+        "B/return::aff_b_05": false,
+        "B/source::aff_b_00": false,
+        "B/source::aff_b_01": false,
+        "B/source::aff_b_02": false,
+        "B/source::aff_b_03": true,
+        "B/source::aff_b_04": false,
+        "B/source::aff_b_05": false
+      },
+      "B/source::aff_b_04": {
+        "B/return::aff_b_00": false,
+        "B/return::aff_b_01": false,
+        "B/return::aff_b_02": false,
+        "B/return::aff_b_03": false,
+        "B/return::aff_b_04": true,
+        "B/return::aff_b_05": false,
+        "B/source::aff_b_00": false,
+        "B/source::aff_b_01": false,
+        "B/source::aff_b_02": false,
+        "B/source::aff_b_03": false,
+        "B/source::aff_b_04": true,
+        "B/source::aff_b_05": false
+      },
+      "B/source::aff_b_05": {
+        "B/return::aff_b_00": false,
+        "B/return::aff_b_01": false,
+        "B/return::aff_b_02": false,
+        "B/return::aff_b_03": false,
+        "B/return::aff_b_04": false,
+        "B/return::aff_b_05": true,
+        "B/source::aff_b_00": false,
+        "B/source::aff_b_01": false,
+        "B/source::aff_b_02": false,
+        "B/source::aff_b_03": false,
+        "B/source::aff_b_04": false,
+        "B/source::aff_b_05": true
+      }
+    },
+    "matrix_sha256": "fb343fc0f0fe9eb31afbc12a476a54a249a37a8767b4a4fc567208cc9c689bbe"
+  },
+  "agent_role": "B",
+  "artifact_content_id": "14c82dac1937ccbef05b6ebe0eb1f3adf5d1cd7e99f58df296b5415398e72083",
+  "axiom_geometry_assumption": {
+    "carrier": "two independently named occurrence presentations per local identity",
+    "curvature_representative_pole": "return",
+    "poles": [
+      "source",
+      "return"
+    ],
+    "rule": "equal complete local right-action signatures",
+    "status": "ASSUMED_THEN_EXHAUSTIVELY_AUDITED_LOCALLY"
+  },
+  "axiom_geometry_assumption_id": "905f100002ae4ebaa84d1c728d8efb700b0de3fb1851f8c79496813ef5c4e134",
+  "basis": [
+    "aff_b_00",
+    "aff_b_01",
+    "aff_b_02",
+    "aff_b_03",
+    "aff_b_04",
+    "aff_b_05"
+  ],
+  "claim_boundary": "deterministic constrained model search in one subprocess",
+  "construction_family": "affine_groups_over_prime_fields",
+  "context_content_id": "398317e6fff3e7defc89975020398cd11cc5c0142e86a6d3d56001023593bebc",
+  "context_file_sha256": "e14ddd7093c9dd4477050c956f517de09befdbcec774ed3b7a9b3e61a8d412d3",
+  "frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+  "group_certificate": {
+    "associativity_cases": 216,
+    "associativity_failure_count": 0,
+    "first_associativity_failure": null,
+    "identity": "aff_b_05",
+    "identity_candidates": [
+      "aff_b_05"
+    ],
+    "inverses": {
+      "aff_b_00": "aff_b_03",
+      "aff_b_01": "aff_b_01",
+      "aff_b_02": "aff_b_02",
+      "aff_b_03": "aff_b_00",
+      "aff_b_04": "aff_b_04",
+      "aff_b_05": "aff_b_05"
+    },
+    "orders": {
+      "aff_b_00": 3,
+      "aff_b_01": 2,
+      "aff_b_02": 2,
+      "aff_b_03": 3,
+      "aff_b_04": 2,
+      "aff_b_05": 1
+    },
+    "passed": true
+  },
+  "internal_unified_evaluation": {
+    "cases": {
+      "C_idempotence": 12,
+      "C_return_preservation": 12,
+      "J": 12,
+      "grounded": 36,
+      "operation_congruence": 576,
+      "quotient_recovery": 144,
+      "returning": 12,
+      "setoid_reflexivity": 12,
+      "setoid_symmetry": 144,
+      "setoid_transitivity": 1728
+    },
+    "evaluated_under_own_frozen_equality": true,
+    "failure_count": 0,
+    "failure_counts": {
+      "C_idempotence": 0,
+      "C_return_preservation": 0,
+      "J_involution": 0,
+      "grounded": 0,
+      "operation_congruence": 0,
+      "quotient_recovery": 0,
+      "returning": 0,
+      "setoid": 0
+    },
+    "group_certificate_passed": true,
+    "passed": true
+  },
+  "local_encodings": {
+    "aff_b_00": {
+      "modulus": 3,
+      "scale": 1,
+      "shift": 2
+    },
+    "aff_b_01": {
+      "modulus": 3,
+      "scale": 2,
+      "shift": 2
+    },
+    "aff_b_02": {
+      "modulus": 3,
+      "scale": 2,
+      "shift": 1
+    },
+    "aff_b_03": {
+      "modulus": 3,
+      "scale": 1,
+      "shift": 1
+    },
+    "aff_b_04": {
+      "modulus": 3,
+      "scale": 2,
+      "shift": 0
+    },
+    "aff_b_05": {
+      "modulus": 3,
+      "scale": 1,
+      "shift": 0
+    }
+  },
+  "local_generators": {
+    "r": "aff_b_03",
+    "s": "aff_b_04"
+  },
+  "objective_content_id": "b46393bae1338fc4d8ea740b08976f1691b0dd28993c043e7de9f42861466a4d",
+  "objective_file_sha256": "1c455668dbbe9b84a7fa8a2e7d728767ae3df8bda1f581403965be98880d3b70",
+  "occurrences": [
+    {
+      "occurrence_id": "B/return::aff_b_00",
+      "pole": "return",
+      "returned_identity": "aff_b_00",
+      "right_action_signature": [
+        "aff_b_03",
+        "aff_b_02",
+        "aff_b_04",
+        "aff_b_05",
+        "aff_b_01",
+        "aff_b_00"
+      ]
+    },
+    {
+      "occurrence_id": "B/return::aff_b_01",
+      "pole": "return",
+      "returned_identity": "aff_b_01",
+      "right_action_signature": [
+        "aff_b_04",
+        "aff_b_05",
+        "aff_b_03",
+        "aff_b_02",
+        "aff_b_00",
+        "aff_b_01"
+      ]
+    },
+    {
+      "occurrence_id": "B/return::aff_b_02",
+      "pole": "return",
+      "returned_identity": "aff_b_02",
+      "right_action_signature": [
+        "aff_b_01",
+        "aff_b_00",
+        "aff_b_05",
+        "aff_b_04",
+        "aff_b_03",
+        "aff_b_02"
+      ]
+    },
+    {
+      "occurrence_id": "B/return::aff_b_03",
+      "pole": "return",
+      "returned_identity": "aff_b_03",
+      "right_action_signature": [
+        "aff_b_05",
+        "aff_b_04",
+        "aff_b_01",
+        "aff_b_00",
+        "aff_b_02",
+        "aff_b_03"
+      ]
+    },
+    {
+      "occurrence_id": "B/return::aff_b_04",
+      "pole": "return",
+      "returned_identity": "aff_b_04",
+      "right_action_signature": [
+        "aff_b_02",
+        "aff_b_03",
+        "aff_b_00",
+        "aff_b_01",
+        "aff_b_05",
+        "aff_b_04"
+      ]
+    },
+    {
+      "occurrence_id": "B/return::aff_b_05",
+      "pole": "return",
+      "returned_identity": "aff_b_05",
+      "right_action_signature": [
+        "aff_b_00",
+        "aff_b_01",
+        "aff_b_02",
+        "aff_b_03",
+        "aff_b_04",
+        "aff_b_05"
+      ]
+    },
+    {
+      "occurrence_id": "B/source::aff_b_00",
+      "pole": "source",
+      "returned_identity": "aff_b_00",
+      "right_action_signature": [
+        "aff_b_03",
+        "aff_b_02",
+        "aff_b_04",
+        "aff_b_05",
+        "aff_b_01",
+        "aff_b_00"
+      ]
+    },
+    {
+      "occurrence_id": "B/source::aff_b_01",
+      "pole": "source",
+      "returned_identity": "aff_b_01",
+      "right_action_signature": [
+        "aff_b_04",
+        "aff_b_05",
+        "aff_b_03",
+        "aff_b_02",
+        "aff_b_00",
+        "aff_b_01"
+      ]
+    },
+    {
+      "occurrence_id": "B/source::aff_b_02",
+      "pole": "source",
+      "returned_identity": "aff_b_02",
+      "right_action_signature": [
+        "aff_b_01",
+        "aff_b_00",
+        "aff_b_05",
+        "aff_b_04",
+        "aff_b_03",
+        "aff_b_02"
+      ]
+    },
+    {
+      "occurrence_id": "B/source::aff_b_03",
+      "pole": "source",
+      "returned_identity": "aff_b_03",
+      "right_action_signature": [
+        "aff_b_05",
+        "aff_b_04",
+        "aff_b_01",
+        "aff_b_00",
+        "aff_b_02",
+        "aff_b_03"
+      ]
+    },
+    {
+      "occurrence_id": "B/source::aff_b_04",
+      "pole": "source",
+      "returned_identity": "aff_b_04",
+      "right_action_signature": [
+        "aff_b_02",
+        "aff_b_03",
+        "aff_b_00",
+        "aff_b_01",
+        "aff_b_05",
+        "aff_b_04"
+      ]
+    },
+    {
+      "occurrence_id": "B/source::aff_b_05",
+      "pole": "source",
+      "returned_identity": "aff_b_05",
+      "right_action_signature": [
+        "aff_b_00",
+        "aff_b_01",
+        "aff_b_02",
+        "aff_b_03",
+        "aff_b_04",
+        "aff_b_05"
+      ]
+    }
+  ],
+  "operation_table": {
+    "aff_b_00": {
+      "aff_b_00": "aff_b_03",
+      "aff_b_01": "aff_b_02",
+      "aff_b_02": "aff_b_04",
+      "aff_b_03": "aff_b_05",
+      "aff_b_04": "aff_b_01",
+      "aff_b_05": "aff_b_00"
+    },
+    "aff_b_01": {
+      "aff_b_00": "aff_b_04",
+      "aff_b_01": "aff_b_05",
+      "aff_b_02": "aff_b_03",
+      "aff_b_03": "aff_b_02",
+      "aff_b_04": "aff_b_00",
+      "aff_b_05": "aff_b_01"
+    },
+    "aff_b_02": {
+      "aff_b_00": "aff_b_01",
+      "aff_b_01": "aff_b_00",
+      "aff_b_02": "aff_b_05",
+      "aff_b_03": "aff_b_04",
+      "aff_b_04": "aff_b_03",
+      "aff_b_05": "aff_b_02"
+    },
+    "aff_b_03": {
+      "aff_b_00": "aff_b_05",
+      "aff_b_01": "aff_b_04",
+      "aff_b_02": "aff_b_01",
+      "aff_b_03": "aff_b_00",
+      "aff_b_04": "aff_b_02",
+      "aff_b_05": "aff_b_03"
+    },
+    "aff_b_04": {
+      "aff_b_00": "aff_b_02",
+      "aff_b_01": "aff_b_03",
+      "aff_b_02": "aff_b_00",
+      "aff_b_03": "aff_b_01",
+      "aff_b_04": "aff_b_05",
+      "aff_b_05": "aff_b_04"
+    },
+    "aff_b_05": {
+      "aff_b_00": "aff_b_00",
+      "aff_b_01": "aff_b_01",
+      "aff_b_02": "aff_b_02",
+      "aff_b_03": "aff_b_03",
+      "aff_b_04": "aff_b_04",
+      "aff_b_05": "aff_b_05"
+    }
+  },
+  "other_agent_artifact_visible": false,
+  "question_relations": [
+    {
+      "axiom_geometry_assumption_id": "905f100002ae4ebaa84d1c728d8efb700b0de3fb1851f8c79496813ef5c4e134",
+      "bare_open_label": false,
+      "factorization": {
+        "factor": {
+          "48480d39f4149b21115d84f3d7469513e9e0a08d4d67df30dd46c663e92a59e5": 3,
+          "b60b2f66019ed4bcf75bcded6a54649431a1f5acab3d6c6afff33ffdcd337352": 2,
+          "c43541078d3037f4bdecb29d61b5248d17056ca9b9d8315c26ebf8dd3d0c4867": 2,
+          "e0ef6c3a526e4f6019497371587055bd1d9dcf867a006e989a4a943287bcbd93": 1,
+          "f0c0536cd23757613a4d774748bd3ce2005264bcc3523d1fcdc5a7efae198412": 3,
+          "faaf9ad7ab96a4f0174cb01ac1de039974a2eb1c935b6a9a29273d9f852da71b": 2
+        },
+        "factor_sha256": "38d4d4401a8cff549debdbe86e90010a24862186e581a58af3b0e22acb6d5a28",
+        "through_frame_quotient": true,
+        "unique": true
+      },
+      "frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+      "open_in_frame": false,
+      "open_witness": null,
+      "question_definition_sha256": "e230356aa9c6c65d22af8d9dce0bf978971f13d4da9d4428068a4202ab3b7050",
+      "question_id": "element_order",
+      "resolved_in_frame": true,
+      "separating_pair_count": 0,
+      "total": true
+    },
+    {
+      "axiom_geometry_assumption_id": "905f100002ae4ebaa84d1c728d8efb700b0de3fb1851f8c79496813ef5c4e134",
+      "bare_open_label": false,
+      "factorization": {
+        "factor": {
+          "48480d39f4149b21115d84f3d7469513e9e0a08d4d67df30dd46c663e92a59e5": false,
+          "b60b2f66019ed4bcf75bcded6a54649431a1f5acab3d6c6afff33ffdcd337352": true,
+          "c43541078d3037f4bdecb29d61b5248d17056ca9b9d8315c26ebf8dd3d0c4867": true,
+          "e0ef6c3a526e4f6019497371587055bd1d9dcf867a006e989a4a943287bcbd93": true,
+          "f0c0536cd23757613a4d774748bd3ce2005264bcc3523d1fcdc5a7efae198412": false,
+          "faaf9ad7ab96a4f0174cb01ac1de039974a2eb1c935b6a9a29273d9f852da71b": true
+        },
+        "factor_sha256": "4289815e1a5b06c7c8fd56b03a658bfb1348fe679e2404cadd348b64541a160b",
+        "through_frame_quotient": true,
+        "unique": true
+      },
+      "frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+      "open_in_frame": false,
+      "open_witness": null,
+      "question_definition_sha256": "1751b443312880ed77eab7bc96b1decf1617ee2d61be7aab0c295efa0e28e585",
+      "question_id": "square_is_identity",
+      "resolved_in_frame": true,
+      "separating_pair_count": 0,
+      "total": true
+    },
+    {
+      "axiom_geometry_assumption_id": "905f100002ae4ebaa84d1c728d8efb700b0de3fb1851f8c79496813ef5c4e134",
+      "bare_open_label": false,
+      "factorization": null,
+      "frame_id": "12d094f4953c0c096d497b4c3c85eda2537067ffc0136ed9c4f1b0bd6f374360",
+      "open_in_frame": true,
+      "open_witness": {
+        "frame_equal": true,
+        "left": "B/return::aff_b_00",
+        "left_value": "return",
+        "right": "B/source::aff_b_00",
+        "right_value": "source"
+      },
+      "question_definition_sha256": "549ab7f062b765a68f5d1a0a1436580a1fff732a0deb81e965b36d6b56bd9092",
+      "question_id": "literal_pole",
+      "resolved_in_frame": false,
+      "separating_pair_count": 12,
+      "total": true
+    }
+  ],
+  "runtime_id": "isolated-generative-local-axiom-geometry",
+  "schema_version": 1,
+  "search_trace": [
+    {
+      "candidate_parameter": 2,
+      "carrier_size": 2,
+      "construction": "affine transformations x -> a*x+b over F_p",
+      "element_order_multiset": [
+        1,
+        2
+      ],
+      "group_certificate_passed": true,
+      "matches_objective": false,
+      "nonabelian": false
+    },
+    {
+      "candidate_parameter": 5,
+      "carrier_size": 20,
+      "construction": "affine transformations x -> a*x+b over F_p",
+      "element_order_multiset": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5
+      ],
+      "group_certificate_passed": true,
+      "matches_objective": false,
+      "nonabelian": true
+    },
+    {
+      "candidate_parameter": 3,
+      "carrier_size": 6,
+      "construction": "affine transformations x -> a*x+b over F_p",
+      "element_order_multiset": [
+        1,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "group_certificate_passed": true,
+      "matches_objective": true,
+      "nonabelian": true
+    }
+  ],
+  "selected_parameter": 3,
+  "solution_artifact": {
+    "all_listed_satisfy": true,
+    "all_solutions_listed": true,
+    "exhaustive_cases": 6,
+    "problem_id": "involutive_elements",
+    "solutions": [
+      "aff_b_01",
+      "aff_b_02",
+      "aff_b_04",
+      "aff_b_05"
+    ]
+  },
+  "verifier_protocol_visible": false,
+  "visible_inputs": [
+    "objective.json",
+    "agent_b_context.json"
+  ]
+}

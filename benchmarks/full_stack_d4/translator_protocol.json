@@ -1,0 +1,33 @@
+{
+  "schema_version": 4,
+  "runtime": "post-hoc-axiom-geometry-equivalence-constructor",
+  "visible_inputs": ["two frozen learner artifacts", "this protocol"],
+  "forbidden_inputs": ["complete return W", "external return audit", "mutable learner state"],
+  "selection": {
+    "relational_contact": [
+      {
+        "source_local_form": [1, 0],
+        "target_order": 4,
+        "target_image_of_vertex_zero": 1
+      },
+      {
+        "source_local_form": [0, 1],
+        "target_order": 2,
+        "target_image_of_vertex_zero": 0
+      }
+    ],
+    "relative_reversal": [
+      {
+        "source_local_form": [1, 0],
+        "target_order": 4,
+        "target_image_of_vertex_zero": 3
+      },
+      {
+        "source_local_form": [0, 1],
+        "target_order": 2,
+        "target_image_of_vertex_zero": 0
+      }
+    ]
+  },
+  "contact_scope": "Only two generator contacts may select a GeomEquiv. The verifier first constructs each closure ReferenceFrame, then checks that T preserves and reflects its equality, and only afterward checks phi, pi, W, E, J, C, all products and quotient factorization. Structural-family and self-claim branches isolate no origin; the non-natural deformation is generated independently as a counterexample."
+}

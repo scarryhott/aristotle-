@@ -1,0 +1,40 @@
+{
+  "candidate_proposals": [
+    {
+      "assumption_id": "external_coordinate_reexpression",
+      "candidate_kind": "constructor_swap"
+    },
+    {
+      "assumption_id": "literal_isolation_split",
+      "candidate_kind": "identity"
+    },
+    {
+      "assumption_id": "normal_subgroup_parity_collapse",
+      "candidate_kind": "identity"
+    },
+    {
+      "assumption_id": "external_basis_twist",
+      "candidate_kind": "operation_twist"
+    },
+    {
+      "assumption_id": "partial_external_interaction",
+      "candidate_kind": "partial_identity"
+    }
+  ],
+  "central_interaction_proposals": [
+    {
+      "candidate_kind": "central_zero_embedding_with_total_split_relation",
+      "relation_kind": "SPLIT_EXTENSION"
+    },
+    {
+      "candidate_kind": "central_forgetting_retraction",
+      "relation_kind": "CLOSURE_QUOTIENT"
+    }
+  ],
+  "commitment": "Raw proposals only. Geometry evaluation receives no object from this file; this packet is revealed after every external frame artifact is frozen.",
+  "interaction_sequence": [
+    "SPLIT_EXTENSION",
+    "CLOSURE_QUOTIENT"
+  ],
+  "schema_version": 1
+}

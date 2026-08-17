@@ -1,0 +1,36 @@
+{
+  "protocol": "docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md",
+  "stage": "phase_b3_candidate_relational_equality_only",
+  "status": "complete",
+  "sdk": {"package": "aristotlelib", "version": "2.1.0"},
+  "project_id": "b5f10530-9e2b-4899-b8d2-58b83b86c16e",
+  "task_id": "eda32ca8-d7dd-4336-8843-619a424086a1",
+  "task_status": "COMPLETE",
+  "input_phase_b2_result_tar_sha256": "c3c05eae85fa0357501f177cbbcebbe103a9f29c90926d9ee9b5e08ac4dd5da8",
+  "outputs": {
+    "result_tar_sha256": "d5c00daea3c7659d837178441367d4802ef4777402ffdd2f87cb8b2381892401",
+    "candidate_equality_markdown_sha256": "3c9bfa83d1ea42e763e2c17b8fb26458e6b1aa455ec9b1e75712999095c0901c",
+    "outcome": "ACCEPTED_ON_SUBINTERFACE",
+    "admitted_roles": 34,
+    "excluded_frozen_fail": 1,
+    "excluded_outside_interface": 1,
+    "retained_ambiguous": 10,
+    "retained_unmapped": 20
+  },
+  "non_promotion": {
+    "whole_frame_equality": "BLOCKED",
+    "geom_equiv": "BLOCKED",
+    "witnesses": [
+      "A B-legal frame with an empty node type realizes the admitted subinterface.",
+      "An A-legal frame with infinite label and observable types realizes the admitted subinterface."
+    ]
+  },
+  "not_evaluated": [
+    "independent_return_generation",
+    "completion",
+    "local_or_cross_frame_ivi",
+    "topology_naturality",
+    "receipts",
+    "heldout_transfer"
+  ]
+}

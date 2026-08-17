@@ -1,0 +1,43 @@
+name: Verify formal and experimental kernels
+
+on:
+  pull_request:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  experiment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run exhaustive closure tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Validate blind axiom-geometry fixture
+        run: python3 experiments/aristotle_d4_closure.py --assert-reference
+      - name: Replay independent full-stack runtime
+        run: python3 experiments/full_stack_math_asi.py --assert-reference > /tmp/full_stack_result.json
+      - name: Replay fixed-frame versus closure runtime
+        run: python3 experiments/classical_vs_closure_asi.py --assert-reference > /tmp/classical_vs_closure_result.json
+      - name: Replay three-part external-assumption interaction
+        run: python3 experiments/three_part_assumption_interaction_asi.py --assert-reference > /tmp/three_part_result.json
+      - name: Replay generative axiom-geometry isolation
+        run: python3 experiments/generative_axiom_geometry_isolation.py --assert-reference > /tmp/generative_isolation_result.json
+      - name: Replay translational-completion maze topology
+        run: python3 experiments/translational_completion_maze.py --assert-reference > /tmp/translational_completion_maze_result.json
+      - name: Require deterministic committed receipts
+        run: git diff --exit-code -- runs/full_stack_d4/latest runs/classical_vs_closure/latest runs/three_part_assumption_interaction/latest runs/generative_axiom_geometry_isolation/latest runs/translational_completion_maze/latest
+
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          build: true
+          test: false
+          lint: false

@@ -1,5 +1,10 @@
 # Classical Mathematical ASI vs Closure Runtime
 
+“Classical ASI” and “closure ASI” name verification architectures here. The current executables are
+bounded symbolic proxies, not actual superintelligences. A fair comparison holds the mathematical
+artifacts, candidate maps, process budget, and local checking power fixed; it changes what
+relational evidence the verifier is required to produce.
+
 | Layer | Classical mathematical ASI | Translational / closure ASI |
 |---|---|---|
 | Trusted object | proof checked in a fixed kernel | recoverable invariant across admissible translations, ultimately still kernel-checked when formalized |
@@ -9,7 +14,7 @@
 | Verification | theorem checks | theorem checks **plus** cross-language return/coherence claim |
 | History | proof object/derivation matters operationally | coherent evolutionary route is predicted to leave no verdict trace beyond endpoints |
 | Internal change | usually implementation detail | return-invisible change is modeled as gauge freedom |
-| Failure | rejected proof / counterexample | rejected proof, broken translation/return, counterexample, or OPEN obstruction |
+| Failure | rejected proof / counterexample | failure to preserve/reflect frame equality, broken naturality, or a concrete counterexample; absence of contact is merely non-selection |
 
 ## Not a replacement for Lean
 
@@ -27,7 +32,7 @@ Its central invariant is kernel acceptance in a selected formal environment.
 
 A closure runtime adds explicit relational state:
 
-`occurrence in L_i → translation/restructuring/evolution → occurrence in L_j → verification return → comparison/return → verdict`.
+`frame equality → GeomEquiv(T,phi,pi) → occurrence in L_j → return naturality → frame-qualified question evaluation`.
 
 The runtime records the translation, return, basis, and obstruction rather than only a final boolean. Its purpose is to test whether mathematical content survives representation change for reasons not hard-coded into the transformation generator.
 
@@ -36,3 +41,78 @@ The runtime records the translation, return, basis, and obstruction rather than 
 A useful closure runtime must contain both **admitted moves**, predicted to preserve the return, and **non-admitted/adversarial moves**, capable of breaking it.
 
 Without the second class, the runtime only demonstrates its own definitions.
+
+## Implemented bridge experiment
+
+`experiments/full_stack_math_asi.py` composes both layers without conflating them. Each local
+classical agent learns and executes in its own fixed presentation. Only after both states are frozen
+does a separate constructor propose cross-frame comparisons; an independent verifier then checks the
+precommitted translational operations.
+
+The mathematical relation after freeze is therefore:
+
+`frame equality → post-hoc GeomEquiv(T,phi,pi) → W,E,J,C naturality → ResolvedIn/OpenIn`.
+
+All eight D4 isomorphisms extend to coherent axiom-geometry equivalences. Structure alone does not
+select one comparison, but that non-selection is not `OpenIn` and is not an internal defect. A
+relative reversal is also coherent when `phi` and `pi` travel with it. The negative control is
+instead a sign-erasing map that fails bijectivity and learned-operation naturality.
+
+## Executed paired architecture comparison
+
+`experiments/classical_vs_closure_asi.py` now runs both verifier contracts over byte-identical
+frozen inputs. It strengthens the upstream boundary beyond the first bridge experiment: each
+language precommits its own axiom-geometry assumption, then independently instantiates and audits
+that equality before any candidate map exists. Equality is identical local right-action behavior
+of the distinct programs `x` and `x·e`; no `W` or cross-frame map defines it, and the evaluator does
+not replace it with an external normal form. The quotient return is derived downstream.
+
+The paired order is:
+
+```text
+local equality assumptions and questions precommitted
+  → independent presentations frozen
+  → local geometries internally audited and frozen
+  → raw candidate T frozen
+  → fixed-frame arm || closure arm
+  → paired differential
+```
+
+The fixed-frame arm checks local group kernels, all supplied maps, multiplication, bijectivity,
+inverses, and element-order transport. It accepts all eight ordinary isomorphisms, including
+relative reversal. The closure arm begins from the frozen equality matrices and additionally emits
+preservation/reflection certificates, derived quotient return, `W/E/J/C` naturality,
+frame-qualified question factors or separating witnesses, and next-basis transfer. Every closure
+derivation cites an explicit `(T,phi,pi)` translational form and both local assumption IDs.
+
+The distinction is not “isomorphism versus no isomorphism.” Both arms recognize isomorphism. The
+comparative hypothesis is that the explicit origin-free frame/`GeomEquiv` pipeline yields auditable
+transport, obstruction, and frame-relative resolution/openness evidence not contained in local
+kernel acceptance alone.
+
+Paired measurements include:
+
+- local kernel success and ordinary isomorphism coverage;
+- equality-preservation and equality-reflection coverage;
+- downstream naturality failure after `GeomEquiv` success;
+- adversarial false-admission rate;
+- quotient factor and explicit openness-witness counts;
+- held-out next-basis transfer;
+- process time and evidence size in future frontier runs.
+
+The number of open relations is not an optimization target. `OpenIn` is meaningful only for a
+named total question in a named frame with a separating witness.
+
+The bounded run found an informational extension but not capability superiority. The added-utility
+hypothesis is falsified at scale if a strong fixed-frame/equivalence baseline produces the same
+auditable relations with equal or lower cost, or if closure comparison must secretly select a
+canonical frame. See [`CLASSICAL_VS_CLOSURE_RUN.md`](CLASSICAL_VS_CLOSURE_RUN.md).
+
+## Three-part continuation
+
+The paired comparison is now reused unchanged as Parts 1 and 2 of a separately receipted external
+interaction simulation. Part 3 does not weaken the classical arm and does not retroactively alter
+either local equality. It first evaluates each revealed external assumption in its own frame, then
+tests exact interactions as `GeomEquiv` and non-bijective extensions/quotients under distinct typed
+contracts. This adds longitudinal evidence, not a claim that the closure architecture is an ASI.
+See [`THREE_PART_EXTERNAL_ASSUMPTION_RUN.md`](THREE_PART_EXTERNAL_ASSUMPTION_RUN.md).

@@ -1,0 +1,1893 @@
+{
+  "analysis": {
+    "admitted_equality_alignment": {
+      "admitted_equality_frozen_before_lines": true,
+      "first_overreach_witness": null,
+      "first_undercomplete_witness": null,
+      "local_ivi_w_present": true,
+      "local_ivi_w_witness": [
+        "A/cedar/belief/infinity",
+        "A/cedar/belief/zero"
+      ],
+      "overreach_pair_count": 0,
+      "raw_reach_exactly_realizes_admitted_equality": true,
+      "undercomplete_pair_count": 0
+    },
+    "all_generating_edges_have_return_paths": true,
+    "completion_and_nontrivial_mutual_reach": true,
+    "edge_return_paths": [
+      {
+        "edge": [
+          "A/cedar/belief/infinity",
+          "A/cedar/why/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/cedar/why/infinity",
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/independent_return/infinity",
+          "A/cedar/goal/zero",
+          "A/cedar/perspective/zero",
+          "A/cedar/belief/zero",
+          "A/cedar/why/zero",
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/independent_return/zero",
+          "A/cedar/goal/infinity",
+          "A/cedar/perspective/infinity",
+          "A/cedar/belief/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/cedar/belief/zero",
+          "A/cedar/why/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/cedar/why/zero",
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/independent_return/zero",
+          "A/cedar/goal/infinity",
+          "A/cedar/perspective/infinity",
+          "A/cedar/belief/infinity",
+          "A/cedar/why/infinity",
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/independent_return/infinity",
+          "A/cedar/goal/zero",
+          "A/cedar/perspective/zero",
+          "A/cedar/belief/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/ninety_degree_attempt/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/independent_return/infinity",
+          "A/cedar/goal/zero",
+          "A/cedar/perspective/zero",
+          "A/cedar/belief/zero",
+          "A/cedar/why/zero",
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/independent_return/zero",
+          "A/cedar/goal/infinity",
+          "A/cedar/perspective/infinity",
+          "A/cedar/belief/infinity",
+          "A/cedar/why/infinity",
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/broadest_lesson/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/ninety_degree_attempt/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/independent_return/zero",
+          "A/cedar/goal/infinity",
+          "A/cedar/perspective/infinity",
+          "A/cedar/belief/infinity",
+          "A/cedar/why/infinity",
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/independent_return/infinity",
+          "A/cedar/goal/zero",
+          "A/cedar/perspective/zero",
+          "A/cedar/belief/zero",
+          "A/cedar/why/zero",
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/broadest_lesson/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/cedar/goal/infinity",
+          "A/cedar/perspective/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/cedar/perspective/infinity",
+          "A/cedar/belief/infinity",
+          "A/cedar/why/infinity",
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/independent_return/infinity",
+          "A/cedar/goal/zero",
+          "A/cedar/perspective/zero",
+          "A/cedar/belief/zero",
+          "A/cedar/why/zero",
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/independent_return/zero",
+          "A/cedar/goal/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/cedar/goal/zero",
+          "A/cedar/perspective/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/cedar/perspective/zero",
+          "A/cedar/belief/zero",
+          "A/cedar/why/zero",
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/independent_return/zero",
+          "A/cedar/goal/infinity",
+          "A/cedar/perspective/infinity",
+          "A/cedar/belief/infinity",
+          "A/cedar/why/infinity",
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/independent_return/infinity",
+          "A/cedar/goal/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/cedar/independent_return/infinity",
+          "A/cedar/goal/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/cedar/goal/zero",
+          "A/cedar/perspective/zero",
+          "A/cedar/belief/zero",
+          "A/cedar/why/zero",
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/independent_return/zero",
+          "A/cedar/goal/infinity",
+          "A/cedar/perspective/infinity",
+          "A/cedar/belief/infinity",
+          "A/cedar/why/infinity",
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/independent_return/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/cedar/independent_return/zero",
+          "A/cedar/goal/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/cedar/goal/infinity",
+          "A/cedar/perspective/infinity",
+          "A/cedar/belief/infinity",
+          "A/cedar/why/infinity",
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/independent_return/infinity",
+          "A/cedar/goal/zero",
+          "A/cedar/perspective/zero",
+          "A/cedar/belief/zero",
+          "A/cedar/why/zero",
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/independent_return/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/independent_return/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/cedar/independent_return/infinity",
+          "A/cedar/goal/zero",
+          "A/cedar/perspective/zero",
+          "A/cedar/belief/zero",
+          "A/cedar/why/zero",
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/independent_return/zero",
+          "A/cedar/goal/infinity",
+          "A/cedar/perspective/infinity",
+          "A/cedar/belief/infinity",
+          "A/cedar/why/infinity",
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/ninety_degree_attempt/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/independent_return/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/cedar/independent_return/zero",
+          "A/cedar/goal/infinity",
+          "A/cedar/perspective/infinity",
+          "A/cedar/belief/infinity",
+          "A/cedar/why/infinity",
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/independent_return/infinity",
+          "A/cedar/goal/zero",
+          "A/cedar/perspective/zero",
+          "A/cedar/belief/zero",
+          "A/cedar/why/zero",
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/ninety_degree_attempt/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/cedar/perspective/infinity",
+          "A/cedar/belief/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/cedar/belief/infinity",
+          "A/cedar/why/infinity",
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/independent_return/infinity",
+          "A/cedar/goal/zero",
+          "A/cedar/perspective/zero",
+          "A/cedar/belief/zero",
+          "A/cedar/why/zero",
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/independent_return/zero",
+          "A/cedar/goal/infinity",
+          "A/cedar/perspective/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/cedar/perspective/zero",
+          "A/cedar/belief/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/cedar/belief/zero",
+          "A/cedar/why/zero",
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/independent_return/zero",
+          "A/cedar/goal/infinity",
+          "A/cedar/perspective/infinity",
+          "A/cedar/belief/infinity",
+          "A/cedar/why/infinity",
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/independent_return/infinity",
+          "A/cedar/goal/zero",
+          "A/cedar/perspective/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/broadest_lesson/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/independent_return/infinity",
+          "A/cedar/goal/zero",
+          "A/cedar/perspective/zero",
+          "A/cedar/belief/zero",
+          "A/cedar/why/zero",
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/independent_return/zero",
+          "A/cedar/goal/infinity",
+          "A/cedar/perspective/infinity",
+          "A/cedar/belief/infinity",
+          "A/cedar/why/infinity",
+          "A/cedar/what_lesson_tree/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/broadest_lesson/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/independent_return/zero",
+          "A/cedar/goal/infinity",
+          "A/cedar/perspective/infinity",
+          "A/cedar/belief/infinity",
+          "A/cedar/why/infinity",
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/independent_return/infinity",
+          "A/cedar/goal/zero",
+          "A/cedar/perspective/zero",
+          "A/cedar/belief/zero",
+          "A/cedar/why/zero",
+          "A/cedar/what_lesson_tree/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/cedar/why/infinity",
+          "A/cedar/what_lesson_tree/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/independent_return/infinity",
+          "A/cedar/goal/zero",
+          "A/cedar/perspective/zero",
+          "A/cedar/belief/zero",
+          "A/cedar/why/zero",
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/independent_return/zero",
+          "A/cedar/goal/infinity",
+          "A/cedar/perspective/infinity",
+          "A/cedar/belief/infinity",
+          "A/cedar/why/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/cedar/why/zero",
+          "A/cedar/what_lesson_tree/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/independent_return/zero",
+          "A/cedar/goal/infinity",
+          "A/cedar/perspective/infinity",
+          "A/cedar/belief/infinity",
+          "A/cedar/why/infinity",
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/independent_return/infinity",
+          "A/cedar/goal/zero",
+          "A/cedar/perspective/zero",
+          "A/cedar/belief/zero",
+          "A/cedar/why/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/river/belief/infinity",
+          "A/river/why/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/river/why/infinity",
+          "A/river/what_lesson_tree/infinity",
+          "A/river/broadest_lesson/infinity",
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/independent_return/infinity",
+          "A/river/goal/zero",
+          "A/river/perspective/zero",
+          "A/river/belief/zero",
+          "A/river/why/zero",
+          "A/river/what_lesson_tree/zero",
+          "A/river/broadest_lesson/zero",
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/independent_return/zero",
+          "A/river/goal/infinity",
+          "A/river/perspective/infinity",
+          "A/river/belief/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/river/belief/zero",
+          "A/river/why/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/river/why/zero",
+          "A/river/what_lesson_tree/zero",
+          "A/river/broadest_lesson/zero",
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/independent_return/zero",
+          "A/river/goal/infinity",
+          "A/river/perspective/infinity",
+          "A/river/belief/infinity",
+          "A/river/why/infinity",
+          "A/river/what_lesson_tree/infinity",
+          "A/river/broadest_lesson/infinity",
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/independent_return/infinity",
+          "A/river/goal/zero",
+          "A/river/perspective/zero",
+          "A/river/belief/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/river/broadest_lesson/infinity",
+          "A/river/ninety_degree_attempt/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/independent_return/infinity",
+          "A/river/goal/zero",
+          "A/river/perspective/zero",
+          "A/river/belief/zero",
+          "A/river/why/zero",
+          "A/river/what_lesson_tree/zero",
+          "A/river/broadest_lesson/zero",
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/independent_return/zero",
+          "A/river/goal/infinity",
+          "A/river/perspective/infinity",
+          "A/river/belief/infinity",
+          "A/river/why/infinity",
+          "A/river/what_lesson_tree/infinity",
+          "A/river/broadest_lesson/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/river/broadest_lesson/zero",
+          "A/river/ninety_degree_attempt/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/independent_return/zero",
+          "A/river/goal/infinity",
+          "A/river/perspective/infinity",
+          "A/river/belief/infinity",
+          "A/river/why/infinity",
+          "A/river/what_lesson_tree/infinity",
+          "A/river/broadest_lesson/infinity",
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/independent_return/infinity",
+          "A/river/goal/zero",
+          "A/river/perspective/zero",
+          "A/river/belief/zero",
+          "A/river/why/zero",
+          "A/river/what_lesson_tree/zero",
+          "A/river/broadest_lesson/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/river/goal/infinity",
+          "A/river/perspective/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/river/perspective/infinity",
+          "A/river/belief/infinity",
+          "A/river/why/infinity",
+          "A/river/what_lesson_tree/infinity",
+          "A/river/broadest_lesson/infinity",
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/independent_return/infinity",
+          "A/river/goal/zero",
+          "A/river/perspective/zero",
+          "A/river/belief/zero",
+          "A/river/why/zero",
+          "A/river/what_lesson_tree/zero",
+          "A/river/broadest_lesson/zero",
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/independent_return/zero",
+          "A/river/goal/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/river/goal/zero",
+          "A/river/perspective/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/river/perspective/zero",
+          "A/river/belief/zero",
+          "A/river/why/zero",
+          "A/river/what_lesson_tree/zero",
+          "A/river/broadest_lesson/zero",
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/independent_return/zero",
+          "A/river/goal/infinity",
+          "A/river/perspective/infinity",
+          "A/river/belief/infinity",
+          "A/river/why/infinity",
+          "A/river/what_lesson_tree/infinity",
+          "A/river/broadest_lesson/infinity",
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/independent_return/infinity",
+          "A/river/goal/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/river/independent_return/infinity",
+          "A/river/goal/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/river/goal/zero",
+          "A/river/perspective/zero",
+          "A/river/belief/zero",
+          "A/river/why/zero",
+          "A/river/what_lesson_tree/zero",
+          "A/river/broadest_lesson/zero",
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/independent_return/zero",
+          "A/river/goal/infinity",
+          "A/river/perspective/infinity",
+          "A/river/belief/infinity",
+          "A/river/why/infinity",
+          "A/river/what_lesson_tree/infinity",
+          "A/river/broadest_lesson/infinity",
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/independent_return/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/river/independent_return/zero",
+          "A/river/goal/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/river/goal/infinity",
+          "A/river/perspective/infinity",
+          "A/river/belief/infinity",
+          "A/river/why/infinity",
+          "A/river/what_lesson_tree/infinity",
+          "A/river/broadest_lesson/infinity",
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/independent_return/infinity",
+          "A/river/goal/zero",
+          "A/river/perspective/zero",
+          "A/river/belief/zero",
+          "A/river/why/zero",
+          "A/river/what_lesson_tree/zero",
+          "A/river/broadest_lesson/zero",
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/independent_return/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/independent_return/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/river/independent_return/infinity",
+          "A/river/goal/zero",
+          "A/river/perspective/zero",
+          "A/river/belief/zero",
+          "A/river/why/zero",
+          "A/river/what_lesson_tree/zero",
+          "A/river/broadest_lesson/zero",
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/independent_return/zero",
+          "A/river/goal/infinity",
+          "A/river/perspective/infinity",
+          "A/river/belief/infinity",
+          "A/river/why/infinity",
+          "A/river/what_lesson_tree/infinity",
+          "A/river/broadest_lesson/infinity",
+          "A/river/ninety_degree_attempt/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/independent_return/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/river/independent_return/zero",
+          "A/river/goal/infinity",
+          "A/river/perspective/infinity",
+          "A/river/belief/infinity",
+          "A/river/why/infinity",
+          "A/river/what_lesson_tree/infinity",
+          "A/river/broadest_lesson/infinity",
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/independent_return/infinity",
+          "A/river/goal/zero",
+          "A/river/perspective/zero",
+          "A/river/belief/zero",
+          "A/river/why/zero",
+          "A/river/what_lesson_tree/zero",
+          "A/river/broadest_lesson/zero",
+          "A/river/ninety_degree_attempt/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/river/perspective/infinity",
+          "A/river/belief/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/river/belief/infinity",
+          "A/river/why/infinity",
+          "A/river/what_lesson_tree/infinity",
+          "A/river/broadest_lesson/infinity",
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/independent_return/infinity",
+          "A/river/goal/zero",
+          "A/river/perspective/zero",
+          "A/river/belief/zero",
+          "A/river/why/zero",
+          "A/river/what_lesson_tree/zero",
+          "A/river/broadest_lesson/zero",
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/independent_return/zero",
+          "A/river/goal/infinity",
+          "A/river/perspective/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/river/perspective/zero",
+          "A/river/belief/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/river/belief/zero",
+          "A/river/why/zero",
+          "A/river/what_lesson_tree/zero",
+          "A/river/broadest_lesson/zero",
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/independent_return/zero",
+          "A/river/goal/infinity",
+          "A/river/perspective/infinity",
+          "A/river/belief/infinity",
+          "A/river/why/infinity",
+          "A/river/what_lesson_tree/infinity",
+          "A/river/broadest_lesson/infinity",
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/independent_return/infinity",
+          "A/river/goal/zero",
+          "A/river/perspective/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/river/what_lesson_tree/infinity",
+          "A/river/broadest_lesson/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/river/broadest_lesson/infinity",
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/independent_return/infinity",
+          "A/river/goal/zero",
+          "A/river/perspective/zero",
+          "A/river/belief/zero",
+          "A/river/why/zero",
+          "A/river/what_lesson_tree/zero",
+          "A/river/broadest_lesson/zero",
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/independent_return/zero",
+          "A/river/goal/infinity",
+          "A/river/perspective/infinity",
+          "A/river/belief/infinity",
+          "A/river/why/infinity",
+          "A/river/what_lesson_tree/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/river/what_lesson_tree/zero",
+          "A/river/broadest_lesson/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/river/broadest_lesson/zero",
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/independent_return/zero",
+          "A/river/goal/infinity",
+          "A/river/perspective/infinity",
+          "A/river/belief/infinity",
+          "A/river/why/infinity",
+          "A/river/what_lesson_tree/infinity",
+          "A/river/broadest_lesson/infinity",
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/independent_return/infinity",
+          "A/river/goal/zero",
+          "A/river/perspective/zero",
+          "A/river/belief/zero",
+          "A/river/why/zero",
+          "A/river/what_lesson_tree/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/river/why/infinity",
+          "A/river/what_lesson_tree/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/river/what_lesson_tree/infinity",
+          "A/river/broadest_lesson/infinity",
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/independent_return/infinity",
+          "A/river/goal/zero",
+          "A/river/perspective/zero",
+          "A/river/belief/zero",
+          "A/river/why/zero",
+          "A/river/what_lesson_tree/zero",
+          "A/river/broadest_lesson/zero",
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/independent_return/zero",
+          "A/river/goal/infinity",
+          "A/river/perspective/infinity",
+          "A/river/belief/infinity",
+          "A/river/why/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/river/why/zero",
+          "A/river/what_lesson_tree/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/river/what_lesson_tree/zero",
+          "A/river/broadest_lesson/zero",
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/independent_return/zero",
+          "A/river/goal/infinity",
+          "A/river/perspective/infinity",
+          "A/river/belief/infinity",
+          "A/river/why/infinity",
+          "A/river/what_lesson_tree/infinity",
+          "A/river/broadest_lesson/infinity",
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/independent_return/infinity",
+          "A/river/goal/zero",
+          "A/river/perspective/zero",
+          "A/river/belief/zero",
+          "A/river/why/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/stone/belief/infinity",
+          "A/stone/why/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/stone/why/infinity",
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/independent_return/infinity",
+          "A/stone/goal/zero",
+          "A/stone/perspective/zero",
+          "A/stone/belief/zero",
+          "A/stone/why/zero",
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/broadest_lesson/zero",
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/independent_return/zero",
+          "A/stone/goal/infinity",
+          "A/stone/perspective/infinity",
+          "A/stone/belief/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/stone/belief/zero",
+          "A/stone/why/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/stone/why/zero",
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/broadest_lesson/zero",
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/independent_return/zero",
+          "A/stone/goal/infinity",
+          "A/stone/perspective/infinity",
+          "A/stone/belief/infinity",
+          "A/stone/why/infinity",
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/independent_return/infinity",
+          "A/stone/goal/zero",
+          "A/stone/perspective/zero",
+          "A/stone/belief/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/ninety_degree_attempt/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/independent_return/infinity",
+          "A/stone/goal/zero",
+          "A/stone/perspective/zero",
+          "A/stone/belief/zero",
+          "A/stone/why/zero",
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/broadest_lesson/zero",
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/independent_return/zero",
+          "A/stone/goal/infinity",
+          "A/stone/perspective/infinity",
+          "A/stone/belief/infinity",
+          "A/stone/why/infinity",
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/broadest_lesson/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/stone/broadest_lesson/zero",
+          "A/stone/ninety_degree_attempt/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/independent_return/zero",
+          "A/stone/goal/infinity",
+          "A/stone/perspective/infinity",
+          "A/stone/belief/infinity",
+          "A/stone/why/infinity",
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/independent_return/infinity",
+          "A/stone/goal/zero",
+          "A/stone/perspective/zero",
+          "A/stone/belief/zero",
+          "A/stone/why/zero",
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/broadest_lesson/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/stone/goal/infinity",
+          "A/stone/perspective/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/stone/perspective/infinity",
+          "A/stone/belief/infinity",
+          "A/stone/why/infinity",
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/independent_return/infinity",
+          "A/stone/goal/zero",
+          "A/stone/perspective/zero",
+          "A/stone/belief/zero",
+          "A/stone/why/zero",
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/broadest_lesson/zero",
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/independent_return/zero",
+          "A/stone/goal/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/stone/goal/zero",
+          "A/stone/perspective/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/stone/perspective/zero",
+          "A/stone/belief/zero",
+          "A/stone/why/zero",
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/broadest_lesson/zero",
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/independent_return/zero",
+          "A/stone/goal/infinity",
+          "A/stone/perspective/infinity",
+          "A/stone/belief/infinity",
+          "A/stone/why/infinity",
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/independent_return/infinity",
+          "A/stone/goal/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/stone/independent_return/infinity",
+          "A/stone/goal/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/stone/goal/zero",
+          "A/stone/perspective/zero",
+          "A/stone/belief/zero",
+          "A/stone/why/zero",
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/broadest_lesson/zero",
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/independent_return/zero",
+          "A/stone/goal/infinity",
+          "A/stone/perspective/infinity",
+          "A/stone/belief/infinity",
+          "A/stone/why/infinity",
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/independent_return/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/stone/independent_return/zero",
+          "A/stone/goal/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/stone/goal/infinity",
+          "A/stone/perspective/infinity",
+          "A/stone/belief/infinity",
+          "A/stone/why/infinity",
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/independent_return/infinity",
+          "A/stone/goal/zero",
+          "A/stone/perspective/zero",
+          "A/stone/belief/zero",
+          "A/stone/why/zero",
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/broadest_lesson/zero",
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/independent_return/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/independent_return/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/stone/independent_return/infinity",
+          "A/stone/goal/zero",
+          "A/stone/perspective/zero",
+          "A/stone/belief/zero",
+          "A/stone/why/zero",
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/broadest_lesson/zero",
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/independent_return/zero",
+          "A/stone/goal/infinity",
+          "A/stone/perspective/infinity",
+          "A/stone/belief/infinity",
+          "A/stone/why/infinity",
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/ninety_degree_attempt/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/independent_return/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/stone/independent_return/zero",
+          "A/stone/goal/infinity",
+          "A/stone/perspective/infinity",
+          "A/stone/belief/infinity",
+          "A/stone/why/infinity",
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/independent_return/infinity",
+          "A/stone/goal/zero",
+          "A/stone/perspective/zero",
+          "A/stone/belief/zero",
+          "A/stone/why/zero",
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/broadest_lesson/zero",
+          "A/stone/ninety_degree_attempt/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/stone/perspective/infinity",
+          "A/stone/belief/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/stone/belief/infinity",
+          "A/stone/why/infinity",
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/independent_return/infinity",
+          "A/stone/goal/zero",
+          "A/stone/perspective/zero",
+          "A/stone/belief/zero",
+          "A/stone/why/zero",
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/broadest_lesson/zero",
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/independent_return/zero",
+          "A/stone/goal/infinity",
+          "A/stone/perspective/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/stone/perspective/zero",
+          "A/stone/belief/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/stone/belief/zero",
+          "A/stone/why/zero",
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/broadest_lesson/zero",
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/independent_return/zero",
+          "A/stone/goal/infinity",
+          "A/stone/perspective/infinity",
+          "A/stone/belief/infinity",
+          "A/stone/why/infinity",
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/independent_return/infinity",
+          "A/stone/goal/zero",
+          "A/stone/perspective/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/broadest_lesson/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/independent_return/infinity",
+          "A/stone/goal/zero",
+          "A/stone/perspective/zero",
+          "A/stone/belief/zero",
+          "A/stone/why/zero",
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/broadest_lesson/zero",
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/independent_return/zero",
+          "A/stone/goal/infinity",
+          "A/stone/perspective/infinity",
+          "A/stone/belief/infinity",
+          "A/stone/why/infinity",
+          "A/stone/what_lesson_tree/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/broadest_lesson/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/stone/broadest_lesson/zero",
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/independent_return/zero",
+          "A/stone/goal/infinity",
+          "A/stone/perspective/infinity",
+          "A/stone/belief/infinity",
+          "A/stone/why/infinity",
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/independent_return/infinity",
+          "A/stone/goal/zero",
+          "A/stone/perspective/zero",
+          "A/stone/belief/zero",
+          "A/stone/why/zero",
+          "A/stone/what_lesson_tree/zero"
+        ]
+      },
+      {
+        "edge": [
+          "A/stone/why/infinity",
+          "A/stone/what_lesson_tree/infinity"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/independent_return/infinity",
+          "A/stone/goal/zero",
+          "A/stone/perspective/zero",
+          "A/stone/belief/zero",
+          "A/stone/why/zero",
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/broadest_lesson/zero",
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/independent_return/zero",
+          "A/stone/goal/infinity",
+          "A/stone/perspective/infinity",
+          "A/stone/belief/infinity",
+          "A/stone/why/infinity"
+        ]
+      },
+      {
+        "edge": [
+          "A/stone/why/zero",
+          "A/stone/what_lesson_tree/zero"
+        ],
+        "return_edge_count": 15,
+        "return_path": [
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/broadest_lesson/zero",
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/independent_return/zero",
+          "A/stone/goal/infinity",
+          "A/stone/perspective/infinity",
+          "A/stone/belief/infinity",
+          "A/stone/why/infinity",
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/independent_return/infinity",
+          "A/stone/goal/zero",
+          "A/stone/perspective/zero",
+          "A/stone/belief/zero",
+          "A/stone/why/zero"
+        ]
+      }
+    ],
+    "faithful_nondiscrete_proxy_relative_to_frozen_frame": true,
+    "faithful_nondiscrete_resolution_proxy": true,
+    "first_chain_lost_by_mutual_reach_quotient": null,
+    "first_missing_return_witness": null,
+    "first_return_invented_by_undirected_equivalence_closure": null,
+    "generating_edge_count": 48,
+    "line_semantics": {
+      "direct_passage_count": 48,
+      "inverse_wall_count": 48,
+      "inverse_walls_relabeled_as_direct_edges": 0,
+      "line_count": 48,
+      "maximum_return_path_length": 15,
+      "minimum_return_path_length": 15,
+      "one_frozen_line_set": true,
+      "path_or_wall_exclusivity_failure_count": 0,
+      "return_path_count": 48,
+      "structure_certificate": {
+        "checked_line_count": 48,
+        "failures": {
+          "carrier_failure_count": 0,
+          "declared_line_id_failure_count": 0,
+          "declared_return_role_failure_count": 0,
+          "declared_target_failure_count": 0,
+          "duplicate_line_id_count": 0,
+          "duplicate_source_count": 0,
+          "inverse_wall_promoted_to_direct_edge_count": 0,
+          "learning_translation_failure_count": 0,
+          "missing_source_count": 0,
+          "path_or_wall_role_failure_count": 0
+        },
+        "first_carrier_failure": null,
+        "first_declared_line_id_failure": null,
+        "first_declared_return_role_failure": null,
+        "first_declared_target_failure": null,
+        "first_inverse_promotion": null,
+        "first_role_failure": null,
+        "total_source_partition": true,
+        "valid": true
+      }
+    },
+    "local_ivi_w_disclosed_by_completed_reach": true,
+    "mutual_reach_classes": [
+      [
+        "A/cedar/belief/infinity",
+        "A/cedar/belief/zero",
+        "A/cedar/broadest_lesson/infinity",
+        "A/cedar/broadest_lesson/zero",
+        "A/cedar/goal/infinity",
+        "A/cedar/goal/zero",
+        "A/cedar/independent_return/infinity",
+        "A/cedar/independent_return/zero",
+        "A/cedar/ninety_degree_attempt/infinity",
+        "A/cedar/ninety_degree_attempt/zero",
+        "A/cedar/perspective/infinity",
+        "A/cedar/perspective/zero",
+        "A/cedar/what_lesson_tree/infinity",
+        "A/cedar/what_lesson_tree/zero",
+        "A/cedar/why/infinity",
+        "A/cedar/why/zero"
+      ],
+      [
+        "A/river/belief/infinity",
+        "A/river/belief/zero",
+        "A/river/broadest_lesson/infinity",
+        "A/river/broadest_lesson/zero",
+        "A/river/goal/infinity",
+        "A/river/goal/zero",
+        "A/river/independent_return/infinity",
+        "A/river/independent_return/zero",
+        "A/river/ninety_degree_attempt/infinity",
+        "A/river/ninety_degree_attempt/zero",
+        "A/river/perspective/infinity",
+        "A/river/perspective/zero",
+        "A/river/what_lesson_tree/infinity",
+        "A/river/what_lesson_tree/zero",
+        "A/river/why/infinity",
+        "A/river/why/zero"
+      ],
+      [
+        "A/stone/belief/infinity",
+        "A/stone/belief/zero",
+        "A/stone/broadest_lesson/infinity",
+        "A/stone/broadest_lesson/zero",
+        "A/stone/goal/infinity",
+        "A/stone/goal/zero",
+        "A/stone/independent_return/infinity",
+        "A/stone/independent_return/zero",
+        "A/stone/ninety_degree_attempt/infinity",
+        "A/stone/ninety_degree_attempt/zero",
+        "A/stone/perspective/infinity",
+        "A/stone/perspective/zero",
+        "A/stone/what_lesson_tree/infinity",
+        "A/stone/what_lesson_tree/zero",
+        "A/stone/why/infinity",
+        "A/stone/why/zero"
+      ]
+    ],
+    "mutual_reach_quotient_faithfully_represents_raw_reach": true,
+    "node_count": 48,
+    "nontrivial_mutual_reach_present": true,
+    "nontrivial_mutual_reach_witness": [
+      "A/cedar/belief/infinity",
+      "A/cedar/belief/zero"
+    ],
+    "proxy_matches_completion_and_nontrivial_mutual_reach": true,
+    "reach_is_reflexive": true,
+    "reach_is_symmetric": true,
+    "reach_is_transitive": true,
+    "reach_pair_count": 768,
+    "reach_sha256": "c2782151d99483ae5228cc54c54d01da98806d07346120fd77b3af20cb05cdea",
+    "symmetry_case_count": 2304,
+    "symmetry_failure_count": 0,
+    "topology": {
+      "construction": "all unions of completed-reach equivalence classes",
+      "discrete": false,
+      "empty_open": true,
+      "equivalence_class_count": 3,
+      "equivalence_class_sizes": [
+        16,
+        16,
+        16
+      ],
+      "occurrence_count": 48,
+      "open_set_count": 8,
+      "open_sets": [
+        [],
+        [
+          "A/cedar/belief/infinity",
+          "A/cedar/belief/zero",
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/goal/infinity",
+          "A/cedar/goal/zero",
+          "A/cedar/independent_return/infinity",
+          "A/cedar/independent_return/zero",
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/perspective/infinity",
+          "A/cedar/perspective/zero",
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/why/infinity",
+          "A/cedar/why/zero"
+        ],
+        [
+          "A/river/belief/infinity",
+          "A/river/belief/zero",
+          "A/river/broadest_lesson/infinity",
+          "A/river/broadest_lesson/zero",
+          "A/river/goal/infinity",
+          "A/river/goal/zero",
+          "A/river/independent_return/infinity",
+          "A/river/independent_return/zero",
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/perspective/infinity",
+          "A/river/perspective/zero",
+          "A/river/what_lesson_tree/infinity",
+          "A/river/what_lesson_tree/zero",
+          "A/river/why/infinity",
+          "A/river/why/zero"
+        ],
+        [
+          "A/cedar/belief/infinity",
+          "A/cedar/belief/zero",
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/goal/infinity",
+          "A/cedar/goal/zero",
+          "A/cedar/independent_return/infinity",
+          "A/cedar/independent_return/zero",
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/perspective/infinity",
+          "A/cedar/perspective/zero",
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/why/infinity",
+          "A/cedar/why/zero",
+          "A/river/belief/infinity",
+          "A/river/belief/zero",
+          "A/river/broadest_lesson/infinity",
+          "A/river/broadest_lesson/zero",
+          "A/river/goal/infinity",
+          "A/river/goal/zero",
+          "A/river/independent_return/infinity",
+          "A/river/independent_return/zero",
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/perspective/infinity",
+          "A/river/perspective/zero",
+          "A/river/what_lesson_tree/infinity",
+          "A/river/what_lesson_tree/zero",
+          "A/river/why/infinity",
+          "A/river/why/zero"
+        ],
+        [
+          "A/stone/belief/infinity",
+          "A/stone/belief/zero",
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/broadest_lesson/zero",
+          "A/stone/goal/infinity",
+          "A/stone/goal/zero",
+          "A/stone/independent_return/infinity",
+          "A/stone/independent_return/zero",
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/perspective/infinity",
+          "A/stone/perspective/zero",
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/why/infinity",
+          "A/stone/why/zero"
+        ],
+        [
+          "A/cedar/belief/infinity",
+          "A/cedar/belief/zero",
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/goal/infinity",
+          "A/cedar/goal/zero",
+          "A/cedar/independent_return/infinity",
+          "A/cedar/independent_return/zero",
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/perspective/infinity",
+          "A/cedar/perspective/zero",
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/why/infinity",
+          "A/cedar/why/zero",
+          "A/stone/belief/infinity",
+          "A/stone/belief/zero",
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/broadest_lesson/zero",
+          "A/stone/goal/infinity",
+          "A/stone/goal/zero",
+          "A/stone/independent_return/infinity",
+          "A/stone/independent_return/zero",
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/perspective/infinity",
+          "A/stone/perspective/zero",
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/why/infinity",
+          "A/stone/why/zero"
+        ],
+        [
+          "A/river/belief/infinity",
+          "A/river/belief/zero",
+          "A/river/broadest_lesson/infinity",
+          "A/river/broadest_lesson/zero",
+          "A/river/goal/infinity",
+          "A/river/goal/zero",
+          "A/river/independent_return/infinity",
+          "A/river/independent_return/zero",
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/perspective/infinity",
+          "A/river/perspective/zero",
+          "A/river/what_lesson_tree/infinity",
+          "A/river/what_lesson_tree/zero",
+          "A/river/why/infinity",
+          "A/river/why/zero",
+          "A/stone/belief/infinity",
+          "A/stone/belief/zero",
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/broadest_lesson/zero",
+          "A/stone/goal/infinity",
+          "A/stone/goal/zero",
+          "A/stone/independent_return/infinity",
+          "A/stone/independent_return/zero",
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/perspective/infinity",
+          "A/stone/perspective/zero",
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/why/infinity",
+          "A/stone/why/zero"
+        ],
+        [
+          "A/cedar/belief/infinity",
+          "A/cedar/belief/zero",
+          "A/cedar/broadest_lesson/infinity",
+          "A/cedar/broadest_lesson/zero",
+          "A/cedar/goal/infinity",
+          "A/cedar/goal/zero",
+          "A/cedar/independent_return/infinity",
+          "A/cedar/independent_return/zero",
+          "A/cedar/ninety_degree_attempt/infinity",
+          "A/cedar/ninety_degree_attempt/zero",
+          "A/cedar/perspective/infinity",
+          "A/cedar/perspective/zero",
+          "A/cedar/what_lesson_tree/infinity",
+          "A/cedar/what_lesson_tree/zero",
+          "A/cedar/why/infinity",
+          "A/cedar/why/zero",
+          "A/river/belief/infinity",
+          "A/river/belief/zero",
+          "A/river/broadest_lesson/infinity",
+          "A/river/broadest_lesson/zero",
+          "A/river/goal/infinity",
+          "A/river/goal/zero",
+          "A/river/independent_return/infinity",
+          "A/river/independent_return/zero",
+          "A/river/ninety_degree_attempt/infinity",
+          "A/river/ninety_degree_attempt/zero",
+          "A/river/perspective/infinity",
+          "A/river/perspective/zero",
+          "A/river/what_lesson_tree/infinity",
+          "A/river/what_lesson_tree/zero",
+          "A/river/why/infinity",
+          "A/river/why/zero",
+          "A/stone/belief/infinity",
+          "A/stone/belief/zero",
+          "A/stone/broadest_lesson/infinity",
+          "A/stone/broadest_lesson/zero",
+          "A/stone/goal/infinity",
+          "A/stone/goal/zero",
+          "A/stone/independent_return/infinity",
+          "A/stone/independent_return/zero",
+          "A/stone/ninety_degree_attempt/infinity",
+          "A/stone/ninety_degree_attempt/zero",
+          "A/stone/perspective/infinity",
+          "A/stone/perspective/zero",
+          "A/stone/what_lesson_tree/infinity",
+          "A/stone/what_lesson_tree/zero",
+          "A/stone/why/infinity",
+          "A/stone/why/zero"
+        ]
+      ],
+      "open_sets_enumerated": 8,
+      "pairwise_intersection_cases": 64,
+      "pairwise_intersection_failure_count": 0,
+      "pairwise_union_cases": 64,
+      "pairwise_union_failure_count": 0,
+      "return_connected_fibre_count": 3,
+      "topology_axioms_exhaustive_for_reference_partition": true,
+      "whole_open": true,
+      "whole_space_connected_in_standard_topological_sense": false
+    },
+    "translationally_complete": true
+  },
+  "pre_return_analysis": {
+    "admitted_equality_alignment": {
+      "admitted_equality_frozen_before_lines": true,
+      "first_overreach_witness": null,
+      "first_undercomplete_witness": [
+        "A/cedar/belief/infinity",
+        "A/cedar/belief/zero"
+      ],
+      "local_ivi_w_present": true,
+      "local_ivi_w_witness": [
+        "A/cedar/belief/infinity",
+        "A/cedar/belief/zero"
+      ],
+      "overreach_pair_count": 0,
+      "raw_reach_exactly_realizes_admitted_equality": false,
+      "undercomplete_pair_count": 552
+    },
+    "all_generating_edges_have_return_paths": true,
+    "completion_and_nontrivial_mutual_reach": false,
+    "edge_return_paths": [],
+    "faithful_nondiscrete_resolution_proxy": false,
+    "first_chain_lost_by_mutual_reach_quotient": [
+      "A/cedar/belief/infinity",
+      "A/cedar/broadest_lesson/infinity"
+    ],
+    "first_missing_return_witness": [
+      "A/cedar/belief/infinity",
+      "A/cedar/broadest_lesson/infinity"
+    ],
+    "first_return_invented_by_undirected_equivalence_closure": [
+      "A/cedar/belief/infinity",
+      "A/cedar/goal/infinity"
+    ],
+    "forward_line_count": 42,
+    "generating_edge_count": 42,
+    "mutual_reach_classes": [
+      [
+        "A/cedar/belief/infinity"
+      ],
+      [
+        "A/cedar/belief/zero"
+      ],
+      [
+        "A/cedar/broadest_lesson/infinity"
+      ],
+      [
+        "A/cedar/broadest_lesson/zero"
+      ],
+      [
+        "A/cedar/goal/infinity"
+      ],
+      [
+        "A/cedar/goal/zero"
+      ],
+      [
+        "A/cedar/independent_return/infinity"
+      ],
+      [
+        "A/cedar/independent_return/zero"
+      ],
+      [
+        "A/cedar/ninety_degree_attempt/infinity"
+      ],
+      [
+        "A/cedar/ninety_degree_attempt/zero"
+      ],
+      [
+        "A/cedar/perspective/infinity"
+      ],
+      [
+        "A/cedar/perspective/zero"
+      ],
+      [
+        "A/cedar/what_lesson_tree/infinity"
+      ],
+      [
+        "A/cedar/what_lesson_tree/zero"
+      ],
+      [
+        "A/cedar/why/infinity"
+      ],
+      [
+        "A/cedar/why/zero"
+      ],
+      [
+        "A/river/belief/infinity"
+      ],
+      [
+        "A/river/belief/zero"
+      ],
+      [
+        "A/river/broadest_lesson/infinity"
+      ],
+      [
+        "A/river/broadest_lesson/zero"
+      ],
+      [
+        "A/river/goal/infinity"
+      ],
+      [
+        "A/river/goal/zero"
+      ],
+      [
+        "A/river/independent_return/infinity"
+      ],
+      [
+        "A/river/independent_return/zero"
+      ],
+      [
+        "A/river/ninety_degree_attempt/infinity"
+      ],
+      [
+        "A/river/ninety_degree_attempt/zero"
+      ],
+      [
+        "A/river/perspective/infinity"
+      ],
+      [
+        "A/river/perspective/zero"
+      ],
+      [
+        "A/river/what_lesson_tree/infinity"
+      ],
+      [
+        "A/river/what_lesson_tree/zero"
+      ],
+      [
+        "A/river/why/infinity"
+      ],
+      [
+        "A/river/why/zero"
+      ],
+      [
+        "A/stone/belief/infinity"
+      ],
+      [
+        "A/stone/belief/zero"
+      ],
+      [
+        "A/stone/broadest_lesson/infinity"
+      ],
+      [
+        "A/stone/broadest_lesson/zero"
+      ],
+      [
+        "A/stone/goal/infinity"
+      ],
+      [
+        "A/stone/goal/zero"
+      ],
+      [
+        "A/stone/independent_return/infinity"
+      ],
+      [
+        "A/stone/independent_return/zero"
+      ],
+      [
+        "A/stone/ninety_degree_attempt/infinity"
+      ],
+      [
+        "A/stone/ninety_degree_attempt/zero"
+      ],
+      [
+        "A/stone/perspective/infinity"
+      ],
+      [
+        "A/stone/perspective/zero"
+      ],
+      [
+        "A/stone/what_lesson_tree/infinity"
+      ],
+      [
+        "A/stone/what_lesson_tree/zero"
+      ],
+      [
+        "A/stone/why/infinity"
+      ],
+      [
+        "A/stone/why/zero"
+      ]
+    ],
+    "mutual_reach_quotient_faithfully_represents_raw_reach": false,
+    "node_count": 48,
+    "nontrivial_mutual_reach_present": false,
+    "nontrivial_mutual_reach_witness": null,
+    "proxy_matches_completion_and_nontrivial_mutual_reach": true,
+    "reach_is_reflexive": true,
+    "reach_is_symmetric": false,
+    "reach_is_transitive": true,
+    "reach_pair_count": 216,
+    "reach_sha256": "46084f235b5e1b17da95f8c161f26c09b74ead100ade48cd1cded21f8332ef1d",
+    "status": "PENDING_INDEPENDENT_RETURN",
+    "symmetry_case_count": 2304,
+    "symmetry_failure_count": 168,
+    "topology": null,
+    "translationally_complete": false,
+    "withheld_return_line_count": 6
+  },
+  "questions": [
+    {
+      "equality_comparisons": 2304,
+      "factorization_unique": true,
+      "frame_equality": "completed raw reachability",
+      "frame_id": "A",
+      "open_in_frame": false,
+      "open_witness": null,
+      "question_anchor": "A/cedar/goal/zero",
+      "question_id": "same_returned_basis_as_translated_anchor",
+      "resolved_in_frame": true,
+      "total_occurrence_values": 48,
+      "unique_quotient_factor": {
+        "class_0": true,
+        "class_1": false,
+        "class_2": false
+      }
+    },
+    {
+      "equality_comparisons": 2304,
+      "factorization_unique": false,
+      "frame_equality": "completed raw reachability",
+      "frame_id": "A",
+      "open_in_frame": true,
+      "open_witness": {
+        "frame_equal": true,
+        "left": "A/cedar/belief/infinity",
+        "left_value": false,
+        "right": "A/cedar/belief/zero",
+        "right_value": true,
+        "separates_frame_equal_pair": true
+      },
+      "question_anchor": null,
+      "question_id": "literal_first_pole",
+      "resolved_in_frame": false,
+      "total_occurrence_values": 48,
+      "unique_quotient_factor": null
+    },
+    {
+      "equality_comparisons": 2304,
+      "factorization_unique": false,
+      "frame_equality": "completed raw reachability",
+      "frame_id": "A",
+      "open_in_frame": true,
+      "open_witness": {
+        "frame_equal": true,
+        "left": "A/cedar/belief/infinity",
+        "left_value": false,
+        "right": "A/cedar/goal/infinity",
+        "right_value": true,
+        "separates_frame_equal_pair": true
+      },
+      "question_anchor": null,
+      "question_id": "literal_goal_stage",
+      "resolved_in_frame": false,
+      "total_occurrence_values": 48,
+      "unique_quotient_factor": null
+    }
+  ],
+  "return_monodromy": {
+    "case_count": 6,
+    "cases": [
+      {
+        "after_one_episode": "A/cedar/goal/infinity",
+        "after_two_episodes": "A/cedar/goal/zero",
+        "one_episode_literal_return": false,
+        "one_episode_pole_swapped": true,
+        "one_episode_returns_basis": true,
+        "one_episode_returns_stage": true,
+        "start": "A/cedar/goal/zero",
+        "two_episode_literal_return": true
+      },
+      {
+        "after_one_episode": "A/cedar/goal/zero",
+        "after_two_episodes": "A/cedar/goal/infinity",
+        "one_episode_literal_return": false,
+        "one_episode_pole_swapped": true,
+        "one_episode_returns_basis": true,
+        "one_episode_returns_stage": true,
+        "start": "A/cedar/goal/infinity",
+        "two_episode_literal_return": true
+      },
+      {
+        "after_one_episode": "A/river/goal/infinity",
+        "after_two_episodes": "A/river/goal/zero",
+        "one_episode_literal_return": false,
+        "one_episode_pole_swapped": true,
+        "one_episode_returns_basis": true,
+        "one_episode_returns_stage": true,
+        "start": "A/river/goal/zero",
+        "two_episode_literal_return": true
+      },
+      {
+        "after_one_episode": "A/river/goal/zero",
+        "after_two_episodes": "A/river/goal/infinity",
+        "one_episode_literal_return": false,
+        "one_episode_pole_swapped": true,
+        "one_episode_returns_basis": true,
+        "one_episode_returns_stage": true,
+        "start": "A/river/goal/infinity",
+        "two_episode_literal_return": true
+      },
+      {
+        "after_one_episode": "A/stone/goal/infinity",
+        "after_two_episodes": "A/stone/goal/zero",
+        "one_episode_literal_return": false,
+        "one_episode_pole_swapped": true,
+        "one_episode_returns_basis": true,
+        "one_episode_returns_stage": true,
+        "start": "A/stone/goal/zero",
+        "two_episode_literal_return": true
+      },
+      {
+        "after_one_episode": "A/stone/goal/zero",
+        "after_two_episodes": "A/stone/goal/infinity",
+        "one_episode_literal_return": false,
+        "one_episode_pole_swapped": true,
+        "one_episode_returns_basis": true,
+        "one_episode_returns_stage": true,
+        "start": "A/stone/goal/infinity",
+        "two_episode_literal_return": true
+      }
+    ],
+    "formal_holonomy_or_homotopy_status": "PENDING_PRE_COHERENCE_PATH_LAYER",
+    "interpretation": "the eight-step return episode induces a nontrivial pole-swap monodromy while preserving returned basis",
+    "nontrivial_occurrence_monodromy_count": 6,
+    "pole_swap_count": 6,
+    "returned_basis_identity_count": 6,
+    "two_episode_literal_return_count": 6
+  }
+}

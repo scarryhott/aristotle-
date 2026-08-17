@@ -1,0 +1,547 @@
+{
+  "candidate_verdicts_present": false,
+  "candidates": {
+    "external_basis_twist": {
+      "basis_map": {
+        "a0": "a0",
+        "a1": "a2",
+        "a2": "a1",
+        "a3": "a3",
+        "a4": "a4",
+        "a5": "a5",
+        "a6": "a6",
+        "a7": "a7"
+      },
+      "candidate_kind": "operation_twist",
+      "occurrence_map": {
+        "direct:a0": "ExternalTwist/direct:a0",
+        "direct:a1": "ExternalTwist/direct:a2",
+        "direct:a2": "ExternalTwist/direct:a1",
+        "direct:a3": "ExternalTwist/direct:a3",
+        "direct:a4": "ExternalTwist/direct:a4",
+        "direct:a5": "ExternalTwist/direct:a5",
+        "direct:a6": "ExternalTwist/direct:a6",
+        "direct:a7": "ExternalTwist/direct:a7",
+        "right_identity_extended:a0": "ExternalTwist/right_identity_extended:a0",
+        "right_identity_extended:a1": "ExternalTwist/right_identity_extended:a2",
+        "right_identity_extended:a2": "ExternalTwist/right_identity_extended:a1",
+        "right_identity_extended:a3": "ExternalTwist/right_identity_extended:a3",
+        "right_identity_extended:a4": "ExternalTwist/right_identity_extended:a4",
+        "right_identity_extended:a5": "ExternalTwist/right_identity_extended:a5",
+        "right_identity_extended:a6": "ExternalTwist/right_identity_extended:a6",
+        "right_identity_extended:a7": "ExternalTwist/right_identity_extended:a7"
+      },
+      "orientation_proposal": "preserved",
+      "source_frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+      "target_frame_id": "9e3dbb4601b253b458bfa39ea48e5cf4ba9d5b2b595aade9fe69962475a062fc"
+    },
+    "external_coordinate_reexpression": {
+      "basis_map": {
+        "a0": "a0",
+        "a1": "a1",
+        "a2": "a2",
+        "a3": "a3",
+        "a4": "a4",
+        "a5": "a5",
+        "a6": "a6",
+        "a7": "a7"
+      },
+      "candidate_kind": "constructor_swap",
+      "occurrence_map": {
+        "direct:a0": "ExternalCoordinate/right_identity_extended:a0",
+        "direct:a1": "ExternalCoordinate/right_identity_extended:a1",
+        "direct:a2": "ExternalCoordinate/right_identity_extended:a2",
+        "direct:a3": "ExternalCoordinate/right_identity_extended:a3",
+        "direct:a4": "ExternalCoordinate/right_identity_extended:a4",
+        "direct:a5": "ExternalCoordinate/right_identity_extended:a5",
+        "direct:a6": "ExternalCoordinate/right_identity_extended:a6",
+        "direct:a7": "ExternalCoordinate/right_identity_extended:a7",
+        "right_identity_extended:a0": "ExternalCoordinate/direct:a0",
+        "right_identity_extended:a1": "ExternalCoordinate/direct:a1",
+        "right_identity_extended:a2": "ExternalCoordinate/direct:a2",
+        "right_identity_extended:a3": "ExternalCoordinate/direct:a3",
+        "right_identity_extended:a4": "ExternalCoordinate/direct:a4",
+        "right_identity_extended:a5": "ExternalCoordinate/direct:a5",
+        "right_identity_extended:a6": "ExternalCoordinate/direct:a6",
+        "right_identity_extended:a7": "ExternalCoordinate/direct:a7"
+      },
+      "orientation_proposal": "reversed",
+      "source_frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+      "target_frame_id": "cd24f56453a2a1320b7f78784fcce187e2ed179687f20b2868921ffdb43e066e"
+    },
+    "literal_isolation_split": {
+      "basis_map": {
+        "a0": "a0",
+        "a1": "a1",
+        "a2": "a2",
+        "a3": "a3",
+        "a4": "a4",
+        "a5": "a5",
+        "a6": "a6",
+        "a7": "a7"
+      },
+      "candidate_kind": "identity",
+      "occurrence_map": {
+        "direct:a0": "ExternalLiteralSplit/direct:a0",
+        "direct:a1": "ExternalLiteralSplit/direct:a1",
+        "direct:a2": "ExternalLiteralSplit/direct:a2",
+        "direct:a3": "ExternalLiteralSplit/direct:a3",
+        "direct:a4": "ExternalLiteralSplit/direct:a4",
+        "direct:a5": "ExternalLiteralSplit/direct:a5",
+        "direct:a6": "ExternalLiteralSplit/direct:a6",
+        "direct:a7": "ExternalLiteralSplit/direct:a7",
+        "right_identity_extended:a0": "ExternalLiteralSplit/right_identity_extended:a0",
+        "right_identity_extended:a1": "ExternalLiteralSplit/right_identity_extended:a1",
+        "right_identity_extended:a2": "ExternalLiteralSplit/right_identity_extended:a2",
+        "right_identity_extended:a3": "ExternalLiteralSplit/right_identity_extended:a3",
+        "right_identity_extended:a4": "ExternalLiteralSplit/right_identity_extended:a4",
+        "right_identity_extended:a5": "ExternalLiteralSplit/right_identity_extended:a5",
+        "right_identity_extended:a6": "ExternalLiteralSplit/right_identity_extended:a6",
+        "right_identity_extended:a7": "ExternalLiteralSplit/right_identity_extended:a7"
+      },
+      "orientation_proposal": "preserved",
+      "source_frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+      "target_frame_id": "bea687851d716bb7af4a2f5e64e16fcdf4647a488e79cd1ceac300f2403bf338"
+    },
+    "normal_subgroup_parity_collapse": {
+      "basis_map": {
+        "a0": "a0",
+        "a1": "a1",
+        "a2": "a2",
+        "a3": "a3",
+        "a4": "a4",
+        "a5": "a5",
+        "a6": "a6",
+        "a7": "a7"
+      },
+      "candidate_kind": "identity",
+      "occurrence_map": {
+        "direct:a0": "ExternalParityQuotient/direct:a0",
+        "direct:a1": "ExternalParityQuotient/direct:a1",
+        "direct:a2": "ExternalParityQuotient/direct:a2",
+        "direct:a3": "ExternalParityQuotient/direct:a3",
+        "direct:a4": "ExternalParityQuotient/direct:a4",
+        "direct:a5": "ExternalParityQuotient/direct:a5",
+        "direct:a6": "ExternalParityQuotient/direct:a6",
+        "direct:a7": "ExternalParityQuotient/direct:a7",
+        "right_identity_extended:a0": "ExternalParityQuotient/right_identity_extended:a0",
+        "right_identity_extended:a1": "ExternalParityQuotient/right_identity_extended:a1",
+        "right_identity_extended:a2": "ExternalParityQuotient/right_identity_extended:a2",
+        "right_identity_extended:a3": "ExternalParityQuotient/right_identity_extended:a3",
+        "right_identity_extended:a4": "ExternalParityQuotient/right_identity_extended:a4",
+        "right_identity_extended:a5": "ExternalParityQuotient/right_identity_extended:a5",
+        "right_identity_extended:a6": "ExternalParityQuotient/right_identity_extended:a6",
+        "right_identity_extended:a7": "ExternalParityQuotient/right_identity_extended:a7"
+      },
+      "orientation_proposal": "preserved",
+      "source_frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+      "target_frame_id": "452e9a12115e9be254a98fb11a07ef43e84c8ce867e5f813b1a2ba0fd193f4e6"
+    },
+    "partial_external_interaction": {
+      "basis_map": {
+        "a0": "a0",
+        "a1": "a1",
+        "a2": "a2",
+        "a3": "a3"
+      },
+      "candidate_kind": "partial_identity",
+      "occurrence_map": {
+        "direct:a0": "ExternalPartial/direct:a0",
+        "direct:a1": "ExternalPartial/direct:a1",
+        "direct:a2": "ExternalPartial/direct:a2",
+        "direct:a3": "ExternalPartial/direct:a3",
+        "direct:a4": "ExternalPartial/direct:a4",
+        "direct:a5": "ExternalPartial/direct:a5",
+        "direct:a6": "ExternalPartial/direct:a6",
+        "direct:a7": "ExternalPartial/direct:a7"
+      },
+      "orientation_proposal": null,
+      "source_frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+      "target_frame_id": "e1aadb71a784ed7f722b6f03d3791233c4b94deae115ec3e1b215a14e5514ae9"
+    }
+  },
+  "central_interaction": {
+    "central_frame_id": "24675e9c9bbf5ab3203dc884b9cf7e35c8db19f276ff84a4bdb6ab8dc2475eb5",
+    "embedding_e": {
+      "ExternalCoordinate/direct:a0": "ExternalCentralIsolation/direct:a0|z0",
+      "ExternalCoordinate/direct:a1": "ExternalCentralIsolation/direct:a1|z0",
+      "ExternalCoordinate/direct:a2": "ExternalCentralIsolation/direct:a2|z0",
+      "ExternalCoordinate/direct:a3": "ExternalCentralIsolation/direct:a3|z0",
+      "ExternalCoordinate/direct:a4": "ExternalCentralIsolation/direct:a4|z0",
+      "ExternalCoordinate/direct:a5": "ExternalCentralIsolation/direct:a5|z0",
+      "ExternalCoordinate/direct:a6": "ExternalCentralIsolation/direct:a6|z0",
+      "ExternalCoordinate/direct:a7": "ExternalCentralIsolation/direct:a7|z0",
+      "ExternalCoordinate/right_identity_extended:a0": "ExternalCentralIsolation/right_identity_extended:a0|z0",
+      "ExternalCoordinate/right_identity_extended:a1": "ExternalCentralIsolation/right_identity_extended:a1|z0",
+      "ExternalCoordinate/right_identity_extended:a2": "ExternalCentralIsolation/right_identity_extended:a2|z0",
+      "ExternalCoordinate/right_identity_extended:a3": "ExternalCentralIsolation/right_identity_extended:a3|z0",
+      "ExternalCoordinate/right_identity_extended:a4": "ExternalCentralIsolation/right_identity_extended:a4|z0",
+      "ExternalCoordinate/right_identity_extended:a5": "ExternalCentralIsolation/right_identity_extended:a5|z0",
+      "ExternalCoordinate/right_identity_extended:a6": "ExternalCentralIsolation/right_identity_extended:a6|z0",
+      "ExternalCoordinate/right_identity_extended:a7": "ExternalCentralIsolation/right_identity_extended:a7|z0"
+    },
+    "identity_relation_S": [
+      [
+        "a0",
+        "a0|z0"
+      ],
+      [
+        "a0",
+        "a0|z1"
+      ],
+      [
+        "a1",
+        "a1|z0"
+      ],
+      [
+        "a1",
+        "a1|z1"
+      ],
+      [
+        "a2",
+        "a2|z0"
+      ],
+      [
+        "a2",
+        "a2|z1"
+      ],
+      [
+        "a3",
+        "a3|z0"
+      ],
+      [
+        "a3",
+        "a3|z1"
+      ],
+      [
+        "a4",
+        "a4|z0"
+      ],
+      [
+        "a4",
+        "a4|z1"
+      ],
+      [
+        "a5",
+        "a5|z0"
+      ],
+      [
+        "a5",
+        "a5|z1"
+      ],
+      [
+        "a6",
+        "a6|z0"
+      ],
+      [
+        "a6",
+        "a6|z1"
+      ],
+      [
+        "a7",
+        "a7|z0"
+      ],
+      [
+        "a7",
+        "a7|z1"
+      ]
+    ],
+    "occurrence_relation_R": [
+      [
+        "ExternalCoordinate/direct:a0",
+        "ExternalCentralIsolation/direct:a0|z0"
+      ],
+      [
+        "ExternalCoordinate/direct:a0",
+        "ExternalCentralIsolation/direct:a0|z1"
+      ],
+      [
+        "ExternalCoordinate/direct:a0",
+        "ExternalCentralIsolation/right_identity_extended:a0|z0"
+      ],
+      [
+        "ExternalCoordinate/direct:a0",
+        "ExternalCentralIsolation/right_identity_extended:a0|z1"
+      ],
+      [
+        "ExternalCoordinate/direct:a1",
+        "ExternalCentralIsolation/direct:a1|z0"
+      ],
+      [
+        "ExternalCoordinate/direct:a1",
+        "ExternalCentralIsolation/direct:a1|z1"
+      ],
+      [
+        "ExternalCoordinate/direct:a1",
+        "ExternalCentralIsolation/right_identity_extended:a1|z0"
+      ],
+      [
+        "ExternalCoordinate/direct:a1",
+        "ExternalCentralIsolation/right_identity_extended:a1|z1"
+      ],
+      [
+        "ExternalCoordinate/direct:a2",
+        "ExternalCentralIsolation/direct:a2|z0"
+      ],
+      [
+        "ExternalCoordinate/direct:a2",
+        "ExternalCentralIsolation/direct:a2|z1"
+      ],
+      [
+        "ExternalCoordinate/direct:a2",
+        "ExternalCentralIsolation/right_identity_extended:a2|z0"
+      ],
+      [
+        "ExternalCoordinate/direct:a2",
+        "ExternalCentralIsolation/right_identity_extended:a2|z1"
+      ],
+      [
+        "ExternalCoordinate/direct:a3",
+        "ExternalCentralIsolation/direct:a3|z0"
+      ],
+      [
+        "ExternalCoordinate/direct:a3",
+        "ExternalCentralIsolation/direct:a3|z1"
+      ],
+      [
+        "ExternalCoordinate/direct:a3",
+        "ExternalCentralIsolation/right_identity_extended:a3|z0"
+      ],
+      [
+        "ExternalCoordinate/direct:a3",
+        "ExternalCentralIsolation/right_identity_extended:a3|z1"
+      ],
+      [
+        "ExternalCoordinate/direct:a4",
+        "ExternalCentralIsolation/direct:a4|z0"
+      ],
+      [
+        "ExternalCoordinate/direct:a4",
+        "ExternalCentralIsolation/direct:a4|z1"
+      ],
+      [
+        "ExternalCoordinate/direct:a4",
+        "ExternalCentralIsolation/right_identity_extended:a4|z0"
+      ],
+      [
+        "ExternalCoordinate/direct:a4",
+        "ExternalCentralIsolation/right_identity_extended:a4|z1"
+      ],
+      [
+        "ExternalCoordinate/direct:a5",
+        "ExternalCentralIsolation/direct:a5|z0"
+      ],
+      [
+        "ExternalCoordinate/direct:a5",
+        "ExternalCentralIsolation/direct:a5|z1"
+      ],
+      [
+        "ExternalCoordinate/direct:a5",
+        "ExternalCentralIsolation/right_identity_extended:a5|z0"
+      ],
+      [
+        "ExternalCoordinate/direct:a5",
+        "ExternalCentralIsolation/right_identity_extended:a5|z1"
+      ],
+      [
+        "ExternalCoordinate/direct:a6",
+        "ExternalCentralIsolation/direct:a6|z0"
+      ],
+      [
+        "ExternalCoordinate/direct:a6",
+        "ExternalCentralIsolation/direct:a6|z1"
+      ],
+      [
+        "ExternalCoordinate/direct:a6",
+        "ExternalCentralIsolation/right_identity_extended:a6|z0"
+      ],
+      [
+        "ExternalCoordinate/direct:a6",
+        "ExternalCentralIsolation/right_identity_extended:a6|z1"
+      ],
+      [
+        "ExternalCoordinate/direct:a7",
+        "ExternalCentralIsolation/direct:a7|z0"
+      ],
+      [
+        "ExternalCoordinate/direct:a7",
+        "ExternalCentralIsolation/direct:a7|z1"
+      ],
+      [
+        "ExternalCoordinate/direct:a7",
+        "ExternalCentralIsolation/right_identity_extended:a7|z0"
+      ],
+      [
+        "ExternalCoordinate/direct:a7",
+        "ExternalCentralIsolation/right_identity_extended:a7|z1"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a0",
+        "ExternalCentralIsolation/direct:a0|z0"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a0",
+        "ExternalCentralIsolation/direct:a0|z1"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a0",
+        "ExternalCentralIsolation/right_identity_extended:a0|z0"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a0",
+        "ExternalCentralIsolation/right_identity_extended:a0|z1"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a1",
+        "ExternalCentralIsolation/direct:a1|z0"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a1",
+        "ExternalCentralIsolation/direct:a1|z1"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a1",
+        "ExternalCentralIsolation/right_identity_extended:a1|z0"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a1",
+        "ExternalCentralIsolation/right_identity_extended:a1|z1"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a2",
+        "ExternalCentralIsolation/direct:a2|z0"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a2",
+        "ExternalCentralIsolation/direct:a2|z1"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a2",
+        "ExternalCentralIsolation/right_identity_extended:a2|z0"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a2",
+        "ExternalCentralIsolation/right_identity_extended:a2|z1"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a3",
+        "ExternalCentralIsolation/direct:a3|z0"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a3",
+        "ExternalCentralIsolation/direct:a3|z1"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a3",
+        "ExternalCentralIsolation/right_identity_extended:a3|z0"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a3",
+        "ExternalCentralIsolation/right_identity_extended:a3|z1"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a4",
+        "ExternalCentralIsolation/direct:a4|z0"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a4",
+        "ExternalCentralIsolation/direct:a4|z1"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a4",
+        "ExternalCentralIsolation/right_identity_extended:a4|z0"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a4",
+        "ExternalCentralIsolation/right_identity_extended:a4|z1"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a5",
+        "ExternalCentralIsolation/direct:a5|z0"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a5",
+        "ExternalCentralIsolation/direct:a5|z1"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a5",
+        "ExternalCentralIsolation/right_identity_extended:a5|z0"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a5",
+        "ExternalCentralIsolation/right_identity_extended:a5|z1"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a6",
+        "ExternalCentralIsolation/direct:a6|z0"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a6",
+        "ExternalCentralIsolation/direct:a6|z1"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a6",
+        "ExternalCentralIsolation/right_identity_extended:a6|z0"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a6",
+        "ExternalCentralIsolation/right_identity_extended:a6|z1"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a7",
+        "ExternalCentralIsolation/direct:a7|z0"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a7",
+        "ExternalCentralIsolation/direct:a7|z1"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a7",
+        "ExternalCentralIsolation/right_identity_extended:a7|z0"
+      ],
+      [
+        "ExternalCoordinate/right_identity_extended:a7",
+        "ExternalCentralIsolation/right_identity_extended:a7|z1"
+      ]
+    ],
+    "quotient_q": {
+      "ExternalCentralIsolation/direct:a0|z0": "right_identity_extended:a0",
+      "ExternalCentralIsolation/direct:a0|z1": "right_identity_extended:a0",
+      "ExternalCentralIsolation/direct:a1|z0": "right_identity_extended:a1",
+      "ExternalCentralIsolation/direct:a1|z1": "right_identity_extended:a1",
+      "ExternalCentralIsolation/direct:a2|z0": "right_identity_extended:a2",
+      "ExternalCentralIsolation/direct:a2|z1": "right_identity_extended:a2",
+      "ExternalCentralIsolation/direct:a3|z0": "right_identity_extended:a3",
+      "ExternalCentralIsolation/direct:a3|z1": "right_identity_extended:a3",
+      "ExternalCentralIsolation/direct:a4|z0": "right_identity_extended:a4",
+      "ExternalCentralIsolation/direct:a4|z1": "right_identity_extended:a4",
+      "ExternalCentralIsolation/direct:a5|z0": "right_identity_extended:a5",
+      "ExternalCentralIsolation/direct:a5|z1": "right_identity_extended:a5",
+      "ExternalCentralIsolation/direct:a6|z0": "right_identity_extended:a6",
+      "ExternalCentralIsolation/direct:a6|z1": "right_identity_extended:a6",
+      "ExternalCentralIsolation/direct:a7|z0": "right_identity_extended:a7",
+      "ExternalCentralIsolation/direct:a7|z1": "right_identity_extended:a7",
+      "ExternalCentralIsolation/right_identity_extended:a0|z0": "direct:a0",
+      "ExternalCentralIsolation/right_identity_extended:a0|z1": "direct:a0",
+      "ExternalCentralIsolation/right_identity_extended:a1|z0": "direct:a1",
+      "ExternalCentralIsolation/right_identity_extended:a1|z1": "direct:a1",
+      "ExternalCentralIsolation/right_identity_extended:a2|z0": "direct:a2",
+      "ExternalCentralIsolation/right_identity_extended:a2|z1": "direct:a2",
+      "ExternalCentralIsolation/right_identity_extended:a3|z0": "direct:a3",
+      "ExternalCentralIsolation/right_identity_extended:a3|z1": "direct:a3",
+      "ExternalCentralIsolation/right_identity_extended:a4|z0": "direct:a4",
+      "ExternalCentralIsolation/right_identity_extended:a4|z1": "direct:a4",
+      "ExternalCentralIsolation/right_identity_extended:a5|z0": "direct:a5",
+      "ExternalCentralIsolation/right_identity_extended:a5|z1": "direct:a5",
+      "ExternalCentralIsolation/right_identity_extended:a6|z0": "direct:a6",
+      "ExternalCentralIsolation/right_identity_extended:a6|z1": "direct:a6",
+      "ExternalCentralIsolation/right_identity_extended:a7|z0": "direct:a7",
+      "ExternalCentralIsolation/right_identity_extended:a7|z1": "direct:a7"
+    },
+    "returned_frame_id": "1a66488302fb85d9c3f86534df80bde4a365732bc6bfeb20998fcfe160d5aae9",
+    "source_coordinate_frame_id": "cd24f56453a2a1320b7f78784fcce187e2ed179687f20b2868921ffdb43e066e",
+    "verdicts_present": false
+  },
+  "constructed_after_all_external_frames_frozen": true,
+  "schema_version": 1
+}

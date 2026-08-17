@@ -1,0 +1,492 @@
+{
+  "frame_id": "B",
+  "learning_translation": {
+    "B/amber/chart_a/left": "B/amber/chart_r/left",
+    "B/amber/chart_a/right": "B/amber/chart_r/right",
+    "B/amber/chart_b/left": "B/amber/chart_y/left",
+    "B/amber/chart_b/right": "B/amber/chart_y/right",
+    "B/amber/chart_l/left": "B/amber/chart_a/left",
+    "B/amber/chart_l/right": "B/amber/chart_a/right",
+    "B/amber/chart_p/left": "B/amber/chart_b/left",
+    "B/amber/chart_p/right": "B/amber/chart_b/right",
+    "B/amber/chart_q/left": "B/amber/chart_p/left",
+    "B/amber/chart_q/right": "B/amber/chart_p/right",
+    "B/amber/chart_r/left": "B/amber/chart_q/right",
+    "B/amber/chart_r/right": "B/amber/chart_q/left",
+    "B/amber/chart_w/left": "B/amber/chart_l/left",
+    "B/amber/chart_w/right": "B/amber/chart_l/right",
+    "B/amber/chart_y/left": "B/amber/chart_w/left",
+    "B/amber/chart_y/right": "B/amber/chart_w/right",
+    "B/silver/chart_a/left": "B/silver/chart_r/left",
+    "B/silver/chart_a/right": "B/silver/chart_r/right",
+    "B/silver/chart_b/left": "B/silver/chart_y/left",
+    "B/silver/chart_b/right": "B/silver/chart_y/right",
+    "B/silver/chart_l/left": "B/silver/chart_a/left",
+    "B/silver/chart_l/right": "B/silver/chart_a/right",
+    "B/silver/chart_p/left": "B/silver/chart_b/left",
+    "B/silver/chart_p/right": "B/silver/chart_b/right",
+    "B/silver/chart_q/left": "B/silver/chart_p/left",
+    "B/silver/chart_q/right": "B/silver/chart_p/right",
+    "B/silver/chart_r/left": "B/silver/chart_q/right",
+    "B/silver/chart_r/right": "B/silver/chart_q/left",
+    "B/silver/chart_w/left": "B/silver/chart_l/left",
+    "B/silver/chart_w/right": "B/silver/chart_l/right",
+    "B/silver/chart_y/left": "B/silver/chart_w/left",
+    "B/silver/chart_y/right": "B/silver/chart_w/right",
+    "B/violet/chart_a/left": "B/violet/chart_r/left",
+    "B/violet/chart_a/right": "B/violet/chart_r/right",
+    "B/violet/chart_b/left": "B/violet/chart_y/left",
+    "B/violet/chart_b/right": "B/violet/chart_y/right",
+    "B/violet/chart_l/left": "B/violet/chart_a/left",
+    "B/violet/chart_l/right": "B/violet/chart_a/right",
+    "B/violet/chart_p/left": "B/violet/chart_b/left",
+    "B/violet/chart_p/right": "B/violet/chart_b/right",
+    "B/violet/chart_q/left": "B/violet/chart_p/left",
+    "B/violet/chart_q/right": "B/violet/chart_p/right",
+    "B/violet/chart_r/left": "B/violet/chart_q/right",
+    "B/violet/chart_r/right": "B/violet/chart_q/left",
+    "B/violet/chart_w/left": "B/violet/chart_l/left",
+    "B/violet/chart_w/right": "B/violet/chart_l/right",
+    "B/violet/chart_y/left": "B/violet/chart_w/left",
+    "B/violet/chart_y/right": "B/violet/chart_w/right"
+  },
+  "line_set": [
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:0:0",
+      "path_or_wall_exclusive": true,
+      "source": "B/amber/chart_q/left",
+      "target": "B/amber/chart_p/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:0:1",
+      "path_or_wall_exclusive": true,
+      "source": "B/amber/chart_p/left",
+      "target": "B/amber/chart_b/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:0:10",
+      "path_or_wall_exclusive": true,
+      "source": "B/amber/chart_b/right",
+      "target": "B/amber/chart_y/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:0:11",
+      "path_or_wall_exclusive": true,
+      "source": "B/amber/chart_y/right",
+      "target": "B/amber/chart_w/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:0:12",
+      "path_or_wall_exclusive": true,
+      "source": "B/amber/chart_w/right",
+      "target": "B/amber/chart_l/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:0:13",
+      "path_or_wall_exclusive": true,
+      "source": "B/amber/chart_l/right",
+      "target": "B/amber/chart_a/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:0:14",
+      "path_or_wall_exclusive": true,
+      "source": "B/amber/chart_a/right",
+      "target": "B/amber/chart_r/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "B:line:0:15",
+      "path_or_wall_exclusive": true,
+      "source": "B/amber/chart_r/right",
+      "target": "B/amber/chart_q/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:0:2",
+      "path_or_wall_exclusive": true,
+      "source": "B/amber/chart_b/left",
+      "target": "B/amber/chart_y/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:0:3",
+      "path_or_wall_exclusive": true,
+      "source": "B/amber/chart_y/left",
+      "target": "B/amber/chart_w/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:0:4",
+      "path_or_wall_exclusive": true,
+      "source": "B/amber/chart_w/left",
+      "target": "B/amber/chart_l/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:0:5",
+      "path_or_wall_exclusive": true,
+      "source": "B/amber/chart_l/left",
+      "target": "B/amber/chart_a/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:0:6",
+      "path_or_wall_exclusive": true,
+      "source": "B/amber/chart_a/left",
+      "target": "B/amber/chart_r/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "B:line:0:7",
+      "path_or_wall_exclusive": true,
+      "source": "B/amber/chart_r/left",
+      "target": "B/amber/chart_q/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:0:8",
+      "path_or_wall_exclusive": true,
+      "source": "B/amber/chart_q/right",
+      "target": "B/amber/chart_p/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:0:9",
+      "path_or_wall_exclusive": true,
+      "source": "B/amber/chart_p/right",
+      "target": "B/amber/chart_b/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:1:0",
+      "path_or_wall_exclusive": true,
+      "source": "B/violet/chart_q/left",
+      "target": "B/violet/chart_p/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:1:1",
+      "path_or_wall_exclusive": true,
+      "source": "B/violet/chart_p/left",
+      "target": "B/violet/chart_b/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:1:10",
+      "path_or_wall_exclusive": true,
+      "source": "B/violet/chart_b/right",
+      "target": "B/violet/chart_y/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:1:11",
+      "path_or_wall_exclusive": true,
+      "source": "B/violet/chart_y/right",
+      "target": "B/violet/chart_w/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:1:12",
+      "path_or_wall_exclusive": true,
+      "source": "B/violet/chart_w/right",
+      "target": "B/violet/chart_l/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:1:13",
+      "path_or_wall_exclusive": true,
+      "source": "B/violet/chart_l/right",
+      "target": "B/violet/chart_a/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:1:14",
+      "path_or_wall_exclusive": true,
+      "source": "B/violet/chart_a/right",
+      "target": "B/violet/chart_r/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "B:line:1:15",
+      "path_or_wall_exclusive": true,
+      "source": "B/violet/chart_r/right",
+      "target": "B/violet/chart_q/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:1:2",
+      "path_or_wall_exclusive": true,
+      "source": "B/violet/chart_b/left",
+      "target": "B/violet/chart_y/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:1:3",
+      "path_or_wall_exclusive": true,
+      "source": "B/violet/chart_y/left",
+      "target": "B/violet/chart_w/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:1:4",
+      "path_or_wall_exclusive": true,
+      "source": "B/violet/chart_w/left",
+      "target": "B/violet/chart_l/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:1:5",
+      "path_or_wall_exclusive": true,
+      "source": "B/violet/chart_l/left",
+      "target": "B/violet/chart_a/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:1:6",
+      "path_or_wall_exclusive": true,
+      "source": "B/violet/chart_a/left",
+      "target": "B/violet/chart_r/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "B:line:1:7",
+      "path_or_wall_exclusive": true,
+      "source": "B/violet/chart_r/left",
+      "target": "B/violet/chart_q/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:1:8",
+      "path_or_wall_exclusive": true,
+      "source": "B/violet/chart_q/right",
+      "target": "B/violet/chart_p/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:1:9",
+      "path_or_wall_exclusive": true,
+      "source": "B/violet/chart_p/right",
+      "target": "B/violet/chart_b/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:2:0",
+      "path_or_wall_exclusive": true,
+      "source": "B/silver/chart_q/left",
+      "target": "B/silver/chart_p/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:2:1",
+      "path_or_wall_exclusive": true,
+      "source": "B/silver/chart_p/left",
+      "target": "B/silver/chart_b/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:2:10",
+      "path_or_wall_exclusive": true,
+      "source": "B/silver/chart_b/right",
+      "target": "B/silver/chart_y/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:2:11",
+      "path_or_wall_exclusive": true,
+      "source": "B/silver/chart_y/right",
+      "target": "B/silver/chart_w/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:2:12",
+      "path_or_wall_exclusive": true,
+      "source": "B/silver/chart_w/right",
+      "target": "B/silver/chart_l/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:2:13",
+      "path_or_wall_exclusive": true,
+      "source": "B/silver/chart_l/right",
+      "target": "B/silver/chart_a/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:2:14",
+      "path_or_wall_exclusive": true,
+      "source": "B/silver/chart_a/right",
+      "target": "B/silver/chart_r/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "B:line:2:15",
+      "path_or_wall_exclusive": true,
+      "source": "B/silver/chart_r/right",
+      "target": "B/silver/chart_q/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:2:2",
+      "path_or_wall_exclusive": true,
+      "source": "B/silver/chart_b/left",
+      "target": "B/silver/chart_y/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:2:3",
+      "path_or_wall_exclusive": true,
+      "source": "B/silver/chart_y/left",
+      "target": "B/silver/chart_w/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:2:4",
+      "path_or_wall_exclusive": true,
+      "source": "B/silver/chart_w/left",
+      "target": "B/silver/chart_l/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:2:5",
+      "path_or_wall_exclusive": true,
+      "source": "B/silver/chart_l/left",
+      "target": "B/silver/chart_a/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:2:6",
+      "path_or_wall_exclusive": true,
+      "source": "B/silver/chart_a/left",
+      "target": "B/silver/chart_r/left"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": true,
+      "inverse_reading": "wall",
+      "line_id": "B:line:2:7",
+      "path_or_wall_exclusive": true,
+      "source": "B/silver/chart_r/left",
+      "target": "B/silver/chart_q/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:2:8",
+      "path_or_wall_exclusive": true,
+      "source": "B/silver/chart_q/right",
+      "target": "B/silver/chart_p/right"
+    },
+    {
+      "direct_reading": "passage",
+      "independent_return_line": false,
+      "inverse_reading": "wall",
+      "line_id": "B:line:2:9",
+      "path_or_wall_exclusive": true,
+      "source": "B/silver/chart_p/right",
+      "target": "B/silver/chart_b/right"
+    }
+  ],
+  "one_line_set_after_disclosure": true,
+  "parent_forward_lines_sha256": "41b105995e5823705d3f17fb3d81d26657b8ecedc65ec1c094d93206b48a3321",
+  "parent_frozen_geometry_sha256": "4d13a0813cbee538c67b537f7a3e1f7a9e67b843c67ebbaf96ed0d5bc37c6cfe",
+  "parent_return_lines_sha256": "148ef537c40ff800aa4436be17f752142d523988c87b8f3448d0d1e69abbfd87",
+  "schema_version": "maze-line-set-disclosure-1.0"
+}

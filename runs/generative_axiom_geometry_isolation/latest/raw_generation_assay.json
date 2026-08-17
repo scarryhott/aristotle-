@@ -1,0 +1,146 @@
+{
+  "assay": "optional_raw_generation_interface_assay",
+  "claim_boundary": "hash preservation and registered-interface classification only",
+  "comparison": {
+    "both_registered_trans_frame_interfaces": false,
+    "candidate_enumeration_started": false,
+    "global_nonexistence_claimed": false,
+    "naturality_search_started": false,
+    "no_geometry_was_normalized_or_replaced": true,
+    "open_in_emitted": false,
+    "outside_interface_is_not_false_mathematics": true,
+    "outside_interface_is_not_open_in": true,
+    "reason": "the two frozen finite identity/occurrence carriers have different cardinalities, so no total bijective GeomEquiv exists in this registered interface",
+    "status": "CARDINALITY_GEOM_EQUIV_OBSTRUCTION"
+  },
+  "raw_artifacts": {
+    "A": {
+      "assay": {
+        "carrier_size": 8,
+        "declares_nonfinite_occurrence_domain": false,
+        "equality_partition_valid": true,
+        "finite_occurrence_shape_valid": true,
+        "listed_occurrence_count": 16,
+        "local_group_certificate": {
+          "associativity_cases": 512,
+          "associativity_failure_count": 0,
+          "first_associativity_failure": null,
+          "identity": "r0",
+          "identity_candidates": [
+            "r0"
+          ],
+          "inverses": {
+            "r0": "r0",
+            "r1": "r3",
+            "r2": "r2",
+            "r3": "r1",
+            "s0": "s0",
+            "s1": "s1",
+            "s2": "s2",
+            "s3": "s3"
+          },
+          "orders": {
+            "r0": 1,
+            "r1": 4,
+            "r2": 2,
+            "r3": 4,
+            "s0": 2,
+            "s1": 2,
+            "s2": 2,
+            "s3": 2
+          },
+          "passed": true
+        },
+        "local_group_kernel_status": "VALID_FINITE_GROUP",
+        "local_group_mathematics_refuted": false,
+        "open_in_emitted": false,
+        "operation_table_shape_valid": true,
+        "reason": null,
+        "reference_frame_interface_status": "REGISTERED_FINITE_REFERENCE_FRAME_INTERFACE",
+        "registered_finite_reference_frame_interface": true,
+        "registered_trans_frame_interface": false,
+        "source_sha256": "698ceace44a5c2dea0bf2e4d7f2674d2a517d6d3b166bd9804e3de96b41f5bb5",
+        "trans_frame_interface_status": "OUTSIDE_REGISTERED_TRANS_FRAME_INTERFACE",
+        "trans_frame_law_audit": {
+          "C_failure_count": 0,
+          "C_first_failure": null,
+          "E_failure_count": 2,
+          "E_first_failure": [
+            "north",
+            "section_keys_are_not_the_carrier"
+          ],
+          "J_failure_count": 0,
+          "J_first_failure": null,
+          "W_total_and_carrier_valued": true
+        }
+      },
+      "bytes_preserved": true,
+      "declared_local_name": "Square-affine group D4",
+      "preserved_path": "raw_agent_a.698ceace44a5c2de.json",
+      "preserved_sha256": "698ceace44a5c2dea0bf2e4d7f2674d2a517d6d3b166bd9804e3de96b41f5bb5",
+      "source_sha256": "698ceace44a5c2dea0bf2e4d7f2674d2a517d6d3b166bd9804e3de96b41f5bb5"
+    },
+    "B": {
+      "assay": {
+        "carrier_size": 6,
+        "declares_nonfinite_occurrence_domain": false,
+        "equality_partition_valid": true,
+        "finite_occurrence_shape_valid": true,
+        "listed_occurrence_count": 12,
+        "local_group_certificate": {
+          "associativity_cases": 216,
+          "associativity_failure_count": 0,
+          "first_associativity_failure": null,
+          "identity": "e",
+          "identity_candidates": [
+            "e"
+          ],
+          "inverses": {
+            "e": "e",
+            "r": "r2",
+            "r2": "r",
+            "s": "s",
+            "sr": "sr",
+            "sr2": "sr2"
+          },
+          "orders": {
+            "e": 1,
+            "r": 3,
+            "r2": 3,
+            "s": 2,
+            "sr": 2,
+            "sr2": 2
+          },
+          "passed": true
+        },
+        "local_group_kernel_status": "VALID_FINITE_GROUP",
+        "local_group_mathematics_refuted": false,
+        "open_in_emitted": false,
+        "operation_table_shape_valid": true,
+        "reason": null,
+        "reference_frame_interface_status": "REGISTERED_FINITE_REFERENCE_FRAME_INTERFACE",
+        "registered_finite_reference_frame_interface": true,
+        "registered_trans_frame_interface": true,
+        "source_sha256": "285c13e363c36ae22a340efb4b40cc3858705f75817973274dac3d84c07c9268",
+        "trans_frame_interface_status": "REGISTERED_TRANS_FRAME_INTERFACE",
+        "trans_frame_law_audit": {
+          "C_failure_count": 0,
+          "C_first_failure": null,
+          "E_failure_count": 0,
+          "E_first_failure": null,
+          "J_failure_count": 0,
+          "J_first_failure": null,
+          "W_total_and_carrier_valued": true
+        }
+      },
+      "bytes_preserved": true,
+      "declared_local_name": null,
+      "preserved_path": "raw_agent_b.285c13e363c36ae2.json",
+      "preserved_sha256": "285c13e363c36ae22a340efb4b40cc3858705f75817973274dac3d84c07c9268",
+      "source_sha256": "285c13e363c36ae22a340efb4b40cc3858705f75817973274dac3d84c07c9268"
+    }
+  },
+  "reference_positive_lane_pass_does_not_depend_on_this_assay": true,
+  "schema_version": 1,
+  "status": "ASSAY_COMPLETE"
+}

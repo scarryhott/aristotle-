@@ -1,0 +1,27 @@
+{
+  "axiom_geometry_assumption": {
+    "admission_status": "ASSUMED_FOR_INTERNAL_EVALUATION",
+    "carrier": "two frozen local program presentations for every local element",
+    "closure_obligations": [
+      "setoid",
+      "returning",
+      "grounded",
+      "operation_congruence",
+      "presentation_reversal"
+    ],
+    "evaluation_rule": "instantiate equality exactly when the two locally evaluated programs have identical complete right-action signatures",
+    "name": "A-local-operational-closure-geometry",
+    "relation_kind": "local_right_action_signature_equivalence",
+    "semantic_boundary": "The relation is admitted as language A's local axiom geometry before cross-frame search. Internal auditing may refute its coherence but may not replace it with an external normal form."
+  },
+  "constructors": ["direct", "right_identity_extended"],
+  "forbidden_inputs": [
+    "perspective B artifact",
+    "candidate comparisons",
+    "cross-frame contact",
+    "question outcomes"
+  ],
+  "language": "A",
+  "schema_version": 2,
+  "visible_inputs": ["frozen perspective A operation table and group certificate"]
+}

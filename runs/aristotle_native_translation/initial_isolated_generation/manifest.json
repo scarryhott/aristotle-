@@ -1,0 +1,37 @@
+{
+  "protocol": "docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md",
+  "stage": "phase_a_independent_local_generation_only",
+  "status": "complete",
+  "sdk": {"package": "aristotlelib", "version": "2.1.0"},
+  "neutral_packet": {
+    "version": "v1",
+    "sha256": "8ce9c4753336e5fa615f82c3a0ba8e52b7cf6c82c8e5b9768be055a18fdcb91e"
+  },
+  "arms": [
+    {
+      "arm": "A",
+      "project_id": "b71e33ad-fa4f-4c52-8cb9-c5fef7d4bdcc",
+      "task_id": "ed828dd7-3c4a-4211-99b3-906e365f3534",
+      "task_status": "COMPLETE",
+      "result_tar_sha256": "03546d4799235949041c73f0c1d4c2b56dbda30a984747098c0ec52d57860e5c",
+      "neutral_frame_sha256": "af33fb2ecb8336fbe94bc6832b6f08e5a7faba393d7e3cb5f437b60c1b02b6a7",
+      "summary_sha256": "d3344ddad028d20dff3cb21658b99c7ae0dcbc15324fa8ccf626470e36bd9c59"
+    },
+    {
+      "arm": "B",
+      "project_id": "e5857f7b-b859-4c79-932c-59d5f98fe9cd",
+      "task_id": "2f01c523-89cf-4011-8d5f-446308c6d226",
+      "task_status": "COMPLETE",
+      "result_tar_sha256": "d7ae65938db79a3405a364f03804d5c738ccaef0ca9acc79f61ac2b5ec1910a4",
+      "neutral_frame_sha256": "a0e1d34b9075207f203e0016de60c379d4887660b4134906dd9ef7b3df26a07b",
+      "summary_sha256": "fabee73b09da5fca2b250bf656116ba8fc7d0994757e97e8b6c5ca671cc78c93"
+    }
+  ],
+  "prohibited_claims": [
+    "cross_frame_translation",
+    "candidate_relational_equality",
+    "completion",
+    "cross_frame_ivi",
+    "topology_naturality"
+  ]
+}
