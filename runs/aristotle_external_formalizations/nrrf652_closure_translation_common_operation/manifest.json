@@ -1,0 +1,16 @@
+{
+  "stage": "external_formalization_intake",
+  "status": "source_attested_external_not_built",
+  "sdk": {"package": "aristotlelib", "version": "2.1.0"},
+  "project_id": "068068ee-b720-4df1-a203-571e0928ec3d",
+  "task_id": "013b6695-fd0b-4e5d-aa33-1fca1ba37a8c",
+  "task_status": "COMPLETE",
+  "artifact": {
+    "result_tar_sha256": "5a9f13f1cb013f3968abc05051cb7e726704c0c3566f2b605dc248ec075e9823",
+    "lean_source": "NRRF652ClosureTranslationCommonOperationKakeyaTokenResuperposition.lean",
+    "lean_source_sha256": "35254e448d80455ec94a4ad97d932d52e53120160338b1145c884b8c697bb35c",
+    "notes": "CLOSURE_TRANSLATION_COMMON_OPERATION_NRRF652_NOTES.md",
+    "notes_sha256": "c3c3bd66026be628c1565d83edb2c5d624f2fce33e5c2f1c9265371e0fbc9c75"
+  },
+  "claim_boundary": "The source is archived externally and its bytes are attested, but it is not locally built, bridged, a physical/cosmological result, or input to the frozen native translation experiment."
+}
