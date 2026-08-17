@@ -172,7 +172,9 @@ Phase B2 identity-independent validation also completed. Of the 36 frozen `MAPPE
 
 Phase B3 candidate-equality evaluation completed. It accepts `C_AB v0.1.0` only on the explicitly frozen 34-role subinterface: each frame realizes a neutral signature for those roles with the recorded reshaping only. The result is witnessed by non-promotion countermodels showing that the subinterface admits B's empty-node frame and A's infinite-label/observable frame. Whole-frame equality and `GeomEquiv` remain **BLOCKED** by the frozen structural failure; no excluded entry is repaired or reclassified. See the Phase B3 manifest for provenance and hashes.
 
-The next open step is independent return generation. Its generator may see only the admitted frozen forward subinterface and must not see the accepted subinterface-equality outcome, target reverse edges, or downstream metrics.
+Phase C1 independent return generation completed over exactly the 34 admitted roles. It produces local return evidence for every admitted role (20 determined, 5 unique, 1 round-trip, and 8 bare-identity receipts) without accessing the candidate-equality artifact. It explicitly abstains from assembling those local receipts into a cross-frame return, reverse paths, completion, recoverability, IVI, topology naturality, receipt gates, and all transfer metrics. See the Phase C1 manifest for provenance and hashes.
+
+The next open step is translational completion and recoverability: it must test whether these independently generated local returns assemble and complete the admitted relation, while preserving every stated abstention and global obstruction.
 
 ### Phase C — independent return and downstream evaluation
 

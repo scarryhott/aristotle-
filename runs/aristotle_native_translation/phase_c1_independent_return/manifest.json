@@ -1,0 +1,36 @@
+{
+  "protocol": "docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md",
+  "stage": "phase_c1_independent_return_generation_only",
+  "status": "complete",
+  "sdk": {"package": "aristotlelib", "version": "2.1.0"},
+  "project_id": "7f618287-2c7e-475f-bafd-fa25174f1af9",
+  "task_id": "799b6bf1-bd23-4f55-8725-75bd42bde00e",
+  "task_status": "COMPLETE",
+  "input_phase_b2_result_tar_sha256": "c3c05eae85fa0357501f177cbbcebbe103a9f29c90926d9ee9b5e08ac4dd5da8",
+  "outputs": {
+    "result_tar_sha256": "0cd2d7b56e38d99f3aa9b20af0c87b752e4985dabec22bed9d85d2e98670f56e",
+    "independent_return_markdown_sha256": "b3b1aa7c509e2674f5edf0b939c2eade33bcf9b36762a2ea1e36251b4740fda0",
+    "admitted_roles": 34,
+    "return_determined": 20,
+    "return_unique": 5,
+    "return_round_trip": 1,
+    "return_identity_not_single_valued": 8,
+    "abstained_roles": 0
+  },
+  "explicit_global_abstentions": [
+    "assembled_cross_frame_return",
+    "reverse_edges_or_reverse_paths",
+    "candidate_equality_or_geom_equiv",
+    "completion_or_recoverability",
+    "coverage_of_excluded_entries",
+    "ivi_topology_naturality_or_receipt_gate",
+    "question_transport_heldout_transfer_or_scores"
+  ],
+  "not_evaluated": [
+    "translational_completion",
+    "local_or_cross_frame_ivi",
+    "topology_naturality",
+    "receipts",
+    "heldout_transfer"
+  ]
+}

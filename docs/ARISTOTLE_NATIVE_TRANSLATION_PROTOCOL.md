@@ -85,3 +85,12 @@ and an A-legal infinite-label/observable frame, so it cannot be promoted to
 whole-frame equality or `GeomEquiv`. The frozen structural failure, ambiguity,
 and unmapped records remain excluded and unchanged. Provenance is in
 [`../runs/aristotle_native_translation/phase_b3_candidate_equality/manifest.json`](../runs/aristotle_native_translation/phase_b3_candidate_equality/manifest.json).
+
+Phase C1 completed in a sixth isolated project without access to the Phase B3
+candidate-equality artifact. `R_AB v0.1.0` returns evidence locally for all 34
+admitted roles: 20 determined returns, five unique data returns, one round-trip
+return, and eight bare-identity returns explicitly marked not single-valued.
+It abstains from an assembled cross-frame return, reverse paths, completion,
+recoverability, IVI, topology naturality, receipt gates, and transfer. Its
+provenance is in
+[`../runs/aristotle_native_translation/phase_c1_independent_return/manifest.json`](../runs/aristotle_native_translation/phase_c1_independent_return/manifest.json).
