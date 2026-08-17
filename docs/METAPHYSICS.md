@@ -51,6 +51,19 @@ The interpretation is not that `F` and `G` are absolutely identified before this
 
 A reference frame remains usable without becoming an origin. Any frame may locally represent returned identity; changing frames changes the presentation while coherent translation preserves the relational content available between them.
 
+### Choice, cost, and non-circular naturality
+
+The metaphysical reading must not turn naturality into a hidden global chooser.
+Translation is the shared language within which local formations can make
+interactive choices; a proposed return, orientation, extension, or
+identification is first recorded, and only then tested for commutation and
+recovery. Naturality is therefore a constraint on a choice, not the mechanism
+that forces the choice to exist. The current runtime records this as explicit
+obligations and counterexamples, not as a scalar cost functional.
+
+See [Open translational foundation](OPEN_TRANSLATIONAL_FOUNDATION.md) for the
+relative asymmetry, local/global topology, and Turing/topos bridge boundary.
+
 ## Relative axiom and geometry
 
 An axiom is not metaphysically prior to geometry, nor geometry prior to axiom. Their role is relative and mutually disclosed inside a selected frame. A genuinely novel axiom-geometry must therefore first be admitted conditionally in its own unified manner before comparison with another frame.

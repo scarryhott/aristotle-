@@ -67,5 +67,7 @@ The project's claimed foundational novelty is **relative axiom-geometry with nat
 | Axiom-geometry operations survive substantially greater representational freedom | **EXPERIMENTAL — OPEN / FALSIFIABLE** | scale-up must preserve frozen local frames, post-hoc comparison, naturality, explicit openness witnesses and obstructions |
 | `LocalIVI_W(F,b)` means a frozen return has a non-singleton fibre | **DEFINED FOR THE BOUNDED MAZE; EXISTENCE CONDITIONAL** | exact local predicate and its distinction from cross-frame/natural translational IVI are stated in `docs/IVI.md` |
 | Relation is metaphysically prior to isolated language selection | **METAPHYSICAL INTERPRETATION** | now sharpened by the relative axiom-geometry / natural translational existence thesis |
+| Translation is the global language of comparison while definitions, axioms, and geometries are local formations; naturality constrains rather than originates interactive choice | **METAPHYSICAL / FOUNDATIONAL INTERPRETATION** | `docs/OPEN_TRANSLATIONAL_FOUNDATION.md`; current formal squares test chosen data and do not define a choice-cost functional |
+| Translational completion is equivalent to arbitrary local geometry, global topology, or a bidirectional Turing/topos realization | **NOT ESTABLISHED** | requires a separately specified realization interface and explicit preservation/reflection/factorization theorems |
 
 When code, theorem scope, or interpretation changes, update this table in the same pull request.

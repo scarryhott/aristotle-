@@ -17,7 +17,7 @@ is already a sheaf-cohomology or model-amalgamation invariant.
 | translation as globally available but frame-relative | institution morphism/comorphism in an indexed network | prove the satisfaction condition and composition law |
 | local/global closure | indexed institution and its Grothendieck globalization | define the index category and the precise global object |
 | interactive proof/review | heterogeneous proof management over a development graph | preserve proof obligations and provenance through translations |
-| choice/naturality constraint | a chosen section/return plus commuting naturality squares | register the choices before evaluation and prove the squares |
+| choice/naturality constraint | a chosen section/return plus commuting naturality squares | register a choice before evaluation; treat naturality as a post-choice constraint, not a source of translation |
 | relative topological closure | an additional topology/closure layer over the network | define it independently; it is not supplied by a colimit alone |
 
 Hets is directly relevant because it supports heterogeneous specifications,
@@ -74,7 +74,7 @@ language as globally privileged:
 translation category: global language of comparison
 local frame: definitions, axioms, equality, and questions
 registered choice/return: a frame-relative section or witness
-admissibility: naturality/commutation against declared translations
+admissibility: naturality/commutation against declared translations, with failures retained as choice costs/obstructions
 closure: local-to-global completion only when those obligations hold
 ```
 
@@ -82,6 +82,11 @@ Here “complete” must always name its target property: for example, completio
 of a registered return square, exact realization of an admitted equality, or
 model amalgamation for a specified signature diagram. It must not be read as
 an unrestricted logical-completeness or metaphysical-completeness claim.
+
+The accompanying [open-foundation note](OPEN_TRANSLATIONAL_FOUNDATION.md)
+explains why this framework does not posit a single global topos: translation
+is global as a language of comparison, while definitions and geometries remain
+local. Any Turing/topos realization remains a separate bridge obligation.
 
 ## Next implementation bridge
 

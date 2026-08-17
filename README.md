@@ -27,6 +27,8 @@ origin-independent translation
 A motivating application is agreement between reasoning minds. Different minds may carry different local definitions or measurements of value and credit. The project asks whether shared identity can be recovered through relative translation rather than by declaring one local definition the privileged global definition. The current runtimes test the mathematical architecture of that claim; they do not claim to solve economic value or interpersonal agreement in general.
 
 See [`docs/METAPHYSICS.md`](docs/METAPHYSICS.md) for the full thesis and its formal boundary.
+The choice-before-naturality and relative local/global topology formulation is
+in [`docs/OPEN_TRANSLATIONAL_FOUNDATION.md`](docs/OPEN_TRANSLATIONAL_FOUNDATION.md).
 
 ## What is already complete
 
@@ -200,6 +202,7 @@ The grant funds the frontier-agent regime needed to test the architecture, disco
 - `docs/INSTITUTIONS_INTERACTIVE_PROOF_COMPARISON.md` — institution/Hets comparison, choice-naturality boundary, and the proposed interactive-proof bridge.
 - `docs/CLAIM_STATUS.md` — theorem/experiment/interpretation audit boundary.
 - `docs/METAPHYSICS.md` — origin-independent translation, relational frames, and interactive continual completion.
+- `docs/OPEN_TRANSLATIONAL_FOUNDATION.md` — translation as global language, local definitions/geometries, post-choice naturality, relative asymmetry, and the Turing/topos bridge boundary.
 - `docs/IVI.md` — IVI as naturally recoverable relational identity.
 - `docs/TRANSLATIONAL_COMPLETION_MAZE_TOPOLOGY_RUN.md` — executed pre-quotient maze completion/topology evidence and next-stage plan.
 
