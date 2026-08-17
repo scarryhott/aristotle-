@@ -92,6 +92,14 @@ State when a local maze geometry realizes a global axiom basis, and conversely,
 only through a named translation and return. The current finite maze is a
 bounded proxy; it cannot establish the general equivalence.
 
+### O7 — multi-level relative closure
+
+Distinguish phase return, relative-unitary fibre return, and lifted partition
+residue in one proof-relevant interface. Determine when a lower-level return is
+compatible with a higher-level obstruction and when it supports a genuinely new
+next formation. The NRRF649 runtime report is a candidate external comparison
+target; see [Relative unitary maze: three closure levels](RELATIVE_UNITARY_MAZE_METAPHYSICS.md).
+
 ## Relation to existing work
 
 `TransFrame`, `GeomEquiv`, and institution/Hets comparison are downstream

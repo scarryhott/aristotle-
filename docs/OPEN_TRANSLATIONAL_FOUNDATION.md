@@ -92,6 +92,12 @@ The interaction may close, remain obstructed, or remain open. A result may
 therefore preserve a relative asymmetry rather than collapse it into a
 canonical global coordinate system.
 
+The reported three-level relative-unitary/maze analysis supplies a candidate
+example of this distinction: phase return and fibre return may coexist with a
+lifted residual partition geometry. It remains external comparison material
+until separately attested and bridged; see
+[Relative unitary maze: three closure levels](RELATIVE_UNITARY_MAZE_METAPHYSICS.md).
+
 ## Turing/topos bridge: a proposed interface, not an identification
 
 The claim that a Turing presentation is encoded from a translational topos and

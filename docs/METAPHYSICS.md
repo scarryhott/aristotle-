@@ -112,6 +112,12 @@ as its executable closure proxy. Before return, raw reach does not realize the f
 
 The broader closure thesis is therefore interpreted as **interactive continual completion** rather than a one-time equality test. A completed return can become part of the next basis, from which further frames and translations may form.
 
+The reported NRRF649 external runtime sharpens this interpretation with a
+three-level distinction: phase return, relative-unitary fibre return, and a
+lifted maze/partition residue need not close simultaneously. This is recorded
+as external comparison material—not locally audited proof—in
+[Relative unitary maze: three closure levels](RELATIVE_UNITARY_MAZE_METAPHYSICS.md).
+
 The separately reported NRRF599/639 results in the associated formal project are comparison targets for this runtime, not imported premises or locally audited runtime definitions in this checkout.
 
 ## IVI and nontrivial relational identity

@@ -206,6 +206,7 @@ The grant funds the frontier-agent regime needed to test the architecture, disco
 - `docs/METAPHYSICS.md` — origin-independent translation, relational frames, and interactive continual completion.
 - `docs/OPEN_TRANSLATIONAL_FOUNDATION.md` — translation as global language, local definitions/geometries, post-choice naturality, relative asymmetry, and the Turing/topos bridge boundary.
 - `docs/PREINSTITUTIONAL_TRANSLATION_OPENINGS.md` — pre-institutional translation, relative gluing controls, inverse-limit-style closure, and Turing/topos realization openings.
+- `docs/RELATIVE_UNITARY_MAZE_METAPHYSICS.md` — external NRRF649 comparison: phase, fibre, and lifted maze/partition closure levels.
 - `docs/IVI.md` — IVI as naturally recoverable relational identity.
 - `docs/TRANSLATIONAL_COMPLETION_MAZE_TOPOLOGY_RUN.md` — executed pre-quotient maze completion/topology evidence and next-stage plan.
 
