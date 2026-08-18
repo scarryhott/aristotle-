@@ -1,0 +1,62 @@
+{
+  "calibrated_gate": {
+    "bridge_source": "independent_observer",
+    "calibration_error_rate": 0.0,
+    "cost_per_admitted_genuine_attempt": 2.0,
+    "evaluated_attempt_count": 4,
+    "false_accept_count": 0,
+    "false_reject_count": 0,
+    "gate_decisions": {
+      "a0": true,
+      "a1": false,
+      "a2": true,
+      "a3": false
+    },
+    "refusal_count": 2,
+    "refused_le_sorting_cost": true,
+    "sorting_cost": 4,
+    "status": "LEVEL1_AUDITED"
+  },
+  "claim_boundary": "bounded signal-audit control; no claim that the Level-1 observer identifies real-world genuineness",
+  "missing_bridge_control": {
+    "bridge_source": "absent",
+    "gate_decisions": {
+      "a0": true,
+      "a1": false,
+      "a2": true,
+      "a3": false
+    },
+    "reason": "structural translation does not establish receipt genuineness",
+    "status": "OPEN_NO_LEVEL1_BRIDGE"
+  },
+  "protocol": "closure_native_level1_genuineness_v1",
+  "rubber_stamp_control": {
+    "bridge_source": "independent_observer",
+    "calibration_error_rate": 0.5,
+    "cost_per_admitted_genuine_attempt": 2.0,
+    "evaluated_attempt_count": 4,
+    "false_accept_count": 2,
+    "false_reject_count": 0,
+    "gate_decisions": {
+      "a0": true,
+      "a1": true,
+      "a2": true,
+      "a3": true
+    },
+    "refusal_count": 0,
+    "refused_le_sorting_cost": true,
+    "sorting_cost": 4,
+    "status": "LEVEL1_AUDITED"
+  },
+  "self_certification_control": {
+    "bridge_source": "gate_verdict",
+    "gate_decisions": {
+      "a0": true,
+      "a1": false,
+      "a2": true,
+      "a3": false
+    },
+    "reason": "the gate verdict cannot certify the correctness of its own receipt reading",
+    "status": "INVALID_SELF_CERTIFICATION"
+  }
+}
