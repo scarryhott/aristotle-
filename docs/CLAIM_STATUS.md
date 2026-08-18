@@ -79,5 +79,6 @@ The project's claimed foundational novelty is **relative axiom-geometry with nat
 | Capital-determined admission can conflate genuine attempts with non-genuine entrants; receipt-borne access preserves the reciprocal invariant in the stated model | **SOURCE-ATTESTED EXTERNAL; NOT LOCALLY BUILT OR BRIDGED** | NRRF654 external task; reported conditional gate model, not a real-market claim |
 | A translating gate's receipt reading requires an independent Level-1 genuineness bridge before it can be treated as calibrated | **EXECUTED BOUNDED NATIVE CONTROL** | calibrated, rubber-stamp, missing-bridge OPEN, and self-certification-invalid controls; no real-world genuineness claim |
 | A Level-1 audit requires independently generated external consequences before calibration can be externally grounded | **EXECUTED BOUNDED NATIVE CONTROL** | held-out match, counterexample, absent-outcome OPEN, and gate-derived outcome leakage-invalid controls; no real-world grounding claim |
+| A completed relation can generate a successor frame used by a later changed-axiom translation while preserving lineage and external audit boundaries | **EXECUTED BOUNDED NATIVE CONTROL** | F0→completion→derived F1→changed-axiom episode→derived F2; missing outcome OPEN and leaked outcome invalid |
 
 When code, theorem scope, or interpretation changes, update this table in the same pull request.
