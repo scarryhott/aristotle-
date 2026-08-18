@@ -1,0 +1,154 @@
+{
+  "claim_boundary": "conditional finite gate model; no real-market, chaos, or causal-economics claim",
+  "compounding_control": {
+    "excluded_absorbing_for_bounded_newcomer": true,
+    "history": [
+      {
+        "price": 4,
+        "price_admits": false,
+        "reciprocal_admits": true,
+        "round": 0
+      },
+      {
+        "price": 8,
+        "price_admits": false,
+        "reciprocal_admits": true,
+        "round": 1
+      },
+      {
+        "price": 16,
+        "price_admits": false,
+        "reciprocal_admits": true,
+        "round": 2
+      },
+      {
+        "price": 32,
+        "price_admits": false,
+        "reciprocal_admits": true,
+        "round": 3
+      },
+      {
+        "price": 64,
+        "price_admits": false,
+        "reciprocal_admits": true,
+        "round": 4
+      },
+      {
+        "price": 128,
+        "price_admits": false,
+        "reciprocal_admits": true,
+        "round": 5
+      }
+    ],
+    "price_retention": 0,
+    "reciprocal_retention": 6,
+    "retention_gap": 6
+  },
+  "gate_comparison": {
+    "decisions": {
+      "genuine-with-receipt": {
+        "central": false,
+        "price": false,
+        "receipt_borne": true,
+        "reciprocal": true
+      },
+      "poor-genuine": {
+        "central": false,
+        "price": false,
+        "receipt_borne": true,
+        "reciprocal": true
+      },
+      "wealthy-genuine": {
+        "central": true,
+        "price": true,
+        "receipt_borne": true,
+        "reciprocal": true
+      },
+      "wealthy-nongenuine": {
+        "central": true,
+        "price": true,
+        "receipt_borne": false,
+        "reciprocal": false
+      }
+    },
+    "price": 4,
+    "price_conflates_genuine_refusal_and_nongenuine_admission": true,
+    "price_is_capital_determined": true,
+    "receipt_borne_equals_reciprocal": true,
+    "receipt_waives_price_for_genuine_attempt": true
+  },
+  "paired_seed_control": {
+    "columns": [
+      "price",
+      "reciprocal",
+      "central"
+    ],
+    "price_at_most_two": true,
+    "price_never_exceeds_central": true,
+    "price_strictly_below_reciprocal_every_seed": true,
+    "rows": [
+      [
+        2,
+        6,
+        2
+      ],
+      [
+        1,
+        6,
+        3
+      ],
+      [
+        0,
+        6,
+        2
+      ],
+      [
+        1,
+        6,
+        2
+      ],
+      [
+        1,
+        6,
+        1
+      ],
+      [
+        0,
+        6,
+        0
+      ],
+      [
+        0,
+        6,
+        2
+      ],
+      [
+        1,
+        6,
+        2
+      ],
+      [
+        2,
+        6,
+        2
+      ],
+      [
+        1,
+        6,
+        3
+      ],
+      [
+        0,
+        6,
+        1
+      ],
+      [
+        0,
+        6,
+        0
+      ]
+    ],
+    "seed_count": 12
+  },
+  "protocol": "closure_native_gate_retention_v1"
+}

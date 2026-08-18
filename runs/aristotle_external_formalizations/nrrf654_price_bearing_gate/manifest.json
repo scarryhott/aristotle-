@@ -1,0 +1,16 @@
+{
+  "stage": "external_formalization_intake",
+  "status": "source_attested_external_not_built",
+  "sdk": {"package": "aristotlelib", "version": "2.1.0"},
+  "project_id": "068068ee-b720-4df1-a203-571e0928ec3d",
+  "task_id": "241250a3-f394-467d-afb3-e96e326e6f23",
+  "task_status": "COMPLETE",
+  "artifact": {
+    "result_tar_sha256": "677f01ef2f7db7cf70b87406d0201ee2eff562f707d2f98af91a96d49dde7a43",
+    "lean_source": "NRRF654PriceBearingGateVersusReciprocalGateChaosConcentration.lean",
+    "lean_source_sha256": "049057bcf4d79abf14328fa4636905e774f96c713a4592abc228c0d7a2463e25",
+    "notes": "PRICE_BEARING_GATE_VERSUS_RECIPROCAL_NRRF654_NOTES.md",
+    "notes_sha256": "28994ee88c81569a6121ff538e53444d54e507fcbabec05646f8b04d3bad428a"
+  },
+  "claim_boundary": "External source-attested conditional gate model only; no local build, no real-market inference, and no input to native translation Phase C2."
+}
