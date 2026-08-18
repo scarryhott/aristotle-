@@ -75,6 +75,11 @@ F_A, F_B, Q_A, Q_B
 
 The initial isolated-generation stage, frozen native translation, identity-independent validation, subinterface-only candidate equality, and independent local-return stage have now been executed. The current evidence supports a 34-role admitted subinterface only: it does **not** establish whole-frame equality, `GeomEquiv`, assembled cross-frame return, completion, or IVI. The frozen scientific protocol is in [`docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md`](docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md); the direct request links, manifests, hashes, and exact claim boundary are in [`docs/ARISTOTLE_NATIVE_TRANSLATION_EVIDENCE.md`](docs/ARISTOTLE_NATIVE_TRANSLATION_EVIDENCE.md).
 
+The primary remaining objective is one integrated frontier chain in which the
+actual C2 completion or obstruction derives the next frame and verifier before
+they face a new held-out relation. The requirements are frozen in
+[`docs/FULL_BOUNDED_CLOSURE_ASI_FRONTIER_PLAN.md`](docs/FULL_BOUNDED_CLOSURE_ASI_FRONTIER_PLAN.md).
+
 A natural translation, explicit equality obstruction, downstream naturality obstruction, incomplete return, genuine frame-relative `OpenIn`, or registered interface boundary are all substantive outcomes. The experiment does not require every frame to translate to every other frame.
 
 ## The full research loop
@@ -214,6 +219,7 @@ The grant funds the frontier-agent regime needed to test the architecture, disco
 - `docs/TRANSLATIONAL_TRUTH_PLAN.md` — staged formal and experimental plan for truth-conditioned continuation and a basis-independent transformation-burden object.
 - `docs/CLOSURE_NATIVE_DERIVED_VERIFIER_ASI_RUN.md` — bounded method-level closure cycle: a derived verifier validates a held-out relation before producing its next successor.
 - `docs/CLOSURE_NATIVE_SOURCED_VERIFIER_ASI_RUN.md` — source-linked method-level cycle using prior content-addressed closure records rather than fresh fixtures.
+- `docs/FULL_BOUNDED_CLOSURE_ASI_FRONTIER_PLAN.md` — the one required causal frontier run from C2 through derived frame/verifier and held-out transfer.
 - `docs/PREINSTITUTIONAL_TRANSLATION_OPENINGS.md` — pre-institutional translation, relative gluing controls, inverse-limit-style closure, and Turing/topos realization openings.
 - `docs/RELATIVE_UNITARY_MAZE_METAPHYSICS.md` — external NRRF649 comparison: phase, fibre, and lifted maze/partition closure levels.
 - `docs/TRUTH_CONDITION_TRANSLATIONAL_CLOSURE.md` — closure as a truth condition for further relation, admission/natural-choice boundary, and the transformation-cost opening.
