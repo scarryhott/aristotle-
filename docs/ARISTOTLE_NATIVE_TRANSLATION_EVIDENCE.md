@@ -48,5 +48,8 @@ evaluate translational equality of registered relational answers using an
 admitted alignment, independent return, residue, and confirmation.  C2's
 slot-level structural outcome must remain a retained scope constraint; it
 cannot itself decide truth-level completion.
+
+Its frozen T1 packet is
+[`PHASE_T1_TRUTH_ASSEMBLY_PROMPT.md`](../benchmarks/aristotle_native_translation/PHASE_T1_TRUTH_ASSEMBLY_PROMPT.md).
 It must preserve the structural obstruction, excluded entries, and all C1
 global abstentions.

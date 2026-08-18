@@ -116,6 +116,9 @@ It must retain every B2/C1/C2 exclusion and witness, must not repair frozen
 roles, and must test relational-answer equality rather than request
 single-valued reconstruction of local slots.
 
+The exact pre-registered T1 packet is
+[`../benchmarks/aristotle_native_translation/PHASE_T1_TRUTH_ASSEMBLY_PROMPT.md`](../benchmarks/aristotle_native_translation/PHASE_T1_TRUTH_ASSEMBLY_PROMPT.md).
+
 ## Formal status
 
 The local runtime implements bounded proxies of this discipline.  The external
