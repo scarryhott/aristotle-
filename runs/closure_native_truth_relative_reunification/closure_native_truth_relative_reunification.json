@@ -1,0 +1,108 @@
+{
+  "ball_hair_round": {
+    "Ch": {
+      "is_many_to_one_witness": true,
+      "whole": 7
+    },
+    "Ka": {
+      "literal_route_identity": false,
+      "returned_routes": [
+        0,
+        7
+      ]
+    },
+    "Omega": 6,
+    "digest": "aca809c72b9fd69810b21b9758ffd0ff9c498dd610bbde957626ccfea70cb2f6",
+    "label": "ball_hair",
+    "relation": {
+      "contextual_truth_recovered": true
+    },
+    "routes": [
+      3,
+      4
+    ],
+    "verdict": "CLOSED_TO_NEW_OPENING"
+  },
+  "claim_boundary": "bounded operational control; not a theorem of cosmology, quantum gravity, literal topos theory, Turing computability, or universal truth",
+  "contraction_control": {
+    "contraction_is_not_closure": true,
+    "different_routes": true,
+    "same_contracted_whole": true
+  },
+  "interactive_proof": {
+    "contradictory_obligations": {
+      "Omega": 5,
+      "claim_whole": 7,
+      "contextual_truth_recovered": false,
+      "external_verifier_claimed": false,
+      "obligations": [
+        0,
+        6
+      ],
+      "status": "FALSE_OR_COLLAPSE"
+    },
+    "missing_obligations": {
+      "status": "OPEN_NO_RETURNED_OBLIGATIONS"
+    },
+    "returned_obligations": {
+      "Omega": 6,
+      "claim_whole": 7,
+      "contextual_truth_recovered": true,
+      "external_verifier_claimed": false,
+      "obligations": [
+        0,
+        7
+      ],
+      "status": "CLOSED_TO_NEW_OPENING"
+    }
+  },
+  "inverse_limit_proxy": {
+    "endpoint_class": "INVERSE_LIMIT_ENDPOINT_CLOSURE",
+    "finite_level_literal_identity_claimed": false,
+    "finite_levels": [
+      {
+        "residue": 2.0,
+        "resolution": 0
+      },
+      {
+        "residue": 1.0,
+        "resolution": 1
+      },
+      {
+        "residue": 0.5,
+        "resolution": 2
+      },
+      {
+        "residue": 0.25,
+        "resolution": 3
+      },
+      {
+        "residue": 0.125,
+        "resolution": 4
+      },
+      {
+        "residue": 0.0625,
+        "resolution": 5
+      }
+    ],
+    "positive_at_every_observed_finite_level": true
+  },
+  "mirror_parent": {
+    "child_final_completion_claimed": false,
+    "child_residues": [
+      6,
+      -6
+    ],
+    "children_distinct": true,
+    "parent_signed_residue": 0,
+    "verdict": "CLOSED_EMERGENT_TOPOLOGY"
+  },
+  "protocol": "closure_native_truth_relative_reunification_v1",
+  "topos_turing_reading": {
+    "context_exact_operation_literal_identity_claimed": false,
+    "contextual_side": "contracted whole",
+    "operational_side": "ordered routes",
+    "realization_as_a_literal_topos_or_computability_theorem_claimed": false
+  },
+  "truth_reading": "contextual whole and operational routes are inverse relative readings; neither is an absolute language-independent object"
+}
