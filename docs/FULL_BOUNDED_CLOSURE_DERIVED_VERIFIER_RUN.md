@@ -19,6 +19,13 @@ alone remains non-admitted. The two many→one translations are explicitly not
 called `Bridge`s: their replacement property is recovery of the registered
 source occurrences through reopening `(T, W, rho, Delta)`.
 
+Here `C0` and `C1` do not mean merely that an interaction finished. Each carries
+an `ADMITTED_TRUTH_LEVEL_RELATIONAL_EQUALITY` between its local axiom and
+geometry presentations. The equality is explicitly neither literal syntax nor
+numeric identity. Its notation and retained residue are causal inputs to the
+successor frame and verifier; in schematic form,
+`(A_(t+1), G_(t+1)) = Phi([A_t]_C = [G_t]_C, Delta_t)`.
+
 The run preserves ten negative controls: preauthored successor,
 self-certification, absent interaction/review/return/external consequence,
 outcome leakage, external counterexample, frozen recovery, and asserted axiom

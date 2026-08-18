@@ -1,53 +1,59 @@
 {
   "F1": {
+    "axiom_geometry_basis": "[A0: returned relation is admitted]_C = [G0: many-to-one reopening field]_C",
     "axioms": [
-      "returned_relation_0",
+      "truth_relation_72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
       "residue_2"
     ],
-    "derived_from": "a3759fc701dfa925f6df41ac793f486eb45d98eb5a6c203246513b277cc6bed8",
-    "digest": "f9cfbe9f397edfd86ac04f7190b6f885f0c90d3f298dbd3dda248bb493a70f0b",
+    "derived_from": "fca66ae5171f27276f02c0b2bee78ad96313b1b1f9aa0475886260bfb1e1b329",
+    "digest": "67c64cc1645237f7bc0ddd2a65f6bc12cea86819e4b2d6a6ddf3820f14940a40",
     "frame_id": "F1",
+    "geometry": "geometry_disclosed_by_72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
     "preauthored": false,
     "status": "DERIVED_FRAME"
   },
   "F2": {
+    "axiom_geometry_basis": "[A1: truth relation from R0 is required]_C = [G1: reopened held-out route field]_C",
     "axioms": [
-      "returned_relation_1",
+      "truth_relation_90da89addcb049f9ddccfc11fadfe4c3f67c584f7d48ad1912acf9f6328bfef3",
       "residue_3"
     ],
-    "derived_from": "aeaa90baf7de6b8abb53c0f8b7b3bc64889c3833a96047962781ecf734e7a1c7",
-    "digest": "959d83e80e974b506d4583b8b03b06f740d46533e9ddaad2a686ffad1b78cb8a",
+    "derived_from": "c484aab211be4ac0550342f5e7d8a046f1232c639bff21ae7d3dc917499e2949",
+    "digest": "ea7b6fdf456c4568c380b270ce79e7c148d0cc29640742dfe5e8c0fffb174ff0",
     "frame_id": "F2",
+    "geometry": "geometry_disclosed_by_90da89addcb049f9ddccfc11fadfe4c3f67c584f7d48ad1912acf9f6328bfef3",
     "preauthored": false,
     "status": "DERIVED_FRAME"
   },
   "M1": {
-    "derived_from": "a3759fc701dfa925f6df41ac793f486eb45d98eb5a6c203246513b277cc6bed8",
-    "digest": "3d518cc8ef042ef763a91b8a6de9ca278da9ac3e68da87c9cc138ad58e0d4041",
+    "basis": "[A0: returned relation is admitted]_C = [G0: many-to-one reopening field]_C",
+    "derived_from": "fca66ae5171f27276f02c0b2bee78ad96313b1b1f9aa0475886260bfb1e1b329",
+    "digest": "ae815cae3f601d053f419b49de28b7ca84f6073f6979e427d5a12a795698a9ab",
     "method_id": "M1",
     "obligations": [
       "independent_review",
       "independent_return",
       "external_consequence",
       "nonzero_residue",
-      "distinction_from_3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d",
+      "truth_relation_72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
       "residue_2"
     ],
     "preauthored": false,
     "status": "DERIVED_VERIFIER"
   },
   "M2": {
-    "derived_from": "aeaa90baf7de6b8abb53c0f8b7b3bc64889c3833a96047962781ecf734e7a1c7",
-    "digest": "ff2ff812b5d60408d45f91087cd56f7def634fac18a9ae9e47ffe2036b6d8276",
+    "basis": "[A1: truth relation from R0 is required]_C = [G1: reopened held-out route field]_C",
+    "derived_from": "c484aab211be4ac0550342f5e7d8a046f1232c639bff21ae7d3dc917499e2949",
+    "digest": "19e1ed97c0a29b0040aef0f13801fd6e7d2365c0800965802e28325269e86981",
     "method_id": "M2",
     "obligations": [
       "independent_review",
       "independent_return",
       "external_consequence",
       "nonzero_residue",
-      "distinction_from_3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d",
+      "truth_relation_72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
       "residue_2",
-      "distinction_from_8f63479a70f279229629e22b02aed03b46ee3abcc294dcd22d0ab9ac7bb58baa",
+      "truth_relation_90da89addcb049f9ddccfc11fadfe4c3f67c584f7d48ad1912acf9f6328bfef3",
       "residue_3"
     ],
     "preauthored": false,
@@ -66,7 +72,7 @@
         "independent_return",
         "external_consequence",
         "nonzero_residue",
-        "distinction_from_3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d",
+        "truth_relation_72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
         "residue_2"
       ],
       "obligations_failed": [],
@@ -89,7 +95,7 @@
         "independent_return",
         "external_consequence",
         "nonzero_residue",
-        "distinction_from_3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d",
+        "truth_relation_72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
         "residue_2"
       ],
       "obligations_failed": [],
@@ -105,10 +111,12 @@
   },
   "claim_boundary": "bounded deterministic integration using an external Slearn source attestation and supplied episode evidence; not a locally rebuilt Slearn theorem, autonomous ASI, universal truth, universal cost, or Aristotle C2 result",
   "closure": {
+    "F1_derived_from_truth_relation_and_residue": true,
     "F2_M2_derived": true,
     "M0_cannot_evaluate_R1": true,
     "M1_derived": true,
     "M1_evaluates_R1": true,
+    "c0_admits_axiom_geometry_truth_relation": true,
     "c0_completed": true,
     "c1_completed": true,
     "source_path_preserved": true,
@@ -156,11 +164,19 @@
       "W": {
         "whole": "contextual_relation"
       },
+      "axiom_geometry_truth_relation": {
+        "axiom_presentation": "A0: returned relation is admitted",
+        "geometry_presentation": "G0: many-to-one reopening field",
+        "literal_identity_claimed": false,
+        "notation": "[A0: returned relation is admitted]_C = [G0: many-to-one reopening field]_C",
+        "numeric_identity_claimed": false,
+        "status": "ADMITTED_TRUTH_LEVEL_RELATIONAL_EQUALITY"
+      },
       "choice": "A0_declared_before_audit",
-      "digest": "a3759fc701dfa925f6df41ac793f486eb45d98eb5a6c203246513b277cc6bed8",
+      "digest": "fca66ae5171f27276f02c0b2bee78ad96313b1b1f9aa0475886260bfb1e1b329",
       "external": "heldout_consequence_0",
       "method": "df9b86913882ef32a5a234d0057c068cb879dbad946702e11351ce3240d08b5e",
-      "relation": "3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d",
+      "relation": "72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
       "review": "independent_material_counterreading",
       "rho": {
         "whole": [
@@ -180,8 +196,7 @@
         "recovery_complete": true,
         "replacement_property": "reopening_recovers_registered_source_occurrences",
         "translation_status": "TRANSLATING"
-      },
-      "truth_level_relational_equality": "ADMITTED_RELATION_ONLY_NOT_NUMERIC_OR_SYNTACTIC_IDENTITY"
+      }
     },
     "evidence": {
       "choice": "A0_declared_before_audit",
@@ -210,7 +225,11 @@
       "screen_is_projection": true
     },
     "relation": {
-      "digest": "3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d",
+      "axiom_geometry": {
+        "axiom": "A0: returned relation is admitted",
+        "geometry": "G0: many-to-one reopening field"
+      },
+      "digest": "72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
       "interface_exclusions": [
         "numeric_identity",
         "syntactic_identity"
@@ -226,7 +245,7 @@
   "episode1": {
     "M0_evaluation": {
       "missing_obligations": [
-        "distinction_from_3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d"
+        "truth_relation_72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2"
       ],
       "status": "OBSTRUCTION_MISSING_DERIVED_AXIOM"
     },
@@ -246,7 +265,7 @@
           "independent_return",
           "external_consequence",
           "nonzero_residue",
-          "distinction_from_3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d",
+          "truth_relation_72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
           "residue_2"
         ],
         "obligations_failed": [],
@@ -260,11 +279,19 @@
       "W": {
         "whole": "next_contextual_relation"
       },
+      "axiom_geometry_truth_relation": {
+        "axiom_presentation": "A1: truth relation from R0 is required",
+        "geometry_presentation": "G1: reopened held-out route field",
+        "literal_identity_claimed": false,
+        "notation": "[A1: truth relation from R0 is required]_C = [G1: reopened held-out route field]_C",
+        "numeric_identity_claimed": false,
+        "status": "ADMITTED_TRUTH_LEVEL_RELATIONAL_EQUALITY"
+      },
       "choice": "A1_declared_after_R1_freeze",
-      "digest": "aeaa90baf7de6b8abb53c0f8b7b3bc64889c3833a96047962781ecf734e7a1c7",
+      "digest": "c484aab211be4ac0550342f5e7d8a046f1232c639bff21ae7d3dc917499e2949",
       "external": "heldout_consequence_1",
-      "method": "3d518cc8ef042ef763a91b8a6de9ca278da9ac3e68da87c9cc138ad58e0d4041",
-      "relation": "8f63479a70f279229629e22b02aed03b46ee3abcc294dcd22d0ab9ac7bb58baa",
+      "method": "ae815cae3f601d053f419b49de28b7ca84f6073f6979e427d5a12a795698a9ab",
+      "relation": "90da89addcb049f9ddccfc11fadfe4c3f67c584f7d48ad1912acf9f6328bfef3",
       "review": "independent_material_counterreading_1",
       "rho": {
         "whole": [
@@ -286,8 +313,7 @@
         "recovery_complete": true,
         "replacement_property": "reopening_recovers_registered_source_occurrences",
         "translation_status": "TRANSLATING"
-      },
-      "truth_level_relational_equality": "ADMITTED_RELATION_ONLY_NOT_NUMERIC_OR_SYNTACTIC_IDENTITY"
+      }
     },
     "evidence": {
       "choice": "A1_declared_after_R1_freeze",
@@ -318,7 +344,11 @@
       "screen_is_projection": true
     },
     "relation": {
-      "digest": "8f63479a70f279229629e22b02aed03b46ee3abcc294dcd22d0ab9ac7bb58baa",
+      "axiom_geometry": {
+        "axiom": "A1: truth relation from R0 is required",
+        "geometry": "G1: reopened held-out route field"
+      },
+      "digest": "90da89addcb049f9ddccfc11fadfe4c3f67c584f7d48ad1912acf9f6328bfef3",
       "interface_exclusions": [
         "whole_frame_promotion"
       ],
@@ -329,13 +359,13 @@
       ],
       "relation_id": "R1_heldout",
       "required_obligations": [
-        "distinction_from_3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d"
+        "truth_relation_72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2"
       ]
     }
   },
   "frozen_inputs": {
-    "R0": "3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d",
-    "R1": "8f63479a70f279229629e22b02aed03b46ee3abcc294dcd22d0ab9ac7bb58baa",
+    "R0": "72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
+    "R1": "90da89addcb049f9ddccfc11fadfe4c3f67c584f7d48ad1912acf9f6328bfef3",
     "R1_frozen_before_M1": true,
     "source": "1d04e0f5c613f4951c338d0e39116cac323e2370cccdc189c969a5de82010218"
   },

@@ -67,9 +67,10 @@ tests, not inputs to C2.
 
 ## Derived successor rule
 
-If C2 reports `ASSEMBLED_COMPLETION`, derive `F_(t+1)` and `M_(t+1)` from the
-completion receipt, its admitted interface, retained residue, and downstream
-audit obligations. If it reports an obstruction or OPEN boundary, derive only
+If C2 reports `ASSEMBLED_COMPLETION`, its receipt must name the admitted
+truth-level axiom–geometry relation rather than only an execution success. Derive
+`F_(t+1)` and `M_(t+1)` from that relation, the admitted interface, retained
+residue, and downstream audit obligations. If it reports an obstruction or OPEN boundary, derive only
 an obstruction-conditioned successor that retains that witness; it may not
 invent a successful completion.
 
