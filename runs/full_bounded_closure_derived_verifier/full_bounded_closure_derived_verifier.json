@@ -1,0 +1,374 @@
+{
+  "F1": {
+    "axioms": [
+      "returned_relation_0",
+      "residue_2"
+    ],
+    "derived_from": "a3759fc701dfa925f6df41ac793f486eb45d98eb5a6c203246513b277cc6bed8",
+    "digest": "f9cfbe9f397edfd86ac04f7190b6f885f0c90d3f298dbd3dda248bb493a70f0b",
+    "frame_id": "F1",
+    "preauthored": false,
+    "status": "DERIVED_FRAME"
+  },
+  "F2": {
+    "axioms": [
+      "returned_relation_1",
+      "residue_3"
+    ],
+    "derived_from": "aeaa90baf7de6b8abb53c0f8b7b3bc64889c3833a96047962781ecf734e7a1c7",
+    "digest": "959d83e80e974b506d4583b8b03b06f740d46533e9ddaad2a686ffad1b78cb8a",
+    "frame_id": "F2",
+    "preauthored": false,
+    "status": "DERIVED_FRAME"
+  },
+  "M1": {
+    "derived_from": "a3759fc701dfa925f6df41ac793f486eb45d98eb5a6c203246513b277cc6bed8",
+    "digest": "3d518cc8ef042ef763a91b8a6de9ca278da9ac3e68da87c9cc138ad58e0d4041",
+    "method_id": "M1",
+    "obligations": [
+      "independent_review",
+      "independent_return",
+      "external_consequence",
+      "nonzero_residue",
+      "distinction_from_3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d",
+      "residue_2"
+    ],
+    "preauthored": false,
+    "status": "DERIVED_VERIFIER"
+  },
+  "M2": {
+    "derived_from": "aeaa90baf7de6b8abb53c0f8b7b3bc64889c3833a96047962781ecf734e7a1c7",
+    "digest": "ff2ff812b5d60408d45f91087cd56f7def634fac18a9ae9e47ffe2036b6d8276",
+    "method_id": "M2",
+    "obligations": [
+      "independent_review",
+      "independent_return",
+      "external_consequence",
+      "nonzero_residue",
+      "distinction_from_3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d",
+      "residue_2",
+      "distinction_from_8f63479a70f279229629e22b02aed03b46ee3abcc294dcd22d0ab9ac7bb58baa",
+      "residue_3"
+    ],
+    "preauthored": false,
+    "status": "DERIVED_VERIFIER"
+  },
+  "basis_change_control": {
+    "burden_a": {
+      "abstentions": [],
+      "counterexamples": [],
+      "external_audit_burden": [
+        "heldout_consequence_0"
+      ],
+      "interface_exclusions": [],
+      "obligations_checked": [
+        "independent_review",
+        "independent_return",
+        "external_consequence",
+        "nonzero_residue",
+        "distinction_from_3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d",
+        "residue_2"
+      ],
+      "obligations_failed": [],
+      "residues_retained": [
+        2
+      ],
+      "return_review_requirements": [
+        "independent_material_counterreading"
+      ]
+    },
+    "burden_b": {
+      "abstentions": [],
+      "counterexamples": [],
+      "external_audit_burden": [
+        "heldout_consequence_0"
+      ],
+      "interface_exclusions": [],
+      "obligations_checked": [
+        "independent_review",
+        "independent_return",
+        "external_consequence",
+        "nonzero_residue",
+        "distinction_from_3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d",
+        "residue_2"
+      ],
+      "obligations_failed": [],
+      "residues_retained": [
+        2
+      ],
+      "return_review_requirements": [
+        "independent_material_counterreading"
+      ]
+    },
+    "burdens_agree": true,
+    "presentation_only_details_quotiented": true
+  },
+  "claim_boundary": "bounded deterministic integration using an external Slearn source attestation and supplied episode evidence; not a locally rebuilt Slearn theorem, autonomous ASI, universal truth, universal cost, or Aristotle C2 result",
+  "closure": {
+    "F2_M2_derived": true,
+    "M0_cannot_evaluate_R1": true,
+    "M1_derived": true,
+    "M1_evaluates_R1": true,
+    "c0_completed": true,
+    "c1_completed": true,
+    "source_path_preserved": true,
+    "status": "FULL_BOUNDED_CLOSURE_DERIVED_VERIFIER"
+  },
+  "controls": {
+    "ASSERTED_AXIOM_NOT_TRANSLATION": "ASSERTED_AXIOM_NOT_TRANSLATION",
+    "EXTERNAL_COUNTEREXAMPLE": "EXTERNAL_COUNTEREXAMPLE",
+    "FROZEN_RECOVERY": "FROZEN_RECOVERY",
+    "INVALID_OUTCOME_LEAKAGE": "INVALID_OUTCOME_LEAKAGE",
+    "INVALID_PREAUTHORED_SUCCESSOR": "INVALID_PREAUTHORED_SUCCESSOR",
+    "INVALID_SELF_CERTIFICATION": "INVALID_SELF_CERTIFICATION",
+    "OPEN_NO_EXTERNAL_CONSEQUENCE": "OPEN_NO_EXTERNAL_CONSEQUENCE",
+    "OPEN_NO_INTERACTION": "OPEN_NO_INTERACTION",
+    "OPEN_NO_RETURN": "OPEN_NO_RETURN",
+    "OPEN_NO_REVIEW": "OPEN_NO_REVIEW"
+  },
+  "episode0": {
+    "completion": {
+      "Delta": 2,
+      "TransformationBurden": {
+        "abstentions": [],
+        "counterexamples": [],
+        "external_audit_burden": [
+          "heldout_consequence_0"
+        ],
+        "interface_exclusions": [
+          "numeric_identity",
+          "syntactic_identity"
+        ],
+        "obligations_checked": [
+          "independent_review",
+          "independent_return",
+          "external_consequence",
+          "nonzero_residue"
+        ],
+        "obligations_failed": [],
+        "residues_retained": [
+          2
+        ],
+        "return_review_requirements": [
+          "independent_material_counterreading"
+        ]
+      },
+      "W": {
+        "whole": "contextual_relation"
+      },
+      "choice": "A0_declared_before_audit",
+      "digest": "a3759fc701dfa925f6df41ac793f486eb45d98eb5a6c203246513b277cc6bed8",
+      "external": "heldout_consequence_0",
+      "method": "df9b86913882ef32a5a234d0057c068cb879dbad946702e11351ce3240d08b5e",
+      "relation": "3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d",
+      "review": "independent_material_counterreading",
+      "rho": {
+        "whole": [
+          "zero",
+          "infinity"
+        ]
+      },
+      "status": "COMPLETION",
+      "translation": {
+        "infinity": "whole",
+        "zero": "whole"
+      },
+      "translation_audit": {
+        "bridge_status": "NOT_A_BRIDGE_QUOTIENT_LIKE_MAP",
+        "genuine_movement": true,
+        "many_to_one": true,
+        "recovery_complete": true,
+        "replacement_property": "reopening_recovers_registered_source_occurrences",
+        "translation_status": "TRANSLATING"
+      },
+      "truth_level_relational_equality": "ADMITTED_RELATION_ONLY_NOT_NUMERIC_OR_SYNTACTIC_IDENTITY"
+    },
+    "evidence": {
+      "choice": "A0_declared_before_audit",
+      "contraction": {
+        "whole": "contextual_relation"
+      },
+      "external": "heldout_consequence_0",
+      "reopening": {
+        "whole": [
+          "zero",
+          "infinity"
+        ]
+      },
+      "residue": 2,
+      "return": "independent_returner_0",
+      "review": "independent_material_counterreading",
+      "translation": {
+        "infinity": "whole",
+        "zero": "whole"
+      }
+    },
+    "projection": {
+      "experience_requires_completion": true,
+      "next_perspective": "F1",
+      "persisted_state": "EXPERIENCE",
+      "screen_is_projection": true
+    },
+    "relation": {
+      "digest": "3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d",
+      "interface_exclusions": [
+        "numeric_identity",
+        "syntactic_identity"
+      ],
+      "local_presentation": [
+        "0",
+        "infinity"
+      ],
+      "relation_id": "R0",
+      "required_obligations": []
+    }
+  },
+  "episode1": {
+    "M0_evaluation": {
+      "missing_obligations": [
+        "distinction_from_3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d"
+      ],
+      "status": "OBSTRUCTION_MISSING_DERIVED_AXIOM"
+    },
+    "completion": {
+      "Delta": 3,
+      "TransformationBurden": {
+        "abstentions": [],
+        "counterexamples": [],
+        "external_audit_burden": [
+          "heldout_consequence_1"
+        ],
+        "interface_exclusions": [
+          "whole_frame_promotion"
+        ],
+        "obligations_checked": [
+          "independent_review",
+          "independent_return",
+          "external_consequence",
+          "nonzero_residue",
+          "distinction_from_3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d",
+          "residue_2"
+        ],
+        "obligations_failed": [],
+        "residues_retained": [
+          3
+        ],
+        "return_review_requirements": [
+          "independent_material_counterreading_1"
+        ]
+      },
+      "W": {
+        "whole": "next_contextual_relation"
+      },
+      "choice": "A1_declared_after_R1_freeze",
+      "digest": "aeaa90baf7de6b8abb53c0f8b7b3bc64889c3833a96047962781ecf734e7a1c7",
+      "external": "heldout_consequence_1",
+      "method": "3d518cc8ef042ef763a91b8a6de9ca278da9ac3e68da87c9cc138ad58e0d4041",
+      "relation": "8f63479a70f279229629e22b02aed03b46ee3abcc294dcd22d0ab9ac7bb58baa",
+      "review": "independent_material_counterreading_1",
+      "rho": {
+        "whole": [
+          "route_a",
+          "route_b",
+          "whole"
+        ]
+      },
+      "status": "COMPLETION",
+      "translation": {
+        "route_a": "whole",
+        "route_b": "whole",
+        "whole": "whole"
+      },
+      "translation_audit": {
+        "bridge_status": "NOT_A_BRIDGE_QUOTIENT_LIKE_MAP",
+        "genuine_movement": true,
+        "many_to_one": true,
+        "recovery_complete": true,
+        "replacement_property": "reopening_recovers_registered_source_occurrences",
+        "translation_status": "TRANSLATING"
+      },
+      "truth_level_relational_equality": "ADMITTED_RELATION_ONLY_NOT_NUMERIC_OR_SYNTACTIC_IDENTITY"
+    },
+    "evidence": {
+      "choice": "A1_declared_after_R1_freeze",
+      "contraction": {
+        "whole": "next_contextual_relation"
+      },
+      "external": "heldout_consequence_1",
+      "reopening": {
+        "whole": [
+          "route_a",
+          "route_b",
+          "whole"
+        ]
+      },
+      "residue": 3,
+      "return": "independent_returner_1",
+      "review": "independent_material_counterreading_1",
+      "translation": {
+        "route_a": "whole",
+        "route_b": "whole",
+        "whole": "whole"
+      }
+    },
+    "projection": {
+      "experience_requires_completion": true,
+      "next_perspective": "F2",
+      "persisted_state": "EXPERIENCE",
+      "screen_is_projection": true
+    },
+    "relation": {
+      "digest": "8f63479a70f279229629e22b02aed03b46ee3abcc294dcd22d0ab9ac7bb58baa",
+      "interface_exclusions": [
+        "whole_frame_promotion"
+      ],
+      "local_presentation": [
+        "route_a",
+        "route_b",
+        "whole"
+      ],
+      "relation_id": "R1_heldout",
+      "required_obligations": [
+        "distinction_from_3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d"
+      ]
+    }
+  },
+  "frozen_inputs": {
+    "R0": "3ebe3a021cb3e631e9306e65278c26a63eb5b044f5bcdda9107e6ffe74a53b3d",
+    "R1": "8f63479a70f279229629e22b02aed03b46ee3abcc294dcd22d0ab9ac7bb58baa",
+    "R1_frozen_before_M1": true,
+    "source": "1d04e0f5c613f4951c338d0e39116cac323e2370cccdc189c969a5de82010218"
+  },
+  "protocol": "FULL_BOUNDED_CLOSURE_DERIVED_VERIFIER_v1",
+  "source_packet": {
+    "WHY": [
+      "why_relation",
+      "why_counterrelation"
+    ],
+    "admission": "NOT_ADMITTED",
+    "counter_path": [
+      "WHY",
+      "counter_line",
+      "PATH"
+    ],
+    "digest": "1d04e0f5c613f4951c338d0e39116cac323e2370cccdc189c969a5de82010218",
+    "external_lean_source": "NRRF651SlearnUIHairOfClosureGeneratedMap.lean",
+    "forward_path": [
+      "WHY",
+      "forward_line",
+      "PATH"
+    ],
+    "perspective": "P0",
+    "source_boundary": [
+      "not_a_main_lake_build_root",
+      "not_a_local_machine_checked_result",
+      "not_a_frontend_conformance_proof",
+      "not_an_empirical_pedagogy_result",
+      "not_a_phase_c2_input"
+    ],
+    "source_kind": "external_source_attestation_not_locally_built",
+    "source_path": "runs/aristotle_external_formalizations/nrrf651_slearn_ui_hair_generated_map/source_attestation.json",
+    "source_sha256": "8e1f95fafb60b89da22e1ac11e341ad72b856c0dfd8b8e83e3fbd74f566e2385",
+    "state": "PATH"
+  }
+}

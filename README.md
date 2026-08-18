@@ -220,6 +220,7 @@ The grant funds the frontier-agent regime needed to test the architecture, disco
 - `docs/CLOSURE_NATIVE_DERIVED_VERIFIER_ASI_RUN.md` — bounded method-level closure cycle: a derived verifier validates a held-out relation before producing its next successor.
 - `docs/CLOSURE_NATIVE_SOURCED_VERIFIER_ASI_RUN.md` — source-linked method-level cycle using prior content-addressed closure records rather than fresh fixtures.
 - `docs/FULL_BOUNDED_CLOSURE_ASI_FRONTIER_PLAN.md` — the one required causal frontier run from C2 through derived frame/verifier and held-out transfer.
+- `docs/FULL_BOUNDED_CLOSURE_DERIVED_VERIFIER_RUN.md` — executed two-episode integration from source PATH through reviewed completion, derived verifier differential, and the next successor.
 - `docs/PREINSTITUTIONAL_TRANSLATION_OPENINGS.md` — pre-institutional translation, relative gluing controls, inverse-limit-style closure, and Turing/topos realization openings.
 - `docs/RELATIVE_UNITARY_MAZE_METAPHYSICS.md` — external NRRF649 comparison: phase, fibre, and lifted maze/partition closure levels.
 - `docs/TRUTH_CONDITION_TRANSLATIONAL_CLOSURE.md` — closure as a truth condition for further relation, admission/natural-choice boundary, and the transformation-cost opening.
