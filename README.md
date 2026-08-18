@@ -146,13 +146,19 @@ The broader NRRF618–633 sequence develops the observation-free relational foun
 
 ## Relational return, translational completion, and IVI
 
-The closure language returns relational content, never a truth-status label:
+Closure does not return an isolated truth-status label. It returns relational
+content whose auditable translation and return are the truth condition for a
+further relation:
 
 ```text
 W_l : Y_l → B_l
 CEq W u v := W_l(u) = W_l(v)
 W_m(T_lm u) = phi_lm(W_l u).
 ```
+
+It does not claim that a closed truth is preserved unchanged. A returned
+relation may retain a residue and become the basis of a further formation; see
+[`docs/TRUTH_CONDITION_TRANSLATIONAL_CLOSURE.md`](docs/TRUTH_CONDITION_TRANSLATIONAL_CLOSURE.md).
 
 Translation alone is not completion. The bounded maze runtime starts before the quotient: it freezes local episode evidence, derives raw reach from one path/wall line set, requires explicit returns before treating reach as equality, derives the finite saturation topology, and issues a receipt only afterward. It executes six finite fixtures for its three-premise bounded proxy:
 
@@ -207,6 +213,7 @@ The grant funds the frontier-agent regime needed to test the architecture, disco
 - `docs/OPEN_TRANSLATIONAL_FOUNDATION.md` — translation as global language, local definitions/geometries, post-choice naturality, relative asymmetry, and the Turing/topos bridge boundary.
 - `docs/PREINSTITUTIONAL_TRANSLATION_OPENINGS.md` — pre-institutional translation, relative gluing controls, inverse-limit-style closure, and Turing/topos realization openings.
 - `docs/RELATIVE_UNITARY_MAZE_METAPHYSICS.md` — external NRRF649 comparison: phase, fibre, and lifted maze/partition closure levels.
+- `docs/TRUTH_CONDITION_TRANSLATIONAL_CLOSURE.md` — closure as a truth condition for further relation, admission/natural-choice boundary, and the transformation-cost opening.
 - `docs/IVI.md` — IVI as naturally recoverable relational identity.
 - `docs/TRANSLATIONAL_COMPLETION_MAZE_TOPOLOGY_RUN.md` — executed pre-quotient maze completion/topology evidence and next-stage plan.
 
