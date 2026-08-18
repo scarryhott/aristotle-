@@ -129,6 +129,26 @@ BRIDGED**. Exact task/archive/source/note hashes are in
 It does not establish empirical held-out transfer or supply an input to the
 pending C2 experiment.
 
+## NRRF661: 0/∞ closure as ultimate contact translation
+
+The external task reports
+`NRRF661ZeroInfClosureUltimateTranslationUnifiedTopologyNaturalChoice.lean`.
+Given a reflexive, symmetric, and transitive contact relation, it constructs
+the corresponding contact closure and quotient resolution.  The reported
+results show that contact-respecting maps factor uniquely through that
+resolution, and that surjective separating translations are uniquely
+isomorphic to it.  The associated topology is a partition topology: its open
+and closed sets coincide.
+
+This is a conditional universal property *after a contact relation is given*.
+It does not identify `0` and `∞` as literal points, choose a warranted contact
+relation for an independently generated axiom–geometry pair, or decide the
+truth-level completion left open by the frozen C2 assembly interface.
+
+Repository status: **SOURCE-ATTESTED EXTERNAL; NOT LOCALLY BUILT OR
+BRIDGED**. Exact task/archive/source/note hashes are in
+[`../runs/aristotle_external_formalizations/nrrf661_zero_inf_ultimate_translation/manifest.json`](../runs/aristotle_external_formalizations/nrrf661_zero_inf_ultimate_translation/manifest.json).
+
 ## Required runtime bridge
 
 Before the external results become local formal evidence, this repository
