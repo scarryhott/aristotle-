@@ -1,0 +1,33 @@
+{
+  "stage": "external_formalization_intake",
+  "status": "source_attested_external_not_built",
+  "sdk": {"package": "aristotlelib", "version": "2.1.0"},
+  "project_id": "068068ee-b720-4df1-a203-571e0928ec3d",
+  "task_id": "973a0eb0-3c8f-489d-b592-4d0839176f8a",
+  "task_status": "COMPLETE",
+  "artifact": {
+    "result_tar_sha256": "2ff430c44578032fb4105957b8ca9e6f706bdd76f0131cf5c4b267e805bc5de2",
+    "lean_sources": [
+      {
+        "name": "NRRF658DerivedVerifierClosureCycleHeldOutSuccession.lean",
+        "sha256": "7894414f16291e271eba7614f6e43957520c5f48579fe8d211879e5a8f84fa11"
+      },
+      {
+        "name": "NRRF659AxiomGeometryCompletionBridge.lean",
+        "sha256": "487642ffcb4f5fdd80ba91cefc46232b7cc4a6d41d585696a54add86b37570c9"
+      }
+    ],
+    "notes": [
+      {
+        "name": "DERIVED_VERIFIER_CLOSURE_CYCLE_NRRF658_NOTES.md",
+        "sha256": "7172dc067d4ae9c366d2b19b561e4553795fed42a027e9105dd4d0cadfb9ea8e"
+      },
+      {
+        "name": "AXIOM_GEOMETRY_COMPLETION_BRIDGE_NRRF659_NOTES.md",
+        "sha256": "95981affee9476d58de7ab515758576b7b70a5d70b0a7c9a52f1cc34b748f046"
+      }
+    ],
+    "external_lakefile_sha256": "0295aaa643f3831d3fe68b92257124a826a3ea9d165c070b36ac9a277698e544"
+  },
+  "claim_boundary": "NRRF658/659 are external source-attested formalizations of a bounded derived-verifier and axiom-geometry bridge. They are not locally rebuilt in this checkout, do not establish autonomous ASI or universal truth/cost, and are not inputs to Aristotle Phase C2."
+}

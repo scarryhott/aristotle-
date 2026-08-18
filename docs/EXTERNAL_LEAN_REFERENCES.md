@@ -87,6 +87,32 @@ AUDITED**. “Pre-Turing” is recorded as the reported extensional equality of
 mathematical constructions; it is not used here as evidence of historical
 priority, causal priority, or an autonomous machine run.
 
+## NRRF658/659: derived verifier and axiom–geometry completion bridge
+
+The external task reports two linked Lean modules:
+
+- `NRRF658DerivedVerifierClosureCycleHeldOutSuccession.lean` models a bounded
+  `M0 -> C0 -> M1 -> C1 -> M2` verifier cycle, its independently confirmed
+  relation requirement, successor lineage, relabelling invariance, and
+  counterfactual invalid/OPEN/obstruction cases.
+- `NRRF659AxiomGeometryCompletionBridge.lean` represents a completion by an
+  axiom presentation, geometry presentation, translation, independent return,
+  residue, truth-level equality, and external confirmation. It bridges that
+  completion to NRRF658's method step and records that truth-equal
+  presentations need not be literally equal.
+
+The source text itself limits its origin-independence theorem to injective
+relabellings and proves that truth equality is strictly coarser than that
+class. It therefore does not establish invariance across arbitrary distinct
+axiom-geometries, empirical held-out mathematical transfer, or autonomous
+method discovery.
+
+Repository status: **SOURCE-ATTESTED EXTERNAL; NOT LOCALLY BUILT OR
+BRIDGED**. The archive and selected source hashes are recorded in
+[`../runs/aristotle_external_formalizations/nrrf658_659_derived_verifier_axiom_geometry/manifest.json`](../runs/aristotle_external_formalizations/nrrf658_659_derived_verifier_axiom_geometry/manifest.json).
+The native two-episode run is a separate executable proxy; it is not promoted
+to an import or instance of these external modules.
+
 ## Required runtime bridge
 
 Before the external results become local formal evidence, this repository
