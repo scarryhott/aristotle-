@@ -149,6 +149,26 @@ Repository status: **SOURCE-ATTESTED EXTERNAL; NOT LOCALLY BUILT OR
 BRIDGED**. Exact task/archive/source/note hashes are in
 [`../runs/aristotle_external_formalizations/nrrf661_zero_inf_ultimate_translation/manifest.json`](../runs/aristotle_external_formalizations/nrrf661_zero_inf_ultimate_translation/manifest.json).
 
+## NRRF662: completion in translational truth equality
+
+The external task reports `NRRF662CompletionInTranslationalTruthEquality.lean`.
+It models presentations as truth-answer content plus separate basis,
+trajectory, and endpoint markers.  Reportedly, completability is exactly the
+existence of a translation carrying the answer language; it is marker-blind,
+strictly coarser than presentation identity, and supports translation of every
+formula over the registered questions.  The module includes a model in which
+local/negative/`0` and global/positive/`∞` markers remain distinct while the
+presentations are completable.
+
+This is a theorem about its supplied answer language.  It does not establish
+that an arbitrary frontier frame pair has a warranted shared question language
+or alignment, nor does it convert the C2 slot-assembly result into a
+truth-level conclusion.
+
+Repository status: **SOURCE-ATTESTED EXTERNAL; NOT LOCALLY BUILT OR
+BRIDGED**. Exact task/archive/source/note hashes are in
+[`../runs/aristotle_external_formalizations/nrrf662_completion_translational_truth_equality/manifest.json`](../runs/aristotle_external_formalizations/nrrf662_completion_translational_truth_equality/manifest.json).
+
 ## Required runtime bridge
 
 Before the external results become local formal evidence, this repository

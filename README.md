@@ -22,7 +22,7 @@ origin-independent translation
     → next perspective or axiometric basis
 ```
 
-**Closure is interactive continual completion, not the freezing of axiometry.** Experimental artifacts are frozen only to preserve causal evidence during a particular comparison; completed relational return may subsequently participate in a new frame and a new axiometric basis.
+**Closure is interactive continual completion, not the freezing of axiometry.** Experimental artifacts are frozen only to preserve causal evidence during a particular comparison.  Their limited languages and definitions are evaluated by their admitted translations into one another: completion is equality of registered relational answers with independent return and provenance, not literal equality of local terms, local/global basis, trajectory sign, or `0`/`∞` endpoint labels.  A completed relational return may subsequently participate in a new frame and a new axiometric basis.
 
 A motivating application is agreement between reasoning minds. Different minds may carry different local definitions or measurements of value and credit. The project asks whether shared identity can be recovered through relative translation rather than by declaring one local definition the privileged global definition. The current runtimes test the mathematical architecture of that claim; they do not claim to solve economic value or interpersonal agreement in general.
 
@@ -78,7 +78,7 @@ F_A, F_B, Q_A, Q_B
   ≺ translational completion / IVI / topology / receipts
 ```
 
-The initial isolated-generation stage, frozen native translation, identity-independent validation, subinterface-only candidate equality, and independent local-return stage have now been executed. The current evidence supports a 34-role admitted subinterface only: it does **not** establish whole-frame equality, `GeomEquiv`, assembled cross-frame return, completion, or IVI. The frozen scientific protocol is in [`docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md`](docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md); the direct request links, manifests, hashes, and exact claim boundary are in [`docs/ARISTOTLE_NATIVE_TRANSLATION_EVIDENCE.md`](docs/ARISTOTLE_NATIVE_TRANSLATION_EVIDENCE.md).
+The initial isolated-generation stage, frozen native translation, identity-independent validation, subinterface-only candidate equality, independent local-return stage, and its narrow structural C2 assembly evaluation have now been executed.  The current evidence supports a 34-role admitted subinterface only: it does **not** establish whole-frame equality, `GeomEquiv`, a single-valued assembled cross-frame return, IVI, or topology naturality.  A C2 structural obstruction is not by itself a truth-level obstruction: truth-level completion requires a separately registered relational-answer alignment, return, residue, and independent confirmation.  The frozen scientific protocol is in [`docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md`](docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md); the direct request links, manifests, hashes, and exact claim boundary are in [`docs/ARISTOTLE_NATIVE_TRANSLATION_EVIDENCE.md`](docs/ARISTOTLE_NATIVE_TRANSLATION_EVIDENCE.md).  The active evaluation contract is [`docs/TRANSLATIONAL_COMPLETION_EVALUATION.md`](docs/TRANSLATIONAL_COMPLETION_EVALUATION.md).
 
 The primary remaining objective is one integrated frontier chain in which the
 actual C2 completion or obstruction derives the next frame and verifier before
@@ -157,8 +157,8 @@ The broader NRRF618–633 sequence develops the observation-free relational foun
 ## Relational return, translational completion, and IVI
 
 Closure does not return an isolated truth-status label. It returns relational
-content whose auditable translation and return are the truth condition for a
-further relation:
+content whose auditable translation, answer alignment, independent return, and
+provenance are the truth condition for a further relation:
 
 ```text
 W_l : Y_l → B_l

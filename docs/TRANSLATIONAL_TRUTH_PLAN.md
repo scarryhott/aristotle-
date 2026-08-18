@@ -84,13 +84,19 @@ each failure is classified as obstruction or OPEN, never silently repaired.
    least one non-invariance countermodel.
 3. Map the admitted Aristotle subinterface into the interface without
    promoting its 34-role evidence to whole-frame equality.
-4. Run Phase C2 independently: test whether C1 local return receipts assemble
-   into completion over the frozen admitted interface.
+4. Preserve the completed C2 structural-assembly result as a representation
+   layer result: it cannot be used to repair frozen roles or promoted to a
+   truth-level conclusion by itself.
+5. Register a separate `TruthAssembly = (T, rho, Align, Delta, Gamma)` that
+   compares relational answers in the frozen limited languages.  It must
+   classify `TRUTH_COMPLETION`, `TRUTH_OBSTRUCTION`,
+   `OPEN_TRUTH_BOUNDARY`, or invalid leakage/self-certification.
 
 The integration requirement is specified in
 [Full bounded closure-ASI frontier plan](FULL_BOUNDED_CLOSURE_ASI_FRONTIER_PLAN.md):
-the actual C2 result, whether completion, obstruction, or OPEN, must be the
-causal source of any successor frame and verifier.
+any future truth-level completion, obstruction, or OPEN result—not a
+slot-level C2 verdict alone—must be the causal source of a successor frame and
+verifier.
 
 **Boundary:** the Aristotle result can test a specified realization of the
 interface. It cannot by itself establish language-prior universal truth.
