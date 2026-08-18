@@ -1,5 +1,13 @@
 # Metaphysical Basis: Relative Axiom-Geometry and Natural Translational Existence
 
+> **Claim level.** This document develops a metaphysical/foundational
+> interpretation. Its mathematical definitions, proved theorems, and bounded
+> runtime results are separately identified in [`CLAIM_STATUS.md`](CLAIM_STATUS.md).
+> Neither a Lean proof nor an executed finite proxy proves statements about
+> consciousness, spacetime, nature/spirit, measurement, incompleteness genesis,
+> or literal `0 = ∞`. The Slearn source alignment is
+> [`SLEARN_MANIFESTO_ALIGNMENT.md`](SLEARN_MANIFESTO_ALIGNMENT.md).
+
 ## Foundational claim
 
 The foundational claim is not merely that everything is related, nor merely that translations preserve already-defined mathematical objects. Its central question is:

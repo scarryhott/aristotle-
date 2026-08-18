@@ -4,6 +4,8 @@ This ledger is the audit boundary between formal result, experiment, open theore
 
 The project's claimed foundational novelty is **relative axiom-geometry with natural translational existence**: axioms have their role relative to their geometry/reference frame, while cross-frame identity is disclosed through natural translation and relational return rather than inherited from a privileged absolute presentation. This is the metaphysical/foundational interpretation that motivates the formal programme. Familiar categorical machinery appearing downstream is not itself claimed as the novelty.
 
+The cross-repository source boundary is [`Slearn manifesto alignment`](SLEARN_MANIFESTO_ALIGNMENT.md). Its canonical source is a product/research manifesto, not formal or runtime evidence in this checkout. The ledger's statuses map to the common claim levels as follows: `PROVED` = proved theorem; `EXPERIMENTAL` = empirical/runtime result scoped to its fixture; `METAPHYSICAL` = metaphysical hypothesis; `DEFINED` = mathematical definition; and every unestablished entry remains an open question. Product design, phenomenology, and metaphor are documented as such in the companion alignment rather than being silently entered as claims here.
+
 | Claim | Status | Evidence or boundary |
 |---|---|---|
 | Relative axiom-geometry with natural translational existence is the proposed foundation | **METAPHYSICAL / FOUNDATIONAL INTERPRETATION** | Organizing thesis of the programme; the Lean development proves conditional consequences once the relevant frame/translation structure is specified |

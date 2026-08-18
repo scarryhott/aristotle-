@@ -31,6 +31,11 @@ The choice-before-naturality and relative local/global topology formulation is
 in [`docs/OPEN_TRANSLATIONAL_FOUNDATION.md`](docs/OPEN_TRANSLATIONAL_FOUNDATION.md).
 The formal gaps needed to begin from translation before fixed language or
 institution are in [`docs/PREINSTITUTIONAL_TRANSLATION_OPENINGS.md`](docs/PREINSTITUTIONAL_TRANSLATION_OPENINGS.md).
+The cross-repository boundary for the canonical Slearn manifesto is in
+[`docs/SLEARN_MANIFESTO_ALIGNMENT.md`](docs/SLEARN_MANIFESTO_ALIGNMENT.md): it
+classifies product design, phenomenology, metaphor, metaphysical hypothesis,
+mathematical definition, proved theorem, empirical/runtime result, and open
+question without promoting one level into another.
 
 ## What is already complete
 
