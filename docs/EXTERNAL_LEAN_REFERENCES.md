@@ -113,6 +113,22 @@ BRIDGED**. The archive and selected source hashes are recorded in
 The native two-episode run is a separate executable proxy; it is not promoted
 to an import or instance of these external modules.
 
+## NRRF660: auditable truth under changed frame and verifier
+
+The external task reports `NRRF660AuditableTruthUnderChangedAxiomGeometryAndVerifier.lean`.
+It defines a published succession record, replay of the successor frame, and
+a Boolean audit. Reported theorems characterize audit success exactly as a
+lawful axiom–geometry succession, reject self-authored/withheld/contradicted
+or forged successions, and preserve audit under the module's relabelling class.
+The report explicitly distinguishes truth-level agreement from a valid
+published succession and leaves withheld further relations OPEN.
+
+Repository status: **SOURCE-ATTESTED EXTERNAL; NOT LOCALLY BUILT OR
+BRIDGED**. Exact task/archive/source/note hashes are in
+[`../runs/aristotle_external_formalizations/nrrf660_auditable_truth_changed_frame_verifier/manifest.json`](../runs/aristotle_external_formalizations/nrrf660_auditable_truth_changed_frame_verifier/manifest.json).
+It does not establish empirical held-out transfer or supply an input to the
+pending C2 experiment.
+
 ## Required runtime bridge
 
 Before the external results become local formal evidence, this repository
