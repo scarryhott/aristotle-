@@ -59,7 +59,7 @@ This is the frontier condition that the current deterministic proxy rehearses bu
 
 ## Formal foundation already established
 
-The observation-free translational development does not define closure from an observation map, truth-status enum, or canonical coordinate system.
+The observation-free translational development does not define closure from an observation map, preserved truth-status enum, entropy quantity, or canonical coordinate system. Closure is instead the truth condition for an auditable relation to continue through translation and return.
 
 For languages `l,m`, the formal translational frame contains
 

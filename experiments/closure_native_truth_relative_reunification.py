@@ -34,8 +34,8 @@ def reopen(whole: int, arity: int) -> list[int]:
     return [0] * (arity - 1) + [whole]
 
 
-def relationally_recovers(routes: list[int], returned: list[int]) -> bool:
-    """The contextual truth criterion used in this bounded model."""
+def relation_continues(routes: list[int], returned: list[int]) -> bool:
+    """The contextual continuation criterion used in this bounded model."""
     return contract(routes) == contract(returned)
 
 
@@ -61,10 +61,10 @@ def round_record(routes: list[int], label: str) -> dict[str, Any]:
         "routes": routes,
         "Ch": {"whole": whole, "is_many_to_one_witness": contract([3, 4]) == contract([4, 3])},
         "Ka": {"returned_routes": returned, "literal_route_identity": returned == routes},
-        "relation": {"contextual_truth_recovered": relationally_recovers(routes, returned)},
+        "relation": {"contextual_relation_continues": relation_continues(routes, returned)},
         "Omega": residue,
     }
-    record["verdict"] = verdict(recovered=record["relation"]["contextual_truth_recovered"], residue=residue)
+    record["verdict"] = verdict(recovered=record["relation"]["contextual_relation_continues"], residue=residue)
     record["digest"] = digest(record)
     return record
 
@@ -84,13 +84,13 @@ def interactive_proof_record(claim_routes: list[int], obligations: list[int] | N
     """Claim = contraction; obligations = independently supplied reopening."""
     if obligations is None:
         return {"status": "OPEN_NO_RETURNED_OBLIGATIONS"}
-    recovered = relationally_recovers(claim_routes, obligations)
+    recovered = relation_continues(claim_routes, obligations)
     residue = route_residue(claim_routes, obligations)
     return {
         "status": verdict(recovered=recovered, residue=residue),
         "claim_whole": contract(claim_routes),
         "obligations": obligations,
-        "contextual_truth_recovered": recovered,
+        "contextual_relation_continues": recovered,
         "Omega": residue,
         "external_verifier_claimed": False,
     }
@@ -111,7 +111,7 @@ def run(output: Path) -> dict[str, Any]:
     }
     result = {
         "protocol": "closure_native_truth_relative_reunification_v1",
-        "truth_reading": "contextual whole and operational routes are inverse relative readings; neither is an absolute language-independent object",
+        "continuation_reading": "contextual whole and operational routes are inverse relative readings; their truth condition is the auditable continuation of their relation, not a preserved truth label",
         "ball_hair_round": ball_hair,
         "contraction_control": {
             "different_routes": ball_hair["routes"] != same_whole_different_route["routes"],

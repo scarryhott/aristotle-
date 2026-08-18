@@ -82,16 +82,20 @@ Closure is therefore **interactive continual completion**: relational formations
 W_m(T_lm u) = phi_lm(W_l u).
 ```
 
-The interpretation is not that `F` and `G` are absolutely identified before this square is checked, and not that a finished truth-object is preserved unchanged. The square is a local formal witness that the truth of a relation can remain recoverable **through** translation into a further relation.
+The interpretation is not that `F` and `G` are absolutely identified before this square is checked, nor that a finished truth-object is preserved unchanged. The square is a local formal witness of the truth condition for a further recoverable relation available **through** their translation. Translation therefore participates in constituting cross-frame relational identity.
 
 Translation therefore participates in constituting cross-frame relational identity. A reference frame remains usable without becoming an origin. Any frame may locally present a returned identity, while coherent translation carries that truth-level relation into a further formation without requiring the local presentations to become literally identical.
 
 ### Choice, admission, cost, and non-circular naturality
 
 The metaphysical reading must not turn naturality into a hidden global chooser.
-A choice is made first. The chosen interaction, return, orientation, extension,
-or identification is then tested for commutation, reflection, recovery, and
-independently generated consequences.
+Translation is the shared relation within which local formations can make
+interactive choices. A choice is made first; its proposed return, orientation,
+extension, or identification is then tested for commutation, reflection,
+recovery, and independently generated consequences. Naturality is therefore a
+constraint on a choice, not the mechanism that forces the choice to exist. The
+current runtime records this as explicit obligations and counterexamples, not
+as a scalar cost functional, entropy, quality, or quantity.
 
 Naturality is therefore a truth condition on a choice, not the mechanism that
 forces the choice to exist. **True admission must itself be related to its

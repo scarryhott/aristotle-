@@ -38,16 +38,18 @@ PreTranslation representation -> local InstitutionFrame / TransFrame
 It would not make every local representation equivalent or remove local
 obstructions.
 
-### O2 — interactive choice and constraint cost
+### O2 — truth-conditioned admission and transformation burden
 
 Formalize a candidate choice as data made in a local interaction, before any
 naturality verdict. Specify a proof-relevant ledger of commitments,
-counterexamples, exclusions, and required repairs. Only then define the
-conditions under which the choice is natural, obstructed, or open.
+counterexamples, exclusions, required repairs, and an independent returned
+consequence. Only then define the truth condition under which the admission
+continues to a further relation, is obstructed, or remains open.
 
-No numeric “choice cost” is currently defined. A cost functional must not be
-introduced until its invariance and relation to the registered proof obligations
-are explicit.
+No numeric transformation cost is currently defined. A cost object must not be
+introduced until its invariance under admitted re-expression, compositional
+law, and relation to registered proof obligations are explicit. It must not be
+silently identified with entropy, quality, or quantity.
 
 ### O3 — relative gluing reversal controls
 
@@ -110,6 +112,16 @@ residue in one proof-relevant interface. Determine when a lower-level return is
 compatible with a higher-level obstruction and when it supports a genuinely new
 next formation. The NRRF649 runtime report is a candidate external comparison
 target; see [Relative unitary maze: three closure levels](RELATIVE_UNITARY_MAZE_METAPHYSICS.md).
+
+### O8 — language-prior truth relation
+
+Give a proof-relevant account of the relation whose continuation is being
+called true before it is represented as a sentence in a fixed language. A
+local language, definition, axiom, geometry, or institution should then be a
+representation with a declared interface—not the source of truth. The target
+must state re-expression invariance, return/composition obligations, and
+countermodels; it must not infer an unrestricted language-independent truth
+oracle from the bounded controls.
 
 ## Relation to existing work
 

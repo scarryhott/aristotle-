@@ -19,7 +19,7 @@ class ClosureNativeTruthRelativeReunificationTest(unittest.TestCase):
         ball = self.result["ball_hair_round"]
         self.assertTrue(self.result["contraction_control"]["different_routes"])
         self.assertTrue(self.result["contraction_control"]["same_contracted_whole"])
-        self.assertTrue(ball["relation"]["contextual_truth_recovered"])
+        self.assertTrue(ball["relation"]["contextual_relation_continues"])
         self.assertFalse(ball["Ka"]["literal_route_identity"])
         self.assertEqual(ball["Omega"], 6)
         self.assertEqual(ball["verdict"], "CLOSED_TO_NEW_OPENING")

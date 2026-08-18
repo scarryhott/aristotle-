@@ -210,7 +210,8 @@ The grant funds the frontier-agent regime needed to test the architecture, disco
 - `docs/INSTITUTIONS_INTERACTIVE_PROOF_COMPARISON.md` — institution/Hets comparison, choice-naturality boundary, and the proposed interactive-proof bridge.
 - `docs/CLAIM_STATUS.md` — theorem/experiment/interpretation audit boundary.
 - `docs/METAPHYSICS.md` — origin-independent translation, relational frames, and interactive continual completion.
-- `docs/OPEN_TRANSLATIONAL_FOUNDATION.md` — translation as global language, local definitions/geometries, post-choice naturality, relative asymmetry, and the Turing/topos bridge boundary.
+- `docs/OPEN_TRANSLATIONAL_FOUNDATION.md` — translation as a globally available relation, local definitions/geometries, post-choice naturality, relative asymmetry, and the Turing/topos bridge boundary.
+- `docs/TRANSLATIONAL_TRUTH_PLAN.md` — staged formal and experimental plan for truth-conditioned continuation and a basis-independent transformation-burden object.
 - `docs/PREINSTITUTIONAL_TRANSLATION_OPENINGS.md` — pre-institutional translation, relative gluing controls, inverse-limit-style closure, and Turing/topos realization openings.
 - `docs/RELATIVE_UNITARY_MAZE_METAPHYSICS.md` — external NRRF649 comparison: phase, fibre, and lifted maze/partition closure levels.
 - `docs/TRUTH_CONDITION_TRANSLATIONAL_CLOSURE.md` — closure as a truth condition for further relation, admission/natural-choice boundary, and the transformation-cost opening.

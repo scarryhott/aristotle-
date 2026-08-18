@@ -11,10 +11,11 @@ language. “Global” therefore does not mean a privileged all-encompassing
 topos, and “local” does not mean isolated or incommunicable. It means:
 
 ```text
-translation: shared language of comparison
+translation: shared relation of comparison, prior to any selected language
 local frame: selected definitions, equality, geometry, and questions
 interaction: a proposed translation/return and its recorded choices
-closure: the result of testing whether that interaction can be completed
+closure: the truth condition for whether that interaction can continue through
+         an auditable return
 ```
 
 The intended foundation is open because no fixed local axiom basis is assumed
@@ -38,15 +39,15 @@ identification. Only afterwards can its compatibility be tested.
 local frames + available translation language
   -> interactive choice c
   -> declared translation/return/asymmetry
-  -> constraint and cost audit
+  -> constraint and transformation-burden audit
   -> natural closure, obstruction, or OPEN
 ```
 
 Here a naturality square is an auditable constraint on the chosen interaction,
-not an origin of the interaction. “Choice cost” is currently methodological:
-the registered commitments, failures, exclusions, and repairs that would be
-required to make a candidate commute. It is **not yet** a defined scalar,
-variational functional, or Lean invariant.
+not an origin of the interaction. The current “transformation burden” is
+methodological: registered commitments, failures, exclusions, and repairs
+needed for a candidate to continue relationally. It is **not yet** a defined
+scalar, variational functional, entropy, or Lean invariant.
 
 This resolves the apparent circularity: translation does not force naturality;
 it makes choices comparable, lets their costs become visible, and permits a
@@ -67,8 +68,9 @@ local geometric maze
 Neither side is declared prior absolutely. A global axiom basis may be a
 description of a completed local geometric relation, while a local geometry
 may be a presentation of a global translated basis. Their equality is not
-literal sameness: it requires an explicit realization/translation theorem in a
-specified interface.
+literal sameness, quality equivalence, or quantity equivalence: it is the truth
+of a reciprocal relation, requiring an explicit realization/translation theorem
+in a specified interface.
 
 The existing bounded maze establishes only a finite, pre-registered proxy. It
 does not prove that arbitrary local geometry and global topology are equivalent
@@ -155,7 +157,8 @@ This foundation does not presently establish:
 
 - a single global topos of all relations;
 - equivalence of topological closure and translational completion;
-- a formal cost functional for natural versus non-natural choice;
+- a basis-invariant transformation-cost object for natural versus non-natural
+  choice;
 - a Turing/topos bidirectional realization theorem;
 - whole-frame `GeomEquiv`, CrossFrameIVI, or completion from the 34-role
   Aristotle subinterface.

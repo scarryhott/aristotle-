@@ -2,15 +2,16 @@
 
 This bounded native control treats an ordered route field and its contracted
 whole as inverse *relative readings*. Contraction intentionally forgets order;
-reciprocal reopening preserves the contracted whole but need not reproduce the
-route literally. A nonzero route residue therefore produces
-`CLOSED_TO_NEW_OPENING`, rather than an identity claim.
+reciprocal reopening can continue their contextual relation but need not
+reproduce the route literally. A nonzero route residue therefore produces
+`CLOSED_TO_NEW_OPENING`, rather than an identity claim or a preserved
+truth-status label.
 
 The run checks four separations:
 
 1. two different routes can have one contracted whole, so contraction is not
    closure;
-2. contextual truth can be recovered while ordered route history remains
+2. a contextual relation can continue while ordered route history remains
    non-identical and has retained residue;
 3. a mirror parent may have zero signed residue while its children remain
    distinct, so parent closure does not erase local differences;
