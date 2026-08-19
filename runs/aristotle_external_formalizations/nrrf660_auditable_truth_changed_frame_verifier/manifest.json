@@ -1,0 +1,17 @@
+{
+  "stage": "external_formalization_intake",
+  "status": "source_attested_external_not_built",
+  "sdk": {"package": "aristotlelib", "version": "2.1.0"},
+  "project_id": "068068ee-b720-4df1-a203-571e0928ec3d",
+  "task_id": "a3e1e311-a931-4777-a0ad-99814ecbb944",
+  "task_status": "COMPLETE",
+  "artifact": {
+    "result_tar_sha256": "a511d3f45e89f7ef8a260ce0bfad223a9ea2cb628b74db41cc5691cce94ec9d1",
+    "lean_source": "NRRF660AuditableTruthUnderChangedAxiomGeometryAndVerifier.lean",
+    "lean_source_sha256": "d47daee9d9608d11582d882e72d04bd5cf49e5af12a6b76c12d36d6e3f57be48",
+    "notes": "AUDITABLE_TRUTH_CHANGED_AXIOM_GEOMETRY_AND_VERIFIER_NRRF660_NOTES.md",
+    "notes_sha256": "7e9b3a0b617fe609ad8981092a55d7a191a627a1ed7f1dd0cc2701ad88d675ff",
+    "external_lakefile_sha256": "0295aaa643f3831d3fe68b92257124a826a3ea9d165c070b36ac9a277698e544"
+  },
+  "claim_boundary": "NRRF660 is an external source-attested formalization of auditability relative to published succession records. It is not locally rebuilt here, does not establish empirical held-out mathematical transfer or autonomous ASI, and is not an input to the pending Aristotle Phase C2 task."
+}

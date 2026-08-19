@@ -1,0 +1,32 @@
+{
+  "calibrated_external_bridge": {
+    "classification": "EXTERNALLY_CALIBRATED",
+    "external_calibration_error_rate": 0.0,
+    "false_accept_count": 0,
+    "false_reject_count": 0,
+    "heldout_record_count": 4,
+    "outcome_provenance": "heldout_outcome_fixture",
+    "status": "LEVEL2_AUDITED",
+    "supports_level1_calibration": true
+  },
+  "claim_boundary": "bounded held-out fixture; no claim that these outcomes ground a real-world receipt",
+  "external_counterexample_control": {
+    "classification": "EXTERNAL_COUNTEREXAMPLE",
+    "external_calibration_error_rate": 0.5,
+    "false_accept_count": 1,
+    "false_reject_count": 0,
+    "heldout_record_count": 2,
+    "outcome_provenance": "heldout_outcome_fixture",
+    "status": "LEVEL2_AUDITED",
+    "supports_level1_calibration": false
+  },
+  "missing_external_bridge_control": {
+    "known_outcome_count": 0,
+    "status": "OPEN_NO_EXTERNAL_CONSEQUENCE"
+  },
+  "outcome_leakage_control": {
+    "reason": "external consequence was generated from the gate decision",
+    "status": "INVALID_OUTCOME_LEAKAGE"
+  },
+  "protocol": "closure_native_level2_external_bridge_v1"
+}

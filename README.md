@@ -22,13 +22,20 @@ origin-independent translation
     → next perspective or axiometric basis
 ```
 
-**Closure is interactive continual completion, not the freezing of axiometry.** Experimental artifacts are frozen only to preserve causal evidence during a particular comparison; completed relational return may subsequently participate in a new frame and a new axiometric basis.
+**Closure is interactive continual completion, not the freezing of axiometry.** Experimental artifacts are frozen only to preserve causal evidence during a particular comparison.  Their limited languages and definitions are evaluated by their admitted translations into one another: completion is equality of registered relational answers with independent return and provenance, not literal equality of local terms, local/global basis, trajectory sign, or `0`/`∞` endpoint labels.  A completed relational return may subsequently participate in a new frame and a new axiometric basis.
 
 A motivating application is agreement between reasoning minds. Different minds may carry different local definitions or measurements of value and credit. The project asks whether shared identity can be recovered through relative translation rather than by declaring one local definition the privileged global definition. The current runtimes test the mathematical architecture of that claim; they do not claim to solve economic value or interpersonal agreement in general.
 
 See [`docs/METAPHYSICS.md`](docs/METAPHYSICS.md) for the full thesis and its formal boundary.
 The choice-before-naturality and relative local/global topology formulation is
 in [`docs/OPEN_TRANSLATIONAL_FOUNDATION.md`](docs/OPEN_TRANSLATIONAL_FOUNDATION.md).
+The formal gaps needed to begin from translation before fixed language or
+institution are in [`docs/PREINSTITUTIONAL_TRANSLATION_OPENINGS.md`](docs/PREINSTITUTIONAL_TRANSLATION_OPENINGS.md).
+The cross-repository boundary for the canonical Slearn manifesto is in
+[`docs/SLEARN_MANIFESTO_ALIGNMENT.md`](docs/SLEARN_MANIFESTO_ALIGNMENT.md): it
+classifies product design, phenomenology, metaphor, metaphysical hypothesis,
+mathematical definition, proved theorem, empirical/runtime result, and open
+question without promoting one level into another.
 
 ## What is already complete
 
@@ -71,7 +78,12 @@ F_A, F_B, Q_A, Q_B
   ≺ translational completion / IVI / topology / receipts
 ```
 
-The initial isolated-generation stage, frozen native translation, identity-independent validation, subinterface-only candidate equality, and independent local-return stage have now been executed. The current evidence supports a 34-role admitted subinterface only: it does **not** establish whole-frame equality, `GeomEquiv`, assembled cross-frame return, completion, or IVI. The frozen scientific protocol is in [`docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md`](docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md); the direct request links, manifests, hashes, and exact claim boundary are in [`docs/ARISTOTLE_NATIVE_TRANSLATION_EVIDENCE.md`](docs/ARISTOTLE_NATIVE_TRANSLATION_EVIDENCE.md).
+The initial isolated-generation stage, frozen native translation, identity-independent validation, subinterface-only candidate equality, independent local-return stage, and its narrow structural C2 assembly evaluation have now been executed.  The current evidence supports a 34-role admitted subinterface only: it does **not** establish whole-frame equality, `GeomEquiv`, a single-valued assembled cross-frame return, IVI, or topology naturality.  A C2 structural obstruction is not by itself a truth-level obstruction: truth-level completion requires a separately registered relational-answer alignment, return, residue, and independent confirmation.  The frozen scientific protocol is in [`docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md`](docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md); the direct request links, manifests, hashes, and exact claim boundary are in [`docs/ARISTOTLE_NATIVE_TRANSLATION_EVIDENCE.md`](docs/ARISTOTLE_NATIVE_TRANSLATION_EVIDENCE.md).  The active evaluation contract is [`docs/TRANSLATIONAL_COMPLETION_EVALUATION.md`](docs/TRANSLATIONAL_COMPLETION_EVALUATION.md).
+
+The primary remaining objective is one integrated frontier chain in which the
+actual C2 completion or obstruction derives the next frame and verifier before
+they face a new held-out relation. The requirements are frozen in
+[`docs/FULL_BOUNDED_CLOSURE_ASI_FRONTIER_PLAN.md`](docs/FULL_BOUNDED_CLOSURE_ASI_FRONTIER_PLAN.md).
 
 A natural translation, explicit equality obstruction, downstream naturality obstruction, incomplete return, genuine frame-relative `OpenIn`, or registered interface boundary are all substantive outcomes. The experiment does not require every frame to translate to every other frame.
 
@@ -144,13 +156,19 @@ The broader NRRF618–633 sequence develops the observation-free relational foun
 
 ## Relational return, translational completion, and IVI
 
-The closure language returns relational content, never a truth-status label:
+Closure does not return an isolated truth-status label. It returns relational
+content whose auditable translation, answer alignment, independent return, and
+provenance are the truth condition for a further relation:
 
 ```text
 W_l : Y_l → B_l
 CEq W u v := W_l(u) = W_l(v)
 W_m(T_lm u) = phi_lm(W_l u).
 ```
+
+It does not claim that a closed truth is preserved unchanged. A returned
+relation may retain a residue and become the basis of a further formation; see
+[`docs/TRUTH_CONDITION_TRANSLATIONAL_CLOSURE.md`](docs/TRUTH_CONDITION_TRANSLATIONAL_CLOSURE.md).
 
 Translation alone is not completion. The bounded maze runtime starts before the quotient: it freezes local episode evidence, derives raw reach from one path/wall line set, requires explicit returns before treating reach as equality, derives the finite saturation topology, and issues a receipt only afterward. It executes six finite fixtures for its three-premise bounded proxy:
 
@@ -163,6 +181,12 @@ This runtime proxy is not identified by definition with the separately reported 
 **IVI — intangibly verified information —** is the informational interpretation of naturally recoverable relational identity that does not require unique reconstruction of its local occurrence. IVI supplies the nontrivial informational side of closure; translational completion supplies the returned structural side. See [`docs/IVI.md`](docs/IVI.md) and [`docs/TRANSLATIONAL_COMPLETION_MAZE_TOPOLOGY_RUN.md`](docs/TRANSLATIONAL_COMPLETION_MAZE_TOPOLOGY_RUN.md).
 
 For current project work, the full closure-translational runtime is the operative executable specification. Separately reported NRRF599/639/640 results are external formal references and comparison targets; they do not redefine the runtime or count as locally audited evidence until their exact sources/dependencies are imported and rebuilt here.
+
+Progressive closure is implemented here as a **verification contract**: a
+completed relation may carry residue and inherited obligations into a possible
+successor frame/verifier, but an `OPEN`, obstructed, or self-certified result
+may not be promoted. It is not yet the runtime of an autonomous ASI. See
+[`docs/PROGRESSIVE_CLOSURE_ASI_STATUS.md`](docs/PROGRESSIVE_CLOSURE_ASI_STATUS.md).
 
 ## Executed evidence
 
@@ -202,7 +226,17 @@ The grant funds the frontier-agent regime needed to test the architecture, disco
 - `docs/INSTITUTIONS_INTERACTIVE_PROOF_COMPARISON.md` — institution/Hets comparison, choice-naturality boundary, and the proposed interactive-proof bridge.
 - `docs/CLAIM_STATUS.md` — theorem/experiment/interpretation audit boundary.
 - `docs/METAPHYSICS.md` — origin-independent translation, relational frames, and interactive continual completion.
-- `docs/OPEN_TRANSLATIONAL_FOUNDATION.md` — translation as global language, local definitions/geometries, post-choice naturality, relative asymmetry, and the Turing/topos bridge boundary.
+- `docs/OPEN_TRANSLATIONAL_FOUNDATION.md` — translation as a globally available relation, local definitions/geometries, post-choice naturality, relative asymmetry, and the Turing/topos bridge boundary.
+- `docs/TRANSLATIONAL_TRUTH_PLAN.md` — staged formal and experimental plan for truth-conditioned continuation and a basis-independent transformation-burden object.
+- `docs/CLOSURE_NATIVE_DERIVED_VERIFIER_ASI_RUN.md` — bounded method-level closure cycle: a derived verifier validates a held-out relation before producing its next successor.
+- `docs/CLOSURE_NATIVE_SOURCED_VERIFIER_ASI_RUN.md` — source-linked method-level cycle using prior content-addressed closure records rather than fresh fixtures.
+- `docs/FULL_BOUNDED_CLOSURE_ASI_FRONTIER_PLAN.md` — the one required causal frontier run from C2 through derived frame/verifier and held-out transfer.
+- `docs/FULL_BOUNDED_CLOSURE_DERIVED_VERIFIER_RUN.md` — executed two-episode integration from source PATH through reviewed completion, derived verifier differential, and the next successor.
+- `docs/PROGRESSIVE_CLOSURE_ASI_STATUS.md` — canonical distinction between the implemented bounded progressive-closure verifier and the still-open autonomous-ASI integration.
+- `docs/REUNIFIED_NEXT_TESTS_CHART_COCOYCLE.md` — causal T2A→T2B continuation and separately isolated chart--cocycle replication.
+- `docs/PREINSTITUTIONAL_TRANSLATION_OPENINGS.md` — pre-institutional translation, relative gluing controls, inverse-limit-style closure, and Turing/topos realization openings.
+- `docs/RELATIVE_UNITARY_MAZE_METAPHYSICS.md` — external NRRF649 comparison: phase, fibre, and lifted maze/partition closure levels.
+- `docs/TRUTH_CONDITION_TRANSLATIONAL_CLOSURE.md` — closure as a truth condition for further relation, admission/natural-choice boundary, and the transformation-cost opening.
 - `docs/IVI.md` — IVI as naturally recoverable relational identity.
 - `docs/TRANSLATIONAL_COMPLETION_MAZE_TOPOLOGY_RUN.md` — executed pre-quotient maze completion/topology evidence and next-stage plan.
 

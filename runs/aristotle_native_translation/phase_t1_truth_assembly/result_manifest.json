@@ -1,0 +1,40 @@
+{
+  "protocol": "docs/TRANSLATIONAL_COMPLETION_EVALUATION.md",
+  "stage": "phase_t1_preregistered_truth_assembly",
+  "status": "completed_source_attested_not_locally_rebuilt",
+  "project_id": "59e68bc8-66c1-41ec-b7fe-b940f781cefd",
+  "task_id": "75effe0d-c892-4b78-9a68-1525572d2547",
+  "task_status": "COMPLETE",
+  "terminal_classification": "OPEN_TRUTH_BOUNDARY",
+  "frozen_inputs": {
+    "phase_b2_result_tar_sha256": "c3c05eae85fa0357501f177cbbcebbe103a9f29c90926d9ee9b5e08ac4dd5da8",
+    "phase_c1_result_tar_sha256": "0cd2d7b56e38d99f3aa9b20af0c87b752e4985dabec22bed9d85d2e98670f56e",
+    "phase_c2_result_hash": "ce81979d4ea258bfd255ea354e262b61fd3a4fc612dfe034fd4af1271ed49a61",
+    "t1_prompt_sha256": "9601e39a5813f5ad4c4958012a7cbeffca7a07f5ea59adcbbecd44419ba750b1"
+  },
+  "result": {
+    "result_hash": "bd1dbb5fb220d7d317d326678e334ad64060c78d52aee9d1fb382e8e6a280326",
+    "source_snapshot_tar_sha256": "c0d366da1a2392c7515d91bd7260521e2be9aa1b7c26b806467e20247a1256a9",
+    "artifact_hashes": {
+      "TruthAssemblyCompletion.md": "03b0c86516ad705e7fd4a4c82257081097163a10e62d676e70e8468ee8d5d32c",
+      "TruthAssembly/TruthAssembly.lean": "f39ab91e4cebfbc6787abea3c66ad68305291574922f70b444a16aae12754552",
+      "TruthAssembly/t1-manifest.json": "a3baec9d77e7456403caddc08bd1dfeed58b410fb9d73299ab494d0e03aa2fd1"
+    },
+    "registered_questions": 13,
+    "answer_relations": {"truthAgreement": 0, "truthContradiction": 0, "notComparable": 13},
+    "alignment": {"T_roles": 34, "rho_returnDetermined": 20, "rho_returnUnique": 5, "rho_returnRoundTrip": 1, "rho_returnIdentity": 8},
+    "missing_data": [
+      "an answer-level cross-frame comparison/correspondence",
+      "an independent non-local return",
+      "determined values at node-type, edge-type, label-type, and obs-type carrier slots"
+    ]
+  },
+  "source_attestation": {
+    "selected_source_text_scan": "no sorry or admit markers found in the selected TruthAssembly Lean source; textual 'admit' occurrences in documentation comments are not proof placeholders",
+    "reported_build": "lake build TruthAssembly.TruthAssembly plus from-source B2/C1/C2 modules, 8041 jobs",
+    "reported_axioms": ["propext"],
+    "local_lake_build": "NOT_RUN",
+    "local_axiom_audit": "NOT_RUN"
+  },
+  "claim_boundary": "T1 did not establish truth completion or truth obstruction. It establishes only that the frozen B2/C1/C2 packet warrants neither an answer-level agreement nor contradiction without a shared cross-frame answer relation and an independent non-local return. It does not authorize whole-frame equality, GeomEquiv, CrossFrameIVI, topology naturality, receipts, question transport, held-out transfer, or successor frame/verifier work."
+}

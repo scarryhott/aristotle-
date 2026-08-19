@@ -1,0 +1,51 @@
+{
+  "protocol": "docs/TRANSLATIONAL_COMPLETION_EVALUATION.md",
+  "stage": "phase_t1_preregistered_truth_assembly",
+  "status": "submitted_isolated_project",
+  "project_id": "59e68bc8-66c1-41ec-b7fe-b940f781cefd",
+  "task_id": "75effe0d-c892-4b78-9a68-1525572d2547",
+  "task_status_at_submission": "QUEUED",
+  "request": {
+    "prompt_path": "benchmarks/aristotle_native_translation/PHASE_T1_TRUTH_ASSEMBLY_PROMPT.md",
+    "prompt_sha256": "9601e39a5813f5ad4c4958012a7cbeffca7a07f5ea59adcbbecd44419ba750b1"
+  },
+  "frozen_inputs": {
+    "phase_b2_result_tar_sha256": "c3c05eae85fa0357501f177cbbcebbe103a9f29c90926d9ee9b5e08ac4dd5da8",
+    "phase_c1_result_tar_sha256": "0cd2d7b56e38d99f3aa9b20af0c87b752e4985dabec22bed9d85d2e98670f56e",
+    "phase_c2_result_hash": "ce81979d4ea258bfd255ea354e262b61fd3a4fc612dfe034fd4af1271ed49a61"
+  },
+  "isolation": {
+    "packet_boundary": "benchmarks/aristotle_native_translation/T1_ISOLATED_INPUT_BOUNDARY.md",
+    "packet_contents": [
+      "b2.tar",
+      "c1.tar",
+      "AssemblyCompletion.md",
+      "AssemblyCompletion/",
+      "PHASE_T1_TRUTH_ASSEMBLY_PROMPT.md",
+      "submission_manifest.json"
+    ],
+    "separate_from_user_main_project": true
+  },
+  "input_exclusions": [
+    "phase_b3_candidate_equality_artifact_or_outcome",
+    "whole_frame_equality_or_geom_equiv_target",
+    "cross_frame_ivi_target",
+    "topology_naturality_receipts_question_transport_heldout_transfer",
+    "successor_frame_or_successor_verifier_target",
+    "unlisted_project_context_or_later_desired_outcome"
+  ],
+  "closure_forms_preregistered": [
+    "validated_primitive_operation_transport",
+    "independent_return_lineage",
+    "contact_answer_alignment",
+    "retained_residue",
+    "independent_confirmation"
+  ],
+  "required_terminal_classifications": [
+    "TRUTH_COMPLETION",
+    "TRUTH_OBSTRUCTION",
+    "OPEN_TRUTH_BOUNDARY",
+    "INVALID_LEAKAGE_OR_SELF_CERTIFICATION"
+  ],
+  "claim_boundary": "T1 evaluates only registered relational-answer translation over the frozen B2/C1/C2 evidence. It may not repair frozen artifacts, infer a whole-frame equivalence, or execute downstream IVI, topology, receipt, transport, transfer, or succession work."
+}

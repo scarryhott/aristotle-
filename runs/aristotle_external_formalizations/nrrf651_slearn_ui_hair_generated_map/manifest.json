@@ -1,0 +1,23 @@
+{
+  "stage": "external_formalization_intake",
+  "status": "source_attested_external_not_built",
+  "sdk": {"package": "aristotlelib", "version": "2.1.0"},
+  "project_id": "068068ee-b720-4df1-a203-571e0928ec3d",
+  "task_id": "245566d4-abfb-4a65-8010-5344ddd4f0cd",
+  "task_status": "COMPLETE",
+  "artifact": {
+    "result_tar_sha256": "762fb24b823623ccc99e20b6b089880673064213d6d589ff2d7ce2b0fe11cc24",
+    "lean_source": "NRRF651SlearnUIHairOfClosureGeneratedMap.lean",
+    "lean_source_sha256": "5122ef6a40d8fa4741552fd7b2bbfff6a2d5018eb90990d40445d973e25bccce",
+    "notes": "SLEARN_UI_HAIR_OF_CLOSURE_NRRF651_NOTES.md",
+    "notes_sha256": "a7a5bdfc7dc20b3cd61cdff973b3ce76786ba4ae119266ddf5a40e33f03892ad"
+  },
+  "reported_scope": [
+    "interface map generated from witness/attempt/return kernel",
+    "receipt-gated experience reading",
+    "zoom adjunction over a maintained translation",
+    "hair obstruction for globally coherent interface direction",
+    "return-triangle holonomy"
+  ],
+  "claim_boundary": "The reported module is neither a frontend conformance proof nor an empirical pedagogy result. It is external source-attested evidence only and is not a native Phase C2 input."
+}

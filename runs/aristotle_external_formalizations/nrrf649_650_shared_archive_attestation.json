@@ -1,0 +1,32 @@
+{
+  "stage": "external_source_environment_attestation",
+  "status": "source_bytes_verified_not_built",
+  "artifact_checks": {
+    "result_tar_sha256": "4083e862ce710a885738315be8894a44cecf8fcf689bdab193ea6c46bc8b0d1a",
+    "regular_file_count": 3056,
+    "inventory_sha256": "b10f1fb5907338a8b32cf908336fc2d04116e3b73dd12daf9ee05fea05fa6d2c",
+    "selected_hashes_match": true,
+    "external_lakefile_sha256": "86a4f6a6f001fbc5933a71717ed1064722f8eb0abac54be801bf0cf4839a9e0d"
+  },
+  "artifact_custody": {
+    "retrieval_kind": "authenticated_aristotle_download",
+    "archive_committed": false,
+    "redistribution_status": "not_assumed"
+  },
+  "proof_environment": {
+    "external_mathlib_revision": "v4.28.0",
+    "complete_import_closure": "OPEN"
+  },
+  "local_formal_checks": {
+    "lake_build": "NOT_RUN",
+    "sorry_audit": "NOT_RUN",
+    "axiom_audit": "NOT_RUN"
+  },
+  "non_implications": [
+    "not_a_main_lake_build_root",
+    "not_a_local_machine_checked_result",
+    "not_a_phase_c2_input",
+    "not_a_whole_frame_geom_equiv",
+    "not_an_identification_of_topological_closure_with_translational_completion"
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "M0": {
+    "digest": "8eb15a7185493ba69513aae6fb55c13a6e68d59162d73c01dc89c424d82c5d4a",
+    "method_id": "M0",
+    "obligations": [
+      "independent_return",
+      "external_consequence",
+      "no_self_certification"
+    ],
+    "preauthored": false,
+    "status": "ROOT_VERIFICATION_METHOD"
+  },
+  "M1": {
+    "derived_from_completion": "d272a0c815f45fcbfaddedd4d80d579caa96e4ee1d3bf7ecce13c3b070842a95",
+    "derived_from_method": "8eb15a7185493ba69513aae6fb55c13a6e68d59162d73c01dc89c424d82c5d4a",
+    "digest": "3bdac37715b7f63ceed01f4a7ebc1f4eb12aa5701a8fa12e597a196841cffeeb",
+    "method_id": "M1",
+    "obligations": [
+      "independent_return",
+      "external_consequence",
+      "no_self_certification",
+      "retain_residue_from_seed_relation"
+    ],
+    "preauthored": false,
+    "status": "DERIVED_VERIFICATION_METHOD"
+  },
+  "M2": {
+    "derived_from_completion": "45dade73f375864234b5c77fc6e9f5b928d350a79537a44493434380d52c3ccf",
+    "derived_from_method": "3bdac37715b7f63ceed01f4a7ebc1f4eb12aa5701a8fa12e597a196841cffeeb",
+    "digest": "9b3ea63d004ac24c89410ce65a074c9d692f6563b59d23082aad585d98265f0d",
+    "method_id": "M2",
+    "obligations": [
+      "independent_return",
+      "external_consequence",
+      "no_self_certification",
+      "retain_residue_from_seed_relation",
+      "holdout_validated_heldout_relation"
+    ],
+    "preauthored": false,
+    "status": "DERIVED_VERIFICATION_METHOD"
+  },
+  "claim_boundary": "the cycle verifies a finite method lineage and independent fixture outcomes; it does not establish an autonomous ASI, universal verification closure, or external truth grounding",
+  "closure": {
+    "M1_derived_from_seed_completion": true,
+    "M1_tested_on_distinct_heldout_relation": true,
+    "M2_derived_from_heldout_completion": true,
+    "independent_external_consequences": true,
+    "method_closure_status": "DERIVED_METHOD_CYCLE_COMPLETE"
+  },
+  "completion0": {
+    "digest": "d272a0c815f45fcbfaddedd4d80d579caa96e4ee1d3bf7ecce13c3b070842a95",
+    "external_provenance": "independent_seed_observer",
+    "independent_outcome_matches": true,
+    "method_digest": "8eb15a7185493ba69513aae6fb55c13a6e68d59162d73c01dc89c424d82c5d4a",
+    "relation": "seed_relation",
+    "relation_continues": true,
+    "required_obligations": [
+      "independent_return",
+      "external_consequence",
+      "no_self_certification"
+    ],
+    "residue": 6,
+    "status": "METHOD_COMPLETION"
+  },
+  "completion1": {
+    "digest": "45dade73f375864234b5c77fc6e9f5b928d350a79537a44493434380d52c3ccf",
+    "external_provenance": "independent_heldout_observer",
+    "independent_outcome_matches": true,
+    "method_digest": "3bdac37715b7f63ceed01f4a7ebc1f4eb12aa5701a8fa12e597a196841cffeeb",
+    "relation": "heldout_relation",
+    "relation_continues": true,
+    "required_obligations": [
+      "independent_return",
+      "external_consequence",
+      "no_self_certification",
+      "retain_residue_from_seed_relation"
+    ],
+    "residue": 10,
+    "status": "METHOD_COMPLETION"
+  },
+  "controls": {
+    "counterexample_heldout": {
+      "digest": "0c70e97fe7d93c8e0d1bf14705d732d7c694998450516d400e2d92ef47f97893",
+      "external_provenance": "independent_heldout_observer",
+      "independent_outcome_matches": false,
+      "method_digest": "3bdac37715b7f63ceed01f4a7ebc1f4eb12aa5701a8fa12e597a196841cffeeb",
+      "relation": "heldout_relation",
+      "relation_continues": true,
+      "required_obligations": [
+        "independent_return",
+        "external_consequence",
+        "no_self_certification",
+        "retain_residue_from_seed_relation"
+      ],
+      "residue": 10,
+      "status": "METHOD_OBSTRUCTION"
+    },
+    "missing_heldout": {
+      "status": "OPEN_NO_EXTERNAL_CONSEQUENCE"
+    },
+    "preauthored_successor": "INVALID_PREAUTHORED_METHOD",
+    "self_certified_heldout": {
+      "status": "INVALID_SELF_CERTIFICATION"
+    }
+  },
+  "heldout_relation": {
+    "name": "heldout_relation",
+    "returned": [
+      0,
+      7
+    ],
+    "routes": [
+      5,
+      2
+    ],
+    "whole": 7
+  },
+  "protocol": "closure_native_derived_verifier_asi_v1",
+  "scope": "bounded deterministic derived-verifier proxy; not autonomous ASI evidence",
+  "seed_relation": {
+    "name": "seed_relation",
+    "returned": [
+      0,
+      7
+    ],
+    "routes": [
+      3,
+      4
+    ],
+    "whole": 7
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "claim_boundary": "bounded registered-question control; no physical, QG, Chaitin/Kakeya, Kolmogorov, or frontier-contact claim",
+  "invariant_equality": {
+    "classification": "EQUAL_THROUGH_REGISTERED_DEPTH",
+    "records": [
+      {
+        "depth": 0,
+        "equal": true,
+        "left_answer": 0,
+        "question": "aggregate",
+        "right_answer": 0
+      },
+      {
+        "depth": 1,
+        "equal": true,
+        "left_answer": 2,
+        "question": "magnitude",
+        "right_answer": 2
+      }
+    ],
+    "residue_retained": true,
+    "schema_digest": "82326fc2290ed65f0537bdaca4058ca8e9e923cd715a6ed5ff6a8be8762cb142"
+  },
+  "missing_contact_bridge_control": {
+    "classification": "OPEN_BRIDGE_BOUNDARY",
+    "missing_datum": "shared answer correspondence and independent non-local return",
+    "schema_digest": "59034dc9b301f841990ac49ff776d854183499935fb7d140a1751023466e1790"
+  },
+  "perspectival_separation": {
+    "classification": "SEPARATED_AT_REGISTERED_DEPTH",
+    "first_separation_depth": 2,
+    "records": [
+      {
+        "depth": 0,
+        "equal": true,
+        "left_answer": 0,
+        "question": "aggregate",
+        "right_answer": 0
+      },
+      {
+        "depth": 1,
+        "equal": true,
+        "left_answer": 2,
+        "question": "magnitude",
+        "right_answer": 2
+      },
+      {
+        "depth": 2,
+        "equal": false,
+        "left_answer": 0,
+        "question": "phase",
+        "right_answer": 1
+      }
+    ],
+    "residue_retained": true,
+    "schema_digest": "59034dc9b301f841990ac49ff776d854183499935fb7d140a1751023466e1790"
+  },
+  "posthoc_question_control": {
+    "classification": "INVALID_POSTHOC_QUESTION_STREAM",
+    "expected_schema_digest": "59034dc9b301f841990ac49ff776d854183499935fb7d140a1751023466e1790",
+    "observed_schema_digest": "c125f2c170ca0b2daea7e73e8363523d6d68bf1a05d384417622e9812ace6ecf"
+  },
+  "protocol": "closure_native_depth_reclosure_v1",
+  "translation_invariant_control": {
+    "classification": "EQUAL_THROUGH_REGISTERED_DEPTH",
+    "records": [
+      {
+        "depth": 0,
+        "equal": true,
+        "left_answer": 0,
+        "question": "aggregate",
+        "right_answer": 0
+      },
+      {
+        "depth": 1,
+        "equal": true,
+        "left_answer": 2,
+        "question": "magnitude",
+        "right_answer": 2
+      }
+    ],
+    "residue_retained": true,
+    "schema_digest": "82326fc2290ed65f0537bdaca4058ca8e9e923cd715a6ed5ff6a8be8762cb142"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "protocol": "docs/TRANSLATIONAL_COMPLETION_EVALUATION.md",
+  "stage": "phase_t2a_blind_contact_bridge_generation",
+  "status": "submitted_isolated_project",
+  "project_id": "4383b4e5-8c53-4fa6-a555-1e7974d974f0",
+  "task_id": "3c507219-a373-439f-aef9-0eeec64ba8cd",
+  "task_status_at_submission": "QUEUED",
+  "request": {"prompt_path": "benchmarks/aristotle_native_translation/PHASE_T2A_CONTACT_BRIDGE_GENERATION_PROMPT.md", "prompt_sha256": "4f556aa919a98c4eaad037139fc7d2375707e4aeb6dd71b7c136cb176a3e4a6e"},
+  "frozen_inputs": {"phase_b2_result_tar_sha256": "c3c05eae85fa0357501f177cbbcebbe103a9f29c90926d9ee9b5e08ac4dd5da8", "phase_c1_result_tar_sha256": "0cd2d7b56e38d99f3aa9b20af0c87b752e4985dabec22bed9d85d2e98670f56e"},
+  "input_exclusions": ["phase_b3_candidate_equality_artifact_or_outcome", "phase_c2_assembly_artifact_or_outcome", "phase_t1_truth_assembly_artifact_or_outcome", "nrrf661_to_nrrf668_or_later_formalizations", "whole_frame_equality_or_geom_equiv_target", "cross_frame_ivi_topology_receipt_transport_transfer_successor_or_score", "unlisted_project_context_or_desired_truth_verdict"],
+  "required_terminal_classifications": ["BRIDGE_GENERATED", "BRIDGE_OBSTRUCTION", "OPEN_BRIDGE_BOUNDARY", "INVALID_LEAKAGE_OR_SELF_CERTIFICATION"],
+  "claim_boundary": "T2A generates only a B2/C1 bridge candidate. It may not evaluate truth completion, use T1's result, repair frozen artifacts, or promote a partial interface to whole-frame equality."
+}

@@ -87,6 +87,88 @@ AUDITED**. “Pre-Turing” is recorded as the reported extensional equality of
 mathematical constructions; it is not used here as evidence of historical
 priority, causal priority, or an autonomous machine run.
 
+## NRRF658/659: derived verifier and axiom–geometry completion bridge
+
+The external task reports two linked Lean modules:
+
+- `NRRF658DerivedVerifierClosureCycleHeldOutSuccession.lean` models a bounded
+  `M0 -> C0 -> M1 -> C1 -> M2` verifier cycle, its independently confirmed
+  relation requirement, successor lineage, relabelling invariance, and
+  counterfactual invalid/OPEN/obstruction cases.
+- `NRRF659AxiomGeometryCompletionBridge.lean` represents a completion by an
+  axiom presentation, geometry presentation, translation, independent return,
+  residue, truth-level equality, and external confirmation. It bridges that
+  completion to NRRF658's method step and records that truth-equal
+  presentations need not be literally equal.
+
+The source text itself limits its origin-independence theorem to injective
+relabellings and proves that truth equality is strictly coarser than that
+class. It therefore does not establish invariance across arbitrary distinct
+axiom-geometries, empirical held-out mathematical transfer, or autonomous
+method discovery.
+
+Repository status: **SOURCE-ATTESTED EXTERNAL; NOT LOCALLY BUILT OR
+BRIDGED**. The archive and selected source hashes are recorded in
+[`../runs/aristotle_external_formalizations/nrrf658_659_derived_verifier_axiom_geometry/manifest.json`](../runs/aristotle_external_formalizations/nrrf658_659_derived_verifier_axiom_geometry/manifest.json).
+The native two-episode run is a separate executable proxy; it is not promoted
+to an import or instance of these external modules.
+
+## NRRF660: auditable truth under changed frame and verifier
+
+The external task reports `NRRF660AuditableTruthUnderChangedAxiomGeometryAndVerifier.lean`.
+It defines a published succession record, replay of the successor frame, and
+a Boolean audit. Reported theorems characterize audit success exactly as a
+lawful axiom–geometry succession, reject self-authored/withheld/contradicted
+or forged successions, and preserve audit under the module's relabelling class.
+The report explicitly distinguishes truth-level agreement from a valid
+published succession and leaves withheld further relations OPEN.
+
+Repository status: **SOURCE-ATTESTED EXTERNAL; NOT LOCALLY BUILT OR
+BRIDGED**. Exact task/archive/source/note hashes are in
+[`../runs/aristotle_external_formalizations/nrrf660_auditable_truth_changed_frame_verifier/manifest.json`](../runs/aristotle_external_formalizations/nrrf660_auditable_truth_changed_frame_verifier/manifest.json).
+It does not establish empirical held-out transfer or supply an input to the
+pending C2 experiment.
+
+## NRRF661: 0/∞ closure as ultimate contact translation
+
+The external task reports
+`NRRF661ZeroInfClosureUltimateTranslationUnifiedTopologyNaturalChoice.lean`.
+Given a reflexive, symmetric, and transitive contact relation, it constructs
+the corresponding contact closure and quotient resolution.  The reported
+results show that contact-respecting maps factor uniquely through that
+resolution, and that surjective separating translations are uniquely
+isomorphic to it.  The associated topology is a partition topology: its open
+and closed sets coincide.
+
+This is a conditional universal property *after a contact relation is given*.
+It does not identify `0` and `∞` as literal points, choose a warranted contact
+relation for an independently generated axiom–geometry pair, or decide the
+truth-level completion left open by the frozen C2 assembly interface.
+
+Repository status: **SOURCE-ATTESTED EXTERNAL; NOT LOCALLY BUILT OR
+BRIDGED**. Exact task/archive/source/note hashes are in
+[`../runs/aristotle_external_formalizations/nrrf661_zero_inf_ultimate_translation/manifest.json`](../runs/aristotle_external_formalizations/nrrf661_zero_inf_ultimate_translation/manifest.json).
+
+## NRRF662: completion in translational truth equality
+
+The external task reports `NRRF662CompletionInTranslationalTruthEquality.lean`.
+It models presentations as truth-answer content plus separate basis,
+trajectory, and endpoint markers.  Reportedly, completability is exactly the
+existence of a translation carrying the answer language; it is marker-blind,
+strictly coarser than presentation identity, and supports translation of every
+formula over the registered questions.  The module includes a model in which
+local/negative/`0` and global/positive/`∞` markers remain distinct while the
+presentations are completable.
+
+This is a theorem about its supplied answer language.  It does not establish
+that an arbitrary frontier frame pair has a warranted shared question language
+or alignment, nor does it convert the C2 slot-assembly result into a
+truth-level conclusion.
+
+Repository status: **SOURCE-ATTESTED EXTERNAL; NOT LOCALLY BUILT OR
+BRIDGED**. Exact task/archive/source/note hashes are in
+[`../runs/aristotle_external_formalizations/nrrf662_completion_translational_truth_equality/manifest.json`](../runs/aristotle_external_formalizations/nrrf662_completion_translational_truth_equality/manifest.json).
+
 ## Required runtime bridge
 
 Before the external results become local formal evidence, this repository

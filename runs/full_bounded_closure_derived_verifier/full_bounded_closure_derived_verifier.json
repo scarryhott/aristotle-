@@ -1,0 +1,404 @@
+{
+  "F1": {
+    "axiom_geometry_basis": "[A0: returned relation is admitted]_C = [G0: many-to-one reopening field]_C",
+    "axioms": [
+      "truth_relation_72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
+      "residue_2"
+    ],
+    "derived_from": "fca66ae5171f27276f02c0b2bee78ad96313b1b1f9aa0475886260bfb1e1b329",
+    "digest": "67c64cc1645237f7bc0ddd2a65f6bc12cea86819e4b2d6a6ddf3820f14940a40",
+    "frame_id": "F1",
+    "geometry": "geometry_disclosed_by_72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
+    "preauthored": false,
+    "status": "DERIVED_FRAME"
+  },
+  "F2": {
+    "axiom_geometry_basis": "[A1: truth relation from R0 is required]_C = [G1: reopened held-out route field]_C",
+    "axioms": [
+      "truth_relation_90da89addcb049f9ddccfc11fadfe4c3f67c584f7d48ad1912acf9f6328bfef3",
+      "residue_3"
+    ],
+    "derived_from": "c484aab211be4ac0550342f5e7d8a046f1232c639bff21ae7d3dc917499e2949",
+    "digest": "ea7b6fdf456c4568c380b270ce79e7c148d0cc29640742dfe5e8c0fffb174ff0",
+    "frame_id": "F2",
+    "geometry": "geometry_disclosed_by_90da89addcb049f9ddccfc11fadfe4c3f67c584f7d48ad1912acf9f6328bfef3",
+    "preauthored": false,
+    "status": "DERIVED_FRAME"
+  },
+  "M1": {
+    "basis": "[A0: returned relation is admitted]_C = [G0: many-to-one reopening field]_C",
+    "derived_from": "fca66ae5171f27276f02c0b2bee78ad96313b1b1f9aa0475886260bfb1e1b329",
+    "digest": "ae815cae3f601d053f419b49de28b7ca84f6073f6979e427d5a12a795698a9ab",
+    "method_id": "M1",
+    "obligations": [
+      "independent_review",
+      "independent_return",
+      "external_consequence",
+      "nonzero_residue",
+      "truth_relation_72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
+      "residue_2"
+    ],
+    "preauthored": false,
+    "status": "DERIVED_VERIFIER"
+  },
+  "M2": {
+    "basis": "[A1: truth relation from R0 is required]_C = [G1: reopened held-out route field]_C",
+    "derived_from": "c484aab211be4ac0550342f5e7d8a046f1232c639bff21ae7d3dc917499e2949",
+    "digest": "19e1ed97c0a29b0040aef0f13801fd6e7d2365c0800965802e28325269e86981",
+    "method_id": "M2",
+    "obligations": [
+      "independent_review",
+      "independent_return",
+      "external_consequence",
+      "nonzero_residue",
+      "truth_relation_72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
+      "residue_2",
+      "truth_relation_90da89addcb049f9ddccfc11fadfe4c3f67c584f7d48ad1912acf9f6328bfef3",
+      "residue_3"
+    ],
+    "preauthored": false,
+    "status": "DERIVED_VERIFIER"
+  },
+  "basis_change_control": {
+    "burden_a": {
+      "abstentions": [],
+      "counterexamples": [],
+      "external_audit_burden": [
+        "heldout_consequence_0"
+      ],
+      "interface_exclusions": [],
+      "obligations_checked": [
+        "independent_review",
+        "independent_return",
+        "external_consequence",
+        "nonzero_residue",
+        "truth_relation_72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
+        "residue_2"
+      ],
+      "obligations_failed": [],
+      "residues_retained": [
+        2
+      ],
+      "return_review_requirements": [
+        "independent_material_counterreading"
+      ]
+    },
+    "burden_b": {
+      "abstentions": [],
+      "counterexamples": [],
+      "external_audit_burden": [
+        "heldout_consequence_0"
+      ],
+      "interface_exclusions": [],
+      "obligations_checked": [
+        "independent_review",
+        "independent_return",
+        "external_consequence",
+        "nonzero_residue",
+        "truth_relation_72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
+        "residue_2"
+      ],
+      "obligations_failed": [],
+      "residues_retained": [
+        2
+      ],
+      "return_review_requirements": [
+        "independent_material_counterreading"
+      ]
+    },
+    "burdens_agree": true,
+    "presentation_only_details_quotiented": true
+  },
+  "claim_boundary": "bounded deterministic integration using an external Slearn source attestation and supplied episode evidence; not a locally rebuilt Slearn theorem, autonomous ASI, universal truth, universal cost, or Aristotle C2 result",
+  "closure": {
+    "F1_derived_from_truth_relation_and_residue": true,
+    "F2_M2_derived": true,
+    "M0_cannot_evaluate_R1": true,
+    "M1_derived": true,
+    "M1_evaluates_R1": true,
+    "c0_admits_axiom_geometry_truth_relation": true,
+    "c0_completed": true,
+    "c1_completed": true,
+    "source_path_preserved": true,
+    "status": "FULL_BOUNDED_CLOSURE_DERIVED_VERIFIER"
+  },
+  "controls": {
+    "ASSERTED_AXIOM_NOT_TRANSLATION": "ASSERTED_AXIOM_NOT_TRANSLATION",
+    "EXTERNAL_COUNTEREXAMPLE": "EXTERNAL_COUNTEREXAMPLE",
+    "FROZEN_RECOVERY": "FROZEN_RECOVERY",
+    "INVALID_OUTCOME_LEAKAGE": "INVALID_OUTCOME_LEAKAGE",
+    "INVALID_PREAUTHORED_SUCCESSOR": "INVALID_PREAUTHORED_SUCCESSOR",
+    "INVALID_SELF_CERTIFICATION": "INVALID_SELF_CERTIFICATION",
+    "OPEN_NO_EXTERNAL_CONSEQUENCE": "OPEN_NO_EXTERNAL_CONSEQUENCE",
+    "OPEN_NO_INTERACTION": "OPEN_NO_INTERACTION",
+    "OPEN_NO_RETURN": "OPEN_NO_RETURN",
+    "OPEN_NO_REVIEW": "OPEN_NO_REVIEW"
+  },
+  "episode0": {
+    "completion": {
+      "Delta": 2,
+      "TransformationBurden": {
+        "abstentions": [],
+        "counterexamples": [],
+        "external_audit_burden": [
+          "heldout_consequence_0"
+        ],
+        "interface_exclusions": [
+          "numeric_identity",
+          "syntactic_identity"
+        ],
+        "obligations_checked": [
+          "independent_review",
+          "independent_return",
+          "external_consequence",
+          "nonzero_residue"
+        ],
+        "obligations_failed": [],
+        "residues_retained": [
+          2
+        ],
+        "return_review_requirements": [
+          "independent_material_counterreading"
+        ]
+      },
+      "W": {
+        "whole": "contextual_relation"
+      },
+      "axiom_geometry_truth_relation": {
+        "axiom_presentation": "A0: returned relation is admitted",
+        "geometry_presentation": "G0: many-to-one reopening field",
+        "literal_identity_claimed": false,
+        "notation": "[A0: returned relation is admitted]_C = [G0: many-to-one reopening field]_C",
+        "numeric_identity_claimed": false,
+        "status": "ADMITTED_TRUTH_LEVEL_RELATIONAL_EQUALITY"
+      },
+      "choice": "A0_declared_before_audit",
+      "digest": "fca66ae5171f27276f02c0b2bee78ad96313b1b1f9aa0475886260bfb1e1b329",
+      "external": "heldout_consequence_0",
+      "method": "df9b86913882ef32a5a234d0057c068cb879dbad946702e11351ce3240d08b5e",
+      "relation": "72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
+      "review": "independent_material_counterreading",
+      "rho": {
+        "whole": [
+          "zero",
+          "infinity"
+        ]
+      },
+      "status": "COMPLETION",
+      "translation": {
+        "infinity": "whole",
+        "zero": "whole"
+      },
+      "translation_audit": {
+        "bridge_status": "NOT_A_BRIDGE_QUOTIENT_LIKE_MAP",
+        "genuine_movement": true,
+        "many_to_one": true,
+        "recovery_complete": true,
+        "replacement_property": "reopening_recovers_registered_source_occurrences",
+        "translation_status": "TRANSLATING"
+      }
+    },
+    "evidence": {
+      "choice": "A0_declared_before_audit",
+      "contraction": {
+        "whole": "contextual_relation"
+      },
+      "external": "heldout_consequence_0",
+      "reopening": {
+        "whole": [
+          "zero",
+          "infinity"
+        ]
+      },
+      "residue": 2,
+      "return": "independent_returner_0",
+      "review": "independent_material_counterreading",
+      "translation": {
+        "infinity": "whole",
+        "zero": "whole"
+      }
+    },
+    "projection": {
+      "experience_requires_completion": true,
+      "next_perspective": "F1",
+      "persisted_state": "EXPERIENCE",
+      "screen_is_projection": true
+    },
+    "relation": {
+      "axiom_geometry": {
+        "axiom": "A0: returned relation is admitted",
+        "geometry": "G0: many-to-one reopening field"
+      },
+      "digest": "72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
+      "interface_exclusions": [
+        "numeric_identity",
+        "syntactic_identity"
+      ],
+      "local_presentation": [
+        "0",
+        "infinity"
+      ],
+      "relation_id": "R0",
+      "required_obligations": []
+    }
+  },
+  "episode1": {
+    "M0_evaluation": {
+      "missing_obligations": [
+        "truth_relation_72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2"
+      ],
+      "status": "OBSTRUCTION_MISSING_DERIVED_AXIOM"
+    },
+    "completion": {
+      "Delta": 3,
+      "TransformationBurden": {
+        "abstentions": [],
+        "counterexamples": [],
+        "external_audit_burden": [
+          "heldout_consequence_1"
+        ],
+        "interface_exclusions": [
+          "whole_frame_promotion"
+        ],
+        "obligations_checked": [
+          "independent_review",
+          "independent_return",
+          "external_consequence",
+          "nonzero_residue",
+          "truth_relation_72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
+          "residue_2"
+        ],
+        "obligations_failed": [],
+        "residues_retained": [
+          3
+        ],
+        "return_review_requirements": [
+          "independent_material_counterreading_1"
+        ]
+      },
+      "W": {
+        "whole": "next_contextual_relation"
+      },
+      "axiom_geometry_truth_relation": {
+        "axiom_presentation": "A1: truth relation from R0 is required",
+        "geometry_presentation": "G1: reopened held-out route field",
+        "literal_identity_claimed": false,
+        "notation": "[A1: truth relation from R0 is required]_C = [G1: reopened held-out route field]_C",
+        "numeric_identity_claimed": false,
+        "status": "ADMITTED_TRUTH_LEVEL_RELATIONAL_EQUALITY"
+      },
+      "choice": "A1_declared_after_R1_freeze",
+      "digest": "c484aab211be4ac0550342f5e7d8a046f1232c639bff21ae7d3dc917499e2949",
+      "external": "heldout_consequence_1",
+      "method": "ae815cae3f601d053f419b49de28b7ca84f6073f6979e427d5a12a795698a9ab",
+      "relation": "90da89addcb049f9ddccfc11fadfe4c3f67c584f7d48ad1912acf9f6328bfef3",
+      "review": "independent_material_counterreading_1",
+      "rho": {
+        "whole": [
+          "route_a",
+          "route_b",
+          "whole"
+        ]
+      },
+      "status": "COMPLETION",
+      "translation": {
+        "route_a": "whole",
+        "route_b": "whole",
+        "whole": "whole"
+      },
+      "translation_audit": {
+        "bridge_status": "NOT_A_BRIDGE_QUOTIENT_LIKE_MAP",
+        "genuine_movement": true,
+        "many_to_one": true,
+        "recovery_complete": true,
+        "replacement_property": "reopening_recovers_registered_source_occurrences",
+        "translation_status": "TRANSLATING"
+      }
+    },
+    "evidence": {
+      "choice": "A1_declared_after_R1_freeze",
+      "contraction": {
+        "whole": "next_contextual_relation"
+      },
+      "external": "heldout_consequence_1",
+      "reopening": {
+        "whole": [
+          "route_a",
+          "route_b",
+          "whole"
+        ]
+      },
+      "residue": 3,
+      "return": "independent_returner_1",
+      "review": "independent_material_counterreading_1",
+      "translation": {
+        "route_a": "whole",
+        "route_b": "whole",
+        "whole": "whole"
+      }
+    },
+    "projection": {
+      "experience_requires_completion": true,
+      "next_perspective": "F2",
+      "persisted_state": "EXPERIENCE",
+      "screen_is_projection": true
+    },
+    "relation": {
+      "axiom_geometry": {
+        "axiom": "A1: truth relation from R0 is required",
+        "geometry": "G1: reopened held-out route field"
+      },
+      "digest": "90da89addcb049f9ddccfc11fadfe4c3f67c584f7d48ad1912acf9f6328bfef3",
+      "interface_exclusions": [
+        "whole_frame_promotion"
+      ],
+      "local_presentation": [
+        "route_a",
+        "route_b",
+        "whole"
+      ],
+      "relation_id": "R1_heldout",
+      "required_obligations": [
+        "truth_relation_72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2"
+      ]
+    }
+  },
+  "frozen_inputs": {
+    "R0": "72a09dea808990751328d76a7ab26ddc66b5903759fc437d4d151338bd2b81e2",
+    "R1": "90da89addcb049f9ddccfc11fadfe4c3f67c584f7d48ad1912acf9f6328bfef3",
+    "R1_frozen_before_M1": true,
+    "source": "1d04e0f5c613f4951c338d0e39116cac323e2370cccdc189c969a5de82010218"
+  },
+  "protocol": "FULL_BOUNDED_CLOSURE_DERIVED_VERIFIER_v1",
+  "source_packet": {
+    "WHY": [
+      "why_relation",
+      "why_counterrelation"
+    ],
+    "admission": "NOT_ADMITTED",
+    "counter_path": [
+      "WHY",
+      "counter_line",
+      "PATH"
+    ],
+    "digest": "1d04e0f5c613f4951c338d0e39116cac323e2370cccdc189c969a5de82010218",
+    "external_lean_source": "NRRF651SlearnUIHairOfClosureGeneratedMap.lean",
+    "forward_path": [
+      "WHY",
+      "forward_line",
+      "PATH"
+    ],
+    "perspective": "P0",
+    "source_boundary": [
+      "not_a_main_lake_build_root",
+      "not_a_local_machine_checked_result",
+      "not_a_frontend_conformance_proof",
+      "not_an_empirical_pedagogy_result",
+      "not_a_phase_c2_input"
+    ],
+    "source_kind": "external_source_attestation_not_locally_built",
+    "source_path": "runs/aristotle_external_formalizations/nrrf651_slearn_ui_hair_generated_map/source_attestation.json",
+    "source_sha256": "8e1f95fafb60b89da22e1ac11e341ad72b856c0dfd8b8e83e3fbd74f566e2385",
+    "state": "PATH"
+  }
+}

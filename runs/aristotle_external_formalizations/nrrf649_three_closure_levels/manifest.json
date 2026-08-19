@@ -1,0 +1,16 @@
+{
+  "stage": "external_formalization_intake",
+  "status": "source_attested_external_not_built",
+  "sdk": {"package": "aristotlelib", "version": "2.1.0"},
+  "project_id": "068068ee-b720-4df1-a203-571e0928ec3d",
+  "task_id": "c9b622d6-f387-4f94-9f83-856106d0fc43",
+  "task_status": "COMPLETE",
+  "artifact": {
+    "result_tar_sha256": "4083e862ce710a885738315be8894a44cecf8fcf689bdab193ea6c46bc8b0d1a",
+    "lean_source": "NRRF649BallHairBigBangReanalysisThreeClosureLevels.lean",
+    "lean_source_sha256": "3f69fa24d68e594b482d247492a4a49522530a398100878eefe9f794318ba65b",
+    "notes": "BALL_HAIR_BIGBANG_REANALYSIS_NRRF649_NOTES.md",
+    "notes_sha256": "8fc349225a10d4f07836f68c08aff0102565fdb4464009775223724881a19228"
+  },
+  "claim_boundary": "The downloaded bytes are attested but are not imported into this checkout, registered as a lake build root, or admissible input to native Phase C2. Reported proof status is not local machine-checked evidence."
+}

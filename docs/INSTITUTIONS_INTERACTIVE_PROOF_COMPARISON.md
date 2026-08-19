@@ -5,7 +5,9 @@
 **Research comparison and integration plan — not a theorem of this checkout.**
 
 This note situates the translational framework beside institution theory and
-Hets. It does not claim that the current runtime implements Hets, that every
+Hets. Institutions are treated as downstream local representations of the
+foundational translational relation, not as the relation's metaphysical source.
+It does not claim that the current runtime implements Hets, that every
 translation is an institution morphism/comorphism, or that a Phase B/C outcome
 is already a sheaf-cohomology or model-amalgamation invariant.
 
@@ -13,11 +15,11 @@ is already a sheaf-cohomology or model-amalgamation invariant.
 
 | Translational framework | Institution-theoretic candidate | Required formal work |
 | --- | --- | --- |
-| local definitions, axioms, and language qualities | a local institution/theory | specify signatures, sentences, models, and satisfaction |
+| local definitions, axioms, and language qualities | a local institution/theory representation | derive/define the representation from the prior translation structure, then specify signatures, sentences, models, and satisfaction |
 | translation as globally available but frame-relative | institution morphism/comorphism in an indexed network | prove the satisfaction condition and composition law |
 | local/global closure | indexed institution and its Grothendieck globalization | define the index category and the precise global object |
 | interactive proof/review | heterogeneous proof management over a development graph | preserve proof obligations and provenance through translations |
-| choice/naturality constraint | a chosen section/return plus commuting naturality squares | register a choice before evaluation; treat naturality as a post-choice constraint, not a source of translation |
+| truth-conditioned admission / choice-naturality constraint | a chosen section/return plus commuting naturality squares | register a choice before evaluation; treat naturality as a post-choice constraint and test whether the relation continues |
 | relative topological closure | an additional topology/closure layer over the network | define it independently; it is not supplied by a colimit alone |
 
 Hets is directly relevant because it supports heterogeneous specifications,
@@ -71,10 +73,11 @@ The intended foundational claim can be made testable without treating a local
 language as globally privileged:
 
 ```text
-translation category: global language of comparison
+translation category: globally available relation of comparison, not a
+                      privileged language
 local frame: definitions, axioms, equality, and questions
 registered choice/return: a frame-relative section or witness
-admissibility: naturality/commutation against declared translations, with failures retained as choice costs/obstructions
+admissibility: naturality/commutation against declared translations, with failures retained as transformation burdens/obstructions
 closure: local-to-global completion only when those obligations hold
 ```
 
@@ -85,8 +88,9 @@ an unrestricted logical-completeness or metaphysical-completeness claim.
 
 The accompanying [open-foundation note](OPEN_TRANSLATIONAL_FOUNDATION.md)
 explains why this framework does not posit a single global topos: translation
-is global as a language of comparison, while definitions and geometries remain
-local. Any Turing/topos realization remains a separate bridge obligation.
+is globally available as a relation of comparison, while definitions and
+geometries remain local. Any Turing/topos realization remains a separate bridge
+obligation.
 
 ## Next implementation bridge
 
@@ -105,6 +109,11 @@ local. Any Turing/topos realization remains a separate bridge obligation.
 6. Build a Hets adapter only when the interface above is stable: its purpose is
    interactive heterogeneous proof management and provenance-preserving
    checking, not canonical normalization of local frames.
+
+The prior opening is documented in
+[Pre-institutional translation: formal openings](PREINSTITUTIONAL_TRANSLATION_OPENINGS.md):
+it asks for the relational translation structure from which these local
+institutional representations would be obtained.
 
 ## Sources for the comparison
 

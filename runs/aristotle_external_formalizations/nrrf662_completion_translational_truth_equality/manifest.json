@@ -1,0 +1,18 @@
+{
+  "stage": "external_formalization_intake",
+  "status": "source_attested_external_not_built",
+  "sdk": {"package": "aristotlelib", "version": "2.1.0"},
+  "project_id": "068068ee-b720-4df1-a203-571e0928ec3d",
+  "task_id": "298742b1-c005-4126-8dc4-871a11b42354",
+  "task_status": "COMPLETE",
+  "artifact": {
+    "archive_kind": "authenticated_current_project_snapshot_after_completed_task",
+    "result_tar_sha256": "5615a63414523f7cb34bbcccb481fc33419daf28e62c10ea568721648c8fb788",
+    "lean_source": "NRRF662CompletionInTranslationalTruthEquality.lean",
+    "lean_source_sha256": "fefa2ac398ff0fd6e62521910d9ed14e1ffeea3fea4e861543eb444bb8a5d3f0",
+    "notes": "COMPLETION_TRANSLATIONAL_TRUTH_EQUALITY_NRRF662_NOTES.md",
+    "notes_sha256": "8769d8ec75d4572cd2d66c0f8067a2100a18e8de718e0492d8cea6d4be0a895d",
+    "external_lakefile_sha256": "6947102aa6dd1d54b7a3e1db0243bb5b289bbf461fef8ea10a17c87867505ae7"
+  },
+  "claim_boundary": "NRRF662 is an external source-attested model of completion as translation of a supplied closure-question language. It does not identify local with global, negative with positive, or 0 with infinity; it does not locally rebuild the Lean environment; and it does not establish a warranted question alignment or truth-completion result for the frozen Aristotle frames."
+}
