@@ -119,6 +119,14 @@ single-valued reconstruction of local slots.
 The exact pre-registered T1 packet is
 [`../benchmarks/aristotle_native_translation/PHASE_T1_TRUTH_ASSEMBLY_PROMPT.md`](../benchmarks/aristotle_native_translation/PHASE_T1_TRUTH_ASSEMBLY_PROMPT.md).
 
+T1 completed as `OPEN_TRUTH_BOUNDARY`: all 13 preregistered questions were
+locally answerable but cross-frame `notComparable`.  The frozen packet contains
+neither a shared answer carrier/correspondence nor an independent non-local
+return.  This is a positive provenance result—agreement was not manufactured
+from matching local `YES` markers—but it does not permit downstream closure
+claims.  A later bridge protocol must be independently generated and may not
+repair the frozen packet.
+
 ## Formal status
 
 The local runtime implements bounded proxies of this discipline.  The external
