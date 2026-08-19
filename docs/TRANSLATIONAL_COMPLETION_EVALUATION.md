@@ -127,6 +127,12 @@ from matching local `YES` markers—but it does not permit downstream closure
 claims.  A later bridge protocol must be independently generated and may not
 repair the frozen packet.
 
+The next causal stage is blind T2A contact-bridge generation from B2/C1 alone.
+Its packet is
+[`../benchmarks/aristotle_native_translation/PHASE_T2A_CONTACT_BRIDGE_GENERATION_PROMPT.md`](../benchmarks/aristotle_native_translation/PHASE_T2A_CONTACT_BRIDGE_GENERATION_PROMPT.md).
+T2A is pre-truth-evaluation: a later independently registered evaluator may
+combine a generated bridge with T1 only after T2A is frozen.
+
 ## Formal status
 
 The local runtime implements bounded proxies of this discipline.  The external
