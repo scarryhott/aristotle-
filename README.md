@@ -36,6 +36,11 @@ The cross-repository boundary for the canonical Slearn manifesto is in
 classifies product design, phenomenology, metaphor, metaphysical hypothesis,
 mathematical definition, proved theorem, empirical/runtime result, and open
 question without promoting one level into another.
+The next-step design is collected in
+[`docs/VERIFIED_AXIOMETRIC_ASI_ARCHITECTURE.md`](docs/VERIFIED_AXIOMETRIC_ASI_ARCHITECTURE.md):
+truth completion is distinct from structural reconstruction; residue/form depth
+may nominate a candidate next question; and published lineage independently
+audits any changed frame or verifier.
 
 ## What is already complete
 
@@ -80,9 +85,12 @@ F_A, F_B, Q_A, Q_B
 
 The initial isolated-generation stage, frozen native translation, identity-independent validation, subinterface-only candidate equality, independent local-return stage, and its narrow structural C2 assembly evaluation have now been executed.  The current evidence supports a 34-role admitted subinterface only: it does **not** establish whole-frame equality, `GeomEquiv`, a single-valued assembled cross-frame return, IVI, or topology naturality.  A C2 structural obstruction is not by itself a truth-level obstruction: truth-level completion requires a separately registered relational-answer alignment, return, residue, and independent confirmation.  The frozen scientific protocol is in [`docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md`](docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md); the direct request links, manifests, hashes, and exact claim boundary are in [`docs/ARISTOTLE_NATIVE_TRANSLATION_EVIDENCE.md`](docs/ARISTOTLE_NATIVE_TRANSLATION_EVIDENCE.md).  The active evaluation contract is [`docs/TRANSLATIONAL_COMPLETION_EVALUATION.md`](docs/TRANSLATIONAL_COMPLETION_EVALUATION.md).
 
-The primary remaining objective is one integrated frontier chain in which the
-actual C2 completion or obstruction derives the next frame and verifier before
-they face a new held-out relation. The requirements are frozen in
+The primary remaining objective is one integrated frontier chain in which an
+independently warranted answer-level truth relation, rather than the C2
+structural outcome alone, can derive the next frame and verifier before they
+face a new held-out relation. Residue and form depth may nominate the next
+question, but only independently published warrant may admit it. The
+requirements are frozen in
 [`docs/FULL_BOUNDED_CLOSURE_ASI_FRONTIER_PLAN.md`](docs/FULL_BOUNDED_CLOSURE_ASI_FRONTIER_PLAN.md).
 
 A natural translation, explicit equality obstruction, downstream naturality obstruction, incomplete return, genuine frame-relative `OpenIn`, or registered interface boundary are all substantive outcomes. The experiment does not require every frame to translate to every other frame.
@@ -102,6 +110,18 @@ Lean translational theory_n
 ```
 
 Frontier mathematics supplies new structures and counterexamples for further formalization, while the formal theory supplies auditable relations for the next experimental round.
+
+For a valid evolving-verifier step, the project requires two independent
+conditions:
+
+```text
+valid succession = truth completion at the registered level
+                    AND independently replayable published lineage.
+```
+
+The successor verifier cannot be the evidence that certifies its own external
+succession. Transformation cost is likewise a separate audit/optimization
+quantity, not a truth criterion.
 
 See [`docs/GRANT.md`](docs/GRANT.md) and [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md).
 
@@ -229,6 +249,7 @@ The grant funds the frontier-agent regime needed to test the architecture, disco
 - `docs/PREINSTITUTIONAL_TRANSLATION_OPENINGS.md` — pre-institutional translation, relative gluing controls, inverse-limit-style closure, and Turing/topos realization openings.
 - `docs/RELATIVE_UNITARY_MAZE_METAPHYSICS.md` — external NRRF649 comparison: phase, fibre, and lifted maze/partition closure levels.
 - `docs/TRUTH_CONDITION_TRANSLATIONAL_CLOSURE.md` — closure as a truth condition for further relation, admission/natural-choice boundary, and the transformation-cost opening.
+- `docs/VERIFIED_AXIOMETRIC_ASI_ARCHITECTURE.md` — level-by-level question, truth, lineage, residue/form-depth, and anti-self-grounding architecture.
 - `docs/IVI.md` — IVI as naturally recoverable relational identity.
 - `docs/TRANSLATIONAL_COMPLETION_MAZE_TOPOLOGY_RUN.md` — executed pre-quotient maze completion/topology evidence and next-stage plan.
 

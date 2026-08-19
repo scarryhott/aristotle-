@@ -169,6 +169,25 @@ Repository status: **SOURCE-ATTESTED EXTERNAL; NOT LOCALLY BUILT OR
 BRIDGED**. Exact task/archive/source/note hashes are in
 [`../runs/aristotle_external_formalizations/nrrf662_completion_translational_truth_equality/manifest.json`](../runs/aristotle_external_formalizations/nrrf662_completion_translational_truth_equality/manifest.json).
 
+## NRRF668: form depth and generated questions
+
+The project reports that
+`NRRF668FormDepthQGChaitinKakeyaKolmogorov.lean` is a separately built Lean
+module with no `sorry`, using only the standard reported axioms. Its reported
+construction freezes a level and generated question stream, defines the first
+separating depth of two forms, proves upward stability and uniqueness of that
+depth, and gives bounded examples in which partition-level questions are
+strictly deeper than a unitary curvature reading. It also reports a finite
+four-phase Chaitin--Kakeya/Kolmogorov model and explicit non-universality.
+
+This repository does not contain that source, its registration, or an archive
+hash, so its status here is **REPORTED PROVED OUTSIDE CHECKOUT — NOT LOCALLY
+AUDITED**. It does not establish autonomous question discovery, universal
+Kolmogorov complexity, a physical interpretation, or a warranted
+answer-alignment for the Aristotle packet. It informs the candidate-question
+architecture only: independently audited residue and form depth may justify a
+proposal, while independent provenance must still admit the next question.
+
 ## Required runtime bridge
 
 Before the external results become local formal evidence, this repository

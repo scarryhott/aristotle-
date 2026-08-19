@@ -248,6 +248,14 @@ Aristotle B → F_B → audit → freeze
 
 A natural translation, explicit equality obstruction, downstream naturality obstruction, genuine frame-relative `OpenIn`, or registered interface boundary are all substantive outcomes.
 
+The next direct step is narrower than structural reconstruction: independently
+preregister an answer-level correspondence and non-local return for the frozen
+packet, then evaluate its registered relational answers. C2 remains a
+structural-interface result and T1 an open truth boundary; neither may be
+relabelled as a truth verdict. If an admitted truth relation retains residue,
+form depth may nominate a candidate next question, but independent warrant and
+provenance—not the current verifier or a desired answer—must admit it.
+
 ### 2. Closure-native axiometric evolution and Lean formalization
 
 Use completed frontier relations to test the stronger longitudinal claim:
@@ -261,6 +269,18 @@ F_t
   → changed-axiom next interaction.
 ```
 
+Every proposed succession must pass two separate checks:
+
+```text
+valid succession = truth completion for the frozen registered language
+                    AND independently replayable published lineage.
+```
+
+The successor verifier may verify at its new level but cannot serve as the
+evidence that validates its own external succession. Transformation cost is
+recorded separately from truth: a costly translation may still be truthful and
+an inexpensive one may still fail.
+
 Frontier-generated structures and obstructions feed back into the formal theory. The formal work will generalize interfaces exposed by frontier frames, characterize minimal conditions for valid translation and further relation, prove obstruction theorems when comparison fails, and develop the language/definition-invariant transformation-cost target only where the mathematics warrants it.
 
 ### 3. Verification evaluation against strong classical controls
@@ -271,7 +291,7 @@ Every frontier experiment retains the ordinary proof/isomorphism baseline on the
 
 1. **Qualifying Aristotle-generated frames and frozen provenance.** Independently generated and internally audited axiom-geometries frozen before cross-frame disclosure.
 2. **Natural translational comparisons or precise obstructions.** Native translations, equality/subinterface certificates, return evidence, and explicit failure boundaries without canonical normalization.
-3. **Completion and truth-level continuation evidence.** Assembled independent returns, completion/recoverability, local/cross-frame IVI, topology/receipts, and held-out mathematical transfer where the data support them.
+3. **Completion, question succession, and truth-level continuation evidence.** Assembled independent returns, answer-level truth evaluation, independently warranted residue/form-depth question admission, local/cross-frame IVI, topology/receipts, and held-out mathematical transfer where the data support them.
 4. **Frontier-driven Lean extensions.** Machine-checked generalizations or obstruction theorems motivated by actual Aristotle-generated frames, including closure-native evolution rather than only supplied-frame covariance.
 5. **Strong comparative evaluation.** Ordinary proof/isomorphism baselines, adversarial transformations, evidence size/runtime accounting, anti-leakage controls, and tests for hidden canonical normalization.
 
