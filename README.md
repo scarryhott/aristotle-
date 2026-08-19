@@ -182,6 +182,12 @@ This runtime proxy is not identified by definition with the separately reported 
 
 For current project work, the full closure-translational runtime is the operative executable specification. Separately reported NRRF599/639/640 results are external formal references and comparison targets; they do not redefine the runtime or count as locally audited evidence until their exact sources/dependencies are imported and rebuilt here.
 
+Progressive closure is implemented here as a **verification contract**: a
+completed relation may carry residue and inherited obligations into a possible
+successor frame/verifier, but an `OPEN`, obstructed, or self-certified result
+may not be promoted. It is not yet the runtime of an autonomous ASI. See
+[`docs/PROGRESSIVE_CLOSURE_ASI_STATUS.md`](docs/PROGRESSIVE_CLOSURE_ASI_STATUS.md).
+
 ## Executed evidence
 
 The executed suite contains five complementary bounded layers:
@@ -226,6 +232,8 @@ The grant funds the frontier-agent regime needed to test the architecture, disco
 - `docs/CLOSURE_NATIVE_SOURCED_VERIFIER_ASI_RUN.md` — source-linked method-level cycle using prior content-addressed closure records rather than fresh fixtures.
 - `docs/FULL_BOUNDED_CLOSURE_ASI_FRONTIER_PLAN.md` — the one required causal frontier run from C2 through derived frame/verifier and held-out transfer.
 - `docs/FULL_BOUNDED_CLOSURE_DERIVED_VERIFIER_RUN.md` — executed two-episode integration from source PATH through reviewed completion, derived verifier differential, and the next successor.
+- `docs/PROGRESSIVE_CLOSURE_ASI_STATUS.md` — canonical distinction between the implemented bounded progressive-closure verifier and the still-open autonomous-ASI integration.
+- `docs/REUNIFIED_NEXT_TESTS_CHART_COCOYCLE.md` — causal T2A→T2B continuation and separately isolated chart--cocycle replication.
 - `docs/PREINSTITUTIONAL_TRANSLATION_OPENINGS.md` — pre-institutional translation, relative gluing controls, inverse-limit-style closure, and Turing/topos realization openings.
 - `docs/RELATIVE_UNITARY_MAZE_METAPHYSICS.md` — external NRRF649 comparison: phase, fibre, and lifted maze/partition closure levels.
 - `docs/TRUTH_CONDITION_TRANSLATIONAL_CLOSURE.md` — closure as a truth condition for further relation, admission/natural-choice boundary, and the transformation-cost opening.

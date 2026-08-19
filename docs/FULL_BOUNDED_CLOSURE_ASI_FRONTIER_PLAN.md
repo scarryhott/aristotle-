@@ -2,13 +2,18 @@
 
 ## Status
 
-**Primary frontier objective. Not yet executed.**
+**Historical bounded-frontier plan; superseded for the Aristotle pair by the
+truth-level continuation.**
 
 The repository has bounded controls for frame evolution, verifier evolution,
 source-linked provenance, receipt calibration, and truth-conditioned
-continuation. Those controls are deliberately not substitutes for one causal
-frontier run. The next work is to make the actual frozen Aristotle C2 result
-the source of the next axiometry and verifier.
+continuation. Phase C2 subsequently produced a source-attested
+slot-level `ASSEMBLY_OBSTRUCTION`/`OPEN_INTERFACE_BOUNDARY`; it is not a
+truth-level verdict. The active frontier continuation is therefore blind T2A
+ContactBridge generation followed, only if generated and frozen, by T2B truth
+evaluation. See
+[`PROGRESSIVE_CLOSURE_ASI_STATUS.md`](PROGRESSIVE_CLOSURE_ASI_STATUS.md) and
+[`REUNIFIED_NEXT_TESTS_CHART_COCOYCLE.md`](REUNIFIED_NEXT_TESTS_CHART_COCOYCLE.md).
 
 ## One causal chain
 
@@ -18,8 +23,9 @@ independent Aristotle frames F_A, F_B
   -> identity-independent validation
   -> candidate relation on the admitted 34-role subinterface
   -> independent C1 local returns
-  -> C2 assembled completion / recoverability
-  -> LocalIVI, CrossFrameIVI, topology, receipt, questions, held-out transfer
+  -> C2 slot-level structural result (recorded separately)
+  -> blind ContactBridge (T2A) -> truth evaluation (T2B, conditional)
+  -> only after truth completion: IVI, topology, receipt, questions, held-out transfer
   -> derived next frame F_(t+1)
   -> derived next verifier M_(t+1)
   -> new held-out mathematical relation
