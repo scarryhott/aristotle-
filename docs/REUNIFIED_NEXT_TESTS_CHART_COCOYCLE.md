@@ -112,6 +112,53 @@ turning an optical model into a metaphysical or quantum-gravity conclusion.
    order.  A nonzero residue is allowed and is reportable; it is not failure
    by itself.
 
+### Derived-community and read-out refinement
+
+The replication must derive its intermediate community structure rather than
+postulate it.  Freeze an attachment relation, choose seeds before evaluation,
+and iterate its declared round operator to stabilization.  The terminal
+communities are then the tested reachability components; their aggregate
+metavectors are derived read-outs, not primitive group labels.
+
+The registered question ladder is deliberately finer than one scalar optical
+measurement:
+
+```text
+Q0  aggregate / trace                  (coarse shared invariant)
+Q1  frequency or lift                  (order-sensitive phase change)
+Q2  quadrature orientation              (distinguishes +alpha from -alpha)
+Q3  ordered route and community lineage (provenance)
+```
+
+An intensity-only read-out such as `2 + 2 cos(delta)` is invariant under
+`delta -> -delta`; it may support agreement at `Q0` or `Q1` but cannot settle
+orientation.  A separately registered quadrature channel is required for
+`Q2`.  Agreement on an aggregate, a trace, or a common fixed point is never by
+itself truth completion.
+
+### Rotation-orbit controls
+
+Register a rotation action and its inverse before data collection.  Test that
+the action transports the attachment relation, derived communities, and
+declared distances equivariantly.  Record the orbit class:
+
+- a declared rational rotation has a finite periodic return;
+- a declared irrational rotation has no exact finite repeat in the ideal
+  model; finite experiments may only test bounded non-repetition within a
+  stated tolerance;
+- coherent rotations preserving every question in the selected invariant
+  sublanguage are not counterexamples, but must become distinguishable if the
+  registered orientation/provenance language says they should.
+
+### Collapse is a loss control, not a completion witness
+
+If dephasing or collapse maps are used, register their fixed-point algebra and
+their common invariant in advance.  For example, two complementary dephasings
+may agree only on a trace-like scalar after composition.  This establishes a
+coarse common read-out, not a translation, independent return, or truth-level
+completion.  Include a control with distinct inputs sharing that scalar so the
+evaluator cannot promote information loss into equality.
+
 ### Required controls
 
 - same global aggregate but different ordered provenance;
@@ -121,6 +168,8 @@ turning an optical model into a metaphysical or quantum-gravity conclusion.
 - a return authored by the evaluator, which must be invalid; and
 - a disagreement on a registered translated question, which is a truth
   obstruction rather than an opportunity to change the chart.
+- equal aggregate/trace under a collapse pair but unequal quadrature or route
+  answer, which must remain a separating witness rather than a completion.
 
 ### Evidence boundary
 
@@ -158,4 +207,3 @@ Use these labels in documentation and grant language:
 | T2B truth evaluation | not authorized until T2A freezes as generated |
 | Chart--cocycle replication | proposed independent replication |
 | Physical photonics implementation | future empirical programme |
-

@@ -55,6 +55,10 @@ experiment.
 The separately specified chart--cocycle/ellipse study is a replication track,
 not an input or repair channel for T2A.  See
 [`REUNIFIED_NEXT_TESTS_CHART_COCOYCLE.md`](REUNIFIED_NEXT_TESTS_CHART_COCOYCLE.md).
+That protocol now includes derived-community, rotation-orbit, quadrature, and
+collapse-loss controls.  These are design commitments for a later replication;
+the reported NRRF672 source has not yet been supplied to this checkout for
+attestation or local rebuilding.
 
 ## Reading the claim correctly
 
@@ -69,4 +73,3 @@ The open research question is:
 
 > Can independently generated frontier mathematics supply the warranted
 > translational truth relation from which such a successor genuinely derives?
-
