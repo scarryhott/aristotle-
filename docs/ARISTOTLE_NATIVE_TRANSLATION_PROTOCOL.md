@@ -94,3 +94,14 @@ It abstains from an assembled cross-frame return, reverse paths, completion,
 recoverability, IVI, topology naturality, receipt gates, and transfer. Its
 provenance is in
 [`../runs/aristotle_native_translation/phase_c1_independent_return/manifest.json`](../runs/aristotle_native_translation/phase_c1_independent_return/manifest.json).
+
+## Post-C1 truth-level continuation
+
+Structural assembly is not the criterion for truth-level completion.  A
+separate continuation therefore asks whether a warranted relational question
+interface can support translated truth comparison while retaining structural
+differences as residue.  The active blind ContactBridge task is intentionally
+isolated to the B2/C1 evidence.  It must freeze before any later truth
+evaluation may use its output.  The resulting T2A -> T2B sequence, plus a
+separate chart--cocycle replication, is specified in
+[`REUNIFIED_NEXT_TESTS_CHART_COCOYCLE.md`](REUNIFIED_NEXT_TESTS_CHART_COCOYCLE.md).
