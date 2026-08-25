@@ -1,0 +1,154 @@
+{
+  "authenticated_settled_layer": {
+    "fill_receipts": 0,
+    "pnl_usd": null,
+    "settled_orientations": 0
+  },
+  "candidate_layer": {
+    "cost_product_checks": 21439,
+    "executable": false,
+    "expected_net_pair_product": "0.985093438085351806640625",
+    "forward_return_performance_test": false,
+    "observation_class": "OHLCV_CLOSE_COUNTERFACTUAL",
+    "orientation_distribution": {
+      "MINUS": {
+        "clears_safety": 5,
+        "defined": 21439,
+        "maximum_net_candidate_pnl_bps": "98.188824997804385933915045168064575566588504923180215403332264814342721997441",
+        "median_net_candidate_pnl_bps": "-74.8590137851221003158870179139169478248849341859381639643052789482037445666921",
+        "minimum_net_candidate_pnl_bps": "-187.0370305872380097267163073564383454836068769248762231491949631593310202331293",
+        "net_negative": 21433,
+        "net_positive": 6,
+        "net_positive_stages": [
+          {
+            "clears_safety": true,
+            "net_candidate_pnl_bps": "8.758975195983078830982548410231890987329667702605785321539564905570164953382",
+            "net_candidate_ratio": "1.0008758975195983078830982548410231890987329667702605785321539564905570164953382",
+            "stage_utc": "2025-02-02T18:00:00Z"
+          },
+          {
+            "clears_safety": true,
+            "net_candidate_pnl_bps": "42.896526488395599927719551861221539573545355981207083483917600289121792555114",
+            "net_candidate_ratio": "1.0042896526488395599927719551861221539573545355981207083483917600289121792555114",
+            "stage_utc": "2025-02-03T01:00:00Z"
+          },
+          {
+            "clears_safety": false,
+            "net_candidate_pnl_bps": "0.054114920050585864046634072959759308010530274539300488905603610379842045882",
+            "net_candidate_ratio": "1.0000054114920050585864046634072959759308010530274539300488905603610379842045882",
+            "stage_utc": "2025-03-10T11:00:00Z"
+          },
+          {
+            "clears_safety": true,
+            "net_candidate_pnl_bps": "78.388309774357487222497410726347548070428243346692484351780969964425631557617",
+            "net_candidate_ratio": "1.0078388309774357487222497410726347548070428243346692484351780969964425631557617",
+            "stage_utc": "2025-09-17T17:00:00Z"
+          },
+          {
+            "clears_safety": true,
+            "net_candidate_pnl_bps": "98.188824997804385933915045168064575566588504923180215403332264814342721997441",
+            "net_candidate_ratio": "1.0098188824997804385933915045168064575566588504923180215403332264814342721997441",
+            "stage_utc": "2025-10-10T21:00:00Z"
+          },
+          {
+            "clears_safety": true,
+            "net_candidate_pnl_bps": "10.163701868692552556535579282445785529544399495987797599310299091451687777704",
+            "net_candidate_ratio": "1.0010163701868692552556535579282445785529544399495987797599310299091451687777704",
+            "stage_utc": "2025-11-16T11:00:00Z"
+          }
+        ],
+        "net_zero": 0
+      },
+      "PLUS": {
+        "clears_safety": 2,
+        "defined": 21439,
+        "maximum_net_candidate_pnl_bps": "38.695154113099035429979607011577744314202101437648788585551927031320948010384",
+        "median_net_candidate_pnl_bps": "-74.7662984983549237806411815596644853149697256806259783602983397826047775610454",
+        "minimum_net_candidate_pnl_bps": "-244.8502879369955524685814013239632842527451708152991170648668408040852747051009",
+        "net_negative": 21437,
+        "net_positive": 2,
+        "net_positive_stages": [
+          {
+            "clears_safety": true,
+            "net_candidate_pnl_bps": "11.900391697416584717431212625998301166974400906692391188913550754092968788044",
+            "net_candidate_ratio": "1.0011900391697416584717431212625998301166974400906692391188913550754092968788044",
+            "stage_utc": "2025-08-19T00:00:00Z"
+          },
+          {
+            "clears_safety": true,
+            "net_candidate_pnl_bps": "38.695154113099035429979607011577744314202101437648788585551927031320948010384",
+            "net_candidate_ratio": "1.0038695154113099035429979607011577744314202101437648788585551927031320948010384",
+            "stage_utc": "2025-11-16T17:00:00Z"
+          }
+        ],
+        "net_zero": 0
+      }
+    },
+    "reciprocal_check_is_independent_evidence": false,
+    "reciprocal_equation_consistency_checks": 21439,
+    "same_bar_relation_audit": true
+  },
+  "continual_closure_checks": {
+    "declared_bar_lag_or_pending": 21908,
+    "event_hash_chain": 21908,
+    "final_event_hash": "48c189d36341ad0f566cb1c44950584d77bf0498d9e687dd88de849176f5d89a",
+    "final_state_hash": "a9fe39a65a9745a74f1f7dadfb418427446d7b6330b7038d0f3fe6fda989e672",
+    "hourly_stage_continuity": 21908,
+    "no_forward_fill": true,
+    "source_target_adjacency": 21908,
+    "tamper_evidence_scope": "relative to committed head; manifest and full chain can be reauthored"
+  },
+  "formal_boundary": {
+    "ReceiptBridge_required": true,
+    "lean_BoundaryMatches_instantiated": false,
+    "lean_LocalTradeWitness_instantiated": false,
+    "runtime_hash_chain_only": true
+  },
+  "limitations": [
+    "This is a same-bar relation audit, not a forward-return or performance test.",
+    "Candles are aggregated observations, not synchronized executable quotes.",
+    "The one-hour replay lag is declared; CSV contains no historical publication receipts.",
+    "No bid/ask spread, depth, latency, account fee tier, balances, or atomicity is observed.",
+    "Positive candidates are not paper admissions and are never called settled profit.",
+    "Paper P&L zero is defined by no-order HOLD; HOLD does not halt the process.",
+    "Runtime hash continuity does not instantiate Lean BoundaryMatches or LocalTradeWitness.",
+    "The latest provider row is conservatively pending rather than retrospectively finalized."
+  ],
+  "manifest_sha256": "3f46fbbe60aa119bdb2528367d3ee035e396b8546b6ce2679a234ea64cac1ebc",
+  "paper_closed_layer": {
+    "aggregate_pnl_bps": "0",
+    "decision": "HOLD",
+    "hold_is_process_halting": false,
+    "maximum_returned_ratio": "1",
+    "minimum_returned_ratio": "1",
+    "orientations_returned": 43816,
+    "pnl_semantics": "defined current-stage no-order HOLD, not measured performance",
+    "reason": "OHLCV_AGGREGATE_NOT_EXECUTABLE"
+  },
+  "schema_version": "nrrf766.continual_closure_trading.v1",
+  "stage_ledger_sha256": "c039a66d3a2e8bb54755bc150bbf6f1e0b4c3a45ecc0acc66b670be8f0d3bce1",
+  "stages": {
+    "declared": 21908,
+    "returned": 21908,
+    "state_counts": {
+      "IDENTIFIED_ACTIVE": 21439,
+      "INACTIVE": 264,
+      "OPEN_MISSING": 204,
+      "PENDING_UNFINALIZED": 1
+    },
+    "witness_counts": {
+      "AWAIT_FINALIZATION": 1,
+      "DATA_GAP": 204,
+      "INACTIVE_MARKET": 264,
+      "MISSING_BTC_USD": 204,
+      "MISSING_ETH_BTC": 184,
+      "MISSING_ETH_USD": 184,
+      "NO_AUTHENTICATED_FILL": 21908,
+      "OHLCV_AGGREGATE_NOT_EXECUTABLE": 21908,
+      "UNFINALIZED_PROVIDER_TAIL": 1,
+      "ZERO_ACTIVITY_BTC_USD": 3,
+      "ZERO_ACTIVITY_ETH_BTC": 263,
+      "ZERO_ACTIVITY_ETH_USD": 4
+    }
+  }
+}
