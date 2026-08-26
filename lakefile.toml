@@ -16,7 +16,8 @@ roots = [
   "NRRF767LivePublicPaperReceiptBoundary",
   "NRRF768RelativeTranslationalTruthNaturalFormSelector",
   "NRRF779ReportedSelectorTradingReintegration",
-  "NRRF780LocalPriceGlobalCostEquality"
+  "NRRF780LocalPriceGlobalCostEquality",
+  "NRRF781SocioeconomicTokenomicTradingSupernet"
 ]
 
 [[require]]

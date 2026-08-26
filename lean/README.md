@@ -53,6 +53,14 @@ additional empirical predicate. The optional commutative-group realization prove
 `local / (local / completed) = completed`, so refactoring a previously observed cost-completed
 result into the new equality cannot alter it.
 
+`NRRF781SocioeconomicTokenomicTradingSupernet.lean` makes the network, reported live
+filled/selected/halting form, substrate interaction, local entry/exit prices, global cost
+equalities, token reading, continual local witness, and completed assessment aspects of one
+occurrence. Its joining law is
+`tokenRead (complete price) = closureReturn (priceRead price)`, from which the same selected
+interaction derives equality of the entry and exit token readings. Authentication and positivity
+remain evidence aspects rather than definitions of closure.
+
 Build all registered modules with the pinned toolchain:
 
 ```bash

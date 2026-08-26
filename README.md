@@ -188,6 +188,10 @@ The available bridges make later layers explicit:
 - `lean/NRRF780LocalPriceGlobalCostEquality.lean` — price as a local presentation, cost as its
   completed global equality, and assessment only after both entry and exit complete. Its generic
   factorization theorem explains why reexpressing an existing completed result cannot change it.
+- `lean/NRRF781SocioeconomicTokenomicTradingSupernet.lean` — one occurrence joining the shared
+  network, reported live relative selector/halting form, substrate interaction, local price,
+  global cost equality, token reading, continual witness, and completed assessment through the
+  commuting equation `tokenRead (complete p) = closureReturn (priceRead p)`.
 
 The broader NRRF618–633 sequence develops the observation-free relational foundation, originless translational order, existence/naturality, frame-conditional openness, and the unique admissible open relational definition. The later NRRF634–640 learning/maze/completion results are separately reported but are not present in this checkout. General sources not present here are reported as such rather than reconstructed or falsely re-audited. See [`docs/EXTERNAL_LEAN_REFERENCES.md`](docs/EXTERNAL_LEAN_REFERENCES.md) for the exact source-status ledger.
 
