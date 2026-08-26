@@ -27,7 +27,16 @@ claim is equivalent to explicit data `x ~ y` with unequal question values.
 adding an axiom; `resolvedIn_assumed_geometry_iff` confirms that no external equality is
 substituted. Cross-frame transport still requires a later `GeomEquiv`.
 
-Build all four modules with the pinned toolchain:
+`NRRF768RelativeTranslationalTruthNaturalFormSelector.lean` supplies the missing selector layer.
+It derives the quotient completion and equality-saturation topology from `CEq`, proves that return
+equality is exactly topological indistinguishability, and proves the completion maps and derived
+topologies translate coherently. A natural form is a supplied translation-natural section with an
+exact idempotent hold. Pointwise authored seeds show origin cancellation and genuine polar freedom;
+proof-relevant form movements compose and contextual loop steps must carry one. No
+`Classical.choice` is used; the trading bridge still requires an actual interaction and completion
+witness and contains no profit selector.
+
+Build all registered modules with the pinned toolchain:
 
 ```bash
 lake build

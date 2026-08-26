@@ -133,6 +133,9 @@ python3 experiments/classical_vs_closure_asi.py --assert-reference
 python3 experiments/three_part_assumption_interaction_asi.py --assert-reference
 python3 experiments/generative_axiom_geometry_isolation.py --assert-reference
 python3 experiments/translational_completion_maze.py --assert-reference
+python3 experiments/nrrf768_relative_natural_form_selector.py verify \
+  --source-run runs/nrrf767_live_paper_trading_bot/bitstamp_public_20260826T0221Z \
+  --overlay-dir runs/nrrf768_relative_natural_form_selector/bitstamp_public_20260826T0221Z
 python3 -m unittest discover -s tests -v
 lake build
 ```
@@ -171,6 +174,9 @@ The available bridges make later layers explicit:
 - `lean/NRRF627WeakRequirementsRepresentation.lean` — representation bridge;
 - `lean/NRRF627IndependentReturnBridge.lean` — relative equality and independently witnessed admission;
 - `lean/NRRF631RuntimeFrameConditionalBridge.lean` — runtime `ReferenceFrame`, `GeomEquiv`, quotient factorization, transported `ResolvedIn`/`OpenIn`, and external-frame compositional identification.
+- `lean/NRRF768RelativeTranslationalTruthNaturalFormSelector.lean` — quotient completion,
+  derived equality-saturation topology, contextual translation-natural sections, relative form
+  freedom, and the selector-to-trading-witness bridge.
 
 The broader NRRF618–633 sequence develops the observation-free relational foundation, originless translational order, existence/naturality, frame-conditional openness, and the unique admissible open relational definition. The later NRRF634–640 learning/maze/completion results are separately reported but are not present in this checkout. General sources not present here are reported as such rather than reconstructed or falsely re-audited. See [`docs/EXTERNAL_LEAN_REFERENCES.md`](docs/EXTERNAL_LEAN_REFERENCES.md) for the exact source-status ledger.
 

@@ -13,7 +13,8 @@ roots = [
   "NRRF764ConsciousCulturalMoralitySuperNetwork",
   "NRRF764TradingNetworkInterfaceProof",
   "NRRF766ContinualTradingClosureFeedback",
-  "NRRF767LivePublicPaperReceiptBoundary"
+  "NRRF767LivePublicPaperReceiptBoundary",
+  "NRRF768RelativeTranslationalTruthNaturalFormSelector"
 ]
 
 [[require]]
