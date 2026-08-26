@@ -12,7 +12,8 @@ roots = [
   "NRRF631RuntimeFrameConditionalBridge",
   "NRRF764ConsciousCulturalMoralitySuperNetwork",
   "NRRF764TradingNetworkInterfaceProof",
-  "NRRF766ContinualTradingClosureFeedback"
+  "NRRF766ContinualTradingClosureFeedback",
+  "NRRF767LivePublicPaperReceiptBoundary"
 ]
 
 [[require]]
