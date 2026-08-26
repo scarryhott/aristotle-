@@ -36,6 +36,16 @@ proof-relevant form movements compose and contextual loop steps must carry one. 
 `Classical.choice` is used; the trading bridge still requires an actual interaction and completion
 witness and contains no profit selector.
 
+`NRRF779ReportedSelectorTradingReintegration.lean` exposes the exact conditional boundary needed
+to connect the reported NRRF777/778 live fill and continuum-halting selector to the local trading
+chain. A nonzero optional receipt realization prevents missing data from collapsing into the
+reported zero exception. An explicit `formReading` commuting square converts substrate transport
+into an NRRF764 network interaction, after which the existing NRRF768 selected-form witness and
+NRRF766 local witness are reused. The external NRRF777/778 sources are not in this checkout, so the
+three translation certificates remain named obligations. Even when supplied, NRRF767 still
+requires authenticated fill evidence and exact witnessed status; settlement and profit are not
+derived.
+
 Build all registered modules with the pinned toolchain:
 
 ```bash

@@ -14,7 +14,8 @@ roots = [
   "NRRF764TradingNetworkInterfaceProof",
   "NRRF766ContinualTradingClosureFeedback",
   "NRRF767LivePublicPaperReceiptBoundary",
-  "NRRF768RelativeTranslationalTruthNaturalFormSelector"
+  "NRRF768RelativeTranslationalTruthNaturalFormSelector",
+  "NRRF779ReportedSelectorTradingReintegration"
 ]
 
 [[require]]

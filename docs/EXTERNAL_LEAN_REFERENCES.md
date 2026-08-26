@@ -188,6 +188,26 @@ answer-alignment for the Aristotle packet. It informs the candidate-question
 architecture only: independently audited residue and form depth may justify a
 proposal, while independent provenance must still admit the next question.
 
+## NRRF777/778: live selector, substrate operation, and halting/selection equality
+
+The project conversation reports two later modules:
+
+- `NRRF777LiveNaturalFormSelectorRelationNotSpacetimeObjectTranslationEventFilled.lean`;
+- `NRRF778ContinuumHaltingSubstrateOperationClosureRelativeFormSelectionTranslationalTruthEquality.lean`.
+
+Their reported results include compatible rigid filling to a natural form,
+substrate-transport naturality, non-location-based selection, and equality of
+continuum-halting and selected readings on nonzero complex data, with zero as
+a separating case. Neither source, its reported NRRF772/774/775/776 dependency
+chain, nor a commit containing them is available in this checkout or the
+connected repository branches audited on 2026-08-26.
+
+Repository status: **REPORTED PROVED OUTSIDE CHECKOUT — NOT LOCALLY
+AUDITED**. NRRF779 is the locally built conditional adapter. It names the
+precise operations and three certificates required from those files and proves
+their downstream connection to NRRF768/766/767, but it does not attest or
+reconstruct the missing proofs. Exact import and instantiation remain required.
+
 ## Required runtime bridge
 
 Before the external results become local formal evidence, this repository

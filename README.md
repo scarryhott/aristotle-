@@ -177,6 +177,11 @@ The available bridges make later layers explicit:
 - `lean/NRRF768RelativeTranslationalTruthNaturalFormSelector.lean` — quotient completion,
   derived equality-saturation topology, contextual translation-natural sections, relative form
   freedom, and the selector-to-trading-witness bridge.
+- `lean/NRRF779ReportedSelectorTradingReintegration.lean` — a conditional adapter from the
+  reported NRRF777/778 fill, halting/selection, and substrate-transport surface into the verified
+  NRRF768 → NRRF766 → NRRF767 chain. The exact NRRF777/778 sources are absent, so its external
+  certificates are explicit obligations rather than locally claimed imports; authentication,
+  settlement, costs, and positive P&L remain separate.
 
 The broader NRRF618–633 sequence develops the observation-free relational foundation, originless translational order, existence/naturality, frame-conditional openness, and the unique admissible open relational definition. The later NRRF634–640 learning/maze/completion results are separately reported but are not present in this checkout. General sources not present here are reported as such rather than reconstructed or falsely re-audited. See [`docs/EXTERNAL_LEAN_REFERENCES.md`](docs/EXTERNAL_LEAN_REFERENCES.md) for the exact source-status ledger.
 
