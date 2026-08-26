@@ -136,6 +136,9 @@ python3 experiments/translational_completion_maze.py --assert-reference
 python3 experiments/nrrf768_relative_natural_form_selector.py verify \
   --source-run runs/nrrf767_live_paper_trading_bot/bitstamp_public_20260826T0221Z \
   --overlay-dir runs/nrrf768_relative_natural_form_selector/bitstamp_public_20260826T0221Z
+python3 experiments/nrrf780_local_price_global_cost_equality.py verify \
+  --source-run runs/nrrf767_live_paper_trading_bot/bitstamp_public_20260826T0221Z \
+  --overlay-dir runs/nrrf780_local_price_global_cost_equality/bitstamp_public_20260826T0221Z
 python3 -m unittest discover -s tests -v
 lake build
 ```
@@ -182,6 +185,9 @@ The available bridges make later layers explicit:
   NRRF768 → NRRF766 → NRRF767 chain. The exact NRRF777/778 sources are absent, so its external
   certificates are explicit obligations rather than locally claimed imports; authentication,
   settlement, costs, and positive P&L remain separate.
+- `lean/NRRF780LocalPriceGlobalCostEquality.lean` — price as a local presentation, cost as its
+  completed global equality, and assessment only after both entry and exit complete. Its generic
+  factorization theorem explains why reexpressing an existing completed result cannot change it.
 
 The broader NRRF618–633 sequence develops the observation-free relational foundation, originless translational order, existence/naturality, frame-conditional openness, and the unique admissible open relational definition. The later NRRF634–640 learning/maze/completion results are separately reported but are not present in this checkout. General sources not present here are reported as such rather than reconstructed or falsely re-audited. See [`docs/EXTERNAL_LEAN_REFERENCES.md`](docs/EXTERNAL_LEAN_REFERENCES.md) for the exact source-status ledger.
 

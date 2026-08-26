@@ -271,3 +271,17 @@ Every run preserves exact inputs/outputs, hashes, environment versions, proof-ke
 ## Programme-level falsification
 
 The architecture is challenged if increasing representational freedom causes the frozen protocol to lose its ability to distinguish natural cross-frame equality from equality collapse, downstream non-naturality, frame-relative openness, pending evidence, or self-certified identity—or if successful comparison requires secretly replacing independent frames with one privileged canonical representation.
+
+## NRRF780 local-price / global-cost-equality replay
+
+NRRF780 replays the locked NRRF767 Bitstamp public-book receipts with the corrected interpretation:
+price is the zero-fee local route presentation, while cost is the global equality relating that
+presentation to the declared-fee completed route. The verifier checks
+`completed = local / globalCostEqual` for every numeric record and retains OPEN records without a
+zero/default collapse.
+
+The committed overlay contains 12 rounds and 72 records: 66 numeric completions and 6 OPEN. All 66
+numeric signs are unchanged and negative. This is expected from the proved factorization, not a
+failure to apply the new input. No order, authenticated fill, formal receipt admission, settlement,
+or profit is claimed. See
+[`LOCAL_PRICE_GLOBAL_COST_EQUALITY_NRRF780_NOTES.md`](LOCAL_PRICE_GLOBAL_COST_EQUALITY_NRRF780_NOTES.md).

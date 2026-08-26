@@ -46,6 +46,13 @@ three translation certificates remain named obligations. Even when supplied, NRR
 requires authenticated fill evidence and exact witnessed status; settlement and profit are not
 derived.
 
+`NRRF780LocalPriceGlobalCostEquality.lean` corrects the price/cost layer. A price is an arbitrary
+local presentation; cost is the global returned equality to which that presentation completes.
+Entry and exit are assessed only after the same completion interface, and positivity remains an
+additional empirical predicate. The optional commutative-group realization proves
+`local / (local / completed) = completed`, so refactoring a previously observed cost-completed
+result into the new equality cannot alter it.
+
 Build all registered modules with the pinned toolchain:
 
 ```bash
