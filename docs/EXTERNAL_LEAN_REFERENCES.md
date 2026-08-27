@@ -287,6 +287,15 @@ build under Lean 4.33 with no `sorry`; the current locally adapted source hashes
 `234ff1bc43eb0f3d29a6e5797903b4337219204a854b9faa5a66202f272224d0` and
 `da88d906f360c0154a3c96cb2dd62890d5f43f05fbc236e3c48a1ec9fef7f157`.
 
+NRRF802 was recovered from the same project as completed task
+`5f88ef5b-0101-4651-830a-412722d72fe8`. Its provider-source SHA-256 is
+`5b4ce6a81905d53af5077e860057582ad3d586155d15bca46b94c52d44a1f9c9`, and its note SHA-256 is
+`45bdf685759f16fff425835d060a794169cf6c8f346fa4da1175b09469c3a452`. The redundant broad
+`import Mathlib` was removed locally because NRRF801 already supplies the complete dependency
+surface; no definition or theorem statement changed. The active Lean 4.33 source hash is
+`3dd1c3ff6f4db74ade453fa10916ed9c1e6843f394146449e11725c28cdf879f`. NRRF802 and the refactored
+trading bridge build with no `sorry`.
+
 ## Required runtime bridge
 
 Before the external results become local formal evidence, this repository

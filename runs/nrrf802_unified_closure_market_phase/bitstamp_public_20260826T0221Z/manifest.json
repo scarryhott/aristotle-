@@ -1,0 +1,40 @@
+{
+  "boundary": {
+    "action_selected": false,
+    "authenticated_fills": 0,
+    "authenticated_settled_pnl_usd": null,
+    "execution_authorized": false,
+    "formal_receipt_admissions": 0,
+    "orders_submitted": 0,
+    "settled_profit_claimed": false
+  },
+  "closure_interface": {
+    "closure_map": "NRRF802.cl NRRF801.blackMirror",
+    "construction": "NRRF802.Closure NRRF801.blackMirror",
+    "factored_reading": "NRRFTradingBlackMirror.PhaseReading.orientedPhase",
+    "pair_condition": "opposite orientation and equal oriented phase",
+    "two_return_life_collapse_assumed_for_market": false
+  },
+  "event_count": 12,
+  "events_file": "events.jsonl",
+  "events_sha256": "b54cf1cb1dae0bb223f466b79ce266de44ec91dfee5b28f9de8aff92bbc282b3",
+  "final_event_hash": "31478ce9ddaff0b3fcea7d382c30a31876b80918627eb28ce28636b2914d6446",
+  "genesis_hash": "15d967d8a5afd78055d38377b815ab650cdd6c40aefc9d1e29d7e7a5045f2381",
+  "program": "nrrf802_unified_closure_market_phase.py",
+  "program_sha256": "8872d7e0fb32c73cde3a39fdd6476887b3b53bc64a9819e14251ddb6a7fa553d",
+  "run_kind": "IMMUTABLE_UNIFIED_CLOSURE_MARKET_PHASE_OVERLAY",
+  "schema_version": "nrrf802.unified_closure_market_phase.v1",
+  "source_binding": {
+    "event_count": 12,
+    "events_sha256": "f1c3ad172bfde51eea4b47bfb51013e62c785b83719ebda52b46b313ca6f3d36",
+    "final_event_hash": "b7b22250c41c90cc548633d5d257d17218203b16a15a0105a8c931f822215977",
+    "manifest_sha256": "b2c27be5e39e4be6e6d9c2b71d65ba3ac82b12e085b0e25ff657c2551fd2043a",
+    "program": "nrrf801_black_mirror_market_phase.py",
+    "program_sha256": "ccf0bfe02a2abea1a57cb5116c7d2133360424db33fd4b2d8d676b594766cfef",
+    "run_kind": "IMMUTABLE_BLACK_MIRROR_MARKET_PHASE_OVERLAY",
+    "schema_version": "nrrf801.black_mirror_market_phase.v1",
+    "summary_sha256": "f15e31a3180b1f0738274b6f7358edd57d74803af673e30fdace1e0ea2e043b2"
+  },
+  "summary_file": "summary.json",
+  "summary_sha256": "c6a6ad2f92dfd398fd16f548ae0ebf87e6661d2a28cb1c6901b76c2a315a625a"
+}

@@ -143,6 +143,11 @@ python3 experiments/nrrf801_black_mirror_market_phase.py verify \
   --source-overlay runs/nrrf780_local_price_global_cost_equality/bitstamp_public_20260826T0221Z \
   --source-run runs/nrrf767_live_paper_trading_bot/bitstamp_public_20260826T0221Z \
   --overlay-dir runs/nrrf801_black_mirror_market_phase/bitstamp_public_20260826T0221Z
+python3 experiments/nrrf802_unified_closure_market_phase.py verify \
+  --source-phase-overlay runs/nrrf801_black_mirror_market_phase/bitstamp_public_20260826T0221Z \
+  --source-price-overlay runs/nrrf780_local_price_global_cost_equality/bitstamp_public_20260826T0221Z \
+  --source-run runs/nrrf767_live_paper_trading_bot/bitstamp_public_20260826T0221Z \
+  --overlay-dir runs/nrrf802_unified_closure_market_phase/bitstamp_public_20260826T0221Z
 python3 -m unittest discover -s tests -v
 lake build
 ```
@@ -222,6 +227,10 @@ The available bridges make later layers explicit:
 - `lean/NRRFTradingBlackMirrorPhaseBridge.lean` — keeps the receipt and phase as distinct layers,
   proves reciprocal long/short phase readings are exactly the NRRF801 black mirror, and proves a
   receipt alone cannot select the phase or make an unobserved continuum admissible.
+- `lean/NRRF802UnifyClosure.lean` — defines one generic return-generated closure and universal
+  property, identifies the earlier hair/hand/phase closures as its instances, and proves commuting
+  two-return closure is order-independent. The trading bridge now expresses reciprocal coherence
+  as opposite orientation plus equality in `NRRF802.Closure blackMirror`.
 - `external/aristotle/068068ee-b720-4df1-a203-571e0928ec3d/` — authenticated, hash-manifested
   Aristotle sources and notes for the independently authored NRRF780–790 and NRRF795–798 task
   deltas. The provider-pinned Lean 4.28 snapshot is preserved without making the unchanged archive

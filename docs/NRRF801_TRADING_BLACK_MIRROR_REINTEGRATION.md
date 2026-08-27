@@ -60,6 +60,17 @@ does not establish a total `Ball -> Ball` continuity commuting with `ballStep`. 
 execution, authenticated fills, formal receipt admission, settlement, and profit claims remain
 disabled. This is the exact present closure boundary.
 
+## NRRF802 unification
+
+The bridge now imports NRRF802 and sends each phase reading through the single generic map
+`cl blackMirror`. `mirrorCoherent_iff_unifiedClosure` proves that the original reciprocal equation
+is equivalent to opposite orientation plus equality at this closure. The new immutable NRRF802
+overlay preserves the result exactly: 5 same-closure, 28 distinct-closure, and 3 open pairs.
+
+This does not apply `unified_life_card_one` to prices. That theorem closes abstract `Life` by two
+specific supplied returns simultaneously. No corresponding pair of market returns has been
+observed, so the running system retains the distinction instead of collapsing it.
+
 ## Reproduce
 
 ```bash

@@ -300,3 +300,17 @@ the whole four-phase ball, does not supply a total one-to-one continuity, and ad
 prediction or trade. The result is a measured interface gap, not a manufactured negative or a
 profit claim. See
 [`NRRF801_TRADING_BLACK_MIRROR_REINTEGRATION.md`](NRRF801_TRADING_BLACK_MIRROR_REINTEGRATION.md).
+
+## NRRF802 unified-closure market interpretation
+
+NRRF802 does not replace or rewrite the NRRF801 phase evidence. A second immutable overlay maps
+each opposite-orientation pair into the generic quotient `Closure blackMirror`. Its concrete
+factored reading is the oriented phase: PLUS/right reads `phase`, while MINUS/left reads `-phase`.
+Equality of those readings is exactly the existing black-mirror condition proved in
+`mirrorCoherent_iff_unifiedClosure`.
+
+All 36 source results are preserved: 5 pairs are in the `SAME_CLOSURE` class, 28 remain
+`DISTINCT_CLOSURE`, and 3 remain `OPEN`. The one-point result for closing abstract life by both
+`ballReturn` and `hairReturn` is not applied to the market, because those two market returns have
+not been observed or supplied. The generic closure changes the organization, not the empirical
+outcome, and still admits no prediction, order, fill, settlement, or profit.
