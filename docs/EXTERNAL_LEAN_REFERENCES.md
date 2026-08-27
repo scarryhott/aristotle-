@@ -2,8 +2,9 @@
 
 This checkout uses its committed closure-translational runtime as the
 operative executable specification. The items below are external formal
-references: their reported Lean sources are not present in `lean/`, are not
-registered by this checkout's `lakefile.toml`, and were not rebuilt here.
+references: their sources are not registered by this checkout's `lakefile.toml`.
+Authenticated NRRF780–790 and NRRF795–798 source deltas are now retained, with task IDs and hashes,
+under [`../external/aristotle/068068ee-b720-4df1-a203-571e0928ec3d/`](../external/aristotle/068068ee-b720-4df1-a203-571e0928ec3d/); older items may remain report-only.
 
 The linked Harmonic dashboard request may require authentication. It records
 the external report but does not substitute for importing the exact `.lean`
@@ -44,11 +45,11 @@ tests with a ball–hair gauge class, presents sensor verdicts as partial readin
 windows, and rules out a global classical assignment while retaining a unique truth reading on
 level-unified questions.
 
-Repository status: **REPORTED PROVED OUTSIDE CHECKOUT — NOT LOCALLY AUDITED**. The exact source was
-not found in this checkout, any fetched branch, GitHub code search under the repository owner, or
-the public-interface repository. The local NRRF787 module therefore supplies a general
-choice-free quotient/descent theorem and records how the reported sensor theory would instantiate
-it; it does not claim to import or rebuild NRRF786.
+Repository status: **AUTHENTICATED SOURCE SNAPSHOT — PROVIDER TOOLCHAIN PINNED**. The exact source,
+notes, task ID, and byte hash are present in the Aristotle snapshot. It was produced against Lean
+4.28/mathlib 4.28 and is intentionally not made an active root of this checkout's Lean 4.33 build.
+The local NRRF787 module continues to supply the active-build choice-free quotient/descent theorem;
+it does not claim to rebuild NRRF786 under a different dependency environment.
 
 ## Terminology
 

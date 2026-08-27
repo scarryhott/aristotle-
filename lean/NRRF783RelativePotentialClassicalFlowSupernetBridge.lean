@@ -3,10 +3,10 @@ import NRRF781SocioeconomicTokenomicTradingSupernet
 /-!
 # NRRF783 — Relative potential and classical value flow in the trading Supernet
 
-The reported NRRF780 classical evaluator and NRRF782 translational-closure sources are not present
-in this checkout.  This module does not reconstruct them.  It states the exact potential
-classification and value-flow equations needed from those results and proves their consequence for
-the locally checked NRRF781 Supernet.
+The authenticated NRRF780 classical evaluator and NRRF782 translational-closure sources are
+retained in the external Aristotle snapshot rather than compiled into this newer-toolchain root.
+This module states the exact potential classification and value-flow equations needed from those
+results and proves their consequence for the locally checked NRRF781 trading bridge.
 
 The consequence separates two forms:
 
@@ -29,7 +29,7 @@ universe u v w z l g p f
 structure RelativePotentialBridge
     {N : Network.{u, v}} {R : Type w}
     {LocalPrice : Type l} {GlobalValue : Type g}
-    (S : NRRF781.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue) where
+    (S : NRRF781TradingBridge.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue) where
   PotentialField : Type p
   TransTruth : GlobalValue → GlobalValue → Prop
   potential : GlobalValue → PotentialField
@@ -42,7 +42,7 @@ namespace RelativePotentialBridge
 
 variable {N : Network.{u, v}} {R : Type w}
   {LocalPrice : Type l} {GlobalValue : Type g}
-  {S : NRRF781.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
+  {S : NRRF781TradingBridge.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
 
 /-- Returned token equality is exactly equality of the complete relative-potential field. -/
 theorem token_eq_iff_potential_eq
@@ -71,13 +71,13 @@ chosen numerical reading of the invariant potential field; the field itself rema
 structure OccurrenceFlow
     {N : Network.{u, v}} {R : Type w}
     {LocalPrice : Type l} {GlobalValue : Type g}
-    {S : NRRF781.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
+    {S : NRRF781TradingBridge.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
     {ops : NRRF779.ReportedSelectorOperations N}
     {cert : NRRF779.TranslationCertificates ops}
     {bridge : NRRF779.RelationalLiveBridge S.trading}
     {selector : NRRF768.NaturalFormSelector (NRRF627.flipFrame N.Reading)}
     {receipt : bridge.live.runtime.Receipt}
-    (occ : NRRF781.TradingOccurrence S ops cert bridge selector receipt)
+    (occ : NRRF781TradingBridge.TradingOccurrence S ops cert bridge selector receipt)
     (potentialBridge : RelativePotentialBridge.{u, v, w, z, l, g, p} S)
     (Value : Type f) [AddCommGroup Value] [LinearOrder Value]
     [IsOrderedAddMonoid Value] where
@@ -91,13 +91,13 @@ namespace OccurrenceFlow
 
 variable {N : Network.{u, v}} {R : Type w}
   {LocalPrice : Type l} {GlobalValue : Type g}
-  {S : NRRF781.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
+  {S : NRRF781TradingBridge.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
   {ops : NRRF779.ReportedSelectorOperations N}
   {cert : NRRF779.TranslationCertificates ops}
   {bridge : NRRF779.RelationalLiveBridge S.trading}
   {selector : NRRF768.NaturalFormSelector (NRRF627.flipFrame N.Reading)}
   {receipt : bridge.live.runtime.Receipt}
-  {occ : NRRF781.TradingOccurrence S ops cert bridge selector receipt}
+  {occ : NRRF781TradingBridge.TradingOccurrence S ops cert bridge selector receipt}
   {potentialBridge : RelativePotentialBridge.{u, v, w, z, l, g, p} S}
   {Value : Type f} [AddCommGroup Value] [LinearOrder Value] [IsOrderedAddMonoid Value]
 
@@ -144,7 +144,7 @@ closure-internal occurrence, its endpoints are not assumed to have the same toke
 structure TemporalFlow
     {N : Network.{u, v}} {R : Type w}
     {LocalPrice : Type l} {GlobalValue : Type g}
-    {S : NRRF781.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
+    {S : NRRF781TradingBridge.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
     (potentialBridge : RelativePotentialBridge.{u, v, w, z, l, g, p} S)
     (Value : Type f) [AddCommGroup Value] [LinearOrder Value]
     [IsOrderedAddMonoid Value] where
@@ -160,7 +160,7 @@ namespace TemporalFlow
 
 variable {N : Network.{u, v}} {R : Type w}
   {LocalPrice : Type l} {GlobalValue : Type g}
-  {S : NRRF781.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
+  {S : NRRF781TradingBridge.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
   {potentialBridge : RelativePotentialBridge.{u, v, w, z, l, g, p} S}
   {Value : Type f} [AddCommGroup Value] [LinearOrder Value] [IsOrderedAddMonoid Value]
 
@@ -208,13 +208,13 @@ end TemporalFlow
 theorem nrrf783_answer
     {N : Network.{u, v}} {R : Type w}
     {LocalPrice : Type l} {GlobalValue : Type g}
-    {S : NRRF781.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
+    {S : NRRF781TradingBridge.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
     {ops : NRRF779.ReportedSelectorOperations N}
     {cert : NRRF779.TranslationCertificates ops}
     {bridge : NRRF779.RelationalLiveBridge S.trading}
     {selector : NRRF768.NaturalFormSelector (NRRF627.flipFrame N.Reading)}
     {receipt : bridge.live.runtime.Receipt}
-    {occ : NRRF781.TradingOccurrence S ops cert bridge selector receipt}
+    {occ : NRRF781TradingBridge.TradingOccurrence S ops cert bridge selector receipt}
     {potentialBridge : RelativePotentialBridge.{u, v, w, z, l, g, p} S}
     {Value : Type f} [AddCommGroup Value] [LinearOrder Value] [IsOrderedAddMonoid Value]
     (internal : OccurrenceFlow occ potentialBridge Value)

@@ -61,13 +61,20 @@ occurrence. Its joining law is
 interaction derives equality of the entry and exit token readings. Authentication and positivity
 remain evidence aspects rather than definitions of closure.
 
-`NRRF783RelativePotentialClassicalFlowSupernetBridge.lean` adds the exact conditional surfaces
-needed from the externally reported classical NRRF780 and translational-closure NRRF782 modules.
+`NRRF783RelativePotentialClassicalFlowSupernetBridge.lean` adds the conditional surfaces needed
+from the archived classical NRRF780 and translational-closure NRRF782 modules.
 Inside one token-preserving occurrence it derives zero relative-potential movement and net flow
 equal to negative friction. Across closure classes in time, positive flow is equivalent to
 relative-potential movement exceeding cost and necessarily changes the returned token class. The
 older local price/cost adapter now uses namespace `NRRF780Local`, leaving `NRRF780` available for
 the reported classical module.
+
+`NRRFTradingDeltaDerivedCostTranslationalClosure.lean` removes the remaining arbitrary-cost gap in
+the active trading path. A quote relation uniquely determines the fill without consulting cost;
+the filled local price ball then derives slippage and the 0-hair cost; common price translations
+leave both that hair and the entry/exit relative potential unchanged; and profit is tested only as
+relative-potential movement exceeding accumulated derived hair. The authenticated provider sources
+remain independently hashed under `external/aristotle/068068ee-b720-4df1-a203-571e0928ec3d/`.
 
 `NRRF786ConstructiveNaturalSelectionTruthTradingBridge.lean` adds the choice-free downstream
 surface of the reported constructive NRRF783–785 results. Selection, partial orbit truth, returned

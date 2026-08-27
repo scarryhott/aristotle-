@@ -3,8 +3,9 @@ import NRRF783RelativePotentialClassicalFlowSupernetBridge
 /-!
 # NRRF786 — Constructive natural selection and orbit truth in trading
 
-The reported NRRF783–785 constructive sources are not present in this checkout.  This module names
-only their downstream surface and proves how it constrains the NRRF783 temporal trading bridge.
+The authenticated NRRF783–785 constructive sources are retained in the external Aristotle
+snapshot rather than compiled into this newer-toolchain root. This module names only their
+downstream surface and proves how it constrains the NRRF783 temporal trading bridge.
 
 Selection and partial truth are invariant under supplied level shifts.  Resource cost is absent
 from their definition and enters only in the classical temporal-flow assessment.  Consequently a
@@ -26,7 +27,7 @@ minimization operation occurs in this structure. -/
 structure NaturalSelectionTruth
     {N : Network.{u, v}} {R : Type w}
     {LocalPrice : Type l} {GlobalValue : Type g}
-    (S : NRRF781.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue) where
+    (S : NRRF781TradingBridge.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue) where
   LevelShift : Type k
   shift : LevelShift → GlobalValue → GlobalValue
   selected : GlobalValue → Prop
@@ -42,7 +43,7 @@ namespace NaturalSelectionTruth
 
 variable {N : Network.{u, v}} {R : Type w}
   {LocalPrice : Type l} {GlobalValue : Type g}
-  {S : NRRF781.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
+  {S : NRRF781TradingBridge.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
   {potentialBridge : NRRF783.RelativePotentialBridge.{u, v, w, z, l, g, p} S}
 
 /-- Naturality of the returned token forces naturality of the complete relative-potential field. -/
@@ -72,7 +73,7 @@ admissibility aspect; the evaluator's price movement and cost still decide posit
 structure NaturalTemporalFlow
     {N : Network.{u, v}} {R : Type w}
     {LocalPrice : Type l} {GlobalValue : Type g}
-    {S : NRRF781.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
+    {S : NRRF781TradingBridge.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
     (potentialBridge : NRRF783.RelativePotentialBridge.{u, v, w, z, l, g, p} S)
     (surface : NaturalSelectionTruth.{u, v, w, z, l, g, k} S)
     (Value : Type f) [AddCommGroup Value] [LinearOrder Value]
@@ -90,7 +91,7 @@ namespace NaturalTemporalFlow
 
 variable {N : Network.{u, v}} {R : Type w}
   {LocalPrice : Type l} {GlobalValue : Type g}
-  {S : NRRF781.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
+  {S : NRRF781TradingBridge.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
   {potentialBridge : NRRF783.RelativePotentialBridge.{u, v, w, z, l, g, p} S}
   {surface : NaturalSelectionTruth.{u, v, w, z, l, g, k} S}
   {Value : Type f} [AddCommGroup Value] [LinearOrder Value] [IsOrderedAddMonoid Value]
@@ -147,7 +148,7 @@ end NaturalTemporalFlow
 theorem nrrf786_answer
     {N : Network.{u, v}} {R : Type w}
     {LocalPrice : Type l} {GlobalValue : Type g}
-    {S : NRRF781.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
+    {S : NRRF781TradingBridge.Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue}
     {potentialBridge : NRRF783.RelativePotentialBridge.{u, v, w, z, l, g, p} S}
     {surface : NaturalSelectionTruth.{u, v, w, z, l, g, k} S}
     {Value : Type f} [AddCommGroup Value] [LinearOrder Value] [IsOrderedAddMonoid Value]

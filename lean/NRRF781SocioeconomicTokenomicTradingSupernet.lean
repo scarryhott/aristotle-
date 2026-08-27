@@ -15,7 +15,7 @@ halting/selection equality enters only through NRRF779's explicit operations and
 certificates.  This module adds no replacement halting model and no isolated selector.
 -/
 
-namespace NRRF781
+namespace NRRF781TradingBridge
 
 open NRRF764
 
@@ -214,8 +214,8 @@ theorem nrrf781_answer
     occ.assess_eq_completed_prices assessment,
     ⟨occ.stage.toLocalTradeWitness⟩⟩
 
-#print axioms NRRF781.nrrf781_answer
-#print axioms NRRF781.TradingOccurrence.tokenomic_closure
-#print axioms NRRF781.TradingOccurrence.assess_eq_completed_prices
+#print axioms NRRF781TradingBridge.nrrf781_answer
+#print axioms NRRF781TradingBridge.TradingOccurrence.tokenomic_closure
+#print axioms NRRF781TradingBridge.TradingOccurrence.assess_eq_completed_prices
 
-end NRRF781
+end NRRF781TradingBridge
