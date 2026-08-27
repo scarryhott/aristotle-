@@ -199,6 +199,11 @@ The available bridges make later layers explicit:
 - `lean/NRRF786ConstructiveNaturalSelectionTruthTradingBridge.lean` — choice-free connection of
   natural level-invariant selection and partial orbit truth to temporal trading; resource metrics
   assess rather than author the selector, and positive flow still requires a new closure class.
+- `lean/NRRF787CanonicalUniverseEquivalenceExistenceAdmissionTranslationalTruthPartialOperatorSubstrate.lean`
+  — kernel-only construction of the canonical quotient continuum after existence admission and a
+  supplied translational-truth equivalence, with canonical exact resolutions and unique descent of
+  every invariant partial substrate operator. It assumes neither Turing completeness nor a
+  physical universe.
 
 The broader NRRF618–633 sequence develops the observation-free relational foundation, originless translational order, existence/naturality, frame-conditional openness, and the unique admissible open relational definition. The later NRRF634–640 learning/maze/completion results are separately reported but are not present in this checkout. General sources not present here are reported as such rather than reconstructed or falsely re-audited. See [`docs/EXTERNAL_LEAN_REFERENCES.md`](docs/EXTERNAL_LEAN_REFERENCES.md) for the exact source-status ledger.
 

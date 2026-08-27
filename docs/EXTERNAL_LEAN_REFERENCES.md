@@ -35,6 +35,21 @@ AUDITED**. The downloaded tarball and exact source hashes are recorded in
 This result constrains neither the frozen Phase B/C native-translation outcome
 nor any whole-frame equality claim.
 
+## NRRF786: quantum-gravity tests on the loop sensor
+
+The project reports
+`NRRF786QuantumGravityTestsUnifiedOnLoopSensorWithoutClassical.lean`. Its reported interface makes
+loop-sensor tests invariant under common translation, identifies agreement across all finite
+tests with a ball–hair gauge class, presents sensor verdicts as partial readings within finite
+windows, and rules out a global classical assignment while retaining a unique truth reading on
+level-unified questions.
+
+Repository status: **REPORTED PROVED OUTSIDE CHECKOUT — NOT LOCALLY AUDITED**. The exact source was
+not found in this checkout, any fetched branch, GitHub code search under the repository owner, or
+the public-interface repository. The local NRRF787 module therefore supplies a general
+choice-free quotient/descent theorem and records how the reported sensor theory would instantiate
+it; it does not claim to import or rebuild NRRF786.
+
 ## Terminology
 
 IVI is expanded in project prose as **intangible verified information**.

@@ -76,6 +76,13 @@ outside the selector and enter only through temporal assessment. A naturally sel
 flow still requires potential movement beyond friction and a new returned-token/translational
 closure class. Every printed NRRF786 headline theorem audits to `propext` only.
 
+`NRRF787CanonicalUniverseEquivalenceExistenceAdmissionTranslationalTruthPartialOperatorSubstrate.lean`
+starts with admitted presentations and a proved translational-truth equivalence, constructs their
+canonical quotient continuum, descends substrate actions, and proves unique descent for every
+relative partial operator. Any resolution carrying explicit forward and return presentations is
+canonically equivalent to that continuum without choosing representatives. The file has no
+imports; its headline audit contains only `propext` and `Quot.sound`, never `Classical.choice`.
+
 Build all registered modules with the pinned toolchain:
 
 ```bash
