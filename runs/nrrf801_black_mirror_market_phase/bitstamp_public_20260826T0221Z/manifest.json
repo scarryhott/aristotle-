@@ -1,0 +1,46 @@
+{
+  "boundary": {
+    "action_selected": false,
+    "authenticated_fills": 0,
+    "authenticated_settled_pnl_usd": null,
+    "execution_authorized": false,
+    "formal_receipt_admissions": 0,
+    "orders_submitted": 0,
+    "settled_profit_claimed": false
+  },
+  "event_count": 12,
+  "events_file": "events.jsonl",
+  "events_sha256": "f1c3ad172bfde51eea4b47bfb51013e62c785b83719ebda52b46b313ca6f3d36",
+  "final_event_hash": "b7b22250c41c90cc548633d5d257d17218203b16a15a0105a8c931f822215977",
+  "genesis_hash": "9c0d9b2a617ae5e8684d9f015eae888482db1f5f5df0ad5f5c9dfbe745fde95b",
+  "phase_rule": {
+    "above_unit": 1,
+    "at_unit": 0,
+    "below_unit": 3,
+    "excluded_inputs": [
+      "exit_global_cost_equal_ratio",
+      "exit_completed_ratio",
+      "numeric_sign",
+      "round_index"
+    ],
+    "modulus": 4,
+    "source": "exit_local_price_ratio from the NRRF780 zero-fee local price presentation"
+  },
+  "program": "nrrf801_black_mirror_market_phase.py",
+  "program_sha256": "ccf0bfe02a2abea1a57cb5116c7d2133360424db33fd4b2d8d676b594766cfef",
+  "run_kind": "IMMUTABLE_BLACK_MIRROR_MARKET_PHASE_OVERLAY",
+  "schema_version": "nrrf801.black_mirror_market_phase.v1",
+  "source_binding": {
+    "event_count": 12,
+    "events_sha256": "8d10f76cac0564fc0a830ab2fce0bd8bbcf198a158e9de20921c5f1a2d0fa0e2",
+    "final_event_hash": "3a295c8299c831c7f2be1a61cd06e17b3891e132e166cbe9682c333fad50fbae",
+    "manifest_sha256": "126b056140589f6982dc59e133847c6eda3531a8d5bd86a24f06371dd2be8ba5",
+    "program": "nrrf780_local_price_global_cost_equality.py",
+    "program_sha256": "f83c76c0ac0ee6d6a0d889e142ce4ab46f19eb5b86baed7737a6cf5d84f11898",
+    "run_kind": "IMMUTABLE_LOCAL_PRICE_GLOBAL_COST_EQUALITY_OVERLAY",
+    "schema_version": "nrrf780.local_price_global_cost_equality.v1",
+    "summary_sha256": "6e7a10feaa81257bc35b95a0ec45eb71a4804a365ecf03b9b3ae7240ec49e635"
+  },
+  "summary_file": "summary.json",
+  "summary_sha256": "f15e31a3180b1f0738274b6f7358edd57d74803af673e30fdace1e0ea2e043b2"
+}

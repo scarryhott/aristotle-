@@ -139,6 +139,10 @@ python3 experiments/nrrf768_relative_natural_form_selector.py verify \
 python3 experiments/nrrf780_local_price_global_cost_equality.py verify \
   --source-run runs/nrrf767_live_paper_trading_bot/bitstamp_public_20260826T0221Z \
   --overlay-dir runs/nrrf780_local_price_global_cost_equality/bitstamp_public_20260826T0221Z
+python3 experiments/nrrf801_black_mirror_market_phase.py verify \
+  --source-overlay runs/nrrf780_local_price_global_cost_equality/bitstamp_public_20260826T0221Z \
+  --source-run runs/nrrf767_live_paper_trading_bot/bitstamp_public_20260826T0221Z \
+  --overlay-dir runs/nrrf801_black_mirror_market_phase/bitstamp_public_20260826T0221Z
 python3 -m unittest discover -s tests -v
 lake build
 ```
@@ -211,6 +215,13 @@ The available bridges make later layers explicit:
   temporal trade to the unique entry-normalized member of its price-translation orbit. The natural
   form preserves selected-fill evidence, accumulated hair, relative potential, net P&L, and profit,
   and all translational truths recover the same orbit relation.
+- `lean/NRRF800HandedLifeBallReturnHairPotentialGateFourSheafOneSheafTemporalClosure.lean` and
+  `lean/NRRF801BlackMirrorRelativeTranslationOneToOneClosureUnitaryCurvature.lean` — authenticated
+  recovered sources for the four-phase ball, one-sheaf hair, reciprocal returns, black mirror, and
+  one-to-one continuity classification; both are active build roots.
+- `lean/NRRFTradingBlackMirrorPhaseBridge.lean` — keeps the receipt and phase as distinct layers,
+  proves reciprocal long/short phase readings are exactly the NRRF801 black mirror, and proves a
+  receipt alone cannot select the phase or make an unobserved continuum admissible.
 - `external/aristotle/068068ee-b720-4df1-a203-571e0928ec3d/` — authenticated, hash-manifested
   Aristotle sources and notes for the independently authored NRRF780–790 and NRRF795–798 task
   deltas. The provider-pinned Lean 4.28 snapshot is preserved without making the unchanged archive

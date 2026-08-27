@@ -285,3 +285,18 @@ numeric signs are unchanged and negative. This is expected from the proved facto
 failure to apply the new input. No order, authenticated fill, formal receipt admission, settlement,
 or profit is claimed. See
 [`LOCAL_PRICE_GLOBAL_COST_EQUALITY_NRRF780_NOTES.md`](LOCAL_PRICE_GLOBAL_COST_EQUALITY_NRRF780_NOTES.md).
+
+## NRRF801 black-mirror market-phase audit
+
+The NRRF801 overlay consumes the already verified NRRF780 zero-fee local-price presentation. It
+uses only whether `exit_local_price_ratio` is above, equal to, or below the unit relation to read
+phase `1`, `0`, or `3 = -1 (mod 4)`. Cost completion, completed return, P&L sign, and round number
+are excluded from this derivation. PLUS/MINUS readings close as a black-mirror pair only when the
+MINUS phase is the additive inverse of the PLUS phase.
+
+On the locked 12-round Bitstamp run there are 36 reciprocal pairs: 5 `MIRROR_COHERENT`, 28
+`CONTRADICTED`, and 3 `OPEN`. Only phases 1 and 3 are observed. The data therefore does not exhibit
+the whole four-phase ball, does not supply a total one-to-one continuity, and admits no NRRF801
+prediction or trade. The result is a measured interface gap, not a manufactured negative or a
+profit claim. See
+[`NRRF801_TRADING_BLACK_MIRROR_REINTEGRATION.md`](NRRF801_TRADING_BLACK_MIRROR_REINTEGRATION.md).
