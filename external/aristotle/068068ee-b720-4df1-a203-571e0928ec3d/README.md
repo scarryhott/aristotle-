@@ -8,8 +8,9 @@ their pinned Lean 4.28/mathlib environment, while the repository continues to bu
 Lean 4.33 base. `manifest.json` binds each independently authored category to its Aristotle task ID,
 and `SHA256SUMS` binds the retained source and note bytes.
 
-The active incremental integration is
-`lean/NRRFTradingDeltaDerivedCostTranslationalClosure.lean`. It implements
+The active incremental integrations are
+`lean/NRRFTradingDeltaDerivedCostTranslationalClosure.lean` and
+`lean/NRRFTradingFullClosureNaturalFormIntegration.lean`. They implement
 
 ```text
 B_(n+1) = B_n ∪_(verified interface) Δ_n
@@ -28,4 +29,5 @@ quote relation
 
 The cost never selects the trade. It is computed only after the relational fill has closed, and a
 common translation of all local price levels changes neither the derived cost nor the relative
-potential.
+potential. The second bridge derives the unique entry-normalized natural form of that same orbit;
+it adds no representation and leaves the empirical profit predicate downstream.

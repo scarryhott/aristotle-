@@ -207,6 +207,10 @@ The available bridges make later layers explicit:
 - `lean/NRRFTradingDeltaDerivedCostTranslationalClosure.lean` — the active incremental bridge from
   relational quote selection to a filled local price ball, derived 0-hair cost, invariant relative
   potential, and temporal P&L. Cost is computed after selection and cannot author the selector.
+- `lean/NRRFTradingFullClosureNaturalFormIntegration.lean` — representation-free completion of a
+  temporal trade to the unique entry-normalized member of its price-translation orbit. The natural
+  form preserves selected-fill evidence, accumulated hair, relative potential, net P&L, and profit,
+  and all translational truths recover the same orbit relation.
 - `external/aristotle/068068ee-b720-4df1-a203-571e0928ec3d/` — authenticated, hash-manifested
   Aristotle sources and notes for the independently authored NRRF780–790 and NRRF795–798 task
   deltas. The provider-pinned Lean 4.28 snapshot is preserved without making the unchanged archive

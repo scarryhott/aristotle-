@@ -21,7 +21,8 @@ roots = [
   "NRRF783RelativePotentialClassicalFlowSupernetBridge",
   "NRRF786ConstructiveNaturalSelectionTruthTradingBridge",
   "NRRF787CanonicalUniverseEquivalenceExistenceAdmissionTranslationalTruthPartialOperatorSubstrate",
-  "NRRFTradingDeltaDerivedCostTranslationalClosure"
+  "NRRFTradingDeltaDerivedCostTranslationalClosure",
+  "NRRFTradingFullClosureNaturalFormIntegration"
 ]
 
 [[require]]

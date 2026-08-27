@@ -76,6 +76,14 @@ leave both that hair and the entry/exit relative potential unchanged; and profit
 relative-potential movement exceeding accumulated derived hair. The authenticated provider sources
 remain independently hashed under `external/aristotle/068068ee-b720-4df1-a203-571e0928ec3d/`.
 
+`NRRFTradingFullClosureNaturalFormIntegration.lean` continues that chain through the retained
+NRRF795/798 interfaces without importing their older provider toolchain. A temporal trade's natural
+form is its unique common-price translation with entry mark zero. Equal natural forms are proved
+equivalent to membership in one translation orbit; every derivation that stays in the orbit and
+normalizes the entry is forced to return that form. Accumulated derived hair, relative potential,
+net P&L and the profit predicate descend unchanged, while all translational predicates together
+recover the orbit itself.
+
 `NRRF786ConstructiveNaturalSelectionTruthTradingBridge.lean` adds the choice-free downstream
 surface of the reported constructive NRRF783–785 results. Selection, partial orbit truth, returned
 token, and relative potential are invariant under supplied level shifts; resource metrics remain

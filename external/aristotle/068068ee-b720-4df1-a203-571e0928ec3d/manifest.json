@@ -129,7 +129,10 @@
     "active_lake_roots": false
   },
   "integration": {
-    "active_module": "NRRFTradingDeltaDerivedCostTranslationalClosure",
+    "active_modules": [
+      "NRRFTradingDeltaDerivedCostTranslationalClosure",
+      "NRRFTradingFullClosureNaturalFormIntegration"
+    ],
     "policy": "B_(n+1) = B_n union_verified_interface Delta_n",
     "categories_remain_independent": [
       "relational fill selection",
