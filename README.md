@@ -192,6 +192,10 @@ The available bridges make later layers explicit:
   network, reported live relative selector/halting form, substrate interaction, local price,
   global cost equality, token reading, continual witness, and completed assessment through the
   commuting equation `tokenRead (complete p) = closureReturn (priceRead p)`.
+- `lean/NRRF783RelativePotentialClassicalFlowSupernetBridge.lean` — conditional integration of
+  the reported classical-flow and translational-closure results: one token-preserving occurrence
+  returns negative friction, while temporal profit requires invariant potential movement beyond
+  cost and therefore a new returned token class.
 
 The broader NRRF618–633 sequence develops the observation-free relational foundation, originless translational order, existence/naturality, frame-conditional openness, and the unique admissible open relational definition. The later NRRF634–640 learning/maze/completion results are separately reported but are not present in this checkout. General sources not present here are reported as such rather than reconstructed or falsely re-audited. See [`docs/EXTERNAL_LEAN_REFERENCES.md`](docs/EXTERNAL_LEAN_REFERENCES.md) for the exact source-status ledger.
 

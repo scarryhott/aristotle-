@@ -208,6 +208,25 @@ precise operations and three certificates required from those files and proves
 their downstream connection to NRRF768/766/767, but it does not attest or
 reconstruct the missing proofs. Exact import and instantiation remain required.
 
+## Classical NRRF780 and NRRF782: value flow and translational closure orbits
+
+The project conversation reports two additional modules:
+
+- `NRRF780ClassicalTradingSystemLocalPricesInfCostsMultilayerValueFlow.lean`;
+- `NRRF782TranslationalTruthUniqueIsomorphicSetsSizesPotentialsRelativeAbsolutes.lean`.
+
+The first reportedly derives the classical six-layer transaction evaluation, negative friction for
+an exact round trip, and temporal P&L as price movement minus costs. The second reportedly
+classifies readings modulo global shifts, identifies closures with complete relative-potential
+fields, and proves closure-size and potential invariants.
+
+Neither exact source nor its dependency chain is present in this checkout or any fetched branch of
+this repository. Their status is **REPORTED PROVED OUTSIDE CHECKOUT — NOT LOCALLY AUDITED**.
+NRRF783 exposes the exact two equivalences and classical flow equation needed to connect these
+reports to NRRF781, but does not instantiate them. The earlier local price/global-cost adapter was
+moved to namespace `NRRF780Local` to avoid a future collision with the reported classical module's
+`NRRF780.nrrf780_answer`.
+
 ## Required runtime bridge
 
 Before the external results become local formal evidence, this repository

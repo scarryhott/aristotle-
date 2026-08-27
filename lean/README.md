@@ -61,6 +61,14 @@ occurrence. Its joining law is
 interaction derives equality of the entry and exit token readings. Authentication and positivity
 remain evidence aspects rather than definitions of closure.
 
+`NRRF783RelativePotentialClassicalFlowSupernetBridge.lean` adds the exact conditional surfaces
+needed from the externally reported classical NRRF780 and translational-closure NRRF782 modules.
+Inside one token-preserving occurrence it derives zero relative-potential movement and net flow
+equal to negative friction. Across closure classes in time, positive flow is equivalent to
+relative-potential movement exceeding cost and necessarily changes the returned token class. The
+older local price/cost adapter now uses namespace `NRRF780Local`, leaving `NRRF780` available for
+the reported classical module.
+
 Build all registered modules with the pinned toolchain:
 
 ```bash

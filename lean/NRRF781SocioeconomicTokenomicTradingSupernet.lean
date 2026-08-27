@@ -29,7 +29,7 @@ The law `price_token_translation` makes those two readings one returned form. -/
 structure Supernet (N : Network.{u, v}) (R : Type w)
     (LocalPrice : Type l) (GlobalValue : Type g) where
   trading : TradingInterface.{w, z, u, v} N R
-  pricing : NRRF780.PriceCostInterface LocalPrice GlobalValue
+  pricing : NRRF780Local.PriceCostInterface LocalPrice GlobalValue
   priceRead : LocalPrice → N.Reading
   tokenRead : GlobalValue → ZeroInfClosure R
   price_token_translation : ∀ price,
@@ -45,7 +45,7 @@ variable {N : Network.{u, v}} {R : Type w}
 token reading. -/
 theorem tokenRead_eq_of_global_equal
     (S : Supernet.{u, v, w, z, l, g} N R LocalPrice GlobalValue)
-    (P Q : NRRF780.LocalPriceGlobalCost S.pricing)
+    (P Q : NRRF780Local.LocalPriceGlobalCost S.pricing)
     (sameGlobal : P.globalCostEqual = Q.globalCostEqual) :
     S.tokenRead P.globalCostEqual = S.tokenRead Q.globalCostEqual :=
   congrArg S.tokenRead sameGlobal
@@ -67,7 +67,7 @@ structure TradingOccurrence
     (selector : NRRF768.NaturalFormSelector (NRRF627.flipFrame N.Reading))
     (receipt : bridge.live.runtime.Receipt) where
   stage : NRRF779.ReintegratedTradingStage ops cert bridge selector receipt
-  transaction : NRRF780.CompletedTransaction S.pricing
+  transaction : NRRF780Local.CompletedTransaction S.pricing
   entry_is_source :
     S.priceRead transaction.entry.localPrice = NRRF766.sourceReading stage.problem
   exit_is_target :
@@ -156,13 +156,13 @@ def startHistory
 /-- Outcome assessment acts on the completed global forms already present in this occurrence. -/
 def assess
     (occ : TradingOccurrence S ops cert bridge selector receipt)
-    (assessment : NRRF780.GlobalAssessment GlobalValue) : assessment.Outcome :=
+    (assessment : NRRF780Local.GlobalAssessment GlobalValue) : assessment.Outcome :=
   occ.transaction.assess assessment
 
 /-- Assessment therefore cannot inspect or privilege an isolated local price presentation. -/
 theorem assess_eq_completed_prices
     (occ : TradingOccurrence S ops cert bridge selector receipt)
-    (assessment : NRRF780.GlobalAssessment GlobalValue) :
+    (assessment : NRRF780Local.GlobalAssessment GlobalValue) :
     occ.assess assessment =
       assessment.compare
         (S.pricing.complete occ.transaction.entry.localPrice)
@@ -198,7 +198,7 @@ theorem nrrf781_answer
     {selector : NRRF768.NaturalFormSelector (NRRF627.flipFrame N.Reading)}
     {receipt : bridge.live.runtime.Receipt}
     (occ : TradingOccurrence S ops cert bridge selector receipt)
-    (assessment : NRRF780.GlobalAssessment.{g, o} GlobalValue) :
+    (assessment : NRRF780Local.GlobalAssessment.{g, o} GlobalValue) :
     occ.stage.event.filled = ops.closureSel occ.stage.event.nonzeroDatum ∧
     ops.subHalt occ.stage.event.nonzeroDatum ∧
     S.tokenRead occ.transaction.entry.globalCostEqual =

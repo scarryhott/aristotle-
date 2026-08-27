@@ -15,7 +15,7 @@ result requires new local data, a different completion, or a different interacti
 factorization.
 -/
 
-namespace NRRF780
+namespace NRRF780Local
 
 universe u v w
 
@@ -130,8 +130,8 @@ theorem nrrf780_answer {Local : Type u} {Global : Type v}
     T.assess A = A.compare (I.complete T.entry.localPrice) (I.complete T.exit.localPrice) :=
   ⟨T.entry.completion, T.exit.completion, T.assess_eq_completed_locals A⟩
 
-#print axioms NRRF780.nrrf780_answer
-#print axioms NRRF780.complete_by_derived_global_equal
-#print axioms NRRF780.CompletedTransaction.assessment_invariant_under_local_reexpression
+#print axioms NRRF780Local.nrrf780_answer
+#print axioms NRRF780Local.complete_by_derived_global_equal
+#print axioms NRRF780Local.CompletedTransaction.assessment_invariant_under_local_reexpression
 
-end NRRF780
+end NRRF780Local
