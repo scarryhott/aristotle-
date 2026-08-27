@@ -363,3 +363,18 @@ classes per valid round. No completed return is positive. The best is BTCâ†’USDâ
 `-49.93876056045305905061517497` bps. All 12 commands remain `OPEN`, all numerical closure
 identities replay, and there are zero orders or authenticated fills. See
 [`RELATIVISTIC_SIGNAL_OPEN_COMMAND_CLOSURE.md`](RELATIVISTIC_SIGNAL_OPEN_COMMAND_CLOSURE.md).
+
+## Translation-first life reactor and global hair zero
+
+NRRF806 corrects the ordering still present in NRRF804/805. Internal/external roles are not input
+labels; they are derived after translational truth. Fee and slippage are local hair. Global hair is
+the residual of the entire completed equation, and its zero is the executor's admission criterion.
+The reactor is the local ball of every finite `ballReturn`/`hairReturn` continuation, not a static
+phase tag or only the final maximizing candidate.
+
+Across the 11 identified book rounds, 132 rooted life reactors evaluate 365,203 observed depth
+reactions and remain open beyond those finite prefixes. All 143 selected natural-form presentations
+have zero global-hair residual within tolerance and are admitted as completed translations. None
+has positive completed potential, so all 12 exchange commands remain open and no order or fill is
+produced. See
+[`TRANSLATION_FIRST_LIFE_LOCAL_BALL_INF_GLOBAL_HAIR_ZERO.md`](TRANSLATION_FIRST_LIFE_LOCAL_BALL_INF_GLOBAL_HAIR_ZERO.md).

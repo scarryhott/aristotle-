@@ -1,0 +1,24 @@
+{
+  "all_global_hair_zero": true,
+  "authenticated_fills": 0,
+  "maximum_absolute_global_hair_zero": "0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000456",
+  "observed_local_ball_reactions": 365203,
+  "open_commands": 12,
+  "open_infinity_continuations": 132,
+  "orders_submitted": 0,
+  "positive_completed_presentations": 0,
+  "rooted_life_reactors": 132,
+  "rounds": 12,
+  "schema_version": "nrrf806.translation_first_life_reactor.v1",
+  "selected_natural_form_presentations": 143,
+  "settled_profit_claimed": false,
+  "translation_state": {
+    "authenticated_fills": 0,
+    "authority_presentation": "UNPRESENTED",
+    "internal_external_labels_prior_to_truth": false,
+    "order_operation_present": false,
+    "orders_submitted": 0,
+    "settled_profit_claimed": false
+  },
+  "zero_hair_executor_admissions": 143
+}

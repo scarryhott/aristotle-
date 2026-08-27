@@ -1,0 +1,37 @@
+{
+  "equation": "global_hair_zero = completed_return - (action_potential_return - local_hair_return)",
+  "event_count": 12,
+  "events_file": "events.jsonl",
+  "events_sha256": "ad02106f11297614ff4f4f1a60cfc4e55ceff1830b1f499d3c0d28ebd9d9c80d",
+  "final_event_hash": "54d03288a7be2f8116729c4a8192b840e6b16f702a9488e25f879ac394fb5a4d",
+  "genesis_hash": "4c4b21c7b491100babd04d30aa5678e8a963e5f4c70cfe0665e9fc2ec007874f",
+  "program": "nrrf806_translation_first_life_reactor.py",
+  "program_sha256": "a1832b04472f81d44a7466dbba41377c077e7accd9ef32e9cc91b7e577aceed1",
+  "reactor": {
+    "action": "NRRF800.ballReturn",
+    "being": "NRRF800.Life",
+    "infinity": "continuation remains open beyond every finite observed prefix",
+    "local_ball": "all finite action/potential continuations",
+    "potential": "NRRF800.hairReturn"
+  },
+  "run_kind": "IMMUTABLE_TRANSLATION_FIRST_LIFE_REACTOR",
+  "schema_version": "nrrf806.translation_first_life_reactor.v1",
+  "source_binding": {
+    "observation_events_sha256": "0669ec688688a4810ee61b4f6b18b5dee720eaa0e1a6ac5f140cd51128e4ac81",
+    "observation_final_event_hash": "50755b3a49a0e40f33780792fd8c92456f298ca8b4d9eb689297e0d4e529a373",
+    "observation_manifest_sha256": "32b86b4872a7fee4805fc696a42cdd01e3a716de0d003af018010d864b737256",
+    "relative_events_sha256": "2164a66df1217c44f13905ffb605953e5a31c81777b31397eaa565eb20f0dea5",
+    "relative_final_event_hash": "138632d1f844d2de6559bba00fa606daea07f86a13ad778482d3a96d07dd6463",
+    "relative_manifest_sha256": "033e3968dca80918fb5e761cbf5f019fb43b6a61c84553508bfe8af2ed3fbdff"
+  },
+  "summary_file": "summary.json",
+  "summary_sha256": "32ca5e347e2b7c3993aeff52659d47ff965c199e810ea4a5139c8292c9479a7e",
+  "translation_state": {
+    "authenticated_fills": 0,
+    "authority_presentation": "UNPRESENTED",
+    "internal_external_labels_prior_to_truth": false,
+    "order_operation_present": false,
+    "orders_submitted": 0,
+    "settled_profit_claimed": false
+  }
+}

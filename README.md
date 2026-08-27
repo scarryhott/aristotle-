@@ -251,6 +251,12 @@ The available bridges make later layers explicit:
 - `experiments/nrrf805_relativistic_signal_open_command.py` — derives the asset graph, every simple
   cycle, and maximizing depth partitions from the locked books themselves; it uses neither fixed
   route labels, fixed notionals, nor the supplied four-phase price map.
+- `lean/NRRFTradingTranslationFirstLifeLocalBallInfGlobalHairZeroExecutor.lean` — defines
+  internal/external roles only after translational truth, realizes the local ball as the unbounded
+  action/potential reactor, and proves global-hair-zero admission is closure rather than profit.
+- `experiments/nrrf806_translation_first_life_reactor.py` — replays all observed depth reactions,
+  renames friction as local hair, uses the full-equation residual as global hair, and leaves trade
+  commands open after zero-hair admission when completed potential is nonpositive.
 - `external/aristotle/068068ee-b720-4df1-a203-571e0928ec3d/` — authenticated, hash-manifested
   Aristotle sources and notes for the independently authored NRRF780–790 and NRRF795–798 task
   deltas. The provider-pinned Lean 4.28 snapshot is preserved without making the unchanged archive
