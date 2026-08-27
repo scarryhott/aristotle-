@@ -314,3 +314,13 @@ All 36 source results are preserved: 5 pairs are in the `SAME_CLOSURE` class, 28
 `ballReturn` and `hairReturn` is not applied to the market, because those two market returns have
 not been observed or supplied. The generic closure changes the organization, not the empirical
 outcome, and still admits no prediction, order, fill, settlement, or profit.
+
+## Throughout-selected natural forms
+
+The NRRF803 correction is formal rather than a new market-data overlay. A natural equality may be
+selected at every round; it need not be an externally fixed object. The locked experiment remains
+classified by the finest return-generated equality. This matters because a coarser natural form
+can identify extra states, so changing forms after observing a result could otherwise manufacture
+apparent closure. The trading bridge admits a selected form as an exact replacement only with a
+faithfulness proof back to the canonical NRRF802 relation. Consequently the measured 5 / 28 / 3
+classification and the no-execution boundary are unchanged.

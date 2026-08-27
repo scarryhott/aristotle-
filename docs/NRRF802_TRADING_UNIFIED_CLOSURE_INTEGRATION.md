@@ -51,3 +51,17 @@ or contradictory market observations. In particular, NRRF802's theorem that abst
 to one point under both `ballReturn` and `hairReturn` cannot be applied until both corresponding
 market returns are supplied and tested. The current system admits no such witness and makes no
 prediction, execution, settlement, or profit claim.
+
+## Selection throughout
+
+NRRF803 does not force the equality used to read trajectory and basis to be externally fixed. The
+trading continuation models it as `FormSchedule.form n x`, chosen at round `n` from the current
+local life presentation `x`. Every stage remains natural for `blackMirror`, and the constant
+schedule recovers the fixed NRRF803 case.
+
+Naturality is intentionally not confused with exactness. Since `returnSetoid blackMirror` is the
+finest natural equality, a selected coarser equality can collapse additional presentations. The
+bridge therefore requires `FaithfulAt` before using a selected equality as the reciprocal closure;
+`selected_iff_canonical` then proves literal equivalence with the NRRF802 relation. Without that
+evidence, the selected form is a perspective only and cannot change a source state, authorize an
+order, or rewrite receipt-derived P&L.

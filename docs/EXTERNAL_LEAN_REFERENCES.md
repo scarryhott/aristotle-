@@ -296,6 +296,19 @@ surface; no definition or theorem statement changed. The active Lean 4.33 source
 `3dd1c3ff6f4db74ade453fa10916ed9c1e6843f394146449e11725c28cdf879f`. NRRF802 and the refactored
 trading bridge build with no `sorry`.
 
+NRRF803 was recovered from completed task
+`b8793528-28d5-43ca-9fe5-82139a649e6e`. Its provider-source SHA-256 is
+`e8c5dfc11cb0b32ef778891a868a5fb996778b9c3a9c5a4552b6675931011d66`, and its note SHA-256 is
+`b25b90f509e4e926ebda1a08322b93f052c9dda4fde0e9c910ced4e5138ed54f`. For the local Lean 4.33
+build, the broad `import Mathlib` was replaced by the already sufficient NRRF802 import; the
+`traj_factor` proof was made explicit across NRRF802's named quotient type, and the sole `omega`
+step was replaced by the direct natural-number contradiction. No definition or theorem statement
+changed. The active source SHA-256 is
+`c0493c83be9ae2a5efa83b011141c3edc024bee48b55981a058dd3cc8b1f704f` and it builds without
+`sorry`. The word “external” in the provider note records how the first module was read; it is not
+a proved necessity, and the follow-on integration treats a fixed form as only the constant case of
+selection throughout.
+
 ## Required runtime bridge
 
 Before the external results become local formal evidence, this repository

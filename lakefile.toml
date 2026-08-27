@@ -24,10 +24,12 @@ roots = [
   "NRRF800HandedLifeBallReturnHairPotentialGateFourSheafOneSheafTemporalClosure",
   "NRRF801BlackMirrorRelativeTranslationOneToOneClosureUnitaryCurvature",
   "NRRF802UnifyClosure",
+  "NRRF803TrajectoryBasisRelativeExternalNaturalEquality",
   "NRRFTradingDeltaDerivedCostTranslationalClosure",
   "NRRFTradingFullClosureNaturalFormIntegration",
   "NRRFTradingLiveObservationReceiptDerivation",
-  "NRRFTradingBlackMirrorPhaseBridge"
+  "NRRFTradingBlackMirrorPhaseBridge",
+  "NRRFTradingNaturalFormSelectionThroughoutBridge"
 ]
 
 [[require]]

@@ -231,6 +231,15 @@ The available bridges make later layers explicit:
   property, identifies the earlier hair/hand/phase closures as its instances, and proves commuting
   two-return closure is order-independent. The trading bridge now expresses reciprocal coherence
   as opposite orientation plus equality in `NRRF802.Closure blackMirror`.
+- `lean/NRRF803TrajectoryBasisRelativeExternalNaturalEquality.lean` — proves trajectory and basis
+  are relative to a selected natural equality and that every such equality factors from the
+  return-generated closure. Its original “external” reading is retained as provenance, not as a
+  restriction: the follow-on integration permits the selected form to vary throughout.
+- `lean/NRRFTradingNaturalFormSelectionThroughoutBridge.lean` — lets the phase interface select a
+  natural equality at each round from its current local presentation, recovers fixed equality as
+  the constant case, and requires faithfulness back to the finest return closure before a selected
+  perspective may count as exact reciprocal closure. Selection cannot alter receipt-derived cost
+  or P&L.
 - `external/aristotle/068068ee-b720-4df1-a203-571e0928ec3d/` — authenticated, hash-manifested
   Aristotle sources and notes for the independently authored NRRF780–790 and NRRF795–798 task
   deltas. The provider-pinned Lean 4.28 snapshot is preserved without making the unchanged archive
