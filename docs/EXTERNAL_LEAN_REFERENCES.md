@@ -227,6 +227,27 @@ reports to NRRF781, but does not instantiate them. The earlier local price/globa
 moved to namespace `NRRF780Local` to avoid a future collision with the reported classical module's
 `NRRF780.nrrf780_answer`.
 
+## Constructive NRRF783–785: forms, natural selection, and contextual orbit truth
+
+The project conversation reports four constructive-form modules under NRRF783, together with
+`NRRF784ConsciousSelectiveNaturalityLevelUnificationNotResourceMetrics.lean` and
+`NRRF785QuantumClassicalFrameworksUnifiedOnTranslationalTruth.lean`. Their reported headline
+theorems construct forms from explicit sections/idempotents, characterize translational closures
+without choice, factor natural selectors through level orbits, separate resource minima from
+naturality, and retain unique partial orbit truth in both classical and contextual frameworks.
+
+The exact Lean sources and their dependency chain are absent from this checkout and the connected
+GitHub code index, so their status here is **REPORTED PROVED OUTSIDE CHECKOUT — NOT LOCALLY
+AUDITED**. The connected `scarryhott/uniface` repository does contain finite runtime integrations:
+
+- [`CONSTRUCTIVE_SUPERNET_NRRF783.md`](https://github.com/scarryhott/uniface/blob/main/CONSTRUCTIVE_SUPERNET_NRRF783.md);
+- [`TRANSLATIONAL_FRAMEWORK_SUPERNET_NRRF784_NRRF785.md`](https://github.com/scarryhott/uniface/blob/main/TRANSLATIONAL_FRAMEWORK_SUPERNET_NRRF784_NRRF785.md).
+
+Those runtime documents explicitly state that finite witness checks do not replace the Lean proof
+or axiom audit. NRRF786 is the local conditional trading adapter; its headline proofs are
+choice-free, but exact import remains required before it is labelled an instance of the reported
+modules.
+
 ## Required runtime bridge
 
 Before the external results become local formal evidence, this repository

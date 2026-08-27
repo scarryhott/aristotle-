@@ -69,6 +69,13 @@ relative-potential movement exceeding cost and necessarily changes the returned 
 older local price/cost adapter now uses namespace `NRRF780Local`, leaving `NRRF780` available for
 the reported classical module.
 
+`NRRF786ConstructiveNaturalSelectionTruthTradingBridge.lean` adds the choice-free downstream
+surface of the reported constructive NRRF783–785 results. Selection, partial orbit truth, returned
+token, and relative potential are invariant under supplied level shifts; resource metrics remain
+outside the selector and enter only through temporal assessment. A naturally selected profitable
+flow still requires potential movement beyond friction and a new returned-token/translational
+closure class. Every printed NRRF786 headline theorem audits to `propext` only.
+
 Build all registered modules with the pinned toolchain:
 
 ```bash

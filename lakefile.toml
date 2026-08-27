@@ -18,7 +18,8 @@ roots = [
   "NRRF779ReportedSelectorTradingReintegration",
   "NRRF780LocalPriceGlobalCostEquality",
   "NRRF781SocioeconomicTokenomicTradingSupernet",
-  "NRRF783RelativePotentialClassicalFlowSupernetBridge"
+  "NRRF783RelativePotentialClassicalFlowSupernetBridge",
+  "NRRF786ConstructiveNaturalSelectionTruthTradingBridge"
 ]
 
 [[require]]
