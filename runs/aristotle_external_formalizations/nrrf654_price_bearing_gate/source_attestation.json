@@ -1,0 +1,9 @@
+{
+  "stage": "external_source_environment_attestation",
+  "status": "source_bytes_verified_not_built",
+  "artifact_checks": {"result_tar_sha256": "677f01ef2f7db7cf70b87406d0201ee2eff562f707d2f98af91a96d49dde7a43", "regular_file_count": 3064, "inventory_sha256": "d7f0dca3ba336174928e518d596505803b8d484a5753d41872cc4d08d24cf8c3", "selected_hashes_match": true, "external_lakefile_sha256": "cf14e4026a5829d7ed296af8c082140c3243703d4e496009f98aa0ababe5335c"},
+  "artifact_custody": {"retrieval_kind": "authenticated_aristotle_download", "archive_committed": false, "redistribution_status": "not_assumed"},
+  "proof_environment": {"external_mathlib_revision": "v4.28.0", "complete_import_closure": "OPEN"},
+  "local_formal_checks": {"lake_build": "NOT_RUN", "sorry_audit": "NOT_RUN", "axiom_audit": "NOT_RUN"},
+  "non_implications": ["not_a_main_lake_build_root", "not_a_local_machine_checked_result", "not_a_real_market_claim", "not_a_phase_c2_input"]
+}

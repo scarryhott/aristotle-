@@ -1,0 +1,23 @@
+{
+  "stage": "external_formalization_intake",
+  "status": "source_attested_external_not_built",
+  "sdk": {"package": "aristotlelib", "version": "2.1.0"},
+  "project_id": "068068ee-b720-4df1-a203-571e0928ec3d",
+  "task_id": "41f7db18-bab8-4b48-96a7-731b60d2d3ce",
+  "task_status": "COMPLETE",
+  "artifact": {
+    "result_tar_sha256": "4083e862ce710a885738315be8894a44cecf8fcf689bdab193ea6c46bc8b0d1a",
+    "lean_source": "NRRF650ReunifiedOriginlessTranslationPerspectivalReadings.lean",
+    "lean_source_sha256": "e6f2b310dc2000a1be133a56b7697b5f4e0770129a4ad12afe3cad02f15d8a0d",
+    "notes": "REUNIFIED_ORIGINLESS_TRANSLATION_NRRF650_NOTES.md",
+    "notes_sha256": "bbd3258300888caf9a17f27548b5def68d58f4840b7f51911618ba8cf47a041e"
+  },
+  "reported_scope": [
+    "originless translation with inverse perspectival readings",
+    "inverse-limit-style natural choice over realization threads",
+    "relative-unitary return with nonzero lifted residue",
+    "contextual/operational Turing-topos round-trip asymmetry",
+    "slearn triangle return square"
+  ],
+  "claim_boundary": "This is external reported formalization evidence only. It does not identify the model with physical systems, Grothendieck topoi, computability theory, or the repository's native translation experiment."
+}

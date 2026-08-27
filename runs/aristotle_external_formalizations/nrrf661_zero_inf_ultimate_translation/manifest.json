@@ -1,0 +1,18 @@
+{
+  "stage": "external_formalization_intake",
+  "status": "source_attested_external_not_built",
+  "sdk": {"package": "aristotlelib", "version": "2.1.0"},
+  "project_id": "068068ee-b720-4df1-a203-571e0928ec3d",
+  "task_id": "1c146319-d478-4d68-a879-feb083903125",
+  "task_status": "COMPLETE",
+  "artifact": {
+    "archive_kind": "authenticated_current_project_snapshot_after_completed_task",
+    "result_tar_sha256": "4c513062aff8cdaa4f57cdd39f0e154bc2631a9d77948a94e4f51487b1c93652",
+    "lean_source": "NRRF661ZeroInfClosureUltimateTranslationUnifiedTopologyNaturalChoice.lean",
+    "lean_source_sha256": "f5fbe456cd902cfaad9358dd0e1aed6aaf85e2597c101818c7c1a938002f120f",
+    "notes": "ZEROINF_ULTIMATE_TRANSLATION_UNIFIED_TOPOLOGY_NRRF661_NOTES.md",
+    "notes_sha256": "5588ce1049146c13bac3764bf628b5e3f70e1088cad8466ab73f7645a0e5f5c2",
+    "external_lakefile_sha256": "82e0a565e05a9eb31ff5883736033c8ed3328a56f126a3fac34e9edaa064628f"
+  },
+  "claim_boundary": "NRRF661 is an external source-attested formalization of quotienting a reflexive, symmetric, transitive contact relation and the universal factorization of contact-respecting maps through that quotient. It does not identify 0 and infinity as points, derive which contact relation is warranted for a frontier axiom-geometry pair, establish arbitrary language independence, or establish Aristotle Phase-C2 truth completion."
+}

@@ -1,0 +1,31 @@
+{
+  "protocol": "docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md",
+  "stage": "phase_c2_assembled_completion_recoverability_only",
+  "status": "submitted",
+  "sdk": {"package": "aristotlelib", "version": "2.1.0"},
+  "project_id": "068068ee-b720-4df1-a203-571e0928ec3d",
+  "task_id": "a1ab7732-5144-41a4-b0b1-d5826fbc650f",
+  "task_status_at_submission": "QUEUED",
+  "request": {
+    "prompt_path": "benchmarks/aristotle_native_translation/PHASE_C2_ASSEMBLY_PROMPT.md",
+    "prompt_sha256": "8859d9139616e7f1d2d45fccfeb5723db78a8c0298c835f6a779dbf1ff619ee8"
+  },
+  "frozen_inputs": {
+    "phase_b2_result_tar_sha256": "c3c05eae85fa0357501f177cbbcebbe103a9f29c90926d9ee9b5e08ac4dd5da8",
+    "phase_c1_result_tar_sha256": "0cd2d7b56e38d99f3aa9b20af0c87b752e4985dabec22bed9d85d2e98670f56e"
+  },
+  "input_exclusions": [
+    "phase_b3_candidate_equality_artifact_or_outcome",
+    "whole_frame_equality_or_geom_equiv_target",
+    "cross_frame_ivi_target",
+    "topology_naturality_receipts_question_transport_heldout_transfer",
+    "successor_frame_or_successor_verifier_target"
+  ],
+  "required_terminal_classifications": [
+    "ASSEMBLED_COMPLETION",
+    "ASSEMBLY_OBSTRUCTION",
+    "OPEN_INTERFACE_BOUNDARY",
+    "INVALID_LEAKAGE_OR_PROTOCOL_VIOLATION"
+  ],
+  "claim_boundary": "Submission only. No C2 result, whole-frame promotion, IVI, topology, transfer, successor-frame, or successor-verifier claim is recorded pending artifact retrieval and inspection."
+}

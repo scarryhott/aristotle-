@@ -19,7 +19,9 @@ independent F_A, F_B
   -> identity-independent validation
   -> candidate equality on admitted subinterface only
   -> independent local return evidence
-  -> completion / CrossFrameIVI / topology     (OPEN)
+  -> C2 structural assembly                    (ASSEMBLY_OBSTRUCTION)
+  -> T1 truth-level assembly                   (OPEN_TRUTH_BOUNDARY)
+  -> independent bridge / IVI / topology       (OPEN)
 ```
 
 The result is not a whole-frame equivalence. The frozen `frame-structure`
@@ -32,6 +34,8 @@ failure blocks promotion to `F_A ≃ F_B` or `GeomEquiv(F_A,F_B)`.
 | B2 — identity-independent validation | [request](https://aristotle.harmonic.fun/dashboard/requests/ea684ccd-f50d-4e6f-97ca-31c2463517c5) | 34/36 mapped roles pass; one structural failure; one outside-interface item; all abstentions retained. | [`B2 manifest`](../runs/aristotle_native_translation/phase_b2_validation/manifest.json) |
 | B3 — candidate equality | [request](https://aristotle.harmonic.fun/dashboard/requests/eda32ca8-d7dd-4336-8843-619a424086a1) | `ACCEPTED_ON_SUBINTERFACE` for exactly 34 roles; whole-frame equality and `GeomEquiv` blocked. | [`B3 manifest`](../runs/aristotle_native_translation/phase_b3_candidate_equality/manifest.json) |
 | C1 — independent return | [request](https://aristotle.harmonic.fun/dashboard/requests/799b6bf1-bd23-4f55-8725-75bd42bde00e) | 20 determined, 5 unique, 1 round-trip, 8 identity-only local receipts; no assembled cross-frame return or completion claim. | [`C1 manifest`](../runs/aristotle_native_translation/phase_c1_independent_return/manifest.json) |
+| C2 — structural assembly / recoverability | [request](https://aristotle.harmonic.fun/dashboard/requests/a1ab7732-5144-41a4-b0b1-d5826fbc650f) | 5 `ASSEMBLY_OBSTRUCTION`, 2 `OPEN_INTERFACE_BOUNDARY`, 0 assembled completions; this is a source-attested slot-level result only. | [`C2 result`](../runs/aristotle_native_translation/phase_c2_assembly/result_manifest.json) |
+| T1 — preregistered truth assembly | isolated project task `75effe0d-c892-4b78-9a68-1525572d2547` | `OPEN_TRUTH_BOUNDARY`: 13 admitted questions, all `notComparable`; no agreement or contradiction was manufactured. | [`T1 result`](../runs/aristotle_native_translation/phase_t1_truth_assembly/result_manifest.json) |
 
 ## Why the raw artifacts are not committed
 
@@ -41,7 +45,13 @@ explicit abstentions so a reviewer with project access can retrieve and verify
 the exact result. The repository does **not** replace those artifacts with
 handwritten summaries or claim a local Lean re-build of their frozen source.
 
-The next permitted experiment is C2: evaluate whether the C1 local return
-receipts assemble into recoverability/completion over the admitted interface.
+The next permitted work is a separately preregistered bridge-construction
+protocol: obtain an independently generated answer-level correspondence and
+non-local return without repairing the frozen packet.  T1's
+`OPEN_TRUTH_BOUNDARY` is neither truth completion nor truth obstruction, and
+C2's slot-level structural outcome remains retained residue/scope data.
+
+Its frozen T1 packet is
+[`PHASE_T1_TRUTH_ASSEMBLY_PROMPT.md`](../benchmarks/aristotle_native_translation/PHASE_T1_TRUTH_ASSEMBLY_PROMPT.md).
 It must preserve the structural obstruction, excluded entries, and all C1
 global abstentions.

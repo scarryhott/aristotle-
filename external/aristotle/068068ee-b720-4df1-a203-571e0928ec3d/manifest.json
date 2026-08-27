@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "provider": "Aristotle by Harmonic",
+  "client": {
+    "package": "aristotlelib",
+    "version": "2.1.0"
+  },
+  "retrieved_at": "2026-08-27",
+  "project_id": "068068ee-b720-4df1-a203-571e0928ec3d",
+  "base": {
+    "repository_commit": "81a49d5b39fcff5a589f57efb24a38e8670aeb22",
+    "lean_toolchain": "leanprover/lean4:v4.33.0",
+    "mathlib_revision": "v4.33.0"
+  },
+  "provider_environment": {
+    "lean_toolchain": "leanprover/lean4:v4.28.0",
+    "mathlib_revision": "8f9d9cff6bd728b17a24e163c9402775d9e6a365"
+  },
+  "transport_archives": [
+    {
+      "sha256": "387b7ecdc2f5fa8e6e5e8ef7dba2ab99f0e0943d34061cbcc38dc1ebf07378dc",
+      "bytes": 16971612,
+      "purpose": "NRRF780-NRRF790 source and dependency closure"
+    },
+    {
+      "sha256": "89ae2d886216c4bc12e887444d873d83c790fecb065118af8718a1eb0d9867bf",
+      "bytes": 17038050,
+      "purpose": "incremental refresh from which only NRRF795-NRRF798 were extracted"
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "e0636fc4-c016-40a9-81d2-1a75e04b2b0b",
+      "created_at": "2026-08-26T17:38:08",
+      "status": "COMPLETE",
+      "files": ["NRRF780ClassicalTradingSystemLocalPricesInfCostsMultilayerValueFlow.lean"]
+    },
+    {
+      "task_id": "bbf161db-f222-416c-bf1c-51155b36038c",
+      "created_at": "2026-08-26T19:07:31",
+      "status": "COMPLETE",
+      "files": ["NRRF781ClosureResolvesRenormalizationTranslationalTruthNotZFC.lean"]
+    },
+    {
+      "task_id": "9facfc9a-2773-4593-b9e9-cd1529ea956c",
+      "created_at": "2026-08-26T20:12:35",
+      "status": "COMPLETE",
+      "files": ["NRRF782TranslationalTruthUniqueIsomorphicSetsSizesPotentialsRelativeAbsolutes.lean"]
+    },
+    {
+      "task_id": "a9c38104-493f-45f4-9c58-de6140867937",
+      "created_at": "2026-08-26T21:26:40",
+      "status": "COMPLETE",
+      "files": [
+        "NRRF783AxiometricFormsUnifiedWithoutClassical.lean",
+        "NRRF783TranslationalTruthFormsWithoutClassical.lean",
+        "NRRF783BridgeConstructiveFormsNRRF739NRRF740.lean",
+        "NRRF783BridgeTranslationalTruthNRRF782.lean"
+      ]
+    },
+    {
+      "task_id": "d49dbc79-8a31-447e-9777-0a3cffae16f1",
+      "created_at": "2026-08-26T22:12:55",
+      "status": "COMPLETE",
+      "files": ["NRRF784ConsciousSelectiveNaturalityLevelUnificationNotResourceMetrics.lean"]
+    },
+    {
+      "task_id": "8a0a8ede-7055-43d1-928f-f07866ee2838",
+      "created_at": "2026-08-27T00:12:31",
+      "status": "COMPLETE",
+      "files": ["NRRF785QuantumClassicalFrameworksUnifiedOnTranslationalTruth.lean"]
+    },
+    {
+      "task_id": "970c964e-fe24-41b3-b29a-5c42f1ee486d",
+      "created_at": "2026-08-27T01:00:42",
+      "status": "COMPLETE",
+      "files": ["NRRF786QuantumGravityTestsUnifiedOnLoopSensorWithoutClassical.lean"]
+    },
+    {
+      "task_id": "26512b98-013b-4934-9cb7-4488cb8f4c9e",
+      "created_at": "2026-08-27T01:30:52",
+      "status": "COMPLETE",
+      "files": [
+        "NRRF787HumanInteractionSupernetSyntropicAttractorEightSheafTensor.lean",
+        "NRRF788QMNotClassicalQGTranslationalTruthPrimeHoleSetUniqueness.lean"
+      ]
+    },
+    {
+      "task_id": "c3ddbf94-85ed-4b86-a116-bcfc7ae75235",
+      "created_at": "2026-08-27T11:44:32",
+      "status": "COMPLETE",
+      "files": ["NRRF789ComputerContinuationHaltingEncodingUniverseEvaluationCanon.lean"]
+    },
+    {
+      "task_id": "41a9b74d-150e-4d28-944b-83ea22361717",
+      "created_at": "2026-08-27T12:21:47",
+      "status": "COMPLETE",
+      "files": ["NRRF790CompleteNaturalSelectionIncompleteForcedIsolation.lean"]
+    },
+    {
+      "task_id": "dd9e3dd6-e035-4c9f-bcf5-9b04a6befdd9",
+      "created_at": "2026-08-27T16:34:23",
+      "status": "COMPLETE",
+      "files": ["NRRF795NoRepresentationUniquePredictionClosureDerivationNaturalForms.lean"]
+    },
+    {
+      "task_id": "6db670bb-70b0-48f7-8c37-f1e639b9e329",
+      "created_at": "2026-08-27T17:16:12",
+      "status": "COMPLETE",
+      "files": ["NRRF796SelfLimitInversionEqualityOneHairClosureBall.lean"]
+    },
+    {
+      "task_id": "fdb457bb-ddb2-4b63-b6fb-a950fed65395",
+      "created_at": "2026-08-27T18:01:52",
+      "status": "COMPLETE",
+      "files": ["NRRF797UnifiedWorkClosesQGConstraintsVariablesScenarios.lean"]
+    },
+    {
+      "task_id": "23ced094-f461-4c51-b8c6-818d492c4589",
+      "created_at": "2026-08-27T18:41:23",
+      "status": "COMPLETE",
+      "files": ["NRRF798UnifyFullClosureThroughTranslationalTruth.lean"]
+    }
+  ],
+  "snapshot": {
+    "lean_files": 44,
+    "notes_files": 15,
+    "hash_manifest": "SHA256SUMS",
+    "active_lake_roots": false
+  },
+  "integration": {
+    "active_modules": [
+      "NRRFTradingDeltaDerivedCostTranslationalClosure",
+      "NRRFTradingFullClosureNaturalFormIntegration"
+    ],
+    "policy": "B_(n+1) = B_n union_verified_interface Delta_n",
+    "categories_remain_independent": [
+      "relational fill selection",
+      "filled local price ball",
+      "derived zero-hair cost",
+      "translation-invariant relative potential",
+      "temporal profit assessment"
+    ]
+  }
+}

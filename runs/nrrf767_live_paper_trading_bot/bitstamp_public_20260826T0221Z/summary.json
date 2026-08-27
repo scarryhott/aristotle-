@@ -1,0 +1,150 @@
+{
+  "alternative_simulations_aggregated_as_portfolio_pnl": false,
+  "authenticated_fills": 0,
+  "authenticated_settled_pnl_usd": null,
+  "best_candidate": {
+    "authenticated_settled_pnl_usd": null,
+    "candidate_delta_usd": "-0.74236782764430907445819961815005890238453101515213064142665637567534630539871",
+    "candidate_final_usd": "99.25763217235569092554180038184994109761546898484786935857334362432465369460129",
+    "candidate_return_bps": "-74.236782764430907445819961815005890238453101515213064142665637567534630539871",
+    "decision": "HOLD",
+    "no_order_account_delta_usd": "0",
+    "orientation": "MINUS",
+    "path": "USD->ETH->BTC->USD",
+    "start_usd": "100",
+    "witnesses": [
+      "NONPOSITIVE_CANDIDATE_AFTER_DECLARED_COSTS"
+    ]
+  },
+  "formal_receipt_admissions": 0,
+  "no_order_account_delta_usd": "0",
+  "numeric_full_depth_evaluations": 66,
+  "observation_states": {
+    "IDENTIFIED_PUBLIC_BOOKS": 11,
+    "OPEN_PUBLIC_BOOKS": 1
+  },
+  "orders_submitted": 0,
+  "paper_signals": 0,
+  "profit_claimed": false,
+  "rounds_returned": 12,
+  "rounds_with_selected_paper_signal": 0,
+  "route_size_evaluations": 72,
+  "route_size_statistics": {
+    "MINUS": {
+      "100": {
+        "candidate_return_bps": {
+          "count": 11,
+          "maximum": "-74.236782764430907445819961815005890238453101515213064142665637567534630539871",
+          "median": "-75.605302494614979181053743348092781411219888694804403461022870374131697607345",
+          "minimum": "-76.8654145948440186659625462079051062274038266238778080188487630499248486818051"
+        },
+        "evaluations": 12,
+        "full_depth_numeric": 11,
+        "paper_signals": 0
+      },
+      "1000": {
+        "candidate_return_bps": {
+          "count": 11,
+          "maximum": "-74.5796515079032751328817006084991876523151909017059301380991064175467099918765",
+          "median": "-75.605302494614979181053743348092781411219888694804403461022870374131697607345",
+          "minimum": "-77.1028572523636868538386896272285251215559157212317666126418152350081037277149"
+        },
+        "evaluations": 12,
+        "full_depth_numeric": 11,
+        "paper_signals": 0
+      },
+      "10000": {
+        "candidate_return_bps": {
+          "count": 11,
+          "maximum": "-75.6953516184969097365654419509529922168240092293193376988447102026225565864514",
+          "median": "-77.8886937062903184812705605262623390340008936913515050574806028354389243205914",
+          "minimum": "-80.1787950691287392677578277280204715774081520745750319868397002376165234874792"
+        },
+        "evaluations": 12,
+        "full_depth_numeric": 11,
+        "paper_signals": 0
+      }
+    },
+    "PLUS": {
+      "100": {
+        "candidate_return_bps": {
+          "count": 11,
+          "maximum": "-76.2252196973952242132949018966044793567968311854057470932920016342045482141303",
+          "median": "-76.4138230641095589793716266365930774161242978835774070569839533989650819205278",
+          "minimum": "-77.4057587576367316218552718589068751913084497773669063662558987521463385495592"
+        },
+        "evaluations": 12,
+        "full_depth_numeric": 11,
+        "paper_signals": 0
+      },
+      "1000": {
+        "candidate_return_bps": {
+          "count": 11,
+          "maximum": "-76.2252196973952242132949018966044793567968311854057470932920016342045482141303",
+          "median": "-76.4937647655422595715740238233499812990225270899330218484081553957454535237413",
+          "minimum": "-77.4057587576367316218552718589068751913084497773669063662558987521463385495592"
+        },
+        "evaluations": 12,
+        "full_depth_numeric": 11,
+        "paper_signals": 0
+      },
+      "10000": {
+        "candidate_return_bps": {
+          "count": 11,
+          "maximum": "-76.8100662862628829391288332037082407860228665388010072428020711446332317110509",
+          "median": "-77.8465776092774122121736071668472243881795422312676499944024558423441739627082",
+          "minimum": "-81.3210716345897854849919621241267246076056242088958622338653878296555759793897"
+        },
+        "evaluations": 12,
+        "full_depth_numeric": 11,
+        "paper_signals": 0
+      }
+    }
+  },
+  "schema_version": "nrrf767.live_public_paper.v1",
+  "timing_statistics_ms": {
+    "acquisition_span_ms": {
+      "count": 12,
+      "maximum": "976.406",
+      "median": "512.413",
+      "minimum": "199.318"
+    },
+    "cross_book_timestamp_skew_ms": {
+      "count": 12,
+      "maximum": "1867.198",
+      "median": "824.652",
+      "minimum": "248.681"
+    },
+    "request_start_skew_ms": {
+      "count": 12,
+      "maximum": "0.218",
+      "median": "0.177",
+      "minimum": "0.136"
+    },
+    "request_window_overlap_ms": {
+      "count": 12,
+      "maximum": "505.381",
+      "median": "210.995",
+      "minimum": "145.842"
+    }
+  },
+  "witness_counts": {
+    "CROSS_BOOK_TIMESTAMP_SKEW": 6,
+    "NONPOSITIVE_CANDIDATE_AFTER_DECLARED_COSTS": 66,
+    "PUBLIC_OBSERVATION_OPEN": 6
+  },
+  "worst_candidate": {
+    "authenticated_settled_pnl_usd": null,
+    "candidate_delta_usd": "-81.3210716345897854849919621241267246076056242088958622338653878296555759793897",
+    "candidate_final_usd": "9918.6789283654102145150080378758732753923943757911041377661346121703444240206103",
+    "candidate_return_bps": "-81.3210716345897854849919621241267246076056242088958622338653878296555759793897",
+    "decision": "HOLD",
+    "no_order_account_delta_usd": "0",
+    "orientation": "PLUS",
+    "path": "USD->BTC->ETH->USD",
+    "start_usd": "10000",
+    "witnesses": [
+      "NONPOSITIVE_CANDIDATE_AFTER_DECLARED_COSTS"
+    ]
+  }
+}

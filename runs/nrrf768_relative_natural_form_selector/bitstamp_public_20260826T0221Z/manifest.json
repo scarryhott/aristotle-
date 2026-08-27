@@ -1,0 +1,54 @@
+{
+  "boundary": {
+    "action_selected": false,
+    "authenticated_fills": 0,
+    "authenticated_settled_pnl_usd": null,
+    "execution_authorized": false,
+    "formal_receipt_admissions": 0,
+    "no_order_account_delta_usd": "0",
+    "orders_enabled": false,
+    "orders_submitted": 0,
+    "profit_selected": false,
+    "selection_scope": "NATURAL_FORM_REPRESENTATIVE_ONLY"
+  },
+  "event_count": 12,
+  "events_file": "events.jsonl",
+  "events_sha256": "7108fc22474b4549f217f42e58f4e8fd82426d782da94163723079458398e030",
+  "final_event_hash": "e2fa6ac0966142267873688682fd355c0b83c3dbacb9e2454f526a6019aad549",
+  "genesis_hash": "d95cd6271b2f2549d203eee1e2a8716444a8aaaf83f62c7e4887af32fa4fb6b4",
+  "program": "nrrf768_relative_natural_form_selector.py",
+  "program_sha256": "311bbc55e9bdd0c889fef362a72abecbc047659fa724aad03616097997554511",
+  "run_kind": "IMMUTABLE_RELATIVE_NATURAL_FORM_OVERLAY",
+  "schema_version": "nrrf768.relative_natural_form_selector.v1",
+  "selector_configuration": {
+    "feedback_rule": "preceding OPEN retains; preceding numeric HOLD reverses; every other preceding selected assessment retains",
+    "initial_authored_orientation": "PLUS",
+    "member_orientations": [
+      "PLUS",
+      "MINUS"
+    ],
+    "orders_enabled": false,
+    "polar_translation": {
+      "MINUS": "PLUS",
+      "PLUS": "MINUS"
+    },
+    "relative_identity": "SAME_START_USD_RADIUS",
+    "selection_scope": "NATURAL_FORM_REPRESENTATIVE_ONLY"
+  },
+  "selector_configuration_sha256": "0507137e0b485ae69d535e40cd1b1ce4b98b004d43ec94c5df564210ef811d27",
+  "source_binding": {
+    "configuration_sha256": "544070bca366ea0c0dbc0d48e4e085ab88cd7cf90a391760d0dffa3a00689b33",
+    "event_count": 12,
+    "events_sha256": "0669ec688688a4810ee61b4f6b18b5dee720eaa0e1a6ac5f140cd51128e4ac81",
+    "final_event_hash": "50755b3a49a0e40f33780792fd8c92456f298ca8b4d9eb689297e0d4e529a373",
+    "genesis_hash": "563c69a9bc0f5e4c312c2c73a2b6be703ec6094a9ea982f9465e34db5e26bcc6",
+    "manifest_sha256": "32b86b4872a7fee4805fc696a42cdd01e3a716de0d003af018010d864b737256",
+    "program": "nrrf767_live_paper_trading_bot.py",
+    "program_sha256": "37ec7ab19010530fedeb41e6152cd936e73e667a292e6343b18e721ab8e9fd02",
+    "run_kind": "LIVE_PUBLIC_PAPER_ONLY",
+    "schema_version": "nrrf767.live_public_paper.v1",
+    "summary_sha256": "eaa50d9faf5342f0ece04bd956fadf9a40e73dc2dc0ca1948130b66e14457026"
+  },
+  "summary_file": "summary.json",
+  "summary_sha256": "18e320f2481c97180309058ccc94bd1dd4fb1b6c7d8229bdd7325cba3c462be7"
+}

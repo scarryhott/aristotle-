@@ -1,0 +1,44 @@
+{
+  "protocol": "docs/ARISTOTLE_NATIVE_TRANSLATION_PROTOCOL.md",
+  "stage": "phase_c2_assembled_completion_recoverability_only",
+  "status": "completed_source_attested_not_locally_rebuilt",
+  "project_id": "068068ee-b720-4df1-a203-571e0928ec3d",
+  "task_id": "a1ab7732-5144-41a4-b0b1-d5826fbc650f",
+  "task_status": "COMPLETE",
+  "input_boundary": {
+    "phase_b2_result_tar_sha256": "c3c05eae85fa0357501f177cbbcebbe103a9f29c90926d9ee9b5e08ac4dd5da8",
+    "phase_c1_result_tar_sha256": "0cd2d7b56e38d99f3aa9b20af0c87b752e4985dabec22bed9d85d2e98670f56e",
+    "excluded": [
+      "phase_b3_candidate_equality_artifact_or_outcome",
+      "whole_frame_equality_or_geom_equiv_target",
+      "cross_frame_ivi_target",
+      "topology_naturality_receipts_question_transport_heldout_transfer",
+      "successor_frame_or_successor_verifier_target"
+    ]
+  },
+  "result": {
+    "terminal_classification": "ASSEMBLY_OBSTRUCTION",
+    "proposal_counts": {
+      "ASSEMBLY_OBSTRUCTION": 5,
+      "OPEN_INTERFACE_BOUNDARY": 2,
+      "ASSEMBLED_COMPLETION": 0,
+      "INVALID_LEAKAGE_OR_PROTOCOL_VIOLATION": 0
+    },
+    "result_hash": "ce81979d4ea258bfd255ea354e262b61fd3a4fc612dfe034fd4af1271ed49a61",
+    "source_snapshot_tar_sha256": "5615a63414523f7cb34bbcccb481fc33419daf28e62c10ea568721648c8fb788",
+    "output_hashes": {
+      "AssemblyCompletion.md": "ac15b466fcacc69061c8d56fc2de16b232088c765df0cc90fcab7c2bb390759a",
+      "AssemblyCompletion/c2-manifest.json": "e7fb5973017ca367599f339f702b7416ac8ac469f7e2eb110ec41027a7324537",
+      "AssemblyCompletion/Assembly.lean": "82e75084c5e237f24ea3a63696e96d3b2bccd8ab229d5610f810d55cd8b35a5d",
+      "AssemblyCompletion/FrameAAssembly.lean": "f07704d8537c052f920ec679fba9ef089d3f7facb21926999ee0f82d98599ee0",
+      "AssemblyCompletion/FrameBAssembly.lean": "0115a78927895651c23e4ff79886c5b919fb40dbe0fbabc8f1272b3a1d99649b"
+    }
+  },
+  "source_attestation": {
+    "selected_lean_source_text_scan": "no sorry or admit markers found in the three selected C2 Lean source files",
+    "reported_axioms": ["propext", "Classical.choice", "Quot.sound"],
+    "local_lake_build": "NOT_RUN",
+    "local_axiom_audit": "NOT_RUN"
+  },
+  "claim_boundary": "This is a narrow, source-attested result about single-valued slot-level structural assembly over the B2/C1 admitted interface. It is not a truth-level translational completion or obstruction, does not alter frozen B2/C1 records, and does not establish whole-frame equality, GeomEquiv, CrossFrameIVI, topology naturality, receipts, question transport, held-out transfer, a successor frame, or a successor verifier."
+}

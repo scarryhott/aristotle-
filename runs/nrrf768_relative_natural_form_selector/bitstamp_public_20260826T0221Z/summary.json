@@ -1,0 +1,43 @@
+{
+  "action_selections": 0,
+  "assessment_decisions": {
+    "HOLD": 36
+  },
+  "authenticated_fills": 0,
+  "authenticated_settled_pnl_usd": null,
+  "declared_radii": [
+    "100",
+    "1000",
+    "10000"
+  ],
+  "feedback_trigger_counts": {
+    "INITIAL_AUTHORSHIP": 3,
+    "PRECEDING_NUMERIC_HOLD_REVERSES": 30,
+    "PRECEDING_OPEN_RETAINS": 3
+  },
+  "formal_receipt_admissions": 0,
+  "negative_numeric_assessments": 33,
+  "no_order_account_delta_usd": "0",
+  "numeric_assessments": 33,
+  "orders_submitted": 0,
+  "orientation_counts": {
+    "MINUS": 15,
+    "PLUS": 21
+  },
+  "positive_numeric_assessments": 0,
+  "profit_selections": 0,
+  "schema_version": "nrrf768.relative_natural_form_selector.v1",
+  "sections": 12,
+  "selected_empirical_assessments": 36,
+  "source_events": 12,
+  "source_observation_states": {
+    "IDENTIFIED_PUBLIC_BOOKS": 11,
+    "OPEN_PUBLIC_BOOKS": 1
+  },
+  "translation_counts": {
+    "AUTHORED_INITIAL": 3,
+    "IDENTITY": 3,
+    "POLAR_REVERSAL": 30
+  },
+  "zero_numeric_assessments": 0
+}

@@ -1,0 +1,160 @@
+{
+  "F0": {
+    "axioms": [
+      "seed_relation"
+    ],
+    "digest": "a0c429ef337e8a5d64532a13dba3cdc3d49831f08221ee8b2fbb3e6fae270f21",
+    "frame_id": "F0",
+    "nodes": [
+      "a",
+      "b",
+      "c"
+    ],
+    "preauthored": false,
+    "status": "ROOT_FRAME"
+  },
+  "F1": {
+    "axioms": [
+      "return_0",
+      "reopened_relation"
+    ],
+    "digest": "1ab584536bd25ba61e523fcfb95225e6a56b6aedfd02d015b2cbf40eb9227cb2",
+    "frame_id": "F1",
+    "generated_from": "7fa24de620be1cac6abfcdc6f24fcea5e4e271ea0dd1ab5fd380284779418d9f",
+    "nodes": [
+      "a\u2032",
+      "b\u2032",
+      "c\u2032"
+    ],
+    "preauthored": false,
+    "status": "DERIVED_FRAME"
+  },
+  "F2": {
+    "axioms": [
+      "return_1",
+      "reopened_relation"
+    ],
+    "digest": "ef0bf2e9369f7e20402cf7ae6ccc09b635be67b5fdf3458882bec3bdd49c6c73",
+    "frame_id": "F2",
+    "generated_from": "eb7690bc844638e8be511e88df4a99d2a1394f9e9b991eb4bb3b02d25da04b3c",
+    "nodes": [
+      "a\u2032\u2032",
+      "b\u2032\u2032",
+      "c\u2032\u2032"
+    ],
+    "preauthored": false,
+    "status": "DERIVED_FRAME"
+  },
+  "claim_boundary": "bounded cycle, not a universal theorem or an Aristotle Phase C2 result",
+  "completion0": {
+    "development_object": {
+      "Delta": 1,
+      "T": {
+        "a": "b0",
+        "b": "b0",
+        "c": "b1"
+      },
+      "W": {
+        "b0": [
+          "a\u2032",
+          "b\u2032"
+        ],
+        "b1": [
+          "c\u2032"
+        ]
+      },
+      "rho": "independent_return"
+    },
+    "digest": "7fa24de620be1cac6abfcdc6f24fcea5e4e271ea0dd1ab5fd380284779418d9f",
+    "episode": "8f3a1587ac2baf4ba3c515d4eb23e977b8df8bfe5958f56403699ed1cb5b94e2",
+    "moves_relation": true,
+    "recovered_nodes": [
+      "a\u2032",
+      "b\u2032",
+      "c\u2032"
+    ],
+    "recovery_complete": true,
+    "source": "a0c429ef337e8a5d64532a13dba3cdc3d49831f08221ee8b2fbb3e6fae270f21",
+    "status": "COMPLETED_RELATION"
+  },
+  "completion1": {
+    "development_object": {
+      "Delta": 2,
+      "T": {
+        "a\u2032": "b0",
+        "b\u2032": "b0",
+        "c\u2032": "b1"
+      },
+      "W": {
+        "b0": [
+          "a\u2032\u2032",
+          "b\u2032\u2032"
+        ],
+        "b1": [
+          "c\u2032\u2032"
+        ]
+      },
+      "rho": "independent_return"
+    },
+    "digest": "eb7690bc844638e8be511e88df4a99d2a1394f9e9b991eb4bb3b02d25da04b3c",
+    "episode": "0706aac72d0809fe6206333338d9524b203f8518fabf7fe64b846c2479e26da5",
+    "moves_relation": true,
+    "recovered_nodes": [
+      "a\u2032\u2032",
+      "b\u2032\u2032",
+      "c\u2032\u2032"
+    ],
+    "recovery_complete": true,
+    "source": "1ab584536bd25ba61e523fcfb95225e6a56b6aedfd02d015b2cbf40eb9227cb2",
+    "status": "COMPLETED_RELATION"
+  },
+  "controls": {
+    "leaked_outcome": {
+      "status": "INVALID_OUTCOME_LEAKAGE"
+    },
+    "missing_outcome": {
+      "status": "OPEN_NO_EXTERNAL_CONSEQUENCE"
+    },
+    "preauthored_successor": "INVALID_PREAUTHORED_SUCCESSOR"
+  },
+  "episode0": {
+    "T": {
+      "a": "b0",
+      "b": "b0",
+      "c": "b1"
+    },
+    "many_to_one": true,
+    "required_axiom": null,
+    "source": "a0c429ef337e8a5d64532a13dba3cdc3d49831f08221ee8b2fbb3e6fae270f21",
+    "status": "INTERACTION_GENERATED"
+  },
+  "episode1": {
+    "T": {
+      "a\u2032": "b0",
+      "b\u2032": "b0",
+      "c\u2032": "b1"
+    },
+    "many_to_one": true,
+    "required_axiom": "return_0",
+    "source": "1ab584536bd25ba61e523fcfb95225e6a56b6aedfd02d015b2cbf40eb9227cb2",
+    "status": "INTERACTION_GENERATED"
+  },
+  "level2": [
+    {
+      "classification": "EXTERNALLY_CALIBRATED",
+      "status": "LEVEL2_AUDITED"
+    },
+    {
+      "classification": "EXTERNALLY_CALIBRATED",
+      "status": "LEVEL2_AUDITED"
+    }
+  ],
+  "lineage": {
+    "F1_from_completion": true,
+    "F2_from_completion": true,
+    "absolute_frame_identity_claimed": false,
+    "many_one_many": true,
+    "next_episode_uses_changed_axiometry": true
+  },
+  "protocol": "closure_native_axiometric_evolution_v1"
+}

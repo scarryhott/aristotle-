@@ -1,0 +1,33 @@
+{
+  "all_numeric_signs_match_source": true,
+  "authenticated_fills": 0,
+  "authenticated_settled_pnl_usd": null,
+  "boundary": {
+    "action_selected": false,
+    "authenticated_fills": 0,
+    "authenticated_settled_pnl_usd": null,
+    "execution_authorized": false,
+    "formal_receipt_admissions": 0,
+    "orders_submitted": 0,
+    "settled_profit_claimed": false
+  },
+  "completion_records": 72,
+  "completion_states": {
+    "COMPLETED_COUNTERFACTUAL": 66,
+    "OPEN": 6
+  },
+  "formal_receipt_admissions": 0,
+  "maximum_completion_identity_error": "0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005",
+  "maximum_global_cost_equal_ratio": "1.0075376568379951392290312404210128338415022676130530848449507384141158922393767211079988156630320224023217484",
+  "minimum_global_cost_equal_ratio": "1.0075365054705735168573493659076746299662150117831955492391314163143357552828547515667226263644305625841058555",
+  "numeric_records": 66,
+  "numeric_signs": {
+    "NEGATIVE": 66
+  },
+  "orders_submitted": 0,
+  "reason_numeric_results_unchanged": "the refactor changes the factorization: completed = local_price / global_cost_equal; it is proved and replayed equal to the source cost-completed candidate",
+  "reinterpretation_changed_numeric_results": false,
+  "rounds": 12,
+  "schema_version": "nrrf780.local_price_global_cost_equality.v1",
+  "settled_profit_claimed": false
+}

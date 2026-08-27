@@ -17,7 +17,11 @@ local axiom-geometries
   → held-out transfer / next basis
 ```
 
-The primary next experiment is now singular: **run the already-frozen translational protocol on independently generated Aristotle mathematical frames**. The secondary research directions listed at the end are not prerequisites for that experiment.
+The primary next experiment is now singular: **construct an independently
+preregistered answer-level bridge for the already-frozen Aristotle packet, then
+evaluate its registered truth relation**. C2 structural assembly and T1 truth
+assembly are retained inputs/boundaries, not substitute verdicts. The secondary
+research directions listed at the end are not prerequisites for that experiment.
 
 ## Completed verification suite
 
@@ -139,7 +143,11 @@ Committed evidence must replay byte-identically. CI reruns the experimental and 
 
 Status: **ACTIVE; isolated local generation executed, all cross-frame stages remain open.** This native-translation-first protocol is the sole primary frontier experiment. It replaces the earlier generic instruction to begin with `GeomEquiv`.
 
-The next experiment should not redesign the verifier. It should replace the bounded frame generators with genuinely independent frontier mathematical-agent sessions while preserving the published protocol.
+The next experiment must not repair or retrospectively align the frozen packet.
+It must obtain an independent answer-level correspondence and non-local return
+before evaluating truth completion. Any later successor language, frame, or
+verifier needs a separate, replayable lineage record; the successor cannot
+certify its own admission.
 
 ### Phase A — independent local generation (executed initial pair)
 
@@ -200,6 +208,27 @@ All outcomes are informative and must retain lineage:
 
 The strongest positive result would be substantially different independently generated Aristotle frames connected by the frozen protocol, with successful held-out mathematical transfer and no canonical normalization. `LocalIVI_A` and `LocalIVI_B` are not cross-frame evidence by themselves; `CrossFrameIVI_AB` requires a returned relational identification that survives the admitted native translation and its identity-independent validation.
 
+### Phase T2 — independently warranted bridge and question succession
+
+Status: **OPEN; not implied by C2, T1, or source-reported form-depth results.**
+
+An independently generated bridge must state the answer correspondence,
+non-local return, residue record, and provenance before a truth outcome is
+known. If it establishes a registered `TruthCompletion`, any retained residue
+or measured form depth may nominate a candidate next question. Admission of
+that question requires an independent warrant and a published lineage record;
+it may not be chosen merely because it produces a desired agreement or split.
+
+Only after both axes pass
+
+```text
+TruthCompletion AND independently replayable PublishedLineage
+```
+
+may a changed `(Q, A, G, M)` be evaluated on a genuinely held-out relation.
+Transformation cost may be recorded for an admitted translation but is not an
+input to truth completion.
+
 ## Submission claim boundary
 
 The repository currently supports these statements:
@@ -214,6 +243,7 @@ The repository currently supports these statements:
 It does **not** currently establish:
 
 - a completed whole-frame cross-frame Aristotle result: identity-independent validation, subinterface-only candidate equality, and local independent-return evidence are complete, but assembled return, completion, IVI, topology, receipts, and transfer remain open;
+- a warranted Aristotle answer-level bridge, residue-driven question admission, or valid evolving-verifier succession;
 - general mathematical-ASI verification;
 - that every pair of axiom-geometries admits translation;
 - that classical foundations cannot express translational closure;
@@ -241,3 +271,17 @@ Every run preserves exact inputs/outputs, hashes, environment versions, proof-ke
 ## Programme-level falsification
 
 The architecture is challenged if increasing representational freedom causes the frozen protocol to lose its ability to distinguish natural cross-frame equality from equality collapse, downstream non-naturality, frame-relative openness, pending evidence, or self-certified identity—or if successful comparison requires secretly replacing independent frames with one privileged canonical representation.
+
+## NRRF780 local-price / global-cost-equality replay
+
+NRRF780 replays the locked NRRF767 Bitstamp public-book receipts with the corrected interpretation:
+price is the zero-fee local route presentation, while cost is the global equality relating that
+presentation to the declared-fee completed route. The verifier checks
+`completed = local / globalCostEqual` for every numeric record and retains OPEN records without a
+zero/default collapse.
+
+The committed overlay contains 12 rounds and 72 records: 66 numeric completions and 6 OPEN. All 66
+numeric signs are unchanged and negative. This is expected from the proved factorization, not a
+failure to apply the new input. No order, authenticated fill, formal receipt admission, settlement,
+or profit is claimed. See
+[`LOCAL_PRICE_GLOBAL_COST_EQUALITY_NRRF780_NOTES.md`](LOCAL_PRICE_GLOBAL_COST_EQUALITY_NRRF780_NOTES.md).

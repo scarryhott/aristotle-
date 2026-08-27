@@ -1,0 +1,23 @@
+{
+  "stage": "external_source_environment_attestation",
+  "status": "source_bytes_verified_not_built",
+  "download": {
+    "task_id": "a3e1e311-a931-4777-a0ad-99814ecbb944",
+    "archive_kind": "authenticated_current_project_snapshot_after_completed_task",
+    "regular_file_count": 3087,
+    "selected_source_hashes_match": true,
+    "selected_source_text_scan": "no sorry or admit markers found in the selected Lean source file"
+  },
+  "local_formal_checks": {
+    "external_lake_build": "NOT_RUN",
+    "external_axiom_audit": "NOT_RUN",
+    "reason": "the exact external dependency closure/environment was not imported into this checkout"
+  },
+  "non_implications": [
+    "not_a_main_lake_build_root",
+    "not_a_local_machine_checked_result",
+    "not_an_empirical_heldout_transfer_result",
+    "not_an_autonomous_asi_result",
+    "not_a_phase_c2_input"
+  ]
+}
