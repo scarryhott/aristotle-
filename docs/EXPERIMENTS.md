@@ -324,3 +324,22 @@ can identify extra states, so changing forms after observing a result could othe
 apparent closure. The trading bridge admits a selected form as an exact replacement only with a
 faithfulness proof back to the canonical NRRF802 relation. Consequently the measured 5 / 28 / 3
 classification and the no-execution boundary are unchanged.
+
+## Life action/potential global-hair executor
+
+The NRRF804 overlay joins the immutable NRRF780 local-price/global-cost presentation to the
+immutable NRRF801 life-phase audit. For each route-size presentation it derives:
+
+```text
+action potential = zero-fee local-price final USD - starting USD
+global hair      = zero-fee local-price final USD - cost-completed final USD
+completed net    = action potential - global hair
+```
+
+`ballReturn` is the action continuation and `hairReturn` the inverse-potential continuation. The
+paper executor reaches the hair comparison only when the paired phases are mirror-coherent, and it
+emits `ACT` only when action potential strictly exceeds global hair. Across 12 rounds and 72
+presentations, the result is 10 `HOLD_GLOBAL_HAIR`, 56 `HOLD_LIFE_OPEN`, and 6 `OPEN`; all 66
+numeric closure identities replay exactly and no action is selected. The best closed-life case has
+$0.0058021422 of local action potential versus $0.7481699699 of global hair on $100, leaving
+−$0.7423678276. No order or authenticated fill is produced.

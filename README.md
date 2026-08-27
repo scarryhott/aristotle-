@@ -240,6 +240,11 @@ The available bridges make later layers explicit:
   the constant case, and requires faithfulness back to the finest return closure before a selected
   perspective may count as exact reciprocal closure. Selection cannot alter receipt-derived cost
   or P&L.
+- `lean/NRRFTradingLifeActionPotentialGlobalHairExecutor.lean` — reads `ballReturn` as the actual
+  action continuation, `hairReturn` as inverse potential, and accumulated global hair as the paper
+  executor. It proves `act` exactly when life closes and completed relative potential exceeds hair.
+- `experiments/nrrf804_life_global_hair_executor.py` — replays that executor over the locked
+  NRRF780/801 evidence without changing or overwriting either source ledger.
 - `external/aristotle/068068ee-b720-4df1-a203-571e0928ec3d/` — authenticated, hash-manifested
   Aristotle sources and notes for the independently authored NRRF780–790 and NRRF795–798 task
   deltas. The provider-pinned Lean 4.28 snapshot is preserved without making the unchanged archive

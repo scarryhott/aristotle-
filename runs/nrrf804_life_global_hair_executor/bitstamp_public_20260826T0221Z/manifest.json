@@ -1,0 +1,39 @@
+{
+  "boundary": {
+    "authenticated_fills": 0,
+    "authenticated_settled_pnl_usd": null,
+    "execution_authorized": false,
+    "formal_receipt_admissions": 0,
+    "live_action_selected": false,
+    "orders_submitted": 0,
+    "paper_executor_active": true,
+    "settled_profit_claimed": false
+  },
+  "equation": "completed_net_usd = action_potential_usd - global_hair_usd",
+  "event_count": 12,
+  "events_file": "events.jsonl",
+  "events_sha256": "5ea146f25ab715d11f78f3010e79e09485f17ce3725e92094eb02c6a5ef55858",
+  "executor": {
+    "action_continuation": "NRRF800.ballReturn",
+    "executor": "global_hair_usd < action_potential_usd",
+    "life_closure": "NRRF801.blackMirror",
+    "live_exchange_execution": false,
+    "potential_continuation": "NRRF800.hairReturn"
+  },
+  "final_event_hash": "ba7612af20dcc972710bcb34f3834120650aa77f87b865c2f741ee772189ed3d",
+  "genesis_hash": "c948f6bb1449b504a1eddb8775142e81a419858fc1b36117d71b887cad4d9e9e",
+  "program": "nrrf804_life_global_hair_executor.py",
+  "program_sha256": "47897333b982cf707582bd2ad4ff7542d444743a7a9faee03ec952d473ab1e37",
+  "run_kind": "IMMUTABLE_LIFE_GLOBAL_HAIR_PAPER_EXECUTOR",
+  "schema_version": "nrrf804.life_global_hair_executor.v1",
+  "source_binding": {
+    "cost_events_sha256": "8d10f76cac0564fc0a830ab2fce0bd8bbcf198a158e9de20921c5f1a2d0fa0e2",
+    "cost_final_event_hash": "3a295c8299c831c7f2be1a61cd06e17b3891e132e166cbe9682c333fad50fbae",
+    "cost_manifest_sha256": "126b056140589f6982dc59e133847c6eda3531a8d5bd86a24f06371dd2be8ba5",
+    "phase_events_sha256": "f1c3ad172bfde51eea4b47bfb51013e62c785b83719ebda52b46b313ca6f3d36",
+    "phase_final_event_hash": "b7b22250c41c90cc548633d5d257d17218203b16a15a0105a8c931f822215977",
+    "phase_manifest_sha256": "b2c27be5e39e4be6e6d9c2b71d65ba3ac82b12e085b0e25ff657c2551fd2043a"
+  },
+  "summary_file": "summary.json",
+  "summary_sha256": "872f1ce18d22465fed7b367f4c91749516c1e03db9907a44ba2f195a4804c917"
+}

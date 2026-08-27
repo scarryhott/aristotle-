@@ -29,7 +29,8 @@ roots = [
   "NRRFTradingFullClosureNaturalFormIntegration",
   "NRRFTradingLiveObservationReceiptDerivation",
   "NRRFTradingBlackMirrorPhaseBridge",
-  "NRRFTradingNaturalFormSelectionThroughoutBridge"
+  "NRRFTradingNaturalFormSelectionThroughoutBridge",
+  "NRRFTradingLifeActionPotentialGlobalHairExecutor"
 ]
 
 [[require]]

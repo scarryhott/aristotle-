@@ -1,0 +1,27 @@
+{
+  "all_numeric_records_close": true,
+  "authenticated_fills": 0,
+  "authenticated_settled_pnl_usd": null,
+  "boundary": {
+    "authenticated_fills": 0,
+    "authenticated_settled_pnl_usd": null,
+    "execution_authorized": false,
+    "formal_receipt_admissions": 0,
+    "live_action_selected": false,
+    "orders_submitted": 0,
+    "paper_executor_active": true,
+    "settled_profit_claimed": false
+  },
+  "maximum_closure_identity_error_usd": "0.000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "orders_submitted": 0,
+  "paper_actions_selected": 0,
+  "records": 72,
+  "rounds": 12,
+  "schema_version": "nrrf804.life_global_hair_executor.v1",
+  "settled_profit_claimed": false,
+  "verdicts": {
+    "HOLD_GLOBAL_HAIR": 10,
+    "HOLD_LIFE_OPEN": 56,
+    "OPEN": 6
+  }
+}
