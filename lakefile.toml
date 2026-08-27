@@ -30,7 +30,8 @@ roots = [
   "NRRFTradingLiveObservationReceiptDerivation",
   "NRRFTradingBlackMirrorPhaseBridge",
   "NRRFTradingNaturalFormSelectionThroughoutBridge",
-  "NRRFTradingLifeActionPotentialGlobalHairExecutor"
+  "NRRFTradingLifeActionPotentialGlobalHairExecutor",
+  "NRRFTradingRelativisticSignalOpenCommandClosure"
 ]
 
 [[require]]

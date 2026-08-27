@@ -343,3 +343,23 @@ presentations, the result is 10 `HOLD_GLOBAL_HAIR`, 56 `HOLD_LIFE_OPEN`, and 6 `
 numeric closure identities replay exactly and no action is selected. The best closed-life case has
 $0.0058021422 of local action potential versus $0.7481699699 of global hair on $100, leaving
 −$0.7423678276. No order or authenticated fill is produced.
+
+## Relativistic signal integration and open command
+
+NRRF805 replays the locked NRRF767 raw public books directly. It does not reuse the old two route
+labels, three fixed notionals, or NRRF801 price-to-phase rule. The validated books generate the
+directed asset graph; every rooted simple closed route is enumerated; rotations are quotiented into
+relative oriented route classes; and every observed depth breakpoint is pulled back through each
+route. The maximizing depth equivalence class is therefore derived from the local data rather than
+supplied as a probe.
+
+The signal field uses dimensionless action-potential, global-hair, and completed returns. It selects
+only a unique positive maximum relative to all simultaneous route classes and requires the inverse
+class in the same topology. Execution authority is an independent open field, so even a positive
+paper relation would not submit an order.
+
+Across 12 rounds, 11 identified graphs yield 143 maximizing presentations and five relative route
+classes per valid round. No completed return is positive. The best is BTC→USD→BTC at
+`-49.93876056045305905061517497` bps. All 12 commands remain `OPEN`, all numerical closure
+identities replay, and there are zero orders or authenticated fills. See
+[`RELATIVISTIC_SIGNAL_OPEN_COMMAND_CLOSURE.md`](RELATIVISTIC_SIGNAL_OPEN_COMMAND_CLOSURE.md).

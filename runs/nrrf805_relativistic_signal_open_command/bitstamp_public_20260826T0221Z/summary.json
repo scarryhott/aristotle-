@@ -1,0 +1,29 @@
+{
+  "all_relative_identities_close": true,
+  "authenticated_fills": 0,
+  "authenticated_settled_pnl": null,
+  "best_completed_return_bps": "-49.93876056045305905061517497",
+  "best_depth_derived_start_amount": "0.125979605960192125967094127053323152628353719447591603224126395808731968870556187521085752676014013291926394364480640254350395389138951293637452122751734590186717625934598472159459",
+  "best_route_id": "BTC>USD>BTC",
+  "best_start_asset": "BTC",
+  "boundary": {
+    "authenticated_fills": 0,
+    "authenticated_settled_pnl": null,
+    "orders_submitted": 0,
+    "paper_derivation_only": true,
+    "private_execution_authority_present": false,
+    "profit_claimed": false
+  },
+  "closed_commands": 0,
+  "derived_asset_graphs": 11,
+  "derived_candidates": 143,
+  "maximum_closure_identity_error": "0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000456",
+  "open_commands": 12,
+  "orders_submitted": 0,
+  "positive_candidates": 0,
+  "profit_claimed": false,
+  "rounds": 12,
+  "rounds_with_identified_observations": 11,
+  "schema_version": "nrrf805.relativistic_signal_open_command.v1",
+  "unique_positive_relational_signals": 0
+}

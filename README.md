@@ -245,6 +245,12 @@ The available bridges make later layers explicit:
   executor. It proves `act` exactly when life closes and completed relative potential exceeds hair.
 - `experiments/nrrf804_life_global_hair_executor.py` — replays that executor over the locked
   NRRF780/801 evidence without changing or overwriting either source ledger.
+- `lean/NRRFTradingRelativisticSignalOpenCommandClosure.lean` — integrates dimensionless action,
+  hair, and completed returns across a reciprocal route field and proves a public command remains
+  open until both a unique positive relation and independent execution authority close.
+- `experiments/nrrf805_relativistic_signal_open_command.py` — derives the asset graph, every simple
+  cycle, and maximizing depth partitions from the locked books themselves; it uses neither fixed
+  route labels, fixed notionals, nor the supplied four-phase price map.
 - `external/aristotle/068068ee-b720-4df1-a203-571e0928ec3d/` — authenticated, hash-manifested
   Aristotle sources and notes for the independently authored NRRF780–790 and NRRF795–798 task
   deltas. The provider-pinned Lean 4.28 snapshot is preserved without making the unchanged archive
