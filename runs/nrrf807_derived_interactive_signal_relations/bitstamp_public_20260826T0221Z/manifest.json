@@ -1,0 +1,40 @@
+{
+  "equation": "global_hair = completed - (prior_potential - local_hair)",
+  "event_count": 11,
+  "events_file": "events.jsonl",
+  "events_sha256": "4587117f2f927bcd4dd25526f66fff10f49595a9744608a84814b07eeda73de5",
+  "final_event_hash": "ef7c56a33a22d2b99397ee53c8c46e4241ce4bb39a5c993511d4203fcd898fb6",
+  "genesis_hash": "0e049d82e4bab554364962b5daed4ce4426f4eed8083c58b52da01ca36f2be42",
+  "interaction": {
+    "action": "first route edge on books at t",
+    "executor": "local_accounting_zero and global_hair_zero",
+    "lookahead_used_for_prior_selection": false,
+    "orders_enabled": false,
+    "potential": "remaining reciprocal path on independently captured books at t+1",
+    "prior_commitment": "NRRF805 natural form fixed by source event hash at t"
+  },
+  "program": "nrrf807_derived_interactive_signal_relations.py",
+  "program_sha256": "4aaae00b023e958c737cac76fba12237d3abe3a3f3ffb3dcaa81f07a0d8bf3df",
+  "run_kind": "IMMUTABLE_DERIVED_INTERACTIVE_SIGNAL_RELATIONS",
+  "schema_version": "nrrf807.derived_interactive_signal_relations.v1",
+  "source_binding": {
+    "life_events_sha256": "ad02106f11297614ff4f4f1a60cfc4e55ceff1830b1f499d3c0d28ebd9d9c80d",
+    "life_final_event_hash": "54d03288a7be2f8116729c4a8192b840e6b16f702a9488e25f879ac394fb5a4d",
+    "life_manifest_sha256": "6f878b85f82726e2410f3a79f45d38fe2e9ff485d29d5a8f9a81b2ad9d3d688e",
+    "observation_events_sha256": "0669ec688688a4810ee61b4f6b18b5dee720eaa0e1a6ac5f140cd51128e4ac81",
+    "observation_final_event_hash": "50755b3a49a0e40f33780792fd8c92456f298ca8b4d9eb689297e0d4e529a373",
+    "observation_manifest_sha256": "32b86b4872a7fee4805fc696a42cdd01e3a716de0d003af018010d864b737256",
+    "relative_events_sha256": "2164a66df1217c44f13905ffb605953e5a31c81777b31397eaa565eb20f0dea5",
+    "relative_final_event_hash": "138632d1f844d2de6559bba00fa606daea07f86a13ad778482d3a96d07dd6463",
+    "relative_manifest_sha256": "033e3968dca80918fb5e761cbf5f019fb43b6a61c84553508bfe8af2ed3fbdff"
+  },
+  "summary_file": "summary.json",
+  "summary_sha256": "213a993fa18965749b26e3d42a0f8f8e196f46bcca67da1ed553ce377658176b",
+  "translation_state": {
+    "authenticated_fills": 0,
+    "authority_presentation": "UNPRESENTED",
+    "interaction_grade": "ADJACENT_PUBLIC_BOOK_COUNTERFACTUAL",
+    "orders_submitted": 0,
+    "settled_profit_claimed": false
+  }
+}

@@ -378,3 +378,22 @@ have zero global-hair residual within tolerance and are admitted as completed tr
 has positive completed potential, so all 12 exchange commands remain open and no order or fill is
 produced. See
 [`TRANSLATION_FIRST_LIFE_LOCAL_BALL_INF_GLOBAL_HAIR_ZERO.md`](TRANSLATION_FIRST_LIFE_LOCAL_BALL_INF_GLOBAL_HAIR_ZERO.md).
+
+## Derived interactive signal relations
+
+NRRF807 separates the operands that NRRF806 still obtained inside one presentation. The prior
+natural form and zero-fee potential are committed at stage `t`. Its first route edge is evaluated
+on the `t` books, while the remaining return-to-origin continuation is evaluated on the separately
+captured `t+1` books. Local hair still accounts for the cost translation of that split interaction,
+but global hair now compares the completed split interaction to the *prior* commitment.
+
+Under the independently replayed local accounting equation, global hair is exactly later realized
+potential minus prior potential. Thus its zero is an empirical cross-stage preservation relation,
+not an identity of operands created together. A formal counterexample proves local accounting can
+close while this interactive relation remains open.
+
+The locked replay derives 117 numeric relations across 9 valid adjacent pairs: local accounting
+closes in all 117, 74 preserve the prior potential, and 43 have nonzero global hair. No completed
+presentation is positive; all 11 commands remain open, with zero orders and zero authenticated
+fills. This is a sequential public-book counterfactual and not an exchange interaction or settled
+P&L claim. See [`DERIVED_INTERACTIVE_SIGNAL_RELATIONS.md`](DERIVED_INTERACTIVE_SIGNAL_RELATIONS.md).

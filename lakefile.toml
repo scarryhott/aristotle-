@@ -32,7 +32,8 @@ roots = [
   "NRRFTradingNaturalFormSelectionThroughoutBridge",
   "NRRFTradingLifeActionPotentialGlobalHairExecutor",
   "NRRFTradingRelativisticSignalOpenCommandClosure",
-  "NRRFTradingTranslationFirstLifeLocalBallInfGlobalHairZeroExecutor"
+  "NRRFTradingTranslationFirstLifeLocalBallInfGlobalHairZeroExecutor",
+  "NRRFTradingDerivedInteractiveSignalRelations"
 ]
 
 [[require]]

@@ -1,0 +1,27 @@
+{
+  "adjacent_interactions": 11,
+  "authenticated_fills": 0,
+  "best_completed_return": "-0.004894407906323348210184888962094120106555845208946383151252918090737180197844176330285109739216922233871708536187492675077525395704190330785580118022318444867486213308077528563238",
+  "best_route_id": "USD>BTC>USD",
+  "derived_interactive_relations": 117,
+  "global_hair_open_changes": 43,
+  "global_hair_zero_closures": 74,
+  "interactions_with_numeric_relations": 9,
+  "local_accounting_closures": 117,
+  "maximum_absolute_global_hair": "0.0002938602495429326083603042168",
+  "maximum_absolute_local_accounting_residual": "0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000456",
+  "minimum_absolute_global_hair": "0",
+  "open_commands": 11,
+  "open_depth_relations": 0,
+  "orders_submitted": 0,
+  "positive_completed_presentations": 0,
+  "schema_version": "nrrf807.derived_interactive_signal_relations.v1",
+  "settled_profit_claimed": false,
+  "translation_state": {
+    "authenticated_fills": 0,
+    "authority_presentation": "UNPRESENTED",
+    "interaction_grade": "ADJACENT_PUBLIC_BOOK_COUNTERFACTUAL",
+    "orders_submitted": 0,
+    "settled_profit_claimed": false
+  }
+}

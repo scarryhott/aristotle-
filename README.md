@@ -148,6 +148,11 @@ python3 experiments/nrrf802_unified_closure_market_phase.py verify \
   --source-price-overlay runs/nrrf780_local_price_global_cost_equality/bitstamp_public_20260826T0221Z \
   --source-run runs/nrrf767_live_paper_trading_bot/bitstamp_public_20260826T0221Z \
   --overlay-dir runs/nrrf802_unified_closure_market_phase/bitstamp_public_20260826T0221Z
+python3 experiments/nrrf807_derived_interactive_signal_relations.py verify \
+  runs/nrrf767_live_paper_trading_bot/bitstamp_public_20260826T0221Z \
+  runs/nrrf805_relativistic_signal_open_command/bitstamp_public_20260826T0221Z \
+  runs/nrrf806_translation_first_life_reactor/bitstamp_public_20260826T0221Z \
+  runs/nrrf807_derived_interactive_signal_relations/bitstamp_public_20260826T0221Z
 python3 -m unittest discover -s tests -v
 lake build
 ```
@@ -257,6 +262,13 @@ The available bridges make later layers explicit:
 - `experiments/nrrf806_translation_first_life_reactor.py` — replays all observed depth reactions,
   renames friction as local hair, uses the full-equation residual as global hair, and leaves trade
   commands open after zero-hair admission when completed potential is nonpositive.
+- `lean/NRRFTradingDerivedInteractiveSignalRelations.lean` — separates the prior committed
+  potential from its later realization and proves that, after local accounting closes, global hair
+  is exactly the cross-stage potential gap; local accounting alone no longer forces closure.
+- `experiments/nrrf807_derived_interactive_signal_relations.py` — commits the natural form at `t`,
+  evaluates its action on the `t` books and its return continuation on independently captured
+  `t+1` books, then records preserved and changed signal relations without future selection
+  lookahead or exchange execution.
 - `external/aristotle/068068ee-b720-4df1-a203-571e0928ec3d/` — authenticated, hash-manifested
   Aristotle sources and notes for the independently authored NRRF780–790 and NRRF795–798 task
   deltas. The provider-pinned Lean 4.28 snapshot is preserved without making the unchanged archive
