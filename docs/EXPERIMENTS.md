@@ -414,3 +414,17 @@ assessments; all 12 commands remain `OPEN_REACTOR`, with zero orders and fills.
 This result classifies the available data as potential reactor geometry, not as low trading value.
 See
 [`EXECUTOR_REACTOR_TRANSLATIONAL_TRUTH_REUNIFICATION.md`](EXECUTOR_REACTOR_TRANSLATIONAL_TRUTH_REUNIFICATION.md).
+
+## 0–∞ fold/unfold repetition gate
+
+NRRF809 derives the poles from the beat-generated closure: 0 is the greatest internal form and
+universal executer point; ∞ is the least internal form and reciprocal reactor line. It does not
+convert chronological adjacency or numerical price recurrence into a translation step.
+
+Across 12 rounds, the immutable replay retains 33 ∞-reactor fibres and 66 reciprocal
+presentations. It records 12 universal 0-pole readings but zero authored translation steps. Fold,
+unfold, repetition, second-level 00/∞∞, and profit assessment consequently remain absent. All 12
+commands are `OPEN_ZERO_INF_TRANSLATION`, with zero orders and fills.
+
+This is an unevaluated repetition relation, not a finding that prices fail to repeat. See
+[`ZERO_INF_TRADING_FOLD_UNFOLD_REPETITION_GATE.md`](ZERO_INF_TRADING_FOLD_UNFOLD_REPETITION_GATE.md).

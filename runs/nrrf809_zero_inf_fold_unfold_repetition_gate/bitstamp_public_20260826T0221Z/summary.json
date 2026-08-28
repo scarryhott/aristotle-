@@ -1,0 +1,29 @@
+{
+  "authenticated_fills": 0,
+  "authored_translation_steps": 0,
+  "boundary": {
+    "authenticated_fills": 0,
+    "authored_translation_steps": 0,
+    "fold_readings": 0,
+    "interaction_grade": "PUBLIC_BOOK_ZERO_INF_POLES_WITHOUT_AUTHORED_STEP",
+    "orders_submitted": 0,
+    "profit_assessments": 0,
+    "repetition_readings": 0,
+    "settled_profit_claimed": false,
+    "unfold_readings": 0
+  },
+  "fold_readings": 0,
+  "inf_reactor_fibres": 33,
+  "inf_reciprocal_presentations": 66,
+  "open_zero_inf_commands": 12,
+  "orders_submitted": 0,
+  "profit_assessments": 0,
+  "repetition_readings": 0,
+  "rounds": 12,
+  "rounds_with_inf_reactor_geometry": 11,
+  "schema_version": "nrrf809.zero_inf_fold_unfold_repetition_gate.v1",
+  "second_level_readings": 0,
+  "settled_profit_claimed": false,
+  "unfold_readings": 0,
+  "zero_pole_universal_readings": 12
+}

@@ -34,7 +34,8 @@ roots = [
   "NRRFTradingRelativisticSignalOpenCommandClosure",
   "NRRFTradingTranslationFirstLifeLocalBallInfGlobalHairZeroExecutor",
   "NRRFTradingDerivedInteractiveSignalRelations",
-  "NRRFTradingExecutorReactorTranslationalTruthReunification"
+  "NRRFTradingExecutorReactorTranslationalTruthReunification",
+  "NRRFTradingZeroInfFoldUnfoldRepetitionGate"
 ]
 
 [[require]]

@@ -159,6 +159,13 @@ python3 experiments/nrrf808_executor_reactor_reunification.py verify \
   runs/nrrf806_translation_first_life_reactor/bitstamp_public_20260826T0221Z \
   runs/nrrf807_derived_interactive_signal_relations/bitstamp_public_20260826T0221Z \
   runs/nrrf808_executor_reactor_reunification/bitstamp_public_20260826T0221Z
+python3 experiments/nrrf809_zero_inf_fold_unfold_repetition_gate.py verify \
+  runs/nrrf767_live_paper_trading_bot/bitstamp_public_20260826T0221Z \
+  runs/nrrf805_relativistic_signal_open_command/bitstamp_public_20260826T0221Z \
+  runs/nrrf806_translation_first_life_reactor/bitstamp_public_20260826T0221Z \
+  runs/nrrf807_derived_interactive_signal_relations/bitstamp_public_20260826T0221Z \
+  runs/nrrf808_executor_reactor_reunification/bitstamp_public_20260826T0221Z \
+  runs/nrrf809_zero_inf_fold_unfold_repetition_gate/bitstamp_public_20260826T0221Z
 python3 -m unittest discover -s tests -v
 lake build
 ```
@@ -282,6 +289,12 @@ The available bridges make later layers explicit:
 - `experiments/nrrf808_executor_reactor_reunification.py` — retains both directions of every
   reciprocal public-book fibre without selecting a representative, records the books as reactor
   potential only, and performs no profit assessment before an authored transactional action.
+- `lean/NRRFTradingZeroInfFoldUnfoldRepetitionGate.lean` — derives the 0–∞ interval of internal
+  forms, identifies ∞ with the reactor kernel and 0 with the universal executer point, and makes
+  fold/unfold repetition unavailable before a translation step is authored.
+- `experiments/nrrf809_zero_inf_fold_unfold_repetition_gate.py` — carries both poles over the
+  locked public books while refusing to treat time order or recurring prices as an authored step;
+  every fold, unfold, repetition, second-level, and profit reading remains open.
 - `external/aristotle/068068ee-b720-4df1-a203-571e0928ec3d/` — authenticated, hash-manifested
   Aristotle sources and notes for the independently authored NRRF780–790 and NRRF795–798 task
   deltas. The provider-pinned Lean 4.28 snapshot is preserved without making the unchanged archive
