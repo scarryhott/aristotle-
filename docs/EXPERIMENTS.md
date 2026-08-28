@@ -428,3 +428,17 @@ commands are `OPEN_ZERO_INF_TRANSLATION`, with zero orders and fills.
 
 This is an unevaluated repetition relation, not a finding that prices fail to repeat. See
 [`ZERO_INF_TRADING_FOLD_UNFOLD_REPETITION_GATE.md`](ZERO_INF_TRADING_FOLD_UNFOLD_REPETITION_GATE.md).
+
+## Exchange-authored interactive closure data
+
+NRRF810 replaces REST polling adjacency with Bitstamp live-order interactions carrying the
+exchange's own `event_id` / `pre_event_id` lineage. An order identity and its relational type form
+the natural form: creation unfolds it, changes remain inside it, and deletion folds it back to the
+zero point. Price, cost, and profit do not author the form.
+
+Five independent live windows contain 39,733 exchange-authored events, 19,774 unfolded forms,
+18,621 matching returns to zero, 138 within-form translations, zero contradictions, and zero source
+chain gaps. Open and capture-boundary-partial forms remain explicit. One complete 9,809-event raw
+ledger is retained for offline semantic replay; the remaining windows are recorded by compact
+counts and content hashes. See
+[`EXCHANGE_AUTHORED_INTERACTIVE_CLOSURE_DATA_NRRF810.md`](EXCHANGE_AUTHORED_INTERACTIVE_CLOSURE_DATA_NRRF810.md).
