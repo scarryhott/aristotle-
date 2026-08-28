@@ -77,6 +77,22 @@ class ZeroInfFoldUnfoldRepetitionGateTest(unittest.TestCase):
         self.assertFalse(zero_inf.DERIVATION["resource_metric_authors_step"])
         self.assertFalse(zero_inf.DERIVATION["market_time_authors_step"])
 
+    def test_time_and_event_identity_cannot_author_a_translation(self) -> None:
+        source_event = read_events(REUNIFIED_RUN)[1]
+        changed_metadata = json.loads(json.dumps(source_event))
+        changed_metadata["round_index"] = 10_000
+        changed_metadata["source_event_hash"] = "changed-event-identity"
+        changed_metadata["observation_state"] = "CHRONOLOGICALLY_LATER_IDENTICAL_BOOKS"
+        changed_metadata["market_timestamp"] = "2099-12-31T23:59:59Z"
+
+        self.assertEqual(
+            zero_inf.derive_zero_inf(source_event),
+            zero_inf.derive_zero_inf(changed_metadata),
+        )
+        reading = zero_inf.derive_zero_inf(changed_metadata)
+        self.assertIsNone(reading["authored_translation_step"])
+        self.assertIsNone(reading["inf"]["repetition"])
+
     def test_offline_replay_rejects_forged_authored_step(self) -> None:
         with mock.patch.object(socket, "socket", side_effect=AssertionError("network forbidden")):
             verified = zero_inf.verify_overlay(
