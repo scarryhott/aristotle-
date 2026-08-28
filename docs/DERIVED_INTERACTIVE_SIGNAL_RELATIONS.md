@@ -1,11 +1,16 @@
 # Derived Interactive Signal Relations
 
+> **Interpretation superseded by NRRF808.** This remains an immutable diagnostic of cross-stage
+> route probes. Its route-local completed-return maxima are resource-selected isolations, not
+> translational-truth-derived natural forms. See
+> [`EXECUTOR_REACTOR_TRANSLATIONAL_TRUTH_REUNIFICATION.md`](EXECUTOR_REACTOR_TRANSLATIONAL_TRUTH_REUNIFICATION.md).
+
 NRRF807 makes the signal itself a relation across two independently recorded interactions. It does
 not define a signal inside one price snapshot and then call its accounting identity closure.
 
 ## Closure derivation
 
-At stage `t`, the NRRF805 natural-form presentation and its zero-fee full-route potential are
+At stage `t`, the NRRF805 route-local probe and its zero-fee full-route potential are
 already committed by the source event hash:
 
 ```text

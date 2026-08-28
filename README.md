@@ -153,6 +153,12 @@ python3 experiments/nrrf807_derived_interactive_signal_relations.py verify \
   runs/nrrf805_relativistic_signal_open_command/bitstamp_public_20260826T0221Z \
   runs/nrrf806_translation_first_life_reactor/bitstamp_public_20260826T0221Z \
   runs/nrrf807_derived_interactive_signal_relations/bitstamp_public_20260826T0221Z
+python3 experiments/nrrf808_executor_reactor_reunification.py verify \
+  runs/nrrf767_live_paper_trading_bot/bitstamp_public_20260826T0221Z \
+  runs/nrrf805_relativistic_signal_open_command/bitstamp_public_20260826T0221Z \
+  runs/nrrf806_translation_first_life_reactor/bitstamp_public_20260826T0221Z \
+  runs/nrrf807_derived_interactive_signal_relations/bitstamp_public_20260826T0221Z \
+  runs/nrrf808_executor_reactor_reunification/bitstamp_public_20260826T0221Z
 python3 -m unittest discover -s tests -v
 lake build
 ```
@@ -265,10 +271,17 @@ The available bridges make later layers explicit:
 - `lean/NRRFTradingDerivedInteractiveSignalRelations.lean` — separates the prior committed
   potential from its later realization and proves that, after local accounting closes, global hair
   is exactly the cross-stage potential gap; local accounting alone no longer forces closure.
-- `experiments/nrrf807_derived_interactive_signal_relations.py` — commits the natural form at `t`,
-  evaluates its action on the `t` books and its return continuation on independently captured
-  `t+1` books, then records preserved and changed signal relations without future selection
-  lookahead or exchange execution.
+- `experiments/nrrf807_derived_interactive_signal_relations.py` — commits a route-local probe at
+  `t`, evaluates it on the `t` books and its return continuation on independently
+  captured `t+1` books. NRRF808 retains this as a diagnostic but rejects its completed-return
+  argmax as natural-form authorship.
+- `lean/NRRFTradingExecutorReactorTranslationalTruthReunification.lean` — proves reactor equality
+  is exactly beat-generated closure equality, the reactor is the least internal form, and the
+  constant global-hair executer cannot select a signal. With no interaction-authored turn, the
+  identified form is definitionally absent.
+- `experiments/nrrf808_executor_reactor_reunification.py` — retains both directions of every
+  reciprocal public-book fibre without selecting a representative, records the books as reactor
+  potential only, and performs no profit assessment before an authored transactional action.
 - `external/aristotle/068068ee-b720-4df1-a203-571e0928ec3d/` — authenticated, hash-manifested
   Aristotle sources and notes for the independently authored NRRF780–790 and NRRF795–798 task
   deltas. The provider-pinned Lean 4.28 snapshot is preserved without making the unchanged archive
