@@ -1,0 +1,34 @@
+{
+  "all_pairs_mirror_coherent": false,
+  "authenticated_fills": 0,
+  "authenticated_settled_pnl_usd": null,
+  "boundary": {
+    "action_selected": false,
+    "authenticated_fills": 0,
+    "authenticated_settled_pnl_usd": null,
+    "execution_authorized": false,
+    "formal_receipt_admissions": 0,
+    "orders_submitted": 0,
+    "settled_profit_claimed": false
+  },
+  "formal_receipt_admissions": 0,
+  "full_ball_coverage": false,
+  "observed_phase_values": [
+    1,
+    3
+  ],
+  "one_to_one_continuity_admitted": false,
+  "one_to_one_continuity_reason": "the audit observes paired phase values, not a total bijection Ball -> Ball commuting with ballStep",
+  "orders_submitted": 0,
+  "pair_states": {
+    "CONTRADICTED": 28,
+    "MIRROR_COHERENT": 5,
+    "OPEN": 3
+  },
+  "phase_pairs": 36,
+  "prediction_admitted": false,
+  "prediction_reason": "NRRF801 phase closure is a tested interface condition; it does not itself predict a future local price or authorize a trade",
+  "rounds": 12,
+  "schema_version": "nrrf801.black_mirror_market_phase.v1",
+  "settled_profit_claimed": false
+}

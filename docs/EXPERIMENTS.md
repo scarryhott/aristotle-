@@ -285,3 +285,160 @@ numeric signs are unchanged and negative. This is expected from the proved facto
 failure to apply the new input. No order, authenticated fill, formal receipt admission, settlement,
 or profit is claimed. See
 [`LOCAL_PRICE_GLOBAL_COST_EQUALITY_NRRF780_NOTES.md`](LOCAL_PRICE_GLOBAL_COST_EQUALITY_NRRF780_NOTES.md).
+
+## NRRF801 black-mirror market-phase audit
+
+The NRRF801 overlay consumes the already verified NRRF780 zero-fee local-price presentation. It
+uses only whether `exit_local_price_ratio` is above, equal to, or below the unit relation to read
+phase `1`, `0`, or `3 = -1 (mod 4)`. Cost completion, completed return, P&L sign, and round number
+are excluded from this derivation. PLUS/MINUS readings close as a black-mirror pair only when the
+MINUS phase is the additive inverse of the PLUS phase.
+
+On the locked 12-round Bitstamp run there are 36 reciprocal pairs: 5 `MIRROR_COHERENT`, 28
+`CONTRADICTED`, and 3 `OPEN`. Only phases 1 and 3 are observed. The data therefore does not exhibit
+the whole four-phase ball, does not supply a total one-to-one continuity, and admits no NRRF801
+prediction or trade. The result is a measured interface gap, not a manufactured negative or a
+profit claim. See
+[`NRRF801_TRADING_BLACK_MIRROR_REINTEGRATION.md`](NRRF801_TRADING_BLACK_MIRROR_REINTEGRATION.md).
+
+## NRRF802 unified-closure market interpretation
+
+NRRF802 does not replace or rewrite the NRRF801 phase evidence. A second immutable overlay maps
+each opposite-orientation pair into the generic quotient `Closure blackMirror`. Its concrete
+factored reading is the oriented phase: PLUS/right reads `phase`, while MINUS/left reads `-phase`.
+Equality of those readings is exactly the existing black-mirror condition proved in
+`mirrorCoherent_iff_unifiedClosure`.
+
+All 36 source results are preserved: 5 pairs are in the `SAME_CLOSURE` class, 28 remain
+`DISTINCT_CLOSURE`, and 3 remain `OPEN`. The one-point result for closing abstract life by both
+`ballReturn` and `hairReturn` is not applied to the market, because those two market returns have
+not been observed or supplied. The generic closure changes the organization, not the empirical
+outcome, and still admits no prediction, order, fill, settlement, or profit.
+
+## Throughout-selected natural forms
+
+The NRRF803 correction is formal rather than a new market-data overlay. A natural equality may be
+selected at every round; it need not be an externally fixed object. The locked experiment remains
+classified by the finest return-generated equality. This matters because a coarser natural form
+can identify extra states, so changing forms after observing a result could otherwise manufacture
+apparent closure. The trading bridge admits a selected form as an exact replacement only with a
+faithfulness proof back to the canonical NRRF802 relation. Consequently the measured 5 / 28 / 3
+classification and the no-execution boundary are unchanged.
+
+## Life action/potential global-hair executor
+
+The NRRF804 overlay joins the immutable NRRF780 local-price/global-cost presentation to the
+immutable NRRF801 life-phase audit. For each route-size presentation it derives:
+
+```text
+action potential = zero-fee local-price final USD - starting USD
+global hair      = zero-fee local-price final USD - cost-completed final USD
+completed net    = action potential - global hair
+```
+
+`ballReturn` is the action continuation and `hairReturn` the inverse-potential continuation. The
+paper executor reaches the hair comparison only when the paired phases are mirror-coherent, and it
+emits `ACT` only when action potential strictly exceeds global hair. Across 12 rounds and 72
+presentations, the result is 10 `HOLD_GLOBAL_HAIR`, 56 `HOLD_LIFE_OPEN`, and 6 `OPEN`; all 66
+numeric closure identities replay exactly and no action is selected. The best closed-life case has
+$0.0058021422 of local action potential versus $0.7481699699 of global hair on $100, leaving
+−$0.7423678276. No order or authenticated fill is produced.
+
+## Relativistic signal integration and open command
+
+NRRF805 replays the locked NRRF767 raw public books directly. It does not reuse the old two route
+labels, three fixed notionals, or NRRF801 price-to-phase rule. The validated books generate the
+directed asset graph; every rooted simple closed route is enumerated; rotations are quotiented into
+relative oriented route classes; and every observed depth breakpoint is pulled back through each
+route. The maximizing depth equivalence class is therefore derived from the local data rather than
+supplied as a probe.
+
+The signal field uses dimensionless action-potential, global-hair, and completed returns. It selects
+only a unique positive maximum relative to all simultaneous route classes and requires the inverse
+class in the same topology. Execution authority is an independent open field, so even a positive
+paper relation would not submit an order.
+
+Across 12 rounds, 11 identified graphs yield 143 maximizing presentations and five relative route
+classes per valid round. No completed return is positive. The best is BTC→USD→BTC at
+`-49.93876056045305905061517497` bps. All 12 commands remain `OPEN`, all numerical closure
+identities replay, and there are zero orders or authenticated fills. See
+[`RELATIVISTIC_SIGNAL_OPEN_COMMAND_CLOSURE.md`](RELATIVISTIC_SIGNAL_OPEN_COMMAND_CLOSURE.md).
+
+## Translation-first life reactor and global hair zero
+
+NRRF806 corrects the ordering still present in NRRF804/805. Internal/external roles are not input
+labels; they are derived after translational truth. Fee and slippage are local hair. Global hair is
+the residual of the entire completed equation, and its zero is the executor's admission criterion.
+The reactor is the local ball of every finite `ballReturn`/`hairReturn` continuation, not a static
+phase tag or only the final maximizing candidate.
+
+Across the 11 identified book rounds, 132 rooted life reactors evaluate 365,203 observed depth
+reactions and remain open beyond those finite prefixes. All 143 selected natural-form presentations
+have zero global-hair residual within tolerance and are admitted as completed translations. None
+has positive completed potential, so all 12 exchange commands remain open and no order or fill is
+produced. See
+[`TRANSLATION_FIRST_LIFE_LOCAL_BALL_INF_GLOBAL_HAIR_ZERO.md`](TRANSLATION_FIRST_LIFE_LOCAL_BALL_INF_GLOBAL_HAIR_ZERO.md).
+
+## Derived interactive signal relations
+
+NRRF807 separates the operands that NRRF806 still obtained inside one presentation. The prior
+natural form and zero-fee potential are committed at stage `t`. Its first route edge is evaluated
+on the `t` books, while the remaining return-to-origin continuation is evaluated on the separately
+captured `t+1` books. Local hair still accounts for the cost translation of that split interaction,
+but global hair now compares the completed split interaction to the *prior* commitment.
+
+Under the independently replayed local accounting equation, global hair is exactly later realized
+potential minus prior potential. Thus its zero is an empirical cross-stage preservation relation,
+not an identity of operands created together. A formal counterexample proves local accounting can
+close while this interactive relation remains open.
+
+The locked replay derives 117 numeric relations across 9 valid adjacent pairs: local accounting
+closes in all 117, 74 preserve the prior potential, and 43 have nonzero global hair. No completed
+presentation is positive; all 11 commands remain open, with zero orders and zero authenticated
+fills. This is a sequential public-book counterfactual and not an exchange interaction or settled
+P&L claim. See [`DERIVED_INTERACTIVE_SIGNAL_RELATIONS.md`](DERIVED_INTERACTIVE_SIGNAL_RELATIONS.md).
+
+## Executer/reactor translational-truth reunification
+
+NRRF808 corrects the remaining external choice in NRRF805–807. A completed-return argmax no longer
+authors a natural form. Form identity is instead the kernel of the local reactor, proved equal to
+the closure relation generated by the action/potential beat. Global-hair zero is the constant
+executer reading and is not interpreted as a signal.
+
+The runtime retains both directions of every reciprocal public-book relation. The 11 identified
+rounds yield 33 reactor fibres and 66 local presentations, with no selected representative. Because
+the public books contain no authenticated transaction by this system, they author zero action or
+potential turns. There are consequently zero identified natural signal forms and zero profit
+assessments; all 12 commands remain `OPEN_REACTOR`, with zero orders and fills.
+
+This result classifies the available data as potential reactor geometry, not as low trading value.
+See
+[`EXECUTOR_REACTOR_TRANSLATIONAL_TRUTH_REUNIFICATION.md`](EXECUTOR_REACTOR_TRANSLATIONAL_TRUTH_REUNIFICATION.md).
+
+## 0–∞ fold/unfold repetition gate
+
+NRRF809 derives the poles from the beat-generated closure: 0 is the greatest internal form and
+universal executer point; ∞ is the least internal form and reciprocal reactor line. It does not
+convert chronological adjacency or numerical price recurrence into a translation step.
+
+Across 12 rounds, the immutable replay retains 33 ∞-reactor fibres and 66 reciprocal
+presentations. It records 12 universal 0-pole readings but zero authored translation steps. Fold,
+unfold, repetition, second-level 00/∞∞, and profit assessment consequently remain absent. All 12
+commands are `OPEN_ZERO_INF_TRANSLATION`, with zero orders and fills.
+
+This is an unevaluated repetition relation, not a finding that prices fail to repeat. See
+[`ZERO_INF_TRADING_FOLD_UNFOLD_REPETITION_GATE.md`](ZERO_INF_TRADING_FOLD_UNFOLD_REPETITION_GATE.md).
+
+## Exchange-authored interactive closure data
+
+NRRF810 replaces REST polling adjacency with Bitstamp live-order interactions carrying the
+exchange's own `event_id` / `pre_event_id` lineage. An order identity and its relational type form
+the natural form: creation unfolds it, changes remain inside it, and deletion folds it back to the
+zero point. Price, cost, and profit do not author the form.
+
+Five independent live windows contain 39,733 exchange-authored events, 19,774 unfolded forms,
+18,621 matching returns to zero, 138 within-form translations, zero contradictions, and zero source
+chain gaps. Open and capture-boundary-partial forms remain explicit. One complete 9,809-event raw
+ledger is retained for offline semantic replay; the remaining windows are recorded by compact
+counts and content hashes. See
+[`EXCHANGE_AUTHORED_INTERACTIVE_CLOSURE_DATA_NRRF810.md`](EXCHANGE_AUTHORED_INTERACTIVE_CLOSURE_DATA_NRRF810.md).

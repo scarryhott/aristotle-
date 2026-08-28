@@ -1,0 +1,39 @@
+{
+  "boundary": {
+    "authenticated_fills": 0,
+    "authored_translation_steps": 0,
+    "fold_readings": 0,
+    "interaction_grade": "PUBLIC_BOOK_ZERO_INF_POLES_WITHOUT_AUTHORED_STEP",
+    "orders_submitted": 0,
+    "profit_assessments": 0,
+    "repetition_readings": 0,
+    "settled_profit_claimed": false,
+    "unfold_readings": 0
+  },
+  "derivation": {
+    "fold": "quotient by an authored translation step",
+    "inf_pole": "least internal form; beat-generated reciprocal reactor line",
+    "market_time_authors_step": false,
+    "orders_enabled": false,
+    "repetition": "return within that orbit; unavailable before step authorship",
+    "resource_metric_authors_step": false,
+    "unfold": "forward orbit of that same authored translation step",
+    "zero_pole": "greatest internal form; universal executer point"
+  },
+  "event_count": 12,
+  "events_file": "events.jsonl",
+  "events_sha256": "afef3d2b6a6a1b0140d061850d7d1ff7ffd79842eae8c186abbd0eaeb143e568",
+  "final_event_hash": "f4ecfe356b7e1f6be8dead57198de8284020687b3852bfa8c3f7d03843f71617",
+  "genesis_hash": "2519825fc3140aacff0ca0dd9ae0ea2e196d089986c2b7c2964bdd779b7780b0",
+  "program": "nrrf809_zero_inf_fold_unfold_repetition_gate.py",
+  "program_sha256": "1e27ccfc1154d12dfadb77471fcfd2f4c53da35a004f71e4f8415c0ee73f95a0",
+  "run_kind": "IMMUTABLE_ZERO_INF_FOLD_UNFOLD_REPETITION_GATE",
+  "schema_version": "nrrf809.zero_inf_fold_unfold_repetition_gate.v1",
+  "source_binding": {
+    "reunified_events_sha256": "60d64e6ff652a0a11be0bae0f7a4a7c550231e3a93c57c3af4f6a5887245937e",
+    "reunified_final_event_hash": "c6c247c50f06e18d051b0f69e20a83c2609dc42427d9650f4f5408946a83cf4c",
+    "reunified_manifest_sha256": "755021563190c888c672811f83a980f7221d3286c71b57ed09ace15124ab12b8"
+  },
+  "summary_file": "summary.json",
+  "summary_sha256": "3d03039f41218cfe4a341b3a9ea9d00b387d38c0bcb096e0ba4fdce067eea6cd"
+}

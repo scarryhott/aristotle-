@@ -1,0 +1,41 @@
+{
+  "boundary": {
+    "authenticated_fills": 0,
+    "orders_enabled": false,
+    "orders_submitted": 0,
+    "price_authors_form": false,
+    "profit_assessments": 0,
+    "profit_authors_form": false,
+    "settled_profit_claimed": false
+  },
+  "configuration": {
+    "channels": [
+      "live_orders_btcusd",
+      "live_orders_ethusd",
+      "live_orders_ethbtc"
+    ],
+    "duration_seconds": 15.0,
+    "max_events": 15000,
+    "orders_enabled": false,
+    "websocket_url": "wss://ws.bitstamp.net"
+  },
+  "event_count": 9809,
+  "events_file": "events.jsonl",
+  "events_sha256": "2cb24390490adc2d431998be1bf2332df806d20204407dc2c0f257b54f124bda",
+  "final_record_hash": "8fecb1e37f09ad4d2dae22660562066f1fae2b51d0c832fa19ac4ed753c1d825",
+  "genesis_hash": "b52db62a3b7a1fc70a332a09dc668ac529a81d1113fa4b606a23e62026014dc1",
+  "program": "experiments/nrrf810_exchange_authored_interactive_closure.py",
+  "program_sha256": "b2b5438fef8a59c127aabf3cefd8b59a6db68a581848b3a1d2fc2f5c1a79bc81",
+  "raw_messages_file": "raw_messages.jsonl",
+  "raw_messages_sha256": "695268aa720d14f74c035c84aa2a8adae02431ff75dddc6ea0cca11e87ccdd72",
+  "run_kind": "LIVE_EXCHANGE_AUTHORED_INTERACTIVE_CLOSURE",
+  "schema_version": "nrrf810.exchange_authored_interactive_closure.v1",
+  "source": {
+    "api_documentation": "https://www.bitstamp.net/api/",
+    "interaction_authorship": "event_id/pre_event_id supplied by exchange stream",
+    "venue": "Bitstamp",
+    "websocket_url": "wss://ws.bitstamp.net"
+  },
+  "summary_file": "summary.json",
+  "summary_sha256": "23ea809dfae9cacab3892b51511840f4239590015e706217cbf7339d630122e5"
+}

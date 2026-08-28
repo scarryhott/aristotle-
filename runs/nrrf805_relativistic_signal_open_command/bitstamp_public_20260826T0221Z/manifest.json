@@ -1,0 +1,29 @@
+{
+  "boundary": {
+    "authenticated_fills": 0,
+    "authenticated_settled_pnl": null,
+    "orders_submitted": 0,
+    "paper_derivation_only": true,
+    "private_execution_authority_present": false,
+    "profit_claimed": false
+  },
+  "equation": "completed_return = action_potential_return - global_hair_return",
+  "event_count": 12,
+  "events_file": "events.jsonl",
+  "events_sha256": "2164a66df1217c44f13905ffb605953e5a31c81777b31397eaa565eb20f0dea5",
+  "final_event_hash": "138632d1f844d2de6559bba00fa606daea07f86a13ad778482d3a96d07dd6463",
+  "genesis_hash": "b99d162bcfabe219b17c482d06204f006b6795a7eac9997ce110809e62c2ca37",
+  "partition_derivation": "MAXIMIZING_EQUIVALENCE_CLASS_OVER_ALL_OBSERVED_DEPTH_BREAKPOINTS",
+  "program": "nrrf805_relativistic_signal_open_command.py",
+  "program_sha256": "ae9d7514b0c1fa6c52d407e0e235e5964e05437bc85d29a1ac8fe33bb55da7f9",
+  "run_kind": "IMMUTABLE_RELATIVISTIC_SIGNAL_OPEN_COMMAND",
+  "schema_version": "nrrf805.relativistic_signal_open_command.v1",
+  "selection_derivation": "UNIQUE_POSITIVE_MAXIMUM_OF_RELATIVE_COMPLETED_RETURNS",
+  "source_binding": {
+    "source_events_sha256": "0669ec688688a4810ee61b4f6b18b5dee720eaa0e1a6ac5f140cd51128e4ac81",
+    "source_final_event_hash": "50755b3a49a0e40f33780792fd8c92456f298ca8b4d9eb689297e0d4e529a373",
+    "source_manifest_sha256": "32b86b4872a7fee4805fc696a42cdd01e3a716de0d003af018010d864b737256"
+  },
+  "summary_file": "summary.json",
+  "summary_sha256": "6afeb23d01c4c2840414b810e51f8d6166fc81419c536c08f0f60104d958dccd"
+}

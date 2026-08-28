@@ -1,0 +1,23 @@
+{
+  "authenticated_fills": 0,
+  "authored_transactional_actions": 0,
+  "boundary": {
+    "authenticated_fills": 0,
+    "authored_transactional_actions": 0,
+    "interaction_grade": "PUBLIC_BOOK_REACTOR_POTENTIAL_ONLY",
+    "orders_submitted": 0,
+    "profit_assessments": 0,
+    "settled_profit_claimed": false
+  },
+  "identified_natural_signal_forms": 0,
+  "open_reactor_commands": 12,
+  "orders_submitted": 0,
+  "profit_assessments": 0,
+  "reciprocal_presentations": 66,
+  "reciprocal_reactor_fibres": 33,
+  "rounds": 12,
+  "rounds_with_reactor_geometry": 11,
+  "schema_version": "nrrf808.executor_reactor_reunification.v1",
+  "settled_profit_claimed": false,
+  "universal_executer_zero_readings": 33
+}

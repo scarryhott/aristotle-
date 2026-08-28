@@ -264,6 +264,51 @@ or axiom audit. NRRF786 is the local conditional trading adapter; its headline p
 choice-free, but exact import remains required before it is labelled an instance of the reported
 modules.
 
+## NRRF800/801: recovered authenticated source delta and active trading bridge
+
+The Aristotle project `068068ee-b720-4df1-a203-571e0928ec3d` supplied the exact completed task
+deltas for:
+
+- NRRF800 task `676a6f03-198b-4c80-b1cd-f78424d52b4f`;
+- NRRF801 task `82a1cead-abbb-4888-bdfb-05635ac21ca4`.
+
+The provider-source SHA-256 values before local build-surface adaptation were
+`387d0b64db413a5a0614c968fbbb2f4ed62e28f709c7b0e13b5f7c400fa5c7f9` for NRRF800 and
+`7a369da7a7c9abfa0cc5ad18239b30cd6c15512428338dd3aed212657c19dc0d` for NRRF801. The note hashes
+remain byte-identical to the provider files:
+`6bbb61f53e26229d19521911de0e799fae8eb4f89d33bc4e08d45be42c0d372c` and
+`cc514af6163b73059fa6ee6175a8e34f361093da7fbfa172cc8282905a87e6bc`.
+
+To avoid rebuilding the entire Mathlib umbrella on the constrained local volume, NRRF800's broad
+`import Mathlib` was replaced by its direct imports and the generated two-constructor `Fintype`
+instance was written explicitly. NRRF801's redundant broad import was removed because NRRF800
+supplies its dependencies. No theorem statement was altered. Both sources and the trading bridge
+build under Lean 4.33 with no `sorry`; the current locally adapted source hashes are
+`234ff1bc43eb0f3d29a6e5797903b4337219204a854b9faa5a66202f272224d0` and
+`da88d906f360c0154a3c96cb2dd62890d5f43f05fbc236e3c48a1ec9fef7f157`.
+
+NRRF802 was recovered from the same project as completed task
+`5f88ef5b-0101-4651-830a-412722d72fe8`. Its provider-source SHA-256 is
+`5b4ce6a81905d53af5077e860057582ad3d586155d15bca46b94c52d44a1f9c9`, and its note SHA-256 is
+`45bdf685759f16fff425835d060a794169cf6c8f346fa4da1175b09469c3a452`. The redundant broad
+`import Mathlib` was removed locally because NRRF801 already supplies the complete dependency
+surface; no definition or theorem statement changed. The active Lean 4.33 source hash is
+`3dd1c3ff6f4db74ade453fa10916ed9c1e6843f394146449e11725c28cdf879f`. NRRF802 and the refactored
+trading bridge build with no `sorry`.
+
+NRRF803 was recovered from completed task
+`b8793528-28d5-43ca-9fe5-82139a649e6e`. Its provider-source SHA-256 is
+`e8c5dfc11cb0b32ef778891a868a5fb996778b9c3a9c5a4552b6675931011d66`, and its note SHA-256 is
+`b25b90f509e4e926ebda1a08322b93f052c9dda4fde0e9c910ced4e5138ed54f`. For the local Lean 4.33
+build, the broad `import Mathlib` was replaced by the already sufficient NRRF802 import; the
+`traj_factor` proof was made explicit across NRRF802's named quotient type, and the sole `omega`
+step was replaced by the direct natural-number contradiction. No definition or theorem statement
+changed. The active source SHA-256 is
+`c0493c83be9ae2a5efa83b011141c3edc024bee48b55981a058dd3cc8b1f704f` and it builds without
+`sorry`. The word “external” in the provider note records how the first module was read; it is not
+a proved necessity, and the follow-on integration treats a fixed form as only the constant case of
+selection throughout.
+
 ## Required runtime bridge
 
 Before the external results become local formal evidence, this repository

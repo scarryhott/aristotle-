@@ -29,6 +29,19 @@ jobs:
         run: python3 experiments/generative_axiom_geometry_isolation.py --assert-reference > /tmp/generative_isolation_result.json
       - name: Replay translational-completion maze topology
         run: python3 experiments/translational_completion_maze.py --assert-reference > /tmp/translational_completion_maze_result.json
+      - name: Verify committed NRRF801 black-mirror market-phase overlay
+        run: |
+          python3 experiments/nrrf801_black_mirror_market_phase.py verify \
+            --source-overlay runs/nrrf780_local_price_global_cost_equality/bitstamp_public_20260826T0221Z \
+            --source-run runs/nrrf767_live_paper_trading_bot/bitstamp_public_20260826T0221Z \
+            --overlay-dir runs/nrrf801_black_mirror_market_phase/bitstamp_public_20260826T0221Z
+      - name: Verify committed NRRF802 unified-closure market overlay
+        run: |
+          python3 experiments/nrrf802_unified_closure_market_phase.py verify \
+            --source-phase-overlay runs/nrrf801_black_mirror_market_phase/bitstamp_public_20260826T0221Z \
+            --source-price-overlay runs/nrrf780_local_price_global_cost_equality/bitstamp_public_20260826T0221Z \
+            --source-run runs/nrrf767_live_paper_trading_bot/bitstamp_public_20260826T0221Z \
+            --overlay-dir runs/nrrf802_unified_closure_market_phase/bitstamp_public_20260826T0221Z
       - name: Require deterministic committed receipts
         run: git diff --exit-code -- runs/full_stack_d4/latest runs/classical_vs_closure/latest runs/three_part_assumption_interaction/latest runs/generative_axiom_geometry_isolation/latest runs/translational_completion_maze/latest
 

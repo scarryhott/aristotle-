@@ -139,6 +139,33 @@ python3 experiments/nrrf768_relative_natural_form_selector.py verify \
 python3 experiments/nrrf780_local_price_global_cost_equality.py verify \
   --source-run runs/nrrf767_live_paper_trading_bot/bitstamp_public_20260826T0221Z \
   --overlay-dir runs/nrrf780_local_price_global_cost_equality/bitstamp_public_20260826T0221Z
+python3 experiments/nrrf801_black_mirror_market_phase.py verify \
+  --source-overlay runs/nrrf780_local_price_global_cost_equality/bitstamp_public_20260826T0221Z \
+  --source-run runs/nrrf767_live_paper_trading_bot/bitstamp_public_20260826T0221Z \
+  --overlay-dir runs/nrrf801_black_mirror_market_phase/bitstamp_public_20260826T0221Z
+python3 experiments/nrrf802_unified_closure_market_phase.py verify \
+  --source-phase-overlay runs/nrrf801_black_mirror_market_phase/bitstamp_public_20260826T0221Z \
+  --source-price-overlay runs/nrrf780_local_price_global_cost_equality/bitstamp_public_20260826T0221Z \
+  --source-run runs/nrrf767_live_paper_trading_bot/bitstamp_public_20260826T0221Z \
+  --overlay-dir runs/nrrf802_unified_closure_market_phase/bitstamp_public_20260826T0221Z
+python3 experiments/nrrf807_derived_interactive_signal_relations.py verify \
+  runs/nrrf767_live_paper_trading_bot/bitstamp_public_20260826T0221Z \
+  runs/nrrf805_relativistic_signal_open_command/bitstamp_public_20260826T0221Z \
+  runs/nrrf806_translation_first_life_reactor/bitstamp_public_20260826T0221Z \
+  runs/nrrf807_derived_interactive_signal_relations/bitstamp_public_20260826T0221Z
+python3 experiments/nrrf808_executor_reactor_reunification.py verify \
+  runs/nrrf767_live_paper_trading_bot/bitstamp_public_20260826T0221Z \
+  runs/nrrf805_relativistic_signal_open_command/bitstamp_public_20260826T0221Z \
+  runs/nrrf806_translation_first_life_reactor/bitstamp_public_20260826T0221Z \
+  runs/nrrf807_derived_interactive_signal_relations/bitstamp_public_20260826T0221Z \
+  runs/nrrf808_executor_reactor_reunification/bitstamp_public_20260826T0221Z
+python3 experiments/nrrf809_zero_inf_fold_unfold_repetition_gate.py verify \
+  runs/nrrf767_live_paper_trading_bot/bitstamp_public_20260826T0221Z \
+  runs/nrrf805_relativistic_signal_open_command/bitstamp_public_20260826T0221Z \
+  runs/nrrf806_translation_first_life_reactor/bitstamp_public_20260826T0221Z \
+  runs/nrrf807_derived_interactive_signal_relations/bitstamp_public_20260826T0221Z \
+  runs/nrrf808_executor_reactor_reunification/bitstamp_public_20260826T0221Z \
+  runs/nrrf809_zero_inf_fold_unfold_repetition_gate/bitstamp_public_20260826T0221Z
 python3 -m unittest discover -s tests -v
 lake build
 ```
@@ -211,6 +238,63 @@ The available bridges make later layers explicit:
   temporal trade to the unique entry-normalized member of its price-translation orbit. The natural
   form preserves selected-fill evidence, accumulated hair, relative potential, net P&L, and profit,
   and all translational truths recover the same orbit relation.
+- `lean/NRRF800HandedLifeBallReturnHairPotentialGateFourSheafOneSheafTemporalClosure.lean` and
+  `lean/NRRF801BlackMirrorRelativeTranslationOneToOneClosureUnitaryCurvature.lean` — authenticated
+  recovered sources for the four-phase ball, one-sheaf hair, reciprocal returns, black mirror, and
+  one-to-one continuity classification; both are active build roots.
+- `lean/NRRFTradingBlackMirrorPhaseBridge.lean` — keeps the receipt and phase as distinct layers,
+  proves reciprocal long/short phase readings are exactly the NRRF801 black mirror, and proves a
+  receipt alone cannot select the phase or make an unobserved continuum admissible.
+- `lean/NRRF802UnifyClosure.lean` — defines one generic return-generated closure and universal
+  property, identifies the earlier hair/hand/phase closures as its instances, and proves commuting
+  two-return closure is order-independent. The trading bridge now expresses reciprocal coherence
+  as opposite orientation plus equality in `NRRF802.Closure blackMirror`.
+- `lean/NRRF803TrajectoryBasisRelativeExternalNaturalEquality.lean` — proves trajectory and basis
+  are relative to a selected natural equality and that every such equality factors from the
+  return-generated closure. Its original “external” reading is retained as provenance, not as a
+  restriction: the follow-on integration permits the selected form to vary throughout.
+- `lean/NRRFTradingNaturalFormSelectionThroughoutBridge.lean` — lets the phase interface select a
+  natural equality at each round from its current local presentation, recovers fixed equality as
+  the constant case, and requires faithfulness back to the finest return closure before a selected
+  perspective may count as exact reciprocal closure. Selection cannot alter receipt-derived cost
+  or P&L.
+- `lean/NRRFTradingLifeActionPotentialGlobalHairExecutor.lean` — reads `ballReturn` as the actual
+  action continuation, `hairReturn` as inverse potential, and accumulated global hair as the paper
+  executor. It proves `act` exactly when life closes and completed relative potential exceeds hair.
+- `experiments/nrrf804_life_global_hair_executor.py` — replays that executor over the locked
+  NRRF780/801 evidence without changing or overwriting either source ledger.
+- `lean/NRRFTradingRelativisticSignalOpenCommandClosure.lean` — integrates dimensionless action,
+  hair, and completed returns across a reciprocal route field and proves a public command remains
+  open until both a unique positive relation and independent execution authority close.
+- `experiments/nrrf805_relativistic_signal_open_command.py` — derives the asset graph, every simple
+  cycle, and maximizing depth partitions from the locked books themselves; it uses neither fixed
+  route labels, fixed notionals, nor the supplied four-phase price map.
+- `lean/NRRFTradingTranslationFirstLifeLocalBallInfGlobalHairZeroExecutor.lean` — defines
+  internal/external roles only after translational truth, realizes the local ball as the unbounded
+  action/potential reactor, and proves global-hair-zero admission is closure rather than profit.
+- `experiments/nrrf806_translation_first_life_reactor.py` — replays all observed depth reactions,
+  renames friction as local hair, uses the full-equation residual as global hair, and leaves trade
+  commands open after zero-hair admission when completed potential is nonpositive.
+- `lean/NRRFTradingDerivedInteractiveSignalRelations.lean` — separates the prior committed
+  potential from its later realization and proves that, after local accounting closes, global hair
+  is exactly the cross-stage potential gap; local accounting alone no longer forces closure.
+- `experiments/nrrf807_derived_interactive_signal_relations.py` — commits a route-local probe at
+  `t`, evaluates it on the `t` books and its return continuation on independently
+  captured `t+1` books. NRRF808 retains this as a diagnostic but rejects its completed-return
+  argmax as natural-form authorship.
+- `lean/NRRFTradingExecutorReactorTranslationalTruthReunification.lean` — proves reactor equality
+  is exactly beat-generated closure equality, the reactor is the least internal form, and the
+  constant global-hair executer cannot select a signal. With no interaction-authored turn, the
+  identified form is definitionally absent.
+- `experiments/nrrf808_executor_reactor_reunification.py` — retains both directions of every
+  reciprocal public-book fibre without selecting a representative, records the books as reactor
+  potential only, and performs no profit assessment before an authored transactional action.
+- `lean/NRRFTradingZeroInfFoldUnfoldRepetitionGate.lean` — derives the 0–∞ interval of internal
+  forms, identifies ∞ with the reactor kernel and 0 with the universal executer point, and makes
+  fold/unfold repetition unavailable before a translation step is authored.
+- `experiments/nrrf809_zero_inf_fold_unfold_repetition_gate.py` — carries both poles over the
+  locked public books while refusing to treat time order or recurring prices as an authored step;
+  every fold, unfold, repetition, second-level, and profit reading remains open.
 - `external/aristotle/068068ee-b720-4df1-a203-571e0928ec3d/` — authenticated, hash-manifested
   Aristotle sources and notes for the independently authored NRRF780–790 and NRRF795–798 task
   deltas. The provider-pinned Lean 4.28 snapshot is preserved without making the unchanged archive

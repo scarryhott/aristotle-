@@ -1,0 +1,28 @@
+{
+  "all_source_states_preserved": true,
+  "authenticated_fills": 0,
+  "authenticated_settled_pnl_usd": null,
+  "boundary": {
+    "action_selected": false,
+    "authenticated_fills": 0,
+    "authenticated_settled_pnl_usd": null,
+    "execution_authorized": false,
+    "formal_receipt_admissions": 0,
+    "orders_submitted": 0,
+    "settled_profit_claimed": false
+  },
+  "closure_pairs": 36,
+  "closure_states": {
+    "DISTINCT_CLOSURE": 28,
+    "OPEN": 3,
+    "SAME_CLOSURE": 5
+  },
+  "formal_receipt_admissions": 0,
+  "orders_submitted": 0,
+  "prediction_admitted": false,
+  "reinterpretation_changed_pair_results": false,
+  "rounds": 12,
+  "schema_version": "nrrf802.unified_closure_market_phase.v1",
+  "settled_profit_claimed": false,
+  "two_return_life_collapse_admitted_for_market": false
+}

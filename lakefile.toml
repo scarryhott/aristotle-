@@ -21,9 +21,21 @@ roots = [
   "NRRF783RelativePotentialClassicalFlowSupernetBridge",
   "NRRF786ConstructiveNaturalSelectionTruthTradingBridge",
   "NRRF787CanonicalUniverseEquivalenceExistenceAdmissionTranslationalTruthPartialOperatorSubstrate",
+  "NRRF800HandedLifeBallReturnHairPotentialGateFourSheafOneSheafTemporalClosure",
+  "NRRF801BlackMirrorRelativeTranslationOneToOneClosureUnitaryCurvature",
+  "NRRF802UnifyClosure",
+  "NRRF803TrajectoryBasisRelativeExternalNaturalEquality",
   "NRRFTradingDeltaDerivedCostTranslationalClosure",
   "NRRFTradingFullClosureNaturalFormIntegration",
-  "NRRFTradingLiveObservationReceiptDerivation"
+  "NRRFTradingLiveObservationReceiptDerivation",
+  "NRRFTradingBlackMirrorPhaseBridge",
+  "NRRFTradingNaturalFormSelectionThroughoutBridge",
+  "NRRFTradingLifeActionPotentialGlobalHairExecutor",
+  "NRRFTradingRelativisticSignalOpenCommandClosure",
+  "NRRFTradingTranslationFirstLifeLocalBallInfGlobalHairZeroExecutor",
+  "NRRFTradingDerivedInteractiveSignalRelations",
+  "NRRFTradingExecutorReactorTranslationalTruthReunification",
+  "NRRFTradingZeroInfFoldUnfoldRepetitionGate"
 ]
 
 [[require]]
