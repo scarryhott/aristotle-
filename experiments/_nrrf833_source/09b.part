@@ -1,0 +1,76 @@
+    schedule = alpaca_crypto_fee_schedule()
+    episodes = synthetic_episodes(
+        count=args.episodes,
+        seed=args.seed,
+        quote_budget=dec(args.quote_budget),
+    )
+    force = Route(args.force_route) if args.force_route else None
+    simulation = ClosureSimulation(
+        rules=rules,
+        schedule=schedule,
+        learner=ClosureLearner(),
+        rolling_volume=Rolling30DayVolume.seeded(
+            episodes[0].entry_book.timestamp_utc.date(), dec(args.effective_volume)
+        ),
+        force_route=force,
+    )
+    events, summary = simulation.run(episodes)
+    output = Path(args.output)
+    write_run(output, events, summary)
+    print(json.dumps(summary, indent=2, sort_keys=True))
+    return 0
+
+
+def command_audit(args: argparse.Namespace) -> int:
+    book, rules = load_book_fixture(Path(args.fixture))
+    notionals = tuple(dec(item.strip()) for item in args.notionals.split(",") if item.strip())
+    report = live_snapshot_audit(
+        book=book,
+        rules=rules,
+        notionals=notionals,
+        effective_volume=dec(args.effective_volume),
+    )
+    output = Path(args.output)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
+    print(json.dumps(report, indent=2, sort_keys=True))
+    return 0
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description=__doc__)
+    subparsers = parser.add_subparsers(dest="command", required=True)
+
+    simulate = subparsers.add_parser("simulate", help="run deterministic closure learning")
+    simulate.add_argument("--episodes", type=int, default=240)
+    simulate.add_argument("--seed", type=int, default=833)
+    simulate.add_argument("--quote-budget", default="20")
+    simulate.add_argument("--effective-volume", default="0")
+    simulate.add_argument("--force-route", choices=[item.value for item in Route])
+    simulate.add_argument(
+        "--output", default="runs/nrrf833_fee_pricing_closure_learning/latest"
+    )
+    simulate.set_defaults(func=command_simulate)
+
+    audit = subparsers.add_parser("audit-live-snapshot", help="audit a captured order book")
+    audit.add_argument("--fixture", required=True)
+    audit.add_argument("--notionals", default="20,50,100,500")
+    audit.add_argument("--effective-volume", default="0")
+    audit.add_argument(
+        "--output", default="runs/nrrf833_fee_pricing_closure_learning/live_snapshot_audit.json"
+    )
+    audit.set_defaults(func=command_audit)
+
+    verify = subparsers.add_parser("verify", help="verify a saved hash-bound run")
+    verify.add_argument("--run", required=True)
+    verify.set_defaults(func=command_verify)
+    return parser
+
+
+def main(argv: Sequence[str] | None = None) -> int:
+    args = build_parser().parse_args(argv)
+    return int(args.func(args))
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
