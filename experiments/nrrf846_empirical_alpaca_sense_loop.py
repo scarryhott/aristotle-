@@ -5,11 +5,10 @@ import hashlib
 import json
 from dataclasses import dataclass
 from datetime import datetime
-from decimal import Decimal, getcontext
+from decimal import Decimal
 from pathlib import Path
 from typing import Mapping, Sequence
 
-getcontext().prec = 80
 D0 = Decimal("0")
 D1 = Decimal("1")
 BPS = Decimal("10000")
@@ -329,7 +328,6 @@ def main(argv: Sequence[str] | None = None) -> int:
         Path(args.output).write_text(text)
     print(text, end="")
     return 0
-
 
 if __name__ == "__main__":
     raise SystemExit(main())
