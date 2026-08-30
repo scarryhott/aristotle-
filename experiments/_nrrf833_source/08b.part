@@ -1,0 +1,105 @@
+
+def live_snapshot_audit(
+    *,
+    book: OrderBookSnapshot,
+    rules: InstrumentRules,
+    notionals: Sequence[Decimal],
+    effective_volume: Decimal = D0,
+) -> dict[str, object]:
+    schedule = alpaca_crypto_fee_schedule()
+    tier = schedule.tier_for(effective_volume)
+    maker_rate = tier.rate(Liquidity.MAKER)
+    taker_rate = tier.rate(Liquidity.TAKER)
+    rows: list[dict[str, object]] = []
+    for notional in notionals:
+        increment = fee_compatible_increment(rules.min_trade_increment, taker_rate)
+        quantity = quantity_for_quote_budget(book, dec(notional), increment)
+        entry = execute_taker(
+            book=book,
+            rules=rules,
+            side=Side.BUY,
+            quantity=quantity,
+            schedule=schedule,
+            effective_30d_volume_usd=effective_volume,
+        )
+        exit_fill = execute_taker(
+            book=book,
+            rules=rules,
+            side=Side.SELL,
+            quantity=entry.base_delta,
+            schedule=schedule,
+            effective_30d_volume_usd=effective_volume,
+        )
+        episode = Episode(
+            episode_id=f"LIVE-AUDIT-{decimal_text(notional)}",
+            entry_book=book,
+            exit_book=replace(book, timestamp_utc=book.timestamp_utc + timedelta(microseconds=1)),
+            signal_bps=D0,
+            quote_budget=dec(notional),
+            regime="CAPTURED_LIVE_BOOK_IMMEDIATE_ROUND_TRIP",
+        )
+        decision = Decision(
+            route=Route.TAKER_TAKER,
+            signal_bps=D0,
+            calibrated_signal_bps=D0,
+            predicted_total_cost_bps=D0,
+            predicted_net_bps=D0,
+            expected_utility_bps=D0,
+            fee_floor_bps=flat_round_trip_fee_burden_bps(taker_rate, taker_rate),
+            execution_cost_bps=D0,
+            uncertainty_buffer_bps=D0,
+            maker_entry_fill_probability=D0,
+            maker_exit_fill_probability=D0,
+            witnesses=("AUDIT_FORCED_ROUTE",),
+        )
+        receipt = close_round_trip(
+            episode=episode,
+            decision=decision,
+            entry_fill=entry,
+            exit_fills=(exit_fill,),
+            previous_receipt_hash="LIVE_SNAPSHOT_AUDIT_GENESIS",
+        )
+        loss_bps = -receipt.realized_pnl_quote / entry.gross_quote * BPS
+        rows.append(
+            canonicalize(
+                {
+                    "quote_budget": notional,
+                    "gross_entry_notional": entry.gross_quote,
+                    "gross_entry_quantity": entry.filled_quantity,
+                    "net_received_quantity_after_buy_fee": entry.base_delta,
+                    "entry_vwap": entry.vwap,
+                    "entry_depth_slippage_quote": entry.depth_slippage_quote,
+                    "exit_vwap": exit_fill.vwap,
+                    "exit_depth_slippage_quote": exit_fill.depth_slippage_quote,
+                    "realized_flat_round_trip_pnl_quote": receipt.realized_pnl_quote,
+                    "realized_flat_round_trip_loss_bps": loss_bps,
+                    "closure_residual_quote": receipt.closure_residual_quote,
+                }
+            )
+        )
+    return canonicalize(
+        {
+            "schema_version": SCHEMA_VERSION,
+            "audit_kind": "CAPTURED_LIVE_ORDER_BOOK_COUNTERFACTUAL",
+            "book_timestamp_utc": book.timestamp_utc,
+            "book_hash": book.book_hash,
+            "best_bid": book.best_bid,
+            "best_ask": book.best_ask,
+            "midpoint": book.midpoint,
+            "spread_bps": book.spread_bps,
+            "fee_tier": tier.name,
+            "maker_rate": maker_rate,
+            "taker_rate": taker_rate,
+            "maker_flat_round_trip_fee_floor_bps": flat_round_trip_fee_burden_bps(maker_rate, maker_rate),
+            "maker_entry_taker_exit_fee_floor_bps": flat_round_trip_fee_burden_bps(maker_rate, taker_rate),
+            "taker_flat_round_trip_fee_floor_bps": flat_round_trip_fee_burden_bps(taker_rate, taker_rate),
+            "declared_target_bps": Decimal("20"),
+            "declared_target_clears_maker_maker_fee_floor": Decimal("20") > flat_round_trip_fee_burden_bps(maker_rate, maker_rate),
+            "rows": rows,
+            "boundary": NO_EXECUTION_BOUNDARY,
+        }
+    )
+
+
+def write_run(output: Path, events: Sequence[SimulationEvent], summary: Mapping[str, object]) -> None:
+    if output.exists() and any(output.iterdir()):
