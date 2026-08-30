@@ -1,0 +1,36 @@
+{
+  "capture": {
+    "symbol": "BTC/USD",
+    "source": "Alpaca public crypto quotes + trades, feed=us",
+    "captured_on": "2026-08-30",
+    "execution_boundary": "market data are empirical; hypothetical order participation is counterfactual"
+  },
+  "fees": {
+    "tier": "TIER_1",
+    "maker_rate": "0.0015",
+    "taker_rate": "0.0025",
+    "source": "https://docs.alpaca.markets/us/docs/crypto-fees"
+  },
+  "cycles": [
+    {
+      "cycle_id": "A",
+      "quantity_btc": "0.000060",
+      "entry_before": {"timestamp_utc":"2026-08-30T18:00:08.138046+00:00","bid_price":"79002.9","bid_size":"0.0020082","ask_price":"79026.623","ask_size":"0.001007"},
+      "entry_after": {"timestamp_utc":"2026-08-30T18:00:08.138059+00:00","bid_price":"79002.9","bid_size":"0.001211888","ask_price":"79026.623","ask_size":"0.001007"},
+      "entry_trade": {"timestamp_utc":"2026-08-30T18:00:08.138059+00:00","price":"79002.9","size":"0.000796312"},
+      "exit_before": {"timestamp_utc":"2026-08-30T18:03:32.364539+00:00","bid_price":"79007.3","bid_size":"0.00099869","ask_price":"79036.0","ask_size":"0.0009954"},
+      "exit_after": {"timestamp_utc":"2026-08-30T18:03:34.600094+00:00","bid_price":"79007.3","bid_size":"0.00099869","ask_price":"79036.0","ask_size":"0.0009334"},
+      "exit_trade": {"timestamp_utc":"2026-08-30T18:03:34.600094+00:00","price":"79036.0","size":"0.000062"}
+    },
+    {
+      "cycle_id": "B",
+      "quantity_btc": "0.000038",
+      "entry_before": {"timestamp_utc":"2026-08-30T18:06:11.964605+00:00","bid_price":"78923.0","bid_size":"0.00099537","ask_price":"78945.7","ask_size":"0.001005"},
+      "entry_after": {"timestamp_utc":"2026-08-30T18:06:15.506260+00:00","bid_price":"78923.0","bid_size":"0.00090837","ask_price":"78945.7","ask_size":"0.001005"},
+      "entry_trade": {"timestamp_utc":"2026-08-30T18:06:15.506260+00:00","price":"78923.0","size":"0.000087"},
+      "exit_before": {"timestamp_utc":"2026-08-30T18:11:35.564600+00:00","bid_price":"78805.862","bid_size":"0.0010068","ask_price":"78833.091","ask_size":"0.0009984"},
+      "exit_after": {"timestamp_utc":"2026-08-30T18:11:43.987692+00:00","bid_price":"78805.862","bid_size":"0.0010068","ask_price":"78833.091","ask_size":"0.000958604"},
+      "exit_trade": {"timestamp_utc":"2026-08-30T18:11:43.987692+00:00","price":"78833.091","size":"0.000039796"}
+    }
+  ]
+}
