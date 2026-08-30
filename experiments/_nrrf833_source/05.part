@@ -181,7 +181,17 @@
             return
         assert receipt.actual_total_cost_bps is not None
         alpha = self.learning_rate
-        model_error = receipt.actual_total_cost_bps - decision.predicted_total_cost_bps
+        # Calibrate the execution/fee model against its structural cost estimate,
+        # not against the conservative admission threshold.  The uncertainty
+        # buffer is a decision margin derived from prior errors; feeding that
+        # margin back into the error target creates a self-amplifying loop under
+        # forced execution.  Removing it here makes the learning relation close
+        # on observed model error rather than on its own safety reserve.
+        structural_predicted_cost = max(
+            decision.predicted_total_cost_bps - decision.uncertainty_buffer_bps,
+            D0,
+        )
+        model_error = receipt.actual_total_cost_bps - structural_predicted_cost
         positive_error = max(model_error, D0)
         self.positive_model_error_bps = weighted_ewma(
             self.positive_model_error_bps, positive_error, alpha
@@ -198,13 +208,3 @@
         actual_directional_bps = (
             receipt.directional_midpoint_pnl_quote / receipt.entry_fill.gross_quote * BPS
         )
-        optimism = max(decision.signal_bps - actual_directional_bps, D0)
-        self.signal_optimism_bps = weighted_ewma(
-            self.signal_optimism_bps, optimism, alpha
-        )
-        if receipt.route is Route.MAKER_WITH_TAKER_HEDGE:
-            adverse = max(-actual_directional_bps, D0)
-            self.maker_adverse_selection_bps = weighted_ewma(
-                self.maker_adverse_selection_bps, adverse, alpha
-            )
-        self.closed_observations += 1
