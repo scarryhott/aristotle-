@@ -128,22 +128,28 @@ def trade(payload: Mapping[str, object]) -> Trade:
 def authenticate_touch(before: Quote, after: Quote, observed: Trade) -> TouchWitness:
     if observed.timestamp_utc != after.timestamp_utc:
         return TouchWitness("NONE", observed.price, observed.size, False, "timestamp_mismatch")
-    if (
-        observed.price == before.bid_price == after.bid_price
-        and before.bid_size - after.bid_size == observed.size
-    ):
-        return TouchWitness(
-            "MAKER_BUY_RETURN", observed.price, observed.size, True,
-            "trade_at_bid_and_exact_displayed_bid_size_decrement",
-        )
-    if (
-        observed.price == before.ask_price == after.ask_price
-        and before.ask_size - after.ask_size == observed.size
-    ):
-        return TouchWitness(
-            "MAKER_SELL_RETURN", observed.price, observed.size, True,
-            "trade_at_ask_and_exact_displayed_ask_size_decrement",
-        )
+    if observed.price == before.bid_price:
+        if before.bid_price == after.bid_price and before.bid_size - after.bid_size == observed.size:
+            return TouchWitness(
+                "MAKER_BUY_RETURN", observed.price, observed.size, True,
+                "trade_at_bid_and_exact_displayed_bid_size_decrement",
+            )
+        if observed.size == before.bid_size and after.bid_price < before.bid_price:
+            return TouchWitness(
+                "MAKER_BUY_RETURN", observed.price, observed.size, True,
+                "trade_consumed_entire_displayed_bid_level",
+            )
+    if observed.price == before.ask_price:
+        if before.ask_price == after.ask_price and before.ask_size - after.ask_size == observed.size:
+            return TouchWitness(
+                "MAKER_SELL_RETURN", observed.price, observed.size, True,
+                "trade_at_ask_and_exact_displayed_ask_size_decrement",
+            )
+        if observed.size == before.ask_size and after.ask_price > before.ask_price:
+            return TouchWitness(
+                "MAKER_SELL_RETURN", observed.price, observed.size, True,
+                "trade_consumed_entire_displayed_ask_level",
+            )
     return TouchWitness("NONE", observed.price, observed.size, False, "no_exact_return_witness")
 
 
