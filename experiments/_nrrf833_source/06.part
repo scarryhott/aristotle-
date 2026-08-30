@@ -1,3 +1,13 @@
+        optimism = max(decision.signal_bps - actual_directional_bps, D0)
+        self.signal_optimism_bps = weighted_ewma(
+            self.signal_optimism_bps, optimism, alpha
+        )
+        if receipt.route is Route.MAKER_WITH_TAKER_HEDGE:
+            adverse = max(-actual_directional_bps, D0)
+            self.maker_adverse_selection_bps = weighted_ewma(
+                self.maker_adverse_selection_bps, adverse, alpha
+            )
+        self.closed_observations += 1
 
 
 def execute_episode(
@@ -198,13 +208,3 @@ class ClosureSimulation:
                 schedule=self.schedule,
                 effective_volume=effective_volume,
                 previous_receipt_hash=previous_receipt_hash,
-            )
-            if not verify_receipt_hash(receipt):
-                raise AssertionError("newly created receipt failed its own hash")
-            self.learner.update(decision, receipt)
-            after = self.learner.to_dict()
-            after_hash = self.learner.state_hash
-            payload = {
-                "schema_version": SCHEMA_VERSION,
-                "simulation_kind": SIMULATION_KIND,
-                "sequence": sequence,
