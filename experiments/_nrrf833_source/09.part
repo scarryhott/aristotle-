@@ -1,0 +1,123 @@
+        "simulation_kind": SIMULATION_KIND,
+        "events_file": events_path.name,
+        "events_sha256": hashlib.sha256(events_path.read_bytes()).hexdigest(),
+        "summary_file": "summary.json",
+        "summary_sha256": hashlib.sha256((output / "summary.json").read_bytes()).hexdigest(),
+        "program": program_path.name,
+        "program_sha256": hashlib.sha256(program_path.read_bytes()).hexdigest(),
+        "boundary": NO_EXECUTION_BOUNDARY,
+    }
+    (output / "manifest.json").write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
+
+
+
+def verify_run_directory(output: Path) -> dict[str, object]:
+    manifest_path = output / "manifest.json"
+    summary_path = output / "summary.json"
+    events_path = output / "events.jsonl"
+    manifest = json.loads(manifest_path.read_text())
+    summary = json.loads(summary_path.read_text())
+    events = [json.loads(line) for line in events_path.read_text().splitlines() if line]
+    events_sha_ok = hashlib.sha256(events_path.read_bytes()).hexdigest() == manifest.get("events_sha256")
+    summary_sha_ok = hashlib.sha256(summary_path.read_bytes()).hexdigest() == manifest.get("summary_sha256")
+    chain_ok = verify_event_chain(events, str(summary.get("genesis_hash")))
+    final_hash_ok = (
+        (events[-1]["event_hash"] if events else summary.get("genesis_hash"))
+        == summary.get("final_event_hash")
+    )
+    count_ok = len(events) == summary.get("event_count")
+    verified = all((events_sha_ok, summary_sha_ok, chain_ok, final_hash_ok, count_ok))
+    return {
+        "verified": verified,
+        "events_sha256_verified": events_sha_ok,
+        "summary_sha256_verified": summary_sha_ok,
+        "event_and_receipt_chains_verified": chain_ok,
+        "final_event_hash_verified": final_hash_ok,
+        "event_count_verified": count_ok,
+        "event_count": len(events),
+    }
+
+
+def command_verify(args: argparse.Namespace) -> int:
+    result = verify_run_directory(Path(args.run))
+    print(json.dumps(result, indent=2, sort_keys=True))
+    return 0 if result["verified"] else 1
+
+def command_simulate(args: argparse.Namespace) -> int:
+    rules = alpaca_btcusd_rules()
+    schedule = alpaca_crypto_fee_schedule()
+    episodes = synthetic_episodes(
+        count=args.episodes,
+        seed=args.seed,
+        quote_budget=dec(args.quote_budget),
+    )
+    force = Route(args.force_route) if args.force_route else None
+    simulation = ClosureSimulation(
+        rules=rules,
+        schedule=schedule,
+        learner=ClosureLearner(),
+        rolling_volume=Rolling30DayVolume.seeded(
+            episodes[0].entry_book.timestamp_utc.date(), dec(args.effective_volume)
+        ),
+        force_route=force,
+    )
+    events, summary = simulation.run(episodes)
+    output = Path(args.output)
+    write_run(output, events, summary)
+    print(json.dumps(summary, indent=2, sort_keys=True))
+    return 0
+
+
+def command_audit(args: argparse.Namespace) -> int:
+    book, rules = load_book_fixture(Path(args.fixture))
+    notionals = tuple(dec(item.strip()) for item in args.notionals.split(",") if item.strip())
+    report = live_snapshot_audit(
+        book=book,
+        rules=rules,
+        notionals=notionals,
+        effective_volume=dec(args.effective_volume),
+    )
+    output = Path(args.output)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
+    print(json.dumps(report, indent=2, sort_keys=True))
+    return 0
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description=__doc__)
+    subparsers = parser.add_subparsers(dest="command", required=True)
+
+    simulate = subparsers.add_parser("simulate", help="run deterministic closure learning")
+    simulate.add_argument("--episodes", type=int, default=240)
+    simulate.add_argument("--seed", type=int, default=833)
+    simulate.add_argument("--quote-budget", default="20")
+    simulate.add_argument("--effective-volume", default="0")
+    simulate.add_argument("--force-route", choices=[item.value for item in Route])
+    simulate.add_argument(
+        "--output", default="runs/nrrf833_fee_pricing_closure_learning/latest"
+    )
+    simulate.set_defaults(func=command_simulate)
+
+    audit = subparsers.add_parser("audit-live-snapshot", help="audit a captured order book")
+    audit.add_argument("--fixture", required=True)
+    audit.add_argument("--notionals", default="20,50,100,500")
+    audit.add_argument("--effective-volume", default="0")
+    audit.add_argument(
+        "--output", default="runs/nrrf833_fee_pricing_closure_learning/live_snapshot_audit.json"
+    )
+    audit.set_defaults(func=command_audit)
+
+    verify = subparsers.add_parser("verify", help="verify a saved hash-bound run")
+    verify.add_argument("--run", required=True)
+    verify.set_defaults(func=command_verify)
+    return parser
+
+
+def main(argv: Sequence[str] | None = None) -> int:
+    args = build_parser().parse_args(argv)
+    return int(args.func(args))
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
