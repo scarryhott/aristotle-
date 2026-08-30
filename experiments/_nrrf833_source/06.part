@@ -1,0 +1,210 @@
+
+
+def execute_episode(
+    *,
+    episode: Episode,
+    decision: Decision,
+    rules: InstrumentRules,
+    schedule: FeeSchedule,
+    effective_volume: Decimal,
+    previous_receipt_hash: str,
+) -> ClosureReceipt:
+    if decision.route is Route.HOLD:
+        return _zero_receipt(
+            episode=episode,
+            decision=decision,
+            state="CLOSED_HOLD",
+            previous_receipt_hash=previous_receipt_hash,
+            witnesses=decision.witnesses,
+        )
+
+    entry_liquidity = (
+        Liquidity.TAKER
+        if decision.route is Route.TAKER_TAKER
+        else Liquidity.MAKER
+    )
+    entry_rate = schedule.rate(entry_liquidity, effective_volume, episode.entry_book.timestamp_utc)
+    compatible_increment = fee_compatible_increment(
+        rules.min_trade_increment, entry_rate
+    )
+    quantity = quantity_for_quote_budget(
+        episode.entry_book, episode.quote_budget, compatible_increment
+    )
+
+    if decision.route is Route.TAKER_TAKER:
+        entry = execute_taker(
+            book=episode.entry_book,
+            rules=rules,
+            side=Side.BUY,
+            quantity=quantity,
+            schedule=schedule,
+            effective_30d_volume_usd=effective_volume,
+        )
+        exit_fill = execute_taker(
+            book=episode.exit_book,
+            rules=rules,
+            side=Side.SELL,
+            quantity=entry.base_delta,
+            schedule=schedule,
+            effective_30d_volume_usd=effective_volume,
+        )
+        return close_round_trip(
+            episode=episode,
+            decision=decision,
+            entry_fill=entry,
+            exit_fills=(exit_fill,),
+            previous_receipt_hash=previous_receipt_hash,
+        )
+
+    entry = execute_post_only_maker(
+        book=episode.entry_book,
+        rules=rules,
+        side=Side.BUY,
+        quantity=quantity,
+        limit_price=episode.entry_book.best_bid,
+        queue_ahead_quantity=episode.entry_book.bids[0].quantity,
+        events=episode.maker_entry_events,
+        schedule=schedule,
+        effective_30d_volume_usd=effective_volume,
+    )
+    if entry.filled_quantity == 0:
+        return _zero_receipt(
+            episode=episode,
+            decision=decision,
+            state="CLOSED_NO_ENTRY_FILL",
+            previous_receipt_hash=previous_receipt_hash,
+            witnesses=entry.witnesses,
+        )
+
+    maker_exit = execute_post_only_maker(
+        book=episode.exit_book,
+        rules=rules,
+        side=Side.SELL,
+        quantity=entry.base_delta,
+        limit_price=episode.exit_book.best_ask,
+        queue_ahead_quantity=episode.exit_book.asks[0].quantity,
+        events=episode.maker_exit_events,
+        schedule=schedule,
+        effective_30d_volume_usd=effective_volume,
+    )
+    exits: list[ExecutionFill] = []
+    if maker_exit.filled_quantity:
+        exits.append(maker_exit)
+    if maker_exit.unfilled_quantity:
+        hedge = execute_taker(
+            book=episode.exit_book,
+            rules=rules,
+            side=Side.SELL,
+            quantity=maker_exit.unfilled_quantity,
+            schedule=schedule,
+            effective_30d_volume_usd=effective_volume,
+        )
+        exits.append(hedge)
+    return close_round_trip(
+        episode=episode,
+        decision=decision,
+        entry_fill=entry,
+        exit_fills=tuple(exits),
+        previous_receipt_hash=previous_receipt_hash,
+    )
+
+
+def gross_volume_from_receipt(receipt: ClosureReceipt) -> Decimal:
+    entry = receipt.entry_fill.gross_quote if receipt.entry_fill else D0
+    exits = sum((item.gross_quote for item in receipt.exit_fills), D0)
+    return entry + exits
+
+
+def verify_receipt_hash(receipt: ClosureReceipt) -> bool:
+    return sha256_value(receipt.to_dict(include_hash=False)) == receipt.receipt_hash
+
+
+@dataclass(frozen=True)
+class SimulationEvent:
+    sequence: int
+    episode: dict[str, object]
+    effective_30d_volume_usd: Decimal
+    fee_tier: str
+    learner_before: dict[str, object]
+    learner_before_hash: str
+    decision: dict[str, object]
+    receipt: dict[str, object]
+    learner_after: dict[str, object]
+    learner_after_hash: str
+    previous_event_hash: str
+    event_hash: str
+
+    def to_dict(self, *, include_hash: bool = True) -> dict[str, object]:
+        payload = {
+            "schema_version": SCHEMA_VERSION,
+            "simulation_kind": SIMULATION_KIND,
+            "sequence": self.sequence,
+            "episode": self.episode,
+            "effective_30d_volume_usd": self.effective_30d_volume_usd,
+            "fee_tier": self.fee_tier,
+            "learner_before": self.learner_before,
+            "learner_before_hash": self.learner_before_hash,
+            "decision": self.decision,
+            "receipt": self.receipt,
+            "learner_after": self.learner_after,
+            "learner_after_hash": self.learner_after_hash,
+            "previous_event_hash": self.previous_event_hash,
+            "boundary": NO_EXECUTION_BOUNDARY,
+        }
+        if include_hash:
+            payload["event_hash"] = self.event_hash
+        return canonicalize(payload)
+
+
+@dataclass
+class ClosureSimulation:
+    rules: InstrumentRules
+    schedule: FeeSchedule
+    learner: ClosureLearner
+    rolling_volume: Rolling30DayVolume
+    force_route: Route | None = None
+
+    def run(self, episodes: Sequence[Episode]) -> tuple[list[SimulationEvent], dict[str, object]]:
+        genesis = sha256_value(
+            {
+                "schema_version": SCHEMA_VERSION,
+                "rules": self.rules.to_dict(),
+                "schedule": self.schedule.to_dict(),
+                "learner": self.learner.to_dict(),
+                "boundary": NO_EXECUTION_BOUNDARY,
+            }
+        )
+        previous_event_hash = genesis
+        previous_receipt_hash = genesis
+        events: list[SimulationEvent] = []
+        initial_learner = self.learner.to_dict()
+        for sequence, episode in enumerate(episodes):
+            trading_day = episode.entry_book.timestamp_utc.date()
+            effective_volume = self.rolling_volume.effective_volume(trading_day)
+            tier = self.schedule.tier_for(effective_volume)
+            before = self.learner.to_dict()
+            before_hash = self.learner.state_hash
+            decision = self.learner.decide(
+                episode=episode,
+                rules=self.rules,
+                schedule=self.schedule,
+                effective_volume=effective_volume,
+                force_route=self.force_route,
+            )
+            receipt = execute_episode(
+                episode=episode,
+                decision=decision,
+                rules=self.rules,
+                schedule=self.schedule,
+                effective_volume=effective_volume,
+                previous_receipt_hash=previous_receipt_hash,
+            )
+            if not verify_receipt_hash(receipt):
+                raise AssertionError("newly created receipt failed its own hash")
+            self.learner.update(decision, receipt)
+            after = self.learner.to_dict()
+            after_hash = self.learner.state_hash
+            payload = {
+                "schema_version": SCHEMA_VERSION,
+                "simulation_kind": SIMULATION_KIND,
+                "sequence": sequence,
