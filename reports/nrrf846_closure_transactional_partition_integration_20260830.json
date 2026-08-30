@@ -1,0 +1,72 @@
+{
+  "schema_version": "nrrf846.closure_transactional_partition.integration.v1",
+  "source_market_fixture": "benchmarks/nrrf846_empirical_alpaca_sense_loop/btcusd_authenticated_returns_20260830.json",
+  "source_empirical_report": "reports/nrrf846_empirical_alpaca_sense_loop_20260830.json",
+  "source_failed_walkforward": "reports/nrrf846_walkforward_constraint_survival_20260830.json",
+  "transactional_relation": "pretrade observation -> derived bubble -> local memory -> TRADE/HOLD -> authenticated return -> exact receipt -> same-bubble update -> next state",
+  "partition": {
+    "authors": [
+      "entry spread band",
+      "entry top-book imbalance decile",
+      "entry displayed depth relative to requested quantity"
+    ],
+    "price_level_authors_partition": false,
+    "derived_empirical_bubbles": {
+      "A": "s3|i6|d5",
+      "B": "s2|i4|d5",
+      "C": "s1|i4|d4"
+    },
+    "all_three_distinct_from_pretrade_observation": true
+  },
+  "learning": {
+    "cold_start": "HOLD",
+    "update_gate": "authenticated closed return only",
+    "cross_bubble_overwrite": false,
+    "local_potential": "mean zero-fee directional bps within bubble",
+    "local_queue_boundary": "minimum authenticated full-cycle queue threshold within bubble",
+    "fee_translation": "exact credited-asset maker/maker round trip under current fee constraint"
+  },
+  "constraint_grid_per_visit": {
+    "maker_fee_bps": [15, 12, 10, 8, 5, 2, 0],
+    "queue_ahead_fraction": ["0", "0.001", "0.002", "0.005", "0.01", "0.02"],
+    "states_per_empirical_cycle": 42,
+    "states_per_pass": 126
+  },
+  "pass_1_cold_start": {
+    "true_positive": 0,
+    "true_negative": 110,
+    "false_positive": 0,
+    "false_negative": 16,
+    "unsafe_admissions": 0,
+    "interpretation": "Unseen bubbles fail closed. Positive opportunity is not invented from another bubble."
+  },
+  "pass_2_revisit": {
+    "true_positive": 16,
+    "true_negative": 110,
+    "false_positive": 0,
+    "false_negative": 0,
+    "unsafe_admissions": 0,
+    "positive_recall": 1,
+    "interpretation": "After one authenticated return per bubble, revisiting the same pretrade form classifies every tested fee/queue constraint correctly in this deterministic replay."
+  },
+  "aggregate_two_pass": {
+    "true_positive": 16,
+    "true_negative": 220,
+    "false_positive": 0,
+    "false_negative": 16
+  },
+  "closure_invariants": {
+    "other_bubble_memory_immutable_on_local_update": true,
+    "knowledge_only_expands": true,
+    "structural_closure_not_relearned": true,
+    "constraint_viability_is_learned_inside_bubble": true
+  },
+  "verdict": {
+    "observed_global_negative_transfer_removed": true,
+    "revisited_empirical_bubbles_survive_tested_fee_queue_constraints": true,
+    "unseen_bubble_generalization_established": false,
+    "live_own_fill_learning_established": false,
+    "profitability_established": false
+  },
+  "interpretation": "The failed global learner is replaced by a closure-transactional partition learner. Structural return closure remains invariant; AI potential is local to the observational bubble and is translated through current trading constraints. The integration solves the observed A->B->C negative-transfer failure on revisits without claiming generalization to unseen bubbles or live profitability."
+}

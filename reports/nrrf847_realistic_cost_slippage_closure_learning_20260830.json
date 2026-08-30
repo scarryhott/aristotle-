@@ -1,0 +1,47 @@
+{
+  "schema_version": "nrrf847.realistic_cost_slippage_closure_learning.v1",
+  "test_kind": "EMPIRICAL_RETURN_CLASSES_WITH_EXPLICIT_COUNTERFACTUAL_EXECUTION_COST_SURFACES",
+  "market_return_source": "NRRF846 authenticated public Alpaca BTC/USD return witnesses",
+  "own_fill_boundary": "public market returns are not authenticated own-account fills",
+  "cost_surfaces": {
+    "TIGHT_LIQUID": {"fees_bps":"0.3","slippage_bps":"0.5","adverse_selection_bps":"0.7","inventory_carry_bps":"0.2","forced_unwind_bps":"0.0","total_bps":"1.7"},
+    "NORMAL": {"fees_bps":"0.5","slippage_bps":"1.5","adverse_selection_bps":"2.0","inventory_carry_bps":"0.5","forced_unwind_bps":"0.5","total_bps":"5.0"},
+    "ALL_IN_30BPS": {"fees_bps":"1.0","slippage_bps":"8.0","adverse_selection_bps":"12.0","inventory_carry_bps":"3.0","forced_unwind_bps":"6.0","total_bps":"30.0"},
+    "STRESSED": {"fees_bps":"1.5","slippage_bps":"15.0","adverse_selection_bps":"20.0","inventory_carry_bps":"5.0","forced_unwind_bps":"10.0","total_bps":"51.5"}
+  },
+  "gross_directional_bps": {
+    "A":"4.1897196178874446381082213437734564174226515735498317150383087203127986441",
+    "B":"-11.3919896608086362657273545100921150995273874535940093508863069067318779063137",
+    "C":"5.017772781820115143321535446825963451869180173474502893773450198234874147438"
+  },
+  "results": {
+    "A": {
+      "TIGHT_LIQUID":{"net_bps":"2.4897196178874446381082213437734564174226515735498317150383087203127986441","action":"TRADE"},
+      "NORMAL":{"net_bps":"-0.8102803821125553618917786562265435825773484264501682849616912796872013559","action":"HOLD"},
+      "ALL_IN_30BPS":{"net_bps":"-25.8102803821125553618917786562265435825773484264501682849616912796872013559","action":"HOLD"},
+      "STRESSED":{"net_bps":"-47.3102803821125553618917786562265435825773484264501682849616912796872013559","action":"HOLD"}
+    },
+    "B": {
+      "TIGHT_LIQUID":{"net_bps":"-13.0919896608086362657273545100921150995273874535940093508863069067318779063137","action":"HOLD"},
+      "NORMAL":{"net_bps":"-16.3919896608086362657273545100921150995273874535940093508863069067318779063137","action":"HOLD"},
+      "ALL_IN_30BPS":{"net_bps":"-41.3919896608086362657273545100921150995273874535940093508863069067318779063137","action":"HOLD"},
+      "STRESSED":{"net_bps":"-62.8919896608086362657273545100921150995273874535940093508863069067318779063137","action":"HOLD"}
+    },
+    "C": {
+      "TIGHT_LIQUID":{"net_bps":"3.317772781820115143321535446825963451869180173474502893773450198234874147438","action":"TRADE"},
+      "NORMAL":{"net_bps":"0.017772781820115143321535446825963451869180173474502893773450198234874147438","action":"TRADE"},
+      "ALL_IN_30BPS":{"net_bps":"-24.982227218179884856678464553174036548130819826525497106226549801765125852562","action":"HOLD"},
+      "STRESSED":{"net_bps":"-46.482227218179884856678464553174036548130819826525497106226549801765125852562","action":"HOLD"}
+    }
+  },
+  "naive_gross_positive_unsafe_admissions": 5,
+  "closure_adjusted_unsafe_admissions": 0,
+  "all_in_30bps_all_hold": true,
+  "verdict": {
+    "gross_positive_is_not_profitability": true,
+    "closure_adjusted_selector_respects_explicit_costs": true,
+    "30bps_all_in_cost_eliminates_all_observed_positive_edge": true,
+    "live_profitability_established": false
+  },
+  "interpretation": "A and C are gross-positive return classes, but realistic execution burdens can erase their edge. At 30 bps all-in cost all three classes are negative and the closure-adjusted learner correctly fails closed."
+}
