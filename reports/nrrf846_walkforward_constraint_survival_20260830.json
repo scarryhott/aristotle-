@@ -1,0 +1,54 @@
+{
+  "schema_version": "nrrf846.walkforward_constraint_survival.v1",
+  "source_report": "reports/nrrf846_empirical_alpaca_sense_loop_20260830.json",
+  "test_kind": "EMPIRICAL_MARKET_RETURNS_WITH_COUNTERFACTUAL_CONSTRAINT_GRID_AND_NO_LOOKAHEAD_LEARNING",
+  "claim_tested": "whether prior authenticated return classes are sufficient for an online learner to survive unseen fee/queue constraints while retaining positive relative-potential opportunities",
+  "constraints": {
+    "maker_fee_bps": [15, 12, 10, 8, 5, 2, 0],
+    "queue_ahead_fraction": ["0", "0.001", "0.002", "0.005", "0.01", "0.02"]
+  },
+  "ground_truth_rule": "TRADE iff the empirical cycle's full four-sheaf return remains queue-feasible and its exact credited-asset maker/maker return is positive under the tested fee; otherwise HOLD",
+  "learner": {
+    "prediction_order": ["A", "B", "C"],
+    "lookahead": false,
+    "cold_start": "HOLD",
+    "gross_relative_potential_prediction": "arithmetic mean of previously revealed empirical zero-fee directional returns",
+    "queue_feasibility_prediction": "minimum previously revealed full-cycle queue threshold",
+    "update": "only after all predictions for the current empirical cycle are scored"
+  },
+  "exact_zero_fee_directional_bps": {
+    "A": "4.1897196178874446381082213437734564174226515735498317150383087203127986441",
+    "B": "-11.3919896608086362657273545100921150995273874535940093508863069067318779063137",
+    "C": "5.017772781820115143321535446825963451869180173474502893773450198234874147438"
+  },
+  "full_cycle_queue_threshold": {
+    "A": "0.002099658428772352822985734378",
+    "B": "0.001855969551282051282051282051",
+    "C": "0.01195338181093734435700767009"
+  },
+  "scored_states": 126,
+  "confusion": {
+    "true_positive": 0,
+    "true_negative": 104,
+    "false_positive": 6,
+    "false_negative": 16
+  },
+  "per_cycle": {
+    "A": {"true_positive": 0, "true_negative": 36, "false_positive": 0, "false_negative": 6},
+    "B": {"true_positive": 0, "true_negative": 36, "false_positive": 6, "false_negative": 0},
+    "C": {"true_positive": 0, "true_negative": 32, "false_positive": 0, "false_negative": 10}
+  },
+  "available_positive_closed_states": 16,
+  "captured_positive_closed_states": 0,
+  "unsafe_admissions": 6,
+  "unsafe_admission_details": "All six occur on empirical cycle B at maker fees 2 or 0 bps and queue fractions 0, 0.001, or 0.002, because A's positive low-fee form is incorrectly transferred to B.",
+  "missed_opportunity_details": "Six positive closed states on cold-start cycle A and ten on cycle C are held. After observing negative B, the global mean potential becomes negative, so C's genuinely positive low-fee form is not admitted.",
+  "verdict": {
+    "structural_closure_survives_constraint_changes": true,
+    "closure_gate_alone_can_fail_closed": true,
+    "current_three-cycle_global_transfer_learner_survives_unseen_constraints": false,
+    "current_three-cycle_global_transfer_learner_captures_positive_relative_potential": false,
+    "empirical_learning_claim_established": false
+  },
+  "interpretation": "The current empirical sample falsifies the stronger claim that a global learner trained only on prior return classes already learns survival across distinct market forms. The failure is negative transfer: A -> B creates unsafe admissions, then A+B -> C creates over-conservative rejection. Structural closure remains intact, but learned survival requires a richer observational partition and more repeated authenticated returns per partition."
+}
