@@ -1,0 +1,210 @@
+"""NRRF833 exact-fee, order-book-pricing, closure-learning simulator.
+
+The simulator is deliberately execution-free: it never authenticates to a broker,
+never submits an order, and never treats a quote as a fill.  It models hypothetical
+fills from caller-supplied order books and maker-flow traces using ``Decimal`` only.
+
+The central closure relation is an exact round-trip accounting identity:
+
+    midpoint directional P&L
+      = realized cash P&L
+      + entry execution cost
+      + exit execution cost
+      + entry fee valued at the exit midpoint
+      + exit fee
+      + declared fixed costs.
+
+A learning update is admitted only when cash, inventory, the accounting identity,
+and the hash chain all close.  Open inventory and malformed evidence fail closed.
+
+The built-in Alpaca crypto profile reflects the official maker/taker schedule and
+its credited-asset fee convention.  Venue-specific fee rounding that is not stated
+in the public fee documentation is intentionally left unrounded rather than guessed;
+the exact theoretical fee and all instrument increments are preserved in receipts.
+"""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import math
+import random
+from collections import Counter
+from dataclasses import dataclass, field, replace
+from datetime import date, datetime, timedelta, timezone
+from decimal import Decimal, InvalidOperation, ROUND_FLOOR, getcontext, localcontext
+from enum import Enum
+from fractions import Fraction
+from pathlib import Path
+from typing import Iterable, Mapping, Sequence
+
+getcontext().prec = 80
+
+D0 = Decimal("0")
+D1 = Decimal("1")
+BPS = Decimal("10000")
+CLOSURE_TOLERANCE = Decimal("1e-60")
+SCHEMA_VERSION = "nrrf833.fee_pricing_closure_learning.v1"
+SIMULATION_KIND = "DETERMINISTIC_COUNTERFACTUAL_ORDER_BOOK_SIMULATION"
+NO_EXECUTION_BOUNDARY = {
+    "network_calls_from_simulator": 0,
+    "broker_authentication": False,
+    "orders_submitted": 0,
+    "live_money_touched": False,
+    "fills_are_counterfactual": True,
+}
+
+
+class SimulationError(ValueError):
+    """Raised when evidence cannot be admitted into the closure."""
+
+
+class Side(str, Enum):
+    BUY = "BUY"
+    SELL = "SELL"
+
+
+class Liquidity(str, Enum):
+    MAKER = "MAKER"
+    TAKER = "TAKER"
+
+
+class Route(str, Enum):
+    HOLD = "HOLD"
+    TAKER_TAKER = "TAKER_TAKER"
+    MAKER_WITH_TAKER_HEDGE = "MAKER_WITH_TAKER_HEDGE"
+
+
+def dec(value: object) -> Decimal:
+    """Parse an exact finite decimal while refusing binary floating-point input."""
+
+    if isinstance(value, Decimal):
+        result = value
+    elif isinstance(value, (str, int)):
+        result = Decimal(value)
+    elif isinstance(value, float):
+        raise TypeError("binary float input is forbidden; pass a decimal string")
+    else:
+        raise TypeError(f"unsupported decimal input: {type(value)!r}")
+    if not result.is_finite():
+        raise InvalidOperation(str(value))
+    return result
+
+
+def decimal_text(value: Decimal | None) -> str | None:
+    if value is None:
+        return None
+    if value == 0:
+        return "0"
+    text = format(value, "f")
+    return text.rstrip("0").rstrip(".") if "." in text else text
+
+
+def parse_time(value: str | datetime) -> datetime:
+    if isinstance(value, datetime):
+        parsed = value
+    else:
+        normalized = value[:-1] + "+00:00" if value.endswith("Z") else value
+        parsed = datetime.fromisoformat(normalized)
+    if parsed.tzinfo is None:
+        raise SimulationError("timestamp must include an explicit UTC offset")
+    return parsed.astimezone(timezone.utc)
+
+
+def canonicalize(value: object) -> object:
+    if isinstance(value, Decimal):
+        return decimal_text(value)
+    if isinstance(value, datetime):
+        return value.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
+    if isinstance(value, date):
+        return value.isoformat()
+    if isinstance(value, Enum):
+        return value.value
+    if isinstance(value, Mapping):
+        return {str(key): canonicalize(item) for key, item in sorted(value.items())}
+    if isinstance(value, (list, tuple)):
+        return [canonicalize(item) for item in value]
+    return value
+
+
+def canonical_json_bytes(value: object) -> bytes:
+    return json.dumps(
+        canonicalize(value), sort_keys=True, separators=(",", ":"), ensure_ascii=True
+    ).encode()
+
+
+def sha256_value(value: object) -> str:
+    return hashlib.sha256(canonical_json_bytes(value)).hexdigest()
+
+
+def quantize_down(value: Decimal, quantum: Decimal) -> Decimal:
+    value = dec(value)
+    quantum = dec(quantum)
+    if quantum <= 0:
+        raise SimulationError("quantum must be positive")
+    return (value / quantum).to_integral_value(rounding=ROUND_FLOOR) * quantum
+
+
+def weighted_ewma(old: Decimal, new: Decimal, alpha: Decimal) -> Decimal:
+    return alpha * new + (D1 - alpha) * old
+
+
+def fraction_denominator(value: Decimal) -> int:
+    fraction = Fraction(value)
+    return fraction.denominator // math.gcd(fraction.numerator, fraction.denominator)
+
+
+def fee_compatible_increment(base_increment: Decimal, fee_rate: Decimal) -> Decimal:
+    """Return an order increment whose received-asset fee is increment-aligned."""
+
+    if fee_rate == 0:
+        return base_increment
+    return base_increment * Decimal(fraction_denominator(fee_rate))
+
+
+@dataclass(frozen=True)
+class FeeTier:
+    name: str
+    minimum_30d_volume_usd: Decimal
+    maker_bps: Decimal
+    taker_bps: Decimal
+
+    def __post_init__(self) -> None:
+        for field_name in ("minimum_30d_volume_usd", "maker_bps", "taker_bps"):
+            value = dec(getattr(self, field_name))
+            object.__setattr__(self, field_name, value)
+            if value < 0:
+                raise SimulationError(f"{field_name} cannot be negative")
+
+    def rate(self, liquidity: Liquidity) -> Decimal:
+        return (self.maker_bps if liquidity is Liquidity.MAKER else self.taker_bps) / BPS
+
+
+@dataclass(frozen=True)
+class FeeSchedule:
+    venue: str
+    schedule_id: str
+    effective_from_utc: datetime
+    verified_at_utc: datetime
+    source: str
+    credited_asset_fee: bool
+    tiers: tuple[FeeTier, ...]
+    max_verification_age_days: int = 45
+
+    def __post_init__(self) -> None:
+        object.__setattr__(self, "effective_from_utc", parse_time(self.effective_from_utc))
+        object.__setattr__(self, "verified_at_utc", parse_time(self.verified_at_utc))
+        if not self.tiers:
+            raise SimulationError("fee schedule must contain at least one tier")
+        minima = [tier.minimum_30d_volume_usd for tier in self.tiers]
+        if minima != sorted(minima) or minima[0] != 0 or len(set(minima)) != len(minima):
+            raise SimulationError("fee tiers must have unique ascending minima beginning at zero")
+        if not self.credited_asset_fee:
+            raise SimulationError("this simulator currently requires credited-asset fee semantics")
+
+    def assert_usable(self, as_of: datetime, *, allow_stale: bool = False) -> None:
+        as_of = parse_time(as_of)
+        if as_of < self.effective_from_utc:
+            raise SimulationError("fee schedule was not effective at the simulation timestamp")
+        age = as_of - self.verified_at_utc
