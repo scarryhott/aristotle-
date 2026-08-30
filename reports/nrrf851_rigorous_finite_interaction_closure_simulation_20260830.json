@@ -1,0 +1,74 @@
+{
+  "schema_version": "nrrf851.rigorous_finite_interaction_closure_simulation.v1",
+  "date": "2026-08-30",
+  "claim_boundary": "Finite exact directed-maze closure plus noisy empirical learning with known net-PnL ground truth. This is not live own-account execution and not a universal profitability theorem.",
+  "exact_closure": {
+    "vertices": 5,
+    "directed_edges": 16,
+    "incidence_rank": 4,
+    "cycle_space_dimension": 12,
+    "arbitrary_cost_environments": 250,
+    "closed_flows_tested": 6250,
+    "pointwise_fields_changed_under_translation": 250,
+    "translation_natural_form_failures": 0,
+    "full_basis_closed_flow_prediction_failures": 0
+  },
+  "partition_test": {
+    "pure_translation_same_class": 300,
+    "translation_trials": 300,
+    "curved_perturbation_split_class": 300,
+    "curved_trials": 300
+  },
+  "empirical_learning": {
+    "steps": 9000,
+    "authenticated_evidence": 8941,
+    "cycle_rank": 12,
+    "shock_time": 4300,
+    "shock_detection_delays": {
+      "hair_0": 68,
+      "hair_2": 166,
+      "hair_3": 2699
+    },
+    "pre_shock_t4299": {
+      "certified_basis_hairs": 11,
+      "prediction_coverage": 0.7733333333333333,
+      "mean_abs_profit_prediction_error_bps": 0.053726,
+      "admitted_orders": 115,
+      "false_positive_orders": 0
+    },
+    "immediate_post_shock_t4300": {
+      "certified_basis_hairs": 11,
+      "prediction_coverage": 0.72,
+      "mean_abs_profit_prediction_error_bps": 1.958658,
+      "admitted_orders": 115,
+      "false_positive_orders": 47,
+      "true_profit_min_of_admitted_bps": -3.45
+    },
+    "reclosure_t8000": {
+      "certified_basis_hairs": 12,
+      "prediction_coverage": 1.0,
+      "mean_abs_profit_prediction_error_bps": 0.051273,
+      "admitted_orders": 133,
+      "false_positive_orders": 0,
+      "true_profit_min_of_admitted_bps": 0.30
+    },
+    "final_t8999": {
+      "certified_basis_hairs": 11,
+      "prediction_coverage": 0.72,
+      "mean_abs_profit_prediction_error_bps": 0.054398,
+      "admitted_orders": 109,
+      "false_positive_orders": 0,
+      "profit_lcb_range_bps": [0.200527, 5.804862],
+      "true_profit_range_of_admitted_bps": [0.30, 6.0]
+    }
+  },
+  "closure_reading": {
+    "local_ball": "The unresolved local operation neighborhood available to the AI token.",
+    "global_hair": "A divergence-free authenticated closed value flow in ker(boundary).",
+    "natural_form": "The finite vector of independent closed-hair profit curvatures; at full rank it determines every generated closed-flow profit.",
+    "profit_partition": "Equality of the natural-form profit functional, not pointwise sameness of prices or costs.",
+    "unitary_potential_gate": "A closed order is admitted only when all required independent hairs are currently certified, propagated profit LCB is positive, and closure confidence passes its floor.",
+    "empirical_freedom": "The currently admitted subset of the closed-flow space. Knowledge can grow monotonically while this certified freedom expands, contracts, splits, or reorders after genuine curvature change.",
+    "negative_result": "A genuine adversarial curvature shock can make a previously certified natural form stale. Immediate post-shock false positives occurred until authenticated interaction reopened and relearned the affected coordinates. Closure does not imply instantaneous universal adaptation."
+  }
+}
