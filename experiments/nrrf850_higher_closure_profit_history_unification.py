@@ -4,12 +4,20 @@ from dataclasses import dataclass
 from fractions import Fraction
 from typing import Iterable, Mapping, Sequence
 
-from nrrf849_relational_completeness_identification_price_continuum import (
-    RelationalScenario,
-    edges,
-    identification_class,
-    translate_scenario,
-)
+try:
+    from experiments.nrrf849_relational_completeness_identification_price_continuum import (
+        RelationalScenario,
+        edges,
+        identification_class,
+        translate_scenario,
+    )
+except ModuleNotFoundError:
+    from nrrf849_relational_completeness_identification_price_continuum import (
+        RelationalScenario,
+        edges,
+        identification_class,
+        translate_scenario,
+    )
 
 SCHEMA_VERSION = "nrrf850.higher_closure_profit_history_unification.v1"
 
