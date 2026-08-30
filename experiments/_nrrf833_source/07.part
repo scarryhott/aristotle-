@@ -1,0 +1,210 @@
+            )
+            if not verify_receipt_hash(receipt):
+                raise AssertionError("newly created receipt failed its own hash")
+            self.learner.update(decision, receipt)
+            after = self.learner.to_dict()
+            after_hash = self.learner.state_hash
+            payload = {
+                "schema_version": SCHEMA_VERSION,
+                "simulation_kind": SIMULATION_KIND,
+                "sequence": sequence,
+                "episode": episode.to_dict(),
+                "effective_30d_volume_usd": effective_volume,
+                "fee_tier": tier.name,
+                "learner_before": before,
+                "learner_before_hash": before_hash,
+                "decision": decision.to_dict(),
+                "receipt": receipt.to_dict(),
+                "learner_after": after,
+                "learner_after_hash": after_hash,
+                "previous_event_hash": previous_event_hash,
+                "boundary": NO_EXECUTION_BOUNDARY,
+            }
+            event_hash = sha256_value(payload)
+            event = SimulationEvent(
+                sequence=sequence,
+                episode=episode.to_dict(),
+                effective_30d_volume_usd=effective_volume,
+                fee_tier=tier.name,
+                learner_before=before,
+                learner_before_hash=before_hash,
+                decision=decision.to_dict(),
+                receipt=receipt.to_dict(),
+                learner_after=after,
+                learner_after_hash=after_hash,
+                previous_event_hash=previous_event_hash,
+                event_hash=event_hash,
+            )
+            events.append(event)
+            previous_event_hash = event_hash
+            previous_receipt_hash = receipt.receipt_hash
+            self.rolling_volume.record(trading_day, gross_volume_from_receipt(receipt))
+
+        summary = summarize_events(
+            events,
+            genesis=genesis,
+            initial_learner=initial_learner,
+            final_learner=self.learner.to_dict(),
+            rolling_volume=self.rolling_volume.to_dict(),
+        )
+        return events, summary
+
+
+def verify_event_chain(events: Sequence[Mapping[str, object]], genesis: str) -> bool:
+    previous = genesis
+    previous_receipt = genesis
+    for expected_sequence, event in enumerate(events):
+        if event.get("sequence") != expected_sequence:
+            return False
+        if event.get("previous_event_hash") != previous:
+            return False
+        supplied = event.get("event_hash")
+        payload = dict(event)
+        payload.pop("event_hash", None)
+        if supplied != sha256_value(payload):
+            return False
+        receipt = event.get("receipt")
+        if not isinstance(receipt, Mapping):
+            return False
+        receipt_payload = dict(receipt)
+        receipt_hash = receipt_payload.pop("receipt_hash", None)
+        if receipt_payload.get("previous_receipt_hash") != previous_receipt:
+            return False
+        if receipt_hash != sha256_value(receipt_payload):
+            return False
+        previous_receipt = str(receipt_hash)
+        previous = str(supplied)
+    return True
+
+
+def summarize_events(
+    events: Sequence[SimulationEvent],
+    *,
+    genesis: str,
+    initial_learner: Mapping[str, object],
+    final_learner: Mapping[str, object],
+    rolling_volume: Mapping[str, str],
+) -> dict[str, object]:
+    decisions = Counter(str(event.decision["route"]) for event in events)
+    states = Counter(str(event.receipt["state"]) for event in events)
+    regimes = Counter(str(event.episode["regime"]) for event in events)
+    realized = sum((dec(event.receipt["realized_pnl_quote"]) for event in events), D0)
+    fees = D0
+    max_residual = D0
+    learned = 0
+    for event in events:
+        receipt = event.receipt
+        entry = receipt.get("entry_fill")
+        if isinstance(entry, Mapping):
+            fee_asset = str(entry["fee_asset"])
+            fee_amount = dec(entry["fee_amount"])
+            if fee_asset == "USD":
+                fees += fee_amount
+            elif fee_asset == "BTC":
+                # Value the received-asset fee at the exit midpoint exactly as the closure does.
+                fees += dec(receipt["entry_fee_value_at_exit_mid_quote"])
+        for item in receipt.get("exit_fills", []):
+            if isinstance(item, Mapping) and item["fee_asset"] == "USD":
+                fees += dec(item["fee_amount"])
+        residual = receipt.get("closure_residual_quote")
+        if residual is not None:
+            max_residual = max(max_residual, abs(dec(residual)))
+        if receipt.get("eligible_for_learning"):
+            learned += 1
+    raw_events = [event.to_dict() for event in events]
+    chain_ok = verify_event_chain(raw_events, genesis)
+    return canonicalize(
+        {
+            "schema_version": SCHEMA_VERSION,
+            "simulation_kind": SIMULATION_KIND,
+            "genesis_hash": genesis,
+            "event_count": len(events),
+            "final_event_hash": events[-1].event_hash if events else genesis,
+            "receipt_chain_verified": chain_ok,
+            "decision_counts": dict(sorted(decisions.items())),
+            "receipt_states": dict(sorted(states.items())),
+            "regimes": dict(sorted(regimes.items())),
+            "learning_admissions": learned,
+            "realized_pnl_quote": realized,
+            "economically_valued_fees_quote": fees,
+            "maximum_closure_residual_quote": max_residual,
+            "initial_learner": dict(initial_learner),
+            "final_learner": dict(final_learner),
+            "rolling_volume": dict(rolling_volume),
+            "boundary": NO_EXECUTION_BOUNDARY,
+        }
+    )
+
+
+def make_book(
+    *,
+    mid: Decimal,
+    spread_bps: Decimal,
+    first_level_quantity: Decimal,
+    timestamp: datetime,
+    source: str,
+    levels: int = 8,
+) -> OrderBookSnapshot:
+    mid = dec(mid)
+    spread_bps = dec(spread_bps)
+    first_level_quantity = dec(first_level_quantity)
+    if mid <= 0 or spread_bps <= 0 or first_level_quantity <= 0:
+        raise SimulationError("invalid synthetic book parameters")
+    half = spread_bps / (Decimal(2) * BPS)
+    step = max(spread_bps / BPS, Decimal("0.00001"))
+    bids: list[Level] = []
+    asks: list[Level] = []
+    for index in range(levels):
+        multiplier = Decimal(index)
+        bid = quantize_down(mid * (D1 - half - step * multiplier), Decimal("0.000000001"))
+        ask = quantize_down(mid * (D1 + half + step * multiplier), Decimal("0.000000001"))
+        qty = quantize_down(first_level_quantity * Decimal(index + 1), Decimal("0.000000001"))
+        bids.append(Level(bid, qty))
+        asks.append(Level(ask, qty))
+    return OrderBookSnapshot(
+        venue="ALPACA_CRYPTO",
+        symbol="BTC/USD",
+        timestamp_utc=timestamp,
+        bids=tuple(bids),
+        asks=tuple(asks),
+        source=source,
+    )
+
+
+def _maker_events(
+    *,
+    side: Side,
+    price: Decimal,
+    queue: Decimal,
+    requested: Decimal,
+    fill_fraction: Decimal,
+) -> tuple[MakerEvent, ...]:
+    fraction = min(max(dec(fill_fraction), D0), D1)
+    if fraction == 0:
+        return (
+            MakerEvent(0, Side.SELL if side is Side.BUY else Side.BUY, price, queue / Decimal(3)),
+        )
+    traded = queue + requested * fraction
+    return (
+        MakerEvent(
+            0,
+            Side.SELL if side is Side.BUY else Side.BUY,
+            price,
+            traded,
+            queue / Decimal(10),
+        ),
+    )
+
+
+def synthetic_episodes(
+    *,
+    count: int = 240,
+    seed: int = 833,
+    quote_budget: Decimal = Decimal("20"),
+) -> list[Episode]:
+    if count <= 0:
+        raise SimulationError("episode count must be positive")
+    rng = random.Random(seed)
+    timestamp = parse_time("2026-08-30T17:20:00Z")
+    mid = Decimal("79140")
+    episodes: list[Episode] = []

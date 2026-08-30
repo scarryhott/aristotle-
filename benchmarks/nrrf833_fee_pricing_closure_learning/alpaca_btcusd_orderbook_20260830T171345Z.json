@@ -1,0 +1,51 @@
+{
+  "capture": {
+    "captured_at_utc": "2026-08-30T17:13:45.858877Z",
+    "market_data_provider": "Alpaca get_crypto_latest_orderbook(symbol=BTC/USD, feed=us)",
+    "asset_provider": "Alpaca get_asset(symbol=BTC/USD)",
+    "purpose": "Immutable input fixture for deterministic counterfactual fee and depth audit",
+    "orders_submitted": 0
+  },
+  "instrument_rules": {
+    "venue": "ALPACA_CRYPTO",
+    "symbol": "BTC/USD",
+    "base_asset": "BTC",
+    "quote_asset": "USD",
+    "min_order_size": "0.000012811",
+    "min_trade_increment": "0.000000001",
+    "price_increment": "0.000000001",
+    "quote_increment": "0.000000001",
+    "verified_at_utc": "2026-08-30T17:15:00Z",
+    "source": "Alpaca get_asset(BTC/USD), captured 2026-08-30"
+  },
+  "orderbook": {
+    "venue": "ALPACA_CRYPTO",
+    "symbol": "BTC/USD",
+    "timestamp_utc": "2026-08-30T17:13:45.858877Z",
+    "source": "Alpaca get_crypto_latest_orderbook(BTC/USD, us), top ten levels retained",
+    "bids": [
+      {"price": "79126.38", "quantity": "0.0009997"},
+      {"price": "79109.9", "quantity": "0.002001"},
+      {"price": "79084.535", "quantity": "1.111"},
+      {"price": "79070.2", "quantity": "2.21998"},
+      {"price": "79024.26", "quantity": "3.339"},
+      {"price": "78937.438", "quantity": "2.3915"},
+      {"price": "78813.5", "quantity": "4.802"},
+      {"price": "78150.16", "quantity": "0.000383876"},
+      {"price": "77880.1", "quantity": "7.158"},
+      {"price": "77487.88", "quantity": "0.000323"}
+    ],
+    "asks": [
+      {"price": "79137.304", "quantity": "0.0009993"},
+      {"price": "79149.28", "quantity": "0.00200184"},
+      {"price": "79172.9", "quantity": "1.11903"},
+      {"price": "79198.95", "quantity": "2.206"},
+      {"price": "79228.97", "quantity": "3.364"},
+      {"price": "79324.7", "quantity": "2.41127"},
+      {"price": "79449.7", "quantity": "4.784"},
+      {"price": "79450.77", "quantity": "0.000157692"},
+      {"price": "79507.6752", "quantity": "0.00001321"},
+      {"price": "79604.268", "quantity": "0.000187086"}
+    ]
+  }
+}

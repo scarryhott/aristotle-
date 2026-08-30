@@ -1,0 +1,210 @@
+        if age > timedelta(days=self.max_verification_age_days) and not allow_stale:
+            raise SimulationError(
+                f"fee schedule verification is stale by {age.days} days; fail closed"
+            )
+
+    def tier_for(self, effective_30d_volume_usd: Decimal) -> FeeTier:
+        volume = dec(effective_30d_volume_usd)
+        if volume < 0:
+            raise SimulationError("rolling volume cannot be negative")
+        selected = self.tiers[0]
+        for tier in self.tiers:
+            if volume >= tier.minimum_30d_volume_usd:
+                selected = tier
+            else:
+                break
+        return selected
+
+    def rate(
+        self,
+        liquidity: Liquidity,
+        effective_30d_volume_usd: Decimal,
+        as_of: datetime,
+        *,
+        allow_stale: bool = False,
+    ) -> Decimal:
+        self.assert_usable(as_of, allow_stale=allow_stale)
+        return self.tier_for(effective_30d_volume_usd).rate(liquidity)
+
+    def to_dict(self) -> dict[str, object]:
+        return canonicalize(
+            {
+                "venue": self.venue,
+                "schedule_id": self.schedule_id,
+                "effective_from_utc": self.effective_from_utc,
+                "verified_at_utc": self.verified_at_utc,
+                "source": self.source,
+                "credited_asset_fee": self.credited_asset_fee,
+                "max_verification_age_days": self.max_verification_age_days,
+                "tiers": [tier.__dict__ for tier in self.tiers],
+            }
+        )
+
+
+def alpaca_crypto_fee_schedule() -> FeeSchedule:
+    """Official Alpaca crypto fee tiers, verified on 2026-08-30."""
+
+    rows = (
+        ("TIER_1", "0", "15", "25"),
+        ("TIER_2", "100000", "12", "22"),
+        ("TIER_3", "500000", "10", "20"),
+        ("TIER_4", "1000000", "8", "18"),
+        ("TIER_5", "10000000", "5", "15"),
+        ("TIER_6", "25000000", "2", "13"),
+        ("TIER_7", "50000000", "2", "12"),
+        ("TIER_8", "100000000", "0", "10"),
+    )
+    return FeeSchedule(
+        venue="ALPACA_CRYPTO",
+        schedule_id="alpaca.crypto.maker_taker.2023-03-13.verified-2026-08-30",
+        effective_from_utc=parse_time("2023-03-13T00:00:00Z"),
+        verified_at_utc=parse_time("2026-08-30T17:15:00Z"),
+        source="https://docs.alpaca.markets/us/docs/crypto-fees",
+        credited_asset_fee=True,
+        tiers=tuple(FeeTier(name, dec(minimum), dec(maker), dec(taker)) for name, minimum, maker, taker in rows),
+    )
+
+
+@dataclass
+class Rolling30DayVolume:
+    """Daily gross-volume ledger; today's trades affect tomorrow's fee tier."""
+
+    daily_usd: dict[date, Decimal] = field(default_factory=dict)
+
+    @classmethod
+    def seeded(cls, simulation_day: date, effective_volume_usd: Decimal) -> "Rolling30DayVolume":
+        amount = dec(effective_volume_usd)
+        if amount < 0:
+            raise SimulationError("seed volume cannot be negative")
+        return cls({simulation_day - timedelta(days=1): amount} if amount else {})
+
+    def effective_volume(self, trading_day: date) -> Decimal:
+        start = trading_day - timedelta(days=30)
+        return sum(
+            (amount for day, amount in self.daily_usd.items() if start <= day < trading_day),
+            D0,
+        )
+
+    def record(self, trading_day: date, gross_notional_usd: Decimal) -> None:
+        amount = dec(gross_notional_usd)
+        if amount < 0:
+            raise SimulationError("gross volume cannot be negative")
+        self.daily_usd[trading_day] = self.daily_usd.get(trading_day, D0) + amount
+
+    def to_dict(self) -> dict[str, str]:
+        return {day.isoformat(): decimal_text(value) or "0" for day, value in sorted(self.daily_usd.items())}
+
+
+@dataclass(frozen=True)
+class InstrumentRules:
+    venue: str
+    symbol: str
+    base_asset: str
+    quote_asset: str
+    min_order_size: Decimal
+    min_trade_increment: Decimal
+    price_increment: Decimal
+    quote_increment: Decimal
+    verified_at_utc: datetime
+    source: str
+
+    def __post_init__(self) -> None:
+        for name in ("min_order_size", "min_trade_increment", "price_increment", "quote_increment"):
+            value = dec(getattr(self, name))
+            object.__setattr__(self, name, value)
+            if value <= 0:
+                raise SimulationError(f"{name} must be positive")
+        object.__setattr__(self, "verified_at_utc", parse_time(self.verified_at_utc))
+
+    def normalize_quantity(self, quantity: Decimal, *, increment: Decimal | None = None) -> Decimal:
+        normalized = quantize_down(dec(quantity), increment or self.min_trade_increment)
+        if normalized != 0 and normalized < self.min_order_size:
+            raise SimulationError("order quantity is below the venue minimum")
+        return normalized
+
+    def normalize_price(self, price: Decimal) -> Decimal:
+        return quantize_down(dec(price), self.price_increment)
+
+    def to_dict(self) -> dict[str, object]:
+        return canonicalize(self.__dict__)
+
+
+def alpaca_btcusd_rules() -> InstrumentRules:
+    return InstrumentRules(
+        venue="ALPACA_CRYPTO",
+        symbol="BTC/USD",
+        base_asset="BTC",
+        quote_asset="USD",
+        min_order_size=dec("0.000012811"),
+        min_trade_increment=dec("0.000000001"),
+        price_increment=dec("0.000000001"),
+        quote_increment=dec("0.000000001"),
+        verified_at_utc=parse_time("2026-08-30T17:15:00Z"),
+        source="Alpaca get_asset(BTC/USD), captured 2026-08-30",
+    )
+
+
+@dataclass(frozen=True)
+class Level:
+    price: Decimal
+    quantity: Decimal
+
+    def __post_init__(self) -> None:
+        object.__setattr__(self, "price", dec(self.price))
+        object.__setattr__(self, "quantity", dec(self.quantity))
+        if self.price <= 0 or self.quantity <= 0:
+            raise SimulationError("order-book price and quantity must be positive")
+
+    def to_dict(self) -> dict[str, str]:
+        return {"price": decimal_text(self.price) or "0", "quantity": decimal_text(self.quantity) or "0"}
+
+
+@dataclass(frozen=True)
+class OrderBookSnapshot:
+    venue: str
+    symbol: str
+    timestamp_utc: datetime
+    bids: tuple[Level, ...]
+    asks: tuple[Level, ...]
+    source: str
+
+    def __post_init__(self) -> None:
+        object.__setattr__(self, "timestamp_utc", parse_time(self.timestamp_utc))
+        if not self.bids or not self.asks:
+            raise SimulationError("both sides of the order book are required")
+        if any(left.price <= right.price for left, right in zip(self.bids, self.bids[1:])):
+            raise SimulationError("bids must be strictly descending")
+        if any(left.price >= right.price for left, right in zip(self.asks, self.asks[1:])):
+            raise SimulationError("asks must be strictly ascending")
+        if self.best_bid >= self.best_ask:
+            raise SimulationError("crossed or locked order book fails closed")
+
+    @property
+    def best_bid(self) -> Decimal:
+        return self.bids[0].price
+
+    @property
+    def best_ask(self) -> Decimal:
+        return self.asks[0].price
+
+    @property
+    def midpoint(self) -> Decimal:
+        return (self.best_bid + self.best_ask) / Decimal(2)
+
+    @property
+    def spread_bps(self) -> Decimal:
+        return (self.best_ask - self.best_bid) / self.midpoint * BPS
+
+    @property
+    def book_hash(self) -> str:
+        return sha256_value(self.to_dict())
+
+    def levels_for(self, side: Side) -> tuple[Level, ...]:
+        return self.asks if side is Side.BUY else self.bids
+
+    def to_dict(self) -> dict[str, object]:
+        return canonicalize(
+            {
+                "venue": self.venue,
+                "symbol": self.symbol,
+                "timestamp_utc": self.timestamp_utc,

@@ -1,0 +1,76 @@
+        raise FileExistsError(f"refusing to overwrite nonempty run directory: {output}")
+    output.mkdir(parents=True, exist_ok=True)
+    events_path = output / "events.jsonl"
+    with events_path.open("w") as sink:
+        for event in events:
+            sink.write(json.dumps(event.to_dict(), sort_keys=True) + "\n")
+    (output / "summary.json").write_text(json.dumps(canonicalize(summary), indent=2, sort_keys=True) + "\n")
+    program_path = Path(__file__)
+    assembled_source = globals().get("_source")
+    program_bytes = (
+        assembled_source.encode("utf-8")
+        if isinstance(assembled_source, str)
+        else program_path.read_bytes()
+    )
+    manifest = {
+        "schema_version": SCHEMA_VERSION,
+        "simulation_kind": SIMULATION_KIND,
+        "events_file": events_path.name,
+        "events_sha256": hashlib.sha256(events_path.read_bytes()).hexdigest(),
+        "summary_file": "summary.json",
+        "summary_sha256": hashlib.sha256((output / "summary.json").read_bytes()).hexdigest(),
+        "program": program_path.name,
+        "program_sha256": hashlib.sha256(program_bytes).hexdigest(),
+        "boundary": NO_EXECUTION_BOUNDARY,
+    }
+    (output / "manifest.json").write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
+
+
+
+def verify_run_directory(output: Path) -> dict[str, object]:
+    manifest_path = output / "manifest.json"
+    summary_path = output / "summary.json"
+    events_path = output / "events.jsonl"
+    manifest = json.loads(manifest_path.read_text())
+    summary = json.loads(summary_path.read_text())
+    events = [json.loads(line) for line in events_path.read_text().splitlines() if line]
+    events_sha_ok = hashlib.sha256(events_path.read_bytes()).hexdigest() == manifest.get("events_sha256")
+    summary_sha_ok = hashlib.sha256(summary_path.read_bytes()).hexdigest() == manifest.get("summary_sha256")
+    chain_ok = verify_event_chain(events, str(summary.get("genesis_hash")))
+    final_hash_ok = (
+        (events[-1]["event_hash"] if events else summary.get("genesis_hash"))
+        == summary.get("final_event_hash")
+    )
+    count_ok = len(events) == summary.get("event_count")
+    program_path = Path(__file__)
+    assembled_source = globals().get("_source")
+    program_bytes = (
+        assembled_source.encode("utf-8")
+        if isinstance(assembled_source, str)
+        else program_path.read_bytes()
+    )
+    program_sha_ok = (
+        hashlib.sha256(program_bytes).hexdigest() == manifest.get("program_sha256")
+    )
+    verified = all(
+        (events_sha_ok, summary_sha_ok, chain_ok, final_hash_ok, count_ok, program_sha_ok)
+    )
+    return {
+        "verified": verified,
+        "events_sha256_verified": events_sha_ok,
+        "summary_sha256_verified": summary_sha_ok,
+        "event_and_receipt_chains_verified": chain_ok,
+        "final_event_hash_verified": final_hash_ok,
+        "event_count_verified": count_ok,
+        "program_sha256_verified": program_sha_ok,
+        "event_count": len(events),
+    }
+
+
+def command_verify(args: argparse.Namespace) -> int:
+    result = verify_run_directory(Path(args.run))
+    print(json.dumps(result, indent=2, sort_keys=True))
+    return 0 if result["verified"] else 1
+
+def command_simulate(args: argparse.Namespace) -> int:
+    rules = alpaca_btcusd_rules()

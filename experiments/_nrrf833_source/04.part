@@ -1,0 +1,210 @@
+    entry_fee_value_at_exit_mid_quote: Decimal
+    exit_fee_quote: Decimal
+    fixed_cost_quote: Decimal
+    realized_pnl_quote: Decimal
+    actual_total_cost_bps: Decimal | None
+    closure_residual_quote: Decimal | None
+    cash_conservation_residual_quote: Decimal
+    base_conservation_residual: Decimal
+    eligible_for_learning: bool
+    witnesses: tuple[str, ...]
+    previous_receipt_hash: str
+    receipt_hash: str
+
+    def to_dict(self, *, include_hash: bool = True) -> dict[str, object]:
+        payload: dict[str, object] = {
+            "episode_id": self.episode_id,
+            "route": self.route,
+            "state": self.state,
+            "signal_bps": self.signal_bps,
+            "predicted_total_cost_bps": self.predicted_total_cost_bps,
+            "entry_fill": self.entry_fill.to_dict() if self.entry_fill else None,
+            "exit_fills": [item.to_dict() for item in self.exit_fills],
+            "initial_cash_quote": self.initial_cash_quote,
+            "final_cash_quote": self.final_cash_quote,
+            "final_base_inventory": self.final_base_inventory,
+            "directional_midpoint_pnl_quote": self.directional_midpoint_pnl_quote,
+            "entry_execution_cost_quote": self.entry_execution_cost_quote,
+            "exit_execution_cost_quote": self.exit_execution_cost_quote,
+            "entry_fee_value_at_exit_mid_quote": self.entry_fee_value_at_exit_mid_quote,
+            "exit_fee_quote": self.exit_fee_quote,
+            "fixed_cost_quote": self.fixed_cost_quote,
+            "realized_pnl_quote": self.realized_pnl_quote,
+            "actual_total_cost_bps": self.actual_total_cost_bps,
+            "closure_residual_quote": self.closure_residual_quote,
+            "cash_conservation_residual_quote": self.cash_conservation_residual_quote,
+            "base_conservation_residual": self.base_conservation_residual,
+            "eligible_for_learning": self.eligible_for_learning,
+            "witnesses": list(self.witnesses),
+            "previous_receipt_hash": self.previous_receipt_hash,
+        }
+        if include_hash:
+            payload["receipt_hash"] = self.receipt_hash
+        return canonicalize(payload)
+
+
+def _zero_receipt(
+    *,
+    episode: Episode,
+    decision: Decision,
+    state: str,
+    previous_receipt_hash: str,
+    witnesses: Iterable[str],
+) -> ClosureReceipt:
+    payload = {
+        "episode_id": episode.episode_id,
+        "route": decision.route,
+        "state": state,
+        "signal_bps": decision.signal_bps,
+        "predicted_total_cost_bps": decision.predicted_total_cost_bps,
+        "entry_fill": None,
+        "exit_fills": [],
+        "initial_cash_quote": episode.quote_budget,
+        "final_cash_quote": episode.quote_budget,
+        "final_base_inventory": D0,
+        "directional_midpoint_pnl_quote": D0,
+        "entry_execution_cost_quote": D0,
+        "exit_execution_cost_quote": D0,
+        "entry_fee_value_at_exit_mid_quote": D0,
+        "exit_fee_quote": D0,
+        "fixed_cost_quote": D0,
+        "realized_pnl_quote": D0,
+        "actual_total_cost_bps": None,
+        "closure_residual_quote": D0,
+        "cash_conservation_residual_quote": D0,
+        "base_conservation_residual": D0,
+        "eligible_for_learning": state == "CLOSED_NO_ENTRY_FILL",
+        "witnesses": tuple(sorted(set(witnesses))),
+        "previous_receipt_hash": previous_receipt_hash,
+    }
+    receipt_hash = sha256_value(payload)
+    return ClosureReceipt(**payload, receipt_hash=receipt_hash)
+
+
+def close_round_trip(
+    *,
+    episode: Episode,
+    decision: Decision,
+    entry_fill: ExecutionFill,
+    exit_fills: Sequence[ExecutionFill],
+    previous_receipt_hash: str,
+) -> ClosureReceipt:
+    if entry_fill.side is not Side.BUY:
+        raise SimulationError("round trip must begin with a buy")
+    if any(item.side is not Side.SELL for item in exit_fills):
+        raise SimulationError("round trip exits must be sells")
+    initial_cash = episode.quote_budget
+    quote_deltas = entry_fill.quote_delta + sum((item.quote_delta for item in exit_fills), D0)
+    base_deltas = entry_fill.base_delta + sum((item.base_delta for item in exit_fills), D0)
+    final_cash = initial_cash + quote_deltas - episode.fixed_cost_quote
+    final_base = base_deltas
+    cash_residual = final_cash - (
+        initial_cash + quote_deltas - episode.fixed_cost_quote
+    )
+    base_residual = final_base - base_deltas
+    witnesses = set(entry_fill.witnesses)
+    for item in exit_fills:
+        witnesses.update(item.witnesses)
+
+    if entry_fill.filled_quantity == 0:
+        return _zero_receipt(
+            episode=episode,
+            decision=decision,
+            state="CLOSED_NO_ENTRY_FILL",
+            previous_receipt_hash=previous_receipt_hash,
+            witnesses=(*witnesses, "NO_ENTRY_EXPOSURE"),
+        )
+
+    if final_base != 0:
+        witnesses.add("OPEN_INVENTORY_NOT_ADMITTED")
+        state = "OPEN_INVENTORY"
+        directional = entry_exec = exit_exec = entry_fee_value = exit_fee = D0
+        realized = final_cash - initial_cash
+        actual_cost = closure_residual = None
+        eligible = False
+    else:
+        state = "CLOSED_RETURN"
+        q_gross = entry_fill.filled_quantity
+        q_net = entry_fill.base_delta
+        gross_exit_quote = sum((item.gross_quote for item in exit_fills), D0)
+        exit_fee = sum((item.fee_amount for item in exit_fills), D0)
+        # The entry fee is charged in the received base asset; sell fees must be quote-side.
+        if any(item.fee_asset == entry_fill.fee_asset for item in exit_fills):
+            raise SimulationError("sell fee unexpectedly charged in the entry base asset")
+        directional = q_gross * (episode.exit_book.midpoint - episode.entry_book.midpoint)
+        entry_exec = entry_fill.gross_quote - q_gross * episode.entry_book.midpoint
+        exit_exec = q_net * episode.exit_book.midpoint - gross_exit_quote
+        entry_fee_value = entry_fill.fee_amount * episode.exit_book.midpoint
+        realized = final_cash - initial_cash
+        closure_residual = (
+            directional
+            - entry_exec
+            - exit_exec
+            - entry_fee_value
+            - exit_fee
+            - episode.fixed_cost_quote
+            - realized
+        )
+        if abs(closure_residual) <= CLOSURE_TOLERANCE:
+            closure_residual = D0
+        if closure_residual != 0 or cash_residual != 0 or base_residual != 0:
+            witnesses.add("ACCOUNTING_CLOSURE_FAILURE")
+            state = "INVALID_CLOSURE"
+            eligible = False
+        else:
+            eligible = True
+        actual_cost = (
+            (directional - realized) / entry_fill.gross_quote * BPS
+            if entry_fill.gross_quote
+            else None
+        )
+
+    payload = {
+        "episode_id": episode.episode_id,
+        "route": decision.route,
+        "state": state,
+        "signal_bps": decision.signal_bps,
+        "predicted_total_cost_bps": decision.predicted_total_cost_bps,
+        "entry_fill": entry_fill,
+        "exit_fills": tuple(exit_fills),
+        "initial_cash_quote": initial_cash,
+        "final_cash_quote": final_cash,
+        "final_base_inventory": final_base,
+        "directional_midpoint_pnl_quote": directional,
+        "entry_execution_cost_quote": entry_exec,
+        "exit_execution_cost_quote": exit_exec,
+        "entry_fee_value_at_exit_mid_quote": entry_fee_value,
+        "exit_fee_quote": exit_fee,
+        "fixed_cost_quote": episode.fixed_cost_quote,
+        "realized_pnl_quote": realized,
+        "actual_total_cost_bps": actual_cost,
+        "closure_residual_quote": closure_residual,
+        "cash_conservation_residual_quote": cash_residual,
+        "base_conservation_residual": base_residual,
+        "eligible_for_learning": eligible,
+        "witnesses": tuple(sorted(witnesses)),
+        "previous_receipt_hash": previous_receipt_hash,
+    }
+    hash_payload = {
+        key: (
+            value.to_dict()
+            if isinstance(value, ExecutionFill)
+            else [item.to_dict() for item in value]
+            if key == "exit_fills"
+            else value
+        )
+        for key, value in payload.items()
+    }
+    receipt_hash = sha256_value(hash_payload)
+    return ClosureReceipt(**payload, receipt_hash=receipt_hash)
+
+
+@dataclass
+class ClosureLearner:
+    learning_rate: Decimal = Decimal("0.20")
+    base_uncertainty_bps: Decimal = Decimal("6")
+    taker_exit_execution_bps: Decimal = Decimal("4")
+    positive_model_error_bps: Decimal = D0
+    absolute_model_error_bps: Decimal = D0
+    signal_optimism_bps: Decimal = D0
+    maker_adverse_selection_bps: Decimal = Decimal("3")

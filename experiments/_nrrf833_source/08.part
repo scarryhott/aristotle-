@@ -1,0 +1,105 @@
+    for index in range(count):
+        block = (index * 4) // count
+        regime = ("CALM", "THIN", "ADVERSE", "RECOVERY")[min(block, 3)]
+        if regime == "CALM":
+            spread = Decimal(rng.choice((2, 3, 4)))
+            first_qty = Decimal("0.00035")
+            optimism = 8
+        elif regime == "THIN":
+            spread = Decimal(rng.choice((5, 7, 9)))
+            first_qty = Decimal("0.00004")
+            optimism = 16
+        elif regime == "ADVERSE":
+            spread = Decimal(rng.choice((6, 8, 12)))
+            first_qty = Decimal("0.000025")
+            optimism = 35
+        else:
+            spread = Decimal(rng.choice((3, 4, 5)))
+            first_qty = Decimal("0.00020")
+            optimism = 10
+
+        true_move_bps = Decimal(rng.choice((-70, -40, -15, 10, 25, 45, 70, 100, 140)))
+        noise_bps = Decimal(rng.randint(-18, 18))
+        signal_bps = true_move_bps + Decimal(optimism) + noise_bps
+        entry = make_book(
+            mid=mid,
+            spread_bps=spread,
+            first_level_quantity=first_qty,
+            timestamp=timestamp,
+            source=f"synthetic:{regime}:entry:{index}",
+        )
+        exit_mid = mid * (D1 + true_move_bps / BPS)
+        exit_spread = spread + Decimal(rng.choice((-1, 0, 1, 2)))
+        exit_spread = max(exit_spread, Decimal("1"))
+        exit_book = make_book(
+            mid=exit_mid,
+            spread_bps=exit_spread,
+            first_level_quantity=first_qty,
+            timestamp=timestamp + timedelta(seconds=30),
+            source=f"synthetic:{regime}:exit:{index}",
+        )
+
+        # Approximate requested quantity only to size the deterministic queue tape.
+        requested = quote_budget / entry.best_bid
+        if regime == "ADVERSE":
+            entry_fill_chance = 85 if true_move_bps < 0 else 25
+            exit_fill_chance = 20 if true_move_bps < 0 else 45
+        else:
+            entry_fill_chance = 65 if true_move_bps < 0 else 50
+            exit_fill_chance = 35 if true_move_bps < 0 else 65
+        entry_filled = rng.randrange(100) < entry_fill_chance
+        exit_filled = rng.randrange(100) < exit_fill_chance
+        entry_fraction = D1 if entry_filled else D0
+        exit_fraction = D1 if exit_filled else D0
+        episodes.append(
+            Episode(
+                episode_id=f"SYN-{index:04d}",
+                entry_book=entry,
+                exit_book=exit_book,
+                signal_bps=signal_bps,
+                quote_budget=quote_budget,
+                maker_entry_events=_maker_events(
+                    side=Side.BUY,
+                    price=entry.best_bid,
+                    queue=entry.bids[0].quantity,
+                    requested=requested,
+                    fill_fraction=entry_fraction,
+                ),
+                maker_exit_events=_maker_events(
+                    side=Side.SELL,
+                    price=exit_book.best_ask,
+                    queue=exit_book.asks[0].quantity,
+                    requested=requested,
+                    fill_fraction=exit_fraction,
+                ),
+                regime=regime,
+            )
+        )
+        mid = exit_mid
+        timestamp += timedelta(minutes=2)
+    return episodes
+
+
+def load_book_fixture(path: Path) -> tuple[OrderBookSnapshot, InstrumentRules]:
+    payload = json.loads(path.read_text())
+    if not isinstance(payload, Mapping):
+        raise SimulationError("fixture root must be an object")
+    book_payload = payload.get("orderbook")
+    rules_payload = payload.get("instrument_rules")
+    if not isinstance(book_payload, Mapping) or not isinstance(rules_payload, Mapping):
+        raise SimulationError("fixture must contain orderbook and instrument_rules")
+    book = OrderBookSnapshot.from_dict(book_payload)
+    rules = InstrumentRules(
+        venue=str(rules_payload["venue"]),
+        symbol=str(rules_payload["symbol"]),
+        base_asset=str(rules_payload["base_asset"]),
+        quote_asset=str(rules_payload["quote_asset"]),
+        min_order_size=dec(rules_payload["min_order_size"]),
+        min_trade_increment=dec(rules_payload["min_trade_increment"]),
+        price_increment=dec(rules_payload["price_increment"]),
+        quote_increment=dec(rules_payload["quote_increment"]),
+        verified_at_utc=parse_time(str(rules_payload["verified_at_utc"])),
+        source=str(rules_payload["source"]),
+    )
+    return book, rules
+
