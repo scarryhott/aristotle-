@@ -1,0 +1,210 @@
+        fee_amount=fee_amount,
+        base_delta=base_delta,
+        quote_delta=quote_delta,
+        reference_mid=book.midpoint,
+        top_price=top_price,
+        spread_cost_quote=spread_cost,
+        depth_slippage_quote=top_cost,
+        slices=tuple(slices),
+        witnesses=tuple(sorted(set(witnesses))),
+    )
+
+
+def execute_taker(
+    *,
+    book: OrderBookSnapshot,
+    rules: InstrumentRules,
+    side: Side,
+    quantity: Decimal,
+    schedule: FeeSchedule,
+    effective_30d_volume_usd: Decimal,
+    allow_partial: bool = False,
+) -> ExecutionFill:
+    requested = rules.normalize_quantity(dec(quantity))
+    rate = schedule.rate(
+        Liquidity.TAKER, effective_30d_volume_usd, book.timestamp_utc
+    )
+    slices, unfilled = walk_depth(book, side, requested)
+    if unfilled and not allow_partial:
+        raise SimulationError("displayed order-book depth cannot fill the taker order")
+    witnesses = ("PARTIAL_DEPTH_FILL",) if unfilled else ()
+    return _fill_from_slices(
+        book=book,
+        rules=rules,
+        side=side,
+        liquidity=Liquidity.TAKER,
+        requested_quantity=requested,
+        slices=slices,
+        fee_rate=rate,
+        witnesses=witnesses,
+    )
+
+
+@dataclass(frozen=True)
+class MakerEvent:
+    sequence: int
+    aggressor_side: Side
+    trade_price: Decimal
+    trade_quantity: Decimal
+    cancel_ahead_quantity: Decimal = D0
+
+    def __post_init__(self) -> None:
+        object.__setattr__(self, "trade_price", dec(self.trade_price))
+        object.__setattr__(self, "trade_quantity", dec(self.trade_quantity))
+        object.__setattr__(self, "cancel_ahead_quantity", dec(self.cancel_ahead_quantity))
+        if self.sequence < 0 or self.trade_price <= 0 or self.trade_quantity < 0 or self.cancel_ahead_quantity < 0:
+            raise SimulationError("invalid maker event")
+
+    def to_dict(self) -> dict[str, object]:
+        return canonicalize(self.__dict__)
+
+
+def execute_post_only_maker(
+    *,
+    book: OrderBookSnapshot,
+    rules: InstrumentRules,
+    side: Side,
+    quantity: Decimal,
+    limit_price: Decimal,
+    queue_ahead_quantity: Decimal,
+    events: Sequence[MakerEvent],
+    schedule: FeeSchedule,
+    effective_30d_volume_usd: Decimal,
+) -> ExecutionFill:
+    requested = rules.normalize_quantity(dec(quantity))
+    limit = rules.normalize_price(dec(limit_price))
+    queue = max(dec(queue_ahead_quantity), D0)
+    if side is Side.BUY and limit >= book.best_ask:
+        raise SimulationError("post-only buy would remove liquidity")
+    if side is Side.SELL and limit <= book.best_bid:
+        raise SimulationError("post-only sell would remove liquidity")
+
+    remaining = requested
+    filled = D0
+    witnesses: set[str] = set()
+    last_sequence = -1
+    for event in events:
+        if event.sequence <= last_sequence:
+            raise SimulationError("maker events must be strictly sequenced")
+        last_sequence = event.sequence
+        queue = max(D0, queue - event.cancel_ahead_quantity)
+        relevant_side = (
+            side is Side.BUY and event.aggressor_side is Side.SELL
+        ) or (side is Side.SELL and event.aggressor_side is Side.BUY)
+        reaches_price = (
+            side is Side.BUY and event.trade_price <= limit
+        ) or (side is Side.SELL and event.trade_price >= limit)
+        if not relevant_side or not reaches_price or remaining <= 0:
+            continue
+        if (side is Side.BUY and event.trade_price < limit) or (
+            side is Side.SELL and event.trade_price > limit
+        ):
+            queue = D0
+            fill_now = remaining
+            witnesses.add("TRADE_THROUGH_PRICE_IMPLIES_PRIOR_FILL")
+        else:
+            traded = event.trade_quantity
+            queue_consumed = min(queue, traded)
+            queue -= queue_consumed
+            fill_now = min(remaining, traded - queue_consumed)
+        fill_now = quantize_down(max(fill_now, D0), rules.min_trade_increment)
+        filled += fill_now
+        remaining -= fill_now
+
+    slices = (FillSlice(limit, filled),) if filled else ()
+    rate = schedule.rate(
+        Liquidity.MAKER, effective_30d_volume_usd, book.timestamp_utc
+    )
+    if remaining:
+        witnesses.add("MAKER_TIMEOUT_UNFILLED")
+    return _fill_from_slices(
+        book=book,
+        rules=rules,
+        side=side,
+        liquidity=Liquidity.MAKER,
+        requested_quantity=requested,
+        slices=slices,
+        fee_rate=rate,
+        witnesses=witnesses,
+    )
+
+
+def flat_round_trip_fee_burden_bps(entry_rate: Decimal, exit_rate: Decimal) -> Decimal:
+    return (D1 - (D1 - entry_rate) * (D1 - exit_rate)) * BPS
+
+
+@dataclass(frozen=True)
+class Decision:
+    route: Route
+    signal_bps: Decimal
+    calibrated_signal_bps: Decimal
+    predicted_total_cost_bps: Decimal
+    predicted_net_bps: Decimal
+    expected_utility_bps: Decimal
+    fee_floor_bps: Decimal
+    execution_cost_bps: Decimal
+    uncertainty_buffer_bps: Decimal
+    maker_entry_fill_probability: Decimal
+    maker_exit_fill_probability: Decimal
+    witnesses: tuple[str, ...]
+
+    def to_dict(self) -> dict[str, object]:
+        return canonicalize(self.__dict__)
+
+
+@dataclass(frozen=True)
+class Episode:
+    episode_id: str
+    entry_book: OrderBookSnapshot
+    exit_book: OrderBookSnapshot
+    signal_bps: Decimal
+    quote_budget: Decimal
+    maker_entry_events: tuple[MakerEvent, ...] = ()
+    maker_exit_events: tuple[MakerEvent, ...] = ()
+    fixed_cost_quote: Decimal = D0
+    regime: str = "UNSPECIFIED"
+
+    def __post_init__(self) -> None:
+        object.__setattr__(self, "signal_bps", dec(self.signal_bps))
+        object.__setattr__(self, "quote_budget", dec(self.quote_budget))
+        object.__setattr__(self, "fixed_cost_quote", dec(self.fixed_cost_quote))
+        if self.entry_book.symbol != self.exit_book.symbol:
+            raise SimulationError("entry and exit books must share one symbol")
+        if self.entry_book.timestamp_utc >= self.exit_book.timestamp_utc:
+            raise SimulationError("exit book must occur after entry book")
+        if self.quote_budget <= 0 or self.fixed_cost_quote < 0:
+            raise SimulationError("invalid episode budget or fixed cost")
+
+    def to_dict(self) -> dict[str, object]:
+        return canonicalize(
+            {
+                "episode_id": self.episode_id,
+                "entry_book_hash": self.entry_book.book_hash,
+                "exit_book_hash": self.exit_book.book_hash,
+                "entry_timestamp_utc": self.entry_book.timestamp_utc,
+                "exit_timestamp_utc": self.exit_book.timestamp_utc,
+                "signal_bps": self.signal_bps,
+                "quote_budget": self.quote_budget,
+                "fixed_cost_quote": self.fixed_cost_quote,
+                "regime": self.regime,
+                "maker_entry_events": [item.to_dict() for item in self.maker_entry_events],
+                "maker_exit_events": [item.to_dict() for item in self.maker_exit_events],
+            }
+        )
+
+
+@dataclass(frozen=True)
+class ClosureReceipt:
+    episode_id: str
+    route: Route
+    state: str
+    signal_bps: Decimal
+    predicted_total_cost_bps: Decimal
+    entry_fill: ExecutionFill | None
+    exit_fills: tuple[ExecutionFill, ...]
+    initial_cash_quote: Decimal
+    final_cash_quote: Decimal
+    final_base_inventory: Decimal
+    directional_midpoint_pnl_quote: Decimal
+    entry_execution_cost_quote: Decimal
+    exit_execution_cost_quote: Decimal
