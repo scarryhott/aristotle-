@@ -1,0 +1,210 @@
+    maker_entry_alpha: Decimal = D1
+    maker_entry_beta: Decimal = D1
+    maker_exit_alpha: Decimal = D1
+    maker_exit_beta: Decimal = D1
+    closed_observations: int = 0
+    no_fill_observations: int = 0
+
+    def __post_init__(self) -> None:
+        for name in (
+            "learning_rate",
+            "base_uncertainty_bps",
+            "taker_exit_execution_bps",
+            "positive_model_error_bps",
+            "absolute_model_error_bps",
+            "signal_optimism_bps",
+            "maker_adverse_selection_bps",
+            "maker_entry_alpha",
+            "maker_entry_beta",
+            "maker_exit_alpha",
+            "maker_exit_beta",
+        ):
+            setattr(self, name, dec(getattr(self, name)))
+        if not D0 < self.learning_rate <= D1:
+            raise SimulationError("learning rate must be in (0, 1]")
+
+    @property
+    def maker_entry_fill_probability(self) -> Decimal:
+        return self.maker_entry_alpha / (self.maker_entry_alpha + self.maker_entry_beta)
+
+    @property
+    def maker_exit_fill_probability(self) -> Decimal:
+        return self.maker_exit_alpha / (self.maker_exit_alpha + self.maker_exit_beta)
+
+    @property
+    def uncertainty_buffer_bps(self) -> Decimal:
+        return (
+            self.base_uncertainty_bps
+            + self.positive_model_error_bps
+            + Decimal("1.5") * self.absolute_model_error_bps
+        )
+
+    def to_dict(self) -> dict[str, object]:
+        return canonicalize(
+            {
+                "learning_rate": self.learning_rate,
+                "base_uncertainty_bps": self.base_uncertainty_bps,
+                "taker_exit_execution_bps": self.taker_exit_execution_bps,
+                "positive_model_error_bps": self.positive_model_error_bps,
+                "absolute_model_error_bps": self.absolute_model_error_bps,
+                "signal_optimism_bps": self.signal_optimism_bps,
+                "maker_adverse_selection_bps": self.maker_adverse_selection_bps,
+                "maker_entry_alpha": self.maker_entry_alpha,
+                "maker_entry_beta": self.maker_entry_beta,
+                "maker_exit_alpha": self.maker_exit_alpha,
+                "maker_exit_beta": self.maker_exit_beta,
+                "maker_entry_fill_probability": self.maker_entry_fill_probability,
+                "maker_exit_fill_probability": self.maker_exit_fill_probability,
+                "uncertainty_buffer_bps": self.uncertainty_buffer_bps,
+                "closed_observations": self.closed_observations,
+                "no_fill_observations": self.no_fill_observations,
+            }
+        )
+
+    @property
+    def state_hash(self) -> str:
+        return sha256_value(self.to_dict())
+
+    def decide(
+        self,
+        *,
+        episode: Episode,
+        rules: InstrumentRules,
+        schedule: FeeSchedule,
+        effective_volume: Decimal,
+        force_route: Route | None = None,
+    ) -> Decision:
+        timestamp = episode.entry_book.timestamp_utc
+        maker_rate = schedule.rate(Liquidity.MAKER, effective_volume, timestamp)
+        taker_rate = schedule.rate(Liquidity.TAKER, effective_volume, timestamp)
+        calibrated_signal = episode.signal_bps - max(self.signal_optimism_bps, D0)
+        buffer = self.uncertainty_buffer_bps
+
+        taker_increment = fee_compatible_increment(rules.min_trade_increment, taker_rate)
+        taker_quantity = quantity_for_quote_budget(
+            episode.entry_book, episode.quote_budget, taker_increment
+        )
+        taker_preview = execute_taker(
+            book=episode.entry_book,
+            rules=rules,
+            side=Side.BUY,
+            quantity=taker_quantity,
+            schedule=schedule,
+            effective_30d_volume_usd=effective_volume,
+        )
+        taker_entry_exec_bps = (
+            taker_preview.spread_cost_quote / taker_preview.gross_quote * BPS
+        )
+        taker_fee_floor = flat_round_trip_fee_burden_bps(taker_rate, taker_rate)
+        taker_cost = (
+            taker_fee_floor
+            + taker_entry_exec_bps
+            + self.taker_exit_execution_bps
+            + buffer
+        )
+        taker_net = calibrated_signal - taker_cost
+
+        half_spread_bps = episode.entry_book.spread_bps / Decimal(2)
+        maker_entry_exec_bps = -half_spread_bps
+        p_exit = self.maker_exit_fill_probability
+        maker_maker_fee = flat_round_trip_fee_burden_bps(maker_rate, maker_rate)
+        maker_taker_fee = flat_round_trip_fee_burden_bps(maker_rate, taker_rate)
+        maker_fee_floor = p_exit * maker_maker_fee + (D1 - p_exit) * maker_taker_fee
+        maker_exit_exec = (
+            p_exit * (-half_spread_bps)
+            + (D1 - p_exit) * self.taker_exit_execution_bps
+        )
+        maker_cost = (
+            maker_fee_floor
+            + maker_entry_exec_bps
+            + maker_exit_exec
+            + self.maker_adverse_selection_bps
+            + buffer
+        )
+        maker_net = calibrated_signal - maker_cost
+        maker_utility = self.maker_entry_fill_probability * maker_net
+
+        candidates = {
+            Route.HOLD: (D0, D0, D0, D0),
+            Route.TAKER_TAKER: (taker_net, taker_net, taker_fee_floor, taker_entry_exec_bps + self.taker_exit_execution_bps),
+            Route.MAKER_WITH_TAKER_HEDGE: (maker_utility, maker_net, maker_fee_floor, maker_entry_exec_bps + maker_exit_exec + self.maker_adverse_selection_bps),
+        }
+        if force_route is not None:
+            route = force_route
+        else:
+            route = max(candidates, key=lambda item: candidates[item][0])
+            conditional_net = candidates[route][1]
+            if route is not Route.HOLD and conditional_net <= 0:
+                route = Route.HOLD
+        utility, predicted_net, fee_floor, execution_cost = candidates[route]
+        predicted_cost = calibrated_signal - predicted_net if route is not Route.HOLD else D0
+        witnesses = []
+        if route is Route.HOLD:
+            witnesses.append("NO_ROUTE_CLEARS_FULL_COST_AND_UNCERTAINTY")
+        return Decision(
+            route=route,
+            signal_bps=episode.signal_bps,
+            calibrated_signal_bps=calibrated_signal,
+            predicted_total_cost_bps=predicted_cost,
+            predicted_net_bps=predicted_net,
+            expected_utility_bps=utility,
+            fee_floor_bps=fee_floor,
+            execution_cost_bps=execution_cost,
+            uncertainty_buffer_bps=buffer,
+            maker_entry_fill_probability=self.maker_entry_fill_probability,
+            maker_exit_fill_probability=self.maker_exit_fill_probability,
+            witnesses=tuple(witnesses),
+        )
+
+    def update(self, decision: Decision, receipt: ClosureReceipt) -> None:
+        if receipt.route is Route.MAKER_WITH_TAKER_HEDGE:
+            if receipt.state == "CLOSED_NO_ENTRY_FILL":
+                self.maker_entry_beta += D1
+                self.no_fill_observations += 1
+                return
+            if receipt.entry_fill and receipt.entry_fill.filled_quantity > 0:
+                self.maker_entry_alpha += D1
+                maker_exit_filled = any(
+                    item.liquidity is Liquidity.MAKER and item.filled_quantity > 0
+                    for item in receipt.exit_fills
+                )
+                if maker_exit_filled:
+                    self.maker_exit_alpha += D1
+                else:
+                    self.maker_exit_beta += D1
+
+        if not receipt.eligible_for_learning:
+            return
+        if receipt.closure_residual_quote != 0:
+            raise SimulationError("learner refused a non-closing receipt")
+        if receipt.entry_fill is None or receipt.entry_fill.gross_quote == 0:
+            return
+        assert receipt.actual_total_cost_bps is not None
+        alpha = self.learning_rate
+        model_error = receipt.actual_total_cost_bps - decision.predicted_total_cost_bps
+        positive_error = max(model_error, D0)
+        self.positive_model_error_bps = weighted_ewma(
+            self.positive_model_error_bps, positive_error, alpha
+        )
+        self.absolute_model_error_bps = weighted_ewma(
+            self.absolute_model_error_bps, abs(model_error), alpha
+        )
+        exit_exec_bps = (
+            receipt.exit_execution_cost_quote / receipt.entry_fill.gross_quote * BPS
+        )
+        self.taker_exit_execution_bps = weighted_ewma(
+            self.taker_exit_execution_bps, max(exit_exec_bps, D0), alpha
+        )
+        actual_directional_bps = (
+            receipt.directional_midpoint_pnl_quote / receipt.entry_fill.gross_quote * BPS
+        )
+        optimism = max(decision.signal_bps - actual_directional_bps, D0)
+        self.signal_optimism_bps = weighted_ewma(
+            self.signal_optimism_bps, optimism, alpha
+        )
+        if receipt.route is Route.MAKER_WITH_TAKER_HEDGE:
+            adverse = max(-actual_directional_bps, D0)
+            self.maker_adverse_selection_bps = weighted_ewma(
+                self.maker_adverse_selection_bps, adverse, alpha
+            )
+        self.closed_observations += 1
