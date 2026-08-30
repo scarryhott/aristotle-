@@ -195,16 +195,16 @@ The synthetic scenarios test the mechanism. They are **not evidence of expected 
 
 ### Closure-aware policy
 
-- decisions: 200 `HOLD`, 28 maker-with-taker-hedge, 12 taker–taker;
-- receipts: 200 closed holds, 19 closed no-entry-fills, 21 closed returns;
-- admitted learning observations: 40, including maker no-fill observations;
-- completed-return wins/losses in this constructed dataset: 21 / 0;
-- total synthetic realized P&L: `+$3.1434162847717986872615`;
-- economically valued fees: `$1.8554522014790151577385`;
+- decisions: 155 `HOLD`, 58 maker-with-taker-hedge, 27 taker–taker;
+- receipts: 155 closed holds, 29 closed no-entry-fills, 56 closed returns;
+- admitted learning observations: 85, including maker no-fill observations;
+- completed-return wins/losses in this constructed dataset: 56 / 0;
+- total synthetic realized P&L: `+$6.8271344778911687666065`;
+- economically valued fees: `$4.7705982702951049728935`;
 - maximum admitted closure residual: `0`;
 - event and receipt chains: verified.
 
-The uncertainty buffer rose from `6 bps` to approximately `98.20 bps`. This is not automatically desirable profit maximization; it shows the learner responding to model error and optimistic signals by refusing later marginal opportunities. The recovery regime produced no completed trades in this run, so the current update law may be too conservative after an adverse block. That is a visible calibration problem rather than a hidden success claim.
+The uncertainty buffer rose from `6 bps` to approximately `20.34 bps`. The calibration relation compares realized cost with the structural cost estimate **before** the safety reserve, so the reserve does not recursively learn from itself. A forced 240-cycle taker stress run ended with approximately `7.02 bps` of uncertainty rather than an exploding margin. This is a stability property of the learning loop, not evidence of live profitability.
 
 ### Cost-blind comparison on the same constructed episodes
 
@@ -221,7 +221,7 @@ The useful conclusion is not that the closure learner is proven profitable. It i
 
 ## 7. Adversarial test coverage
 
-The test suite contains 18 passing tests covering:
+The test suite contains 19 passing tests covering:
 
 - fee-tier boundaries and next-day activation;
 - exact multiplicative fee floors;
@@ -240,7 +240,8 @@ The test suite contains 18 passing tests covering:
 - event-chain tamper detection;
 - independently linked receipt-chain tamper detection;
 - deterministic repeatability;
-- hash-bound run-file verification.
+- hash-bound run-file verification, including the effective assembled program source;
+- forced-execution stability against self-amplifying uncertainty.
 
 ## 8. Reproduction
 
