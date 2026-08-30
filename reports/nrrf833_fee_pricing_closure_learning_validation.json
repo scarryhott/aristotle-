@@ -1,0 +1,381 @@
+{
+  "boundary": {
+    "broker_authentication": false,
+    "fills_are_counterfactual": true,
+    "live_money_touched": false,
+    "network_calls_from_simulator": 0,
+    "orders_submitted": 0
+  },
+  "captured_live_order_book_audit": {
+    "audit_kind": "CAPTURED_LIVE_ORDER_BOOK_COUNTERFACTUAL",
+    "best_ask": "79137.304",
+    "best_bid": "79126.38",
+    "book_hash": "77b7f6d71ca22826912a7f98851f325be81157f0d32bd41a85eeaf769279d1d8",
+    "book_timestamp_utc": "2026-08-30T17:13:45.858877Z",
+    "boundary": {
+      "broker_authentication": false,
+      "fills_are_counterfactual": true,
+      "live_money_touched": false,
+      "network_calls_from_simulator": 0,
+      "orders_submitted": 0
+    },
+    "declared_target_bps": "20",
+    "declared_target_clears_maker_maker_fee_floor": false,
+    "fee_tier": "TIER_1",
+    "maker_entry_taker_exit_fee_floor_bps": "39.9625",
+    "maker_flat_round_trip_fee_floor_bps": "29.9775",
+    "maker_rate": "0.0015",
+    "midpoint": "79131.842",
+    "rows": [
+      {
+        "closure_residual_quote": "0",
+        "entry_depth_slippage_quote": "0",
+        "entry_vwap": "79137.304",
+        "exit_depth_slippage_quote": "0",
+        "exit_vwap": "79126.38",
+        "gross_entry_notional": "19.9742555296",
+        "gross_entry_quantity": "0.0002524",
+        "net_received_quantity_after_buy_fee": "0.000251769",
+        "quote_budget": "20",
+        "realized_flat_round_trip_loss_bps": "51.310992363980456043839956943693709859006569139631039237828976332072166623214761",
+        "realized_flat_round_trip_pnl_quote": "-0.10248988729555"
+      },
+      {
+        "closure_residual_quote": "0",
+        "entry_depth_slippage_quote": "0",
+        "entry_vwap": "79137.304",
+        "exit_depth_slippage_quote": "0",
+        "exit_vwap": "79126.38",
+        "gross_entry_notional": "49.9831212064",
+        "gross_entry_quantity": "0.0006316",
+        "net_received_quantity_after_buy_fee": "0.000630021",
+        "quote_budget": "50",
+        "realized_flat_round_trip_loss_bps": "51.310992363980456043839956943693709859006569139631039237828976332072166623214761",
+        "realized_flat_round_trip_pnl_quote": "-0.25646835505495"
+      },
+      {
+        "closure_residual_quote": "0",
+        "entry_depth_slippage_quote": "0.0031604664",
+        "entry_vwap": "79139.805952501583280557314756174794173527549081697276757441418619379354021532616",
+        "exit_depth_slippage_quote": "0.00429043616",
+        "exit_vwap": "79122.975005436326725617082605183001836446721617215934072038868545651652881411889",
+        "gross_entry_notional": "99.9694028792",
+        "gross_entry_quantity": "0.0012632",
+        "net_received_quantity_after_buy_fee": "0.001260042",
+        "quote_budget": "100",
+        "realized_flat_round_trip_loss_bps": "52.053615565585369758812230446794980239832317623940836867576903441178796833411105",
+        "realized_flat_round_trip_pnl_quote": "-0.5203768865795"
+      },
+      {
+        "closure_residual_quote": "0",
+        "entry_depth_slippage_quote": "0.1419697924",
+        "entry_vwap": "79159.78180120329322355921469284357188093730208993033565547815072830905636478784",
+        "exit_depth_slippage_quote": "0.17104447595",
+        "exit_vwap": "79099.230988149601362494266064147068113602562454267397435958483923551754624052214",
+        "gross_entry_notional": "499.9731818564",
+        "gross_entry_quantity": "0.006316",
+        "net_received_quantity_after_buy_fee": "0.00630021",
+        "quote_budget": "500",
+        "realized_flat_round_trip_loss_bps": "57.548490841575205297411730937017186978952139177291967603692644754474578571981386",
+        "realized_flat_round_trip_pnl_quote": "-2.877270207709625"
+      }
+    ],
+    "schema_version": "nrrf833.fee_pricing_closure_learning.v1",
+    "spread_bps": "1.3804809446998592551403011697869992714184512474763319676041409474582937169590972",
+    "taker_flat_round_trip_fee_floor_bps": "49.9375",
+    "taker_rate": "0.0025"
+  },
+  "forced_all_taker_stress": {
+    "summary": {
+      "boundary": {
+        "broker_authentication": false,
+        "fills_are_counterfactual": true,
+        "live_money_touched": false,
+        "network_calls_from_simulator": 0,
+        "orders_submitted": 0
+      },
+      "decision_counts": {
+        "TAKER_TAKER": 240
+      },
+      "economically_valued_fees_quote": "23.98939247149803388468",
+      "event_count": 240,
+      "final_event_hash": "23f40711cd14138a545bf06d45b61f343657fe91384ac3d511acfdc8aa8881bf",
+      "final_learner": {
+        "absolute_model_error_bps": "0.57022374097233586876825441073895370753526685515184712127168475299020478293751341",
+        "base_uncertainty_bps": "6",
+        "closed_observations": 240,
+        "learning_rate": "0.2",
+        "maker_adverse_selection_bps": "3",
+        "maker_entry_alpha": "1",
+        "maker_entry_beta": "1",
+        "maker_entry_fill_probability": "0.5",
+        "maker_exit_alpha": "1",
+        "maker_exit_beta": "1",
+        "maker_exit_fill_probability": "0.5",
+        "no_fill_observations": 0,
+        "positive_model_error_bps": "0.16191726355763699957021140693774677865533881986173133502240596653966137957983838",
+        "signal_optimism_bps": "11.955869232630894927228743003149758853732002908549102526586269112361595673448212",
+        "taker_exit_execution_bps": "2.1482670271581161028657178900679685001861500864892840155712217284902722840847244",
+        "uncertainty_buffer_bps": "7.0172528750161408027225930230461773399582391025895020169299330960249685539861085"
+      },
+      "genesis_hash": "2a40def3312a4c5d1e8bf9586ddef4453f2d7e97b7105adc137d9329e5bf8f5b",
+      "initial_learner": {
+        "absolute_model_error_bps": "0",
+        "base_uncertainty_bps": "6",
+        "closed_observations": 0,
+        "learning_rate": "0.2",
+        "maker_adverse_selection_bps": "3",
+        "maker_entry_alpha": "1",
+        "maker_entry_beta": "1",
+        "maker_entry_fill_probability": "0.5",
+        "maker_exit_alpha": "1",
+        "maker_exit_beta": "1",
+        "maker_exit_fill_probability": "0.5",
+        "no_fill_observations": 0,
+        "positive_model_error_bps": "0",
+        "signal_optimism_bps": "0",
+        "taker_exit_execution_bps": "4",
+        "uncertainty_buffer_bps": "6"
+      },
+      "learning_admissions": 240,
+      "maximum_closure_residual_quote": "0",
+      "realized_pnl_quote": "-16.52687503890563661768",
+      "receipt_chain_verified": true,
+      "receipt_states": {
+        "CLOSED_RETURN": 240
+      },
+      "regimes": {
+        "ADVERSE": 60,
+        "CALM": 60,
+        "RECOVERY": 60,
+        "THIN": 60
+      },
+      "rolling_volume": {
+        "2026-08-30": "7986.865624806361586035",
+        "2026-08-31": "1597.205083201567844037"
+      },
+      "schema_version": "nrrf833.fee_pricing_closure_learning.v1",
+      "simulation_kind": "DETERMINISTIC_COUNTERFACTUAL_ORDER_BOOK_SIMULATION"
+    },
+    "trade_statistics": {
+      "closed_returns": 240,
+      "flat_returns": 0,
+      "losing_returns": 165,
+      "mean_actual_total_cost_bps": "67.028766400121895838515131016017570371922850811106737167250862651900060888416588",
+      "mean_realized_pnl_quote": "-0.068861979328773485907",
+      "regime_pnl": {
+        "ADVERSE": "-6.9123126159003404548925",
+        "CALM": "-2.359337800970179128",
+        "RECOVERY": "-2.51418526521168970925",
+        "THIN": "-4.7410393568234273255375"
+      },
+      "total_realized_pnl_quote": "-16.52687503890563661768",
+      "winning_returns": 75
+    }
+  },
+  "learned_policy": {
+    "summary": {
+      "boundary": {
+        "broker_authentication": false,
+        "fills_are_counterfactual": true,
+        "live_money_touched": false,
+        "network_calls_from_simulator": 0,
+        "orders_submitted": 0
+      },
+      "decision_counts": {
+        "HOLD": 155,
+        "MAKER_WITH_TAKER_HEDGE": 58,
+        "TAKER_TAKER": 27
+      },
+      "economically_valued_fees_quote": "4.7705982702951049728935",
+      "event_count": 240,
+      "final_event_hash": "a18096f137744f68cf186c1c088a3d9f82b953c4552178fb334654f5f8062e1a",
+      "final_learner": {
+        "absolute_model_error_bps": "7.1402240396866330242322695989419852962773338393803317681173602317459075654789986",
+        "base_uncertainty_bps": "6",
+        "closed_observations": 56,
+        "learning_rate": "0.2",
+        "maker_adverse_selection_bps": "0.00464227514732017603087171584",
+        "maker_entry_alpha": "30",
+        "maker_entry_beta": "30",
+        "maker_entry_fill_probability": "0.5",
+        "maker_exit_alpha": "15",
+        "maker_exit_beta": "16",
+        "maker_exit_fill_probability": "0.48387096774193548387096774193548387096774193548387096774193548387096774193548387",
+        "no_fill_observations": 29,
+        "positive_model_error_bps": "3.6288220949114178735476879215706353058111883562845805917627372430880885747683158",
+        "signal_optimism_bps": "12.803414761828643703354380065204504339917327912982705034198303791506247325023282",
+        "taker_exit_execution_bps": "3.108688550881258428170296052760295344076461368644961626794489090483374226857515",
+        "uncertainty_buffer_bps": "20.339158154441367409896092319983613250227189115355078243938777590706949922986814"
+      },
+      "genesis_hash": "2a40def3312a4c5d1e8bf9586ddef4453f2d7e97b7105adc137d9329e5bf8f5b",
+      "initial_learner": {
+        "absolute_model_error_bps": "0",
+        "base_uncertainty_bps": "6",
+        "closed_observations": 0,
+        "learning_rate": "0.2",
+        "maker_adverse_selection_bps": "3",
+        "maker_entry_alpha": "1",
+        "maker_entry_beta": "1",
+        "maker_entry_fill_probability": "0.5",
+        "maker_exit_alpha": "1",
+        "maker_exit_beta": "1",
+        "maker_exit_fill_probability": "0.5",
+        "no_fill_observations": 0,
+        "positive_model_error_bps": "0",
+        "signal_optimism_bps": "0",
+        "taker_exit_execution_bps": "4",
+        "uncertainty_buffer_bps": "6"
+      },
+      "learning_admissions": 85,
+      "maximum_closure_residual_quote": "0",
+      "realized_pnl_quote": "6.8271344778911687666065",
+      "receipt_chain_verified": true,
+      "receipt_states": {
+        "CLOSED_HOLD": 155,
+        "CLOSED_NO_ENTRY_FILL": 29,
+        "CLOSED_RETURN": 56
+      },
+      "regimes": {
+        "ADVERSE": 60,
+        "CALM": 60,
+        "RECOVERY": 60,
+        "THIN": 60
+      },
+      "rolling_volume": {
+        "2026-08-30": "1921.216587978853640018",
+        "2026-08-31": "319.688047742479896055"
+      },
+      "schema_version": "nrrf833.fee_pricing_closure_learning.v1",
+      "simulation_kind": "DETERMINISTIC_COUNTERFACTUAL_ORDER_BOOK_SIMULATION"
+    },
+    "trade_statistics": {
+      "closed_returns": 56,
+      "flat_returns": 0,
+      "losing_returns": 0,
+      "mean_actual_total_cost_bps": "48.199304894308000976029697427592518611452140587407070698390036521946565819579734",
+      "mean_realized_pnl_quote": "0.12191311567662801368940178571428571428571428571428571428571428571428571428571429",
+      "regime_pnl": {
+        "ADVERSE": "1.201498941747658687711",
+        "CALM": "2.4463146402218711315625",
+        "RECOVERY": "1.6268871444334700538935",
+        "THIN": "1.5524337514881688934395"
+      },
+      "total_realized_pnl_quote": "6.8271344778911687666065",
+      "winning_returns": 56
+    }
+  },
+  "naive_positive_signal_taker_policy": {
+    "episodes_considered": 177,
+    "selection_rule": "TAKER_TAKER whenever raw signal_bps > 0; otherwise no episode submitted",
+    "summary": {
+      "boundary": {
+        "broker_authentication": false,
+        "fills_are_counterfactual": true,
+        "live_money_touched": false,
+        "network_calls_from_simulator": 0,
+        "orders_submitted": 0
+      },
+      "decision_counts": {
+        "TAKER_TAKER": 177
+      },
+      "economically_valued_fees_quote": "17.7404641618807059282725",
+      "event_count": 177,
+      "final_event_hash": "fad46c0d72d63f75fcb4905c19e7907947f9baecacec9f6428f8780c362254c3",
+      "final_learner": {
+        "absolute_model_error_bps": "0.40555959625573015833652738305596189578911431570089752344166195511143076663478482",
+        "base_uncertainty_bps": "6",
+        "closed_observations": 177,
+        "learning_rate": "0.2",
+        "maker_adverse_selection_bps": "3",
+        "maker_entry_alpha": "1",
+        "maker_entry_beta": "1",
+        "maker_entry_fill_probability": "0.5",
+        "maker_exit_alpha": "1",
+        "maker_exit_beta": "1",
+        "maker_exit_fill_probability": "0.5",
+        "no_fill_observations": 0,
+        "positive_model_error_bps": "0.21220202790433080526964413966985731091352776522556759583956131659249219726175759",
+        "signal_optimism_bps": "9.4541996474165587692654193970283112967687285311249816517999531678525284991974368",
+        "taker_exit_execution_bps": "2.3613557133781101778020523710103501822693243337179797493959036041105759324609693",
+        "uncertainty_buffer_bps": "6.8205414222879260427744352142538001545971992387769138810020542492596383472139348"
+      },
+      "genesis_hash": "2a40def3312a4c5d1e8bf9586ddef4453f2d7e97b7105adc137d9329e5bf8f5b",
+      "initial_learner": {
+        "absolute_model_error_bps": "0",
+        "base_uncertainty_bps": "6",
+        "closed_observations": 0,
+        "learning_rate": "0.2",
+        "maker_adverse_selection_bps": "3",
+        "maker_entry_alpha": "1",
+        "maker_entry_beta": "1",
+        "maker_entry_fill_probability": "0.5",
+        "maker_exit_alpha": "1",
+        "maker_exit_beta": "1",
+        "maker_exit_fill_probability": "0.5",
+        "no_fill_observations": 0,
+        "positive_model_error_bps": "0",
+        "signal_optimism_bps": "0",
+        "taker_exit_execution_bps": "4",
+        "uncertainty_buffer_bps": "6"
+      },
+      "learning_admissions": 177,
+      "maximum_closure_residual_quote": "0",
+      "realized_pnl_quote": "-2.6581158743908610997725",
+      "receipt_chain_verified": true,
+      "receipt_states": {
+        "CLOSED_RETURN": 177
+      },
+      "regimes": {
+        "ADVERSE": 52,
+        "CALM": 39,
+        "RECOVERY": 44,
+        "THIN": 42
+      },
+      "rolling_volume": {
+        "2026-08-30": "5997.501152425567275459",
+        "2026-08-31": "1080.15197198585799925"
+      },
+      "schema_version": "nrrf833.fee_pricing_closure_learning.v1",
+      "simulation_kind": "DETERMINISTIC_COUNTERFACTUAL_ORDER_BOOK_SIMULATION"
+    },
+    "trade_statistics": {
+      "closed_returns": 177,
+      "flat_returns": 0,
+      "losing_returns": 102,
+      "mean_actual_total_cost_bps": "68.914016912654960953094678226545923326891406927477008960448659823127470646062407",
+      "mean_realized_pnl_quote": "-0.015017603810117859320748587570621468926553672316384180790960451977401129943502825",
+      "regime_pnl": {
+        "ADVERSE": "-4.7642152300397317648125",
+        "CALM": "1.6451756399607676712675",
+        "RECOVERY": "0.814571002415418537205",
+        "THIN": "-0.3536472867273155434325"
+      },
+      "total_realized_pnl_quote": "-2.6581158743908610997725",
+      "winning_returns": 75
+    }
+  },
+  "saved_validation_run": {
+    "event_and_receipt_chains_verified": true,
+    "event_count": 240,
+    "event_count_verified": true,
+    "events_sha256_verified": true,
+    "final_event_hash_verified": true,
+    "program_sha256_verified": true,
+    "summary_sha256_verified": true,
+    "verified": true
+  },
+  "schema_version": "nrrf833.fee_pricing_closure_learning.v1",
+  "synthetic_dataset": {
+    "episodes": 240,
+    "quote_budget": "20",
+    "seed": 833,
+    "warning": "Synthetic scenarios validate mechanics and learning behavior; they are not evidence of expected live profit."
+  },
+  "test_suite": {
+    "failed": 0,
+    "passed": 19,
+    "tests": 19
+  },
+  "validation_kind": "NRRF833_EXACT_FEE_PRICE_CLOSURE_LEARNING_VALIDATION"
+}
