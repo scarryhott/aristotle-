@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-08-30T21:28:18Z",
+  "boundary": "live public Alpaca books plus counterfactual adversarial execution burdens; not authenticated own fills or a real-profitability claim",
+  "higher_closure_definition": {
+    "level_1": "natural form = completed round-trip profit functional",
+    "level_2": "history morphism = change of the full profit functional between natural forms",
+    "higher_curvature": "net profit-functional change around a closed history loop",
+    "admission": "positive rho is necessary in this simplified maker-spread frontier, but live execution still requires authenticated realized receipts"
+  },
+  "history_comparison": [
+    {"symbol":"BTC/USD","earlier_mid":78809.85500000001,"current_mid":78637.20000000001,"mid_move_bps":-21.907793130693975,"earlier_profit_frontier_bps":2.4755787204525066,"current_profit_frontier_bps":2.2635597401742316,"higher_history_delta_bps":-0.21201898027827504,"abs_mid_move_over_frontier_move":103.32939580192294},
+    {"symbol":"ETH/USD","earlier_mid":2498.853,"current_mid":2477.4695,"mid_move_bps":-85.57326101215202,"earlier_profit_frontier_bps":2.8252962459181514,"current_profit_frontier_bps":2.4258623567317894,"higher_history_delta_bps":-0.399433889186362,"abs_mid_move_over_frontier_move":214.2363563253555},
+    {"symbol":"SOL/USD","earlier_mid":105.56,"current_mid":104.2365,"mid_move_bps":-125.37893141341375,"earlier_profit_frontier_bps":7.578628268283279,"current_profit_frontier_bps":7.003304984337856,"higher_history_delta_bps":-0.5753232839454236,"abs_mid_move_over_frontier_move":217.92778931802707}
+  ],
+  "uniform_fee_frontier": [
+    {"symbol":"BTC/USD","current_spread_bps":2.2635597401742316,"critical_maker_fee_per_side_bps":1.1317798700871158,"rho_at_0_fee_bps":2.2635597401742316,"rho_at_1bps_fee_each_side":0.26355974017423156,"rho_at_2bps_fee_each_side":-1.7364402598257684,"rho_at_5bps_fee_each_side":-7.736440259825768},
+    {"symbol":"ETH/USD","current_spread_bps":2.4258623567317894,"critical_maker_fee_per_side_bps":1.2129311783658947,"rho_at_0_fee_bps":2.4258623567317894,"rho_at_1bps_fee_each_side":0.4258623567317894,"rho_at_2bps_fee_each_side":-1.5741376432682106,"rho_at_5bps_fee_each_side":-7.574137643268211},
+    {"symbol":"SOL/USD","current_spread_bps":7.003304984337856,"critical_maker_fee_per_side_bps":3.501652492168928,"rho_at_0_fee_bps":7.003304984337856,"rho_at_1bps_fee_each_side":5.003304984337856,"rho_at_2bps_fee_each_side":3.0033049843378556,"rho_at_5bps_fee_each_side":-2.9966950156621444}
+  ],
+  "grid_summary": [
+    {"symbol":"BTC/USD","notional":100,"scenarios":875,"positive":33,"negative":842,"positive_share":0.037714285714285714,"best_rho_bps":2.2409947683194344,"worst_rho_bps":-73.86468885256562},
+    {"symbol":"BTC/USD","notional":1000,"scenarios":875,"positive":26,"negative":849,"positive_share":0.029714285714285714,"best_rho_bps":2.2207877469815465,"worst_rho_bps":-74.87503991946002},
+    {"symbol":"BTC/USD","notional":10000,"scenarios":875,"positive":25,"negative":850,"positive_share":0.02857142857142857,"best_rho_bps":2.21499191665639,"worst_rho_bps":-75.16483143571784},
+    {"symbol":"ETH/USD","notional":100,"scenarios":875,"positive":33,"negative":842,"positive_share":0.037714285714285714,"best_rho_bps":2.4022154208927833,"worst_rho_bps":-73.75648443521851},
+    {"symbol":"ETH/USD","notional":1000,"scenarios":875,"positive":30,"negative":845,"positive_share":0.03428571428571429,"best_rho_bps":2.3866510698260264,"worst_rho_bps":-74.53470198855635},
+    {"symbol":"ETH/USD","notional":10000,"scenarios":875,"positive":30,"negative":845,"positive_share":0.03428571428571429,"best_rho_bps":2.3833162664415575,"worst_rho_bps":-74.7014421577798},
+    {"symbol":"SOL/USD","notional":100,"scenarios":875,"positive":160,"negative":715,"positive_share":0.18285714285714286,"best_rho_bps":6.9576067581332515,"worst_rho_bps":-70.28160632589234},
+    {"symbol":"SOL/USD","notional":1000,"scenarios":875,"positive":120,"negative":755,"positive_share":0.13714285714285715,"best_rho_bps":6.87178223113548,"worst_rho_bps":-74.57283267578092},
+    {"symbol":"SOL/USD","notional":10000,"scenarios":875,"positive":82,"negative":793,"positive_share":0.09371428571428571,"best_rho_bps":6.689225468906549,"worst_rho_bps":-83.70067078722748}
+  ],
+  "higher_tests": [
+    {"symbol":"BTC/USD","pure_translation_max_abs_delta":0.0,"exact_history_loop_max_abs_curvature":0.0,"contextual_higher_curvature_bps":-1.25,"higher_flat_before_contextual_adversary":true,"higher_flat_after_contextual_adversary":false},
+    {"symbol":"ETH/USD","pure_translation_max_abs_delta":0.0,"exact_history_loop_max_abs_curvature":0.0,"contextual_higher_curvature_bps":-1.25,"higher_flat_before_contextual_adversary":true,"higher_flat_after_contextual_adversary":false},
+    {"symbol":"SOL/USD","pure_translation_max_abs_delta":0.0,"exact_history_loop_max_abs_curvature":0.0,"contextual_higher_curvature_bps":-1.25,"higher_flat_before_contextual_adversary":true,"higher_flat_after_contextual_adversary":false}
+  ]
+}
