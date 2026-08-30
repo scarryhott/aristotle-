@@ -1,0 +1,210 @@
+                "bids": [level.to_dict() for level in self.bids],
+                "asks": [level.to_dict() for level in self.asks],
+                "source": self.source,
+            }
+        )
+
+    @classmethod
+    def from_dict(cls, payload: Mapping[str, object]) -> "OrderBookSnapshot":
+        def parse_levels(name: str) -> tuple[Level, ...]:
+            raw = payload.get(name)
+            if not isinstance(raw, list):
+                raise SimulationError(f"{name} must be a list")
+            levels: list[Level] = []
+            for row in raw:
+                if not isinstance(row, Mapping):
+                    raise SimulationError(f"{name} row must be an object")
+                levels.append(Level(dec(row["price"]), dec(row["quantity"])))
+            return tuple(levels)
+
+        return cls(
+            venue=str(payload["venue"]),
+            symbol=str(payload["symbol"]),
+            timestamp_utc=parse_time(str(payload["timestamp_utc"])),
+            bids=parse_levels("bids"),
+            asks=parse_levels("asks"),
+            source=str(payload.get("source", "caller supplied")),
+        )
+
+
+@dataclass(frozen=True)
+class FillSlice:
+    price: Decimal
+    quantity: Decimal
+
+    @property
+    def notional(self) -> Decimal:
+        return self.price * self.quantity
+
+    def to_dict(self) -> dict[str, str]:
+        return {
+            "price": decimal_text(self.price) or "0",
+            "quantity": decimal_text(self.quantity) or "0",
+            "notional": decimal_text(self.notional) or "0",
+        }
+
+
+@dataclass(frozen=True)
+class ExecutionFill:
+    side: Side
+    liquidity: Liquidity
+    requested_quantity: Decimal
+    filled_quantity: Decimal
+    unfilled_quantity: Decimal
+    gross_quote: Decimal
+    vwap: Decimal | None
+    fee_rate: Decimal
+    fee_bps: Decimal
+    fee_asset: str
+    fee_amount: Decimal
+    base_delta: Decimal
+    quote_delta: Decimal
+    reference_mid: Decimal
+    top_price: Decimal
+    spread_cost_quote: Decimal
+    depth_slippage_quote: Decimal
+    slices: tuple[FillSlice, ...]
+    witnesses: tuple[str, ...]
+
+    def __post_init__(self) -> None:
+        for name in (
+            "requested_quantity",
+            "filled_quantity",
+            "unfilled_quantity",
+            "gross_quote",
+            "fee_rate",
+            "fee_bps",
+            "fee_amount",
+            "base_delta",
+            "quote_delta",
+            "reference_mid",
+            "top_price",
+            "spread_cost_quote",
+            "depth_slippage_quote",
+        ):
+            object.__setattr__(self, name, dec(getattr(self, name)))
+        if self.vwap is not None:
+            object.__setattr__(self, "vwap", dec(self.vwap))
+        if self.requested_quantity != self.filled_quantity + self.unfilled_quantity:
+            raise SimulationError("fill quantity conservation failed")
+        if self.filled_quantity == 0 and (self.gross_quote != 0 or self.vwap is not None):
+            raise SimulationError("zero fill cannot carry price or notional")
+
+    @property
+    def fill_hash(self) -> str:
+        return sha256_value(self.to_dict())
+
+    def to_dict(self) -> dict[str, object]:
+        return canonicalize(
+            {
+                "side": self.side,
+                "liquidity": self.liquidity,
+                "requested_quantity": self.requested_quantity,
+                "filled_quantity": self.filled_quantity,
+                "unfilled_quantity": self.unfilled_quantity,
+                "gross_quote": self.gross_quote,
+                "vwap": self.vwap,
+                "fee_rate": self.fee_rate,
+                "fee_bps": self.fee_bps,
+                "fee_asset": self.fee_asset,
+                "fee_amount": self.fee_amount,
+                "base_delta": self.base_delta,
+                "quote_delta": self.quote_delta,
+                "reference_mid": self.reference_mid,
+                "top_price": self.top_price,
+                "spread_cost_quote": self.spread_cost_quote,
+                "depth_slippage_quote": self.depth_slippage_quote,
+                "slices": [item.to_dict() for item in self.slices],
+                "witnesses": list(self.witnesses),
+            }
+        )
+
+
+def walk_depth(book: OrderBookSnapshot, side: Side, quantity: Decimal) -> tuple[tuple[FillSlice, ...], Decimal]:
+    remaining = dec(quantity)
+    if remaining < 0:
+        raise SimulationError("requested quantity cannot be negative")
+    slices: list[FillSlice] = []
+    for level in book.levels_for(side):
+        if remaining <= 0:
+            break
+        take = min(level.quantity, remaining)
+        if take > 0:
+            slices.append(FillSlice(level.price, take))
+            remaining -= take
+    return tuple(slices), remaining
+
+
+def quantity_for_quote_budget(
+    book: OrderBookSnapshot,
+    quote_budget: Decimal,
+    increment: Decimal,
+) -> Decimal:
+    budget = dec(quote_budget)
+    if budget <= 0:
+        raise SimulationError("quote budget must be positive")
+    remaining = budget
+    raw_quantity = D0
+    for level in book.asks:
+        affordable = remaining / level.price
+        take = min(level.quantity, affordable)
+        raw_quantity += take
+        remaining -= take * level.price
+        if affordable <= level.quantity:
+            break
+    quantity = quantize_down(raw_quantity, increment)
+    if quantity <= 0:
+        raise SimulationError("quote budget cannot buy one compatible increment")
+    slices, unfilled = walk_depth(book, Side.BUY, quantity)
+    if unfilled != 0:
+        raise SimulationError("insufficient displayed depth for quote budget")
+    gross = sum((item.notional for item in slices), D0)
+    if gross > budget:
+        raise AssertionError("budget quantity exceeded quote cap")
+    return quantity
+
+
+def _fill_from_slices(
+    *,
+    book: OrderBookSnapshot,
+    rules: InstrumentRules,
+    side: Side,
+    liquidity: Liquidity,
+    requested_quantity: Decimal,
+    slices: Sequence[FillSlice],
+    fee_rate: Decimal,
+    witnesses: Iterable[str] = (),
+) -> ExecutionFill:
+    requested = dec(requested_quantity)
+    filled = sum((item.quantity for item in slices), D0)
+    unfilled = requested - filled
+    gross = sum((item.notional for item in slices), D0)
+    vwap = gross / filled if filled else None
+    fee_bps = fee_rate * BPS
+    if side is Side.BUY:
+        fee_asset = rules.base_asset
+        fee_amount = filled * fee_rate
+        base_delta = filled - fee_amount
+        quote_delta = -gross
+        spread_cost = gross - filled * book.midpoint
+        top_cost = gross - filled * book.best_ask
+        top_price = book.best_ask
+    else:
+        fee_asset = rules.quote_asset
+        fee_amount = gross * fee_rate
+        base_delta = -filled
+        quote_delta = gross - fee_amount
+        spread_cost = filled * book.midpoint - gross
+        top_cost = filled * book.best_bid - gross
+        top_price = book.best_bid
+    return ExecutionFill(
+        side=side,
+        liquidity=liquidity,
+        requested_quantity=requested,
+        filled_quantity=filled,
+        unfilled_quantity=unfilled,
+        gross_quote=gross,
+        vwap=vwap,
+        fee_rate=fee_rate,
+        fee_bps=fee_bps,
+        fee_asset=fee_asset,
