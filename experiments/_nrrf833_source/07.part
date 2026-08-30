@@ -1,3 +1,13 @@
+            )
+            if not verify_receipt_hash(receipt):
+                raise AssertionError("newly created receipt failed its own hash")
+            self.learner.update(decision, receipt)
+            after = self.learner.to_dict()
+            after_hash = self.learner.state_hash
+            payload = {
+                "schema_version": SCHEMA_VERSION,
+                "simulation_kind": SIMULATION_KIND,
+                "sequence": sequence,
                 "episode": episode.to_dict(),
                 "effective_30d_volume_usd": effective_volume,
                 "fee_tier": tier.name,
@@ -198,13 +208,3 @@ def synthetic_episodes(
     timestamp = parse_time("2026-08-30T17:20:00Z")
     mid = Decimal("79140")
     episodes: list[Episode] = []
-    for index in range(count):
-        block = (index * 4) // count
-        regime = ("CALM", "THIN", "ADVERSE", "RECOVERY")[min(block, 3)]
-        if regime == "CALM":
-            spread = Decimal(rng.choice((2, 3, 4)))
-            first_qty = Decimal("0.00035")
-            optimism = 8
-        elif regime == "THIN":
-            spread = Decimal(rng.choice((5, 7, 9)))
-            first_qty = Decimal("0.00004")
