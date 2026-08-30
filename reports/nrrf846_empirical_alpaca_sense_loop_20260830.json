@@ -1,0 +1,63 @@
+{
+  "authenticated_return_count": 4,
+  "claims_boundary": {
+    "actual_account_fill_receipts": false,
+    "actual_order_submission": false,
+    "profitability_claim": false,
+    "queue_sweep_is_probability_model": false
+  },
+  "cycles": [
+    {
+      "cycle_id": "A",
+      "entry_max_queue_ahead_fraction": "0.36665272383228762075490489",
+      "entry_notional_usd": "4.740174",
+      "entry_return": {"authenticated": true,"price": "79002.9","reason": "trade_at_bid_and_exact_displayed_bid_size_decrement","side": "MAKER_BUY_RETURN","size": "0.000796312"},
+      "exit_max_queue_ahead_fraction": "0.002099658428772352822985734378",
+      "exit_return": {"authenticated": true,"price": "79036","reason": "trade_at_ask_and_exact_displayed_ask_size_decrement","side": "MAKER_SELL_RETURN","size": "0.000062"},
+      "front_of_queue_four_sheaf_reaches_hair": true,
+      "full_four_sheaf_path": {"cost_metavector": {"adverse_selection_usd": "0","base_fee_btc": "0.00000009","inventory_btc_seconds": "0.01236914051685","latency_seconds": "206.462035","quote_fee_usd": "0.00710257014","spread_usd": "0"},"cycle": "0->1->2->3->0","economic_pnl_bps": "-25.80034011409707744905566758","economic_pnl_usd": "-0.01222981014","relative_closure_cost": "0"},
+      "latency_seconds": "206.462035",
+      "net_quantity_after_entry_fee_btc": "0.00005991",
+      "passive_exit_advantage_bps": "13.60744398306897594898415121",
+      "quantity_btc": "0.00006",
+      "queue_fraction_sweep": {"full_four_sheaf_count": 21,"full_four_sheaf_grid_share": "0.0020997900209979002099790021","grid_points": 10001,"interpretation": "sensitivity sweep over queue-ahead fractions, not a probability model","no_maker_entry_count": 6334,"no_maker_entry_grid_share": "0.6333366663333666633336666333","skipped_passive_exit_count": 3646,"skipped_passive_exit_grid_share": "0.3645635436456354364563543646"},
+      "skipped_passive_exit_path": {"cost_metavector": {"adverse_selection_usd": "0","base_fee_btc": "0.00000009","inventory_btc_seconds": "0.01236914051685","latency_seconds": "206.462035","quote_fee_usd": "0.0118333183575","spread_usd": "0.001719417"},"cycle": "0->1->3->0","economic_pnl_bps": "-39.40778409716605339803981879","economic_pnl_usd": "-0.0186799753575","relative_closure_cost": "INF"},
+      "taker_exit_cost_componentwise_dominates": true
+    },
+    {
+      "cycle_id": "B",
+      "entry_max_queue_ahead_fraction": "0.0492279252941117373439022675",
+      "entry_notional_usd": "2.999074",
+      "entry_return": {"authenticated": true,"price": "78923","reason": "trade_at_bid_and_exact_displayed_bid_size_decrement","side": "MAKER_BUY_RETURN","size": "0.000087"},
+      "exit_max_queue_ahead_fraction": "0.001855969551282051282051282051",
+      "exit_return": {"authenticated": true,"price": "78833.091","reason": "trade_at_ask_and_exact_displayed_ask_size_decrement","side": "MAKER_SELL_RETURN","size": "0.000039796"},
+      "front_of_queue_four_sheaf_reaches_hair": true,
+      "full_four_sheaf_path": {"cost_metavector": {"adverse_selection_usd": "0.0039279921605","base_fee_btc": "0.000000057","inventory_btc_seconds": "0.012463570974376","latency_seconds": "328.481432","quote_fee_usd": "0.0044867459577195","spread_usd": "0"},"cycle": "0->1->2->3->0","economic_pnl_bps": "-41.33533932380294717636177033","economic_pnl_usd": "-0.0123967741447195","relative_closure_cost": "0"},
+      "latency_seconds": "328.481432",
+      "net_quantity_after_entry_fee_btc": "0.000037943",
+      "passive_exit_advantage_bps": "13.40990933850081725225853047",
+      "quantity_btc": "0.000038",
+      "queue_fraction_sweep": {"full_four_sheaf_count": 19,"full_four_sheaf_grid_share": "0.0018998100189981001899810019","grid_points": 10001,"interpretation": "sensitivity sweep over queue-ahead fractions, not a probability model","no_maker_entry_count": 9508,"no_maker_entry_grid_share": "0.9507049295070492950704929507","skipped_passive_exit_count": 474,"skipped_passive_exit_grid_share": "0.0473952604739526047395260474"},
+      "skipped_passive_exit_path": {"cost_metavector": {"adverse_selection_usd": "0.0039279921605","base_fee_btc": "0.000000057","inventory_btc_seconds": "0.012463570974376","latency_seconds": "328.481432","quote_fee_usd": "0.007475327054665","spread_usd": "0.001033149947"},"cycle": "0->1->3->0","economic_pnl_bps": "-54.7452486623037644286203008","economic_pnl_usd": "-0.016418505188665","relative_closure_cost": "INF"},
+      "taker_exit_cost_componentwise_dominates": true
+    }
+  ],
+  "final_semantic_state": {
+    "authenticated_returns": [
+      {"cycle_id": "A","price": "79002.9","side": "MAKER_BUY_RETURN","size": "0.000796312"},
+      {"cycle_id": "A","price": "79036","side": "MAKER_SELL_RETURN","size": "0.000062"},
+      {"cycle_id": "B","price": "78923","side": "MAKER_BUY_RETURN","size": "0.000087"},
+      {"cycle_id": "B","price": "78833.091","side": "MAKER_SELL_RETURN","size": "0.000039796"}
+    ],
+    "form": "HAIR",
+    "relative_closure_cost": "0",
+    "token": "0e78ac87850b8d1a8ec6e3bcf9c9741d6b36f746a3cf0f0894e4da8ce6432e9d"
+  },
+  "market_data_authenticated": true,
+  "own_order_fills_authenticated": false,
+  "quote_only_semantic_state_invariant": true,
+  "quote_only_state_hash_after": "f6ee65b1d95623d2579b064028f182afde1612eccbdc55781583b9d394f002f8",
+  "quote_only_state_hash_before": "f6ee65b1d95623d2579b064028f182afde1612eccbdc55781583b9d394f002f8",
+  "schema_version": "nrrf846.empirical_alpaca_sense_loop.v1",
+  "simulation_kind": "EMPIRICAL_ALPACA_MARKET_DATA_REPLAY_WITH_COUNTERFACTUAL_ORDER_PARTICIPATION"
+}
