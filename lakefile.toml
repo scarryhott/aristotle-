@@ -25,6 +25,7 @@ roots = [
   "NRRF801BlackMirrorRelativeTranslationOneToOneClosureUnitaryCurvature",
   "NRRF802UnifyClosure",
   "NRRF803TrajectoryBasisRelativeExternalNaturalEquality",
+  "NRRF847ClosureAdjustedRealizedPnL",
   "NRRFTradingDeltaDerivedCostTranslationalClosure",
   "NRRFTradingFullClosureNaturalFormIntegration",
   "NRRFTradingLiveObservationReceiptDerivation",
