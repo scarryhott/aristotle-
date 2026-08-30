@@ -296,7 +296,9 @@ def test_run_files_are_hash_bound(tmp_path: Path) -> None:
     assert manifest["events_sha256"]
     assert manifest["summary_sha256"]
     assert len((output / "events.jsonl").read_text().splitlines()) == 6
-    assert sim.verify_run_directory(output)["verified"] is True
+    verification = sim.verify_run_directory(output)
+    assert verification["verified"] is True
+    assert verification["program_sha256_verified"] is True
 
 
 def test_receipt_chain_link_tampering_is_detected() -> None:
@@ -377,3 +379,21 @@ def test_learner_rejects_tampered_closed_accounting() -> None:
     tampered = replace(receipt, closure_residual_quote=D("0.01"), eligible_for_learning=True)
     with pytest.raises(sim.SimulationError, match="non-closing"):
         learner.update(decision, tampered)
+
+
+def test_forced_execution_does_not_self_amplify_uncertainty() -> None:
+    episodes = sim.synthetic_episodes(count=240, seed=833)
+    runner = sim.ClosureSimulation(
+        rules=sim.alpaca_btcusd_rules(),
+        schedule=sim.alpaca_crypto_fee_schedule(),
+        learner=sim.ClosureLearner(),
+        rolling_volume=sim.Rolling30DayVolume.seeded(
+            episodes[0].entry_book.timestamp_utc.date(), D("0")
+        ),
+        force_route=sim.Route.TAKER_TAKER,
+    )
+    _, summary = runner.run(episodes)
+    final = summary["final_learner"]
+    assert D(final["absolute_model_error_bps"]) < D("100")
+    assert D(final["uncertainty_buffer_bps"]) < D("200")
+    assert D(summary["maximum_closure_residual_quote"]) == 0
