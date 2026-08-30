@@ -31,6 +31,16 @@
       "exit_before": {"timestamp_utc":"2026-08-30T18:11:35.564600+00:00","bid_price":"78805.862","bid_size":"0.0010068","ask_price":"78833.091","ask_size":"0.0009984"},
       "exit_after": {"timestamp_utc":"2026-08-30T18:11:43.987692+00:00","bid_price":"78805.862","bid_size":"0.0010068","ask_price":"78833.091","ask_size":"0.000958604"},
       "exit_trade": {"timestamp_utc":"2026-08-30T18:11:43.987692+00:00","price":"78833.091","size":"0.000039796"}
+    },
+    {
+      "cycle_id": "C",
+      "quantity_btc": "0.000090",
+      "entry_before": {"timestamp_utc":"2026-08-30T17:42:03.964023+00:00","bid_price":"78997.2","bid_size":"0.0010039","ask_price":"79012.51","ask_size":"0.001009"},
+      "entry_after": {"timestamp_utc":"2026-08-30T17:42:10.005254+00:00","bid_price":"78997.2","bid_size":"0.0009019","ask_price":"79012.51","ask_size":"0.001009"},
+      "entry_trade": {"timestamp_utc":"2026-08-30T17:42:10.005254+00:00","price":"78997.2","size":"0.000102"},
+      "exit_before": {"timestamp_utc":"2026-08-30T17:43:45.449432+00:00","bid_price":"79017.567","bid_size":"0.0009978","ask_price":"79036.839","ask_size":"0.002009"},
+      "exit_after": {"timestamp_utc":"2026-08-30T17:43:45.449444+00:00","bid_price":"79017.567","bid_size":"0.0009978","ask_price":"79077.9","ask_size":"1.11769"},
+      "exit_trade": {"timestamp_utc":"2026-08-30T17:43:45.449444+00:00","price":"79036.839","size":"0.002009"}
     }
   ]
 }
